@@ -1,0 +1,73 @@
+[00:00] In this video, I’ll show you how to use Claude  Projects step by step. Claude Projects lets you  
+[00:07] create a custom AI workspace where you can upload  files, add instructions, and keep related chats  
+[00:13] together. If you use AI chat a lot, you probably  end up with lots of different conversations,  
+[00:18] some related and some not. Projects helps you  organize everything in one place. I'm Kevin  
+[00:25] and let's dive in. Here I am on the main chat  screen of Claude. To create a new project, over  
+[00:31] on the left-hand side, let's click on the projects  icon. This brings us to the projects home screen,  
+[00:36] and you'll see all of your recent projects. In the  top right-hand corner, let's click on new project.  
+[00:41] Here we could type in a name for the project. In  my case, I'll create a project for launching a new  
+[00:47] brown butter salted caramel cookie for my small  business, the Kevin Cookie Company. Hopefully this  
+[00:52] one becomes a best seller. Now down below, you  can also add a description to explain the purpose  
+[00:58] of the project. I'll leave that blank for now.  Keep in mind, you can always change these later.  
+[01:03] In general, it's a good idea to create separate  projects for different types of work so everything  
+[01:08] stays organized. For example, you might have  one project for marketing, another for research,  
+[01:14] and another for coding or schoolwork. Once you're  done, right down here, let's click on create  
+[01:19] project. This drops us into the new project, the  beginning of something great, hopefully a very  
+[01:24] profitable cookie launch. I can keep everything  related to this launch right here in one place,  
+[01:30] including all of my files, any instructions, and  chats with Claude. If I ever want to go back and  
+[01:37] edit the project name or description, right over  here, I can click on these three dots and I have  
+[01:40] the option to edit all of these details.  Now this project is a top priority for me,  
+[01:46] so I want to be able to get back to it quickly.  Up here, I'll click on the star icon. Now over on  
+[01:51] the left-hand side, if I open up the sidebar, here  you can see the project under starred. That way I  
+[01:56] could very quickly get back to it. Let's now close  the sidebar. Next, let's add project instructions. 
+[02:02] Project instructions help Claude understand how  you want it to respond across all chats within  
+[02:07] the project. Over on the right-hand side, let's  click on the plus icon next to instructions. To  
+[02:13] make this really obvious, I'll start with a  simple instruction. I'll tell Claude to start  
+[02:19] every response with a cookie emoji. Of course, in  the real world, you'd probably use instructions  
+[02:24] for things like tone, formatting, branding,  or workflow guidance, but this makes it really  
+[02:29] easy to see that instructions are working. Once  you're all done, in the bottom right-hand corner,  
+[02:33] let's click on save. Let's try a quick chat.  Right up here, I'll ask it to write a tagline  
+[02:38] for our new brown butter salted caramel cookie  and then let's run that. There we go. Now that  
+[02:43] tagline looks great and you'll notice the cookie  emoji appears at the beginning of the response,  
+[02:48] just like we specified in the instructions.  That means you don't have to repeat yourself  
+[02:53] every time you start a new conversation. Claude  already understands the context and instructions  
+[02:59] for this project. Up above, let's click back into  the main project view. I’ll click here. One of the  
+[03:05] most powerful features in Claude projects is the  ability to upload files. Claude can then reference  
+[03:11] those files across all chats within this project.  Over on the right-hand side, you'll see the files  
+[03:17] category. Let's click on the plus icon. You can  upload files from your device, you could also add  
+[03:22] text content, or you could even reference a GitHub  repository, which is typically used for coding  
+[03:28] and programming projects. Now, alternatively,  you can also drag and drop files directly into  
+[03:34] the project, and this is my preferred method.  Now I have three files that I want to upload.  
+[03:39] One contains customer survey results. Another is a  product pricing spreadsheet. And the last contains  
+[03:45] branding notes for the launch. Clearly, we're  running a very sophisticated cookie operation  
+[03:50] over here. You can upload many different file  types, including documents, spreadsheets, images,  
+[03:55] PDFs, and more. Now, if you ever want to remove a  file, you could simply click on this X icon. Now  
+[04:01] that the files have finished uploading, Claude  can use this information right here as context  
+[04:06] in future chats within this project. Now let's  see it in action. So right up here, I'll ask it  
+[04:12] to summarize the customer feedback. If you recall,  one of my files includes a customer survey which  
+[04:18] has feedback on these new cookies. Right up here,  let's run that. Right up here, we start with that  
+[04:23] cookie emoji. We're off to a good start. Now here,  Claude reviews all of the different uploaded files  
+[04:28] and pulls out the most common feedback themes  from the survey data. Now, instead of repeatedly  
+[04:34] uploading these files every time that I start  a new chat, Claude already has access to this  
+[04:39] information within the project. Now personally,  I think that makes it a lot easier to keep all of  
+[04:44] your work organized in one place. Now you can also  upload files directly within an individual chat.  
+[04:50] Just keep in mind, those files are only available  within this conversation and won't automatically  
+[04:56] become part of the overall project knowledge. Let's now go back to the main project screen.  
+[05:00] Up here, I'll click on the project. You'll  notice that all my chats now stay organized  
+[05:05] within this project. Now I can quickly jump  back to any previous conversation related  
+[05:10] to this cookie launch. Let's go back. If I no  longer want a chat to be part of this project,  
+[05:15] I could click on the three dots and here I can  remove it from the project or I can even change  
+[05:20] it to a different project. And if you already have  an existing chat elsewhere in Claude, over here,  
+[05:25] I’ll open the sidebar and here I see all my  different conversations. On any one of these,  
+[05:30] I click on the three dots and here I can add it to  a project and that way that conversation will now  
+[05:35] become part of this project. Now I recommend  avoiding unrelated chats in the same project  
+[05:40] so that way Claude stays focused on the right  context. Right over here, let's now click back  
+[05:45] into main projects view. I'll click over there  and then let's close the sidebar. Once you finish  
+[05:49] working on a project, you can archive it to help  keep things organized and reduce clutter. Now  
+[05:54] maybe our brown butter salted caramel cookie  becomes so successful that we no longer need  
+[05:59] to actively manage the launch. Of course, that'd  be a nice problem to have. Over here, I can click  
+[06:03] on the three dots and here I have the option to  archive and let's click on archive. Now, if I ever  
+[06:09] want to get back to an archived project, I can  simply click on archive right up here and there  
+[06:14] I see the project. Hopefully our brown butter  salted caramel cookie becomes a huge success. 
+[06:22] That's a mouthful, just like the cookie is.  In the meantime, feel free to check out more  
+[06:28] Claude tutorials right up here. Thanks for  watching and I'll see you in the next video.

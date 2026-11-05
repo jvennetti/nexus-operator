@@ -1,0 +1,91 @@
+[00:00] Hello, my friend. I'm Professor Clay and
+[00:02] today we're going to make sense of what
+[00:04] everyone is calling Claude 2.0. Don't
+[00:07] worry, no equations, just the good
+[00:09] stuff. First, a little secret. Claude
+[00:13] 2.0 is not an official name. It's the
+[00:16] nickname people gave Anthropic's big
+[00:17] redesign of the Claude desktop app,
+[00:20] which rolled out through September and
+[00:22] October and got a fresh new look in
+[00:24] early November. The big idea is simple.
+[00:27] Fewer modes, more doing. The app now has
+[00:31] two doors. Chat, the speech bubble, is
+[00:33] for questions, documents, and thinking
+[00:35] out loud. And co-work now lives inside
+[00:38] every chat. So there's no mode to pick.
+[00:41] Code, the angle brackets, is where you
+[00:43] hand clawed a job. You point it at a
+[00:46] folder on your computer, and it works
+[00:48] right there with your files, your rules,
+[00:50] and your tools.
+[00:52] On the right side, you'll find the
+[00:54] session rail. Its context card shows how
+[00:57] full Claude's working memory is and
+[00:59] what's taking up the room. Memory files,
+[01:02] skills, connectors, and tools. Think of
+[01:05] it as a fuel gauge for the conversation.
+[01:08] Now, my favorite experiment, nested
+[01:11] sessions. One session can start other
+[01:13] sessions, each with its own job. They
+[01:16] appear under the original in your
+[01:18] sidebar, and they report back when they
+[01:20] finish. And unlike a sub agent, you can
+[01:22] open any one of them and keep talking.
+[01:25] Got a quick question while Claude is
+[01:27] busy? Type /btw and a side chat opens
+[01:32] next to your work. It can read the main
+[01:34] thread without cluttering it. And if you
+[01:36] want two jobs on screen at once,
+[01:38] rightclick a session and open it in
+[01:40] split view. On a Mac, option click does
+[01:43] the same.
+[01:45] Remote control lets you pick up a
+[01:46] session on your phone while the work
+[01:48] keeps running on your computer. Just
+[01:51] switch on, keep computer awake while
+[01:53] Claude works. Otherwise, your computer
+[01:55] may fall asleep halfway through the job.
+[01:59] Claude can also make docs, slides, and
+[02:01] designs right inside a conversation. And
+[02:04] those are on every plan, even free.
+[02:06] Routines run a job on a schedule, daily,
+[02:09] weekly, or monthly. and projects now in
+[02:12] beta keep working in the cloud, even
+[02:14] with your laptop closed.
+[02:17] For the tinkerers, there are mods.
+[02:19] Describe a change to the app and Claude
+[02:21] builds it like a usage meter above your
+[02:23] chat box. One rule from the lab, only
+[02:27] run mods you made yourself and two handy
+[02:29] commands. /docctor checks your setup and
+[02:32] slre or escape twice takes you back a
+[02:36] step. Now, let's put the theory to work.
+[02:39] Say you run a small business. One main
+[02:42] session can start nested sessions for
+[02:43] your website, your social posts, and
+[02:46] your newsletter, and each one reports
+[02:48] back to you. Building an app? Use split
+[02:51] view with one session on the code and
+[02:53] another on the design? Running a long
+[02:55] job? Walk away and check on it from your
+[02:58] phone with remote control. And a weekly
+[03:01] routine can gather the news from the
+[03:02] sites you pick every Monday morning,
+[03:05] ready before you sit down.
+[03:07] One warning from the laboratory. All
+[03:09] this power uses your plan faster. Nested
+[03:12] sessions, parallel workflows, and
+[03:14] projects each burn through usage. So
+[03:17] turn off settings you don't need. Keep
+[03:18] your memory files lean. And keep an eye
+[03:21] on that fuel gauge. So here's the
+[03:23] formula. Two tabs, a session rail,
+[03:26] nested sessions, side chats, split view,
+[03:29] remote control, routines, and mods.
+[03:32] Subscribe, and I'll walk you through
+[03:34] each one step by step. As a wise man
+[03:37] once said, "Imagination is more
+[03:39] important than knowledge." With Claude,
+[03:41] you get to use both. Now go make
+[03:43] something brilliant.

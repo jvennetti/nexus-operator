@@ -1,0 +1,230 @@
+[00:00] If you're still typing in the same
+[00:01] instructions into Claude every single
+[00:03] time you use it, you're doing way more
+[00:05] work than you have to. You see, Claude
+[00:07] skills is one of the most powerful tools
+[00:09] that Claude offers, and learning how to
+[00:10] use them is going to take you to the
+[00:12] next level. In this video, I'm going to
+[00:13] break down what skills are. I'm going to
+[00:15] show you how to set them up. I'm going
+[00:16] to build one live, and then I'm going to
+[00:18] warn you about one mistake that could
+[00:20] put your data at risk. But first, let's
+[00:22] break down what skills actually are. So,
+[00:24] here's the problem if you don't use
+[00:26] skills. Every time that you use Claude
+[00:27] for something that you do regularly,
+[00:29] like responding to a customer, or
+[00:31] quoting a project, or writing an email,
+[00:33] you're starting from scratch. You have
+[00:35] to tell Claude exactly what your quote
+[00:37] looks like, or exactly how to respond to
+[00:39] your customer in your own tone, or what
+[00:41] the right links are that you want to
+[00:42] use. Even though you've done this dozens
+[00:43] of times, it doesn't remember. But
+[00:45] skills fixes that completely. A skill is
+[00:48] a set of instructions that you save
+[00:50] once, and then Claude remembers forever.
+[00:52] Basically, it's a folder with a skill.md
+[00:54] file that needs a YAML front matter with
+[00:56] triple dash delimiters and markdown body
+[00:58] and optional subdirectories that lazy
+[01:00] load via progressive disclosure. And if
+[01:02] that sounds way too technical, it is. I
+[01:04] did that on purpose. That's all real,
+[01:06] but there's a much easier way to create
+[01:08] a skill that most people don't know
+[01:10] about, but I'm going to show you that in
+[01:12] a bit. Also, know that Claude is very
+[01:14] smart about this. It only loads a skill
+[01:16] when it actually needs it. So, you can
+[01:17] have 50 or 60 skills installed, and
+[01:20] Claude is still going to run fast. And
+[01:22] you don't have to create any if you
+[01:23] don't want to. Claude already has some
+[01:25] built in, so let's take a look. In the
+[01:26] Claude desktop app, you're going to go
+[01:28] to settings, and then capabilities, and
+[01:31] then you're going to scroll down until
+[01:32] you see code execution and file
+[01:34] creation. You're going to want to make
+[01:36] sure that this is turned on because
+[01:37] without it, skills can't run. Then
+[01:39] you're going to go to customize, which
+[01:40] takes you to skills, and then in the top
+[01:42] right, there's a plus button. Go ahead
+[01:44] and click that, and you're going to see
+[01:46] browse skills. This opens up a directory
+[01:49] of skills that's built by Anthropic or
+[01:50] has partnered with Anthropic, and you're
+[01:52] going to see things like skill creator,
+[01:54] canvas design, brand guidelines. You
+[01:57] just click the plus button to install
+[01:58] any of them. Oh, and check this out. If
+[02:00] you go to directory and then click on
+[02:02] plugins, there's even more skills in
+[02:04] here. Anthropic has plugins for so many
+[02:06] different things. Each one of these
+[02:08] plugins come packed with its own skills,
+[02:10] its own agents, and its own connectors.
+[02:12] So, when you install a plugin like
+[02:14] marketing, you're not just getting one
+[02:15] skill, you're getting a whole bundle of
+[02:17] them that's built around a workflow.
+[02:19] But, the real power is when you create
+[02:21] your own skill. Remember that we are
+[02:23] formatting that you needed to create
+[02:25] Well, I mentioned that there's an easy
+[02:26] button and it's called skill creator.
+[02:28] So, it does exactly what it says it's
+[02:30] going to do. It's going to create a
+[02:31] custom skill for you. Once you tell it
+[02:33] what you want, it's going to ask you
+[02:34] questions to fully understand your ask.
+[02:36] And then it formats everything for you
+[02:37] and it saves it and you're done. You can
+[02:40] use it. And let me show you a couple
+[02:41] examples on how this actually works.
+[02:43] But, really quick, before we get into
+[02:44] the demo, if you're liking this video,
+[02:45] do me a favor, hit the like button, hit
+[02:47] subscribe. It really helps me out, but
+[02:49] let's go back to the demo. Okay, so
+[02:52] let's say that you own a pizza shop and
+[02:53] a customer sends you an email overnight
+[02:55] that looks something like this. Now,
+[02:57] they're basically asking for catering
+[02:58] for 40 people with some dietary
+[03:00] restrictions and they want a price. And
+[03:02] that is a messy email. It's very vague.
+[03:04] It doesn't have a lot of specifics. A
+[03:06] pizza shop owner might see that email
+[03:08] and then think that they'll deal with it
+[03:09] later, but you and I both know that
+[03:11] dealing with it later could mean that
+[03:12] the customer goes to a different pizza
+[03:14] place. And that means that you just lost
+[03:15] out on a $500 catering order because the
+[03:18] quoting process takes too long. So,
+[03:20] let's build a skill that ingest the
+[03:23] email, it understands the context to
+[03:25] understands the menu, the pricing, the
+[03:26] formatting, anything else that you might
+[03:28] want to go into the quote, it
+[03:29] understands it all. Now, to do this, I
+[03:31] would just open up Claude and I would
+[03:32] say, "Use the skill creator to build me
+[03:34] a catering quote skill for my pizza
+[03:36] shop." Now, I'm going to be proactive
+[03:38] and I'm going to give it my menu and my
+[03:40] pricing and my per person minimum, my
+[03:42] delivery fee, anything that you could
+[03:44] think of that would go into a quote, you
+[03:46] want to make sure that you feed it
+[03:47] proactively. I'm also going to give it
+[03:48] an example of what a finished quote
+[03:50] looks like and then I'm going to tell to
+[03:52] account for these generalities. So, if
+[03:54] the email is vague, the response says
+[03:55] something like, "From what I gather,
+[03:57] here is your quote." and then ask
+[03:59] additional questions if it needs to. The
+[04:01] skill creator is going to start asking
+[04:03] me questions to fully understand my ask,
+[04:05] and once I answer everything, skill
+[04:06] creator is going to build the skill.
+[04:08] From this point on, whenever a catering
+[04:10] email comes in, I can just copy and
+[04:12] paste that into Claude and say,
+[04:14] "Generate a quote for this order." and
+[04:16] that's it. It's going to generate an
+[04:17] email with a branded PDF quote that I
+[04:19] can attach in my response. And that's
+[04:21] just one skill for one business. Now,
+[04:23] imagine what this could look like for
+[04:25] other businesses or even for your
+[04:26] personal life. Let's say you're a baker.
+[04:28] You could build a skill that takes a
+[04:29] custom cake request and figures out the
+[04:31] ingredients and calculates your cost and
+[04:34] creates a email that you can send to
+[04:36] your customer with a quote and photos of
+[04:38] similar cakes that you've done in the
+[04:39] past. Or a plumber could build a skill
+[04:41] that takes a customer voicemail
+[04:42] transcript and turn it into a work order
+[04:44] with the right parts and an estimated
+[04:46] time. Or an accountant or an Etsy seller
+[04:48] or a personal trainer, a tutor, it
+[04:50] doesn't matter. Every single one of
+[04:52] these businesses or even you for
+[04:53] personal life has a task that they do
+[04:55] over and over, and that's exactly what
+[04:58] skills are built for. And one extra tip,
+[05:00] there is a plugin called branded voice
+[05:02] that teaches Claude how to talk like you
+[05:05] and not sound like an AI. I use it,
+[05:07] trust me, it's awesome. But do you know
+[05:09] what's not awesome? Not every skill is
+[05:12] safe for you to use. So far, we've been
+[05:14] talking about Anthropic-approved skills
+[05:16] or skills that we've created ourselves,
+[05:18] but there are thousands of them out
+[05:19] there on the web. But I have to caution
+[05:21] you here. Studies have found that over a
+[05:22] third of publicly available AI skills
+[05:25] contain security flaws. Some of them are
+[05:27] actually malicious. They look helpful on
+[05:29] the surface, but they're actually
+[05:31] designed to access data that they
+[05:32] shouldn't be touching. And the reason
+[05:34] why that's possible is because,
+[05:35] remember, a skill is just a set of
+[05:37] instructions that Claude follows, and
+[05:39] some skills can run code on your
+[05:40] computer, too. So, a bad one can quietly
+[05:43] tell Claude to go grab some files or
+[05:45] information that it has no business
+[05:47] touching and then send it somewhere
+[05:48] else. All of this without your
+[05:50] knowledge. But the good news is the
+[05:51] skills that Anthropic builds and
+[05:53] partners with and then ships inside of
+[05:55] Claude, these are tested. These are
+[05:57] vetted, they're maintained. And the
+[05:59] skills that you build with the skill
+[06:00] creator, those are safe too because
+[06:02] these are the ones that you wrote or at
+[06:04] least told Claude what to write. So you
+[06:05] know exactly what is inside of them. So
+[06:07] here's my advice. Use Anthropic's
+[06:09] built-in skills or build them your own
+[06:11] with the skill creator. If you ever want
+[06:12] to install a third-party skill from
+[06:14] somewhere else online, just take a
+[06:16] minute to look at it, right? Read it.
+[06:17] Know what's inside it before you install
+[06:19] it. Building your own skill may be the
+[06:21] safest bet here. So a quick note on cost
+[06:23] here. Skills work on every plan, right?
+[06:26] They work on free, pro, max, enterprise,
+[06:28] all of them. But you do need code
+[06:30] execution turned on for skills to
+[06:32] actually run and that requires a valid
+[06:34] account. So you have to be signed in at
+[06:36] least. And that's it. Now you know what
+[06:38] skills are, you know how to build them,
+[06:40] you know how to use them safely and now
+[06:42] you're ahead of most of your peers. If
+[06:43] you haven't used skills yet, go ahead
+[06:45] and give it a shot. They are awesome and
+[06:47] I'm telling you they could save you a
+[06:48] lot of time. As we wrap up here, if this
+[06:50] was helpful, please subscribe, leave a
+[06:52] comment as well and tell me the first
+[06:53] skill that you're going to build. It's
+[06:55] going to help everybody out here in the
+[06:56] community and I will see you in the next
+[06:59] one.

@@ -1,0 +1,143 @@
+[00:00] Claude has just released routines, which
+[00:02] are really just glorified AI-infused
+[00:06] cron jobs. And I'm going to show you my
+[00:08] first time using and setting one up for
+[00:10] a real use case for designcourse.com, my
+[00:13] primary business. And we're going to see
+[00:15] what this flow and this process looks
+[00:17] like. So, there's a few different ways
+[00:18] to set up a routine. You can do it
+[00:19] through Claude AI right here in this UI.
+[00:22] You can do it in the Claude code CLI,
+[00:24] which is what I use when I code. And
+[00:26] then also, you can use it in Claude
+[00:27] desktop. Now, the first thing I did is I
+[00:30] went into my project, opened up Claude,
+[00:32] and I asked it, "Where can we use
+[00:34] routines? Does it make sense anywhere to
+[00:36] use routines in the context of my app?"
+[00:38] But, you really have to be careful
+[00:40] because it suggested some use cases that
+[00:43] would just be way better to set up with
+[00:44] cron jobs. So, when do you actually know
+[00:47] when you should use a routine versus
+[00:48] something like a cron job? Well, if it
+[00:50] needs intelligence, like if you need
+[00:53] decision-making, that's when you want to
+[00:55] use a routine as opposed to a cron job.
+[00:57] Now, what's really cool about routines
+[00:59] is they don't use API billing, which we
+[01:01] know is way more expensive. It uses your
+[01:03] actual Claude subscription. So, a use
+[01:05] case that I came up with that I want to
+[01:06] test is I get a lot of spam email. I get
+[01:09] a lot of email for sponsorships because
+[01:11] of the size of my channel. Most of them
+[01:13] are all junk. And so, what I want is a
+[01:16] routine that would check maybe my email
+[01:19] every 4 hours, and it's set up through
+[01:21] Zoho Mail, which has an API endpoint
+[01:24] that it can, you know, interface with.
+[01:26] And it will go through all the latest
+[01:28] emails received in the last 4 hours, if
+[01:30] any, and it will discard any of the BS
+[01:34] sponsorship requests that I get that
+[01:36] don't have anything to do with my
+[01:37] channel or my topic. And also, if
+[01:40] somebody does submit an actual email
+[01:42] that needs my attention, it will flag
+[01:44] it. Then, it will send a text message
+[01:47] with it. That way, I get notified, you
+[01:50] know, not just through email, but
+[01:51] through my actual phone text. And that
+[01:53] way, I can really be on top of things. I
+[01:55] think that would be a good use case for
+[01:58] routines because it does require
+[02:00] intelligence. Now, one of the
+[02:01] fundamentals of routines is connectors,
+[02:04] and there's a ton of different services
+[02:06] that you can choose and interface and
+[02:08] add to your routine. But, in this case,
+[02:11] I'm going to be using Twilio API for the
+[02:13] text messages. And there's no connector
+[02:15] for it already in Claude that I found,
+[02:18] at least. So, we're just going to hit it
+[02:19] up the API endpoint directly with curl
+[02:22] within the routine. All right, so here I
+[02:23] am. We're going to set up here using
+[02:24] claude.ai/code/routines/new.
+[02:28] And I'm going to give it a name of
+[02:30] 4-hour email notifier. And then,
+[02:33] describe what Claude should do in each
+[02:35] session. Okay. So, what I did is I hit
+[02:37] up Claude code CLI. I told it exactly
+[02:40] what I wanted to do and have it write
+[02:41] the prompt for me. Here is the prompt.
+[02:43] I'm not going to read through this, but
+[02:45] you can kind of see how it constructs a
+[02:47] system prompt to help it kind of filter
+[02:50] through the sponsorship emails and the
+[02:52] regular contact form emails, as well.
+[02:54] Then, I'm going to click on schedule
+[02:56] right here. And this is going to be
+[02:58] hourly. All right, runs every hour. I I
+[03:01] want custom, and I'm not sure how to
+[03:03] specify this, so I literally just pasted
+[03:06] this as a screenshot to Claude code just
+[03:08] now, and it told me to specify this for
+[03:11] every 4 hours right there. Okay, so
+[03:14] we're going to hit add trigger. Now, in
+[03:15] order to actually add those environment
+[03:17] variables, we edit the actual routine
+[03:20] right here. And where it says default,
+[03:22] we're going to click add environment.
+[03:24] This is where they're going to be
+[03:26] pasted. Don't paste it in the chat right
+[03:28] here. You want to paste it in the
+[03:29] environment variable section. So, I
+[03:31] pasted it in, create environment. I'm
+[03:32] going to hit run now, once more. Great,
+[03:35] says all environment variables are set.
+[03:37] All right, and it is done. Now,
+[03:38] unfortunately, the whole sending me a
+[03:41] text thing is not going to work until
+[03:43] Twilio approves the phone number and my
+[03:45] ability to send a text. That could take
+[03:46] several days or weeks, even. Uh so, just
+[03:49] as a temporary workaround, I had it use
+[03:51] Zoho Mail to send me my personal email a
+[03:54] summary of my business emails, and it
+[03:57] worked. So, if I go over here,
+[03:59] it it called it Inbox Scout, but it's
+[04:02] just giving me a summary of uh potential
+[04:05] sponsorship here, Coursera, uh paid
+[04:08] collab, blah blah blah, contact, no new
+[04:11] website contact submissions in the last
+[04:12] 4 hours. There we go. So, really, this
+[04:14] would be in the form of a text message
+[04:17] that I just get automatically, so I
+[04:18] don't have to forget to check my email
+[04:19] or anything. And there we go. That is
+[04:21] one way to use routines here in Claude
+[04:24] code. Now, the best way to use it isn't
+[04:27] like trying to directly uh interface
+[04:30] with APIs via curl or anything. It is to
+[04:32] use, you know, the connectors that are
+[04:34] in there. But, for my case, they didn't
+[04:37] have Twilio. They also didn't have Zoho,
+[04:39] so that's how I used it. So, anyhow,
+[04:42] yeah, it makes sense to use routines,
+[04:44] you know, because you kind of get that
+[04:45] whole claw type setup. Um
+[04:48] but, it has to make sense in terms of
+[04:51] what your use case is. Do you need
+[04:54] something that needs intelligence that,
+[04:57] you know, you use AI to do stuff for you
+[04:59] and make decisions? If so, and it's on a
+[05:02] recurring basis, then yeah, use
+[05:04] routines. All right, everybody, I will
+[05:06] see you all very soon. Definitely check
+[05:08] out the top link here in the description
+[05:10] for the follow-along Claude code course
+[05:12] that I'm building now. It's very cool. I
+[05:15] will see you soon. Bye.

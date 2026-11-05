@@ -1,0 +1,119 @@
+[00:00] Watch this. I'm going to ask Claude to build me  this working name picker from scratch. No coding,  
+[00:05] no terminal, just a folder on my desktop in a  conversation. If you've been curious about Claude  
+[00:10] Code, but felt like the terminal was too much,  this video is for you. So, I'm Jamie. Stick around  
+[00:16] and I'm going to walk you through this whole thing  from download to working project, start to finish.  
+[00:21] Today we're looking at the brand new Claude Code  desktop app. And specifically, we're going to use  
+[00:25] it the easiest possible way with no terminal, no  coding setup, nothing scary. If you don't know  
+[00:31] what Claude Code is, here's the short version.  It's an AI coding assistant from Enthropic that  
+[00:36] works directly on the files on your computer. You  tell it what you want. It proposes changes and you  
+[00:41] decide whether to accept them. That's it. Up until  recently, most people use Claude Code through a  
+[00:47] terminal, which is a textbased tool that a lot  of beginners find intimidating. But Enthropic  
+[00:52] just released a redesigned desktop app that gives  you the full Claude Code experience with a regular  
+[00:58] window buttons and a live preview. No terminal  required. By the end of this video, you'll have  
+[01:03] downloaded the app, picked a project folder, and  built a working tool you could actually use. Let's  
+[01:09] get into it. Quick note on requirements before  we start because I don't want you to get halfway  
+[01:13] through and hit a wall. You'll need a paid Claude  plan and plan inclusions change occasionally. So  
+[01:18] just head over to claw.com pricing to see what  plans currently include Claude Code. The free tier  
+[01:24] doesn't include it. And you'll also need a Mac  or Windows computer. There's no Linux desktop app  
+[01:28] yet. And that's it. So you don't need NoodeJs. You  don't need no Git. And you don't need any coding  
+[01:35] background at all. If you can just download an  app and drag a folder, you can follow this video.  
+[01:40] Let's grab the app. Head over to claw.com/d  download and pick the version for your computer,  
+[01:46] either Mac or Windows. Once it's downloaded,  install it like any other app. Open it up and sign  
+[01:51] in with your Claude account. Now, here's the thing  that trips people up. Claude Code isn't a separate  
+[01:56] app you download. It's built into the main Claude  desktop app, and you access it through the tabs  
+[02:01] at the top of the sidebar. Okay, I got the app  installed. I'm logged into my account and it's  
+[02:07] opened on my computer. Take a look at these three  icons right up here. This is what I was talking  
+[02:12] about. The chat bubble is just regular claw just  like using it on the website. The checklist icon  
+[02:18] is co-work agent that runs task autonomously  in the cloud. And this third one, this is the  
+[02:25] one that looks like little code brackets. That's  cloud code. That's where we're going. Quick tour  
+[02:30] before we start. On the left, you see you got new  session, which is how you start fresh routines for  
+[02:35] automations, which we're not covering in today's  video, and customize for setting. The dashboard  
+[02:41] in the middle tracks your usage over time. Right  now, it's probably empty since if you're starting  
+[02:45] fresh, but you'll see sessions, message, tokens,  and streaks fill in as you use it. Not something  
+[02:50] you need to worry about today. Down here  is where the action is. You've got local,  
+[02:54] which means your sessions runs on your computer,  and select folder, which is how you point Claude  
+[02:59] at the project you want to work on. I'm going  to select Opus 4.7 here on medium effort,  
+[03:05] which is a good balance for everyday work. There's  a few other options in this drop-own. Sonnet and  
+[03:09] Haiku are lighter models that use less of your  plan allowances and are still really capable  
+[03:15] of simple task. There's also the 1M version of  Opus for working with really large code bases,  
+[03:21] but you don't need that for today. Underneath  that, you got effort settings. So, higher effort  
+[03:26] means Claude will think harder before responding,  which gives you better answers on tough problems,  
+[03:31] but also uses a lot more of your plan allowance.  For a small project like the one we're just  
+[03:36] building today, medium is plenty. If you ever find  yourself running into usage limits, switching to a  
+[03:43] lighter model or lower effort is the first thing  to try and most simple tasks will work just well.  
+[03:48] And this right here is important, the permission  mode. By default, this is set to accept edits, but  
+[03:54] I want to switch this to ask permission before we  start. The names are a little confusing at first,  
+[03:59] so let me explain. Accept edits is actually  what it means is Claude will apply its changes  
+[04:04] automatically without asking. Ask permission is  the safer one. It means Claude has to pause to  
+[04:09] ask you before changing anything. There's also  plan mode in the drop down. This one's useful  
+[04:14] for bigger projects where you want Claude to  lay out the plan before touching anything.  
+[04:18] We're not going to use this one today since our  project is so small. Okay, let's build something.  
+[04:22] We're going to make a simple random name picker.  You might use it this for something like a raffle,  
+[04:27] picking a random person from a list, deciding who  gets to go first in a game night, whatever. It's  
+[04:31] a small project, but a useful one. And it's  going to let me show you everything important  
+[04:35] about how this app works. First, I'm going to  make a brand new empty folder right here in my  
+[04:41] documents folder here. And I'm just going to call  it this name picker. Just a normal folder. Nothing  
+[04:46] special inside of it. Now, I'm going to go back to  Claude. Now in Claude, I'll click select folder,  
+[04:52] find my name picker folder, and open it. And  we're in the session. You can see the folder name  
+[04:57] up top. And now anything I ask Claude to do will  happen inside this folder. Nothing outside of it.  
+[05:03] That's a nice safety boundary to have. Okay, so  here's my first prompt. I'm going to ask Claude  
+[05:08] to build the whole thing from scratch, and we'll  see what it proposes. I'm going to give it this  
+[05:12] prompt right here, and I'll put the prompt down  below in the description, so you can just copy it  
+[05:17] and paste it if you want to follow along with the  same thing. Now, I won't read you the whole thing,  
+[05:22] but this is going to be asked to create an HTML  file that's going to be named index.html, and I  
+[05:29] just tell it specific things on what I want  it to do from thing like picking a name when I  
+[05:33] click a button. So, let's go ahead and just go  and send. I'm going to click trust workspace.  
+[05:40] It's asking me for permission. I can allow once  or always allow. I'm going to click allow always.
+[05:50] Now, here's where the desktop app really shines  compared to the terminal version. I can preview  
+[05:55] the file right inside this app. I'll just stretch  this out. And here's my name picker. We have our  
+[06:01] text area at the bottom, a big pick name button,  empty space at the top where the name will appear.  
+[06:07] Let me test this out here with a uh name list.  I'm going to put these ones in right here and I'm  
+[06:13] going to click pick a name Maya one. I also want  to point out here's the folder that I created, the  
+[06:19] name picker one. I go in it. I can see the index  html file right there. So, it went and created me  
+[06:26] this file, but I have the option of seeing it  right inside the new desktop app that Claude has  
+[06:33] as well. Okay. So, right now it just snaps to the  next name. Let's make it feel a little bit more  
+[06:38] exciting, like a real drawing. So, my next prompt  is going to be before the final name appears,  
+[06:44] can you make it cycle through random names from a  list quickly for about 2 seconds, then slow down  
+[06:50] and land on the final pick like a roulette  effect. It should feel like a real drawing.  
+[06:56] All right, that took hardly any time at all.  Let's go test it just with the same list of  
+[07:01] names. I'm going to click pick a name. And look at  this. how it's going through building excitement  
+[07:06] just by that simple prompt. One more edit. Let's  give it a little bit of personality and make it  
+[07:13] look a little bit more uh friendlier. And so what  I'm going to say is this. Add a friendly title at  
+[07:19] the top of the pages that says and the winner  is change the color scheme to a soft teal as  
+[07:24] the main accent. Make the pick a name button a  little bigger and the subtle hover over effect.  
+[07:29] also after name is picked at a small button text  uh or next to it that says pick again. Let's try  
+[07:36] this update. All right, so here it is. We have the  title up across the top that we asked for. We have  
+[07:42] a bigger button. We have the teal accents. Uh now  I want to know if the pick again option will be  
+[07:48] after the draw. So let's go paste the same names  in. And I'm going to hit pick a name. Oh, and we  
+[07:53] still have our roulette style here. And we have  Nathan. And then we have that button pick again.  
+[08:00] So in a few minutes we've gone from an empty  folder to a working tool and the files live on  
+[08:06] your computer. You could open it in a browser like  I showed you before. Send it a friend, drop it in  
+[08:11] a USB stick. It's yours. You could even upload  this and put it online. Okay, a few things I  
+[08:17] just want to show you before we wrap up today. You  don't need to know them to do what we did today,  
+[08:21] but you'll eventually want to know where they  are. The first thing is that we have an integrated  
+[08:26] terminal inside of this. So if you go up here  and click and you can open this up here. And  
+[08:32] as beginner, you might not want to use this right  away, but I wanted to make sure you knew that it  
+[08:36] was there. The other thing are some shortcuts. If  I go uh just with control and semicolon together,  
+[08:42] I get this side chat. Now, this lets you ask  Claude a quick question without interrupting  
+[08:47] your main task. This is useful once you're  juggling bigger projects. Now, here's a really  
+[08:52] cool one here. This up here. So, this select  elements and you can see the shortcut if you  
+[08:57] look above is going to be the uh control shift and  S al together. And what this allows me to do is if  
+[09:06] I have this selected, I can go and let's say if I  had multiple buttons and I wanted Claude to make  
+[09:11] sure I knew what button I was picking at, I can  click it and it adds it to the chat. So, Claude's  
+[09:16] going to know specifically which one I'm talking  about. You can also drag these panels around. You  
+[09:21] don't have to be in the setup. There's a little  move tool up here. So, as soon as you select it,  
+[09:26] I can drag them around to adjust it any way that  I want. And your sessions are going to be under  
+[09:32] recent here. So, uh if you go ahead and leave, you  can come back and pick up exactly where you left  
+[09:39] off in that project. One last thing on usage.  If your Claude plan includes a usage allowance,  
+[09:44] and Cloud Code can use that up faster than  regular chat because it's actually doing  
+[09:48] real work on your files. If you hit a limit, the  app will tell you. You can either wait for it to  
+[09:54] reset or switch to a lighter model like Sonet or  Haiku and keep going. So, you are not going to  
+[09:58] be charged any surprise fees. It just pauses  you. So, don't be afraid to experiment. So,  
+[10:03] that's Cloud Code in the desktop app. No terminal  required. And if this is your first time using it,  
+[10:08] I'd suggest trying a small project of your own.  anything you've been curious about like a simple  
+[10:12] web page, a little tool, a calculator, whatever.  So, the best way to learn this is just to play  
+[10:17] with it. What we did today was just scratching  the surface. Cloud Code can also teach itself  
+[10:22] your own personal workflows, connect to tools like  GitHub, Google Drive, and even run automated tasks  
+[10:27] for you on a schedule. I'll be covering those  in future videos. So, if you want to see those,  
+[10:32] subscribe and drop a comment telling me which  ones you're most curious about. Thanks for  
+[10:35] watching this time on Teachers Tech. I'll see  you next time with more tech tips and tutorials.

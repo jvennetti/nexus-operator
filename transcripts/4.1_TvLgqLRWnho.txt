@@ -1,0 +1,205 @@
+[00:00] Your customer list has duplicates.
+[00:02] Your receipts are a pile you keep
+[00:03] meaning to sort.
+[00:04] In this video, you'll watch Claude Code
+[00:06] fix both from plain English requests,
+[00:08] with no coding.
+[00:09] I'm Raymond, an assistant instructor at
+[00:11] Web Technology Institute.
+[00:13] Let's get you set up.
+[00:14] So what is Claude Code? It's Claude, the AI assistant from Anthropic,
+[00:19] with one big difference. The regular Claude chat lives in a browser window.
+[00:23] You copy things in, and you copy answers out.
+[00:26] Claude Code works right on your own computer,
+[00:28] inside a folder you choose. It can open your files,
+[00:31] read them, make new ones, and change them,
+[00:33] but it asks you first. Think of it as an assistant sitting at your desk instead of on the phone.
+[00:38] You still give instructions in plain English. You don't write code.
+[00:42] And it isn't magic. It can make mistakes,
+[00:44] so checking its work is part of the job.
+[00:46] Ask clearly, then check. That's the whole skill,
+[00:49] and you can learn it. Here's what you need before you start.
+[00:53] First, a computer. Windows 10 or 11, or a Mac on macOS 13 or newer,
+[00:58] with at least four gigabytes of memory. Second,
+[01:01] a paid Claude plan. Claude Code isn't included in the free plan.
+[01:05] Pro is the starting plan, and as I record this,
+[01:08] it's twenty dollars a month, or seventeen a month if you pay for a year.
+[01:12] Prices change, so check claude.com/pricing for today's number.
+[01:17] Pro has usage limits. If you hit one,
+[01:19] Claude Code tells you, and you can wait for it to reset or upgrade later.
+[01:23] For the jobs in this video, Pro is plenty.
+[01:26] Third, about thirty minutes. That's it. No coding,
+[01:29] and no experience with the terminal. You'll see it's less scary than it looks.
+[01:33] Before you install anything, here's something that confuses a lot of beginners.
+[01:37] There are three ways to use Claude Code.
+[01:39] The Claude desktop app. VS Code, which is a free program from Microsoft.
+[01:43] And the terminal. It's the same Claude Code underneath,
+[01:46] with the same paid plan. What changes is the window you work in.
+[01:50] And here's the good news. Your settings, and the notes you give Claude Code about your business,
+[01:55] work in all three. So you can start in one and switch later without starting over.
+[01:59] Let's look at each one, and how you'd install it.
+[02:02] Option one is the Claude desktop app. It has a tab called Code.
+[02:07] Click it, choose a folder, and type your request in a box,
+[02:10] like a chat. There are no commands to type at all.
+[02:13] To get it, download the Claude app for Windows or Mac from Claude's download page.
+[02:17] The link is in the description. Install it and sign in.
+[02:21] Then click the Code tab, and open the folder you want it to work in.
+[02:24] This is the easiest place to start if the terminal makes you nervous.
+[02:27] One thing to know. Conversations you start in the desktop app stay in the desktop app.
+[02:32] They don't show up in the other two.
+[02:34] Option two is VS Code. It's a free program for working with files,
+[02:38] and a lot of people who build websites use it.
+[02:40] Claude Code shows up as a panel on the side.
+[02:43] The nice part is this. When Claude Code changes a file,
+[02:46] you can see the old version and the new version side by side,
+[02:49] and accept or reject each change. To get it,
+[02:52] install VS Code, open the Extensions panel,
+[02:55] search for Claude Code, and click Install. Then click the Claude Code icon at the top of the editor,
+[03:01] and sign in. You don't need to install anything else.
+[03:04] If you like seeing your files while you work,
+[03:06] this is a great fit. Option three is the terminal.
+[03:09] That's the plain text window where you type instructions.
+[03:12] On Windows, it's called Command Prompt. On a Mac,
+[03:15] it's called Terminal. It looks old-fashioned, but it has every Claude Code feature,
+[03:20] and once it's installed, you only type one word to start it:
+[03:23] claude. To install it on Windows, open Command Prompt and paste one line from Anthropic.
+[03:29] On a Mac, open Terminal and paste the Mac line.
+[03:32] Both lines are in the description. Copy and paste them.
+[03:34] Don't retype them, because one wrong character and it won't work.
+[03:38] Press Enter, and wait. It can look frozen for a minute while it downloads.
+[03:42] It isn't. When your cursor comes back with a message that it finished,
+[03:45] you're done. You don't need to be an administrator.
+[03:48] Now the step everyone skips. Close that window and open a brand new one.
+[03:52] The old window doesn't know Claude Code exists yet.
+[03:55] Then type claude, a space, two dashes, and the word version,
+[03:59] and press Enter. If you see a version number and the words Claude Code,
+[04:03] it worked. If you see not recognized, you're probably still in the old window.
+[04:08] Close it and open a fresh one. So which one should you pick?
+[04:12] If the terminal makes you nervous, start with the desktop app.
+[04:15] If you want to see your files and every change side by side,
+[04:18] use VS Code. If you want every feature,
+[04:21] and the version you'll see in most tutorials,
+[04:23] use the terminal. In this video, I'll use the terminal,
+[04:26] so you can see that it really isn't hard.
+[04:28] After the install, it's just a conversation. And whatever you learn here works in all three.
+[04:33] Here's a habit that will save you a lot of stress.
+[04:35] Don't point Claude Code at your real business files on day one.
+[04:39] Make a new folder, and put copies in it.
+[04:41] I'm using a practice folder for a pretend business,
+[04:44] Bluebonnet Candle Company. It has a customer list and a folder of receipts.
+[04:48] On Windows, open your folder in File Explorer,
+[04:51] click the address bar at the top, type cmd,
+[04:54] and press Enter. A terminal opens right inside the folder.
+[04:58] On a Mac, type cd and a space in Terminal,
+[05:01] drag the folder in, and press Enter. Then type claude,
+[05:04] and press Enter. The first time, it opens your browser so you can log in with your Claude account.
+[05:09] You only do that once. Here we go.
+[05:11] I've opened a terminal in my practice folder and typed claude.
+[05:15] There's the welcome screen, and the folder it's working in.
+[05:18] My first request is a simple question. I'll ask:
+[05:21] What's in this folder? Give me a quick summary.
+[05:23] You don't need to open the receipts yet.
+[05:25] And press Enter. It lists the folder. Then it looks inside the receipts folder.
+[05:30] Then it opens the customer list. And here's the answer.
+[05:33] A customer list with duplicates and some missing emails,
+[05:36] and eight receipts with messy file names. It didn't open them,
+[05:40] just like I asked. And nothing changed. Starting with a question is the safest first step.
+[05:45] Now let's give it real work. The biggest mistake beginners make is asking for something vague,
+[05:50] like, clean up my customer list. Claude Code will try,
+[05:53] but it can't read your mind. So use four parts.
+[05:56] Goal: what you want, and why. Context: which files to use,
+[06:01] and anything it can't see for itself. Limits:
+[06:03] what not to do, and what to leave alone.
+[06:06] Done: what the finished result looks like. Limits are where you prevent mistakes,
+[06:10] so don't skip them. And done gives you a checklist for checking the work.
+[06:14] Quick note. If you want to go further than this video,
+[06:17] Web Technology Institute has a course called Claude Code for Absolute Beginners.
+[06:22] It takes you step by step from install to sorting your files,
+[06:25] publishing a one-page website, and building a small tool you'll use every week,
+[06:29] one plain-English request at a time. No coding needed.
+[06:33] The link is in the description. Now, back to that customer list.
+[06:37] Here's the four-part request for the customer list.
+[06:40] Goal: clean up customers.csv so I can import it into my email tool.
+[06:45] Context: it has duplicate customers, names in mixed capitals,
+[06:49] and phone numbers in different formats. Limits: don't change the original file,
+[06:54] and don't delete anyone. If two rows might be the same person but you're not sure,
+[06:58] list them for me instead of merging them.
+[07:00] Done: a new file called customers-clean.csv,
+[07:04] plus a short list of what you changed and which customers have no email.
+[07:07] Off it goes. It reads the whole file.
+[07:10] Then it writes the clean copy. And here's the summary.
+[07:13] Original file untouched. Names fixed, and every phone number in the same format.
+[07:18] Five duplicate customers merged, keeping the newest order date.
+[07:22] Tom Reyes had one row with an email and one without,
+[07:25] so it kept the email. And look at this part.
+[07:27] Pat Gomez and Patricia Gomez. It wasn't sure they're the same person,
+[07:32] so it listed them for me instead of guessing.
+[07:34] That's what the limits are for. Then the three customers with no email.
+[07:38] One small slip, though. Look at the top.
+[07:40] It says forty-one rows. There are forty customers.
+[07:43] It counted the heading line too. Harmless here,
+[07:46] and a good reminder of why you check.
+[07:48] Now your part. Don't take the summary on faith.
+[07:51] Open the new file and spot check it.
+[07:53] Pick three customers you know were duplicates, and make sure each one shows up once.
+[07:58] Look at a few phone numbers. Count the rows.
+[08:00] If something's wrong, or you know something it doesn't,
+[08:03] just tell it in plain English. For example,
+[08:05] if you know they're one person, say: Pat Gomez and Patricia Gomez are the same person.
+[08:10] Merge them and keep the newer email. It fixes it in seconds.
+[08:14] Checking takes two minutes, and it's what makes this safe for real work.
+[08:18] Next, the receipts. There are eight PDF receipts in a folder called receipts.
+[08:23] Office supplies, software, shipping, and a few others.
+[08:27] I'll type: Read every receipt in the receipts folder.
+[08:30] Make a new file called expenses.csv with the date,
+[08:35] vendor, category, and amount for each one. Then give me the total for each category.
+[08:40] If a receipt is unclear, list it instead of guessing.
+[08:43] And press Enter. It opens each receipt and reads it,
+[08:46] just like you would. The software bill. The shipping store.
+[08:50] The print shop, the wax supplier, and the rest.
+[08:53] Then it writes the spreadsheet. And here are the totals.
+[08:56] One line for each category, five hundred eighty-five dollars and fifty-nine cents in all.
+[09:01] I checked every line against the real receipts,
+[09:03] and they match. Now look at the hardware store receipt.
+[09:06] The prices are smudged, and the total shows a two,
+[09:09] a missing digit, and eighteen cents. So it left that one out and told me why.
+[09:14] I didn't want to guess. That's exactly what I asked for.
+[09:16] It even explains how it picked the categories,
+[09:19] so I can change them. When money is involved,
+[09:21] check the math. Open expenses.csv,
+[09:24] pick two receipts, and compare them to the real PDFs.
+[09:27] Add up one category yourself. If you work with a bookkeeper,
+[09:31] this file is a starting point to hand them,
+[09:33] not a replacement for them. Typing eight receipts by hand takes a while.
+[09:37] Checking two takes a minute. So how do you stay in control?
+[09:41] Claude Code asks before it changes anything. When it wants to create or edit a file,
+[09:46] or run a command, you'll see a box with a question and a few choices.
+[09:50] Yes, to allow it once. Yes and don't ask again,
+[09:54] to allow that kind of action for the rest of the session.
+[09:56] And No, to stop it and tell it what to do instead.
+[09:59] Here's my rule for beginners. Say yes to reading,
+[10:02] and to creating new files. Read carefully before you allow changes to files you already have.
+[10:07] And say no to deleting anything you didn't ask it to delete.
+[10:10] And if something does go wrong, you have three ways back.
+[10:13] Press Escape once, and Claude Code stops right where it is.
+[10:17] Press Escape twice with the typing area empty,
+[10:20] or type slash rewind, and you can roll your files and the chat back to any message you sent.
+[10:25] Rewind may not catch files that a command moved or deleted,
+[10:28] so here's the third way. Before any big job,
+[10:31] make a copy of the folder, or ask Claude Code to make the backup for you.
+[10:35] Stop, rewind, and back up. With those three,
+[10:39] you can try things without fear. Here's what to remember.
+[10:42] Claude Code is Claude working on files on your own computer,
+[10:45] and you approve what it does. You can use it in the desktop app,
+[10:49] in VS Code, or in the terminal,
+[10:51] and what you learn works in all three.
+[10:53] Ask in four parts: goal, context, limits, and done.
+[10:58] And check the work, especially when money or customers are involved.
+[11:01] Your next step takes about thirty minutes. Pick one of the three ways,
+[11:05] install it, and make a practice folder with copies of one real list or a few receipts.
+[11:10] Then ask it a question before you ask it to change anything.
+[11:14] If you'd like a guided path, the Claude Code for Absolute Beginners course from Web Technology Institute walks you through
+[11:20] install, safe habits, cleaning up files, publishing a one-page website,
+[11:25] and building a tool you'll use every week.
+[11:27] The link is in the description. Which job would you hand to Claude Code first?
+[11:31] Tell us in the comments.

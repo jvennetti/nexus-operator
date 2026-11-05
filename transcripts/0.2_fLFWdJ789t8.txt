@@ -1,0 +1,369 @@
+[00:00] Okay, Anthropic recently brought some
+[00:02] major updates to their Claude app, but
+[00:03] not many people know about it.
+[00:06] Creators on the internet have named it
+[00:08] Claude 2.0 because they released so many
+[00:11] good and significant updates.
+[00:13] Everyone is calling it Claude 2.0.
+[00:15] Anthropic didn't officially announce it
+[00:17] that way, but people are still calling
+[00:19] it that. With this, you can literally do
+[00:22] the work of a small team all by yourself
+[00:24] , right from where you are sitting. You
+[00:26] can open multiple chats at once and run
+[00:28] multiple sessions. You can make Claude
+[00:30] work from your phone, and if there is a
+[00:32] repetitive task, you can make Claude
+[00:34] handle it automatically without you
+[00:35] having to tell it again and again; there
+[00:37] are many such features, and today I will
+[00:39] show you exactly what they are. The
+[00:41] first feature is Side Sessions.
+[00:44] By "Side Sessions," I mean that if you
+[00:46] have used Claude until now, you had to
+[00:48] manually open any new session, and even
+[00:50] after opening it, the context from the
+[00:53] previous session wouldn't carry over, so
+[00:55] you'd have to tell it everything again.
+[00:59] But now, with the new update, you can
+[01:01] have a "Master Session" and tell it to
+[01:03] automatically open sub-sessions under it
+[01:05] .
+[01:06] So now, this main chat acts like an
+[01:08] organizer.
+[01:10] For example, if you ask about WhatsApp
+[01:12] messages, that becomes one session; a
+[01:14] timetable and fees could be another
+[01:16] session; and any other extra tasks
+[01:17] related to this project can be handled
+[01:19] in their own separate sessions.
+[01:22] So now, I will show you exactly how to
+[01:24] do this. If you don't have the Claude
+[01:26] app yet, just search for "Claude" on
+[01:28] Google and download it based on your
+[01:30] operating system, whether it's Windows
+[01:32] or Mac. I have already created a new,
+[01:34] separate folder for this here. I will
+[01:36] click on "Open Folder," then click on "
+[01:38] Claude 2 Demo," and open it. So, here is
+[01:41] the prompt I gave: "Start two side
+[01:43] sessions for the tuition center's new
+[01:45] Class 10 batch.
+[01:46] One writes five short WhatsApp messages
+[01:48] to send to parents about the new batch,
+[01:49] and the other makes a one-page timetable
+[01:51] and fee sheet for the batch.
+[01:53] Both use the details in Claude.md.""
+[01:55] Each one reports back to me here when
+[01:57] it's done." So basically, there is a
+[01:58] file called "Claude.md" in this folder.
+[02:00] This is basically the context of what we
+[02:02] are running, like our business with your
+[02:04] tuition center; I did this as an
+[02:06] imaginary business so you could
+[02:08] understand it simply.
+[02:10] And the required attendance CSV file is
+[02:12] also kept here in this "Claude 2 Demo"
+[02:14] folder.
+[02:16] So now, watch as I run it; it will
+[02:18] automatically start a session for the
+[02:20] Class 10 batch setup and WhatsApp
+[02:22] messages. This is an individual session
+[02:24] . You can talk about this specific
+[02:25] session here. Again, we asked to run
+[02:27] another session regarding the timetable
+[02:29] and fee, so that is what is running now
+[02:31] .
+[02:32] So now, it has created a new timetable,
+[02:35] and in this WhatsApp messages chat, it
+[02:37] has already drafted five WhatsApp
+[02:40] messages for announcements, first week
+[02:42] free, small batch of 15, Saturday weekly
+[02:45] test, and last call.
+[02:48] So, these side sessions will be useful
+[02:49] for you in this way. So, whatever you do
+[02:51] here, it will automatically report back
+[02:54] to this main session. Both sessions are
+[02:56] finished, and I checked their files
+[02:57] against the .md file, so it
+[02:59] automatically verifies itself. So, you
+[03:01] can consider this main session as a
+[03:02] master session and the others as
+[03:04] sub-sessions; you don't need to use this
+[03:06] for everything.
+[03:08] If you are doing tasks like that, or
+[03:09] while building something, then these are
+[03:11] very useful.
+[03:13] This was launched in the new update.
+[03:16] The next update is the side chat, which
+[03:18] was already there; you can ask by typing
+[03:20] /btw, meaning "slash by the way."
+[03:23] For example, if it takes a long time to
+[03:25] execute in a long session, you just type
+[03:27] /btw and the side chat opens, or you can
+[03:29] click command + colon to open the side
+[03:31] chat.
+[03:33] If you are on Windows, use the control +
+[03:34] colon key. Whatever you ask here will
+[03:36] not automatically enter this context.
+[03:38] This context and that context are
+[03:39] completely different. So, let's ask now
+[03:42] : "What has this session done so far and
+[03:44] what is left?" So basically, it reads
+[03:46] about this session and answers. Whatever
+[03:48] answer you get here, none of that
+[03:49] context will come into this one. If you
+[03:51] close this now, all of this chat will be
+[03:52] gone, and you won't be able to use it
+[03:54] again. See, it said, "Everything you
+[03:56] asked is done, so nothing is left in the
+[03:58] task." Since it finished the two tasks
+[04:00] we asked for, there is nothing left to
+[04:03] do. So again, let's close it now.
+[04:05] The advantage of this is that if
+[04:06] something is running for a very long
+[04:08] time, or if a build takes a lot of time
+[04:10] , you can ask what happened and what the
+[04:12] status is.
+[04:14] If you ask in the middle of the main
+[04:16] chat, it gets a bit cluttered and things
+[04:19] get mixed up, so it's better to start
+[04:22] and use/btw or the side chat.
+[04:24] And the next feature is the split view.
+[04:26] It means you have one for messages and
+[04:28] one for the timetable, right?
+[04:31] If you want to see both at once, you
+[04:32] have the class batch here; one session
+[04:34] for the timetable and one for WhatsApp.
+[04:37] Now, if you are using a Mac, just hold
+[04:39] the option key and click on it, and it
+[04:40] will be done. Otherwise, you can click
+[04:42] on the three dots here to move to split
+[04:45] view right, close split view, or you can
+[04:47] manage the split view manually. So now,
+[04:49] you can use this session directly from
+[04:51] here. This is very useful when you are
+[04:53] executing multiple tasks.
+[04:55] And it’s not just two chats; you can
+[04:57] even have multiple sessions on your
+[04:58] screen.
+[05:00] The next feature is using Claude Code on
+[05:02] your phone; it's actually called Remote
+[05:04] Control. It existed before, but now it
+[05:06] has been improved with smoother
+[05:08] integration.
+[05:10] Just go to the Claude app, find this '
+[05:12] Class 10 Batch Setup', click on the
+[05:13] environment card here, and turn on
+[05:15] Remote Control...see, Remote Control is
+[05:17] now turned on, right?
+[05:19] If you are logged into the same Claude
+[05:22] app on your phone, just open Claude and
+[05:24] check. The same 'Class 10 Batch Setup'
+[05:26] will appear right there.
+[05:29] If you are outside, you can leave your
+[05:30] PC behind and take your phone; you can
+[05:32] see the status of what's happening from
+[05:34] there, or give new commands if you need
+[05:36] to.
+[05:37] This is a highly used feature, very
+[05:39] useful when you go out and need to run
+[05:41] something or check on your tasks. So,
+[05:44] this option turns on Remote Control for
+[05:46] just this session.
+[05:48] You can also do it another way: use the
+[05:50] slash command, click on '/remote control
+[05:52] ', and just hit enter to turn it on.
+[05:55] That was with slash commands. And if you
+[05:57] want this for everything—meaning you
+[06:00] want Remote Control for every chat you
+[06:02] open—just go to settings and search for
+[06:05] 'Remote Control'. If you turn it on
+[06:07] there, then every new session you open
+[06:10] will have Remote Control enabled. So,
+[06:12] you can access it from your phone. The
+[06:14] next feature is Artifacts, which is just
+[06:16] like Google Docs. You can create
+[06:18] multiple documents in it, create slides
+[06:21] , or design anything you want. And you
+[06:23] can share it with whoever you want.
+[06:26] If you are working with a team, you can
+[06:28] set permissions just like in Google Docs
+[06:31] , such as 'view-only' or 'can edit'.
+[06:34] This is only available in paid plans,
+[06:36] not in the free plan. So now, I’ve come
+[06:38] to the main chat and given this prompt:
+[06:40] "Make a Claude doc for parents about the
+[06:42] new Class 10 batch timings, what we
+[06:43] teach, and how to join." I gave the
+[06:45] prompt and hit enter; let’s close this.
+[06:47] So now it will create an artifact. Once
+[06:50] it's done, I'll show you—see, it created
+[06:52] this: "I made a new Class 10 batch doc.
+[06:55] " You can make any changes you want here
+[06:57] . Basically, it created a document, but
+[07:00] you can also create slide presentations
+[07:02] and more. So now you can also share it;
+[07:04] click on 'Share' here, and there is an
+[07:06] option to 'Copy private link'.
+[07:08] Copy this and give it to anyone, and
+[07:11] they can open it; it’s basically like an
+[07:14] unlisted video on YouTube.
+[07:16] And you can also export it.
+[07:19] And if you want anyone else to work on
+[07:21] this, just click on 'Invite People' and
+[07:23] add their emails here; they will
+[07:24] automatically receive a notification.
+[07:27] They can work on this too. So that is
+[07:28] how this feature works. Next is
+[07:30] Scheduled Tasks; suppose you want Claude
+[07:33] to do a task every day or if you are
+[07:35] running a business.
+[07:37] If you tell it to give you all your
+[07:38] previous day's business stats at 7 AM
+[07:40] every morning, it can do that
+[07:41] automatically.
+[07:43] For example, here I will say "Create a
+[07:45] scheduled task named Absent Check that
+[07:47] runs every day at 7 PM; each run read
+[07:49] attendance.csv in this folder, list
+[07:51] every student who was absent,"—I gave
+[07:54] that prompt to basically check for the
+[07:56] absent attendance stats.
+[07:58] So now, as soon as you click enter, it
+[07:59] will automatically create a scheduled
+[08:01] task. But one thing you need to remember
+[08:03] with this is that your system must be
+[08:04] turned on for this scheduled task. It
+[08:06] will only run if your PC is on. If you
+[08:08] turn off your PC, it won't run anymore.
+[08:10] So, this is one thing you need to keep
+[08:11] in mind. Look, I created an 'Absent
+[08:13] Check' and it runs every day at 7 PM;
+[08:14] the app adds a delay of a few minutes.
+[08:16] So here you go, it says 'Schedule' right
+[08:18] here, and in this schedule tab, a new
+[08:20] schedule called 'Absent Check' has
+[08:21] appeared. You can edit it from here, or
+[08:23] you can pause it or even delete it.
+[08:26] If you want to simply test it here, just
+[08:28] click on 'Run' and it will be tested.
+[08:31] So that is how this feature works, and
+[08:34] finally, this is the biggest feature,
+[08:36] its name is 'Mods'; okay, this is
+[08:38] basically like widgets on your phone,
+[08:40] where you can build a customized feature
+[08:42] for your own Claude.
+[08:44] One thing you need to remember is that
+[08:46] these Mods have access to your entire PC
+[08:48] .
+[08:49] That is why when you download any public
+[08:51] Mods from outside, only download them
+[08:53] from trusted creators or trusted
+[08:55] builders.
+[08:56] An even better thing is that you can
+[08:57] create your own Mod yourself. There is
+[08:59] nothing to it; creating one doesn't
+[09:00] require you to write any code. You just
+[09:01] have to tell Claude. I will show you an
+[09:03] example.
+[09:04] I said here: "Create a Mod that adds a
+[09:06] bar above the prompt box; the bar shows
+[09:09] how full this chat's context is as a
+[09:11] percentage; when this goes over 70%,
+[09:13] turn the bar red and show a button that
+[09:15] runs/compact"; I clicked enter here.
+[09:18] So basically, regarding the matter here
+[09:19] , you might already know what/compact
+[09:20] means. Once, /context, okay, new session
+[09:24] . Look here, it automatically asked for
+[09:25] a prompt. This looks like a slightly
+[09:27] different task. It asked why I wanted to
+[09:29] do this in this chat and if I wanted to
+[09:31] do it in a new session.
+[09:32] I created a new session, but anyway,
+[09:35] that's that. So now, what/compact means
+[09:37] is, we have a context window, as you
+[09:40] know. All the new models currently have
+[09:42] a 1-million context window. The more you
+[09:44] work, the more that context window fills
+[09:46] up.
+[09:47] The best thing is that once you cross 60
+[09:50] %, if you click on/compact, everything
+[09:52] you’ve discussed and done up to that
+[09:55] point gets compacted, and the context
+[09:57] window refreshes.
+[10:00] So, we asked it to do exactly that:
+[10:02] build a plugin that automatically
+[10:04] triggers a/compact popup as soon as it
+[10:06] turns red. It will build that and show
+[10:08] it to you. I’ll show you after it’s done
+[10:09] a bit. Okay, it will keep building in
+[10:11] the meantime. Let me show you what the
+[10:13] other commands are. Look, there are
+[10:15] small commands here. /rewind means you
+[10:17] can automatically go back to the
+[10:19] previous message with this command. /
+[10:21] goal means you can set an end goal for
+[10:23] it.
+[10:24] Meaning, if you want a specific feature
+[10:26] in this app, like dark mode, a different
+[10:29] payment mode, or a different layout,
+[10:31] once you set that end goal using the/
+[10:33] goal command—is it here?
+[10:37] —just type/goal followed by your end
+[10:39] goal, and it will keep working on it
+[10:41] until it's finished.
+[10:43] After that, it will give you/usage,
+[10:46] which shows your usage statistics so far
+[10:49] .
+[10:50] Look here, it mentions the five-hour
+[10:52] limit and your current limits. Basically
+[10:54] , it shows you what your limits are.
+[10:56] That is/usage. And there are other
+[10:58] useful commands as well.
+[11:01] Just click Command + Slash, and you can
+[11:03] see multiple shortcuts and commands here
+[11:06] .
+[11:07] If you are using Windows, press Control
+[11:09] + Forward Slash on your keyboard to see
+[11:12] these commands and the context...the
+[11:14] context mod is built but not loaded yet
+[11:16] , it says.
+[11:18] Let's ask, "What about the mod?"
+[11:22] "Turn on the mods" could write this
+[11:24] session. Okay, the mod hasn't loaded yet
+[11:25] . The app hasn't written to the mod
+[11:27] folder, and I still don't have an answer
+[11:29] . Okay, it asked a question, I'll type "
+[11:31] Turn on them" and hit submit. So now it
+[11:33] will turn the mod on.
+[11:36] Look, it just appeared; the mod we built
+[11:38] has a 14%context compact button, which
+[11:39] will automatically appear once you hit
+[11:41] 70%.
+[11:42] Since I had to show it to you, it
+[11:45] displayed it, but anyway, that is the
+[11:47] threshold; once you hit 70%, you just
+[11:50] click compact, and it gets compacted.
+[11:52] This is one of the most useful features
+[11:54] , but many people don't use compaction.
+[11:56] Even I don't use it sometimes, but it's
+[11:58] a good practice. So that is all about
+[12:00] Claude Code features, and it is still
+[12:02] building, but let's stop it because I
+[12:04] don't really need it; I use/compact
+[12:06] myself during important sessions.
+[12:09] But you can build any model you like,
+[12:11] and while using Claude daily, you will
+[12:12] definitely feel that it would be nice to
+[12:14] have this at some point.
+[12:16] So in such cases, building mods like
+[12:18] these and keeping them on your screen
+[12:20] will be handy for you. So that is all
+[12:22] about Claude 2.0 and all the updates
+[12:23] they recently launched.
+[12:25] If you liked this video, please like and
+[12:26] share it with your friends, and
+[12:28] subscribe to our channel for more videos
+[12:29] like this.

@@ -1,0 +1,95 @@
+[00:03] Context is Claude's working memory.
+[00:06] Every file it reads, every command it
+[00:07] runs, every message you send, it all
+[00:10] takes up space in the context window.
+[00:15] Think of the context window as the
+[00:17] amount of space that Claude can hold in
+[00:19] its memory.
+[00:21] Whenever you enter a prompt, Claude
+[00:22] reads a file, runs a tool call, gets a
+[00:25] tool call result. This is added onto the
+[00:27] context window. And since there's only a
+[00:29] finite amount you can can put in the
+[00:31] context window, it becomes extremely
+[00:34] important to optimize this as much as
+[00:36] possible.
+[00:39] Now, when you approach this limit, the
+[00:41] context window is automatically
+[00:43] compacted.
+[00:44] Compaction will summarize important
+[00:46] details and remove the unnecessary tool
+[00:48] call results and free up a lot of space
+[00:50] in your context window.
+[00:52] Do note though that this could
+[00:53] potentially lose details in your
+[00:55] previous conversation.
+[00:57] You can run the compaction manually as
+[00:59] well with the {slash} compact command.
+[01:02] This will compact everything that you've
+[01:03] done up to that point, which could be
+[01:05] handy if you want to clear up context
+[01:07] space, but also have a memory of what
+[01:09] you previously worked on.
+[01:11] If you want to completely start from
+[01:12] scratch without memory of what was
+[01:14] previously worked on, you can also run
+[01:16] {slash} clear and that will remove
+[01:18] everything, starting from scratch.
+[01:21] To check the state of your context, run
+[01:23] the {slash} context command. Here,
+[01:25] you'll get a big picture of how large
+[01:27] your context size is, the different
+[01:29] categories that are taking up the most
+[01:31] context, and a graphic showing you all
+[01:33] of this.
+[01:35] A general rule of thumb is when you're
+[01:37] working on a specific feature and are
+[01:38] going over the context window, but need
+[01:40] to continue, then compact.
+[01:43] Keeping the context relevant for this
+[01:45] feature is important when continuing
+[01:46] development.
+[01:48] If you have finished the plan and want
+[01:49] to start on a new feature, then clear.
+[01:52] You don't want the previous conversation
+[01:54] to present bias in anything new that you
+[01:56] want to create. For things that you do
+[01:58] want Claude to remember in other
+[01:59] sessions, put it in the Claude.md file.
+[02:02] That way, it doesn't have to rediscover
+[02:04] things from scratch all over again.
+[02:08] Be specific. The irony behind writing a
+[02:10] smaller prompt is that it in the long
+[02:12] run, it will take up more context.
+[02:15] Without being explicit, Claude is forced
+[02:17] to look around your code base more and
+[02:19] do his own thinking, which takes up a
+[02:21] lot more context window space than if
+[02:22] you were just a little bit more clear
+[02:24] with a sentence or two.
+[02:26] MCP servers load all of the tools
+[02:28] available into context by default. So,
+[02:31] if you have a lot of MCP servers for
+[02:34] things that are unrelated to the
+[02:35] project, it might be worth turning them
+[02:37] off. You can also try out skills, which
+[02:40] works similarly to MCP servers, but
+[02:42] doesn't put the entire thing into
+[02:43] context, saving you space.
+[02:46] Sub agents run in parallel with your
+[02:48] main agent, but has a complete separate
+[02:50] context window. So, for tasks that
+[02:53] require an answer without the journey,
+[02:54] like where is the authentication
+[02:56] endpoints located, you can have the sub
+[02:58] agent do the work and return just a
+[03:00] summary to your main agent.
+[03:06] Managing context within Claude code is
+[03:08] crucial. Use /compact to summarize long
+[03:11] sessions and /clear to start fresh. To
+[03:14] use your context window effectively, be
+[03:16] specific with what you want.
+[03:18] >> [music]
+[03:18] >> Check what's using your current context
+[03:20] window and use sub agents to delegate
+[03:22] tasks you only need the answer for.

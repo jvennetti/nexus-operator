@@ -1,0 +1,288 @@
+[00:00] There's a constant debate among devs at
+[00:01] the moment is how good actually are
+[00:03] coding agents. And the debate usually
+[00:05] has two sides. It has the side that
+[00:07] says, "No, coding agents suck. I hate AI
+[00:10] coding." And the other side of the
+[00:11] debate says, "No, you're just using them
+[00:13] wrong. This is a skill issue." Now, I
+[00:14] can see both sides of this debate, but
+[00:17] if there is a skill issue that I see
+[00:19] most often with devs, it is not thinking
+[00:22] enough about the context window. The
+[00:23] context window is the main constraint
+[00:26] that most AI coding agents face these
+[00:27] days. And honestly, most devs don't even
+[00:30] really know what it is or how it impacts
+[00:32] how you use these coding agents. If
+[00:34] that's you, you have come to the right
+[00:35] place. We are going to explain
+[00:37] everything you need to know as a user of
+[00:39] coding agents about what the context
+[00:41] window is and how it impacts coding
+[00:43] agent performance. So, let's get started
+[00:44] right away by talking about what
+[00:46] actually makes up the context window.
+[00:48] The context window is the entire set of
+[00:51] input and output tokens that the LLM
+[00:53] sees. The input tokens are the things
+[00:54] that you pass to the LLM. You might pass
+[00:57] it a system prompt, which is and some
+[00:59] instructions to say to the LLM what it
+[01:01] should do, and maybe a user message to
+[01:03] initiate the conversation. And then once
+[01:04] you've sent that, the LLM starts
+[01:06] streaming back some assistant messages,
+[01:08] which are the output tokens. And the
+[01:10] input plus the output tokens make up the
+[01:13] entire context window. As the
+[01:14] conversation grows longer, let's say
+[01:16] you're chatting with Claude or ChatGPT,
+[01:18] the more input and output tokens are
+[01:20] going to be in that context window. So,
+[01:22] we usually talk about the context window
+[01:24] kind of growing or the number of tokens
+[01:26] that you're spending inside that context
+[01:27] window growing. And eventually, it's
+[01:29] going to grow so so long that you will
+[01:31] hit a limit. Each model has a hard-coded
+[01:34] limit, which is set by the model
+[01:36] provider. And let's say here you pass
+[01:38] too many input tokens. You've got a
+[01:40] system message, a user message, and 100
+[01:42] more messages, let's say. Well, you will
+[01:44] get an error from the LLM provider
+[01:46] saying you have hit the limit of the
+[01:48] context window. You might even hit this
+[01:50] with a single super long message. Let's
+[01:52] say you're uploading some documents or
+[01:54] you're asking the LLM to transcribe a
+[01:55] video or an enormous image. And this
+[01:58] limit of the context window is usually
+[02:00] described in tokens. If you don't know
+[02:02] what a token is, then you can check out
+[02:03] my YouTube video on tokens, which I'll
+[02:05] link here. Now, you can actually hit the
+[02:07] limit while generating tokens, too. For
+[02:10] instance, you can just be chatting with
+[02:11] the system like this and it will maybe
+[02:13] tell you an extremely long output which
+[02:16] overruns its context window, and it will
+[02:18] just stop because the context window has
+[02:20] been hit. You can take a look at
+[02:21] models.dev to check out the different
+[02:23] context window limits and lots of other
+[02:25] information about different models. For
+[02:27] instance, Claude Haiku 4.5, if we zoom
+[02:30] over here, we can see a context window
+[02:32] limit of 200,000 tokens. Down here, we
+[02:34] can see a limit of 2 million tokens.
+[02:37] Let's take a look at that. Boom boom
+[02:39] boom boom boom. And we have Gemini 2.5
+[02:41] Pro. Gemini kind of as a selling point
+[02:43] has really large context windows. But as
+[02:45] we'll see in a second, bigger is not
+[02:47] always better. We'll see too that there
+[02:48] are some models here like Qwen Math
+[02:50] Plus, which only have about 4,000 tokens
+[02:54] inside here. So, smaller models and
+[02:56] older models, too, often have much
+[02:58] smaller context window limits. So, why
+[03:00] do these models impose context window
+[03:02] limits at all? Why not just allow
+[03:04] infinite amount of text to be passed
+[03:05] through the model? Well, some of it is
+[03:07] to do with the constraints of the
+[03:08] architecture of the model. LLM
+[03:09] processing is expensive, and so adding
+[03:11] more text and more context window means
+[03:14] you're using more memory per process.
+[03:15] But also, the larger the context window,
+[03:18] the more performance degrades. In other
+[03:20] words, the more information that you
+[03:22] give a model, the worse it's going to
+[03:23] perform. This is true across tiny models
+[03:25] all the way up to very, very large
+[03:27] models. And the reason for that is that
+[03:29] all models suffer from a problem of
+[03:32] retrieving information from their own
+[03:34] context. This is the classic needle in a
+[03:36] haystack problem. If you have one piece
+[03:38] of information in a huge, big, bloated
+[03:40] context, and you're trying to get the
+[03:41] LLM to refine that and take that, do
+[03:44] something with it, then it's going to
+[03:45] really struggle. This is especially true
+[03:47] for information that's in the middle of
+[03:49] a conversation. For instance, I've put
+[03:51] this very unscientific graph here, where
+[03:53] we have the impact on the output here
+[03:55] and the position in conversation. What
+[03:57] happens is that for really long chats
+[04:00] here, where we have each individual
+[04:01] message represented by this little
+[04:02] circle, the information in the middle of
+[04:04] the chat is going to be less prioritized
+[04:07] by the LLM. So, the stuff at the start
+[04:09] and the stuff at the end is deemed most
+[04:11] important by the attention mechanism
+[04:13] that the LLM uses. This is not really
+[04:15] intended behavior. It's just an emergent
+[04:17] property of how these systems are
+[04:18] designed. So, this is really, really
+[04:20] important when you're doing AI coding.
+[04:22] The stuff at the start of the
+[04:23] conversation is going to have most
+[04:25] impact and the stuff at the end is going
+[04:27] to have the most impact. But all the
+[04:28] big, bloated stuff in the middle is not
+[04:30] necessarily going to impact the result
+[04:33] that strongly. It still has an impact,
+[04:35] of course, but much less than the stuff
+[04:37] at the start and the end. And this
+[04:38] mimics human behavior, too. If you've
+[04:40] ever heard of primacy bias and recency
+[04:42] bias, you will probably remember the
+[04:44] start of this video and the end of the
+[04:46] video better than the guff in the
+[04:48] middle. However, the shorter the context
+[04:50] window, the fewer lost in the middle
+[04:52] problems you're going to come across.
+[04:53] Models just do better with less, more
+[04:56] focused information, just like humans
+[04:58] do. This means that regularly clearing
+[05:00] your coding agent chats will refresh the
+[05:03] agent's memory and clear its context
+[05:04] window, making for much better
+[05:06] performance when you actually go to use
+[05:08] it. Let's actually dive into a coding
+[05:10] agent that I use, Claude Code. I've run
+[05:12] a command called context here, and we
+[05:13] can see the context usage that we've
+[05:16] used up. We've used 95k tokens out of
+[05:18] 200k limit. This is on Sonnet 4.5, which
+[05:22] has a 200k context window limit. Nearly
+[05:24] 8% of it is just on the system prompt
+[05:26] here. And 40% is on these messages, so
+[05:30] 77k tokens. That is the content of the
+[05:32] conversation that I've run through so
+[05:34] far. Now, if I had some work to do that
+[05:36] was related to the chat thread that I've
+[05:37] just done, which I think is just sort of
+[05:40] reworking some documentation, then 105k
+[05:43] tokens of free space, that feels pretty
+[05:45] good to me. But I would definitely start
+[05:47] getting scared once I only only had
+[05:48] about, let's say, 50k tokens left, at
+[05:51] which point I would run clear, which
+[05:53] clears the conversation history and
+[05:54] frees up the context window. You do have
+[05:56] an alternative in Claude Code here,
+[05:58] which is to compact the conversation. If
+[06:00] I run this, it clears the conversation
+[06:02] history and creates a summary of what
+[06:04] happened. In other words, it takes all
+[06:06] of these messages and just creates a
+[06:08] smaller message out of them. In theory,
+[06:10] that will pull us further away from the
+[06:12] context window limit and we'll get fewer
+[06:14] lost in the middle problems. However,
+[06:15] this does take some time, and of course,
+[06:17] you're using an LLM to generate a
+[06:19] summary, so you are spending tokens
+[06:20] here. It's already taken about a minute
+[06:22] doing this, and it's finally done, and
+[06:24] we can press control zero to see the
+[06:26] full summary. see it's created a pretty
+[06:28] lengthy summary of the conversation we
+[06:30] just had without any of like the files
+[06:33] that it's pulled in or anything like
+[06:34] that, but it preserves some of the
+[06:35] intentions, some of the vibes, and it's
+[06:37] like a sort of mini rules file just for
+[06:39] this conversation. If we run context
+[06:41] again, we can see that we now have 90%
+[06:44] of free space. And the messages, instead
+[06:45] of like 70k tokens, whatever they were
+[06:47] before, is now only 4k. So, compacting
+[06:49] is useful when you want to preserve the
+[06:51] vibes of a conversation, but clear is
+[06:53] should be your default when you just
+[06:55] want to clear it, go back to a blank
+[06:57] slate, and keep going from there.
+[06:59] Whenever you're working with a coding
+[07:00] agent, you really do need full
+[07:02] transparency, full understanding of
+[07:04] what's happening in your context window
+[07:06] at any time. I want to give you a word
+[07:08] of warning here, too, about MCP servers.
+[07:11] MCP servers are super attractive because
+[07:13] they allow you to plug and play with
+[07:15] different pre-made tool sets out there
+[07:17] in the ecosystem. But they can bloat
+[07:18] your context incredibly rapidly. You
+[07:20] might have a conversation here where
+[07:22] like a third of it is system prompt, you
+[07:24] know, a big chunk of it is MCP tools
+[07:26] just from a couple of MCP servers, and
+[07:28] then just a few extra stuff in messages.
+[07:31] So, I tend to be extremely,
+[07:33] extremely cautious about adding MCP
+[07:35] servers to my setup because I know how
+[07:38] important having a lean context window
+[07:41] is. I also don't tend to write very,
+[07:43] very large cursor rules or Claude rules
+[07:46] because again, I'm just so scared of
+[07:48] these lost in the middle problems. And
+[07:49] as a result, I really enjoy working with
+[07:52] AI coding agents, and I get really
+[07:53] decent performance out of them, I think.
+[07:55] And hopefully, if you take on this
+[07:56] paranoia that I've developed, you'll get
+[07:58] great results, too. So, that's what a
+[08:00] context window is. It is the input and
+[08:02] output tokens that make up the entire
+[08:04] thing that the LLM can see at any one
+[08:06] time. Every LLM comes with a context
+[08:09] window limit, a hard-coded limit set by
+[08:11] the model provider, which is basically
+[08:14] how many tokens they think the LLM can
+[08:16] reasonably handle. All LLMs are prone to
+[08:19] lost in the middle problems, where stuff
+[08:21] in the middle of the context window ends
+[08:24] up being deprioritized. And so, when
+[08:25] you're assessing an LLM, just look at
+[08:28] how big the context window is. You
+[08:29] should look at how well it retrieves
+[08:31] information from its context window. For
+[08:33] instance, in April, Meta announced Llama
+[08:36] 4 Scout, which if I had myself, it's
+[08:38] just down here, and it has a 10 million
+[08:41] context window limit. It turned out
+[08:42] after people actually played with it, it
+[08:44] suffered from really bad lost in the
+[08:46] middle problems. And even though you
+[08:47] could feed it that information, it
+[08:49] wouldn't really do anything with it. So,
+[08:50] I hope you have a better understanding
+[08:52] of the limits of these models and how
+[08:54] you can work around those limits and
+[08:56] understand them better to get better
+[08:58] results. If you want to go deeper into
+[09:00] LLMs, then I have just put out a AI SDK
+[09:03] crash course. This is a crash course for
+[09:05] Vercel's AI SDK, which I think is the
+[09:08] perfect way to get started with LLMs if
+[09:11] your primary language is TypeScript. But
+[09:13] just a couple more days, you can get
+[09:14] this for 99 bucks. So, head to
+[09:17] aihero.dev if you want to learn more.
+[09:19] Thanks so much for following along. I
+[09:20] love talking about this stuff, and I
+[09:22] really think this is valuable
+[09:23] information. If there's anything
+[09:25] LLM-based that you want me to cover,
+[09:26] especially talking about it in the
+[09:27] context of TypeScript, let me know in
+[09:29] the comments. So, thanks for watching,
+[09:30] and I will see you very soon.

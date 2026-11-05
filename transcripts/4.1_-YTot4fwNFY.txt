@@ -1,0 +1,213 @@
+[00:00] Today, I'll be teaching you how to use Claude Code Desktop.
+[00:04] First, let me show you how to install Claude Code Desktop.
+[00:07] Now, go to claude.com/download.
+[00:11] Now, if you're on Windows you'll see "Download for Windows".
+[00:14] If you're on Mac then you will see "Download for Mac".
+[00:17] So click it.
+[00:17] Then you will start to download the Claude Setup to your computer.
+[00:21] Next, you open Claude Setup.
+[00:23] And it will start to download...
+[00:25] And install Claude Desktop to your computer.
+[00:28] So click on "Get Started".
+[00:29] Then you can log in to your Claude account.
+[00:33] So let me show you an example where I'll use Claude Code.
+[00:37] To build an app.
+[00:38] So first, let me create a new folder on my computer.
+[00:42] So I'll just call it "My First App".
+[00:44] Then in the Claude Code Desktop app make sure you select "Code".
+[00:47] And then from here you can select a folder.
+[00:50] So I'll click on "Select Folder".
+[00:53] Then I select the new folder that I created.
+[00:56] Then I click on "Trust Workspace".
+[00:58] And now you can see I've opened this new folder in Claude Code Desktop.
+[01:03] From here, I can start using Claude Code Desktop.
+[01:06] To build my first app.
+[01:07] First, you can select which model you want to use.
+[01:10] So in the bottom right corner if you click over here...
+[01:13] So there's Sonnet, there's Opus and there's Fable.
+[01:17] Plus there's Haiku.
+[01:18] Now, if you're not sure which model to use.
+[01:20] Just start with Sonnet first.
+[01:22] Because it is the middle ground.
+[01:23] It is good enough for many tasks.
+[01:26] So Opus and Fable are more powerful models.
+[01:29] But these are more expensive.
+[01:31] And if you use these models...
+[01:32] You can run out of your usage a lot quicker.
+[01:35] So unless you're building something that's more complex...
+[01:37] And you need a more powerful model...
+[01:39] Then you will use these models.
+[01:41] Otherwise, if you're still not sure yet just start with Sonnet.
+[01:45] There's also Haiku which is faster and cheaper.
+[01:48] But currently this is a bit outdated.
+[01:51] They haven't updated this in a while.
+[01:53] So I'll just go with Sonnet.
+[01:55] Next, you can select the effort level for your AI model.
+[01:59] So if I click into this you can choose the effort.
+[02:01] There is low, which is faster.
+[02:04] And then there's medium there's high.
+[02:06] And then there's extra high.
+[02:07] And then there's max and there's even ultra.
+[02:10] So the higher the effort level the smarter the AI agent will be.
+[02:14] Because it will take more time to think.
+[02:17] But then because it will take more time to think.
+[02:19] That means it will be slower.
+[02:20] But you'll usually get better results.
+[02:22] Because the AI agent takes more time to think.
+[02:25] The quality of the response will generally be better.
+[02:29] But when you use a higher effort level.
+[02:31] You can run out of your usage a lot faster.
+[02:34] So if you're not sure which effort level to use.
+[02:36] You can start off with medium effort first.
+[02:40] Or if you want you can start with high.
+[02:42] And then from there if you find that it's not working...
+[02:44] If it's not good enough...
+[02:45] If the things that you are building is more complex...
+[02:48] Then you can increase the effort level one by one.
+[02:51] And you try it out.
+[02:52] So in this example, I'll just start off with medium effort level.
+[02:56] So when you use a lower effort level.
+[02:58] Then you can get a lot more usage out of Claude.
+[03:01] So now let's build our first app.
+[03:03] So I'll just use a very simple example.
+[03:05] I'll ask Claude to build a to-do list app.
+[03:08] Where I can add tasks, edit them or delete them.
+[03:12] And mark each task as completed.
+[03:15] So it can be as detailed as you want in your very first prompt.
+[03:18] Now, what I recommend you is to plan first.
+[03:20] So if you go to the bottom left you can click on this.
+[03:23] It will show you the different modes.
+[03:25] First, there's Manual:
+[03:26] Which means every time Claude Code wants to create any new files.
+[03:29] Or make any edits.
+[03:30] Or run any commands.
+[03:32] It will ask you for permission every single time.
+[03:35] So you have to approve everything one by one.
+[03:37] So this can be quite tedious and annoying.
+[03:39] Next, there's Accept Edits:
+[03:41] So this mode, it will automatically accept any edits from Claude Code.
+[03:46] So this is a lot better than Manual.
+[03:48] You don't have to keep approving every single thing.
+[03:50] Now with this, it will still ask you for permissions from time to time.
+[03:54] So you will still have to approve it sometimes.
+[03:56] Then there's Plan mode.
+[03:58] Which I'll show you in just a second.
+[03:59] Now for Auto Mode, it's kind of like Accept Edits.
+[04:02] It automatically accept any edits.
+[04:04] Plus it will automatically run any permissions...
+[04:07] As long as it passes a safety check.
+[04:10] So if you don't want to keep approving things one by one...
+[04:12] Then you can try Auto Mode.
+[04:14] Which I'll show you in just a second.
+[04:16] Then there's Bypass Permissions:
+[04:18] So with this, Claude Code will have full permissions.
+[04:21] So it can do everything.
+[04:22] It won't have to ask you for approval.
+[04:24] So with this, it can be the most convenient.
+[04:27] Because you won't have to approve anything.
+[04:29] But then, of course this can be the most risky as well.
+[04:32] Because it will bypass all permissions.
+[04:35] Now, if you're not sure just stick to Auto Mode.
+[04:38] Now, before we start anything we want to start with "Plan" mode first.
+[04:41] So I'll select "Plan".
+[04:43] And now, let me send this prompt.
+[04:44] And we'll get Claude Code to plan out this app.
+[04:49] So in "Plan" mode Claude Code may ask you questions.
+[04:52] On what do you want?
+[04:53] So just answer them.
+[04:54] If you're not sure, you can just tell Claude that you're not sure.
+[04:57] And ask it to explain it to you.
+[04:59] So it's done.
+[05:00] It wrote out the plan on the right.
+[05:01] So I can read through the plan.
+[05:03] And if it's all good I can click on "Accept" and "Auto Mode".
+[05:06] Then Claude Code will start to create the files.
+[05:09] It will start to write the code.
+[05:10] Now, if you don't like the plan you can reject the plan.
+[05:13] Or you can click on "Revise".
+[05:15] And then you tell Claude Code what you want to change about the plan.
+[05:19] And then you click on "Revise".
+[05:20] And then it will update the plan accordingly.
+[05:23] So for now, let's go back.
+[05:24] And I will click on "Accept" and "Auto Mode".
+[05:26] So Claude Code will automatically build the app according to the plan.
+[05:32] So it's done.
+[05:33] If you want to look at the app they give you the command over here.
+[05:36] Otherwise, you can just click on this "Play" button...
+[05:38] In the top right corner.
+[05:40] And it opens the app on the right.
+[05:42] So let's test it out.
+[05:43] I'll add a task.
+[05:44] So let's say "Do the laundry".
+[05:46] I'll add it and I can mark it as done.
+[05:49] From here, you can just continue to tell Claude Code what you want.
+[05:52] If, say, I want to add a due date to each task.
+[05:55] I can just tell Claude Code to add a due date to each task.
+[06:01] So it's done.
+[06:01] Let me click on restart.
+[06:03] So now I can add a due date to this app.
+[06:06] So let me try it out.
+[06:07] Say I have a dentist appointment and I can select the date over here.
+[06:12] Or I could try to add a task but then I don't set a due date.
+[06:15] So it seems to be working well.
+[06:17] Now I can see the add button overflows outside of this section.
+[06:21] So the design can definitely be improved.
+[06:23] So with Claude Code Desktop we can draw on the app.
+[06:26] To tell Claude Code exactly what we are talking about.
+[06:29] So if I click on this pencil on top which says annotate.
+[06:33] I can now draw on the app.
+[06:34] So I can select this area.
+[06:36] And then I can click on add to chat.
+[06:38] To tell Claude Code exactly which part I'm talking about.
+[06:42] I can also draw lines.
+[06:43] If I click on this I can draw lines like that.
+[06:46] I can click on the square.
+[06:47] I can draw a square or rectangles.
+[06:49] Or I can use a circle.
+[06:51] Or I can even write text over here.
+[06:53] And then I can click on the trash can to clear everything.
+[06:56] So I'll just select this area and I'll click on add to chat.
+[07:00] And then I'll just tell Claude Code the add button is overflowing.
+[07:04] Fix and improve the UI.
+[07:07] So I'll send this.
+[07:08] And Claude Code will know exactly what I'm talking about.
+[07:12] So it's done and let's take a look.
+[07:14] So now you can see the add button is not overflowing.
+[07:17] Now it looks a bit better.
+[07:19] Next, another feature for Claude Code Desktop.
+[07:21] Is you can select an element from your app.
+[07:24] Let me show you.
+[07:25] So if you go to the top.
+[07:26] If you click on this cursor this arrow.
+[07:29] You can then select any element from your app.
+[07:32] So let's say I want to change this part.
+[07:34] I want to rename this.
+[07:36] If I click here.
+[07:37] You can see right now it selects this particular element.
+[07:40] So now Claude Code knows exactly.
+[07:42] Which part of the app I'm talking about.
+[07:45] So there's no confusion.
+[07:46] It's a lot simpler.
+[07:47] Then I can just tell Claude Code to change the text to "My First App".
+[07:54] And you can see now this has changed to "My First App".
+[07:57] So when you are done working on anything you want to clear the chat.
+[08:01] So you can type /clear.
+[08:03] Then you press Enter.
+[08:05] It will clear all of the chat.
+[08:06] And then now I can move on to the next task.
+[08:09] So this way it won't be confused.
+[08:10] By the previous things we were working on.
+[08:13] So for example if I want Claude to redesign the UI...
+[08:17] Using a bold, creative, high-contrast neo-brutalist style...
+[08:23] This is not relevant to the previous things...
+[08:25] Where I asked to add a due date or changing the add button.
+[08:29] So this is a new thing.
+[08:30] That's why I clear the chat.
+[08:31] And now I can start fresh.
+[08:33] And Claude Code can focus on just working on this task.
+[08:37] So it's done.
+[08:38] You can see this is quite a huge dramatic change.
+[08:40] And now it looks very different.
+[08:42] So you can see any change that you want Claude Code to make.
+[08:45] You just tell it in simple plain English.
+[08:48] And it will do it for you.

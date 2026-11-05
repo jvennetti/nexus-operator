@@ -1,0 +1,132 @@
+[00:00] Okay, in this lesson we're going to talk
+[00:01] about projects, which is one of the
+[00:03] coolest features Claude added. So up
+[00:06] here on your left-hand side, you're
+[00:08] going to see projects. Click it. [music]
+[00:10] Right now I've set up Claude class,
+[00:13] which is actually the project for this
+[00:15] whole thing we're doing right here. But
+[00:17] you can sort it right here, create a new
+[00:19] project. It's very simple. You type in
+[00:23] the name of what you want. So we're just
+[00:24] going to do test project right here.
+[00:26] [music]
+[00:27] And then we're going to hit enter. Hit
+[00:29] new project. Here we go. Now you put in
+[00:31] a goal. I'm going to put research
+[00:34] [music]
+[00:34] Claude best practices. And then uh you
+[00:38] can say where you might want to put it
+[00:41] in your GitHub if you've hooked that up,
+[00:42] but I'm going to create it right here.
+[00:44] And that's it. So now let's go to the
+[00:46] slides and I'll talk you through kind of
+[00:49] how projects will help you master Claude
+[00:53] and get good at getting your work done.
+[00:55] [music] A project is a workspace that
+[00:57] Claude already has all the context for.
+[00:59] Remember that word, context. It's
+[01:02] tracking multiple conversations about
+[01:05] that project. And it will remember. And
+[01:07] then you can put files in there that
+[01:09] have instructions. And every new chat it
+[01:11] starts with that background. So you're
+[01:13] not going from ground zero. It's a way
+[01:16] to kind of boot up Claude with some
+[01:18] understanding about what you're trying
+[01:20] to do. It's available in every plan, but
+[01:22] the free one only gets five projects.
+[01:25] Okay, four things live inside a project.
+[01:27] Knowledge, which is documents, [music]
+[01:29] notes, Google Drive files every chat can
+[01:32] use. Instructions, these are things like
+[01:35] we always write with this tone or
+[01:37] marketing copy. Uh slides, which I'm
+[01:39] doing for this, have this uh style
+[01:42] treatment to it. So they all come out
+[01:43] looking the same. It keeps all the
+[01:45] chats. And then it also keeps memory
+[01:47] files in there of your preferences as
+[01:49] you work with it. [music] So you hit
+[01:51] create it, you add knowledge, and then
+[01:54] you set the instructions. Okay, so let's
+[01:56] talk about habits that make [music]
+[01:58] projects work. Don't try to do five
+[02:00] different things in one project. Just
+[02:02] set up your project for one type of
+[02:05] work, one task, one thing that's bigger
+[02:09] than a single chat where you've got to
+[02:11] gather information. Good fits are like
+[02:14] the board, a deal. I will set up a
+[02:16] project for every one of my business
+[02:18] units or business entities. We've got a
+[02:20] farm. I've got an RV park in my family.
+[02:24] I've got projects for all of these
+[02:26] things so I can track work over time and
+[02:29] Claude, I don't have to tell it every
+[02:30] time what to do. Okay, so write
+[02:33] instructions like a briefing for a new
+[02:35] chief of staff. So, you want to be
+[02:37] specific about the role, audience, and
+[02:39] format. For instance, we have a solar
+[02:41] array. I've got all kinds of
+[02:43] instructions about [music] how to track
+[02:45] it, where it logs in, where is the
+[02:47] information. What is this thing about?
+[02:49] And so then that way when I go to that
+[02:51] project for that solar array, it knows
+[02:54] exactly what I'm talking about when I
+[02:56] try to get something either new work
+[02:58] done or find out how it's set up. So,
+[03:00] curate the knowledge. Claude will
+[03:03] generate great answers if you give it
+[03:06] the right context. So, don't clutter it
+[03:09] up with stuff that isn't relevant or
+[03:11] isn't up-to-date. So, clean out the old
+[03:14] stuff. Get Claude to clean it out. Tell
+[03:16] it, "Hey, go through this, remove all
+[03:18] the old stuff that's not relevant." You
+[03:20] can point Claude to the right file. So,
+[03:23] I'll say, "Go look at this document and
+[03:25] answer this question." And you can move
+[03:27] any useful chat in with add a project
+[03:30] from the chats menu. If you start
+[03:32] talking, you realize, "Uh-oh, this has
+[03:34] to do with my current project." Just add
+[03:36] the project to the chat and that'll
+[03:38] merge everything together. Now, if
+[03:40] you're on a team or enterprise plan, you
+[03:42] can share these with your other team
+[03:44] members. And so this becomes a great way
+[03:46] for people in your company to work
+[03:48] together to bring context and curate the
+[03:52] context [music] for that problem so that
+[03:54] you get better answers out of Claude.
+[03:57] So, three ways executive views projects,
+[03:59] on board for your board meetings. Great
+[04:02] one. You know, you've got a cadence. You
+[04:03] know, I'm on a local bank board
+[04:06] >> [music]
+[04:06] >> and you know, we have regular meetings
+[04:08] every month and this is a way for me to
+[04:10] keep track of what's going on and be
+[04:13] able to ask Claude questions and get
+[04:15] good answers. Private deal room. Pretty
+[04:18] obvious there. Key account hub. You
+[04:20] could get [music] your sales team to set
+[04:23] up projects for major accounts and
+[04:25] curate the information and then that way
+[04:27] when you're asking Claude to do work for
+[04:29] that account, it'll have a much [music]
+[04:31] better use. So, pick one recurring area
+[04:34] of work and start by using a project for
+[04:38] it.
+[04:38] >> [music]
+[04:38] >> Get comfortable doing this. This is
+[04:40] something that you're going to want to
+[04:41] do. You're going to want people in your
+[04:43] company to do and you're going to want
+[04:44] to share it so that you guys can work
+[04:46] together and make [music] Claude do the
+[04:49] work for you. Hope you enjoyed it and
+[04:51] I'll see you on the next one.

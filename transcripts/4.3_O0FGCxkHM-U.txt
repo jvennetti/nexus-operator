@@ -1,0 +1,82 @@
+[00:02] One of the most useful parts of Claude
+[00:04] Code is the claw.md file.
+[00:06] >> [music]
+[00:08] >> It gives Claude Code persistent memory
+[00:10] about your project.
+[00:11] >> [music]
+[00:13] >> When you open up Claude Code without a
+[00:16] claw.md file, it's like it has to start
+[00:18] fresh every single time. It has to
+[00:21] re-explore your code base, understand
+[00:23] what dependencies are needed, and the
+[00:25] features that are already implemented.
+[00:27] Sometimes it has to make assumptions,
+[00:28] which makes it harder for us to steer
+[00:30] Claude in the right direction. But,
+[00:32] that's where claw.md comes in. It's a
+[00:35] markdown file that you add to the root
+[00:36] of your project, and Claude Code reads
+[00:38] it automatically every time you start a
+[00:40] session. It's like an onboarding script
+[00:42] for your code base.
+[00:44] Simply put, the contents of claw.md file
+[00:47] are appended to your own prompt. You can
+[00:49] run the {slash} init command, which will
+[00:51] make Claude generate one based off of
+[00:52] your code base.
+[00:55] So, let's have a look at one.
+[00:57] This is a Next.js 15 app using the app
+[01:00] router, Tailwind, and Drizzle ORM.
+[01:02] Command, dev server, run tests, lint,
+[01:06] code style, use two-space indentation,
+[01:08] prefer named exports, all API routes go
+[01:11] in app/{slash}api,
+[01:13] use server actions instead of API routes
+[01:14] where possible.
+[01:16] And it's pretty straightforward. Now, if
+[01:18] I ask Claude Code to create a React
+[01:20] component, it knows how to style it with
+[01:22] Tailwind or any other CSS framework that
+[01:25] I'm using. We can see that Claude does a
+[01:27] better job at doing his job right off
+[01:29] the bat versus having to understand
+[01:31] where everything is at first.
+[01:35] And before you ask, the answer is yes.
+[01:37] You share this in your version control
+[01:38] for your team to use, but there's
+[01:40] actually a hierarchy of memory files
+[01:42] depending on who it's for. So, first you
+[01:44] have your project-level claw.md that
+[01:46] lives in the root directory of your
+[01:47] project. You have a user-level claw.md
+[01:51] that lives in your configuration folder.
+[01:53] This one is just for you and goes across
+[01:55] all your projects. So, put your
+[01:57] preferences here, like how you write
+[01:59] code comments.
+[02:01] First, if you have to correct Claude to
+[02:03] do something like always use server
+[02:05] actions instead of API routes, then
+[02:07] explicitly ask Claude to save this to
+[02:09] memory, so that when you come back to
+[02:11] this project, it will know every single
+[02:12] time.
+[02:14] Second, if you have docs in your project
+[02:16] that you want Claude to reference, just
+[02:18] use the @ symbol with the file path.
+[02:21] And third is we recommend you start off
+[02:23] a project without a Claude.md file, you
+[02:26] can see where you have to constantly
+[02:27] course correct the model. This keeps
+[02:29] your Claude.md file compact and contain
+[02:31] only the necessary information that
+[02:34] Claude can work with.
+[02:39] The difference between a frustrating
+[02:40] Claude code session and a productive one
+[02:42] comes down to the context and the
+[02:45] Claude.md file is how you provide that
+[02:46] context.
+[02:49] Start with your stack, your preferences,
+[02:51] and then commands, and
+[02:52] >> [music]
+[02:53] >> just build from there as you go.

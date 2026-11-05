@@ -1,0 +1,70 @@
+[00:01] Hi guys, in this video I'm going to show
+[00:03] you how you can connect CRO to Gmail.
+[00:05] With this connection, you should be able
+[00:07] to manage your emails within CRO. You
+[00:10] can do things like writing draft emails,
+[00:13] sending emails, getting your latest
+[00:15] emails. I went even further to
+[00:18] categorize and reel my emails. There is
+[00:21] so much that you can do. So, let's get
+[00:23] started and see how you can make the
+[00:25] connection. Within your crowd, you're
+[00:27] going to go to your profile and then
+[00:30] you're going to go under settings. Right
+[00:32] here, you are going to look for
+[00:34] customize.
+[00:36] And within customize, you can see that
+[00:38] these are all my connectors. If I want
+[00:40] to add new connectors, then [music] I
+[00:42] can come to search. And in this case,
+[00:44] I'll search for Gmail. This is the
+[00:46] connector that I want. It was created by
+[00:48] Google. So, I'm going to click that. And
+[00:51] then I'm going to connect.
+[00:54] It is going to take me to my Google
+[00:56] account. I have to choose the one that I
+[00:59] want and then I [music] have to approve.
+[01:02] It is showing me the access that I'm
+[01:04] granting and I have to confirm.
+[01:08] After you've done that, it is going to
+[01:09] show you that you are connected. But one
+[01:12] important thing here you can look at are
+[01:14] the tools. So the tools gives you an
+[01:17] idea of the things you can do within
+[01:20] your growth. So you can do things like
+[01:23] create draft, create a filter, create a
+[01:25] label, delete a label, you can forward
+[01:27] an email, get a message, get a thread,
+[01:30] reel a message, re a thread, and uh you
+[01:33] can also reply. There are so many things
+[01:35] that you can do. So what I'm going to do
+[01:38] is I'm going to go under your two
+[01:41] permissions right here. And here you can
+[01:43] see that you can now manage the
+[01:45] permissions that you're giving CR
+[01:47] towards your Gmail account. For example,
+[01:49] if you do not want CO to send emails,
+[01:53] then you can come down here and come
+[01:56] under reply to email, you can either
+[02:00] broke this or say uh give it needs
+[02:03] approval. And what that will do is it is
+[02:06] going to ask you to confirm if it thinks
+[02:09] of sending a message. So that is the
+[02:11] same thing replying to a message,
+[02:13] sending uh send email message. You can
+[02:16] set this uh to approve first before CO
+[02:20] does that. So these are the actual
+[02:23] permissions that are within CRO and you
+[02:25] can manage them as you want.
+[02:28] I'm going to go back and I'm going to
+[02:30] test one command. I'm going to ask it to
+[02:33] fetch my latest email. So right here you
+[02:38] can see it is loading the Gmail
+[02:40] connector and it is searching through
+[02:42] the inbox. It is doing whatever it has
+[02:45] to do to get that email and it has found
+[02:48] the email that um is listened in my
+[02:51] inbox. So that's how you connect uh CR
+[02:54] to your Gmail. Let me know what other
+[02:57] connector you want me to cover. Uh, I'll
+[02:59] see you guys in the next

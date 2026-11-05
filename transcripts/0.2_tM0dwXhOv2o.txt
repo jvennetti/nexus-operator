@@ -1,0 +1,431 @@
+[00:00] Anthropic has completely rebuilt the
+[00:02] Claude desktop app. It has new powerful
+[00:05] features and is better in a bunch of
+[00:07] different ways. It's a big enough change
+[00:09] that one of the engineers who worked on
+[00:11] Claude code said it's basically a Claude
+[00:13] 2.0. There's new artifacts, a new
+[00:16] layout, split view, new ways to
+[00:18] multitask, mods, and a lot more. I'll
+[00:22] cover everything that's new and how to
+[00:23] get the most out of it.
+[00:28] There's been changes all throughout the
+[00:29] desktop app. A big one is that there's
+[00:32] no more co-work tab. That has been
+[00:34] merged into the chat tab. So, now
+[00:36] there's only two tabs, home that
+[00:38] includes chat and co-work, then code. To
+[00:41] get the most out of Claude, you do need
+[00:44] to be using code. That's where you'll
+[00:45] unlock all of its power. And if you've
+[00:47] never used it, don't be scared away by
+[00:49] the word code. You don't need to look at
+[00:52] a single line of code to use it. I've
+[00:54] wondered if they'll eventually change
+[00:55] the name of it at some point. It feels
+[00:57] misnamed since so many people who use
+[00:59] it, myself included, don't know any code
+[01:02] and don't even see the code that comes
+[01:04] out of it. You just chat in natural
+[01:06] language like you do in chat, but while
+[01:08] using the far more capable version of
+[01:10] Claude. And a lot of these new features
+[01:13] make it even easier to use for newcomers
+[01:15] than it already was. Now, I did also put
+[01:17] together a free Claude 2.0 setup kit
+[01:20] that goes with this video. It has a
+[01:22] setup checklist, an interactive tour of
+[01:24] the new layout, prompts for everything I
+[01:26] show, and a starter pack of mods that
+[01:28] I've tested. I'll get to those later,
+[01:30] but you can modify Claude's interface or
+[01:32] functionality any way you want to
+[01:34] customize it to your own workflow. That
+[01:36] resource is free, linked in the
+[01:37] description.
+[01:41] And before those code features, I'll
+[01:43] start with artifacts since these work in
+[01:45] both chat and code. So, anyone can use
+[01:48] them right away. There's some extremely
+[01:50] useful new options in here. And an
+[01:51] artifact is when Claude makes something
+[01:53] substantial that needs a stand-alone
+[01:55] home. When you're chatting, it gets a
+[01:57] dedicated window. It isn't just a text
+[02:00] response. And these are shareable, so
+[02:02] you can show them to your team, present,
+[02:05] download, or do all sorts of things with
+[02:06] them. The new formats they have are
+[02:08] documents, slides, design, dashboard,
+[02:12] and motion. The first two are fairly
+[02:14] straightforward. Docs is like a Google
+[02:16] Docs you can chat with. Slides you can
+[02:18] create and present from Claude or
+[02:20] download as a PowerPoint. Design also
+[02:23] has its own dedicated platform, but that
+[02:25] is shutting down now that they've moved
+[02:27] it into artifacts. This one is extremely
+[02:29] powerful for designing prototypes,
+[02:31] social posts, websites, apps, or any
+[02:34] visual work. I have done multiple full
+[02:36] videos just on design. Dashboards make
+[02:39] charts, numbers, tables from your
+[02:41] sources. But these new dashboards can be
+[02:44] live, pulling in fresh data from your
+[02:46] connectors. Then they'll update when
+[02:48] your data changes. You can connect them
+[02:50] to your analytics, emails, updates,
+[02:52] revenue, and things like that. Then
+[02:54] there's motion. This is how you can make
+[02:56] all sorts of motion graphics and
+[02:58] animations. Claude makes incredible
+[03:01] motion graphics, and it does it all
+[03:02] through code. It doesn't have a normal
+[03:04] AI video generator. But since it's done
+[03:06] all through code, it's really easy and
+[03:08] fast to make specific tweaks to the
+[03:11] output. I use Claude for all the motion
+[03:13] graphics in my videos, including this
+[03:15] one. Although I use it through a full
+[03:16] video editing platform I built with
+[03:18] Claude code. These new artifacts may not
+[03:20] all be available to you yet. Dashboard
+[03:23] and motion are still in beta. I have an
+[03:25] ultra plan and don't have the motion
+[03:27] option available yet, actually. But
+[03:28] they'll be there for at least all the
+[03:30] paid plans over time.
+[03:34] Now, I'm going to move on to some of the
+[03:36] new Claude code features. This is where
+[03:38] things will be the most powerful. I'll
+[03:40] start with some big changes to the
+[03:41] interface that make it a lot easier to
+[03:43] understand everything that's going on.
+[03:45] Then we'll get into the more
+[03:46] function-based stuff. On the top right,
+[03:48] you can open up the new session rail.
+[03:50] This gives a lot of helpful information.
+[03:52] If it's running on your computer or in
+[03:54] the cloud, which folder it's working in,
+[03:56] then remote control you can toggle on
+[03:58] and off. That lets you steer that chat
+[04:00] from your phone. More on that later.
+[04:02] Then context shows you how much of your
+[04:05] 1 million token context window is being
+[04:07] used and what's using it. And a context
+[04:09] window is everything that Claude is
+[04:11] holding in its mind at once. When it
+[04:13] fills up, you can compact it or it will
+[04:16] automatically. Then all the older
+[04:17] details get summarized. Messages is
+[04:20] usually the largest portion, but then
+[04:22] there's your connectors, skills, custom
+[04:24] agents, memory files, plus drop down to
+[04:26] see exactly which of those it's using.
+[04:28] You can see if something in particular
+[04:30] is eating context and audit exactly
+[04:32] what's going on. And down below they do
+[04:34] also have a context ring right next to
+[04:36] the model picker that gives the same
+[04:37] information at a glance without having
+[04:39] to open up the rail. If you want to
+[04:41] click through all of this yourself,
+[04:42] there is an interactive tour of the
+[04:44] whole layout in the setup kit. It'll
+[04:46] make everything a lot easier to
+[04:47] understand what's going on here. You can
+[04:48] open and close that session rail at any
+[04:51] time. Then next to that, you have more
+[04:53] options. Some are already here. There's
+[04:55] the terminal if you need it, changes to
+[04:57] show the history of changes it's made,
+[04:59] the browser where pull up and search the
+[05:01] internet and view websites. Then there's
+[05:04] files that show the full list of files
+[05:06] it's built or is working with. You may
+[05:08] never want to look at those, but for
+[05:09] anyone that was used to an IDE like
+[05:11] cursor or VS code, if you like having
+[05:13] that file structure, it's in here now.
+[05:15] Then on the sidebar on the other side,
+[05:17] this has a new feature that's really
+[05:19] helpful called sections. It's basically
+[05:21] folders for organization, but it's
+[05:23] really nice. Rather than just a group
+[05:25] for everything being worked on within
+[05:27] one location on your computer, you can
+[05:29] group them into different projects or
+[05:30] topics, however you choose. So you click
+[05:33] the three dots and hit move to section,
+[05:35] then create a new section. Once you have
+[05:37] one, you can drag chats in. This has
+[05:39] helped me stay much more organized. And
+[05:41] when Claude is in the middle of working
+[05:43] on something, you typically don't want
+[05:45] to interrupt it, but you may have a
+[05:47] separate question you want to ask. You
+[05:49] can do that in a side chat. So click the
+[05:51] three dots and hit side chat or use
+[05:53] command or control plus. Then it will
+[05:56] open up a chat where you can send off a
+[05:57] quick prompt. That can read the entire
+[06:00] main chat and respond to you without
+[06:02] adding the response to the permanent
+[06:03] chat. These side chats aren't saved
+[06:05] permanently, so if you do quit, it won't
+[06:07] be there when you come back. So, that is
+[06:09] different from a forked chat, which is
+[06:11] also really useful, but forking copies
+[06:14] the chat from that point into a new
+[06:16] chat. So, you can try a different
+[06:17] direction without messing up the
+[06:18] original. There's also a split view.
+[06:21] Right click, then hit open in, then
+[06:23] split view. Then your sessions will be
+[06:25] right next to each other. I'll typically
+[06:27] be working on a few sessions at once,
+[06:29] rather than having to jump between them
+[06:31] on the sidebar, then just waiting to see
+[06:33] which finishes, then jump back and
+[06:34] forth. I'll pull every session I'm
+[06:36] working on up in split view. And I'm not
+[06:38] even sure what the limit is to how many
+[06:40] of these you can have open at once. I
+[06:41] pulled up a ton just to see and didn't
+[06:43] hit the limit, so it's definitely more
+[06:46] than you would ever want. Just a few is
+[06:48] typically all I have open.
+[06:50] >> [music]
+[06:52] >> There's some new options that make it
+[06:53] simpler to keep Claude running while
+[06:55] you're not at your computer or while
+[06:57] your computer is closed. Remote control
+[06:59] is where you can see your session and
+[07:01] steer it from your phone. They made it a
+[07:03] lot easier to switch this on. In a
+[07:05] session, they have the toggle I showed
+[07:07] earlier, where you can just switch it
+[07:09] on, or if you go into your settings,
+[07:11] there's also a toggle there that says
+[07:13] connect new sessions to remote control.
+[07:15] Then it will be on automatically for
+[07:16] every new session you start on that
+[07:18] computer. Then on your phone, it shows
+[07:20] up in the Claude app under code, and you
+[07:22] can reply or approve things right there.
+[07:24] I use remote control all the time. It's
+[07:27] amazing. And I love having the option to
+[07:29] do this for all of them, so I don't have
+[07:30] to remember to switch it on. Then lower
+[07:32] in your settings, you'll see the keep
+[07:33] computer awake while Claude works
+[07:35] option. This is another big quality of
+[07:37] life setting. You could ask Claude to do
+[07:39] this before, but it was definitely easy
+[07:41] to forget. I'd keep my computer settings
+[07:43] to never go to sleep unless I did it
+[07:45] manually for when I go out, or a lot of
+[07:47] the time I'll have it working on
+[07:48] something big right before I go to bed.
+[07:50] Now I can switch this on and leave my
+[07:52] computer settings to go to sleep after a
+[07:54] certain amount of time. Then Claude will
+[07:56] keep it awake the whole time it's
+[07:58] working, but when it's done, my computer
+[08:00] will be able to go to sleep instead of
+[08:02] staying up all night. That option is
+[08:04] available session by session as well,
+[08:06] but I leave it on in my main settings,
+[08:08] so it's on all the time. You can also
+[08:10] run sessions in the cloud, so they'll
+[08:12] keep going while your laptop is closed.
+[08:15] When you start a session, you can pick
+[08:16] cloud instead of your computer. They
+[08:18] won't be able to see the files on your
+[08:20] computer, but a lot of the time you'll
+[08:22] have a GitHub repo for something you're
+[08:24] building. It can just work from that
+[08:26] while your computer's off. These
+[08:27] features to keep things running longer
+[08:29] and while you're away are all really
+[08:31] helpful, especially if you use {forward
+[08:33] slash} a goal, which I regularly do.
+[08:36] That's where you give Claude the finish
+[08:37] line, then it keeps working until it can
+[08:39] verify it's completed it. That saves a
+[08:42] lot of follow-up prompts since Claude
+[08:44] just checks its own work, then keeps
+[08:46] working and changing until it gets
+[08:48] there. But, it can run for a long time
+[08:50] when you work this way. So, having an
+[08:52] easy way to keep your computer on is
+[08:54] nice. Just make sure if you use this
+[08:56] that you write a finish line that Claude
+[08:57] can actually check. Don't use something
+[08:59] vague like, "Make it great." So, with a
+[09:02] goal set and remote control on, I can
+[09:04] give it a finish line, walk away, and
+[09:06] just check in from my phone.
+[09:11] These next features are all really
+[09:13] powerful new ways for Claude to
+[09:14] multitask better. There are three
+[09:16] different ways Claude now runs more than
+[09:18] one session, and they're for different
+[09:20] things, although a couple of them seem
+[09:22] similar. Nested sessions let Claude
+[09:24] split a big job into sub-sessions that
+[09:27] run in parallel and report back to the
+[09:29] main chat. Claude has used sub-agents to
+[09:31] run things in parallel for a long time
+[09:33] now, but with nested sessions, each
+[09:35] piece runs as its own chat nested under
+[09:38] the main one. So, you can see it and
+[09:40] follow up with that chat directly. It
+[09:42] could be researching five different
+[09:44] competitors all running at once in
+[09:45] separate nested sessions. The main chat
+[09:48] combines those results, but you could
+[09:50] ask follow-ups about one specific
+[09:52] competitor without clogging up that main
+[09:54] chat. And you can just ask for these
+[09:56] like, "Split this into separate sessions
+[09:58] for each competitor." Or, Claude will
+[09:59] sometimes offer it with a task chip. The
+[10:02] task chips are basically Claude will
+[10:04] notice related work, then pop up a card,
+[10:06] then if you hit start, it opens it up as
+[10:08] a nested session under the chat. Now, a
+[10:10] master session is one pinned chat that
+[10:13] acts as your control center for all the
+[10:15] others. This isn't a dedicated feature.
+[10:17] There's not like a button for this, but
+[10:19] it's a new technique people have been
+[10:21] using. That's because every code chat
+[10:23] can now see and manage your other chats.
+[10:25] So, you pick one chat and make it your
+[10:27] control center. Then you can pin that to
+[10:29] the top, or you could just make a new
+[10:31] section and add that to the top. Then
+[10:33] you can have it help orchestrate all
+[10:35] your other sessions. If you ask, "What's
+[10:37] waiting on me?" it can check all your
+[10:38] other sessions and the list which are
+[10:40] finished or need approvals, or which are
+[10:42] still working. It can start, rename,
+[10:44] sort, and send messages to the other
+[10:45] sessions. Like I have a build that has a
+[10:48] bunch of different pieces to it, and
+[10:50] those are each in different chats, but I
+[10:52] have one master session to interact with
+[10:54] so I don't have to dig through the
+[10:55] different chats to find what I was
+[10:57] doing. You can even have a master
+[10:59] session for each project. Then a
+[11:01] separate master session for your whole
+[11:03] Claude code if you want. And by default,
+[11:05] it sees your 20 most recent sessions,
+[11:08] and you have to ask explicitly if it
+[11:09] needs to look further back. Also, it
+[11:11] only sees sessions on your computer, not
+[11:13] ones running in the cloud. Now, projects
+[11:15] is a new feature in Claude code that
+[11:18] gets confusing because there's a
+[11:19] separate feature called projects in
+[11:21] chat, but this one works differently.
+[11:23] So, projects also do have a main chat
+[11:25] that acts like a team lead and briefs
+[11:27] separate threads that each do one piece
+[11:29] of the work, similar to nested sessions.
+[11:31] But there are two big differences. With
+[11:34] projects, those threads run in the cloud
+[11:36] by default, so they keep going with your
+[11:38] laptop closed. Although you can ask for
+[11:40] one to run locally. And every new thread
+[11:43] starts with the project's instructions
+[11:45] in memory, where a nested session only
+[11:47] gets what the main chat tells it. Then
+[11:49] it also has an overview that shows
+[11:51] what's waiting on you, plus a library of
+[11:53] every file. So, projects have Claude as
+[11:56] an orchestrator working towards your
+[11:57] goal, and it will produce separate
+[11:59] threads in the cloud or locally that
+[12:01] each have the project's context and
+[12:03] memory. These are in beta, so you may
+[12:06] not see them yet. Again, all of these
+[12:07] features will roll out to everyone over
+[12:09] time. But to summarize these, nested
+[12:11] sessions are for side jobs. A master
+[12:14] session is for managing what's already
+[12:16] running, and projects are for ongoing
+[12:18] work where every chat shares the same
+[12:20] memory and can keep going in the cloud.
+[12:23] Now, if you're still not sure which one
+[12:24] to use, the setup kit has a quick
+[12:27] three-question picker that tells you.
+[12:28] Plus, copy-paste prompts to start each
+[12:30] one.
+[12:34] Mods are an awesome new feature where
+[12:36] you can modify your own personal Claude
+[12:39] app to add features, change the
+[12:41] interface, or make it work more to how
+[12:43] you want it to. You can change anything
+[12:45] just by describing it to Claude. That
+[12:47] could be a new type of side panel or
+[12:49] status bar, different pop-up
+[12:51] notifications, or things much more
+[12:52] elaborate or random. Just like Jared
+[12:55] Watts on X made one that connects you to
+[12:57] a multiplayer Doom server while Claude
+[12:59] is busy. So, you just open up a code
+[13:01] session and say something like, "Make me
+[13:03] a mod that does this." And it will build
+[13:05] it into the app. One I've found really
+[13:07] useful is one I saw on Nate Hurk make.
+[13:10] Uh it keeps your prompt cache warm. For
+[13:12] every message you send, Claude rereads
+[13:14] the whole conversation. The cache is a
+[13:16] saved copy of what it already read. So,
+[13:18] rereading uses a lot less tokens. But,
+[13:21] this goes cold after an hour. So, coming
+[13:23] back to an old chat means Claude has to
+[13:25] reread the whole thing. But, he built a
+[13:28] mod that keeps that prompt cache warm.
+[13:30] Basically, it sends a tiny message right
+[13:32] before the cache expires. That costs a
+[13:34] lot less than having Claude reread a
+[13:36] long chat history from scratch. That
+[13:38] one's really useful, so I added it to
+[13:40] the mod starter pack that's in my setup
+[13:42] kit. There's that one and seven others
+[13:44] that I tested. These aren't ones that I
+[13:46] built, but they're mods I either found
+[13:48] on GitHub and tested or official
+[13:50] Anthropic mods. There's blast radius,
+[13:52] which steps in before Claude runs
+[13:54] something destructive, like deleting a
+[13:56] folder or something, and then it shows
+[13:57] you exactly what would be lost with a
+[13:59] button to cancel. And recording mode is
+[14:01] another great one for me. It hides
+[14:03] things like your API keys or email
+[14:05] addresses that are on screen. That way
+[14:07] it's hidden while I'm doing a screen
+[14:09] recording. Super easy to switch on and
+[14:11] off. In that guide, each one of these
+[14:13] has a prompt you can copy and paste into
+[14:15] Claude, and that will install it for
+[14:16] you. And there is a lot more you can do
+[14:18] with mods. You can completely reshape
+[14:21] the Claude app around how you work.
+[14:23] So, that was a ton of new features. Is
+[14:25] this really enough to call it a Claude
+[14:27] 2.0? For how I use it, I would say yes.
+[14:30] Like the combination of all of these new
+[14:31] features is a massive change for me,
+[14:34] especially being able to mod it and to
+[14:36] multitask better. You know, plus just
+[14:37] the difference in the layout and just
+[14:39] countless quality of life improvements.
+[14:41] It feels like a whole new and better
+[14:43] Claude for me.

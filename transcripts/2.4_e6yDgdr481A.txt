@@ -1,0 +1,240 @@
+[00:00] In this video, I'm going to show you
+[00:01] exactly how to use Claude projects as a
+[00:04] complete beginner, step-by-step. We'll
+[00:06] create a workspace, add reference files,
+[00:09] and use Claude to plan real work without
+[00:11] losing important conversations.
+[00:13] Here's what you can expect from this
+[00:14] video. First, we'll create a project and
+[00:17] set instructions. [music]
+[00:18] Next, we'll upload files and use them in
+[00:20] new chats.
+[00:22] Then, we'll organize conversations and
+[00:24] move in older chat. Finally, we'll
+[00:26] update our files, create a Word
+[00:28] document, and star the project. So,
+[00:31] without wasting any more time, let's get
+[00:33] started.
+[00:36] First, we'll create a workspace for our
+[00:38] content studio and set instructions that
+[00:41] Claude can follow whenever we open a new
+[00:43] conversation inside it.
+[00:45] Open Claude desktop and sign in. I'm on
+[00:47] a Mac, but you can also follow along on
+[00:49] the web. Choose chat rather than code or
+[00:52] co-work, since we're using regular chat
+[00:54] projects.
+[00:55] In the sidebar, click projects, then new
+[00:59] project. Name it Brightframe content
+[01:02] studio. For description, enter plan and
+[01:06] manage beginner-friendly software
+[01:08] tutorials. Click create project. Find
+[01:11] the chats area and project knowledge on
+[01:14] the right. Click the add button beside
+[01:16] instructions and paste these rules for
+[01:18] our content studio. Click save
+[01:20] instructions. They'll apply throughout
+[01:23] this project. Unlike the project
+[01:25] description, these instructions actually
+[01:28] guide Claude's responses. Reopen the
+[01:31] instructions editor and point out the
+[01:32] rule about screen-recordable actions. We
+[01:35] can edit these rules whenever the
+[01:36] project's needs change. Close it without
+[01:39] making changes. Our first chat will use
+[01:42] these rules automatically. Select new
+[01:45] chat inside the project, then paste this
+[01:48] prompt. Send it and look through the
+[01:50] titles and demonstrations. Then, follow
+[01:53] up in the same chat with this prompt.
+[01:57] Compare the hook with our instructions.
+[01:59] If it's too formal, type "Make it sound
+[02:03] more conversational."
+[02:05] The response updates in the same
+[02:06] conversation.
+[02:08] Return to the project page.
+[02:10] Find the chat in the list and rename it
+[02:13] "Tutorial Ideas" through its menu, if
+[02:17] available.
+[02:18] Now, we'll add the actual studio files.
+[02:21] Open "Tutorial Ideas" once more and
+[02:24] scroll to the revised hook, then return
+[02:26] to the overview.
+[02:28] The conversation stays saved for future
+[02:31] edits.
+[02:35] Next, we'll add two small files to the
+[02:37] project's shared knowledge area, then
+[02:40] test whether a brand new chat can answer
+[02:42] questions from them accurately.
+[02:44] Open our sample files folder. There are
+[02:46] three text files.
+[02:48] We'll upload "Studio Brief.txt"
+[02:52] and "Publishing Plan.txt" first and use
+[02:56] the updated plan later.
+[02:58] Open "Studio Brief.txt".
+[03:02] It says "Our audience is students and
+[03:04] small business owners. Our videos run 6
+[03:06] to 9 minutes and our colors are navy and
+[03:09] orange." Notice that there's no assigned
+[03:12] editor or filming deadline. Return to
+[03:14] Claude.
+[03:15] In the project knowledge section, click
+[03:17] "Add" beside content and upload "Studio
+[03:20] Brief.txt",
+[03:22] then "Publishing Plan.txt".
+[03:25] Confirm that both file names appear.
+[03:28] These are project-wide references, not
+[03:31] attachments for one conversation.
+[03:34] Open "Publishing Plan.txt".
+[03:37] Monday's task manager tutorial is in
+[03:40] script draft.
+[03:41] Wednesday's cloud storage tutorial is in
+[03:44] research.
+[03:45] And Friday's spreadsheet dashboard is in
+[03:47] planning.
+[03:49] Monday and Wednesday are high priority.
+[03:51] Friday is medium. Keep it handy for
+[03:53] checking results. Start a new
+[03:54] Brightframe chat. Our brainstorming
+[03:57] messages aren't here, but the shared
+[03:59] files are. Enter a question using both
+[04:02] sources.
+[04:03] Check the table. Audience and colors
+[04:06] should reference studio brief, while
+[04:08] Wednesday's tutorial should reference
+[04:11] publishing plan.
+[04:12] Open those files again to confirm. We
+[04:15] want answers grounded in our sources,
+[04:17] not guesses.
+[04:18] Point to both file names in project
+[04:20] knowledge. We didn't re-upload them or
+[04:23] paste their contents into this new chat.
+[04:25] The files are available across the
+[04:27] project, even when we start a different
+[04:30] conversation about another task. Now try
+[04:33] a production checklist. Inspect the
+[04:36] checklist for separate preparation,
+[04:38] recording, and review tasks.
+[04:41] Our file gives weekdays, not calendar
+[04:44] dates or filming times. If Claude
+[04:46] inserts a deadline, ask it to remove
+[04:49] unsupported dates and keep Monday,
+[04:52] Wednesday, and Friday. Open publishing
+[04:55] plan.txt
+[04:57] to check the next actions. Monday needs
+[04:59] a script review, Wednesday needs
+[05:01] interface research, and Friday needs a
+[05:03] sample data set.
+[05:05] Return to Claude and compare its
+[05:06] checklist with those lines.
+[05:08] Ask it to show only high priority tasks
+[05:11] if the checklist feels crowded. Let's
+[05:13] check what's missing.
+[05:17] Check the unanswered questions. There's
+[05:19] no assigned editor or filming deadline
+[05:21] in these files.
+[05:23] Rather than making up those facts,
+[05:25] Claude can flag them for us. Next, we'll
+[05:27] separate the planning conversations.
+[05:33] Now we'll split scheduling and recording
+[05:35] into separate conversations, then bring
+[05:37] an existing standalone chat into the
+[05:40] same project. From the Brightframe
+[05:42] project page, start a new chat for our
+[05:44] weekly schedule. Paste this prompt.
+[05:49] Check the rows.
+[05:50] Script draft on Monday,
+[05:53] research on Wednesday,
+[05:55] planning on Friday. Next actions should
+[05:58] include script review, interface
+[06:01] research, and selecting a sample data
+[06:03] set.
+[06:04] Compare them with the source if anything
+[06:07] looks wrong.
+[06:08] Ask Claude to sort by priority without
+[06:10] changing the planned weekdays.
+[06:13] Rename the chat weekly schedule.
+[06:18] Return to the project and create another
+[06:20] new chat. This time we'll focus on just
+[06:23] one video.
+[06:24] Enter the next prompt.
+[06:26] Inspect the checklist. It should focus
+[06:28] on actions we can show
+[06:31] without inventing an app's buttons.
+[06:33] Rename the chat Wednesday recording.
+[06:37] Switch between it and weekly schedule.
+[06:40] Both use the shared files, but keep
+[06:43] different tasks separate. Now go outside
+[06:46] the project to the main chat area, start
+[06:48] a standalone chat, and enter this
+[06:50] prompt.
+[06:52] Find that conversation in chat history
+[06:55] and rename it desktop file ideas.
+[06:58] Open its menu, choose add to project,
+[07:01] and select Brightframe Content Studio.
+[07:04] Back inside Brightframe, find the moved
+[07:06] conversation.
+[07:08] Open the moved chat. The original five
+[07:10] titles are still here.
+[07:12] Ask Claude to rewrite them for
+[07:14] Brightframe's audience and compare the
+[07:16] results. This conversation now uses the
+[07:19] project's instructions and knowledge.
+[07:21] From the project chat list, open
+[07:23] tutorial ideas, then desktop file ideas.
+[07:29] They sit in one workspace despite
+[07:31] starting separately.
+[07:33] Open weekly schedule two and confirm its
+[07:36] table is still there.
+[07:38] The chats keep their own histories.
+[07:43] Finally, we'll replace outdated project
+[07:45] information, generate a Word document
+[07:47] from the latest plan, and make the
+[07:49] project easy to reopen later.
+[07:52] Open the original publishing plan.txt
+[07:56] and find Friday's planning status.
+[07:59] Now open publishing plan updated.txt.
+[08:04] Friday is ready to record with recording
+[08:06] the dashboard demonstration as the next
+[08:09] action.
+[08:10] Monday and Wednesday haven't changed.
+[08:13] In Claude, upload publishing,
+[08:16] plan,
+[08:17] updated.txt
+[08:19] to project knowledge. Remove the old
+[08:22] schedule through its file menu if
+[08:24] available,
+[08:25] avoiding conflicting information.
+[08:27] Keep studio.brief.txt.
+[08:30] Start a fresh chat and paste this
+[08:32] prompt. Check Friday's row for ready to
+[08:35] record. Monday should remain script
+[08:38] draft and Wednesday research. Compare
+[08:41] against the updated file to verify.
+[08:44] Next, ask for a finished Word document.
+[08:47] Open the generated document, check the
+[08:49] three titles and statuses, and confirm
+[08:52] navy and orange are listed.
+[08:54] Missing filming dates should be marked
+[08:56] unspecified.
+[08:58] If an editor's name appears, ask Claude
+[09:01] to remove it.
+[09:03] Download the Word file and open it check
+[09:05] the formatting.
+[09:08] In the Word file, find Friday's row,
+[09:11] ready to record, with the dashboard
+[09:14] recording as its next action. Compare it
+[09:16] with the updated text file. Return to
+[09:19] Claude. The sources stay in project
+[09:21] knowledge, and the Word file remains
+[09:23] available in the chat.
+[09:25] Return to the projects list and reopen
+[09:28] Brightframe from start items. Open
+[09:30] weekly schedule and show the updated
+[09:32] knowledge files. On an individual plan,
+[09:35] we'll keep Brightframe personal.
+[09:38] Team and enterprise plans also support
+[09:40] project sharing.
+[09:42] And that's how to organize work with
+[09:44] Claude projects. Thanks for watching,
+[09:46] and I'll see you in the next

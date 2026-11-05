@@ -1,0 +1,13 @@
+[00:01] Claude gets dramatically more useful when it can see your email, your calendar, and your files. That's what connectors do.
+[00:09] In this video: what connectors are, how to turn them on, and five things to try once they're connected.
+[00:16] A connector links Claude to an app you already use. Once connected, Claude can search it, read from it, and take actions in it.
+[00:26] It only ever sees what you can see yourself, and by default it asks before doing anything that sends, deletes, or shares. Connectors are available on every plan.
+[00:38] Setup takes a minute. Click the plus button in any chat, hover over Connectors, and choose Manage connectors. Browse the directory, pick one, and click Connect.
+[00:50] You'll sign in to that app once. After that, toggle it on for any chat from the plus menu.
+[00:56] Try one: Gmail. Ask Claude to find a specific email, summarize a long thread, or draft a reply. It drafts, and you approve before anything goes out.
+[01:08] Try two: calendar. Ask what your week looks like, find a time that works for two people, or have Claude create and move events.
+[01:17] Try three: Drive and Docs. Claude can search your Drive, read documents and spreadsheets, and with the Docs and Sheets connectors, edit them live in a pane beside the chat.
+[01:29] Try four: Slack. Catch up on a busy channel or post an update. And there are many more connectors, like Microsoft 365, Notion, and GitHub.
+[01:40] Try five, and this is the big one: research mode can search across all your connected apps at once. Say prep me for Monday using my email and calendar, and Claude builds the brief.
+[01:51] Connect your apps once, and from then on your email, calendar, and files are one question away.
+[01:58] Next time: research mode, how to get cited answers on anything. Subscribe so you don't miss it, and thanks for watching.

@@ -1,0 +1,71 @@
+[00:00] In this video, you'll learn how to use Claude  Connectors step by step. With Connectors,  
+[00:06] you could connect Claude to services like Gmail,  Google Calendar, Notion, and more. For example,  
+[00:11] you could ask Claude if there are any  high-priority emails in your Gmail inbox.  
+[00:15] You could then ask Claude to draft a response,  and you could do all of this directly from the  
+[00:19] Claude Chat interface. We'll start by connecting  Claude to Gmail. Then I'll show you how to connect  
+[00:26] Claude to thousands of additional apps. Let's dive  in. To get started, open Claude, and over on the  
+[00:32] left-hand side, let's click on Customize. Within  the Customize pane, click on Connectors, and at  
+[00:39] the top of the Connectors pane, let's click on  this plus icon to add a new connector, and right  
+[00:43] here, let's browse connectors. Here, you'll see  all the different services that Claude can connect  
+[00:48] to. In fact, there are over 200 different services  available. If we go to the top of the list here,  
+[00:53] you'll see some of the more popular options.  Here we have Canva, Microsoft 365, Figma, Notion,  
+[00:59] Gmail, Google Drive, and the list goes on and  on. Now, let's connect Gmail. So right over here,  
+[01:05] I'll click on this plus icon. On this screen,  let's click on Continue. When you connect Gmail,  
+[01:09] you'll need to grant Claude permission to access  your account. If you're comfortable with all these  
+[01:14] different permissions, here at the top, click  on Select All, and then down at the bottom,  
+[01:17] click on Continue again. Now that we've added the  connection, you'll see Gmail right up here as one  
+[01:21] of our new connectors. Now, by default, Claude has  access to read-only tools. So, this is things like  
+[01:28] searching your inbox or summarizing email threads.  For any of the actions that modify your account,  
+[01:34] as an example, creating, let's say, an email  draft, you'll have to give your approval before  
+[01:39] taking action. Of course, you can always come in  here and change these settings later on. For now,  
+[01:44] I'm going to leave them as is. If you look  through this list here, it'll give you an idea of  
+[01:49] the types of things that Claude can do with your  Gmail. Let's now go back to the main chat window  
+[01:54] to test this out. Over on the left-hand side,  let's click on New Chat. Back here in the chat,  
+[01:59] I'll enter in my prompt, review my inbox, and  tell me if there are any high-priority emails that  
+[02:04] require my attention. Then let's run that. Right  here, it says that one email actually stands out,  
+[02:09] and this one's pretty funny. Now, I run a small  business called the Kevin Cookie Company, and  
+[02:13] it looks like delivery pigeons ate this shipment  instead of delivering it. Now, I don't know why  
+[02:18] Claude thinks that's funny. That's probably a very  upset customer. Now, notice that Claude doesn't  
+[02:23] simply list every single unread email. Instead,  it's identifying the most important message. Here,  
+[02:29] it's also explaining why it's important, and  it's separating it from all of the lower-priority  
+[02:34] emails that I could review later. Now, let's take  this a step further and see if Claude can actually  
+[02:39] take action. So down below, I'll ask if they could  draft a response to Patti, and then right over  
+[02:43] here, let's send that. Right here, Claude reviews  the email thread. It also drafted a response,  
+[02:48] and then it saved it in my Gmail account. Let's  now switch over to Gmail to verify that it worked.  
+[02:53] Here in Gmail, I could see the original message  from Patti, and down below, I can see the draft  
+[02:58] that Claude created for me. Now, if needed, I  can make any changes that I'd like to this draft,  
+[03:03] and once everything looks good, down below, I  can send it. The Gmail connector works well,  
+[03:07] but what if the app you want to use doesn't have a  built-in connector? Or maybe you want Claude to do  
+[03:14] more than simply create a draft. For example,  what if you want Claude to send the email?  
+[03:19] That's where Zapier MCP comes in, the sponsor  of today's video. It allows Claude to connect  
+[03:24] to thousands of additional apps and take actions  across those apps. The nice thing is that Zapier  
+[03:29] MCP is available even on Zapier's free plan. Let's  see how it works. Head to the following website,  
+[03:34] and then create a free Zapier account. Once you're  signed in, right here, let's click on MCP. First,  
+[03:40] we need to connect Claude to Zapier. Right  over here, I'll click on Claude. Here, let's  
+[03:45] copy this prompt, and then let's open Claude.  Let's now paste in the prompt that we copied,  
+[03:49] and right over here, let's run it. Here, let's  click on Connect. Next, let's copy this prompt,  
+[03:53] and then click on Continue. Here, let's click  on Allow, and right up above, I can see that  
+[03:58] we're now connected. Down below, let's now type  in that prompt and then run it. Now that Zapier  
+[04:02] is connected to Claude, let's go back to Zapier so  we can add the apps that we want Claude to access.  
+[04:08] Back here in Zapier, over on the left-hand side,  you'll see that we now have a Claude MCP server.  
+[04:12] Let's click on that. Over on the right-hand side,  let's click on Add Apps. Here, you can connect to  
+[04:17] over 9,000 different apps, far more than what's  available through Claude's built-in connectors.  
+[04:22] Now, I want to connect to Gmail, so right up  above, I'll click on this. One thing you'll notice  
+[04:25] is that Zapier gives Claude access to many more  actions. So along with creating a draft email,  
+[04:31] right down here, I could also send an email. Now,  one thing I like is that I can choose exactly  
+[04:36] which actions Claude has access to. For example,  I could allow Claude to read my email, but prevent  
+[04:40] it from sending messages, if that's what I'd like  to do. Now, right up on top, I'll click on Select  
+[04:45] All Tools, and then down in the bottom right-hand  corner, let's connect. And here again, I'll click  
+[04:50] on Connect. Down at the bottom, let's add the  tools. Now, let's switch back to Claude. Let's  
+[04:54] try that same workflow again, but this time using  Zapier. So, let's see if I can review my inbox,  
+[04:59] and over here, let's run that. Just like before,  Claude reviews my inbox, and here it finds that  
+[05:04] message that needs my attention. But this time,  let's take action. Down below, I'll ask it to send  
+[05:09] a response to Patti, letting her know that we'll  discuss the delivery issue in tomorrow's meeting,  
+[05:14] and then let's run that. Right up there, I can  see that it now sent the message. Unlike the  
+[05:18] native Gmail connector, which created a draft  for me to review, Zapier can actually send the  
+[05:23] email. Let's now switch over to Gmail to confirm.  Here, I can see that Claude successfully sent the  
+[05:28] message. Let's now go back to Zapier. Up on  top, let's now click into History. And here,  
+[05:33] I can see a record of all the different actions  that Claude has taken using my connected app.  
+[05:38] Right up on top, let's switch back into Apps.  Now, if I want to make Claude even more powerful,  
+[05:43] right over here, let's click on Add Apps, and  here, I can connect additional services. And  
+[05:48] that's how you can use Claude connectors. Thanks  for watching, and I'll see you in the next video.

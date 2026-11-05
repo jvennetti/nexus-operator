@@ -1,0 +1,205 @@
+[00:00] Welcome to In Theory Only. This is a
+[00:02] hands-on walk-through of Claude
+[00:03] projects, from building your first one
+[00:06] to the limits that trip people up,
+[00:07] straight from Anthropic's help pages.
+[00:10] According to Anthropic's help center, a
+[00:12] Claude project is a self-contained
+[00:14] workspace with its own chat history and
+[00:17] its own knowledge base. You add files
+[00:19] and instructions once, and every chat
+[00:22] inside it starts with that background.
+[00:24] We checked these steps on October 19th.
+[00:27] Anthropic describes projects as a place
+[00:29] to upload documents, give context, and
+[00:32] have focused chats with Claude. Claude
+[00:34] uses the files you add to understand the
+[00:36] background of chats in that project.
+[00:39] Each project can also carry its own
+[00:41] instructions. Anthropic's examples are
+[00:43] asking for a more formal tone, or having
+[00:46] Claude answer from the perspective of a
+[00:47] particular role or industry.
+[00:50] You do not need a paid plan to start.
+[00:52] The help center says projects are
+[00:53] available to all users, including free
+[00:56] accounts, and that free users can create
+[00:58] up to five projects.
+[01:00] Anthropic says a new beta version of
+[01:02] projects is rolling out in stages,
+[01:04] starting with select Pro and Max
+[01:06] subscribers who use Claude code. Chat,
+[01:09] co-work, team, and enterprise follow.
+[01:12] This guide uses the current pages.
+[01:15] Here are the first three steps on the
+[01:16] Claude website, according to Anthropic's
+[01:18] help page on creating and managing
+[01:20] projects.
+[01:22] None of it needs a paid plan for your
+[01:23] first five projects.
+[01:25] Hover over the left side of your Claude
+[01:27] account and click projects.
+[01:29] Or go straight there by typing
+[01:31] claude.ai/projects
+[01:34] into your web browser.
+[01:36] In the upper right corner of the
+[01:38] projects page, click the button labeled
+[01:40] new project. This opens the setup
+[01:42] screen, where you describe what your new
+[01:44] workspace is for.
+[01:46] Give the project a name and a
+[01:47] description.
+[01:49] One detail worth knowing. Anthropic says
+[01:52] Claude does not have access to these
+[01:53] details, so anything Claude must know
+[01:56] belongs in instructions or files
+[01:58] instead.
+[01:59] On a team or enterprise plan, there is
+[02:01] one extra choice.
+[02:03] You decide whether the project is
+[02:04] private or shared with your whole
+[02:06] organization where admins have enabled
+[02:08] that option.
+[02:10] With the empty project open, the next
+[02:12] two steps give Claude something to work
+[02:14] with. Anthropic's help center describes
+[02:17] two places to do that, project knowledge
+[02:19] and project instructions. After that,
+[02:21] you simply start chatting inside the
+[02:23] project.
+[02:25] On the project's main page, click the
+[02:26] plus button to upload documents, text
+[02:29] files, or code snippets. Claude uses
+[02:31] them as context in every chat in that
+[02:33] project, so you do not need to attach
+[02:35] them again.
+[02:36] Anthropic's upload page lists PDF, Word,
+[02:40] CSV, plain text, HTML, EPUB, and JSON
+[02:44] files, plus spreadsheets and common
+[02:47] image formats. Excel files need code
+[02:49] execution and file creation turned on in
+[02:52] your account.
+[02:54] Click set project instructions, write
+[02:56] how you want Claude to respond, and
+[02:58] save.
+[02:59] These instructions apply to all chats in
+[03:01] that project, so this is where a tone, a
+[03:03] format, or a role belongs.
+[03:06] Now, start a chat inside the project. To
+[03:09] bring in an older conversation, click
+[03:11] the drop-down arrow next to its name and
+[03:13] choose add to project. The same menu
+[03:16] removes or moves it later.
+[03:18] Anthropic's upload page explains most of
+[03:21] the limits you will run into.
+[03:23] The short version, a project can hold
+[03:25] any number of files, but the text inside
+[03:27] them and the size of each one both
+[03:29] matter.
+[03:31] The help center says the number of
+[03:32] project files is unlimited, but the
+[03:34] total content must fit within Claude's
+[03:36] context window. Additional token limits
+[03:39] can apply based on the length of the
+[03:41] extracted content.
+[03:43] A file uploaded straight into a chat can
+[03:45] be up to 500 MB, but a project file is
+[03:48] capped at 30 MB. If a large file will
+[03:51] not go in, check that cap first.
+[03:54] Anthropic says project files go through
+[03:56] text extraction only with multimodal
+[03:58] PDFs as the exception. A single chat, by
+[04:01] contrast, can take up to 20 attached
+[04:04] files at once.
+[04:05] When project knowledge nears the context
+[04:07] limit, paid plans get help. Anthropic
+[04:10] says rag on pro, max, team, and
+[04:13] enterprise switches on automatically and
+[04:15] can expand a project's capacity by up to
+[04:17] 10 times.
+[04:20] Once a project is running, a few
+[04:21] settings decide how it behaves.
+[04:23] According to Anthropic's help pages,
+[04:25] each project keeps its own memory, and
+[04:28] you can pin a project, park it, or
+[04:30] remove it.
+[04:31] Inside a project, Claude uses that
+[04:33] project's memory together with your
+[04:35] memory from chats outside projects, but
+[04:37] not memory from other projects. New
+[04:40] memories made in the project are saved
+[04:42] to that project.
+[04:44] To isolate a project, open its page and
+[04:46] turn off use account memory under
+[04:49] memory. To skip memory for a single
+[04:51] chat, turn off memory in the plus menu
+[04:54] before you send your first message.
+[04:56] Starring a project puts it in the left
+[04:58] side panel. Archiving moves it to the
+[05:00] bottom of your list and keeps its chats,
+[05:02] members, and knowledge. To delete an
+[05:04] archived project, unarchive it first.
+[05:07] For large projects, Anthropic suggests
+[05:10] adding all relevant files up front,
+[05:12] using clear file names, grouping related
+[05:15] documents in one project, and naming
+[05:17] specific documents when you ask a
+[05:18] question.
+[05:20] If Claude projects does not suit you,
+[05:22] one alternative works in a similar way.
+[05:25] Projects in chat GPT. Here's how it
+[05:27] compares based on OpenAI's own help
+[05:29] page.
+[05:31] OpenAI's help page says the free plan
+[05:33] gets five files per project. Go and plus
+[05:37] get 25. And edu, pro, business, and
+[05:40] enterprise get 40. Only 10 files can be
+[05:44] uploaded at the same time.
+[05:46] In chat GPT, you select new project in
+[05:48] the sidebar, then enter a name and pick
+[05:51] an icon and a color.
+[05:53] Instructions live under project settings
+[05:55] in the more options menu and override
+[05:57] your global custom instructions.
+[06:00] One difference stands out. Open AI lists
+[06:02] project sharing on free, go, plus, and
+[06:05] pro, as well as business plans, with
+[06:07] five collaborators on free.
+[06:09] Anthropic's pages describe Claude
+[06:11] project sharing for team and enterprise.
+[06:13] Each chat GPT project uses default
+[06:16] memory or project-only memory.
+[06:19] With project-only memory, saved memories
+[06:21] are not referenced and chats cannot
+[06:23] reference conversations outside the
+[06:25] project. Shared projects always use
+[06:28] project-only memory.
+[06:31] I will read, "Claude projects is worth
+[06:33] setting up if you keep returning to the
+[06:35] same documents or the same kind of task.
+[06:37] The setup is five short steps and a free
+[06:39] account can try it on up to five
+[06:41] projects.
+[06:42] In our view, the payoff is not
+[06:44] explaining yourself again.
+[06:46] A project holding your style guide, a
+[06:48] reading list, or a code base, plus clear
+[06:51] instructions, starts every chat with
+[06:53] that context in place.
+[06:55] The catch, in our view, is size.
+[06:58] Free accounts stop at five projects and
+[07:00] do not get the rag boost, and project
+[07:02] files are capped at 30 megabytes. So,
+[07:05] very large libraries suit a paid plan
+[07:07] better.
+[07:09] Our practical tip, since Claude does not
+[07:11] see a project's name or description,
+[07:13] write anything important into the
+[07:15] instructions. And with a new version
+[07:17] rolling out in stages, check the help
+[07:19] center if a button has moved.
+[07:22] Every help page we used is linked in the
+[07:24] description, so you can check each step
+[07:26] yourself.
+[07:27] If this saved you some clicking,
+[07:29] subscribe to In Theory Only.
