@@ -65,7 +65,7 @@ Candidates found by three Opus searchers (reports in `docs/research/gap-search*.
 
 Rule applied when reading (later dropped by the lead): one creator carries at most two lessons unless the transcripts leave no choice. Superseded: the lead ruled best video regardless of creator.
 
-Open: the YouTube Data API search quota (100 searches/day) ran out mid-way; 2.5 and 4.4 searches were cut short. Re-run those two after the quota resets (queries are listed in `docs/research/gap-search.md`).
+Round 3 (2026-11-05, `docs/research/gap-search-round3.md` and `reader-round3.md`): 2.5 and 4.2 replaced as above; 6.1 kept (CertainOps `gYk_hp3goAY` 0:57–5:52 tied; its map ideas go into the brief); 3.3 nothing better yet.
 
 ## Round 2 decisions (2026-11-05, after all 26 transcripts were read)
 
@@ -81,12 +81,12 @@ Every lesson has a video. Decided by Claude from the four round 2 reader reports
 | 2.2 Give It What It Needs | `Zzn-g8lvLMA` Anthropic, Data analysis with AI | 0:19–5:42 | 6 | Other angle: hand over raw messy material, check against a known answer, note what Claude needed |
 | 2.3 Iterate and Push Back | `tk4Ljz9p-UI` Simpletivity | 0:00–5:56 | 6 | "Ask me 3–5 clarifying questions." Demo is in Gemini; caption says it works the same in Claude. Borrow `k1dNyhqfsQ8`'s "put the first answer under pressure" into the task. Push-through is in no video; stays in text |
 | 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert | 0:25–5:49 | 9 | |
-| 2.5 Make Things, Not Just Text | `FgwrGj_RJBg` TechBrothersIT | 0:00–2:40 | weak | Post-rebuild, covers types / three ways to create / edit / export, but no audience evidence. **Re-search** |
+| 2.5 Make Things, Not Just Text | `1PRcdCu8n6M` Kevin Stratvert, How to Use Claude Artifacts | 0:43–8:59 | 7 | Describes a small tool, uses it, has it save data that persists. Pre-rebuild UI ("New Artifact", publish, "Send to Claude"): lead checks the names. Fallback `FgwrGj_RJBg` 0:00–2:40 (post-rebuild explainer) |
 | 3.1 Connect Your Inbox and Calendar | `LNpOyx4DOJ4` Holly Cope | 0:00–3:42 | 7 | Live triage, calendar check, "do not send, just draft". Drop the full morning briefing from the 3.1 task (3.3 owns it) |
 | 3.2 Connect Your Work Tools | `BKzEVhT2054` Benjamin Preston | 0:00–5:00 | 7 | Meeting notes to a Notion page; start narrow; no delete |
-| 3.3 A Morning With Claude | `D5nZOUfac_0` Nexus (the channel, not us) | 3:05–8:30 | other angle | Anatomy of a standing morning-brief prompt; caption must say the channel isn't NEXUS Operator. **Re-search** |
+| 3.3 A Morning With Claude | `D5nZOUfac_0` Nexus (the channel, not us) | 3:05–8:30 | other angle | Anatomy of a standing morning-brief prompt; caption must say the channel isn't NEXUS Operator. Round 3 found nothing post-rebuild in Chat (creators moved to Claude Duet or scheduled tasks); re-search ~2026-12-01 |
 | 4.1 Chat Answers. Code Acts. | `8c6JZ18W0Bo` Nick Saraev | 0:24–1:58 | 5 | Kept; only current-UI video that says Chat can't change files, Code can |
-| 4.2 Folders Are Memory | `qPG5zQCSlTs` signalstack | 0:00–0:55 | 4 | Problem statement only ("stores once, remembers forever"). **Re-search** |
+| 4.2 Folders Are Memory | `j9eiZcBkNg0` Santiago Garcia | 0:22–1:27 | 5 | "A folder of text files; Claude starts where I left off." Still the weakest slot; the brief carries it. Lead watches once to confirm desktop app. Re-search ~2026-12-01; also check Mstimaj `yTy8WV3Y9Nk` 0:00–1:44 (the folder step) during the Module 4 rebuild |
 | 4.3 The Instructions File | `O0FGCxkHM-U` Claude official | whole | 7 | |
 | 4.4 Build Something Real | `yTy8WV3Y9Nk` Mstimaj | 1:44–6:07 | 7 | Plan-first loop in the Code tab: Plan mode, questions, plan, Reject/Revise/Accept. `4hc5Z_QBno4` is Chat folder access, not usable |
 | 4.5 Sessions, Permissions, Safety | `F-DARGKRKdQ` Dylan Davis, "I stopped clicking approve" | 7:01–10:51 | 7 | Work on a copy, keep an undo, the two-minute review prompt, "Manual is for learning". Fallback `b8SV4U6fEIc` official 0:00–3:31 (5/10) |
