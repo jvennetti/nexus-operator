@@ -4,24 +4,26 @@ scenario_label: The Mission
 
 ## Scenario
 
-Claude is connected to your inbox, your calendar and one work tool. This mission is one full workday with it, start to finish, so you find out what it actually saves you.
+**A Day Without Copy-Paste.** Pick a normal workday. For one day, nothing moves between your inbox, your calendar and your work tool by hand. Claude is connected to all three; you find out what that's actually worth.
 
 ## Steps
 
-1. Morning: run your morning brief. Reply to the quick ones from drafts Claude wrote. Send them yourself.
-2. Midday: paste your notes from one meeting or call and have Claude create the follow-up tasks in your work tool. Check them.
-3. Afternoon: ask Claude to find a free slot and draft the invite for one meeting you've been putting off. Approve it.
-4. End of day, paste:
+1. Morning: run your morning brief. For the quick replies, have Claude draft them in one message and send them yourself from Gmail.
+   Warning: read every draft once as the recipient. It's your name on it.
+2. Midday: paste the notes from one meeting or call and ask Claude to turn them into tasks in your work tool. Say "show me the list before you create anything." Check what it made.
+3. Afternoon: there's a meeting you've been meaning to set up. Ask Claude to find a slot and draft the invite. Approve it when it asks.
+4. Whenever you catch yourself about to copy something from one tab to another, stop and ask Claude to do it instead. Note how many times that happens.
+5. End of day, paste:
 ```
-List everything you did for me today in one short list, and estimate how long each would have taken me by hand.
+List everything you did for me today, and estimate how long each would have taken me by hand.
 ```
-5. Write one line at the bottom of your My Tasks document: hours saved today, and the one thing that surprised you.
+   Write one line at the bottom of your My Tasks file: hours saved, and the thing that surprised you.
 
 ## Deliverable
 
-- A full day where every email, meeting and task went through Claude at least once.
-- The one-line tally in your My Tasks document.
+- One full day with Claude in the loop for every email, meeting and task.
+- The one-line tally in My Tasks.
 
 ## Note
 
-If your work doesn't run on email and calendar, pick the tool it does run on and connect that. The mission is the same.
+If your work doesn't run on email and calendar, connect the tool it does run on. The mission is the same: one day, nothing moved by hand.
