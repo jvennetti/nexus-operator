@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Lesson 1.3 (task test)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Test copy of nexus-academy module-1/lesson-1-3.html with a task added after the video.
+     Everything else is the original page. The original is not changed. -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#ffffff;--offwhite:#eaf3fb;--body-text:#cce2f2;
+  --muted:#5a8aaa;--placeholder:#3a6888;--green:#3ddc97;--amber:#ffaa00;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100;width:100%}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-family:'Lexend',sans-serif;font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-family:'Lexend',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px;transition:color .2s,border-color .2s}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+.browser-shell{width:1280px;margin:0 auto;background:var(--bg);min-height:calc(100vh - 64px)}
+.content-col{max-width:860px;margin:0 auto;padding:52px 0 100px}
+.section{margin-bottom:36px}
+.lesson-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:36px 40px}
+h1.lesson-title{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;letter-spacing:1.5px;color:var(--white);line-height:1.4;text-align:center;margin-bottom:24px}
+.context-copy{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.context-copy p+p{margin-top:14px}
+.ts-bar{background:var(--card2);border:1px solid var(--border);border-radius:6px;padding:0 24px;height:52px;display:flex;align-items:center;gap:20px}
+.ts-label{font-family:'Lexend',sans-serif;font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--muted);white-space:nowrap;flex-shrink:0}
+.ts-input{flex:1;background:transparent;border:none;border-bottom:1px solid var(--border);padding:4px 0;font-family:'Lexend',sans-serif;font-size:14px;color:var(--white);outline:none;transition:border-color .2s}
+.ts-input::placeholder{color:var(--placeholder);font-weight:300;font-size:13px}
+.ts-input:focus{border-bottom-color:var(--blue-border)}
+.ts-saved-inline{font-family:'Lexend',sans-serif;font-size:13px;color:var(--muted);white-space:nowrap;flex-shrink:0;display:none}
+.ts-saved-inline span{color:var(--offwhite);font-weight:500}
+.ts-btn{font-family:'Lexend',sans-serif;font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--blue);background:transparent;border:1px solid var(--blue-border);border-radius:3px;padding:7px 16px;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:background .2s}
+.ts-btn:hover{background:var(--blue-dim)}
+.video-wrapper{position:relative;padding-bottom:56.25%;height:0;background:#000;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.takeaways-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:32px 40px}
+.takeaways-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:3px;color:var(--white);text-transform:uppercase;text-align:center;margin-bottom:22px}
+.takeaway-item{display:flex;align-items:flex-start;gap:14px;padding:7px 0;font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.65;color:var(--body-text)}
+.t-bullet{flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--white);margin-top:8px;opacity:0.85}
+.lesson-nav{display:flex;justify-content:space-between;gap:16px;padding-top:40px;border-top:1px solid var(--border)}
+.nav-btn{flex:1;padding:18px 24px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s,opacity .2s}
+.nav-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.nav-btn.next{align-items:flex-end;text-align:right}
+.nav-dir{font-family:'Lexend',sans-serif;font-size:10px;font-weight:300;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.nav-name{font-family:'Lexend',sans-serif;font-size:14px;font-weight:500;color:var(--white);line-height:1.4}
+.notes-wrap{margin-bottom:36px}
+textarea.notes-field{display:block;width:100%;min-height:130px;background:rgba(255,255,255,0.028);border:1px solid var(--border);border-radius:8px;padding:20px 24px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;line-height:1.75;resize:none;overflow:hidden;outline:none;transition:border-color .2s,background .2s;caret-color:var(--blue)}
+textarea.notes-field::placeholder{color:rgba(90,138,170,0.35);font-style:italic}
+textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,255,255,0.038)}
+
+/* ===== NEW: task ===== */
+.task{position:relative;background:radial-gradient(ellipse at 50% 0%,rgba(0,200,255,0.10),transparent 60%),var(--card);border:1px solid var(--blue-border);border-radius:8px;box-shadow:0 0 40px rgba(0,200,255,0.07);transition:border-color .3s,box-shadow .3s}
+/* HUD corner brackets */
+.task .c{position:absolute;width:18px;height:18px;border-color:var(--blue);border-style:solid;opacity:.9;transition:border-color .3s}
+.task .c.tl{top:-1px;left:-1px;border-width:2px 0 0 2px;border-top-left-radius:8px}
+.task .c.tr{top:-1px;right:-1px;border-width:2px 2px 0 0;border-top-right-radius:8px}
+.task .c.bl{bottom:-1px;left:-1px;border-width:0 0 2px 2px;border-bottom-left-radius:8px}
+.task .c.br{bottom:-1px;right:-1px;border-width:0 2px 2px 0;border-bottom-right-radius:8px}
+.task-head{display:block;width:100%;background:none;border:none;color:inherit;font:inherit;text-align:center;padding:34px 40px 0;cursor:default}
+.task-title{display:inline-flex;align-items:center;gap:16px;font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--blue);text-shadow:0 0 18px rgba(0,200,255,0.45)}
+.task-title::before,.task-title::after{content:'';width:40px;height:1px;background:linear-gradient(90deg,transparent,var(--blue))}
+.task-title::after{transform:scaleX(-1)}
+.task-time{display:block;font-size:13px;font-weight:300;color:var(--muted);margin-top:6px}
+.task-done-line{display:none;font-size:15px;color:var(--green)}
+.task-done-line em{font-style:normal;color:var(--muted);font-weight:300;margin-left:10px}
+.task-body{display:grid;grid-template-rows:1fr;transition:grid-template-rows .4s ease}
+.task-body>div{overflow:hidden}
+.task-inner{padding:26px 48px 36px}
+ol.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:18px}
+ol.steps li{counter-increment:s;display:flex;gap:16px;font-size:15px;font-weight:300;line-height:1.8;color:var(--body-text)}
+ol.steps li::before{content:counter(s);flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);color:var(--blue);font-size:13px;display:flex;align-items:center;justify-content:center}
+ol.steps li>div{flex:1;min-width:0}
+.prompt{position:relative;background:#060e1a;border:1px solid var(--border);border-left:2px solid var(--blue);border-radius:6px;padding:14px 84px 14px 18px;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:13.5px;line-height:1.7;color:#a8c8e0}
+.copy-btn{position:absolute;top:12px;right:12px;font-family:'Lexend',sans-serif;font-size:12px;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:4px 12px;cursor:pointer}
+.copy-btn:hover{color:var(--blue);border-color:var(--blue-border)}
+.copy-btn.copied{color:var(--green)}
+.done-btn{display:block;margin:28px auto 0;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 36px;cursor:pointer;transition:opacity .2s,transform .15s}
+.done-btn:hover{opacity:.9;transform:translateY(-1px)}
+/* done: folds to one centered line, click to reopen */
+.task.done{border-color:rgba(61,220,151,.35);box-shadow:none;background:var(--card)}
+.task.done .c{border-color:var(--green)}
+.task.done .task-head{padding:18px 40px;cursor:pointer}
+.task.done .task-title,.task.done .task-time{display:none}
+.task.done .task-done-line{display:block}
+.task.done .task-body{grid-template-rows:0fr}
+.task.done.open .task-body{grid-template-rows:1fr}
+.task.done .task-inner{padding-top:6px}
+.task.done .done-btn{display:none}
+/* soft lock on Next */
+.nav-btn.next.locked{opacity:.45;border-style:dashed}
+.nav-btn.next.locked:hover{border-color:var(--border);background:var(--card)}
+.nav-hint{text-align:right;font-size:13px;color:var(--amber);margin-top:10px;min-height:20px;opacity:0;transition:opacity .2s}
+.nav-hint.show{opacity:1}
+.nav-hint a{color:var(--muted);margin-left:12px}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.shake{animation:shake .4s ease}
+@media(max-width:768px){
+  .task-head{padding:26px 18px 0}.task.done .task-head{padding:16px 18px}
+  .task-inner{padding:20px 18px 26px}
+  .task-title{font-size:15px;letter-spacing:3px;gap:10px}
+  .task-title::before,.task-title::after{width:22px}
+  ol.steps li{font-size:14px;gap:12px}
+  .prompt{padding:12px 14px 46px;font-size:12.5px}
+  .copy-btn{top:auto;bottom:10px}
+  .done-btn{width:100%}
+  .lesson-nav{flex-direction:column}
+  .nav-hint{text-align:left}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../../../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Lesson 1.3</div>
+  <a href="../../../hub.html" class="nav-back">← Hub</a>
+</nav>
+<div class="browser-shell">
+<div class="content-col">
+  <div class="lesson-box section">
+    <h1 class="lesson-title">How to Win With AI in 2026</h1>
+    <div class="context-copy">
+      <p>Hormozi's take is blunter than most: AI will never be worse than it is right now, and if you're not treating this as your top priority, you're already behind. This video reframes AI from a productivity tool into a competitive position, and makes the case for why being early matters so much more than being perfect.</p>
+      <p>The key conceptual shift he introduces: stop thinking about prompting, start thinking about context systems. The people winning with AI aren't the ones writing clever prompts — they're the ones who've built the context infrastructure that makes every prompt more powerful.</p>
+    </div>
+  </div>
+  <div class="ts-bar section">
+    <div class="ts-label">Timestamp</div>
+    <input class="ts-input" type="text" id="ts-input" placeholder="e.g.  8:15 — drop your timestamp here">
+    <div class="ts-saved-inline" id="ts-saved">You left off at: <span id="ts-val"></span></div>
+    <button class="ts-btn" onclick="saveTs()">Save</button>
+  </div>
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/9q5ojtkqsBs?enablejsapi=1" title="How to Win With AI in 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <!-- NEW: task -->
+  <div class="task section" id="task">
+    <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
+    <button class="task-head" id="task-head" type="button">
+      <span class="task-title">Your Task</span>
+      <span class="task-time">10 min</span>
+      <span class="task-done-line">✓ Task done<em id="task-toggle">Show task</em></span>
+    </button>
+    <div class="task-body"><div><div class="task-inner">
+      <ol class="steps">
+        <li><div>Open a new chat in Claude and paste this:
+          <div class="prompt"><span>Interview me about my work, one question at a time, until you could brief a new hire on it. Then write it up as a one-page context doc.</span></div></div></li>
+        <li><div>Answer its questions. Short answers are fine.</div></li>
+        <li><div>Save the doc somewhere you'll find it. You'll use it again later in the course.</div></li>
+      </ol>
+      <button class="done-btn" id="done-btn" type="button">Mark task done</button>
+    </div></div></div>
+  </div>
+
+  <div class="notes-wrap">
+    <textarea class="notes-field" id="lesson-notes" placeholder="Notes..."></textarea>
+  </div>
+  <div class="takeaways-box section">
+    <div class="takeaways-title">Key Takeaways</div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The most flexible system survives — this is business Darwinism in real time.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Starting a new company AI-first is easier than converting an existing one. There is no legacy structure to fight.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The skill stack compounds: every AI capability you add gives disproportionate leverage over competitors.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Revenue per employee is the new metric to watch. Hormozi's companies are running in the millions per head.</div></div>
+  </div>
+  <div class="lesson-nav">
+    <a href="https://jvennetti.github.io/nexus-academy/module-1/lesson-1-2.html" class="nav-btn prev">
+      <span class="nav-dir">← Previous</span>
+      <span class="nav-name">The One-Person Startup Era Has Officially Begun</span>
+    </a>
+    <a href="https://jvennetti.github.io/nexus-academy/module-1/lesson-1-4.html" class="nav-btn next locked" id="next-btn">
+      <span class="nav-dir">Next →</span>
+      <span class="nav-name">When AIs Act Emotional</span>
+    </a>
+  </div>
+  <div class="nav-hint" id="nav-hint">Finish the task first <a href="https://jvennetti.github.io/nexus-academy/module-1/lesson-1-4.html">continue anyway</a></div>
+</div>
+</div>
+<script>
+const PATH=location.pathname,TASK_KEY='nexus_task_'+PATH;
+function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function set(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function playS(s,v){try{var a=new Audio(s);a.volume=v;a.play().catch(function(){});}catch(e){}}
+/* timestamp, as original */
+function saveTs(){const v=document.getElementById('ts-input').value.trim();if(!v)return;set('nexus_ts_'+PATH,v);showSaved(v);document.getElementById('ts-input').value='';}
+function showSaved(v){document.getElementById('ts-val').textContent=v;document.getElementById('ts-saved').style.display='block';}
+const ts=get('nexus_ts_'+PATH);if(ts)showSaved(ts);
+/* notes, as original */
+const ta=document.getElementById('lesson-notes');
+function grow(){ta.style.height='auto';ta.style.height=ta.scrollHeight+'px';}
+ta.value=get('nexus_notes_'+PATH)||'';if(ta.value)grow();
+ta.addEventListener('input',()=>{grow();set('nexus_notes_'+PATH,ta.value);});
+/* task */
+const task=document.getElementById('task'),next=document.getElementById('next-btn');
+function apply(){const done=!!get(TASK_KEY);task.classList.toggle('done',done);next.classList.toggle('locked',!done);if(done)document.getElementById('nav-hint').classList.remove('show');}
+document.getElementById('done-btn').addEventListener('click',()=>{set(TASK_KEY,String(Date.now()));playS('../../../audio/sfx/short-success.wav',0.12);task.classList.remove('open');document.getElementById('task-toggle').textContent='Show task';apply();});
+document.getElementById('task-head').addEventListener('click',()=>{if(!task.classList.contains('done'))return;const o=task.classList.toggle('open');document.getElementById('task-toggle').textContent=o?'Hide task':'Show task';});
+next.addEventListener('click',function(e){if(!this.classList.contains('locked'))return;e.preventDefault();e.stopImmediatePropagation();this.classList.remove('shake');void this.offsetWidth;this.classList.add('shake');document.getElementById('nav-hint').classList.add('show');playS('../../../audio/sfx/robot-error.wav',0.08);},true);
+document.querySelectorAll('.prompt').forEach(function(b){const btn=document.createElement('button');btn.className='copy-btn';btn.type='button';btn.textContent='Copy';btn.addEventListener('click',function(){(navigator.clipboard?navigator.clipboard.writeText(b.querySelector('span').innerText):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){});});b.appendChild(btn);});
+apply();
+</script>
+<script src="../../../nexus-transition.js"></script>
+</body>
+</html>
