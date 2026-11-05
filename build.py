@@ -151,6 +151,7 @@ def build():
     hub_modules = []
     todo = []
 
+    prev_key = ''
     for mod in course['modules']:
         d = ROOT / mod['dir']; d.mkdir(exist_ok=True)
         label = mod['label']; is_pre = mod['key'] == 'precourse'
@@ -195,7 +196,7 @@ def build():
             skip_block = ''
             if L['meta'].get('skippable', '').lower() == 'true':
                 skip_block = '      <button class="task-skip" onclick="skipTask()">%s →</button>' % html.escape(L['meta'].get('skip_label', 'Already done this? Skip ahead'))
-            page = fill(T['lesson'],
+            page = fill(T['lesson'], PREV_MODULE_KEY=prev_key,
                         LESSON_ID=L['n'], TITLE=html.escape(L['title'], quote=False), MODE=mode,
                         DURATION=L['meta'].get('duration', ''), BRIEF_HTML=render_blocks(parse_blocks(sec_get(L['sec'], 'brief'))),
                         VIDEO_BLOCK=video_block, TASK_HTML=task_html, TASK_TIME=L['meta'].get('task_time', ''),
@@ -225,7 +226,7 @@ def build():
                 body.append('  <div class="extension-box">\n    <div class="section-title">Go Further</div>\n    <div class="extension-text">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(csec['extension'])))
             if csec.get('note'):
                 body.append('  <div class="integration-note">\n    <div class="integration-text">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(csec['note'])))
-            (d / 'challenge.html').write_text(fill(T['challenge'], MODULE_LABEL=label, BANNER_IMG=mod['banner'],
+            (d / 'challenge.html').write_text(fill(T['challenge'], PREV_MODULE_KEY=prev_key, MODULE_LABEL=label, BANNER_IMG=mod['banner'],
                                                    CHALLENGE_BODY='\n'.join(body), PREV_HREF=lessons[-1]['file'],
                                                    PREV_TITLE=html.escape(lessons[-1]['title'], quote=False),
                                                    MODULE_KEY=mod['key'], MODULE_DIR=mod['dir']), encoding='utf-8')
@@ -233,7 +234,7 @@ def build():
         # ---- complete
         study = [dict(n=L['n'], title=L['title'], file=L['file'], takeaways=L['takeaways']) for L in lessons]
         comp_tpl = T['complete-final'] if mod.get('final') else T['complete']
-        (d / 'complete.html').write_text(fill(comp_tpl, MODULE_LABEL=label, MODULE_TITLE=mod['title'].title() if mod['title'].isupper() else mod['title'],
+        (d / 'complete.html').write_text(fill(comp_tpl, PREV_MODULE_KEY=prev_key, MODULE_LABEL=label, MODULE_TITLE=mod['title'].title() if mod['title'].isupper() else mod['title'],
                                               BADGE_ICON=mod['badge']['icon'], BADGE_NAME=mod['badge']['name'].title(),
                                               MODULE_KEY=mod['key'], BADGE_KEY=mod['badge']['key'], MODULE_DIR=mod['dir'],
                                               CIRO_LINES_JS=ciro_js(mod['complete_lines']),
@@ -241,6 +242,7 @@ def build():
                                               STUDY_LESSONS_JS=json.dumps(study, ensure_ascii=False),
                                               STUDY_CIRO=js_str(mod['study_ciro'])[1:-1]), encoding='utf-8')
 
+        prev_key = mod['key']
         hub_modules.append(dict(key=mod['key'], label=label, title=mod['title'],
                                 locked=mod['card']['locked'], unlocked=mod['card']['unlocked'],
                                 url='%s/%s' % (mod['dir'], intro_page), badge=mod['badge']['key'],
