@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="nexus-transition.js" defer blocking="render"></script>
 <title>NEXUS Academy — Operator Hub</title>
 <meta property="og:title" content="NEXUS Academy">
 <meta property="og:description" content="A public AI training system. Six modules. One machine.">
@@ -235,7 +236,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 @keyframes hub-card-in{from{opacity:0;transform:translateY(10px) scale(0.97)}to{opacity:1;transform:translateY(0) scale(1)}}
 @keyframes ciro-cursor-blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes hub-scan-sweep{from{left:-60%}to{left:160%}}
-.hub-boot-hide{opacity:0;pointer-events:none}
+.hub-boot-hide{opacity:0;pointer-events:none;visibility:hidden}
 .hub-boot-in{animation:hub-panel-in 0.55s ease-out forwards;pointer-events:auto}
 .hub-card-boot{opacity:0;animation:hub-card-in 0.4s ease-out forwards}
 #hub-scan-bar{position:fixed;top:64px;left:0;right:0;height:2px;z-index:200;pointer-events:none;overflow:hidden;opacity:0;transition:opacity 0.25s}
@@ -1162,25 +1163,53 @@ window.addEventListener('pageshow',(e)=>{if(e.persisted)hubMusic.play().catch(()
 
 function wait(ms){ return new Promise(r => setTimeout(r, ms)); }
 
+// Typewriter that never moves layout. The whole message (markup included) is laid out up front
+// with the untyped part visibility:hidden, so CIRO's box is its final size before the first
+// character appears and words never jump between lines while typing. The cursor keeps its look
+// but has zero advance and is glued to the letters either side of it.
+const TW_WORD = /[\p{L}\p{N}'’]/u;
+function twMount(el, html){
+  el.innerHTML = html;
+  const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), nodes = [];
+  while(w.nextNode()) nodes.push(w.currentNode);
+  const segs = nodes.map(n => {
+    const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+          gr = document.createElement('span'), rest = document.createElement('span');
+    glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+    glue.append(gl, gr); rest.textContent = n.data; n.replaceWith(typed, glue, rest);
+    return { text: n.data, typed, glue, gl, gr, rest };
+  });
+  return (el._tw = { el, html, segs });
+}
+function twShow(st, i, cursor){
+  let off = 0, placed = false;
+  st.segs.forEach((s, idx) => {
+    const n = s.text.length, k = Math.max(0, Math.min(n, i - off));
+    if(cursor && !placed && (i < off + n || idx === st.segs.length - 1)){
+      placed = true;
+      const gL = k > 0 && TW_WORD.test(s.text.charAt(k - 1)), gR = k < n && TW_WORD.test(s.text.charAt(k));
+      s.typed.data = s.text.slice(0, gL ? k - 1 : k); s.gl.data = gL ? s.text.charAt(k - 1) : '';
+      s.glue.insertBefore(cursor, s.gr); s.gr.textContent = gR ? s.text.charAt(k) : ''; s.rest.textContent = s.text.slice(gR ? k + 1 : k);
+    } else {
+      s.typed.data = s.text.slice(0, k); s.gl.data = ''; s.gr.textContent = ''; s.rest.textContent = s.text.slice(k);
+    }
+    off += n;
+  });
+}
+
 async function typewriteCiro(el, htmlStr){
   const cursor = document.createElement('span');
-  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:ciro-cursor-blink .7s step-end infinite';
-  el.innerHTML = '';
-  el.appendChild(cursor);
-  let i = 0;
-  while(i < htmlStr.length){
-    if(htmlStr[i] === '<'){
-      const end = htmlStr.indexOf('>', i);
-      i = end < 0 ? htmlStr.length : end + 1;
-    } else {
-      i++;
-    }
-    el.innerHTML = htmlStr.slice(0, i);
-    el.appendChild(cursor);
-    const ch = htmlStr[i-1];
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;margin-right:-10px;animation:ciro-cursor-blink .7s step-end infinite';
+  const st = (el._tw && el._tw.html === htmlStr && el.contains(el._tw.segs[0] && el._tw.segs[0].glue)) ? el._tw : twMount(el, htmlStr);
+  const text = st.segs.map(s => s.text).join('');
+  for(let i = 1; i <= text.length; i++){
+    twShow(st, i, cursor);
+    const ch = text[i-1];
     await wait(ch === '.' ? 130 : ch === ',' ? 65 : 28);
   }
   cursor.remove();
+  el._tw = null;
+  el.innerHTML = htmlStr;
 }
 
 async function runHubBoot(){
@@ -1193,6 +1222,10 @@ async function runHubBoot(){
   const continueSec  = document.getElementById('continue-section');
   const tagLine      = document.querySelector('.ciro-tag-line');
   const ciroTextEl   = document.getElementById('ciro-text');
+
+  // lay CIRO's first message out (invisibly) before the widget appears, so the box opens at its final size
+  const firstMsg = `NEXUS ACADEMY is online. Welcome, <strong>${OPERATOR_NAME}</strong>. Your access is confirmed. Begin with the Pre-Course when you're ready.`;
+  twShow(twMount(ciroTextEl, firstMsg), 0, null);
 
   await wait(280);
   scanBar.classList.add('active');
@@ -1209,7 +1242,6 @@ async function runHubBoot(){
   if(tagLine) tagLine.textContent = 'NEXUS ACADEMY · SYSTEM ACTIVE';
   await wait(300);
 
-  const firstMsg = `NEXUS ACADEMY is online. Welcome, <strong>${OPERATOR_NAME}</strong>. Your access is confirmed. Begin with the Pre-Course when you're ready.`;
   await typewriteCiro(ciroTextEl, firstMsg);
   await wait(500);
 
@@ -1223,13 +1255,14 @@ async function runHubBoot(){
   await wait(650);
 
   const moduleCards = document.querySelectorAll('#modules-grid > div');
-  moduleCards.forEach(c => { c.style.opacity = '0'; });
+  moduleCards.forEach(c => { c.style.opacity = '0'; c.style.pointerEvents = 'none'; });
   modulesSec.classList.remove('hub-boot-hide');
   modulesSec.classList.add('hub-boot-in');
   await wait(550);
   moduleCards.forEach((card, i) => {
     setTimeout(() => {
       card.style.opacity = '';
+      card.style.pointerEvents = '';
       card.style.animation = 'hub-card-in 0.4s ease-out both';
     }, i * 90);
   });
@@ -1394,6 +1427,5 @@ if(!localStorage.getItem('nexus_machine_activated')){
   runSeq(INIT, 0);
 })();
 </script>
-<script src="nexus-transition.js"></script>
 </body>
 </html>

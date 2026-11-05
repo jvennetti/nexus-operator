@@ -4,6 +4,7 @@
 <script>(function(){try{if(!localStorage.getItem('nexus_intro_seen_operator')){location.replace('../index.html');return;}var p='{{PREV_MODULE_KEY}}';if(p){var s=JSON.parse(localStorage.getItem('nexus_operator')||'{}');if(!s[p+'_complete']&&!location.search.includes('dev')){location.replace('../hub.html');}}}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../nexus-transition.js" defer blocking="render"></script>
 <title>NEXUS Academy — {{MODULE_LABEL}} Complete</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -49,6 +50,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0.2}}
 .hub-cta{text-align:center;margin-top:28px;opacity:0;transition:opacity 0.6s ease}
 .hub-cta.visible{opacity:1}
+.hub-cta:not(.visible){visibility:hidden;pointer-events:none}
 .hub-btn{display:inline-flex;align-items:center;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:16px 52px;cursor:pointer;transition:opacity .2s, transform .15s;text-decoration:none}
 .hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
 .hub-btn:active{transform:translateY(0)}
@@ -166,13 +168,43 @@ function runReveal(){
 
 function wait(ms){ return new Promise(r=>setTimeout(r,ms)); }
 
-async function typeLine(el, text){
+// Typewriter that never moves layout. Every line is laid out up front with its untyped part
+// visibility:hidden, so the debrief box is its final size from the start and words never jump
+// between lines while typing. The cursor keeps its look but has zero advance and is glued to the
+// letters either side of it, so it cannot force a mid-word line break.
+const TW_WORD = /[\p{L}\p{N}'’]/u;
+function twMount(el, text){
+  el.textContent = text;
+  const n = el.firstChild;
+  const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+        gr = document.createElement('span'), rest = document.createElement('span');
+  glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+  glue.append(gl, gr); rest.textContent = text; n.replaceWith(typed, glue, rest);
+  return { el, text, typed, glue, gl, gr, rest };
+}
+function twShow(s, k, cursor){
+  const t = s.text, gL = k > 0 && TW_WORD.test(t.charAt(k-1)), gR = k < t.length && TW_WORD.test(t.charAt(k));
+  s.typed.data = t.slice(0, gL ? k-1 : k); s.gl.data = gL ? t.charAt(k-1) : '';
+  if(cursor.parentNode !== s.glue) s.glue.insertBefore(cursor, s.gr);
+  s.gr.textContent = gR ? t.charAt(k) : ''; s.rest.textContent = t.slice(gR ? k+1 : k);
+}
+function twMountAll(containerId, lines, classOf){
+  const container = document.getElementById(containerId);
+  return lines.map(l => {
+    const lineEl = document.createElement('div');
+    lineEl.className = classOf(l);
+    container.appendChild(lineEl);
+    return twMount(lineEl, l.text);
+  });
+}
+const ciroLineStates = twMountAll('ciro-lines', CIRO_LINES, () => 'ciro-line');
+
+async function typeLine(st, text){
   const cursor = document.createElement('span');
-  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:cur .7s step-end infinite';
-  el.appendChild(cursor);
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;margin-right:-10px;animation:cur .7s step-end infinite';
   for(let i=0;i<text.length;i++){
     const ch = text[i];
-    el.insertBefore(document.createTextNode(ch), cursor);
+    twShow(st, i+1, cursor);
     let d = 30;
     if(ch==='.') d+=110;
     else if(ch===',') d+=55;
@@ -180,16 +212,15 @@ async function typeLine(el, text){
     await wait(d);
   }
   cursor.remove();
+  st.el.textContent = text;
 }
 
 async function runCiro(){
   const container = document.getElementById('ciro-lines');
   await wait(300);
-  for(const { text, pauseAfter } of CIRO_LINES){
-    const lineEl = document.createElement('div');
-    lineEl.className = 'ciro-line';
-    container.appendChild(lineEl);
-    await typeLine(lineEl, text);
+  for(let n = 0; n < CIRO_LINES.length; n++){
+    const { text, pauseAfter } = CIRO_LINES[n];
+    await typeLine(ciroLineStates[n], text);
     await wait(pauseAfter);
   }
   await wait(400);
@@ -306,7 +337,6 @@ function openStudyDoc(){
 function playS(s,v){var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(window.nxVol||1);a.play().catch(function(){});return a;}
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
-<script src="../nexus-transition.js"></script>
 <script>
 (function(){
   var C=document.createElement('canvas');

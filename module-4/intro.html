@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../nexus-transition.js" defer blocking="render"></script>
 <title>NEXUS Academy — Module 4 Intro</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -38,6 +39,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 .tx-sep.visible{opacity:0.4}
 .begin-btn{display:inline-flex;align-items:center;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);background:transparent;border:1px solid var(--blue-border);border-radius:3px;padding:14px 32px;cursor:pointer;opacity:0;transform:translateY(8px);transition:opacity 0.7s ease,transform 0.7s ease,background 0.2s,border-color 0.2s;text-decoration:none;margin-top:4px}
 .begin-btn.visible{opacity:1;transform:translateY(0);animation:btn-pulse 2s ease-in-out infinite}
+.begin-btn:not(.visible){visibility:hidden;pointer-events:none}
 .begin-btn:hover{background:var(--blue-dim);border-color:var(--blue);animation:none;box-shadow:0 0 18px rgba(0,200,255,0.35)}
 @keyframes btn-pulse{0%,100%{border-color:rgba(0,200,255,0.22);box-shadow:0 0 0 rgba(0,200,255,0)}50%{border-color:rgba(0,200,255,0.9);box-shadow:0 0 14px rgba(0,200,255,0.4),0 0 28px rgba(0,200,255,0.15)}}
 .begin-arrow{transition:transform .2s}
@@ -144,13 +146,52 @@ async function bodyPivot(){
   }
   body.style.transform='rotate(0deg)';
 }
-async function typeLine(el,text){
+// Typewriter that never moves layout. The whole text is laid out up front with the untyped part
+// visibility:hidden, so each line wraps and sizes exactly as it will when finished and the panel
+// stays one size. The cursor has zero advance and is glued to the letters either side of it, so
+// it can never introduce a line break in the middle of a word.
+const TW_WORD=/[\p{L}\p{N}'’]/u;
+function twMount(el,content,asHTML){
+  if(asHTML) el.innerHTML=content; else el.textContent=content;
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];
+  while(w.nextNode()) nodes.push(w.currentNode);
+  const segs=nodes.map(n=>{
+    const typed=document.createTextNode(''),glue=document.createElement('span'),gl=document.createTextNode(''),gr=document.createElement('span'),rest=document.createElement('span');
+    glue.style.whiteSpace='nowrap';gr.style.visibility='hidden';rest.style.visibility='hidden';
+    glue.append(gl,gr);rest.textContent=n.data;n.replaceWith(typed,glue,rest);
+    return {text:n.data,typed,glue,gl,gr,rest};
+  });
+  return {el,content,asHTML,segs};
+}
+function twShow(st,i,cursor){
+  let off=0,placed=false;
+  st.segs.forEach((s,idx)=>{
+    const n=s.text.length,k=Math.max(0,Math.min(n,i-off));
+    if(cursor&&!placed&&(i<off+n||idx===st.segs.length-1)){
+      placed=true;
+      const gL=k>0&&TW_WORD.test(s.text.charAt(k-1)),gR=k<n&&TW_WORD.test(s.text.charAt(k));
+      s.typed.data=s.text.slice(0,gL?k-1:k);s.gl.data=gL?s.text.charAt(k-1):'';
+      s.glue.insertBefore(cursor,s.gr);s.gr.textContent=gR?s.text.charAt(k):'';s.rest.textContent=s.text.slice(gR?k+1:k);
+    } else {
+      s.typed.data=s.text.slice(0,k);s.gl.data='';s.gr.textContent='';s.rest.textContent=s.text.slice(k);
+    }
+    off+=n;
+  });
+}
+function twDone(st){ if(st.asHTML) st.el.innerHTML=st.content; else st.el.textContent=st.content; }
+// Every line is in place (invisible) from the first frame, so the panel never grows.
+const lineStates=CIRO_LINES.map(({text})=>{
+  const lineEl=document.createElement('div');
+  lineEl.className='ciro-line';
+  linesEl.appendChild(lineEl);
+  return twMount(lineEl,text);
+});
+async function typeLine(st,text){
   const cursor=document.createElement('span');
-  cursor.style.cssText='display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:cur .7s step-end infinite';
-  el.appendChild(cursor);
+  cursor.style.cssText='display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;margin-right:-10px;animation:cur .7s step-end infinite';
   for(let i=0;i<text.length;i++){
     const ch=text[i];
-    el.insertBefore(document.createTextNode(ch),cursor);
+    twShow(st,i+1,cursor);
     let d=32;
     if(ch==='.') d+=110;
     else if(ch===',') d+=55;
@@ -159,14 +200,13 @@ async function typeLine(el,text){
     await wait(d);
   }
   cursor.remove();
+  twDone(st);
 }
 async function runTransmission(){
   await wait(600);
-  for(const {text,pauseAfter} of CIRO_LINES){
-    const lineEl=document.createElement('div');
-    lineEl.className='ciro-line';
-    linesEl.appendChild(lineEl);
-    await typeLine(lineEl,text);
+  for(let n=0;n<CIRO_LINES.length;n++){
+    const {text,pauseAfter}=CIRO_LINES[n];
+    await typeLine(lineStates[n],text);
     await wait(pauseAfter);
   }
   await wait(350);
@@ -199,6 +239,5 @@ runScene();
 (function(){window._ciroSong=new Audio("../audio/music/ciro-intro.mp3");window._ciroSong.loop=true;window._ciroSong.volume=0.18;window._ciroSong.play().catch(function(){document.addEventListener("click",function h(){window._ciroSong.play().catch(function(){});document.removeEventListener("click",h);});});window.addEventListener("pageshow",function(e){if(e.persisted)window._ciroSong.play().catch(function(){});});})();
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
-<script src="../nexus-transition.js"></script>
 </body>
 </html>
