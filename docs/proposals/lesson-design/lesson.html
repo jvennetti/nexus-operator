@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Lesson 2.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Lexend:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<!-- The nexus-open lesson page (title box, video + timestamp, notes, Key Takeaways, prev/next)
+     with one task box added after the brief. Marking it done folds it into a single line. -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#fff;--body-text:#cce2f2;--muted:#5a8aaa;--green:#3ddc97;--amber:#ffaa00;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+
+.content-col{max-width:860px;margin:0 auto;padding:52px 0 100px}
+.section{margin-bottom:36px}
+
+/* lesson box, as nexus-open */
+.lesson-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:36px 40px}
+h1.lesson-title{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;letter-spacing:1.5px;line-height:1.4;text-align:center;margin-bottom:24px}
+.context-copy{font-size:16px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.context-copy p+p{margin-top:14px}
+.context-copy strong{color:var(--white);font-weight:500}
+
+/* task box */
+.task{background:var(--card);border:1px solid var(--blue-border);border-radius:8px;overflow:hidden;transition:border-color .3s}
+.task-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:26px 40px 0;background:none;border:none;width:100%;text-align:left;color:inherit;font:inherit;cursor:default}
+.task-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue)}
+.task-time{font-size:13px;font-weight:300;color:var(--muted)}
+.task-done-line{display:none;font-size:15px;color:var(--green)}
+.task-toggle{display:none;font-size:13px;font-weight:300;color:var(--muted)}
+.task-body{display:grid;grid-template-rows:1fr;transition:grid-template-rows .4s ease}
+.task-body>div{overflow:hidden}
+.task-inner{padding:22px 40px 32px}
+ol.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:18px}
+ol.steps li{counter-increment:s;display:flex;gap:16px;font-size:16px;font-weight:300;line-height:1.75;color:var(--body-text)}
+ol.steps li::before{content:counter(s);flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);color:var(--blue);font-size:13px;display:flex;align-items:center;justify-content:center}
+ol.steps li>div{flex:1;min-width:0}
+.prompt{position:relative;background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:13px 80px 13px 18px;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:14px;color:#a8c8e0}
+.copy-btn{position:absolute;top:50%;right:10px;transform:translateY(-50%);font-family:'Lexend',sans-serif;font-size:12px;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:4px 12px;cursor:pointer}
+.copy-btn:hover{color:var(--blue);border-color:var(--blue-border)}
+.copy-btn.copied{color:var(--green)}
+.done-btn{margin-top:26px;display:block;width:100%;font-family:'Lexend',sans-serif;font-size:16px;font-weight:500;color:var(--bg);background:var(--blue);border:none;border-radius:6px;padding:15px;cursor:pointer;transition:opacity .2s}
+.done-btn:hover{opacity:.9}
+
+/* done: folds to one line, click to reopen */
+.task.done{border-color:rgba(61,220,151,.35)}
+.task.done .task-head{padding:18px 40px;cursor:pointer}
+.task.done .task-title,.task.done .task-time{display:none}
+.task.done .task-done-line,.task.done .task-toggle{display:block}
+.task.done .task-body{grid-template-rows:0fr}
+.task.done.open .task-body{grid-template-rows:1fr}
+.task.done .task-inner{padding-top:4px}
+.task.done .done-btn{display:none}
+
+/* notes, takeaways, nav: as nexus-open */
+textarea.notes-field{display:block;width:100%;min-height:130px;background:rgba(255,255,255,0.028);border:1px solid var(--border);border-radius:8px;padding:20px 24px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.75;resize:none;overflow:hidden;outline:none;caret-color:var(--blue)}
+textarea.notes-field::placeholder{color:rgba(90,138,170,0.45);font-style:italic}
+textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,255,255,0.038)}
+.takeaways-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:32px 40px}
+.takeaways-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-align:center;margin-bottom:22px}
+.takeaway{display:flex;gap:14px;padding:7px 0;font-size:16px;font-weight:300;line-height:1.65;color:var(--body-text)}
+.takeaway::before{content:'';flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--white);opacity:.85;margin-top:9px}
+.lesson-nav{display:flex;gap:16px;padding-top:40px;border-top:1px solid var(--border)}
+.nav-btn{flex:1;padding:18px 24px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:opacity .2s,border-color .2s,background .2s}
+.nav-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.nav-btn.next{align-items:flex-end;text-align:right}
+.nav-btn.next.locked{opacity:.45;border-style:dashed}
+.nav-btn.next.locked:hover{border-color:var(--border);background:var(--card)}
+.nav-dir{font-size:10px;font-weight:300;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.nav-name{font-size:14px;font-weight:500;color:var(--white);line-height:1.4}
+.nav-hint{text-align:right;font-size:13px;color:var(--amber);margin-top:10px;min-height:20px;opacity:0;transition:opacity .2s}
+.nav-hint.show{opacity:1}
+.nav-hint a{color:var(--muted);margin-left:12px}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.shake{animation:shake .4s ease}
+
+@media(max-width:768px){
+  nav{padding:0 16px;height:56px}.nav-lesson-id{display:none}.wordmark{font-size:15px;letter-spacing:2px}.nav-back{font-size:10px;padding:7px 12px;letter-spacing:1px}
+  .content-col{padding:20px 16px 80px}
+  .section{margin-bottom:24px}
+  .lesson-box,.takeaways-box{padding:22px 18px}
+  h1.lesson-title{font-size:18px;letter-spacing:.5px;margin-bottom:16px}
+  .context-copy,ol.steps li,.takeaway{font-size:15px}
+  .task-head{padding:20px 18px 0}.task.done .task-head{padding:16px 18px}
+  .task-inner{padding:18px 18px 22px}
+  .task-title,.takeaways-title{font-size:15px;letter-spacing:2px}
+  ol.steps li{gap:12px}
+  .prompt{padding:12px 14px 46px;font-size:13px}
+  .copy-btn{top:auto;bottom:10px;transform:none}
+  .lesson-nav{flex-direction:column}
+  .nav-hint{text-align:left}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../../../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Lesson 2.1</div>
+  <a href="../../../hub.html" class="nav-back">← Hub</a>
+</nav>
+<div class="content-col">
+  <div class="lesson-box section">
+    <h1 class="lesson-title">Anatomy of a Good Prompt</h1>
+    <div class="context-copy">
+      <p>A prompt is a brief. Most people write it like a text to a friend, then wonder why the answer is generic.</p>
+      <p>A good prompt has four parts: the <strong>goal</strong>, the <strong>context</strong> Claude can't know, the <strong>format</strong> you want, and an <strong>example</strong> of what good looks like.</p>
+    </div>
+  </div>
+  <!-- lessons with a video put the timestamp bar and video here, as in nexus-open -->
+
+  <div class="task section" id="task">
+    <button class="task-head" id="task-head" type="button">
+      <span class="task-title">Your Task</span>
+      <span class="task-time">10 min</span>
+      <span class="task-done-line">✓ Task done</span>
+      <span class="task-toggle" id="task-toggle">Show task</span>
+    </button>
+    <div class="task-body"><div><div class="task-inner">
+      <ol class="steps">
+        <li><div>Open a new chat in Claude and paste this:
+          <div class="prompt"><span>Write an email to my client about the delay.</span></div></div></li>
+        <li><div>Open another new chat. Ask for the same email, this time with a goal, context, format and example.</div></li>
+        <li><div>Read both answers. Which one could you actually send?</div></li>
+      </ol>
+      <button class="done-btn" id="done-btn" type="button">Mark task done</button>
+    </div></div></div>
+  </div>
+
+  <div class="section">
+    <textarea class="notes-field" id="lesson-notes" placeholder="Notes..."></textarea>
+  </div>
+
+  <div class="takeaways-box section">
+    <div class="takeaways-title">Key Takeaways</div>
+    <div class="takeaway">Could a smart stranger act on your prompt? If not, neither can Claude.</div>
+    <div class="takeaway">One real example beats paragraphs of description.</div>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="../../../module-2/intro.html" class="nav-btn prev"><span class="nav-dir">← Previous</span><span class="nav-name">Module 2 Intro</span></a>
+    <a href="../../../module-2/lesson-2-2.html" class="nav-btn next locked" id="next-btn"><span class="nav-dir">Next →</span><span class="nav-name">Give It What It Needs</span></a>
+  </div>
+  <div class="nav-hint" id="nav-hint">Finish the task first <a href="../../../module-2/lesson-2-2.html">continue anyway</a></div>
+</div>
+<script>
+const PATH=location.pathname,TASK_KEY='nexus_task_'+PATH;
+function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function set(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function playS(s,v){try{var a=new Audio(s);a.volume=v;a.play().catch(function(){});}catch(e){}}
+const task=document.getElementById('task'),next=document.getElementById('next-btn');
+function apply(){
+  const done=!!get(TASK_KEY);
+  task.classList.toggle('done',done);
+  next.classList.toggle('locked',!done);
+  if(done) document.getElementById('nav-hint').classList.remove('show');
+}
+document.getElementById('done-btn').addEventListener('click',()=>{
+  set(TASK_KEY,String(Date.now()));
+  playS('../../../audio/sfx/short-success.wav',0.12);
+  task.classList.remove('open');apply();
+});
+document.getElementById('task-head').addEventListener('click',()=>{
+  if(!task.classList.contains('done')) return;
+  const open=task.classList.toggle('open');
+  document.getElementById('task-toggle').textContent=open?'Hide task':'Show task';
+});
+next.addEventListener('click',function(e){
+  if(!this.classList.contains('locked')) return;
+  e.preventDefault();
+  this.classList.remove('shake');void this.offsetWidth;this.classList.add('shake');
+  document.getElementById('nav-hint').classList.add('show');
+  playS('../../../audio/sfx/robot-error.wav',0.08);
+});
+document.querySelectorAll('.prompt').forEach(function(b){
+  const btn=document.createElement('button');btn.className='copy-btn';btn.type='button';btn.textContent='Copy';
+  btn.addEventListener('click',function(){
+    (navigator.clipboard?navigator.clipboard.writeText(b.querySelector('span').innerText):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){});
+  });
+  b.appendChild(btn);
+});
+const ta=document.getElementById('lesson-notes');
+function grow(){ta.style.height='auto';ta.style.height=ta.scrollHeight+'px';}
+ta.value=get('nexus_notes_'+PATH)||'';if(ta.value)grow();
+ta.addEventListener('input',()=>{grow();set('nexus_notes_'+PATH,ta.value);});
+apply();
+</script>
+</body>
+</html>
