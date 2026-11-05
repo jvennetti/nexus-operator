@@ -1,0 +1,298 @@
+[00:00] so you know that moment where you ask ai something
+[00:03] and it gives you back this long
+[00:05] confident sounding answer
+[00:07] and something in your gut just goes hmm
+[00:09] that's that's not it
+[00:11] it sounded fine it checks the boxes
+[00:13] but it doesn't actually help you make a decision
+[00:15] to move forward
+[00:16] so you might hit regenerate maybe a few times
+[00:19] and you get back basically the same answer
+[00:22] but
+[00:23] kind of in a different outfit
+[00:24] and here's what's actually happening at that moment
+[00:27] ai isn't giving you its best answer
+[00:29] it's giving you its safest answer
+[00:31] the one that's least likely to be wrong
+[00:34] the one that tries to please everyone
+[00:36] and it ends up being truly useful to nobody
+[00:40] but here's the thing it's not a flaw
+[00:42] that's just how these large language models work
+[00:45] by default the flaw
+[00:47] is thinking that regenerating it
+[00:49] is going to actually fix it
+[00:51] because you didn't really change the process
+[00:53] you just kind of rolled the the same dice again
+[00:55] the dice all over again so today
+[00:58] i wanna show you a five step sequence
+[01:01] that actually fixes this not by prompting better
+[01:04] but by making ai learn and earn the final answer
+[01:08] instead of just handing it to you
+[01:11] but quickly i just want to be upfront
+[01:13] i'm not an ai researcher
+[01:14] i'm just a guy that likes to test prompts and ideas
+[01:17] until they fall apart
+[01:18] and i pay attention to what holds up
+[01:20] and when something keeps producing good results
+[01:22] that's when i know it's worth sharing
+[01:24] and this is one of those things
+[01:25] and i call it the surviving answer method
+[01:28] and here's why i use the word surviving
+[01:31] when you just ask ai a question
+[01:33] every idea that it gives you gets to live
+[01:37] nothing gets challenged nothing gets cut
+[01:40] the weak stuff sits right next to the really good stuff
+[01:43] the strong stuff and they all look equally valid
+[01:47] this method changes that
+[01:49] it puts every answer under pressure
+[01:52] and only the ideas that survive that pressure
+[01:54] make it into the final response
+[01:56] definitely not the first answer
+[01:58] it's not the safest answer
+[01:59] it's the answer that actually earns its place
+[02:02] and that's a completely different thing
+[02:04] now the sequence has five steps
+[02:07] each one does a very specific job
+[02:09] and by the time you get to step five
+[02:12] you're not looking at the same answer anymore
+[02:14] you're looking at something that literally
+[02:16] had to earn its place it had to survive
+[02:20] and that's what changes everything
+[02:22] so step one is the answer
+[02:25] you get the strongest first response
+[02:27] that's what you wanna do step two is you oppose it
+[02:30] so you force ai to attack it
+[02:33] step three sorts it
+[02:35] so it separates what's solid from what's shaky
+[02:39] the fourth step is deciding
+[02:41] it defines what the better actually means
+[02:44] for this specific situation
+[02:46] and then step five the final step
+[02:47] is to rebuild and reconstruct it
+[02:49] using only what actually survived
+[02:52] so let me show you what this kind of looks like
+[02:55] and in this example i'm gonna use a digital product
+[02:59] ideas not because this is a video about products
+[03:01] but because it's clean
+[03:02] and most people can understand it and follow it
+[03:05] but first this is important
+[03:07] when should you actually run this sequence
+[03:10] and when is it overkill
+[03:13] so this works best when the answer requires judgment
+[03:16] let me explain
+[03:18] this means that there's no single correct answer
+[03:20] there are trade offs and the quality of the output
+[03:23] depends on what you actually care about
+[03:25] most things like what offer should i lead with
+[03:28] which direction should i take this channel
+[03:31] what's the strongest angle for the script
+[03:33] how do i position this against competitors
+[03:36] uh which idea actually has legs
+[03:38] versus which one just sounds good
+[03:40] those are judgment calls
+[03:42] there's no lookup table for them
+[03:44] no you can't just go to google
+[03:45] and google the right
+[03:46] answer for your specific situation
+[03:48] and that's exactly why
+[03:49] running them through this sequence
+[03:51] of applying real pressure
+[03:52] instead of just accepting the first thing ai hands you
+[03:55] well that actually changes the output
+[03:57] in a very meaningful way
+[03:58] and that's where this sequence earns its keep
+[04:01] so
+[04:03] where you don't wanna use this
+[04:04] is when you just need a fact
+[04:05] or a straightforward task
+[04:07] summarizing an article explaining how something works
+[04:09] writing a description from a spec sheet
+[04:11] running this method on a simple task
+[04:13] is like pressure testing a grocery list
+[04:16] it's just it's overkill
+[04:18] you don't need to do it so with that being said
+[04:21] this is step one and the exact prompt
+[04:24] and i'm going to have it linked in the description
+[04:26] so don't worry you'll be able to grab it
+[04:27] now again
+[04:28] this is just an example
+[04:29] i will have the template of the prompt below
+[04:31] but this is for the digital product
+[04:32] so this is basically what it says
+[04:35] give me your strongest ideas for a digital product
+[04:37] i could sell online
+[04:38] i'm a solo creator with useful knowledge or experience
+[04:42] the product needs to be practical
+[04:44] solvable by one person
+[04:45] and something people would actually pay for
+[04:47] no big team no startup funding required
+[04:51] rank the ideas strongest to weakest
+[04:53] and briefly explain why each one has potential
+[04:58] when you hit send ai comes back with something like
+[05:01] well you should do templates
+[05:02] or you could do mini courses or a notion system
+[05:04] a swipe file a niche e book right
+[05:08] it looks decent it sounds reasonable
+[05:11] maybe even kind of exciting
+[05:13] and this is the moment that many people stop
+[05:15] and begin to use this answer
+[05:17] and move on from there but
+[05:19] we've got four more prompts in this sequence
+[05:21] to go through so now we move on to step two
+[05:24] which is opposing it so now you just send this prompt
+[05:28] take the strongest opposing point of view
+[05:30] and challenge those ideas
+[05:32] which ones are too generic
+[05:34] too saturated too hard to sell
+[05:36] or unclear in value for a solo creator
+[05:38] be specific now again
+[05:40] this is based on digital product creation
+[05:43] and trying to get ideas
+[05:44] so that's why it's specific to that again
+[05:46] the templated prompt will be below
+[05:50] what happens now
+[05:51] gets very interesting to see what happens
+[05:54] the niche book idea in this example
+[05:57] well ai just told you
+[05:58] now that the market is flooded
+[06:01] and buyers are skeptical of pdfs
+[06:02] that they've never heard of
+[06:04] that template pack suggestion
+[06:06] yeah it's viable
+[06:07] but only if the niche is tight enough
+[06:09] and you didn't specify a niche in your original prompt
+[06:13] the notion system it suggested another good concept
+[06:16] but it requires ongoing support
+[06:18] and a lot of solo creators just underestimate that
+[06:21] now the ideas look different
+[06:23] the cracks are visible and that's exactly what you want
+[06:26] because now you know what you're actually working with
+[06:29] right which moves us into step three
+[06:32] which is sorting through it
+[06:34] this is the next prompt in the sequence
+[06:37] sort the ideas and critiques into three groups
+[06:40] one well grounded and solid
+[06:43] two promising but unproven
+[06:46] and three weak assumptions or likely failure points
+[06:51] then identify what still holds up after the critique
+[06:55] now you have a map
+[06:56] not a pile of ideas and a pile of critiques
+[06:59] an actual map of what's strong
+[07:02] what's maybe and what's noise
+[07:04] and you can see how the new answer
+[07:06] is starting to take shape now
+[07:07] as you're doing this
+[07:09] so that is what moves you on to step four
+[07:12] which is deciding what stays
+[07:13] and this is the step that almost nobody takes
+[07:17] this was that step in the process that i started doing
+[07:19] and realizing how powerful this actually is
+[07:22] skipping this is why final ai answers
+[07:26] often feel like they're trying to be everything
+[07:29] at once right
+[07:30] and i'm sure that you've seen that before
+[07:31] so here's that prompt
+[07:33] and this is where you would change some of the standard
+[07:36] that you specifically want
+[07:37] for your case or for what you're trying to actually do
+[07:40] and again you can change this in the actual template
+[07:42] but essentially what we're saying is
+[07:44] before rebuilding
+[07:46] choose the single most important standard
+[07:48] for evaluating the surviving ideas practicality
+[07:52] demand ease of creation
+[07:55] low risk profit
+[07:56] potential or long term value
+[07:59] tell me which one matters most here and why
+[08:04] and maybe you choose ease of creation
+[08:07] because you're building your first product
+[08:08] and you just wanna win maybe you choose demand
+[08:13] because you've tried things before that didn't sell
+[08:15] the point is you choose
+[08:17] and now ai has a lens a real one
+[08:21] and the final answer is going to actually
+[08:24] really mean something
+[08:25] and that's how you move into the final step
+[08:27] it's rebuild it so here's that final prompt
+[08:30] rebuild the final answer using only what survived
+[08:34] apply the decision rule you chose
+[08:37] then stress test it what could still make this fail
+[08:41] or underperform in the real world
+[08:45] that stress test line at the end is not optional
+[08:50] it's what separates a polished answer from a tested one
+[08:54] and tested is what you actually want
+[08:58] so let's think about what just actually happened
+[09:01] you started with five generic digital product ideas
+[09:05] ranked by an ai trying to be helpful
+[09:07] in this example at least right
+[09:10] you ended with one or two genuinely filtered
+[09:13] pressure tested directions
+[09:16] chosen based on a standard that you defined
+[09:20] with their failure modes already mapped out for you
+[09:25] that's not a better prompt
+[09:27] it's a better process
+[09:29] and the output reflects that every single time
+[09:33] now i do want to warn you
+[09:34] this is a scenario that you will probably hit
+[09:36] at some point you run all five steps
+[09:39] the final answer is mostly there
+[09:41] but one part of it still feels off
+[09:44] it's maybe a little vague or a little generic
+[09:46] or it's not quite matching what you actually need
+[09:50] or what you're actually looking for do not start over
+[09:53] do not regenerate just send this prompt
+[09:57] run the surviving answer method again
+[09:59] but only fix what failed then rebuild
+[10:03] that's it just one line
+[10:05] seriously that's it
+[10:07] what that does is force the ai to do surgical repair
+[10:11] instead of starting from scratch
+[10:12] it's not rethinking everything
+[10:14] it's isolating the weak point and tightening only that
+[10:18] and that's a completely different level of iteration
+[10:21] and once you use it
+[10:23] you're probably never gonna go back to hitting
+[10:24] regenerate again
+[10:26] so this is what you should try to do
+[10:29] if you wanna try this out
+[10:30] you can do this right now
+[10:31] in whatever ai tool that you're using
+[10:33] chat gpt claude gemini
+[10:35] grok whatever
+[10:36] whatever is that you wanna use
+[10:37] so open up a new conversation
+[10:39] type a question that you've been thinking about
+[10:41] or maybe something that you've asked before
+[10:43] and the answer just wasn't quite good enough
+[10:46] run it through this five step sequence
+[10:49] answer oppose it
+[10:52] sort it make the decision
+[10:54] rebuild it those five things
+[10:57] the one that you absolutely cannot skip is decide
+[10:59] i wouldn't skip any of them
+[11:00] to be honest with you
+[11:01] but you do not want to skip the decide
+[11:03] that's the step that gives the final answer
+[11:05] a real point of view instead of a safe
+[11:09] balanced generic non answer
+[11:12] and when you try it do me a favor
+[11:13] leave me a comment tell me what you use it on
+[11:15] tell me how it worked
+[11:17] tell me if it showed you something
+[11:19] other than just saying you know
+[11:21] a lot of people will just say
+[11:22] be a skeptic act like a skeptic and
+[11:24] and look at this and all that kind of stuff
+[11:25] this takes it a few more levels deep
+[11:28] so if you do this and you use it
+[11:30] and you try it and it works for you or
+[11:31] or whatever let me know in the comments
+[11:34] i do try to read every single comment
+[11:35] i do try to respond back to every single comment
+[11:37] as well i might miss some here or there
+[11:39] but please leave me some information
+[11:41] let me know how this worked for you
+[11:43] but other than that that's it
+[11:45] i hope you find this useful
+[11:46] this is craig and i'll see you on the next video
+[11:49] take care

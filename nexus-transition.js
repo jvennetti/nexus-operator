@@ -81,7 +81,12 @@
     var hasBg=false,anyPlaying=false;
     (window.__bgAudio||[]).forEach(function(a){ if(a){hasBg=true;if(!a.paused)anyPlaying=true;} });
     ['_ciroSong','_machineAmb'].forEach(function(k){ if(window[k]){hasBg=true;if(!window[k].paused)anyPlaying=true;} });
-    if(hasBg&&!anyPlaying) muBtn.style.display='block';
+    if(hasBg&&!anyPlaying){
+      // Keep clear of the page's nav bar (its "← Hub" button sits in the same corner): sit just below it.
+      var bar=document.querySelector('nav');
+      if(bar){ var bb=bar.getBoundingClientRect().bottom; if(bb>0&&bb<window.innerHeight/2) muBtn.style.top=Math.round(bb+14)+'px'; }
+      muBtn.style.display='block';
+    }
   },900);
 
   // ── Fade in on page load (overlay starts black, fades to clear) ──
@@ -100,7 +105,7 @@
   } else {
     setTimeout(fadeIn,60);
   }
-  window.addEventListener('pageshow',function(e){ if(e.persisted) fadeIn(); });
+  window.addEventListener('pageshow',function(e){ if(e.persisted){ _transiting=false; fadeIn(); } });
 
   // ── Auto tab title from URL ──
   (function(){
@@ -118,7 +123,12 @@
   var _lastSfxIdx=-1;
 
   // ── Transition out ──
+  // One transition per navigation: a second activation (double click on a control the overlay does
+  // not cover yet, Enter pressed twice) must not restart the bar or play a second sound.
+  var _transiting=false;
   function runTransition(href,skipSound){
+    if(_transiting) return;
+    _transiting=true;
     if(window.nxSmFadeOut) window.nxSmFadeOut(2);
     (function(){
       var iframes=document.querySelectorAll('iframe[src*="youtube.com"],iframe[src*="youtube-nocookie.com"]');

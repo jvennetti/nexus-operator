@@ -1,0 +1,148 @@
+[00:00] Today, I’ll show you how to use Claude Artifacts.  With Artifacts, you can build apps, websites,
+[00:06] dashboards, games, and interactive tools,  all simply by describing what you want. But
+[00:11] they can also go much further than that.  You can build AI directly into your apps,
+[00:16] save data between sessions, connect to services  like Google Calendar and Slack, and even publish
+[00:22] what you create so other people can use it too. We'll start with the basics, then we'll work
+[00:26] our way up to some of these more advanced  capabilities. I'm Kevin, and let's dive in. To get
+[00:32] started, head over to Claude. You'll find a link  right here at the bottom of the screen. Artifacts
+[00:38] are available with a free account or with any  of Claude's paid plans. Once you're signed in,
+[00:43] over on the left-hand side, click into Artifacts.  And here, you can see all the Artifacts you have
+[00:49] access to. You can see just the ones that  you've created, and over here, you can see
+[00:53] the ones that others have shared with you. And  right up here, you can also search through all
+[00:58] of your Artifacts. To create something new, right  up here, let's click on New Artifact in the top
+[01:04] right-hand corner. Claude starts a new task and  asks what you want to build. You'll notice here
+[01:09] that it refers to the Artifact as a webpage. But  don't worry, we're not about to build the next
+[01:14] Amazon. The webpage is simply the foundation for  whatever we want to create. As a note, you can
+[01:20] also create an Artifact directly from a regular  Claude conversation. But for this tutorial,
+[01:26] let's start right here. At the bottom of the  screen, Claude asks me a few questions about
+[01:30] what I want to create. Now, I could skip these and  describe everything myself, but let's actually go
+[01:35] through these. I'd like to build a dashboard for  my small business, the Kevin Cookie Company. So
+[01:40] right up here, I'll select a dashboard. Here,  it asks me about the visual style. I'd like to
+[01:45] go with bold and colorful. I think cookie sales  deserve a little bit of flair. Now, the questions
+[01:50] you see might look slightly different from mine,  and that's okay. Just run through them and provide
+[01:54] whatever information is relevant. Here, I'll  select sales and revenue trends. Next, it
+[01:59] wants to know where to get the data from for the  dashboard. Now, you could use placeholder data,
+[02:03] or you could pull it from different sources. Now, I'd like to upload my own data. If you'd
+[02:07] like to follow along, I've included a link to  the same data in the description. Right here,
+[02:11] I'll type in something else, upload my own data,  and then I'll send that. Claude now asks for the
+[02:16] actual data. To provide it, I’ll click on the  plus icon. Let's go to add files or photos,
+[02:21] and there's my CSV file. I'll select this and then  click on open. Right over here, I'll now send that
+[02:26] to Claude. Claude is now reviewing the data,  figuring out how to best visualize it, and it's
+[02:31] going to build a first version of our dashboard.  Just give it a few moments. Once it's ready, let's
+[02:35] publish the artifact, and then we can see what  it made. Over on the right-hand side, we can see
+[02:39] the artifact or the dashboard. To expand the view,  I'll click on this icon, and that way we could see
+[02:44] the artifact better. Now, right away, we have some  of the key metrics right here across the top. Down
+[02:50] below, we also have some charts that understand  how the business is performing. And, this isn't
+[02:55] just a picture of a dashboard. It's fully  interactive. Here, if I hover over the chart,
+[02:59] you'll notice that it shows me all of the specific  numbers for those months. Looking at the chart,
+[03:04] it appears that salted caramel is doing fairly  well. Clearly, our customers have excellent taste.
+[03:11] Now, what's especially nice is that Claude built  all of this from the CSV file we provided. I
+[03:15] didn't have to write any code or manually build  any of these charts. Now, I like this dashboard,
+[03:20] but I want to make a few changes. I don't need to  open up the code or rebuild the artifact. I could
+[03:27] simply tell Claude what I'd like to change. I'd  like to continue refining this dashboard. To be
+[03:32] honest, it's a little bit too bright for me.  So right up on top, let's collapse this view,
+[03:36] and over on the left-hand side, I can continue  prompting changes. So over here, I'll ask it to
+[03:42] add a dark mode toggle. Then over here, let's send  it. Claude now has finished updating the artifact,
+[03:47] and right over here, we have a sun-moon toggle  that I could click on to switch between light
+[03:52] and dark mode. Let's click on that, ooh, and that  is so much easier on the eyes. But sometimes you
+[03:57] don't want to change the entire artifact. You  just want to update one specific part. For that,
+[04:02] we can use the annotation tool. You'll find  that right here in the top right-hand corner.
+[04:06] I'll select this, and then you can click on just a  specific part of the page that you want to change.
+[04:12] Now, right up here, it refers to Kevin's Cookie  Company, but I actually refer to it as the Kevin
+[04:18] Cookie Company. So over here, I'll highlight all  of this text, and that opens up a comment dialog,
+[04:23] and I can now tell Claude exactly what I want to  change in this specific area. So over here, I'll
+[04:30] say, please refer to the Kevin Cookie Company,  not Kevin's Cookie Company. Now, from here,
+[04:34] I have two different options. I could send this to  Claude and have it make the change, or over here,
+[04:40] I could simply leave it as a comment. Now,  that could be useful if, say, for example,
+[04:44] a coworker's reviewing the artifact, but doesn't  want Claude to make the change just yet. In this
+[04:50] case, I want Claude to fix it. So over here, I'll  click on Send to Claude. There we go, all fixed,
+[04:55] perfect. Over here, I'll click on the three dots,  and then I'll delete the thread. Now that we're
+[05:00] happy with our artifact, let's look at a few of  the options for sharing and managing it. In the
+[05:05] top right-hand corner, let's click on Share, and I  can decide who I want to share this with. I'll set
+[05:11] it to anyone with the link, and down below, let's  click on Share publicly. Over here, I can choose
+[05:16] the version of the dashboard that I would like to  share. I’ll select version number three. That's
+[05:20] currently the latest version. Then, in the top  right-hand corner, I'll click on Copy Link. Now,
+[05:25] anyone with this link can open the artifact in a  browser and interact with the dashboard. In the
+[05:31] top left-hand corner, let's go back to the main  Artifacts view. I'll hover over the sidebar, and
+[05:35] down below, let's click on Artifacts. Here, we can  see the new artifact we just created. If I want to
+[05:41] make it easier to find later, simply hover over  the artifact, and in the top right-hand corner,
+[05:45] you'll see three dots. I'll click on that  and then select Pin. Now, you'll notice that
+[05:50] there's now a new pinned section. When I click  on that, there I see the dashboard. That way,
+[05:54] you could quickly get back to your most important  dashboards. Now, if you want to make additional
+[06:00] changes to your artifact, you have to go back  to the original chat or task. So over here,
+[06:05] I'll hover over, go down to Chat and Tasks, and  right here, I see the KCC Sales dashboard. And
+[06:10] when I click on that, I can now continue refining  on my artifact from here. So far, we've built an
+[06:16] artifact that lets us explore our sales data,  but we can also build Claude’s AI directly into
+[06:23] an artifact. At the Kevin Cookie Company, we're  constantly experimenting with new cookie recipes,
+[06:27] and I want to give employees a simple tool to  help name them. So just like we did earlier,
+[06:32] let's create a new artifact. Instead of  going with all the different preset options,
+[06:37] let's select something else. Down at the bottom,  click into something else, and here, I'll ask it
+[06:42] to create an AI-powered cookie naming tool for  employees at the Kevin Cookie Company. Let the
+[06:47] user answer the ingredients in a new cookie, and  then we'll use Claude to generate five creative
+[06:52] names for it. I'll send that. And Claude has  finished building our tool. Now, right up on top,
+[06:56] I'll remove the pre-populated ingredients, and  I'll enter my own. So, we have a new cookie
+[07:01] with dark chocolate. We also have pretzels,  caramel, and we also have sea salt. Here,
+[07:06] I entered in all the different ingredients,  and down below, I'll now generate five names
+[07:11] based on those ingredients. You'll see that this  artifact uses Claude to generate the results.
+[07:16] The first time we use it, we need to give it  permission to access Claude. So right over here,
+[07:20] let's click on continue. And there we go. We  have five completely new names based on the
+[07:26] ingredients we entered. Salted Pretzel Caramel  Crunch. Ooh, the Dark and Salty Affair. I have
+[07:32] some good names in here. Now, what's important  here is that these names weren't built into the
+[07:37] artifact ahead of time. The artifact is actually  using Claude to generate a new response based
+[07:42] on whatever we enter. So, if another employee  enters a completely different set of ingredients,
+[07:48] Claude will generate completely different ideas.  And we didn't have to set up an API or write
+[07:52] any code to make that happen. Our artifact can  generate new cookie names using Claude, but what
+[07:58] if we want it to actually remember the ideas that  we like? Artifacts can also store data, so let's
+[08:05] add that to our tool. Back here in Claude, I'll  enter in an additional prompt. Add the ability
+[08:10] to save my favorite cookie names, and then I want  someplace to be able to see all the saved names.
+[08:15] Then over here, let's send that. Claude has some  follow-up questions. I want it to be available to
+[08:19] everyone who opens this. So over here, I'll select  option two. Claude has now updated the artifact.
+[08:24] And if you look next to all these different  suggestions, we now have a new star icon. Now,
+[08:29] I really like this one, Midnight Pretzel  Crunch, so over here, I'll click on the star,
+[08:33] and if I scroll to the bottom of the page, you'll  now see it appear under the saved ideas section.
+[08:38] Now, here's the important part. This isn't just  temporary information on the page. The artifact
+[08:43] can persist this data. So, when I come back later,  my saved cookie ideas are still here. This makes
+[08:49] it possible to build much more useful applications  like trackers, project tools, customer lists,
+[08:55] or anything where you need information to  stick around between sessions. Artifacts can
+[08:59] also connect to other apps and services using  connectors. These connections are powered by
+[09:05] something called MCP, or model context protocol.  This basically allows our artifact to work with
+[09:11] information and tools outside of Claude. I  want employees to be able to share one of
+[09:16] their new cookie ideas with the rest of the team  in Slack. So right over here, let's ask Claude to
+[09:20] add a button that lets me share a saved cookie  idea with the team. Then over here, let's send
+[09:26] that. Claude asks me to connect to Slack. I'll go  through and set that up. Now that we're connected,
+[09:30] I'll let Claude know. It asks me what channel I  would like to publish to. I'll select this one.
+[09:35] Over on the right-hand side, it's now included a  share to Slack button in the artifact. Let's click
+[09:40] on that. Now, over here in Slack, I can see that  Claude shared this idea in the new cookie ideation
+[09:46] channel. But what if the app that you want to  use doesn't have a native connector in Claude?
+[09:51] That's where today's sponsor, Zapier, comes in.  With Zapier MCP, we can give Claude access to
+[09:57] thousands of additional apps and actions without  having to build those integrations ourselves.
+[10:03] So, let's connect Zapier and give our artifact  another capability. First, head to the following
+[10:09] website and set up a free Zapier account. On the  left-hand side, click on MCP Servers. You could
+[10:14] think of MCP as a standard way for AI tools like  Claude to connect to other apps and take actions.
+[10:20] Right up on top, let's click on Add MCP Server.  Here, let's click on Claude, and then copy this
+[10:25] prompt and open Claude and paste it in and run it.  From Zapier, I can choose which apps I want Claude
+[10:31] to work with and which actions I want to be able  to take. You'll notice that there are thousands
+[10:36] of different apps that you could choose from.  Now, in this case, I want to connect to Trello.
+[10:39] So right up on top, I'll search for Trello and  then click on this. Now here, I could select
+[10:44] all the different tools that I want Claude to  have access to. For simplicity, right up on top,
+[10:49] I’ll select All Tools, and down below, I'll click  on Connect. Here, I'll select my Trello account.
+[10:54] Now, we use Trello to manage new products, and I  want every promising cookie idea to become a card
+[10:59] that our team can follow up on. Right here, I'll  add the tools. Now that we've connected Trello,
+[11:04] let's go back to Claude. Back here in Claude, I'll  type in a prompt. Using Zapier, add an option to
+[11:10] send a saved cookie idea, so one of these options  here, to our Trello board as a new card. Over
+[11:15] here, let's send that. Here, I'll have it post  to this board, I'll select that, and over here,
+[11:20] let's select Tasks. Claude has now updated the  artifact and there's now a new option to send
+[11:25] this to Trello. Let's try it. And here, if I jump  over to our Trello board, there it is. Claude took
+[11:31] the information from the artifact and created a  new card through Zapier. So even if Claude doesn't
+[11:37] have a native connection to an app that you use,  Zapier can expand what you can connect to and what
+[11:42] your artifact can do. There's one more type of  artifact worth knowing about, live artifacts.
+[11:49] This is available in the Claude desktop app, which  I have open here. Instead of building something
+[11:54] from a snapshot of information, live artifacts can  pull in current data from connected apps and local
+[12:00] files. I've built a dashboard similar to what  we created earlier. When I open this artifact,
+[12:05] it can pull in the latest data automatically.  And up in the top right-hand corner, I can click
+[12:10] the reload button to force it to refresh with  the latest information. So, for something like
+[12:15] a sales dashboard where the underlying data is  constantly changing, you can build it once and
+[12:20] then keep coming back to an up-to-date view. And  that's how to use Claude artifacts. While we built
+[12:26] a dashboard and an internal tool today, you can  create everything from websites and calculators
+[12:31] to games, interactive tools, and AI-powered  apps. If you found this helpful, please consider
+[12:36] subscribing for more videos like this. Thanks  for watching, and I'll see you in the next one.

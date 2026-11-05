@@ -1,0 +1,424 @@
+[00:00] Hey guys, welcome back to the channel.
+[00:01] If you are new here, my name is Ray and
+[00:03] I quit my software engineering job at
+[00:04] Meta last year to help you learn AI and
+[00:06] make money and run your own business
+[00:07] with AI. I recently built a fully
+[00:09] powered AI second brain that runs across
+[00:11] every single part of my daily life and
+[00:12] my business. It indexes every meeting
+[00:14] that I take, triages my inbox, and buys
+[00:16] me back at least 15 hours every single
+[00:18] week. Today, I'm going step-by-step
+[00:19] through how you can build the same AI
+[00:20] brain that I use and become part of the
+[00:22] 1% of AI users in the world. When people
+[00:25] ask me, "What should I build with AI?
+[00:26] I'm a beginner." I always tell them to
+[00:27] build an AI second brain because it has
+[00:29] tremendously helped so many people and
+[00:30] is one of the most important things to
+[00:32] build out when you're using AI. Now, I
+[00:34] know what you're thinking. Why would you
+[00:35] spend weeks configuring your second
+[00:36] brain when dozens of productivity apps
+[00:38] already exist? But because till now,
+[00:40] everybody thinks that a second brain
+[00:42] means spending $40 a month on SaaS
+[00:44] subscriptions, adding highlights to
+[00:45] Notion, and bookmarking YouTube
+[00:47] tutorials that you'll really never
+[00:48] watch. You're basically just dumping
+[00:49] data that you'll never read. When I
+[00:51] started my solo business, I was wasting
+[00:52] 10 hours a week organizing notes
+[00:54] manually. I tried Notion, Apple Notes,
+[00:56] Google Drive. I tried a lot of them
+[00:58] several times and abandoned all of them.
+[01:00] The main reason that I was stuck was
+[01:01] because I was using these tools as
+[01:02] storage instead of a proper system. And
+[01:04] also, before you get started, like with
+[01:06] all of my videos, I gave away a free max
+[01:08] subscription of Codex or Claude to my
+[01:10] viewers for every single one of the
+[01:11] videos that I make. Make sure to keep
+[01:13] watching to learn how to get it. Okay,
+[01:14] so now we're picking the winner for last
+[01:15] week's video for that ChatGPT max or
+[01:17] Claude max subscription. Here is the
+[01:19] winner. Boom. If you want, make sure to
+[01:20] email me or DM me on Instagram and I'll
+[01:22] send you over that gift card. Once
+[01:23] again, I give out one max plan in every
+[01:25] single one of my YouTube videos. If you
+[01:26] didn't win, just comment for this week's
+[01:27] video. To understand why you need a
+[01:29] second brain, let's go a bit back. A few
+[01:31] months ago, Andrej Karpathy posted about
+[01:33] building a personal knowledge base with
+[01:34] AI. It went viral and many people tried
+[01:36] to build it. Either they failed or they
+[01:38] built it and had no idea how to get the
+[01:40] best out of it. The reason why it became
+[01:41] so popular is because it's a system that
+[01:43] really remembers everything that you've
+[01:44] added in the past and helps you remember
+[01:46] stuff that you didn't even know existed.
+[01:48] For example, one time in the past, you
+[01:49] might have, you know, added a YouTube
+[01:50] tutorial to do a specific thing that you
+[01:52] totally forgot about, it remembers it
+[01:54] for the future. And it also proactively
+[01:56] reminds you and pushes your goals
+[01:57] forward based on the things that you
+[01:58] added in the past. Today, we're actually
+[02:00] going to be building this AI second
+[02:02] brain. I'm going to walk you through the
+[02:03] exact full setup, show you the
+[02:05] three-layer architecture, and give you
+[02:06] the exact commands, and show you how to
+[02:08] automate the entire thing so it gets
+[02:10] smarter and smarter by itself. Okay, to
+[02:12] understand why this system works, you
+[02:13] have to understand why standard racking
+[02:15] tools like Notebook LM hit a wall trying
+[02:17] to build a second brain. If you don't
+[02:18] know what they are and haven't used
+[02:19] them, make sure to look them up because
+[02:20] they are also important tools that you
+[02:22] need in your everyday lives. Most
+[02:23] people's experience with working with
+[02:25] documents is like you upload a
+[02:27] collection of PDFs or notes, then you
+[02:28] ask a few questions, and then AI
+[02:30] retrieves relevant chunks from those
+[02:31] files. It synthesizes an answer and
+[02:33] presents it. That is how Notebook LM,
+[02:35] ChatGPT file uploads, and standard
+[02:36] vector databases work. The issue with
+[02:38] that model is that the AI rediscovers
+[02:40] knowledge from scratch every single time
+[02:42] and with every single question. There is
+[02:43] zero accumulation. If you ask a complex
+[02:45] question that requires synthesizing five
+[02:47] different documents, let's say, you
+[02:48] uploaded over the last 3 months, the
+[02:50] model has to piece together fragments of
+[02:51] data every single run. The moment you
+[02:53] close that tab, that synthesis
+[02:55] disappears. Part of this concept is that
+[02:57] instead of retrieving from raw documents
+[02:58] at query time, you have the AI
+[03:00] incrementally build and maintain a
+[03:01] persistent wiki about yourself and
+[03:03] everything that you know. Okay, so you
+[03:05] can think of it like software
+[03:05] engineering. Your raw notes and articles
+[03:07] are your raw inputs, Claude Code is your
+[03:09] programmer, wiki is your persistent code
+[03:12] base, and Obsidian is the IDE where you
+[03:13] view the output itself, much like a
+[03:15] front-end display. When you add a new
+[03:17] source, the AI does not just store it
+[03:18] for search. It reads the source,
+[03:20] extracts the core entities, and actively
+[03:22] integrates into the existing wiki. The
+[03:23] knowledge is compiled once, and then it
+[03:25] keeps updating. But, the tedious part of
+[03:27] building a personal knowledge is
+[03:29] updating cross-references, filing notes,
+[03:30] and keeping summaries up-to-date. But,
+[03:32] with Claude Codex reading these files,
+[03:34] you don't have to do all of those manual
+[03:35] tasks every time. Okay, let's start
+[03:37] building this AI brain now. To run this,
+[03:38] you need two tools. First is Obsidian.
+[03:41] You can download it at obsidian.com.
+[03:43] It's completely free. It's a local
+[03:44] markdown editor that lets you view your
+[03:46] wiki through clean text files, folders,
+[03:48] and visual graph views. The thing I love
+[03:50] about Obsidian is that it is available
+[03:51] on desktop and mobile, so I can add
+[03:53] notes from any device I want. It's
+[03:55] pretty handy to just dump any of my
+[03:56] stuff anytime. Then, you need a Claude
+[03:58] subscription. First, download the
+[03:59] desktop app at claude.com. This is your
+[04:01] AI agent that reads your files, executes
+[04:03] your scripts, and maintains the wiki.
+[04:05] And you can also use Claude X here if
+[04:06] you're a ChatGPT lover. Now, we're going
+[04:08] to talk about how to get that free $100
+[04:10] max subscription. Basically, all you
+[04:11] have to do is subscribe, like the video,
+[04:13] and comment below how you use AI in your
+[04:15] business or in your daily lives. I'll
+[04:16] pick one person from the comments, and
+[04:18] then I'll send them the credit/gift card
+[04:20] in order to get that max subscription.
+[04:22] Okay, after you have these two items set
+[04:23] up, let's set up the vault. Open folder
+[04:25] as vault. Create a new folder on your
+[04:27] computer and name it whatever you want.
+[04:28] I call mine Ray Brain. you dump all your
+[04:30] big files into one folder, your AI will
+[04:32] hallucinate. When I first tested this by
+[04:34] dumping all of my files, Claude Code had
+[04:36] a 60% accuracy rate when answering the
+[04:38] questions. The second I applied the
+[04:40] strict structural boundaries, that
+[04:41] accuracy jumped to 95%. We'll also add
+[04:44] three layers in here so AI gives you
+[04:45] even more accurate answers personalized
+[04:47] just for you. First, let's create a
+[04:49] folder called raw sources. This is the
+[04:50] dump folder you want to add articles,
+[04:52] PDFs, cost transcripts, screenshots, and
+[04:55] research papers, and anything you want
+[04:57] AI to check while answering. One
+[04:58] critical rule that you should add here
+[04:59] is that AI reads from them, but is never
+[05:01] allowed to edit or delete them. This is
+[05:03] important. Okay, then let's create a
+[05:05] second folder called wiki. This is where
+[05:07] AI writes the organized knowledge base.
+[05:08] It contains concept pages, entity
+[05:10] breakdowns, and comparisons. Here, the
+[05:12] rule is opposite. AI owns this folder
+[05:13] entirely. It creates the files, updates
+[05:15] them, and when new data arrives, it
+[05:17] maintains the cross-references. Inside
+[05:19] the wiki, you have two critical system
+[05:20] files. First is index.md. This is just a
+[05:23] structured catalog of every single page
+[05:25] in the wiki with the link and a one-line
+[05:27] summary grouped by category. Claude
+[05:29] reads this file on every query you give
+[05:31] to locate relevant files. Then, you have
+[05:33] a log.md. This is just a chronological
+[05:36] record of what happened and when. Every
+[05:38] query and health check gets timestamped
+[05:39] here so the AI knows when it has been
+[05:41] modified, how recently. It's like a
+[05:43] change log of your wiki, basically. For
+[05:45] now, I've named these files and created
+[05:47] a proper structure. I'll use Claude to
+[05:48] populate these files with data. Finally,
+[05:50] you have the single most important file
+[05:52] in the entire repository. It lives in
+[05:54] the root directory and tells Claude Code
+[05:55] how your brain is structured, what the
+[05:57] rules are, and what commands to follow.
+[05:59] All you got to do is create a file
+[06:00] called claude.md right in the root
+[06:02] folder. In my free guide below, I give
+[06:03] you the exact copy of the schema prompt.
+[06:05] It's in the description. Just copy that
+[06:07] prompt, paste it inside, and boom, your
+[06:09] AI knows now the exact rules of how to
+[06:11] build your brain. Now that you set up
+[06:13] your Obsidian files, it's only an
+[06:14] organized folder of basically markdown
+[06:16] files, your AI reads all of that context
+[06:18] and will still reply like a generic
+[06:20] chatbot until you make Claude think,
+[06:22] analyze, and write just like you. For
+[06:24] this, you have to give it an explicit
+[06:26] identity layer. In our system that lives
+[06:27] in three files at the root of the vault.
+[06:29] Let's go over these. First is the user
+[06:31] at md. It defines who you are. In my
+[06:33] file, it says, "Ray Fu, ex-Meta software
+[06:35] engineer based in New York City, running
+[06:37] an AI automations community and creating
+[06:38] content. Prefers direct communication,
+[06:40] fast iteration over perfectionism,
+[06:41] concrete numbers over vague adjectives,
+[06:43] and simple composable systems over
+[06:45] complex architectures." You can create
+[06:47] anything that you want based on how you
+[06:48] want it to respond and write to you.
+[06:50] Then, I have my soul at md, which is
+[06:52] essentially defines who the AI is to
+[06:54] you. In my file, it says, "You are an
+[06:55] elite technical chief of staff and
+[06:57] co-founder. You are direct, analytical,
+[06:59] and honest. Challenge my assumptions.
+[07:00] [snorts]
+[07:01] Never hedge my words like try, hope,
+[07:03] maybe, or depends. If an idea is
+[07:05] over-engineered or sloppy, point it out
+[07:07] immediately before executing." And last,
+[07:09] I've a file that is super important to
+[07:10] me. It's called the anti-AI style at md.
+[07:13] It's a strict blacklist that prevents AI
+[07:15] from producing generic AI slop. Every
+[07:17] time Claude writes a draft and uses a
+[07:19] phrase that makes me cringe or like
+[07:20] those triple three M dashes, any of
+[07:22] those words, I just open this file and I
+[07:23] just ban those words. And look, you do
+[07:25] not need to type these files yourself.
+[07:26] Just open Claude code, turn on voice
+[07:28] mode, or use a tool like WhisperFlow,
+[07:29] and paste in the interview prompt from
+[07:31] my guide. The link is in the description
+[07:32] once again. Yep, for just 15 minutes
+[07:34] answering all the questions Claude asks
+[07:35] you, and then Claude creates these files
+[07:37] for you. Now that the vault structure
+[07:38] and your identity are locked in, you
+[07:40] have to feed the brain with information
+[07:41] every single day. To be honest, doing
+[07:43] this manually every day is a huge
+[07:44] hassle. For this, I use the Obsidian Web
+[07:47] Clipper extension to scrape articles,
+[07:49] blogs, and relevant info I come across
+[07:50] every day. You can use any sort of web
+[07:52] scraping you want, but this is just
+[07:53] already in Obsidian, so it's really easy
+[07:55] to connect to and use. To install this,
+[07:57] go to Chrome, install the official
+[07:59] Obsidian Web Clipper extension, then
+[08:01] open it in settings, set its destination
+[08:02] folder to raw sources. Whenever you find
+[08:04] a great article, you just hit the
+[08:05] clipper, and boom, it drops right into
+[08:08] the raw sources. Then in your terminal,
+[08:09] all you do is type in this one command
+[08:11] from the guide, step away, and let
+[08:12] Claude cook. Claude code scans the raw
+[08:14] files, parses thousands of words in
+[08:16] seconds, extracts the core concepts, and
+[08:18] starts generating individual markdown
+[08:20] files inside the wiki. It creates the
+[08:22] master index, logs operations in the
+[08:24] log.md, and links every concept using
+[08:25] Obsidian wiki links. Your raw sources
+[08:27] stay completely untouched. There are
+[08:29] thousands of other web scrapers on the
+[08:31] market that you can use to feed data
+[08:32] into your second brain, but I highly
+[08:34] recommend this one. Whenever you add a
+[08:35] new article or PDF to raw sources, you
+[08:37] just tell Claude that you've added a new
+[08:38] source and instruct it to update the
+[08:40] connected files. Okay, now that we added
+[08:42] a bunch of new raw files, let's see how
+[08:44] it connects to our existing files. To
+[08:46] check this, open the graph view in
+[08:47] Obsidian, and then boom, this is
+[08:49] beautiful. Look at what just happened.
+[08:51] Every single concept is connected by
+[08:53] lines. This is why an LLM wiki destroys
+[08:55] standard search. It functions as an
+[08:57] associated knowledge graph. When you ask
+[08:59] Claude code a question, it is not brute
+[09:00] force search through across all of your
+[09:02] files. It opens index.md, locates the
+[09:05] relevant cluster, checks the wiki links,
+[09:07] and gives you a synthesized answer with
+[09:09] exact citations. However, the most
+[09:11] important point is to remember the rule
+[09:12] that makes this system compound. Always
+[09:14] save good answers back into the wiki as
+[09:16] new pages. If Claude generates a
+[09:17] brilliant comparison table or a
+[09:18] technical breakdown based on your
+[09:20] questions, do not let it disappear. Tell
+[09:22] Claude to save this analysis as a new
+[09:24] page in the wiki and update index.md.
+[09:26] Through this, every question you ask
+[09:27] makes the knowledge base smarter over
+[09:29] time for the next question. Okay, now
+[09:31] look, you just saw the core blueprint,
+[09:33] but I know how this usually goes. You
+[09:34] watch a video like this, get excited,
+[09:36] close the tab, and never actually
+[09:37] implement it. Or you try to set it up
+[09:39] and then hit an error and never get the
+[09:41] effort to try again. I saw this and
+[09:42] started a community of founders and
+[09:43] operators. I help them make money in the
+[09:45] community. People exchange ideas. It's
+[09:47] just a brilliant network of people. I
+[09:49] walk every member through every single
+[09:50] step inside our community. You can join
+[09:52] the community below at
+[09:53] school.com/racfoods. It's also in the
+[09:55] description below. And one more thing,
+[09:56] inside the community you get these
+[09:57] weekly live build calls where I
+[09:59] troubleshoot your system and build
+[10:00] custom workflows in real time. Also, I
+[10:02] have the exact playbooks you can use to
+[10:04] sell these automation systems to
+[10:05] businesses for 3 to 10K. Here are
+[10:06] examples of wins and reviews from my
+[10:08] community already. Okay, sorry about the
+[10:09] community plug. Let's go back to our
+[10:11] setup. Once your wiki is running, you
+[10:13] can add three automate workflows that
+[10:14] turn into an agentic operating system.
+[10:16] The first one is the 7:30 morning
+[10:18] briefing. First, set up a script on
+[10:20] simple cron job that runs every morning.
+[10:22] When you open your laptop with your
+[10:23] morning coffee, you shouldn't open a
+[10:25] long task list or a messy email inbox.
+[10:27] Just open your terminal and Claude hands
+[10:29] you a clean summary of what needs
+[10:30] attention and what new orders sent to
+[10:32] your ecosystem. Two, processing meeting
+[10:34] transcripts. This is the second workflow
+[10:36] that you can set up. After any long
+[10:37] meeting drag your raw transcript into
+[10:39] your raw sources folder and tell Claude
+[10:41] to add key points, actions, and
+[10:42] decisions to the wiki. I love this
+[10:44] personally because I have like 10 to 15
+[10:46] meetings every day and so hard to
+[10:47] remember every action item from these
+[10:49] meetings even though I'm keeping
+[10:50] transcripts of them. What I usually do
+[10:51] is what you should do as well as connect
+[10:53] a meeting note taker MCP to Claude so
+[10:55] that automatically syncs all of your
+[10:56] meeting transcripts. I use Fireflies and
+[10:58] Calendly for this. Three, weekly health
+[11:01] checks. This is the last one. Once a
+[11:02] week, tell Claude code to optimize your
+[11:04] vault. This prevents context rot. If an
+[11:07] agent writes something slightly
+[11:08] incorrect, it catches it before it
+[11:09] corrupts downstream answers. This should
+[11:11] cover your health check for your second
+[11:12] brain. You got to update your brain and
+[11:14] have your backups ready. To do this,
+[11:16] just install the free Obsidian Git
+[11:18] community plugin. Set it to auto commit
+[11:20] and push your vault to a private GitHub
+[11:22] repository every 15 minutes. This helps
+[11:24] you have automated cloud backups and
+[11:26] complete version history across all of
+[11:27] your devices. And that's pretty much it.
+[11:29] Now you know exactly how to build your
+[11:30] AI second brain. You don't need to build
+[11:32] this entire system in one day. Just
+[11:34] start by creating a raw folder
+[11:35] structure, adding the Claude.md, and run
+[11:37] your first data ingest. I have created a
+[11:39] complete setup guide with all the folder
+[11:41] structures, prompts, and automation
+[11:42] scripts. Once again, just click the link
+[11:44] in the description to grab it right now.
+[11:45] And if you want to build alongside me,
+[11:47] join our community. Thanks so much for
+[11:48] watching. Make sure to like and comment
+[11:50] below how I can improve on my videos and
+[11:52] what video ideas you want to see me do,
+[11:53] what tutorials you want to see me make,
+[11:55] and subscribe and I'll see you in the
+[11:56] next video. Bye-bye.

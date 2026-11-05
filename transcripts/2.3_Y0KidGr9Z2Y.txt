@@ -1,0 +1,131 @@
+[00:11] In this video, we'll dig deeper into the
+[00:13] AI fluency competency of
+[00:16] discernment. AI fluency means working
+[00:18] with AI effectively, efficiently,
+[00:20] ethically, and
+[00:22] safely. Discernment is specifically
+[00:24] about evaluating AI outputs, processes,
+[00:27] and behaviors. essentially your quality
+[00:29] control system for AI
+[00:31] collaboration. Discernment is your
+[00:33] ability to critically evaluate what AI
+[00:35] produces, how it produces it, and how it
+[00:37] behaves. It's kind of the flip side of
+[00:40] description. If description is about
+[00:42] clearly communicating what you want,
+[00:44] discernment is about deciding whether
+[00:46] what you get back actually meets your
+[00:49] needs. Developing your discernment helps
+[00:51] you identify when AI outputs are
+[00:53] valuable versus problematic. Recognize
+[00:56] strengths and limitations and determine
+[00:58] when outputs are ready to use or need
+[01:01] more work. Doing this well requires both
+[01:04] domain expertise, in other words,
+[01:06] knowing enough to judge quality, and an
+[01:09] understanding of how AI systems work,
+[01:11] including their typical
+[01:13] shortcomings. Remember, even the most
+[01:16] advanced AI systems can make reasoning
+[01:18] errors, produce factual mistakes, or act
+[01:20] in unexpected ways. Your capacity for
+[01:22] discernment acts as an essential
+[01:25] safeguard. The most straightforward form
+[01:27] of discernment is evaluating the quality
+[01:29] of what the AI actually produces. When
+[01:33] reviewing AI generated content, ask
+[01:35] yourself questions like, is this
+[01:37] factually accurate? Is it appropriate
+[01:39] for my audience and purpose? Is it
+[01:41] coherent and well structured? Does it
+[01:44] meet my requirements? And does it add
+[01:46] value or solve the problem I intended?
+[01:50] We call this first concept product
+[01:52] discernment, the ability to judge the
+[01:54] accuracy and value of AI created output.
+[01:58] When interacting with AI, you need to
+[02:01] assess not just what the AI produces,
+[02:03] but how it got there. Some things to
+[02:06] look out for include logical errors,
+[02:08] lapses in the AI's attention, taking
+[02:11] inappropriate steps, getting stuck on
+[02:14] one small detail or interpretation and
+[02:16] being unable to consider any
+[02:18] alternatives, or getting trapped in
+[02:20] circular reasoning. For example, imagine
+[02:23] you're working with AI to expand on one
+[02:25] of five outline options it offered for a
+[02:27] document. After several rounds of back
+[02:28] and forth ideiation together, you notice
+[02:30] elements of rejected ideas being
+[02:32] reinserted by AI. We call this kind of
+[02:36] recognition process discernment, the
+[02:38] ability to judge the quality and
+[02:39] effectiveness of the AI's process. It's
+[02:42] needed to ensure you and the AI are
+[02:44] thinking in sync throughout the process,
+[02:46] guiding the AI towards your vision for
+[02:50] success. It becomes especially important
+[02:52] for complex tasks where the correct
+[02:54] answer isn't immediately obvious. In
+[02:56] these situations, having trust in the
+[02:58] process is
+[03:00] everything. It's also often valuable to
+[03:03] evaluate and guide how the AI behaves
+[03:05] during your interaction. We call this
+[03:08] performance discernment. The difference
+[03:10] between process and performance is maybe
+[03:12] a bit subtle. You can think of process
+[03:15] as the work the AI is doing, while
+[03:17] performance is how well it is
+[03:18] interacting with you while it does the
+[03:20] work. When evaluating an AI assistant's
+[03:23] performance, you can ask yourself, is
+[03:25] there a better way for the AI to
+[03:26] communicate with you for greater ease
+[03:28] and productivity going forward? Is it
+[03:31] providing the information you need in a
+[03:33] helpful way? Does it respond well to
+[03:35] your feedback and direction? And is the
+[03:38] interaction efficient or unnecessarily
+[03:41] complex? For example, is the AI asking
+[03:43] too many questions when you need concise
+[03:45] answers, or is it too brief when you
+[03:46] need comprehensive information? We call
+[03:49] this performance discernment, the
+[03:51] ability to judge the quality of the
+[03:53] human AI interaction, which helps you
+[03:55] shape more productive working engagement
+[03:57] with the AI systems. Of course,
+[04:00] discernment doesn't end with evaluation.
+[04:02] You also need to provide feedback in
+[04:04] order to improve what an AI delivers
+[04:06] going forward. When you identify
+[04:08] problems in AI outputs, effective
+[04:10] feedback includes specifying what the
+[04:12] problem is, clearly explaining why it is
+[04:14] a problem, providing concrete
+[04:16] suggestions for improvement and revising
+[04:19] your instructions or examples. In other
+[04:21] words, when discernment flags a problem,
+[04:24] better description is often the
+[04:26] solution. But this isn't always the
+[04:28] case. Sometimes you may need to rethink
+[04:31] your delegation decisions because you
+[04:33] might be using the wrong tool or
+[04:34] approaching the problem in entirely the
+[04:36] wrong way. To recap, product process and
+[04:40] performance discernment combine to form
+[04:43] the discernment
+[04:44] competency. Discernment works handinand
+[04:47] with description. While description
+[04:49] focuses on communicating your needs to
+[04:51] AI, discernment evaluates how well those
+[04:54] needs were met. Together, they form a
+[04:57] continuous loop of instruction and
+[04:59] evaluation that drives quality. By
+[05:01] developing your discernment skills, you
+[05:03] ensure that your AI collaboration
+[05:05] remains guided by human judgment, a
+[05:08] critical element of truly effective AI
+[05:10] fluency.

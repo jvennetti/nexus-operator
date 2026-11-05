@@ -1,0 +1,202 @@
+[00:00] Claude is connected to my Gmail. I'll
+[00:02] show you how to do that in a second, but
+[00:03] I just want to show you what it can
+[00:04] actually do. So, if I say to Claude,
+[00:06] I've just woken up. I haven't looked at
+[00:08] my emails, so I don't know what's in
+[00:09] there. And I if I just say, can you take
+[00:13] a look at my Gmail and let me know if
+[00:16] there is anything instantly urgent and
+[00:20] give me a breakdown of what is in there
+[00:24] for today.
+[00:26] >> Oh, that's cool. Something like this. So
+[00:29] you can obviously ask it anything that
+[00:31] you want. So it might be like I'm
+[00:32] waiting for an email from this person.
+[00:34] Can you tell me if they've responded and
+[00:36] what they've said or can you give me a
+[00:38] breakdown of a list of priorities in
+[00:41] terms of the most urgent that people are
+[00:42] asking me to respond to like straight
+[00:44] away or the like moderate urgency and
+[00:47] you can ask it to kind of break down the
+[00:49] urgency levels. Okay. So it's basically
+[00:52] given me needs a response today. Legal
+[00:54] tech talk. Suz's reached out to me,
+[00:56] which she has to schedule a call with
+[00:59] me. She's also sent me a calendar invite
+[01:01] for the 8th of May, which is tomorrow.
+[01:02] So, that is pretty urgent. I need to
+[01:03] know about it pretty much immediately.
+[01:05] >> Right.
+[01:06] >> Come back to me suggesting some time.
+[01:08] So, that's a really good point actually
+[01:09] because I completely forgot. I saw it
+[01:10] and I've completely forgot about that
+[01:12] email.
+[01:12] >> And then, um, somebody sent me their uh,
+[01:15] yeah, somebody sent me their number to
+[01:17] add to a WhatsApp group. And then I've
+[01:18] got a few other emails. No action
+[01:20] needed. Just some random stuff from like
+[01:23] I guess marketing information. And then
+[01:25] it says check these first, which is like
+[01:27] there's been a security alert. It was
+[01:29] probably probably me. Um but like I
+[01:32] don't have many emails in my in my
+[01:33] inbox. So but if it was for you, for
+[01:36] example, you could ask it specific
+[01:37] details. And for another thing that is
+[01:40] really cool is I could say, "Okay, for
+[01:42] for Wonder, can you draft a response
+[01:47] based on my calendar?" Because it's also
+[01:50] linked to my Google calendar. Based on
+[01:52] my calendar to tell her when I am free
+[01:56] for a meeting,
+[01:59] >> but I'm going to put in capitals. Do not
+[02:01] send just just draft.
+[02:03] >> Yeah.
+[02:04] >> Because it can actually send emails
+[02:05] because I've set it up to be able to do
+[02:07] that. But you can also set it up to not
+[02:08] send emails automatically.
+[02:10] >> Wow.
+[02:10] >> So it's going to look at my calendar to
+[02:14] see my availability. I don't know my
+[02:16] availability. I've not looked at my
+[02:17] calendar, but it will it'll take a look
+[02:21] and then it's kind of like processing
+[02:22] it. But this this saves so much time
+[02:25] because you can actually see what to
+[02:26] respond to immediately. And for let's
+[02:28] say for example, you get an email which
+[02:30] is urgent from I don't know from a
+[02:31] lawyer and all they want is just a
+[02:33] response like an acknowledgement or
+[02:35] something like this. You can say, "Okay,
+[02:37] for for all the ones that you've listed
+[02:38] as respond to today, can you just go
+[02:40] back to them as like a placeholder email
+[02:42] and just say, "Yeah, great. Reviewed
+[02:43] your email or I get what you're saying
+[02:45] or what, however you want to word it and
+[02:47] say, I'll get back to you in like later
+[02:49] or something like this, you know, so
+[02:50] they actually are expecting some kind of
+[02:52] email." Let's say you've just woken up
+[02:53] and you don't want to have to fully
+[02:55] think about it yet. Okay, here's what I
+[02:57] found. She's offered two slots. Check in
+[02:58] your calendar. You have nothing booked
+[03:00] during either of those windows. That's
+[03:02] great. and it's like come up with the
+[03:03] email but to the it's added the email
+[03:05] addresses of the people who are copied
+[03:06] into the email. So this is the exact
+[03:08] email that kind of this person has sent
+[03:10] to me and the exact title it said thank
+[03:12] you so much for sending these over. This
+[03:14] is literally what I would say. Both
+[03:16] slots look actually work well for me. I
+[03:18] would actually say that as well. It's
+[03:19] probably gone through my emails and
+[03:20] looked at how I respond to emails and
+[03:22] they just written it in my voice. Please
+[03:24] feel free to go with whichever is easier
+[03:26] for the other two guys. Looking forward
+[03:28] to the call. Many thanks. This is
+[03:29] literally how I speak in an email. like
+[03:31] I wouldn't draft it any other way which
+[03:32] is crazy
+[03:34] >> that is.
+[03:35] >> And then it says let me know if you want
+[03:36] to tweak it or anything else before
+[03:38] sending it. And if I said to it please
+[03:39] send it would just send. But what I'm
+[03:42] going to say is please bear in mind that
+[03:44] my time zone right now is Peru. So
+[03:48] double check this fits with me. They are
+[03:52] in the UK. Could work well for you if
+[03:54] obviously you have different times.
+[03:55] You're working with people from
+[03:56] different time zones.
+[03:58] >> So I don't know what time she's actually
+[03:59] sent over. Oh, okay. 1:30 till 2:30.
+[04:02] Yeah, this is a bit too early for me, as
+[04:04] in my time zone. So, I'm gonna see what
+[04:05] it comes up with just as an experiment.
+[04:07] You can kind of just play with it and
+[04:09] just see what it can do, what it can't
+[04:11] do, what fits with you. And I think you
+[04:13] can come up with kind of a routine with
+[04:14] it. Another thing worth mentioning is,
+[04:17] let's say you have like a standard
+[04:19] routine, as in you want to know the most
+[04:22] urgent tasks, you want a draft response
+[04:24] for the most urgent emails. You can
+[04:26] literally set up what's called a skill,
+[04:28] which is kind of like a in a way a
+[04:30] custom GPT or like a something that
+[04:34] doesn't need prompting every time. So
+[04:36] when you log in to Claude in the
+[04:38] morning, you can just say, "Give me my
+[04:40] morning breakdown and it will do all the
+[04:42] things you want it to do. It will give
+[04:44] you the most urgent emails. It will
+[04:45] draft responses for them. It'll anything
+[04:47] that you want it to do, it will do." So
+[04:49] that 30 minutes to an hour that you
+[04:51] spend going through them, you will be be
+[04:53] presented with everything that you need
+[04:54] to know within a second of just turning
+[04:56] on your laptop.
+[04:58] >> Wow.
+[04:58] >> Which is crazy.
+[04:59] >> I can show you how to do that as well.
+[05:01] >> Yeah, that'd be awesome.
+[05:03] >> So it's basically said, okay, uh you've
+[05:06] got six hour difference, correct? It
+[05:08] would be 7:30 your time. D. It's
+[05:10] explained to me and it's drafted an
+[05:12] email again based on my time zone. So
+[05:15] it's just so clever. I just love it.
+[05:17] [laughter]
+[05:18] It is very clever. Wow.
+[05:21] >> Yeah, because that that would take me
+[05:22] time to go and check my calendar, check
+[05:24] the time in in the UK, check my time,
+[05:27] and then draft a response. But it's done
+[05:29] all the thinking for me. I don't need to
+[05:30] use up that brain capacity to think
+[05:33] about all these different things. And I
+[05:34] think that's the biggest thing probably
+[05:36] for you as well is the fact that not
+[05:38] only does it take you up to an hour to
+[05:40] check these emails, but it takes up that
+[05:43] brain capacity and that energy that you
+[05:45] have a limited amount of per day to do
+[05:48] something that's not even worth
+[05:49] bothering over, you know, like worth
+[05:52] thinking so much into. Um, obviously
+[05:53] some responses will be, but most of them
+[05:55] probably won't be. You need to go to
+[05:58] settings. Okay, you go to settings. You
+[05:59] go to connectors and you can see that my
+[06:02] Gmail is connected. Google calendar as
+[06:05] well. I I can't show you how to connect
+[06:06] it again because it's already connected.
+[06:08] But basically, you you click browse, you
+[06:11] click on the one that you want to
+[06:12] connect. So, you can also connect Canva,
+[06:14] loads of other different like apps and
+[06:17] websites. So, you click on Gmail and
+[06:20] then you literally just log in to your
+[06:21] Gmail and that that's it. That's
+[06:23] literally it.
+[06:24] >> Wow. Okay. Cool.
+[06:25] >> Yeah. It's very very simple. If you
+[06:27] would like more information or you'd
+[06:29] like to know how we can help your team,
+[06:31] then just email us at team [music]
+[06:34] Fridayai advisory.com.
+[06:37] The details will be in the description.

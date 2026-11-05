@@ -1,0 +1,73 @@
+[00:00] Create a doc with Claude and anyone you
+[00:02] share it with can make changes and ask
+[00:04] Claude to make updates right from
+[00:05] [music] the comments. No more
+[00:07] downloading, sharing, editing, and
+[00:09] sending back. You can now work together
+[00:11] seeing each other's comments and changes
+[00:13] as they happen right in Claude.
+[00:17] In Claude, you can create and share
+[00:19] artifacts like documents, [music]
+[00:21] slide decks, designs, animations, and
+[00:23] even dashboards that update on their own
+[00:25] right from a chat. Tell Claude what you
+[00:27] need, something like, [music] "Here are
+[00:29] my notes for next week. Add them to a
+[00:31] doc my team kinetic. Include what's due,
+[00:33] who owns what, and flag anything that
+[00:35] carried over from last week."
+[00:38] Add connectors like Slack [music] and
+[00:39] Google Drive and Claude can fill in the
+[00:41] gaps.
+[00:43] From there, Claude creates a doc right
+[00:45] next to your conversation.
+[00:48] Once the doc is ready to share, you can
+[00:50] add teammates from your organization
+[00:52] and choose how much access each person
+[00:54] has from viewing and commenting to
+[00:56] updating and editing the doc. Anyone you
+[00:58] [music] add will be able to see who else
+[01:00] is active and see comments and changes
+[01:02] from others.
+[01:12] You can even create additional [music]
+[01:13] artifacts right from the same
+[01:14] conversation.
+[01:16] Let's ask Claude to build a tracker from
+[01:18] this doc with checkboxes for each
+[01:20] priority. Make sure the check marks
+[01:22] update [music] and save so the whole
+[01:23] team sees the same list even after
+[01:25] closing.
+[01:31] From there, you can continue making
+[01:32] changes to the tracker and how it works.
+[01:35] Tell Claude, "Add color-coded status
+[01:37] labels [music] to any task that's
+[01:38] slipping or overdue."
+[01:42] When the new artifact is ready to share,
+[01:44] add your teammates.
+[01:45] By default, [music] anyone you add
+[01:47] starts as a commenter.
+[01:49] If you want to give someone access to
+[01:51] enter information or check off tasks
+[01:53] without being able to make changes to
+[01:54] the tracker itself, you can make them a
+[01:56] contributor.
+[01:58] You can also share links to view and
+[01:59] edit an artifact directly on its own
+[02:01] webpage. When someone leaves a comment,
+[02:04] you can ask Claude to make the updates.
+[02:05] [music]
+[02:07] Claude can make changes to both the
+[02:08] content and things like the style,
+[02:10] leaving the actual content and statuses
+[02:12] untouched.
+[02:15] Go to the artifacts tab to start from
+[02:17] [music] a template and to access all the
+[02:19] artifacts you've made and that have been
+[02:21] shared with you.
+[02:22] You can always go back to a shared
+[02:24] [music] artifact later and ask Claude
+[02:25] things like, "What did the team get done
+[02:27] this week?" And Claude will give you a
+[02:29] summary.
+[02:32] >> [music]

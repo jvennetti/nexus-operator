@@ -1,0 +1,410 @@
+[00:00] AI was supposed to transform how you
+[00:02] work.
+[00:03] But instead, it just made you a little
+[00:04] bit faster.
+[00:06] And that's because you're speeding up
+[00:07] steps you should be deleting.
+[00:10] If you're new here, I'm Dylan. I run an
+[00:12] AI consultancy.
+[00:13] And rebuilding processes around AI is
+[00:16] most of what I do with my clients.
+[00:19] The real change isn't adding AI to your
+[00:21] steps. It's deleting them until a
+[00:23] 10-step process becomes four.
+[00:26] So by the end of this video, you'll be
+[00:28] able to sort every step of the process
+[00:30] into three piles: keep it, cut it, or
+[00:33] change it.
+[00:35] And the steps that feel most important
+[00:36] usually go first. So, let's get into it.
+[00:39] So, you may have heard of different
+[00:40] types of people talking about
+[00:42] AI-assisted and AI-native. These are two
+[00:44] different ways one can apply AI to their
+[00:46] organization and their teams. 95% or
+[00:48] maybe even 99% of the people you're
+[00:50] talking to are likely taking the
+[00:52] AI-assisted approach.
+[00:54] Or what they're doing is they're
+[00:55] applying AI to existing processes and
+[00:57] the existing steps. But they're very
+[00:59] rarely adjusting their entire
+[01:00] organization and processes to adapt to
+[01:03] AI. So, they're trying to have AI fit
+[01:05] their organization instead of fitting
+[01:06] their organization to AI. And that's the
+[01:08] primary difference between AI-assisted
+[01:10] and AI-native. Practically speaking, say
+[01:12] you have an activity that has seven to
+[01:14] eight steps inside of it. You likely
+[01:16] keep every single one of those steps and
+[01:18] just apply AI to a few of them. And this
+[01:20] is a good place to start because you're
+[01:21] getting more leverage from AI and you're
+[01:24] augmenting your work and speeding things
+[01:26] up. But ideally, you go from this to the
+[01:28] next step, which is becoming, {quote}
+[01:31] {unquote}, more AI-native, which is
+[01:33] changing your processes around AI and
+[01:35] cutting out steps that are unnecessary
+[01:37] now because we have AI. And it's
+[01:38] important to note that just by doing
+[01:40] this, and this video itself, doesn't
+[01:42] make you AI-native. This is one of many
+[01:44] steps one has to take to radically
+[01:46] transform their organization and
+[01:47] processes to get the most from these
+[01:49] tools. And this baby step that we're
+[01:51] going to take today in this video is
+[01:53] simply reviewing all of the processes
+[01:55] that you have within your organization
+[01:56] and your
+[01:57] And figuring out from the steps inside
+[01:59] this process, what can we cut because we
+[02:01] no longer need it thanks to AI. And the
+[02:03] interesting thing about many of these
+[02:04] steps and why when I work with my
+[02:06] clients, we can cut probably 50% of the
+[02:08] steps out, is those steps tend to be
+[02:10] oriented towards humans. And what do I
+[02:12] mean by this? A clear example, let's say
+[02:14] that you have a messy file. It could be
+[02:16] an Excel sheet, your notes, whatever
+[02:17] else. You need to clean them up so you
+[02:19] can pass it off to another human so they
+[02:21] can finish that process. Well, if we
+[02:23] have AI implemented in the process, we
+[02:25] no longer need to do the cleanup because
+[02:26] the AI can read those files even if they
+[02:28] are messy and take the remaining steps
+[02:30] necessary to complete that activity.
+[02:32] That's removing maybe one or two steps
+[02:34] from that process. And through the
+[02:35] process of working with many different
+[02:36] clients and many different industries, I
+[02:38] found that every single process really
+[02:40] has three primary steps. Two of which
+[02:42] you'll keep and the third you'll cut.
+[02:44] Quick pause in the regular programming.
+[02:45] This video is brought to you by me, as
+[02:47] always. Two quick things. First off,
+[02:50] below is a 30-day AI Insight series,
+[02:52] completely free. You'll get 30 insights
+[02:54] in your inbox of how you can apply AI to
+[02:56] your business and your work. The second
+[02:58] thing is if you'd like to work with me,
+[03:00] below are a series of offerings to see
+[03:01] if there's a good fit between the two of
+[03:02] us. Now, let's get back to the video.
+[03:04] So, the two that you'll keep, the first
+[03:06] one is going to be work. So, this is the
+[03:08] actual step that does the thing that
+[03:09] creates the result. So, if you remove
+[03:11] this step from the process, the activity
+[03:13] would not be completed. So, this is
+[03:14] critical, foundational to the thing
+[03:16] getting done. The next one is where a
+[03:18] human needs to be in the loop for some
+[03:20] form of judgment or decision-making. The
+[03:22] two primary ways this manifests is if
+[03:24] you need to judge the output from the AI
+[03:26] to make sure it's on track. That's where
+[03:27] you need to put a human or when there's
+[03:29] a decision that needs to be made based
+[03:30] on the AI's work. And the decisions tend
+[03:32] to be based around high-risk tasks,
+[03:34] which means there's some sort of
+[03:35] financial, legal, or reputational risk
+[03:38] associated with the organization when
+[03:39] making that decision. And obviously you
+[03:41] want a human in the loop for that, not
+[03:42] just allowing the AI to do it
+[03:43] autonomously. Those are the two steps
+[03:45] that we're going to keep in the process.
+[03:46] The one thing that we're going to cut is
+[03:48] actually going to be the human tax. As I
+[03:51] mentioned previously, the steps
+[03:52] correlated to human tax solely exist to
+[03:55] help other humans to get the process
+[03:56] done.
+[03:57] And I'll show you exactly what that's
+[03:59] made up of from my experience. So, if I
+[04:01] zoom in into human tax, there are three
+[04:03] primary forms that I've seen in
+[04:05] engagements with my clients that are
+[04:07] human tax steps that we can cut or
+[04:08] change. So, the first one are handoffs.
+[04:11] So, this is what I mentioned previously,
+[04:12] where you have some sort of a step where
+[04:14] you need to clean up a file, and once
+[04:16] you've cleaned it up, then you hand it
+[04:17] off to another person in that activity
+[04:19] to get it finished. Often times, we
+[04:20] don't need to do this. We can cut those
+[04:21] steps completely because the AI can
+[04:23] handle those messy files. Next one is
+[04:24] practice runs. So, what this represents
+[04:26] is when you're creating any type of
+[04:28] output. So, it could be a report, a
+[04:29] presentation, even an application. Often
+[04:32] times, when you're creating these types
+[04:33] of outputs, you want to minimize the
+[04:35] amount of effort you put into it before
+[04:36] you get feedback from somebody else, so
+[04:38] you're not wasting your time. So, for a
+[04:39] report, instead of writing a 50-page
+[04:41] report, maybe you just draft an outline.
+[04:43] And you draft the outline and send it to
+[04:44] the person and say, "Hey, am I going in
+[04:45] the right direction or not?" They then
+[04:47] give you the feedback, and you keep
+[04:48] going. But now with AI, it's so easy to
+[04:50] create different types of outputs that
+[04:52] we no longer have to create those
+[04:53] distilled-down versions. We can create
+[04:55] usually a version one that's fully
+[04:57] fleshed out, send it to the person for
+[04:59] feedback, and it's beneficial both ways.
+[05:01] One is it's much easier on you, but two,
+[05:04] they have a higher fidelity output they
+[05:05] can look at to give you higher-quality
+[05:07] feedback before you keep on moving
+[05:08] forward. And the final form of the three
+[05:10] that I've seen in human tax is
+[05:12] formatting, specifically file types. We
+[05:14] humans, we tend to like file types that
+[05:16] are easily digestible. So, it's a uh
+[05:18] beautifully aesthetically organized now.
+[05:20] For example, it could be a PDF that's
+[05:22] aesthetically organized and beautiful to
+[05:23] look at. Or it could be a presentation,
+[05:25] or it could be a beautiful dashboard, or
+[05:27] a beautiful Excel sheet. Whatever it is,
+[05:29] it needs to be something that's easily
+[05:30] digestible by our human eyes. But with
+[05:32] these, they tend to be heavy on AI
+[05:35] because there's different types of files
+[05:37] that take up more of the AI's headspace.
+[05:39] This is technically called the context
+[05:40] window. And in the context window,
+[05:42] there's a certain number of tokens the
+[05:43] AI can manage. So, we want file types
+[05:45] that are token efficient. And when AI I
+[05:47] work with those file types through the
+[05:49] process, only providing the
+[05:50] aesthetically pleasing ones for us
+[05:52] humans at the end, which is why I have
+[05:53] these boxes green here. So, we have
+[05:55] markdown files, CSV files, and text
+[05:58] files. All these file formats are token
+[06:00] efficient for AI's head, which means it
+[06:02] can take in many more of them, process
+[06:03] them over long time horizons, and then
+[06:05] after it's done everything it needs to
+[06:06] do, at the very end we can ask the AI to
+[06:09] then produce a human-oriented output
+[06:11] such as a PDF, a PowerPoint, or a pretty
+[06:13] Excel sheet. But in the midst of its
+[06:15] work, it's going to focus on those token
+[06:16] efficient file formats for it to do its
+[06:18] work. And this is one of those human tax
+[06:20] forms that we're not necessarily going
+[06:22] to cut completely, but we're going to
+[06:23] transform fundamentally, because we want
+[06:25] the AI to work with files that it
+[06:27] prefers, not what we prefer. And after
+[06:29] all of this, if you're still confused on
+[06:31] if you should delete it or keep it,
+[06:33] there's a simple question you can ask
+[06:34] yourself. Is for this specific step in
+[06:36] this process, if a human is going to act
+[06:39] on it after that step, then you want to
+[06:41] keep it. If not, then you can cut it.
+[06:43] The only in between here is if this step
+[06:46] feeds into another step that then a
+[06:47] human acts on that's necessary for it to
+[06:49] have, then you would keep it. So, that's
+[06:51] around the work piece. But if you just
+[06:52] ask yourself, in the step afterwards, is
+[06:54] a human going to act on it? Yes, no.
+[06:56] Answer is yes, keep it. No, cut it. Now,
+[06:59] let's look at a simple example of all of
+[07:00] this combined. So, let's say that we're
+[07:02] drafting proposals for new prospects.
+[07:04] And to draft a proposal, there are seven
+[07:06] steps for our old way of doing things,
+[07:08] our traditional method. Well, the very
+[07:09] first step in this process is the
+[07:11] discovery call. So, this is actually
+[07:12] interacting with the prospect to see if
+[07:14] they're a good fit. This has to stay
+[07:15] because we obviously still need to talk
+[07:17] to the prospect. But in this step for
+[07:19] the discovery call, we need to make sure
+[07:20] the meeting is recorded so we have a
+[07:21] transcript. The reason we need a
+[07:23] transcript is so we can actually delete
+[07:24] the next step, which is often times in
+[07:26] discovery calls we're all actively
+[07:28] taking notes. Irrelevant of the meeting,
+[07:30] it could be a discovery call or really
+[07:31] any other type of meeting. We're taking
+[07:33] notes, and many of those notes we're
+[07:34] taking are for future reference, for
+[07:36] follow-ups, for writing proposals, for
+[07:38] whatever else. Well, if you have the
+[07:39] meeting recorded and you have the
+[07:40] transcript, you no longer have to do
+[07:42] that step. So, that's now deleted. The
+[07:44] next step is summarizing your notes. So,
+[07:47] if there's a separate person that's
+[07:48] doing the creation of the document, so
+[07:49] in this case it could be an analyst
+[07:51] that's writing the proposal for me, I
+[07:52] want to summarize my notes so it's
+[07:54] easier for them to draft a proposal. But
+[07:56] again, this step is now cut and deleted
+[07:58] because we have the AI looking at the
+[07:59] raw transcript and from that determining
+[08:01] exactly what to write the proposal for.
+[08:03] So, we've already cut two steps of this
+[08:05] process. The next one is pulling past
+[08:07] proposals to determine the good
+[08:09] structure, format, etc. for future
+[08:11] proposals. So, in our traditional
+[08:12] approach, we may reference one or two
+[08:14] proposals because it might be too
+[08:16] time intensive to look at many others.
+[08:18] But with AI, we can have it look at the
+[08:20] past 50 proposals, 100 proposals, and
+[08:23] from that distill down exactly the right
+[08:25] structure and format for this type of
+[08:27] prospect. So, we're keeping this step,
+[08:29] but we're amplifying it by tenfold. The
+[08:31] next step is creating a rough draft to
+[08:34] get feedback from maybe our boss or
+[08:35] their boss. And this goes back to the
+[08:37] point where we can cut the step
+[08:38] completely because we no longer need to
+[08:40] create a basic outline for the proposal
+[08:41] feedback to make sure we're going in the
+[08:43] right direction. But instead, we can
+[08:45] pass it to an AI, have it create a first
+[08:47] version of this fully written out, get
+[08:49] our feedback, and the feedback is going
+[08:50] to be higher fidelity because we gave
+[08:52] them a higher fidelity output. So, we're
+[08:53] cutting that rough draft process and
+[08:56] really replacing it with a first full
+[08:57] version. After this, we have to set the
+[08:59] price and the discount. So, this is
+[09:00] where the decision comes into play for
+[09:02] the proposal. So, here we need to
+[09:03] determine how much we're going to charge
+[09:04] and if we want to provide a discount to
+[09:06] this prospect for whatever reason. This
+[09:07] still remains a human task because there
+[09:09] is risk associated to this. There's
+[09:11] likely all three forms of risk here:
+[09:13] financial, legal, and reputational. So,
+[09:15] we want a human in the loop here. But
+[09:16] note that the AI can provide
+[09:18] suggestions. So, it can look at all the
+[09:20] previous proposals you drafted, figure
+[09:22] out the pricing structure that works
+[09:23] best for this type of prospect, and then
+[09:25] give you a recommendation. But even with
+[09:27] the recommendation, as a human you make
+[09:28] the final decision. And then our final
+[09:30] step is creating the proposal itself.
+[09:32] Again, throughout this entire process,
+[09:34] outside of the first draft where we're
+[09:35] getting the feedback, the AI's likely
+[09:37] using token efficient file formats. So,
+[09:40] it's probably using raw text files for
+[09:42] transcripts, markdown files for its own
+[09:44] notes when it's doing research and
+[09:45] analysis and a variety of other things.
+[09:47] And then finally at the end it gives us
+[09:48] back the PDF that matches our brand and
+[09:50] is aesthetically pleasing for the human
+[09:52] eye. So, this is our traditional
+[09:53] process. But as we walk through this,
+[09:55] you probably realize that we went from
+[09:56] around seven steps to four steps. So
+[09:58] now, all that's left is the AI is going
+[10:01] to read the transcript from the call.
+[10:03] From that, it's going to look at past
+[10:05] wins from proposals to figure out what
+[10:06] it needs to draft for the first version.
+[10:08] It gathers feedback as well as figures
+[10:10] out what the price is based off your
+[10:11] decision. And then it finally drafts the
+[10:13] final proposal. But as you can see, this
+[10:15] is us as an organization not just
+[10:17] cutting steps out, but also refactoring
+[10:20] our process to optimize for AI leverage.
+[10:23] So, let's do a quick recap.
+[10:24] When you're looking at the steps in a
+[10:26] process, there's different things you
+[10:27] want to think about. First off, you want
+[10:29] to think about what do we want to keep
+[10:30] of the steps? There's only two reasons
+[10:32] to keep something. Either that step is
+[10:34] directly correlated to work that if it
+[10:35] was removed, it would no longer work
+[10:37] out, the activity wouldn't be able to be
+[10:38] finished. And the other one is
+[10:40] decisions. So, if there's a human
+[10:42] judgment needed and or human decisions
+[10:44] that need to be made for high-risk
+[10:45] tasks, you want to keep that step. The
+[10:46] next thing we want to ask ourselves is
+[10:48] what can we cut? And this comes down to
+[10:49] two things. Where the only reason that
+[10:51] step exists is to help out other humans,
+[10:53] we can cut that off because it's a
+[10:55] handoff activity. Or if it's a practice
+[10:57] run. So, in the past we did this
+[10:58] specific step because it was a time
+[11:00] saver, we no longer need to do that
+[11:02] because AI can create many outputs that
+[11:04] are compelling and high fidelity without
+[11:05] much effort from our side. And then a
+[11:07] third piece here is formatting. So,
+[11:08] these are the things we want to change
+[11:10] instead of cut because we have keep, we
+[11:11] have cut, and we have change. For the
+[11:13] change, it's making sure that we're
+[11:14] allowing the AI to use file formats that
+[11:16] are more token efficient for it. And
+[11:18] then finally at the end when a human
+[11:20] needs to look at it, we then have a
+[11:21] human aesthetic to it using formats that
+[11:23] we humans prefer, which are PDFs,
+[11:25] PowerPoints, fancy Excel sheets, etc.
+[11:27] And with all this being said, if you're
+[11:28] still confused on what steps you should
+[11:30] keep, cut, or change, ask a simple
+[11:33] question, which is does a real person
+[11:35] need to act on this after this exact
+[11:37] step? If the answer is no, you can cut
+[11:39] it or change it. If the answer is yes,
+[11:41] you can keep it. And that's it. So, as a
+[11:42] reminder, two quick things. First off,
+[11:45] below is a 30-day AI insight series,
+[11:47] completely free. You'll get 30 insights
+[11:49] in your inbox of how you can apply AI to
+[11:51] your business and your work. The second
+[11:53] thing is if you'd like to work with me,
+[11:55] below are a series of offerings to see
+[11:56] if there's a good fit between the two of
+[11:57] us. So, now we should ask ourselves,
+[12:00] what happens when AI runs that lean
+[12:02] process all by itself?
+[12:04] Sometimes it wanders off or it just
+[12:06] won't quit. I made a video that shows
+[12:09] you a few boundaries that keep it on
+[12:10] track and tell it when it's done. And
+[12:13] it's right here. Let's go and give it a
+[12:14] click. I'll see you next time, internet.

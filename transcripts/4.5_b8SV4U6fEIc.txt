@@ -1,0 +1,88 @@
+[00:00] In our research, 97% of permission prompts in Claude Code get approved.
+[00:05] These permission prompts appear whenever Claude proposes an action,
+[00:09] like running a command, fetching from the web, or editing a file.
+[00:16] Approving or denying each one gives you control,
+[00:19] but it can lead to approval fatigue, especially on multi-step tasks.
+[00:25] So a few months ago, we introduced Auto Mode.
+[00:28] Auto Mode checks for potentially harmful
+[00:31] actions while letting Claude complete long-running work with fewer interruptions.
+[00:37] But if you're no longer approving each action, what determines if it's safe to run?
+[00:43] Let's look at how Auto Mode works and how
+[00:46] you can configure it for your environment and team.
+[00:49] It would be easy to assume Claude is now approving its own actions,
+[00:53] but that would make Claude its own reviewer, introducing bias through shared code.
+[01:00] That's like writing, reviewing, and merging your own pull request.
+[01:05] Instead, when Claude proposes an action, it runs through a classifier,
+[01:09] a separate check that screens the action and approves or denies it.
+[01:14] The classifier sees your messages in Claude's tool calls.
+[01:18] It doesn't see Claude's reasoning, responses to you, or tool output.
+[01:23] So it isn't influenced by them. It compares each action against your intent.
+[01:29] And approves the ones that match.
+[01:31] What it specifically checks for is Claude
+[01:34] reaching beyond what you intended, towards something irreversible or destructive.
+[01:39] Like deleting remote branches when you only asked it to tidy up locally.
+[01:44] If the classifier denies an action,
+[01:47] Claude usually tries to find a safer way to proceed on its own.
+[01:51] For example, if a force push to main gets denied,
+[01:55] Claude might try to push to a new branch instead.
+[01:57] If it keeps getting denied, auto-mode pauses and you approve the action yourself.
+[02:03] Any webpages or files Claude reads
+[02:06] could carry hidden instructions that try
+[02:08] to steer it away from your original intent.
+[02:11] So before that content enters Claude's context,
+[02:15] a server-side probe scans every tool result
+[02:18] for malicious instructions and floods
+[02:20] anything suspicious with a warning to treat the content skeptically.
+[02:25] Then, the classifier checks whether Claude's
+[02:28] next action still lines up with what you asked for.
+[02:31] So an attack has to clear both layers.
+[02:34] We tested this by running prompt injection attacks against Claude Code.
+[02:38] With probes and auto-mode enabled,
+[02:41] the attack success rate in our evaluations dropped to zero.
+[02:46] But not every action needs to go through the classifier.
+[02:49] Your deny, ask, and allow rules run first.
+[02:53] Then, a tier check decides which actions the classifier needs to see.
+[02:58] Most of what Claude does is read-only or recoverable,
+[03:02] like searching your codebase or editing files in your project.
+[03:06] These actions skip the classifier.
+[03:09] On the other hand, riskier operations like shell commands, web fetches,
+[03:14] or anything that reaches outside of your environment
+[03:18] are sent through the classifier.
+[03:20] By default, the classifier only counts
+[03:23] your working directory in git remotes as internal.
+[03:27] That means everything else appears external,
+[03:29] including your own company's infrastructure.
+[03:32] So to get the most out of auto-mode, it's worth configuring it.
+[03:37] Start by defining your environment.
+[03:41] Admins can set this in managed settings,
+[03:44] which every developer in your organization inherits.
+[03:47] Developers can add their own entries in user settings.
+[03:50] But they can't remove what admins already set.
+[03:54] Use the environment field to describe your infrastructure in plain English,
+[03:58] such as your GitHub org, cloud buckets, and internal services.
+[04:03] Setting environment replaces Claude's built-in entries,
+[04:07] so add the default string to keep them.
+[04:10] If you need more fine-grained control,
+[04:13] use allow for exceptions,
+[04:15] soft deny for actions that should be blocked unless you explicitly ask,
+[04:19] and hard deny for actions that should be blocked no matter what you ask.
+[04:25] These fields are guidance the classifier factors into each check, not hard rules.
+[04:30] For hard limits, add deny rules to block matching tool calls,
+[04:34] and ask rules to force a prompt even in auto-mode.
+[04:38] Allow rules also work too.
+[04:41] But anything broad enough to grant
+[04:43] arbitrary code execution is also sent to the classifier.
+[04:48] All right, that's auto-mode. We started with a question.
+[04:52] If you're no longer approving each action, how are they reviewed and now you know?
+[04:58] A classifier that reads your messages but not Claude's,
+[05:02] a deal check that reserves it for actions
+[05:05] that are hard to undo,
+[05:06] a probe that scans it for hidden instructions,
+[05:10] and a trust boundary that you configure.
+[05:13] Together, they catch what manual human reviews might miss.
+[05:18] When you are rolling it out, start narrow.
+[05:21] Watch what gets denied and then widen it from there.
+[05:24] For high-stake operations like changes to your production infrastructure,
+[05:29] you should review Claude's actions yourself.
+[05:32] Or build your own evals to gain more confidence.
+[05:36] To learn more about our safety research, read our blog post linked below.

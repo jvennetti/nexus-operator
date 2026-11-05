@@ -1,0 +1,423 @@
+[00:00] Right now, when Claude wants to search
+[00:02] your email or edit a file, it stops and
+[00:05] asks you, and you usually click allow.
+[00:07] Starting next week, for most people, it
+[00:10] stops asking completely.
+[00:12] Auto mode becomes the default. So,
+[00:14] Claude checks its own steps and just
+[00:16] keeps going.
+[00:17] There's also a separate setting where
+[00:19] you can tell Claude to always ask before
+[00:21] it touches your email or really any
+[00:23] other system.
+[00:25] In auto mode, it can skip that, too.
+[00:27] And this is what I'm walking my clients
+[00:29] through right now. So, I'll show you one
+[00:32] setting that still holds and two easy
+[00:34] habits that keep your work safe. So,
+[00:37] let's get into it. Now, when I say auto
+[00:39] versus manual mode, what do I mean by
+[00:41] that? Well, if you're inside of Claude,
+[00:43] doesn't matter if you're in Claude chat,
+[00:44] Claude co-work, Claude code, all the
+[00:46] same thing. At the bottom of the chat
+[00:48] box, usually on the left or the right
+[00:50] side, you're going to see an option that
+[00:51] says auto or manual. When you click
+[00:53] this, you can see you have two options
+[00:55] for permissions. These permissions
+[00:56] relate to all the things AI can do for
+[00:58] you on your computer and also in the
+[00:59] chat. And the thing that's fundamentally
+[01:01] changed here is in the past, at least
+[01:03] right now, it defaults to manual for all
+[01:06] new chats. But going forward, in roughly
+[01:08] a week or two, this is going to default
+[01:10] to auto going forward. And one important
+[01:12] thing to know in regards to this manual
+[01:14] versus auto conversation we're going to
+[01:15] have is I'm talking about Claude right
+[01:17] now, but ChatGPT is fast following. So,
+[01:19] this is going to happen to ChatGPT as
+[01:21] well. It's not just a Claude thing. And
+[01:22] auto simply means the AI is going to
+[01:24] automatically approve all actions it
+[01:26] takes excluding the things it deems
+[01:28] unsafe. So, if it sees something and
+[01:30] thinks that it's unsafe, it will prompt
+[01:32] you and ask for your approval to do that
+[01:34] action before it actually takes that
+[01:35] specific step. Now, a lot of people I
+[01:37] tell about this, they freak out because
+[01:38] they're concerned that the AI is going
+[01:39] to do something it shouldn't. Well,
+[01:41] today I'm hopefully going to convince
+[01:42] you that the AI is actually more
+[01:43] effective than the human and also I'll
+[01:45] give you some tips on how you can set up
+[01:47] your processes to ensure that that that
+[01:48] doesn't happen where the AI does
+[01:49] something it shouldn't. But first, how
+[01:51] does this actually work? Well, when you
+[01:52] set it up to auto mode, as I mentioned,
+[01:54] the AI is going to approve all the
+[01:56] actions it sees as safe, and if it's
+[01:58] unsafe, it'll prompt you. So, if it's
+[02:00] reading your notes, updating your
+[02:02] sheets, etc., it'll go ahead and do that
+[02:03] thing. But, if it comes to a step where
+[02:05] it wants to delete something
+[02:06] permanently, it'll stop and ask for your
+[02:08] permission. And there's actually another
+[02:10] boundary of protecting ourselves, which
+[02:12] are through connectors, and I'll talk
+[02:13] about that later. But, there are
+[02:14] actually two sets of permissions. So, we
+[02:15] have the permissions that are shared
+[02:16] with you, but also permissions that are
+[02:18] related to the AI talking to another
+[02:19] system, such as your email, your
+[02:21] calendar, etc. So, that's how it
+[02:23] functions. Now, why is this better than
+[02:25] humans? Well, Anthropic has done
+[02:27] multiple studies over the last couple of
+[02:28] months on comparing how humans interact
+[02:31] or users interact with manual versus
+[02:33] auto. And one of the older studies,
+[02:34] about a month and a half to two months
+[02:35] ago, they actually ran the test with a
+[02:37] thousand paid users. And they were
+[02:39] intentionally, in the conversations
+[02:41] those users were having with Claude,
+[02:42] putting in unsafe actions to see what
+[02:44] would happen. So, they had the human
+[02:46] doing the approval, and then they had
+[02:47] the AI doing the approval. Quick pause.
+[02:49] If you're enjoying this video, you're
+[02:51] going to enjoy two other things. First
+[02:52] off, if you'd like to work with me,
+[02:54] below are a series of offerings to see
+[02:56] if there's a good fit to the two of us.
+[02:58] And the second thing is I have a 30-day
+[03:00] AI Insight Series. It's completely free.
+[03:02] You'll get 30 insights in your inbox of
+[03:04] how you can apply AI to your business
+[03:05] and your work. With that being said,
+[03:07] let's get back to the video. And they
+[03:09] found with a human, only 14% of the
+[03:11] time, the human identified that this
+[03:12] action was unsafe. But, with AI, they
+[03:15] found that it identified 89% of the
+[03:17] time. So, you can see right away that
+[03:19] the human very rarely identifies this as
+[03:21] an action being unsafe versus an AI.
+[03:23] That's the first part of the study.
+[03:24] Another part of the study was seeing how
+[03:26] often the humans pushed allow in general
+[03:29] based off of all the conversations. And
+[03:31] they saw that humans pushed allow 95% of
+[03:33] the time. And as you can see from the
+[03:35] previous stat, a good proportion of that
+[03:37] was unsafe actions. So, Anthropic
+[03:39] convinced themselves over all these
+[03:40] studies that actually defaulting to auto
+[03:42] was a safer option for all their users
+[03:44] versus manual. Because we humans, we get
+[03:47] tired, we get hungry, our brain gets
+[03:49] overwhelmed by all the the options we
+[03:50] have to choose from. So, we just default
+[03:52] to clicking allow so we can get that
+[03:53] task done. But, AI persists. It doesn't
+[03:56] have to sleep, it doesn't get tired, and
+[03:58] it can actually identify every single
+[03:59] step when it's suitable or when it's not
+[04:01] suitable. So, the point here isn't say
+[04:03] to outsource all this to AI, but instead
+[04:06] we humans want to go up a level. So,
+[04:08] instead of focusing on the micro steps
+[04:09] and the micro tasks that are occurring,
+[04:11] we actually want to focus on the plan.
+[04:13] And an extension of that study from
+[04:14] Anthropic when doing this manual versus
+[04:16] auto, they found that when they
+[04:17] presented a user with a plan, they
+[04:19] actually pushed back and gave on that
+[04:21] plan 39% of the time. But, in addition
+[04:24] to the plan if they also gave them the
+[04:25] steps, they only pushed back 3% of the
+[04:27] time on those micro steps. So, this just
+[04:29] reaffirms the importance of us humans
+[04:31] focusing on the plan itself, not the
+[04:33] actual steps that are occurring. And
+[04:35] that's what we're going to focus on
+[04:36] today. What I want you to focus on is
+[04:38] before the AI starts and after it
+[04:40] finishes. Everything that happens in
+[04:42] between, the AI will keep track of and
+[04:44] make sure that we're not doing anything
+[04:45] wrong. But again, the humans attention
+[04:47] should happen before the AI starts and
+[04:49] after it finishes. That's how you're
+[04:50] going to set yourself up for success
+[04:51] here. Now, as I mentioned previously, I
+[04:53] said there's two sets of permissions.
+[04:55] So, the first set of permissions I just
+[04:56] showed you, which was under the chat we
+[04:57] had the option for manual and auto. But,
+[04:59] the second set of permissions are
+[05:01] related to connectors. So, within
+[05:02] Claude, there is things called
+[05:03] connectors. That's where you can connect
+[05:05] your AI to another system such as Gmail,
+[05:07] calendar, doesn't matter. Inside of that
+[05:09] connection, there are additional
+[05:11] permissions. And there's three that come
+[05:13] with those. It's going to be always
+[05:15] allow, seek my approval or needs
+[05:16] approval, or blocked completely. Let me
+[05:18] actually show you what that looks like.
+[05:20] So, I'm back into Claude. This is Claude
+[05:21] the desktop app. If I go to this plus
+[05:23] sign here, I then go to connectors, and
+[05:25] I then go to manage connectors, you can
+[05:27] see these are all the connectors I
+[05:28] currently have connected to my system.
+[05:29] If I click into one of these like Gmail,
+[05:31] you can see if I scroll down, we have a
+[05:33] section here called tool permissions.
+[05:34] So, if I collapse both of these, you can
+[05:36] see there's two categories of
+[05:37] permissions for this specific connector,
+[05:38] which is Gmail. We have read actions and
+[05:41] write actions. That basically, read
+[05:42] means what the AI can see, and write
+[05:44] means what the AI can do in that system.
+[05:46] And if I expand this, you can see that
+[05:48] these are the very specific actions the
+[05:50] AI can take inside this connector. Every
+[05:52] single connector has varying different
+[05:54] actions you can take, but each one of
+[05:56] these have those three permissions that
+[05:57] I've mentioned to you. So, the checkbox
+[05:59] is always allow, the hand is needs
+[06:01] approval, and the little icon here is
+[06:04] blocked. The benefit of this is that
+[06:06] even if the AI is set to auto, if
+[06:08] there's certain actions the AI should
+[06:09] never take, such as sending an email
+[06:11] automatically, doing something in
+[06:13] relation to payments, deleting something
+[06:15] permanently, those actions you can
+[06:16] block. And actually can show you an
+[06:18] example here. So, if I scroll down for
+[06:19] Gmail, you can see this is grayed out
+[06:21] saying that the AI can never send an
+[06:23] email on my behalf. That's blocked
+[06:24] completely. So, it doesn't matter if
+[06:26] it's an auto or not. And that's the
+[06:27] important thing you need to understand
+[06:29] here. But another important thing you
+[06:30] need to understand in regards to these
+[06:31] specific permissions is that for any
+[06:33] given connector, like I said, there's
+[06:34] three things you can do. So, you can do
+[06:36] always allow, needs approval, or
+[06:37] blocked. Then we have the other two
+[06:39] actions, which are manual and auto.
+[06:40] Well, if you have something set to auto,
+[06:42] cuz it's going to default to that, and
+[06:43] you have a permission set to needs
+[06:45] approval, in the past, if it was on
+[06:47] manual, it would ask for your
+[06:48] assistance. But now if it's set to that
+[06:50] permission of needs approval, and it's
+[06:51] set to auto, it's automatically going to
+[06:53] have the AI decide. So, the AI
+[06:55] determines if you need to be involved or
+[06:56] not. So, it's a small nuance here for
+[06:58] the connectors, but it's important to
+[07:00] know. So, now that you understand the
+[07:01] two categories of permissions, I want to
+[07:03] walk you through the three fixes I've
+[07:04] been recently walking my clients through
+[07:06] due to this new update coming to Claude.
+[07:08] So, the first one is the blocking point
+[07:10] that I just made. So, you have these
+[07:12] connectors that are set up. You need to
+[07:13] make sure those permissions are set up
+[07:14] correctly per action for that system.
+[07:17] So, if there's anything that's sending,
+[07:18] anything that's deleting, or anything
+[07:20] that's potentially sharing something
+[07:21] public, if that's an option, we're going
+[07:23] to make sure all of those are blocked,
+[07:25] or if you're okay with it, needs
+[07:27] approval. But you don't want to be too
+[07:28] strict on these permissions, because if
+[07:29] we're too strict on these connectors,
+[07:31] many people don't get value from the
+[07:32] tool itself. So, you need to be very
+[07:33] specific and tailored on what
+[07:35] permissions you enable or disable. So,
+[07:37] that's the first one, is simply just
+[07:39] setting that up correctly. The second
+[07:40] fix is actually having backups. Because
+[07:43] if you're using something like Claude
+[07:44] CoWork, it has access to all your files
+[07:46] in your computer, and that's one of the
+[07:47] most powerful pieces of it. But with
+[07:48] that, you need to build your trust with
+[07:49] the AI. And the first step of building
+[07:51] trust with AI is making sure it can do a
+[07:52] very specific task consistently. So, in
+[07:54] this case, I usually recommend my
+[07:55] clients to have a golden copy of data
+[07:58] that's really important. So, if you're
+[07:59] having AI doing a task, and maybe
+[08:00] there's a very specific Excel sheet that
+[08:02] matters to you, what you should do is
+[08:03] actually you should have a golden copy
+[08:04] for the humans. You should copy that and
+[08:06] put that in a space just for the AI. So,
+[08:08] you have a copy of the Excel sheet, and
+[08:09] that's the one the AI works on. After
+[08:11] the AI has proven itself and it's able
+[08:13] to actually make updates to that Excel
+[08:14] sheet without breaking anything or doing
+[08:16] anything you don't want it to, you can
+[08:17] eventually merge it back into the golden
+[08:19] data set. But before you merge it back
+[08:21] and don't have a copy, you want to make
+[08:22] sure that when you merge it back,
+[08:23] there's the option of having version
+[08:25] history. So, every storage system or
+[08:27] file system that you have, such as
+[08:28] Google Drive, OneDrive, SharePoint,
+[08:30] doesn't matter. Many of these have a way
+[08:33] to go back in time. So, if an AI deletes
+[08:34] a file, you usually can go to your trash
+[08:36] and undo that. Or if an AI makes an edit
+[08:38] that you don't want to occur inside of a
+[08:39] document usually there's version
+[08:42] history, so you can go undo or go back
+[08:43] in time there as well. So, you need to
+[08:45] make sure you have this set up as well,
+[08:47] just in case. But with that being said,
+[08:49] these mistakes very rarely happen with
+[08:51] these cutting-edge models. I have AI
+[08:53] access my files and change them all the
+[08:54] time. So do my clients. I very rarely
+[08:56] see those mistakes now. It's becoming
+[08:58] less and less common. But again, you
+[08:59] still want to have some sort of safety
+[09:01] net, such as having a golden copy and or
+[09:03] the ability to undo just in case that
+[09:04] does occur. And our third fix here is
+[09:06] making sure when the AI is done with the
+[09:07] task, we can quickly review if it's
+[09:10] correct or not with high confidence. And
+[09:12] there's many different ways we can do
+[09:13] this, but I'm going to give you a base
+[09:14] prompt you can start with, and you can
+[09:16] alter this for whatever example you
+[09:17] have. So, the base prompt that you would
+[09:19] include in your skill instructions or
+[09:20] your project's instructions would go
+[09:22] like this. I didn't watch your work. I
+[09:24] have 2 minutes to check this before I
+[09:26] rely on it. Tell me what I need to look
+[09:28] at most important first. Then we list
+[09:29] out some examples, such as anything you
+[09:32] changed or sent outside of this chat and
+[09:33] where to find it, anything that you
+[09:35] assumed instead of checked, and anything
+[09:37] you didn't finish. Leave out what's
+[09:39] fine. So, this prompt is very simple. In
+[09:41] most of the prompts you give to these
+[09:42] cutting-edge models today, they should
+[09:43] be simple. All I'm doing is sharing my
+[09:45] intent, the associated goal, and some
+[09:47] basic constraints I'm giving to the AI.
+[09:49] Everything else it can fill in itself.
+[09:51] Now again, this is a base template you
+[09:52] can alter for your example, but I think
+[09:54] this is a good place to start so the AI
+[09:55] gives you back something you can quickly
+[09:57] validate. So, those are the three
+[09:58] preventive and proactive fixes you
+[10:00] should put in place today as Auto
+[10:02] actually starts to roll out for
+[10:03] everybody as default. Now, some of you
+[10:05] may ask, "Well, when should I still use
+[10:06] manual?" For most my clients, honestly,
+[10:08] for most knowledge work, I say probably
+[10:10] 5% of the time or 10% of the time.
+[10:13] Better way to think about it is one in
+[10:14] 50 tasks that you augment or outsource
+[10:16] to AI. Some examples of what that could
+[10:18] be could be if there's anything related
+[10:20] to an AI taking actions with money
+[10:22] involved. And honestly, this probably
+[10:24] shouldn't be happening anyways, but if
+[10:25] there is some situation where it is, you
+[10:27] probably want to do manual in that case.
+[10:28] Another option could be where the AI can
+[10:30] actually change a file that doesn't have
+[10:31] a backup. So, if you haven't set up that
+[10:33] process yet, either you need to have a
+[10:34] golden copy like I mentioned previously,
+[10:36] or you need to have manual set up so you
+[10:37] can see each action that's occurring.
+[10:39] And then the final one is really just
+[10:40] for learning. So, if you're connecting
+[10:41] an AI to a new system through a
+[10:43] connector, and you just want to see what
+[10:44] it can do, manual could be a good good
+[10:46] way to learn of exactly how that
+[10:47] operates. But again, this is super rare
+[10:49] and shouldn't happen that often. So,
+[10:51] we've talked about a lot here, but I
+[10:52] want to recap the three fixes so you
+[10:54] know exactly what you should be doing
+[10:55] now in preparation for Auto being
+[10:57] default. The first thing is for your
+[10:59] connectors, you have different
+[11:01] permissions that you can set to always
+[11:03] block certain types of actions such as
+[11:05] sending things, deleting things, or
+[11:06] sharing things publicly. So, the second
+[11:08] thing is making sure that we set up
+[11:09] processes in place to make sure that if
+[11:11] the AI does make a mistake, we can
+[11:12] always undo that. So, the first thing
+[11:14] you'll do is have a golden copy of the
+[11:15] document you care about, duplicate that
+[11:17] for the AI and have it work on its own
+[11:18] version of that file. Eventually, once
+[11:20] you've built trust and you've set up the
+[11:21] process where you can undo actions that
+[11:23] are unnecessary, you can then merge that
+[11:25] back into the golden copy, let it
+[11:26] directly edit that file, and then if
+[11:28] something bad happens, you can either
+[11:29] undo it or move it out of the trash. And
+[11:31] the final one was after the AI's
+[11:32] finished. So, when the AI's done with
+[11:34] the task, you want to be able to quickly
+[11:35] identify if it did something correct or
+[11:37] incorrect. And the base prompt I
+[11:38] provided you was a good place to start.
+[11:40] And that's it. So, as a reminder, two
+[11:42] quick things. First off, if you'd like
+[11:44] to work with me, below are a series of
+[11:46] offerings to see if there's a good fit
+[11:47] from the two of us. And the second thing
+[11:49] is I have a 30-day AI Insight series.
+[11:51] It's completely free. You'll get 30
+[11:53] insights in your inbox if I can apply AI
+[11:55] to your business and your work. And if
+[11:57] you've enjoyed this video, the YouTube
+[11:59] gods know that you're going to love this
+[12:00] video. Let's see if they're right. Give
+[12:02] it a click, and I'll see you next time,
+[12:03] internet.

@@ -1,0 +1,410 @@
+[00:00] So let's say that you fix something in
+[00:02] chat GPT or Claude and it says, "Got it.
+[00:05] I'll remember that." Then a week later
+[00:07] in a new chat, that same mistake
+[00:09] happens. I see this every week with the
+[00:12] people that I coach and they almost
+[00:14] always think that they did something
+[00:15] wrong. They didn't. These tools decide
+[00:19] what they remember and a lot of the time
+[00:21] that fix you cared most about doesn't
+[00:23] make the cut. The good news is is there
+[00:26] are three places a fix needs to go so AI
+[00:28] remembers it for good. I'll walk you
+[00:30] through each one of those locations in
+[00:32] this video. So, let's get into it. Often
+[00:34] times people assume the more that they
+[00:36] work with a given AI, the more it learns
+[00:38] about them and gets more custom to their
+[00:40] preferences. Even the providers say this
+[00:42] is true, but it's only partly true and
+[00:45] most of what the AI remembers is
+[00:46] accidental and in its control not yours.
+[00:49] So when you talk to a given model today,
+[00:51] when you talk to that same model
+[00:52] tomorrow, often times it's just the same
+[00:54] model and very rarely did it learn
+[00:55] anything that means anything to you
+[00:57] yesterday. And the reason that happens
+[00:59] is there are three places an AI can
+[01:00] learn something. It's memory,
+[01:02] instructions, and files. It's memory is
+[01:05] what most people lean on unintentionally
+[01:07] or accidentally
+[01:09] because the AI proactively remembers
+[01:11] things about you in different locations
+[01:13] inside of its memory. But with the
+[01:14] memory, it maintains it. So it's not up
+[01:17] to you what it keeps and what it drops
+[01:19] and often times it drops or keeps the
+[01:20] wrong things all the time. And I've seen
+[01:22] this manifest in three different ways.
+[01:24] So the first one is the AI keeps
+[01:26] something that you didn't want it to
+[01:27] keep in the first place. So let's say
+[01:29] that you asked the AI to write a formal
+[01:31] letter to the bank. It'll remember that
+[01:32] you prefer formal writing. So when you
+[01:34] write a quick note to your team, it
+[01:36] writes it formally, unnecessarily.
+[01:38] That's something it kept that it
+[01:39] shouldn't. The next one is that it drops
+[01:41] something that you did want it to keep.
+[01:43] So in this case, you could be writing a
+[01:44] weekly email maybe to your client. In
+[01:47] the email you send to your client, you
+[01:48] want the numbers to be at the top. So
+[01:50] you specify for it to remember that. But
+[01:51] the next week you run it, it doesn't. It
+[01:53] puts the numbers at the bottom again.
+[01:55] That's because it deemed that not
+[01:56] important enough for it to remember.
+[01:58] Because there's only so much that the AI
+[01:59] can remember about you, at least right
+[02:01] now. And then the third one is where the
+[02:03] AI keeps something that's actually out
+[02:05] of date. So, maybe in the past you told
+[02:07] the AI that you have five people on your
+[02:08] team, but a few months later you
+[02:10] actually have eight. And between those
+[02:11] two moments, the AI forgot to remember
+[02:13] the fact that you updated the size of
+[02:15] the team to eight. So, these are the
+[02:16] three types of scenarios that I see most
+[02:18] often with the weaknesses in memory in
+[02:20] relying solely on that for the AI to
+[02:21] remember the things that you care about.
+[02:23] And that's exactly why I don't recommend
+[02:25] my clients to rely on memory at all.
+[02:27] Instead, I recommend they put things
+[02:29] that matter most to them in three
+[02:30] locations, so that specific memory
+[02:32] persists across time. And most
+[02:34] importantly, it's in your control. So,
+[02:36] what are those three locations? So, we
+[02:37] have skills, project instructions or
+[02:40] folder instructions, and note files.
+[02:43] Quick pause. If you're enjoying this
+[02:44] video, you're going to enjoy two other
+[02:45] things. First off, if you'd like to work
+[02:48] with me, below are a series of offerings
+[02:49] to see if there's a good fit between the
+[02:51] two of us. And the second thing is I
+[02:53] have a 30-day AI insight series. It's
+[02:55] completely free. You'll get 30 insights
+[02:57] in your inbox of how you can apply AI to
+[02:58] your business and your work. With that
+[03:00] being said, let's go back into the
+[03:01] video. I'll walk you through each one of
+[03:03] these in detail. But really quick, the
+[03:05] way I think about it, anything that's
+[03:06] related to the how, so how I do a given
+[03:08] task, is likely going to go into a
+[03:10] skill. The next one is the who, so this
+[03:11] is related to a very specific project
+[03:13] topic and or client. That's going to go
+[03:15] into the client instructions or the
+[03:17] instructions in a folder. And then the
+[03:19] maybe column is for your notes. So, if
+[03:21] you're uncertain as to where to put
+[03:22] this, you then put this in your notes
+[03:24] file, and then you put it somewhere else
+[03:25] later after that's after that's kind of
+[03:27] built up over time. So, let's start with
+[03:29] the how. So, these are in relation to a
+[03:31] task or a job, how you do something
+[03:32] specifically. A lot of people I work
+[03:34] with, they create skills. So, they'll
+[03:36] create a skill and then they'll then run
+[03:37] that skill to do something. So, in this
+[03:38] case it could be drafting a report, a
+[03:40] presentation, it doesn't matter. When
+[03:42] the report or presentation comes back to
+[03:44] them, they find that the presentation
+[03:45] has a series of mistakes. So, what they
+[03:47] do is they have the AI make the fixes to
+[03:49] that draft saying, "Here's a bunch of
+[03:51] mistakes you've made, fix this draft.
+[03:53] They're happy with the output, that's
+[03:54] great. But they forget a really
+[03:55] important step after they fixed the
+[03:57] draft. They forgot to update the skill.
+[04:00] So when they go back to run that skill
+[04:01] again next time, so next week, next
+[04:03] month, they run into the same issue.
+[04:05] They're getting the same mistakes. And
+[04:06] that's because the AI or the skill
+[04:08] didn't bake that memory into it. So what
+[04:10] you need to do in this case is simply
+[04:12] tell the AI after you've corrected the
+[04:13] draft and you're happy with the draft
+[04:15] back, you then tell the AI specifically,
+[04:17] I want you to update the skill with
+[04:18] these specific changes that we made. So
+[04:20] anytime that I call the skill again,
+[04:22] these mistakes don't happen. And once
+[04:23] you've updated the skill and Claude,
+[04:25] you'll just click update. And ChatGPT,
+[04:27] it'll automatically update it for you.
+[04:29] So this is the first simple way we can
+[04:30] save things around the how for an AI to
+[04:33] make sure that memory persists. The next
+[04:35] one is the who. So this is either
+[04:36] related to a very specific client or a
+[04:38] very specific project. And I'll quickly
+[04:40] explain why this is different from a
+[04:42] skill. So let's say that we have a given
+[04:43] client that prefers euros to do their
+[04:45] transactions in, but all of their other
+[04:47] clients prefer US dollars. When this
+[04:50] case, if we baked the instruction into
+[04:52] the skill, there's a chance that since
+[04:54] we're using the skill across clients or
+[04:55] projects, that skill will accidentally
+[04:58] put euros in the wrong client and not
+[05:00] the one that we prefer it to be. So when
+[05:02] you save things into a skill, those
+[05:04] instructions need to persist across
+[05:06] clients and projects and not be specific
+[05:07] to them. When it's specific to them like
+[05:09] this, where one client prefers euros,
+[05:11] what you want to do is you want to put
+[05:13] those in the project instructions or the
+[05:14] folder instructions. The separation here
+[05:16] is that if you're just using Claude or
+[05:18] ChatGPT in the browser and you're not
+[05:20] using Claude Co-work on the desktop or
+[05:22] ChatGPT work on the desktop, you're
+[05:23] going to put this in your project
+[05:24] instructions. So this is going to be
+[05:26] basically within projects, every one of
+[05:28] these tools have a thing called
+[05:29] projects. When you click into that and
+[05:30] you click into a given project for a
+[05:31] client or a project, there's a thing uh
+[05:34] usually on the left-hand side called
+[05:35] instructions. So you just click
+[05:36] instructions and you add that to those
+[05:38] instructions. The reason you add them
+[05:39] there is the AI looks at those
+[05:41] instructions every single time you
+[05:42] interact with them in that chat. So
+[05:44] going forward, it's always going to
+[05:45] reference it and every chat you have in
+[05:47] that project is going to know that
+[05:49] specific memory that's tailored to that
+[05:50] client. With that being said, I prefer
+[05:53] all my clients, if possible, to actually
+[05:55] use the desktop app, not projects inside
+[05:57] of the product itself like Claude or
+[05:59] ChatGPT. Reason being is that you can
+[06:01] then move between providers. You don't
+[06:03] want to be walled in to Claude or
+[06:04] ChatGPT when you want to go back and
+[06:05] forth. Now, the purpose of these
+[06:07] instructions are the same, but the
+[06:09] location's slightly different. So, for a
+[06:10] desktop app, your clients and your
+[06:12] projects are going to sit inside of
+[06:14] folders like this. So, we're going to
+[06:15] have a folder dedicated to a client and
+[06:17] ideally a specific task as well. We're
+[06:19] going to tie those together in that
+[06:20] folder. An example could be writing
+[06:22] weekly updates for client B, weekly
+[06:24] updates for client A. Those are separate
+[06:26] folders. In that folder, we have a bunch
+[06:27] of files in there related to the client,
+[06:29] but also we have an instructions file
+[06:31] called an agents.md file. The good thing
+[06:33] about this is the AI can create this for
+[06:35] you, it can maintain it for you, it can
+[06:37] clean it up for you, it can do
+[06:38] everything for you in that file. You
+[06:39] don't have to do anything manually. But,
+[06:41] with projects in the cloud, when you're
+[06:42] using the browser like I talked about
+[06:43] previously, you have to manually add
+[06:45] those instructions. So, with this one,
+[06:47] when we have an instruction that we want
+[06:49] the AI to remember, all we tell the AI
+[06:51] is I want you to add this information to
+[06:52] the instructions file in this folder.
+[06:54] The AI either creates it for you net new
+[06:56] or just adds it to the existing one. The
+[06:58] key with this file, as well as the
+[06:59] instructions previously that I mentioned
+[07:00] in projects, is you want them to be less
+[07:02] than 100 lines. Because the AI is
+[07:03] looking at it every single time and it's
+[07:05] treating those instructions as
+[07:07] instructions. So, when it opens this
+[07:08] folder, it's going to look at that
+[07:09] agents.md file and it's going to ask
+[07:11] itself, what is the purpose of this
+[07:12] folder? And that's what that file should
+[07:14] represent. And so, this is the simple
+[07:16] way that we can have the AI remember
+[07:17] things about the who. So, it's a
+[07:19] client-specific thing or a
+[07:20] project-specific thing. This is where
+[07:22] they look at that and know it's tailored
+[07:23] to this specific issue when it opens
+[07:25] that folder to work inside of it. And
+[07:26] then, the final one here is maybe. So,
+[07:29] in this situation, let's say that we
+[07:30] have an issue around old pricing lists.
+[07:33] But, we're not sure if we want to stick
+[07:34] with this new pricing list and also some
+[07:36] clients are already using the old
+[07:37] pricing list and we can't give them the
+[07:38] new one yet. So, we're uncertain as of
+[07:41] this if this should be a skill or
+[07:42] something inside of instruction for a
+[07:44] folder. In those cases, this is going to
+[07:46] go to a notes file, and this is your
+[07:47] maybe list that you'll look at over
+[07:49] time. And again, this is tailored for
+[07:51] the desktop app. So, if you're using the
+[07:53] desktop app for Claude, co-work, or the
+[07:55] desktop app for ChatGPT work. In those
+[07:57] situations, the AI can create these
+[07:58] files and maintain them for you. This is
+[08:00] going to be a .md file as well. It's a
+[08:02] markdown file. The reason we're using
+[08:04] .md files is they're more token
+[08:05] efficient, meaning the AI can look at
+[08:07] much more text for a .md file than it
+[08:09] can for a PDF or an image or anything
+[08:11] like that. And that's a completely
+[08:12] separate video I've made in the past,
+[08:14] but know that it's more token efficient,
+[08:16] so it doesn't fill up the AI's status
+[08:17] quickly. Now, what does the prompt look
+[08:18] like for this? Well, this here is the
+[08:20] basic prompt you're actually going to
+[08:21] add to your agents.md file previously.
+[08:23] So, the agents.md file is the
+[08:25] instructions in the folder. That's where
+[08:26] this goes. Reason being is the AI needs
+[08:28] to look at it every single time it
+[08:30] interacts with you in this folder on
+[08:31] this task. So, the instructions are
+[08:33] simple. We're telling the AI, "I want
+[08:34] you to keep a file in this folder called
+[08:36] notes.md." And again, you can call this
+[08:38] whatever you want, but we're calling it
+[08:39] a notes file in this situation. "Each
+[08:41] time I tell you that you got something
+[08:43] wrong, I want you to add a short line of
+[08:45] what you got wrong and what you did
+[08:46] instead." Now, the reason it needs to be
+[08:48] short and needs to be information dense
+[08:50] is that this file is going to be
+[08:52] appended to over time. We want to make
+[08:53] sure it's as information dense as
+[08:55] possible, so it's not filling up the
+[08:56] AI's head too quickly. Right below that
+[08:58] part, we emphasize that even further. We
+[09:00] say, "I want you to use as few words as
+[09:02] you can, and if the mistake is like one
+[09:04] that you've already seen on the list,
+[09:05] instead of you adding a new one, I just
+[09:07] want you to add a tick to that line."
+[09:09] And the reason we're having the AI add
+[09:10] ticks to existing things that it's
+[09:12] already seen in the past and doesn't add
+[09:13] a new line of the same mistake is that
+[09:15] below that we're saying, "I want you to
+[09:16] read the notes file before you start any
+[09:18] task." So, if it's reading every single
+[09:20] time, we don't want to have a bunch of
+[09:21] duplicates in there. We want to have
+[09:23] something that's being tracked over
+[09:24] time, so we then can clean it up. And
+[09:26] that's probably the most important part
+[09:27] about this file. Is this file is not to
+[09:29] meant to persist over time with all the
+[09:31] mistakes. It's actually something that
+[09:32] you're going to audit on a weekly or
+[09:34] bi-weekly basis. And actually, you could
+[09:36] have the AI audit it for you. And that's
+[09:38] where the ticks come into play. And
+[09:39] here's just an example of what that
+[09:40] notes file could look like. We have a
+[09:42] series of mistakes that are listed out
+[09:43] over time. We have ticks associated to
+[09:45] it. So, what we want to do is we want to
+[09:47] look at this and say, "Okay, what are
+[09:48] the one-offs?" So, the one-offs are have
+[09:50] no ticks at all. The things that often
+[09:51] don't happen many times. And then the
+[09:53] ones that have more than probably three
+[09:54] or four ticks, those are the reoccurring
+[09:56] mistakes we keep on seeing. And in those
+[09:58] situations, that's where we want to say,
+[09:59] "Okay, is this better suited for a skill
+[10:02] or is this better suited for an
+[10:03] instruction?" Once you've identified
+[10:04] that, you then have the AI put that in
+[10:06] there for you. And then you clean up
+[10:08] this notes file. So, you're always
+[10:09] cleaning this file up and you're always
+[10:10] making sure it doesn't get too long. And
+[10:13] to that point, around having the AI
+[10:14] assist you, you could use a prompt like
+[10:16] this where the AI actually cleans up
+[10:17] that notes file. So, in here you can see
+[10:19] we're saying, "I want you to look at the
+[10:20] notes file from the last few weeks." You
+[10:22] can even specify from the last week,
+[10:24] last 2 weeks, etc. Then we're saying,
+[10:26] "Which mistakes keep coming back? Tell
+[10:28] me which ones should move into a skill
+[10:30] and which ones should move into folder
+[10:32] instructions?"
+[10:33] Once it's identified those and you've
+[10:34] agreed with it, you can then tell the
+[10:36] AI, "Go ahead and update that for me."
+[10:38] And that's the third location where we
+[10:39] can save things. And that's our maybe
+[10:41] column that will then move to a
+[10:42] permanent location afterwards. And now,
+[10:44] here's the simple question I want you to
+[10:46] ask yourself anytime you're thinking
+[10:47] about potentially saving an instruction
+[10:49] or saving mistake, saving a preference
+[10:51] somewhere. The question is, "Next time,
+[10:53] when should this show up?" If the answer
+[10:55] is that this is just a one-off thing
+[10:57] something that happens once, you can
+[10:58] just leave it in the chat. Don't worry
+[11:00] about saving it anywhere. But, if the
+[11:01] answer is every time I do this task,
+[11:04] then that's likely going to be in a
+[11:05] skill. So, you want to make sure you're
+[11:06] saving that into the skill. If it's not
+[11:08] related to a task and the answer is
+[11:09] every time I work with this specific
+[11:11] client on this task or in this specific
+[11:13] project, then it's likely going to be a
+[11:15] project instruction in that folder.
+[11:17] That's the agent's side of the file.
+[11:19] And then finally, if you're not sure yet
+[11:20] and it's a maybe, then that's where
+[11:21] you're going to put that in the notes
+[11:22] file using the instruction I shared
+[11:24] previously. And that's it. So, as a
+[11:26] reminder, two quick things. First off,
+[11:28] if you'd like to work with me, below are
+[11:29] a a of offerings to see if there's a
+[11:31] good fit between the two of us. And the
+[11:33] second thing is I've a 30-day AI Insight
+[11:35] series. It's completely free. You'll get
+[11:37] 30 insights in your inbox if I can apply
+[11:39] AI to your business and your work. And
+[11:41] if you've enjoyed this video, the
+[11:42] YouTube gods know that you're going to
+[11:44] love this video. So, give it a click.
+[11:46] Let's see if they're right, and I'll see
+[11:47] you next time, internet.

@@ -1,0 +1,169 @@
+[00:02] This is the Claude desktop app and we
+[00:06] are going to go through it one piece at
+[00:08] a time.
+[00:09] First, why this and not the website? The
+[00:12] website answers questions.
+[00:14] This can reach the files on your own
+[00:16] computer. That is the whole reason to
+[00:18] install it.
+[00:19] Here it is, open. Notice it did not
+[00:22] start on a blank page. It came back to
+[00:24] whatever you were doing last, which
+[00:26] catches people out. If you want a clean
+[00:28] start, you click new.
+[00:31] At the top of the left panel, there are
+[00:33] two tabs, chat and code.
+[00:36] There used to be a third called co-work.
+[00:39] In September, it was folded into the
+[00:41] chat, so a lot of the guides you will
+[00:43] find still describe a window with three.
+[00:47] We are in chat. Let me give you a quick
+[00:49] walk-through of this page.
+[00:51] In the middle is the chat box. That is
+[00:54] where you have a conversation with
+[00:56] Claude. You can type into it. You can
+[00:59] record your voice or you can simply talk
+[01:02] to it and it talks back.
+[01:04] And talking does not cost you extra. It
+[01:07] comes out of your normal usage, exactly
+[01:10] the same as typing.
+[01:12] Next to the box is a plus sign and it is
+[01:15] not just for attaching a photo.
+[01:17] Upload and add files, add a folder,
+[01:20] record a skill, skills, connectors,
+[01:23] design system, add plugins, research,
+[01:26] and memory.
+[01:28] That is most of what this app can do
+[01:30] sitting behind one button. If you have
+[01:32] ever wondered where a feature went, open
+[01:35] that and read the whole list.
+[01:37] Underneath the box, there are three
+[01:39] things and most people never touch any
+[01:42] of them. The model, the effort, and the
+[01:45] permission mode.
+[01:47] Open the model list and there are four.
+[01:49] Babel for your toughest work, Opus for
+[01:51] complex jobs and everyday ones, Sonnet
+[01:54] the efficient middle, and Haiku the
+[01:56] fastest. The number after the name is
+[01:58] the version, and higher is newer.
+[02:01] Next to it is effort, and it has five
+[02:04] settings. Higher effort means a more
+[02:07] thorough answer, but it takes longer,
+[02:09] and it uses your limit faster. The top
+[02:12] setting is marked four times or more
+[02:14] usage, which is worth knowing before you
+[02:17] pick it.
+[02:18] Medium is the one it recommends, and it
+[02:21] is the one to leave alone until you have
+[02:23] a reason.
+[02:24] And the third one, manual, is the
+[02:27] permission mode, which is the one that
+[02:29] actually matters. On manual, Claude asks
+[02:33] you before it uses a new tool or opens a
+[02:36] new site. On auto, it runs on its own,
+[02:39] and only stops if something looks
+[02:40] unsafe.
+[02:42] Now, down the left panel. New, for a new
+[02:44] conversation. Projects, artifacts, which
+[02:47] is where the things Claude built for you
+[02:49] are kept. Scheduled, for work you want
+[02:52] done on a timer. Customize, and more.
+[02:55] A project is a room. It keeps its own
+[02:59] chats, its own files, and its own
+[03:02] instructions.
+[03:04] You click new project, and it asks you
+[03:06] two things. What are you working on,
+[03:09] which is the name, and what are you
+[03:10] trying to achieve? Once it exists, you
+[03:12] go into it and add your instructions and
+[03:15] the files it should know about. Then,
+[03:17] every conversation you start inside that
+[03:19] room already knows your business.
+[03:22] You stop pasting the same paragraph at
+[03:24] the top of every chat. Free accounts get
+[03:27] five projects, which is plenty to find
+[03:29] out whether you like it.
+[03:31] At the very bottom of the left panel is
+[03:34] your name with your plan beside it.
+[03:36] Click it, and a menu opens.
+[03:39] Settings, usage, language, get help,
+[03:43] view all plans, get apps and extensions,
+[03:46] share guest passes, learn more, get API
+[03:50] keys, and log out.
+[03:53] Settings is where you set the app up the
+[03:55] way you want to work. Usage tells you
+[03:57] how much you have left before your
+[03:59] limit. Each one of those is worth its
+[04:01] own film and each will get one.
+[04:05] That is chat. Now, watch the left panel
+[04:08] while I click code.
+[04:10] It changed. Projects and scheduled are
+[04:13] not here. Instead, your work grouped by
+[04:16] the folder it belongs to
+[04:18] and the middle of the page is empty.
+[04:21] There is still a box down at the bottom,
+[04:24] but this page is not built around a
+[04:26] conversation
+[04:27] because code is not here to chat with
+[04:30] you.
+[04:31] It is here to work.
+[04:33] The box says so. Describe a task or ask
+[04:37] a question.
+[04:38] And underneath, it tells you exactly
+[04:41] where it is working, which computer and
+[04:43] which folder.
+[04:45] So, that is the code page. Before we
+[04:48] leave it, look at that last line once
+[04:50] more because it is the real difference
+[04:52] between the two tabs.
+[04:54] When you give a job to the chat, the
+[04:56] work does not happen on your computer at
+[04:59] all. It happens on another computer in a
+[05:01] building somewhere else, one that
+[05:03] Anthropic runs. That is what people mean
+[05:06] when they say the cloud, someone else's
+[05:09] computer doing your work.
+[05:11] That computer never turns off. So, the
+[05:15] job carries on after you turn yours off
+[05:18] and you can walk away from it.
+[05:21] Give the same job to code and the
+[05:23] opposite is true. It runs right here on
+[05:26] this machine in your folders, but only
+[05:29] while the app is open and the computer
+[05:31] is awake. Turn the computer off and it
+[05:33] stops.
+[05:35] Until the 6th of October, the chat gave
+[05:38] you a choice about that. There was a
+[05:39] setting that kept its work on your
+[05:41] machine instead and that setting is
+[05:43] gone.
+[05:44] So, what happens now when a job in the
+[05:47] chat needs a file that lives on your
+[05:49] machine? You put the file where it can
+[05:51] reach it. You drag it into the message
+[05:54] or you drop it into a project folder. It
+[05:56] is uploaded and now a copy of that one
+[05:59] file is sitting on their computer for
+[06:01] the job to read. One file, not your
+[06:03] folder, not your disk.
+[06:06] And the last thing, which is what I
+[06:08] actually do all day,
+[06:10] I start a job in the terminal and I pick
+[06:12] it up here on the desktop. Then I go
+[06:14] back and forth between the two.
+[06:17] It is the same work in the same folder.
+[06:19] The window is just where you happen to
+[06:21] be standing.
+[06:22] So, chat talks with you, code gets to
+[06:26] work, and now you know where everything
+[06:28] in this app lives.
+[06:31] And if this is the first thing of mine
+[06:33] you have watched, subscribe. I do one of
+[06:35] these every week in plain language for
+[06:38] people who were handed these tools and
+[06:40] never given an explanation.
+[06:42] That is the Claude desktop app, room by
+[06:46] room.
+[06:47] No permission required.
+[06:51] >> WE ARE THE ARCHITECTS.

@@ -1,0 +1,523 @@
+[00:00] Artifact number one is map where your
+[00:01] time goes. This is all about mapping
+[00:03] where you're spending time using AI and
+[00:05] how you can streamline this process. And
+[00:07] the goal here is pretty simple. Take a
+[00:08] step back, look at your session history,
+[00:10] and create a game plan to compress the
+[00:13] time it takes to complete tasks. Now, if
+[00:15] you don't know what an artifact is, it's
+[00:16] essentially a website that Claude can
+[00:18] launch that makes it easier to work with
+[00:20] information and collaborate with other
+[00:22] people. And this feature alone has
+[00:23] transformed how me, my team, and my
+[00:25] clients all collaborate. And 99% of
+[00:27] people aren't using it to its full
+[00:29] potential. So, to get started, run this
+[00:30] prompt where it'll look at your past
+[00:32] Claude sessions, visualize where you're
+[00:34] spending your time, and then suggest
+[00:36] skills you should create or improve. And
+[00:38] one of the best things about artifacts
+[00:40] is that it has a visual element. So, in
+[00:42] this case, seeing a pie chart of where I
+[00:44] spend my time makes it really obvious
+[00:46] what I should focus on to save the most
+[00:48] time. And there are a couple features
+[00:49] here that I do want to highlight. So,
+[00:50] the first is adding comments directly in
+[00:53] line on the artifact. So, in this
+[00:54] example, I had Claude suggest skills
+[00:57] that I should build. But obviously some
+[00:58] of those suggestions are better or
+[01:00] worse. So, I'll go through and say,
+[01:02] "Let's do this." or "Don't do this."
+[01:05] Then I send that back to Claude and it
+[01:07] updates the artifact based on my
+[01:08] comments. After going back and forth, I
+[01:10] can go back to the original chat window
+[01:12] and say, "Create the skills that I said
+[01:14] to do." And it will then go and enhance
+[01:16] my system with exactly what I wanted and
+[01:18] not do what I didn't want it to do. And
+[01:19] this is where artifacts get really
+[01:21] interesting. The proper planning
+[01:22] process, this back and forth, is
+[01:24] universally agreed upon as best practice
+[01:26] when using AI. So, by pairing the visual
+[01:28] component with this iteration process
+[01:30] with the plan itself, I'm better able to
+[01:32] see what the final product will be and I
+[01:34] can do more in-depth planning sessions.
+[01:36] And in this case, I had it identify and
+[01:37] suggest new skills to create, but it's
+[01:39] not just for that, right? You can use
+[01:40] this for complex automations, processing
+[01:42] documents, a new product feature, really
+[01:44] anything where there's a complicated
+[01:46] plan before you actually go building.
+[01:47] This will help you visualize and work
+[01:49] through that plan. Now, that's just the
+[01:50] first of four Claude artifacts that you
+[01:52] need to build today to 10x your output.
+[01:54] And since you're watching this, you're
+[01:55] likely a business owner or a high-level
+[01:57] operator. So, the next three artifacts
+[02:00] will focus on empowering collaboration,
+[02:02] building micro tools, and finding the
+[02:04] best ways to work. Artifact two is about
+[02:06] AI native collaboration. So, this
+[02:08] artifact is actually a two-for-one
+[02:09] because both of these have changed how I
+[02:12] collaborate with other people. The first
+[02:14] way, and part one, is actually the
+[02:15] documents feature. So, this actually
+[02:17] launched in the middle of September, and
+[02:18] I've been loving it. Anytime I work on a
+[02:21] document now, like the outline [music]
+[02:22] for this video, I make it a Claude
+[02:25] artifact. And then from there, I can
+[02:26] edit directly in line just like I'm in
+[02:29] document editor. But, the reason that
+[02:31] it's so powerful is that I can also
+[02:32] highlight the text and then ask Claude a
+[02:34] specific question or have it make an
+[02:36] adjustment to the document. So, now it's
+[02:38] just this AI native collaboration
+[02:40] feature that has really helped me and my
+[02:42] team. So, what I do is I use these
+[02:44] artifacts as I go back and forth with my
+[02:45] script editing team, and we work through
+[02:47] the Claude artifact instead of an
+[02:49] external tool that isn't native to
+[02:51] Claude. And if you've been watching my
+[02:52] channel, you know that I've mentioned
+[02:53] that I've done this handwritten step in
+[02:55] Obsidian, but I've really been liking
+[02:57] this new workflow. So, this is what I'm
+[02:58] using for now for this specific task.
+[03:00] For 99.99% of people, you're not going
+[03:02] to be writing YouTube scripts. So, how
+[03:04] can you actually use this? Well, anytime
+[03:06] you're handwriting something that's
+[03:07] longer than an email, I would suggest
+[03:08] creating a Claude artifact document.
+[03:10] This could be marketing material, a
+[03:11] LinkedIn post, a short-form script.
+[03:13] Whatever you're working on that you
+[03:15] would use another editing tool for, try
+[03:17] using the documents feature. And it's
+[03:19] really as simple as running this prompt,
+[03:20] which uses a leading phrase, artifact
+[03:22] document, that tells Claude exactly what
+[03:24] you want it to create. So, that was part
+[03:26] one, which is about a document-based
+[03:28] collaboration. But, the second part of
+[03:29] this specific section is about general
+[03:31] collaboration with others. So, for me, I
+[03:33] recently did a big launch for our
+[03:34] executive AI program inside
+[03:36] buildpartner.ai, and I had a massive
+[03:38] amount of stuff my team needed to test.
+[03:40] So, here's what we did. We had our QA
+[03:42] team create a Claude artifact with all
+[03:44] of their testing notes, what they
+[03:45] expected, what they found, and the
+[03:47] things that they wanted. Then we just
+[03:48] went through each item in that artifact
+[03:50] itself. I would comment, "We're not
+[03:51] doing this. That's a feature, not a bug.
+[03:53] Let's do this." And now we're creating a
+[03:55] robust feedback document that I could
+[03:58] then feed back into Claude to actually
+[04:00] go and execute on my behalf. So, once
+[04:02] that document is in a ready state, I
+[04:03] would just say, "Here, follow the
+[04:05] direction in this artifact." It'll then
+[04:07] go and apply all of the feedback and
+[04:09] this back-and-forth nature where it's
+[04:11] already AI native streamlines the entire
+[04:13] process. So, I am going to show you how
+[04:15] to apply this in your day-to-day, but
+[04:16] first, if it's not clear yet, here is
+[04:18] why this matters so much. Whenever you
+[04:19] collaborate with essentially anyone,
+[04:21] there is a four-step process. There's
+[04:23] the [music] ask, here are the changes we
+[04:24] need to make, here is the request. There
+[04:26] is the review, do I agree with these? Is
+[04:28] that something I can do? There's the
+[04:30] handoff. Okay, here's what we're doing
+[04:32] and then finally, the execution. After
+[04:34] you hand it off, you have to go and do
+[04:36] it. So, it's a four-step process, but
+[04:38] most people only use AI at that last
+[04:40] execution step. But, this artifact
+[04:42] process helps streamline the first three
+[04:44] steps in the process. And the impact of
+[04:46] this, I can't stress how important it
+[04:48] is. And this isn't just for your team,
+[04:50] right? It can work with your clients.
+[04:51] I've used it when collaborating with my
+[04:53] fiance on some specific things. So, now
+[04:55] to go and do this, here's exactly what
+[04:56] you should do today. The next time you
+[04:58] want to review time you want to hand
+[04:59] something off, run this prompt. It'll
+[05:01] take all your notes and package them up
+[05:03] into a format that empowers a team
+[05:04] member to review that plan. You then
+[05:06] send this to them and then they review
+[05:08] it directly in the document. Now, a word
+[05:10] of caution here is that you want to make
+[05:12] sure this is signal, not noise. So, the
+[05:14] Shopify CEO, Tobi, has been pushing a
+[05:16] term for this, slop grenades. Basically,
+[05:19] AI generates something, in this case it
+[05:21] can be an artifact. You don't read it
+[05:23] and then you send it to somebody else to
+[05:24] do the work and figure out whatever is
+[05:26] useful. And artifacts frankly have made
+[05:28] it super easy to create a slop grenade
+[05:30] because they look polished even when the
+[05:32] content behind it isn't. So, when it
+[05:35] creates something, if it isn't something
+[05:36] that you've read through all the way
+[05:37] yourself, don't send it to somebody
+[05:39] else, that is an anti-goal. Make sure it
+[05:41] has signal, not noise. Now, before we
+[05:44] get to artifact number three, with
+[05:45] everything we've covered so far, you're
+[05:47] still the one who has to start it. You
+[05:48] open Claude, you ask and then it does
+[05:50] the work. But, what if Claude came to
+[05:52] you first? Which brings us to today's
+[05:54] video sponsor, Anthropic, the team
+[05:56] behind Claude, which you know that I
+[05:57] love and they just released a new app
+[05:59] called Claude Duet. their team actually
+[06:02] sent it to me early to be one of the
+[06:03] first testers and when I was playing
+[06:04] around with it, there was one unique
+[06:06] feature about Claude Duet that I
+[06:07] absolutely loved. It's specifically
+[06:09] designed to be proactive and come to you
+[06:11] with the work that you should do. So,
+[06:12] this is designed for professionals and
+[06:14] small business owners with more on their
+[06:16] plate than they can track. So, to set it
+[06:17] up, because it's in the Claude
+[06:19] ecosystem, your memory, skills, and
+[06:21] connected apps all carry over, and it's
+[06:23] designed around Claude Opus 5.5, so you
+[06:25] don't have to choose a model. And
+[06:27] because I already use Claude and all my
+[06:29] connections are set up, it took me about
+[06:30] a minute to set up, and without asking a
+[06:32] single thing, it started suggesting
+[06:34] things that I genuinely needed to do. On
+[06:36] screen, you can see the Claude Duet task
+[06:38] list that it made for me, and starting
+[06:39] top from bottom, it told me that I have
+[06:41] to first bring actionable fixes to
+[06:43] Monday's editor review, second, check
+[06:45] client delivery plan against notes, and
+[06:47] third, [music] analyze docs sent from
+[06:49] team. And these are things that I had on
+[06:50] my to-do list that I was manually going
+[06:52] to do later. So, if I just select start,
+[06:54] it brings it to active, and Claude
+[06:56] starts tackling the task for me. And the
+[06:58] screenshots you see are from my phone,
+[06:59] which I was using while on the go, and
+[07:01] that's possible because it runs its own
+[07:03] in the cloud. And so, even when my
+[07:05] computer is off, it pings me and it
+[07:06] tells me when it's done or needs a
+[07:08] review. But, one thing that's important
+[07:10] for any sort of AI tool that acts on
+[07:12] your behalf is knowing when the cost of
+[07:14] error is high and making sure that it
+[07:16] gets it right. And Claude Duet is
+[07:17] designed so before it sends, pays,
+[07:19] signs, or deletes anything, it shows you
+[07:21] exactly what it's about to do and waits
+[07:23] for your approval. Now, it is a research
+[07:25] preview, and we are in the first
+[07:26] innings, and I was one of the first
+[07:27] testers, but my biggest feedback is it
+[07:29] honestly finds too many things to work
+[07:31] on. As an AI user, we want to be
+[07:33] focused, and Claude Duet sometimes can
+[07:35] just suggest too many things that I
+[07:37] don't know if they're really a needle
+[07:39] mover for my business. Claude Duet is
+[07:41] available for Claude Pro and Max and is
+[07:43] rolling out in waves. So, click the
+[07:45] first link in the description to join
+[07:46] the waitlist and be one of the first
+[07:47] people to use it. So, we just talked
+[07:49] about having AI find the work for you,
+[07:51] but now let's get back to hands-on
+[07:53] building. Artifact number three is micro
+[07:54] tools. A micro tool is a tiny piece of
+[07:57] software that has one specific job, and
+[07:59] that's it. It's the kind of thing that
+[08:01] you'd never hire a developer for, and it
+[08:04] was too small to ever consider actually
+[08:06] building. But, now with artifacts, it
+[08:07] makes it feasible, and frankly, you
+[08:09] should start building these. One of my
+[08:11] favorite examples comes from a client
+[08:12] who runs five different restaurants. So,
+[08:14] the bartenders kept getting asked how to
+[08:16] make drinks they didn't know, or drinks
+[08:18] that weren't on the current menu. So, he
+[08:19] could build a micro tool, right, with
+[08:21] every cocktail that's searchable by name
+[08:23] or spirit with how to make it. Now, the
+[08:25] bartender could just pull this up on
+[08:27] their phone, no login, no app, it's just
+[08:29] a link, and they have access to all the
+[08:30] information. And the beauty with
+[08:31] artifacts is you can build this in one
+[08:33] prompt, which makes it feasible to
+[08:34] actually do. So, where should you start?
+[08:36] Well, you need to think about it in two
+[08:37] ways. The first is an internal micro
+[08:39] tool that you can use, and then the
+[08:41] second is an external micro tool that
+[08:43] your customers can use. First, let's
+[08:45] start with internal, and the bartender
+[08:46] example, that would be an example of an
+[08:48] internal micro tool. And you may already
+[08:49] have ideas for a micro tool you can
+[08:51] make, but if you don't, send this prompt
+[08:53] into Claude. It will go in and identify
+[08:54] your setup and identify parts of your
+[08:56] work that could use a micro tool. So,
+[08:58] actually, when I ran this while filming
+[09:00] this, it actually told me to build a
+[09:01] feature request triage board for
+[09:03] buildpartner.ai, which is a perfect
+[09:05] example of a micro tool. And the reason
+[09:07] is that day-to-day, when people use this
+[09:09] product, they are constantly requesting
+[09:11] features, and whether it's on calls or
+[09:13] through the app itself, I notice them,
+[09:16] but I kind of just take mental notes,
+[09:18] and I don't have any centralized place
+[09:20] to manage all of it. So, after Claude
+[09:21] flagged this as a potential tool that I
+[09:23] could use, I said, "Can we make a
+[09:25] feature request board that looks at our
+[09:27] calls and Slack messages, makes a list
+[09:29] of things to do, and has a button that I
+[09:31] can press to refresh it?" went ahead and
+[09:33] built this micro tool. And it's
+[09:35] something that I genuinely could use.
+[09:37] And because Claude has access to my
+[09:38] connectors, I can just click refresh,
+[09:40] and it'll pull in my Slack and my call
+[09:41] transcripts, and it'll update the board
+[09:43] over time. And it's something that I've
+[09:44] just never prioritized, but now I have
+[09:47] it, and my team can go in and see the
+[09:49] status of each request. So, now, for
+[09:50] you, start with the audit prompt and go
+[09:52] from there, and don't hesitate to
+[09:54] experiment, because it's just so cheap
+[09:56] to make these things. Now, that was for
+[09:58] internal tools, but what about external
+[10:00] tools? So, micro tools can help your
+[10:02] customers solve super specific problems
+[10:04] that maybe only one or two of them have.
+[10:07] And to do that, just go through the same
+[10:08] exact process we just did for the
+[10:10] internal tool. You just have to make it
+[10:11] accessible to them by hitting the share
+[10:13] in the top right corner and making it
+[10:14] publicly accessible. [music] But, what
+[10:16] I'm most interested in for using
+[10:18] artifacts is using them as lead magnets.
+[10:20] A lead magnet is essentially something
+[10:22] you give to someone for free that is
+[10:24] valuable. In exchange for that value,
+[10:26] you get their contact information. And a
+[10:28] good lead magnet has two things. The
+[10:29] first, it has to be genuinely valuable.
+[10:32] And second, it's not a ton of work to
+[10:34] make, especially when you're first
+[10:35] getting started and you're not sure if
+[10:37] anyone's actually going to see this lead
+[10:38] magnet. And so, these micro tools are
+[10:40] perfect for both of these. One prompt to
+[10:42] build, it's a link that you can drop
+[10:44] directly in a DM or an email, and it
+[10:46] does something for that specific person.
+[10:48] And so, this lead magnet process is
+[10:49] something that I do a lot on my
+[10:51] Instagram. And so, I recently made a
+[10:52] reel that got over 100,000 views and
+[10:54] 2,000 plus comments. And it was using
+[10:56] this external tool framework. I gave
+[10:58] them value, and in return, I got a ton
+[11:01] of emails that are now on my newsletter.
+[11:02] This is extremely powerful, especially
+[11:04] if you run a business and you're looking
+[11:05] to grow it. So, if you're not sure what
+[11:07] kind of lead magnet you could create,
+[11:09] run this prompt and I'll analyze
+[11:11] whatever you're working on and suggest
+[11:12] micro tool lead magnets that you could
+[11:14] offer your customers. Now, zooming out,
+[11:16] so far we've covered three artifact
+[11:18] categories. Using artifacts to plan,
+[11:19] where we used the time map as an
+[11:21] example. Using artifacts to collaborate.
+[11:23] And then the third, which is creating
+[11:24] micro tools that we just covered. The
+[11:26] fourth one is the one that excites me
+[11:27] the most that 99% of people that know
+[11:29] artifacts aren't doing. But before we
+[11:31] get to that, you know the drill. This is
+[11:32] our anti-slop agreement. Everything in
+[11:34] this video is built by humans for
+[11:36] humans. So, as part of this agreement,
+[11:37] then subscribe to this channel so I can
+[11:39] keep making content like this. And if
+[11:40] you already subscribed, sign up for post
+[11:42] notifications. That really helps this
+[11:43] channel. I appreciate all of you for all
+[11:45] of your support. You guys are all
+[11:46] legends. And as a thank you, I give away
+[11:48] a Claude Max subscription every video.
+[11:50] And so, this video's winner is Guy
+[11:52] Paddock, who's building a photos from
+[11:54] footage research system. Well, shout
+[11:56] out, Guy. And to enter this video's
+[11:57] Claude Max giveaway, let me know what
+[11:59] you're building in the comments. And if
+[12:00] you run into any problems, it could be
+[12:02] AI related or not, I'd love to help if I
+[12:04] can. But let's get to artifact four,
+[12:06] which is all about innovating. The goal
+[12:07] here is to rethink how and what you you
+[12:10] use these tools for. This section goes
+[12:12] one step further than the micro tool
+[12:14] section before. For example, a micro
+[12:16] tool is something that you likely could
+[12:18] have made and potentially would have
+[12:20] made before, but Claude makes it 100
+[12:22] times easier. This section is about
+[12:24] creating something you never really
+[12:25] thought of making. To show you what I
+[12:27] mean, let me walk through how I work
+[12:29] with my team on creative assets for my
+[12:31] brand. Before for Instagram graphics,
+[12:33] I'd write a list of text that I wanted
+[12:35] on each graphic. This is what the file
+[12:37] looked like for handoff, and there's a
+[12:39] problem with this. There is a big visual
+[12:41] leap between a text list in Notion and a
+[12:44] finished graphic that the designer
+[12:46] creates. And this is the text and this
+[12:48] is the example final product, right?
+[12:49] They look very different. And what
+[12:51] happens is this leads to a lot of back
+[12:52] and forth to get it to a state that I'm
+[12:54] happy with. But with artifacts, there's
+[12:56] no reason to share the text in that
+[12:59] format anymore. So instead, here's the
+[13:01] new version of how I share it. On
+[13:02] screen, you can see how I created an
+[13:04] artifact where the text visually
+[13:06] represents where it will be on the
+[13:07] Instagram graphic. Now when I hand this
+[13:09] off, I share this and this is what the
+[13:12] final product looks like. It's
+[13:13] directionally way closer to what I want
+[13:16] it to be. Now did I replace creating the
+[13:18] graphic entirely? No. But did I make it
+[13:20] 10 times easier for me to visually see
+[13:22] how the text will look on the graphic?
+[13:24] Yes. And this type of workflow
+[13:26] improvement is how you get these
+[13:28] repeated gains throughout an
+[13:30] organization, throughout your
+[13:31] day-to-day, etc. And so this helps me
+[13:33] because I'm like, I'm confident that
+[13:34] this will be what I want. And it helps
+[13:36] the designer because they're confident
+[13:37] in the general layout, too. It is a
+[13:39] win-win. And this is how you create more
+[13:40] efficient teams. And this is a form of
+[13:43] innovation in our workflow that almost
+[13:45] nobody would have ever tried. The most
+[13:46] effective people using artifacts are
+[13:48] re-wiring what they think is possible
+[13:50] because Claude has made it essentially
+[13:52] free to make a single webpage. So
+[13:54] innovating is obviously specific to your
+[13:56] situation, but here's how you can do it
+[13:58] yourself. First, run this prompt that
+[13:59] audits your workday and finds where a
+[14:01] visual component would help. Then once
+[14:03] you do that, have it build an artifact
+[14:05] as a proof of concept. Once that
+[14:06] artifact's created, go back and forth
+[14:08] with it until it creates a style that
+[14:10] you like. This is exactly what I did for
+[14:11] the Instagram reference. And once you
+[14:12] get into a format for the artifact that
+[14:14] you love, you want to turn that into a
+[14:16] skill so that you can create this style
+[14:18] of artifact going forward in the future.
+[14:20] In the Instagram example, I went back
+[14:21] and forth until it visually looked like
+[14:23] an Instagram graphic and I was happy
+[14:25] with it and I said, "I want to create a
+[14:26] skill called IG graphic creation where
+[14:29] the artifact output is this format."
+[14:31] Now, I've restructured how this IG
+[14:32] graphic skill works and it creates an
+[14:34] artifact in the exact template that I
+[14:36] want. I'm probably getting a little too
+[14:37] fired up about this. It really is epic.
+[14:40] Now, that's just one example, but there
+[14:41] are a bunch of other categories that you
+[14:43] can do, right? Another is resumes,
+[14:45] right? So, when I'm hiring, I'll ask a
+[14:47] candidate to share an artifact in our
+[14:49] company's branding. This is a better way
+[14:51] to visualize and see their actual
+[14:53] ability. So, if you are job hunting and
+[14:54] you want to separate yourself from the
+[14:56] pack, consider adding a personal profile
+[14:58] artifact that could live on your resume
+[15:00] or your LinkedIn. And so, in the age of
+[15:02] AI, little things like this send a
+[15:04] signal to whoever you're speaking with
+[15:06] that you're AI native. Honestly, I don't
+[15:08] even drink caffeine and I'm this fired
+[15:10] up about artifacts. But anyway, for all
+[15:12] these artifacts, as you're going through
+[15:13] your day-to-day, really what you should
+[15:15] be asking is, "Should this be AI enabled
+[15:17] instead?" Anytime you're about to write
+[15:18] a document or explain something, ask,
+[15:20] "Could this be an artifact?" And once
+[15:22] you start asking that, it's going to
+[15:23] transform how you interact with these
+[15:25] tools. Now, going back to artifact one,
+[15:27] I touched on the power of planning with
+[15:29] artifacts, which is the biggest game
+[15:31] changer of all of these. But what I
+[15:32] touched on there is just the tip of the
+[15:34] iceberg. So, if you want to go deeper on
+[15:36] that, go check out this video where I
+[15:37] break down how Anthropic's own engineers
+[15:40] plan with artifacts. If you like this
+[15:42] video, I guarantee you'll love that one.
+[15:44] So, I'll see you over there. Peace.

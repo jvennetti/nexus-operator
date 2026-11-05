@@ -1,0 +1,379 @@
+[00:00] One researcher counted over 200
+[00:02] definitions of what an AI agent is. So,
+[00:05] if you're confused, you're in good
+[00:07] company. Also, if you're new here, I'm
+[00:09] Dylan. I run an AI consultancy. And
+[00:11] lately, that's the question I hear most
+[00:13] when working with both executives and
+[00:15] business owners. I keep seeing my
+[00:17] clients overwhelmed by this. But an
+[00:19] agent is way simpler than it sounds.
+[00:22] It's just a folder with three things
+[00:24] inside of it. And they're already inside
+[00:26] of your existing AI subscriptions, such
+[00:28] as ChatGPT and Claude.
+[00:30] So, by the end of this video, you'll see
+[00:32] just how easy it is to actually build
+[00:34] one yourself. So, let's get into it.
+[00:36] Now, at the highest of levels, if we had
+[00:39] to define the difference between an
+[00:41] agent and a simple chatbot, that would
+[00:43] come down to what the AI does when you
+[00:45] ask it to do something. So, if you're
+[00:47] using a chatbot, likely all that's going
+[00:49] to happen is you ask it a question and
+[00:51] then gives you an answer. The steps that
+[00:53] happen between you asking the question
+[00:54] and it giving you an answer are likely
+[00:56] minimal and simple.
+[00:58] But for an agent,
+[01:00] when you trigger an agent, it takes many
+[01:02] different steps,
+[01:04] and oftentimes it does work on your
+[01:05] behalf. So, this is the simple place
+[01:07] we're going to start at the macro level.
+[01:10] A chatbot basically answers questions,
+[01:12] an agent does work. Now, as I walk
+[01:13] through this in detail, I want to do it
+[01:15] through an example. So, the example
+[01:16] we're going to use here is overdue
+[01:18] invoices. So, all of us have clients
+[01:20] that tend to delay their payment. And
+[01:22] we're going to walk through the three
+[01:23] parts that make up an agent and how to
+[01:25] build one using this example.
+[01:27] Our agent, in this case, is going to
+[01:29] pull list of customers that are overdue
+[01:31] in their payment.
+[01:32] After that, it's going to rank them
+[01:34] based on the worst offenders. It'll then
+[01:36] draft a series of nudge emails on our
+[01:37] behalf, and then we'll simply send those
+[01:39] emails that the AI has drafted for us.
+[01:41] So, it's doing all this work for us
+[01:44] autonomously.
+[01:45] That's the agentic part, and that's our
+[01:47] example.
+[01:49] So, what makes up an agent?
+[01:51] Simply put, an agent is a folder with
+[01:53] three things. And that folder is going
+[01:56] to include instructions, which could be
+[01:57] a simple prompt or a skill.
+[01:59] In addition to that, it's going to have
+[02:01] connections to other systems so it can
+[02:03] read and write information from other
+[02:04] places.
+[02:05] And then finally, it's going to have a
+[02:06] trigger, a thing that makes it start.
+[02:08] And that could be time-based,
+[02:10] event-based, or manual where you just
+[02:11] click a button. These are the three
+[02:13] simple things that make up an agent.
+[02:15] Quick pause in irregular programming.
+[02:17] This video is brought to you by me, as
+[02:19] always. Two quick things. First off,
+[02:21] below is a 30-day AI insight series,
+[02:23] completely free. You'll get 30 insights
+[02:26] in your inbox of how you can apply AI to
+[02:27] your business and your work. The second
+[02:29] thing is if you like to work with me,
+[02:32] below are a series of offerings to see
+[02:33] if there's a good fit for the two of us.
+[02:35] Now, let's go back to the video.
+[02:37] Now, the home and where this lives will
+[02:39] vary depending on where you're using the
+[02:40] tool. So, if you're using ChatGPT and
+[02:42] Claude in the browser, that's going to
+[02:44] be likely in a place like a project or
+[02:47] potentially a skill where all these
+[02:48] things are housed and connected. Outside
+[02:50] of that, we also have desktop tools like
+[02:53] Claude co-worker Codex where it can be
+[02:55] literally a folder on your computer. So,
+[02:57] in your document section, your desktop
+[02:58] section, whatever else, it's a folder
+[03:00] and it has these three things inside of
+[03:01] it. An important thing to note about
+[03:03] agents is often times agents are most
+[03:05] useful when they're applied to a
+[03:07] recurring task. So, something that you
+[03:09] do on a recurring basis. We'll come back
+[03:10] to that later. Now, if these are the
+[03:12] three things that make up an agent,
+[03:14] let's walk through each one in more
+[03:15] detail seeing how it fits to our
+[03:17] example. So, our first piece are the
+[03:19] instructions of the brief.
+[03:21] So, again, this could be a skill inside
+[03:23] of Claude or in ChatGPT or it could be
+[03:25] just a system instruction or a prompt
+[03:27] that we use inside of a project. In this
+[03:29] case, we're just using a simple prompt.
+[03:30] So, this prompt here is telling the AI,
+[03:33] "I want you to find every customer who's
+[03:35] past the 30-day mark of paying me.
+[03:37] After that, I want you to rank them
+[03:38] based off of the most to least overdue.
+[03:42] Then draft a series of short nudge
+[03:44] emails on my behalf. And then here where
+[03:46] it says my tone of voice, this here
+[03:48] could be a skill. And that skill could
+[03:50] understand exactly how we like to write
+[03:52] these emails based off of previous sent
+[03:54] emails in regards to this use case.
+[03:57] After that, we then at the end say, "If
+[03:58] anything is past 60 days for overdue,
+[04:01] then I want you to be a little bit more
+[04:02] intense in the way that you write your
+[04:04] email to get them to pay." So, this is
+[04:06] our very first part of an agent, the
+[04:07] instructions telling it what we want it
+[04:09] to do, why we want it to do it, and how
+[04:10] we want it to do it. The next part is
+[04:12] going to be the connection, so allowing
+[04:14] the AI to connect to other systems. In
+[04:16] this case, we could have the AI connect
+[04:18] to our email, our calendar, and our
+[04:20] accounting application or our CRM. And
+[04:23] for each of these, they might have
+[04:24] different types of permissions, so the
+[04:26] AI may only be able to read information
+[04:28] from my calendar or my accounting app,
+[04:30] but for my email, it actually may be
+[04:32] able to write information to it.
+[04:33] I.e., being able to draft emails on my
+[04:35] behalf. Not send them, just draft them.
+[04:38] And this is a core component that makes
+[04:40] up an agent because it's not just an AI
+[04:42] by itself, but an AI that can interact
+[04:44] with other things. We've given the AI
+[04:45] hands and eyes. This is our second
+[04:47] piece. And our third piece is triggering
+[04:50] the AI, so telling it when to start. And
+[04:52] there are three ways that we can trigger
+[04:53] an AI. And for most of you, I recommend
+[04:55] you just start with this first way,
+[04:57] which is manually.
+[04:59] So, you can trigger that agent either by
+[05:00] prompting it saying go ahead and start,
+[05:03] or by clicking a button. So, I've seen
+[05:05] some of my clients actually get value
+[05:06] from this approach where you can create
+[05:08] a scheduled task inside of Cloud Co-work
+[05:10] or Cloud Code.
+[05:11] And once you've created that scheduled
+[05:12] task, you can set it to be manual
+[05:14] instead of on a schedule, and then you
+[05:15] just go into that Cloud Co-work instance
+[05:17] and click run now, and just run it based
+[05:19] on a button and not have to do anything.
+[05:20] That's the first way we can trigger
+[05:21] things manually.
+[05:23] The next way that most of you will
+[05:24] likely hear about scheduling things with
+[05:26] scheduled tasks is based on a time
+[05:28] window.
+[05:29] So, when you create a scheduled task
+[05:30] inside of Codex from OpenAI or Cloud
+[05:32] Co-work from Anthropic, you can have
+[05:34] this run every day at 8:00 a.m. or every
+[05:36] hour, whatever frequency you would like.
+[05:38] And then the final way that we can
+[05:39] trigger these AIs is event-based.
+[05:42] So, this is when something happens, the
+[05:43] AI then starts. So, in this case, we
+[05:45] could have an AI that starts after it
+[05:48] realizes that an invoice is past 30
+[05:50] days.
+[05:51] So, we could have some sort of code set
+[05:52] up in our CRM or our accounting app that
+[05:54] sees that an invoice exceeded 30 days,
+[05:56] and that could trigger the AI agent to
+[05:57] then do the task of drafting the email.
+[06:00] This one here is a bit more advanced, so
+[06:02] I wouldn't recommend people starting
+[06:03] here. I'd first recommend starting with
+[06:04] manual, then going to schedule tasks,
+[06:07] then going to event-based only if it's
+[06:09] relevant. And this is our third part of
+[06:11] triggering the AI agent. Now, I
+[06:12] mentioned there are three components to
+[06:14] an AI agent. Well, there are actually
+[06:15] two others that come for free with the
+[06:17] existing apps you already have, so you
+[06:18] don't have to worry about those, but
+[06:20] I'll mention them here briefly. So, the
+[06:21] first one is the obvious one. You need
+[06:23] an AI to make an AI agent. So, the AI
+[06:25] model itself is baked into the
+[06:27] subscription that you have. So, it's
+[06:28] going to be GPT or Claude. The next
+[06:30] thing is memory. So, the AI needs to
+[06:32] remember things over time, and many of
+[06:33] the tools you're using today have memory
+[06:35] baked into them. And recently, ChatGPT
+[06:37] actually improved their memory, which is
+[06:39] nice. That's going to be a basic memory,
+[06:41] just remembering general things around
+[06:42] preferences. If you want a really
+[06:44] high-level average memory, that where
+[06:46] the AI actually improves itself over
+[06:47] time for a given use case, I recommend
+[06:49] having the AI do that itself inside of a
+[06:51] desktop agent. So, if you're using
+[06:53] something like Claude Co-worker Codex,
+[06:55] you can have the AI write to files for
+[06:57] different reasons. And I've created
+[06:59] multiple videos on this topic, so I
+[07:00] won't spend too much time here, but this
+[07:02] is how we create a AI that compounds
+[07:04] over time and creates serious leverage.
+[07:06] An example here could be an AI
+[07:07] understands insights in regards to a
+[07:09] certain task. So, maybe we have a
+[07:11] specific AI agent dedicated to a certain
+[07:13] client that writes follow-up emails for
+[07:14] us after meetings. Well, it can derive
+[07:17] insights over time after every single
+[07:18] meeting, put that into an insights file,
+[07:21] and then tell us once a week or once a
+[07:22] month or once a quarter the insights it
+[07:24] derived in relation to this client for
+[07:26] those specific types of meetings. It's
+[07:28] compounding over time. So, those are the
+[07:30] two free parts that are included with AI
+[07:31] agents. Now, oftentimes with AI agents,
+[07:33] you hear people talking about them doing
+[07:35] autonomous things. There's no human in
+[07:37] the loop. That's okay for some tasks,
+[07:39] usually low-stakes tasks that aren't
+[07:41] high-risk. But if you have high-risk
+[07:43] tasks that you're applying an agent to,
+[07:45] you want to be in the loop. And there
+[07:47] are three categories that make up
+[07:48] high-risk in my mind. Either there's
+[07:50] legal risk, financial risk, or
+[07:52] reputational risk to the company.
+[07:54] In any of those cases where it's really
+[07:55] high-risk, you want to have a human in
+[07:57] the loop that reviews the output before
+[07:58] anything gets done. In this case, with
+[08:00] our invoices that are overdue, instead
+[08:03] of having the AI automatically send the
+[08:04] email, we're having it draft the email
+[08:06] for us, where we're reviewing the email,
+[08:08] and then we're clicking send ourselves.
+[08:11] So this is a higher-stakes task.
+[08:13] For lower-stakes tasks, you can
+[08:14] basically allow AI to do everything for
+[08:16] you and take the final action without
+[08:18] you actually reviewing it. So keep in
+[08:19] mind,
+[08:21] having an AI run autonomously is okay
+[08:22] for some tasks, but not all tasks. So
+[08:24] now we'll move on to how do we actually
+[08:26] know when to build an AI agent? Well,
+[08:28] there are two simple questions you can
+[08:29] answer.
+[08:30] The first one, is the process that the
+[08:32] AI agent's going to do for you, does it
+[08:34] have a similar shape every single time?
+[08:36] Now these words that I've chosen are
+[08:38] very intentional. So similar shape, I'm
+[08:40] not saying that the process is
+[08:42] identical. It has to take the same exact
+[08:44] steps every single time. AI can deal
+[08:46] with that ambiguity if it's not the same
+[08:48] every time.
+[08:49] All it needs is to have the same output
+[08:51] every time. So in this case, for our
+[08:53] overdue invoices,
+[08:55] we have the AI that follows a similar
+[08:56] process. It's finding the customers that
+[08:58] are overdue, it's ranking them, it's
+[09:00] drafting an email,
+[09:02] and then the result's the same on the
+[09:03] output side. But there are things that
+[09:05] change. So the names of the clients
+[09:07] change, and so do the amounts, even
+[09:09] potentially the dates as well. So it's
+[09:11] important to know that if the shape is
+[09:12] similar, there's a chance an AI agent
+[09:14] may be relevant here.
+[09:15] But a use case where an AI agent might
+[09:17] not necessarily be relevant is say that
+[09:19] we have a task where we need to plan for
+[09:20] a five-year strategy.
+[09:22] Well, since this is so infrequent, it's
+[09:24] likely not worth it, and we'll get to
+[09:25] that second question in a second. But
+[09:27] also the process here likely changes
+[09:29] radically. The way that we planned for a
+[09:30] strategy five years ago likely differs
+[09:32] today. So if the shape of the process
+[09:34] isn't too similar, maybe it's not
+[09:36] optimal for an AI agent. That's our
+[09:37] first question.
+[09:39] A second question that's much easier to
+[09:40] answer is do you do this often enough
+[09:43] where it's actually worth the effort to
+[09:44] create an agent? So, if you're doing
+[09:46] this task once a year, it's likely not
+[09:48] worth putting in the effort in creating
+[09:49] an AI agent for this.
+[09:51] But, if it's something that you do every
+[09:53] day or every week, then it's likely
+[09:55] useful for an AI agent to be applied to.
+[09:57] So, this really just comes down to
+[09:58] frequency. Do you do it a lot? If so, an
+[10:00] AI agent is likely relevant. So, those
+[10:02] are our two questions.
+[10:04] Now, let's do a quick recap of what we
+[10:05] talked about here.
+[10:06] An AI agent is simply a folder with
+[10:09] three things inside of it. It's going to
+[10:11] be the instructions or the skill that
+[10:13] tells the AI what to do.
+[10:15] The AI's connection to other systems so
+[10:17] it can see and do things in other
+[10:19] systems.
+[10:20] And then finally, a trigger. So,
+[10:21] triggering the AI to start in three
+[10:24] ways, either manually, by an event, or
+[10:26] by time. And the macro level here for an
+[10:29] AI agent is it's simply a AI that does
+[10:31] work on your behalf semi-autonomously or
+[10:34] fully autonomously. For the
+[10:35] semi-autonomous situations, these are
+[10:37] the high-risk tasks that we still want
+[10:39] to own accountability and responsibility
+[10:41] for. We want to review the AI's output
+[10:43] before we send it. And for the tasks
+[10:45] where AI agents are optimal, we want to
+[10:47] answer two questions with yes.
+[10:49] First, is the shape similar every single
+[10:51] time? If yes, then we move into the
+[10:52] second question, which is do we do this
+[10:54] frequently? And if we do it frequently,
+[10:56] then it's likely worth the effort of
+[10:57] creating an AI agent. And that's it. So,
+[10:59] as a reminder, two things. First off,
+[11:02] below is the 30-day AI Insight Series,
+[11:04] completely free. You'll get 30 insights
+[11:06] in your inbox of how you can apply AI to
+[11:08] your business and your work.
+[11:10] The second thing is if you'd like to
+[11:11] work with me, below are a series of
+[11:13] offerings to see if there's a good fit
+[11:14] for the two of us. Now, knowing how to
+[11:16] build an agent is one skill. Knowing
+[11:19] where it belongs is a whole different
+[11:20] one. And that second skill is where real
+[11:23] leverage hides.
+[11:24] AI can do three jobs in your business.
+[11:26] Most executives and business owners
+[11:28] settle into the first and never go any
+[11:30] further.
+[11:31] I'll show you the other two in this
+[11:33] video right here. Go ahead and give it a
+[11:34] click. I'll see you next time internet.

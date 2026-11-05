@@ -1,0 +1,268 @@
+[00:00] This dashboard and the automations with
+[00:01] it save me 10 hours every single week.
+[00:03] So, every single morning that I wake up,
+[00:05] I do the same little itty-bitty tiny
+[00:07] task and these little tiny tasks eat up
+[00:08] so much time and automating this kind of
+[00:10] stuff is the perfect thing, the perfect
+[00:12] task for Claude Code. By the way,
+[00:13] Anthropic, the company who built Claude
+[00:15] Code, is sponsoring this video, which is
+[00:17] right on time because I've literally
+[00:19] been in my Claude Code bag for like the
+[00:20] last 2 months. For the last 2 months,
+[00:22] I've been using Claude Code here, which
+[00:23] is the terminal experience, a great
+[00:25] experience. I like it, but they just
+[00:27] launched a new UI update to the regular
+[00:30] Claude app, so we're going to use that
+[00:31] because it's a lot more visual and I
+[00:32] think it makes for a better video. So,
+[00:34] this is the Claude app and most people
+[00:36] hang out in the chat, but we're going to
+[00:37] head over to this tab over here, which
+[00:39] is the code tab. And huzzah, we're in
+[00:41] Claude Code. Don't mind this, I'm
+[00:43] planning a trip to Korea and Japan,
+[00:45] Tokyo, Kyoto, all of that with Claude,
+[00:47] which has been super helpful. But for
+[00:49] this one, we're not talking about
+[00:50] vacation, we're talking about building
+[00:52] good morning dashboards. So, let's go
+[00:54] ahead and click new session and get into
+[00:55] it. So, in the bottom right corner, you
+[00:57] have your model, which is basically how
+[00:58] hard and how smart Claude can be. So,
+[01:01] you can pick between lightweight models
+[01:02] like Haiku for simple things. Sonnet is
+[01:05] good for everyday task, but they just
+[01:06] launched Opus 4.7, which is like the
+[01:09] strongest model built for like critical
+[01:11] thinking, deep diving, and deep
+[01:13] planning. So, for planning projects, I
+[01:14] like to use Opus 4.7 and then for
+[01:16] actually like doing the project and
+[01:18] writing the codes, I have Sonnet do it
+[01:20] to save me a bit of tokens. So, now that
+[01:22] we set our model, I want to introduce my
+[01:24] favorite feature, which is called yap
+[01:25] mode. It's not really called yap mode,
+[01:27] but that's what I call it. It allows me
+[01:29] to talk to the computer and the computer
+[01:31] does things for me and I don't have to
+[01:33] to write. This feature works on both the
+[01:34] terminal version of Claude Code and the
+[01:36] UI version as well. So, as you can tell,
+[01:38] I am not a designer and I have this
+[01:40] image here that I made very quickly and
+[01:41] this is kind of how I want my dashboard
+[01:43] to be. So, I'm going to just paste that
+[01:44] in and tell Claude Code, "Good morning,
+[01:46] Claude. I'm working on a good morning
+[01:48] dashboard and I kind of want it to look
+[01:49] like this image I just pasted in. For
+[01:51] the gold bar, that's going to be my
+[01:52] local weather in Austin, Texas. The red
+[01:55] box, let's have that be my items of my
+[01:57] calendar that I need to remember today,
+[01:59] not the basic ones. For the blue box,
+[02:01] let's do emails that I need to get back
+[02:02] to. Find the top three that are the most
+[02:05] important and need my insight, wisdom,
+[02:07] and attention. And for those green
+[02:08] boxes, I want them to be a carousel of
+[02:11] maybe eight tech news stories that might
+[02:12] be interesting for me and for my
+[02:14] audience. And that's pretty much it.
+[02:15] That's how I'm going to start this
+[02:17] project, but this is the part that a lot
+[02:18] of people do not do, and it's my
+[02:20] favorite little addition role prompt
+[02:22] that makes Claude Code experience so
+[02:23] much better for me in the output.
+[02:26] Golden. I add on ask me questions until
+[02:28] you're 95% confident that you can
+[02:30] accomplish this task. That little
+[02:31] addition changes the game for me,
+[02:33] honestly. So, as interesting as it is to
+[02:34] let Claude Code work and read through
+[02:36] the lines of code that it's writing,
+[02:38] we're going to skip past that part and
+[02:39] get to what the output was after this
+[02:41] prompt. Now, if you are into the weeds
+[02:43] of how you want this app built, Claude's
+[02:44] going to ask you some suggestions, but
+[02:46] if you're not a developer, you can just
+[02:47] pick the recommended option, which is a
+[02:49] pretty good option 99% of the time.
+[02:51] Okay, so here's the final output and it
+[02:53] honestly looks pretty good. I'm not in
+[02:54] San Francisco. That's okay, but
+[02:56] essentially this is everything that I
+[02:58] want out of a dashboard and it's already
+[03:00] done. Well, this is like the the
+[03:01] mock-up. Uh there's something missing
+[03:03] from this mock-up. Yeah, this is not my
+[03:05] real data. Uh this is just fake data.
+[03:07] So, I'd like it for it to be a a real
+[03:09] dashboard that I can actually use, we
+[03:11] can actually use to get some value and
+[03:12] reduce having to check seven different
+[03:14] apps every single morning. So, to fix
+[03:15] that, we're going to use a feature
+[03:16] called connectors that uses MCP. So, to
+[03:19] set up these connectors, head to
+[03:20] customize and then connect your apps.
+[03:23] And then you can search from a variety
+[03:25] of apps that work with Claude Code. So,
+[03:27] for me, I have set up Google Drive,
+[03:29] Gmail, Google Calendar, Notion, and
+[03:32] Slack. Basically, the tools that I use
+[03:33] every single day are set up through this
+[03:35] connector feature. So, to connect, it's
+[03:37] pretty easy. You're just going to click
+[03:38] the plus icon and it will take you
+[03:39] through a authorization page where you
+[03:41] allow it a few permissions to work with
+[03:44] the apps that you're already using. If
+[03:45] you're into slash commands, uh you can
+[03:47] use {forward slash} MCP and it will
+[03:48] bring up the same list that that were
+[03:50] able to access through the UI. So, since
+[03:52] we're starting to get a little bit more
+[03:53] technical, I'm going to go to this
+[03:54] bottom section here. Right now, it's on
+[03:56] accept edits, which basically allows you
+[03:58] to go super fast, but I'm going to
+[04:00] switch it over to plan mode, which
+[04:02] doesn't write any code at all, doesn't
+[04:04] implement anything. It just creates a
+[04:06] plan that you can review, and if you
+[04:07] approve the plan, it will go forward.
+[04:09] But, this saves you a lot of tokens so
+[04:11] that you don't have to create an
+[04:12] application and say, "Oh, I don't like
+[04:14] that." and then create another
+[04:15] application to fix what you just built.
+[04:18] So, now that we are in plan mode, I'm
+[04:19] going to once again use yap mode, and
+[04:22] I'm going to say, "Okay, now that you
+[04:23] have access to my Gmail, pick out the
+[04:26] top three emails over the last 24 hours
+[04:29] that need my attention, my insight, or
+[04:31] my wisdom, and then add those to my
+[04:32] daily dashboard." So, I can press enter
+[04:34] here.
+[04:35] So, now it's going to create a plan to
+[04:37] do just that. Now, this dashboard
+[04:38] refreshes every single morning at like
+[04:40] 6:00 or 7:00 a.m. We get to pick, but
+[04:42] I'm going to need to do this every
+[04:43] single morning, which is why I need to
+[04:45] use my next favorite feature, which is
+[04:46] called skills. So, a skill is a
+[04:48] repeatable A-to-Z instruction that
+[04:51] Claude Code can read and understand.
+[04:52] It's essentially just a plain text file
+[04:54] saved as a markdown if you want to get
+[04:56] into it. And if you're going to do any
+[04:57] computer task more than once, like
+[04:59] cleaning up your downloads folder or
+[05:00] getting the news every single morning,
+[05:02] it's best if you put it into a skill.
+[05:04] That way, Claude knows how to do the
+[05:06] same exact task the same exact way every
+[05:09] single time. And you could probably
+[05:10] guess by now how I'm going to create a
+[05:11] skill. I'm just going to talk to the
+[05:12] computer. One 1 second. I'm going to
+[05:15] need you to create three skills. One
+[05:16] skill that gets the most important
+[05:18] emails that I have every single day. The
+[05:20] top three will be just fine. Another
+[05:22] skill that picks out the top three
+[05:24] meetings that I have or things I have in
+[05:26] my calendar for the day. And then one
+[05:28] more skill that gets the top eight most
+[05:30] interesting text stories that me or my
+[05:32] audience would find interesting. Create
+[05:34] three skills for these. So, we're just
+[05:36] going to sit back here and let uh Claude
+[05:37] cook up those skills, and it will save
+[05:39] it into a skills file that you can read
+[05:41] if you want to, but majority of the
+[05:43] time, if you're building a skill with
+[05:45] Claude natural language, it's going to
+[05:46] one-shot it and do just great. If you
+[05:48] want it to absolutely crush it, you can
+[05:49] also add that little tiny phrase I said,
+[05:51] "Ask me questions until you're 95% sure
+[05:54] that you can accomplish this task." And
+[05:55] it will it will do a little bit better.
+[05:56] I almost forgot I needed to add one more
+[05:58] skill, which is going to be like a
+[05:59] wrapper around the other skills so that
+[06:01] I can say, "Run the morning brief
+[06:03] skill." And it does all three of those
+[06:05] automatically. Yep, node again. All
+[06:07] right, let's create one more skill that
+[06:08] wraps all these skills up in one so that
+[06:10] I can say, "Run the good morning brief."
+[06:12] And it will fire all of these
+[06:13] sub-skills. And since I want this to
+[06:15] fire every single morning at like 6:00
+[06:16] a.m., I can use the schedule feature
+[06:18] with natural language, and I can just
+[06:19] add on, "Let's go ahead and run this
+[06:21] wrapper skill so it fires every morning
+[06:23] at 7:00 a.m." Then Claude will ask me
+[06:24] some clarifying questions, we're just
+[06:26] going to fast-forward through that.
+[06:27] Otherwise, you're just going to see me
+[06:28] go back and forth for some small little
+[06:29] tweaks. All right, without further ado,
+[06:31] let's look at the final product of how
+[06:32] it actually turned out. Hey, this
+[06:33] honestly looks pretty good. Let's see if
+[06:35] the carousel works. Oh, perfect. Very
+[06:37] nice, very nice.
+[06:38] But, I'm not really in love with the
+[06:39] design, so I'm going to quickly say, "I
+[06:41] don't really love how it's looking.
+[06:43] Let's go ahead and redesign this in
+[06:45] Google design language, Apple design
+[06:46] language, and Notion design language."
+[06:48] And so now I get this little picker at
+[06:50] the bottom where I can switch between
+[06:51] the different design languages, and I
+[06:53] think I like
+[06:55] they're all pretty good. I think I like
+[06:56] Apple the best, so I'll probably stick
+[06:58] with this one because ooh, looks so
+[06:59] clean. Very nice. So, with this
+[07:01] dashboard I have even more skills
+[07:03] attached to it so I can click on a news
+[07:05] article and it will write me an overview
+[07:07] for a little Tik Tok or Instagram reel.
+[07:09] And that's just one dashboard. I have
+[07:10] dashboards for my personal finance
+[07:12] plans. You saw I have a dashboard for my
+[07:14] vacation coming up, and also my physical
+[07:16] fitness. I got a dashboard for
+[07:17] everything. And I've even gotten so into
+[07:19] this Claude code ecosystem that I have
+[07:20] like an always-on server in my guest
+[07:22] bedroom so I can use the remote control
+[07:24] feature on my phone and always tap into
+[07:26] Claude code and get some some critical
+[07:27] thinking done instead of like scrolling
+[07:29] through Tik Tok or something like that.
+[07:30] All right, if you made it this far, let
+[07:31] me know in the comments what you're
+[07:32] trying to automate in your day-to-day
+[07:34] workflow. Also, of course, I'll leave
+[07:36] the instructions on how you can get
+[07:37] started with Claude code in the
+[07:38] description. And just like always,
+[07:39] thanks for watching. and you on the next
+[07:41] >> [music]

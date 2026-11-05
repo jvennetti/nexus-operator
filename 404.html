@@ -28,10 +28,13 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes dp{0%,100%{opacity:.9}50%{opacity:.15}}
 .da{animation:dp 2s infinite}.db{animation:dp 2s .65s infinite}.dc{animation:dp 2s 1.3s infinite}
-.hub-btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 40px;cursor:pointer;text-decoration:none;transition:opacity .2s,transform .15s;opacity:0;animation:fade-in 0.6s ease 1.4s forwards}
+.hub-btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 40px;cursor:pointer;text-decoration:none;transition:opacity .2s,transform .15s;opacity:0;visibility:hidden;animation:fade-in 0.6s ease 1.4s forwards,nx-show 0s linear 1.4s forwards}
+/* not clickable or focusable until its fade-in starts */
+@keyframes nx-show{to{visibility:visible}}
 .hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
 @keyframes fade-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 </style>
+<script src="ciro.js"></script>
 </head>
 <body>
 <div class="wrap">
@@ -40,29 +43,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 
   <div class="ciro-widget">
     <div class="ciro-col">
-      <svg width="72" height="148" viewBox="0 0 86 178">
-        <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5"/>
-        <circle cx="43" cy="2" r="2.5" fill="#00c8ff"/>
-        <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2"/>
-        <rect x="16" y="20" width="54" height="38" rx="2" fill="#050f1c"/>
-        <line x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.5" opacity="0.55"/>
-        <line x1="18" y1="35" x2="60" y2="35" stroke="#00c8ff" stroke-width="0.5" opacity="0.35"/>
-        <line x1="18" y1="42" x2="66" y2="42" stroke="#00c8ff" stroke-width="0.5" opacity="0.25"/>
-        <line x1="18" y1="49" x2="52" y2="49" stroke="#00c8ff" stroke-width="0.5" opacity="0.18"/>
-        <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
-        <rect x="15" y="82" width="56" height="32" rx="2" fill="#050f1c" stroke="#1e3a5a" stroke-width="1"/>
-        <circle cx="31" cy="96" r="4" fill="#00c8ff" class="da"/>
-        <circle cx="43" cy="96" r="4" fill="#00c8ff" class="db"/>
-        <circle cx="55" cy="96" r="4" fill="#00c8ff" class="dc"/>
-        <rect x="22" y="106" width="42" height="4" rx="2" fill="#1e3a5a"/>
-        <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-      </svg>
+      <div class="ciro-mount" data-w="72"></div>
       <div class="ciro-ver">CIRO v0.7</div>
     </div>
     <div class="ciro-msg">
@@ -91,23 +72,40 @@ const LINES = [
 ];
 
 (function(){
+  // The whole message is laid out up front with the untyped part visibility:hidden, so the box is
+  // its final size from the start and words never jump between lines. The cursor has zero advance
+  // and is glued to the letters either side of it.
   const el = document.getElementById('ciro-text');
-  let li = 0, ci = 0, out = '';
+  const W = /[\p{L}\p{N}'’]/u;
+  const full = LINES.map(l => l.text).join(' ');
+  const cursor = el.querySelector('.ciro-cursor');
+  cursor.style.marginRight = '-10px';
+  const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+        gr = document.createElement('span'), rest = document.createElement('span');
+  glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+  glue.append(gl, cursor, gr);
+  el.textContent = '';
+  el.append(typed, glue, rest);
+  function show(k){
+    const gL = k > 0 && W.test(full.charAt(k-1)), gR = k < full.length && W.test(full.charAt(k));
+    typed.data = full.slice(0, gL ? k-1 : k); gl.data = gL ? full.charAt(k-1) : '';
+    gr.textContent = gR ? full.charAt(k) : ''; rest.textContent = full.slice(gR ? k+1 : k);
+  }
+  show(0);
+  let li = 0, ci = 0, k = 0;
   function type(){
-    if(li >= LINES.length){ el.innerHTML = out + '<span class="ciro-cursor"></span>'; return; }
     const line = LINES[li];
     if(ci < line.text.length){
-      out += line.text[ci++];
-      el.innerHTML = out + '<span class="ciro-cursor"></span>';
+      ci++; show(++k);
       setTimeout(type, 30);
     } else {
       li++; ci = 0;
-      if(li < LINES.length){ out += ' '; setTimeout(type, line.pause); }
-      else { el.innerHTML = out + '<span class="ciro-cursor"></span>'; }
+      if(li < LINES.length){ show(++k); setTimeout(type, line.pause); }
     }
   }
   setTimeout(type, 1200);
 })();
 </script>
+<script>document.querySelectorAll('.ciro-mount').forEach(function(el){NXCiro.mount(el,{width:+el.dataset.w,replace:true});});</script>
 </body>
 </html>

@@ -1,84 +1,81 @@
 # NEXUS Operator — Project Handoff
 
-Read this first in any new session. It carries the project lead's thinking, the decisions made so far, and where things stand. Joshua is the lead. The direction below is his; the implementation choices are Claude's and are open to change.
+Read this first in any new session. Joshua Vennetti is the lead. Claude (Fable) runs the project session and makes decisions after research; Opus agents do research, reading, QA and bulk work and report back. The lead sees everything before it merges.
+
+Last updated: 2026-11-05, third session (lessons, missions and the new CIRO merged to main and live). Companion docs: `docs/video-picks.md` (every video decision), `docs/IMPROVE-LATER.md` (running list of known weak spots), `docs/research/` (all search, reader, QA and animation reports).
 
 ---
 
-## 1. Where this came from
+## 1. What this is
 
-- **`jvennetti/nexus-academy`** is the original course, built for a three-person core team. It is a time capsule and must never be modified. Read-only reference.
-- **`jvennetti/nexus-open`** is a single-operator, public copy with inside jokes and the three-operator lore removed. It was the seed for this repo's shell.
-- **`jvennetti/nexus-operator`** (this repo) is the rebuild. Live at https://nexusoperator.pages.dev, deployed automatically from `main` by Cloudflare Pages.
+A free, public, gamified course that takes someone from "never opened Claude" to running one real piece of their work as a system with Claude. In the lead's words: "a Claude school… for people who want to get good at Claude one step at a time." Goal restated this session: "help someone get better at talking to AI and using it for their needs… build and talk to it… set them up to conquer any task."
 
-What the lead loved about the original and wants kept: the atmosphere, the gamification, the robot CIRO and his lingo, the hub with locked modules and badges, the machine finale. What was outdated: nearly all the content, which was 46 YouTube videos tied to early-2026 product UIs.
+Repos: `jvennetti/nexus-academy` (original, read-only time capsule, never modify), `jvennetti/nexus-open` (the shell this was seeded from), `jvennetti/nexus-operator` (this repo; live at https://nexusoperator.pages.dev from `main`; every pushed branch gets a Cloudflare preview).
 
-## 2. The lead's thinking, in his words where possible
+## 2. How the lead works (rules)
 
-**On what the course is.** "This course is for people who want to get good at Claude one step at a time." It is a learn-AI course, not a business course. It should "walk people through starting to use Claude, to using Claude Code and understanding skills, file systems, and tips and tricks."
+- Decide for him after research. Present the decision and the why, briefly. Don't survey him with options.
+- Show before merging. Nothing reaches `main` until he has seen it. Branch previews are how he looks.
+- Agents are Opus; the lead session is Fable. One reader per module group, not per lesson.
+- Keep side chats tight, named, producing real artifacts (reports in `docs/research/`), so they can be cleared any time. Decisions happen in the lead chat.
+- Copy must read human. Run the `humanizer` and `structural-humanizer` skills on all copy. His own edits are the style guide (section 4).
+- Challenges must not feel restrictive. Learners use their own work; "pick one of these or your own."
 
-**On how people learn.** "I don't think watching a TON of YouTube videos is necessarily the best way to learn. A mix of watching great content, only the best, and then also conquering real problems is the real way to start learning."
+## 3. Decisions made this session (all recorded, all his)
 
-**On lessons.** Lesson plus task, agreed. His design for the prompt lesson: "have them copy a bad prompt that lacks context, put it in the chat. Then ask them to write a better prompt for the same outcome based on the rules they've learned, put that prompt in a new chat, and compare the results."
+- **No lesson stays text-only.** Where no video fits exactly, take another angle (a video that teaches the underlying skill) and reframe the lesson around it.
+- **Best video regardless of creator.** The earlier "two lessons per creator" cap is dropped. Dylan Davis carries 4.5, 5.2, 6.1, 6.2, 6.3.
+- **Every lesson = short description + video + challenge + takeaways.** Lesson tasks are now called challenges (template label, markdown `## Challenge`, build).
+- **Operator List / Operator HQ / Operator Profile naming dropped.** The project is called **Nexus Academy**; the Module 1 chat is "My tasks"; later lessons say "a task you do the same way every week."
+- **Module 6 has two tracks:** build a system (workflow: skill + connectors + scheduled task) or build an app (a personal tool in the Code tab). Learners may do both; the second earns the **OVERCLOCKED** badge (not yet in `course.json`). 4.4 is the first "you can build things" moment; 2.5 has them build a usable artifact tool.
+- **Intermission pages** (CIRO plus a breath button, from nexus-academy) are dropped; modules are short enough.
+- **CIRO and all animations get a full redesign** by an Opus agent (section 6). CIRO's words stay parked.
+- Transcripts are fetched on the lead's desktop with `tools/fetch_transcripts_ytdlp.py` (yt-dlp, cookies.txt, backoff). The cloud can't read YouTube.
 
-**On pushing back.** "If Claude says it can't do something, tell it you want it to do it! Usually or always it can. That's an important lesson for beginners." This is now taught in 1.2, 2.3 and 6.4.
+## 4. The copy style (from the lead's edits; follow it)
 
-**On the modules, his notes that reshaped the curriculum:**
+- **Description:** two or three plain sentences saying what the video is and what they'll get. It introduces; the video teaches. "Enjoy!" is fine.
+- **Challenge:** one line naming the job, then numbered steps that apply what they just watched. Exact prompts in copy boxes (fenced code in the markdown). First-time click paths spelled out with arrows (Projects → Create new project). When the app's menus are uncertain, have the learner ask Claude ("tell Claude you want to connect Gmail; say yes when it asks"). No experiments, no side-by-side comparisons, no settings audits. End with "Mark this done when…" Bracketed notes for edge cases.
+- **Takeaways:** three or four plain sentences a beginner can repeat. "Suggestion:" and "Warning:" labels are fine when honest.
+- Forward pointers are good ("eventually you'll learn how to get emails you can send unedited").
+- **Never narrate the reader.** Don't say what they feel, avoid, dread or keep putting off. Say what we're going to do today, give three concrete examples, and let them pick. "Today we're going to finish one real piece of your work. Pick something like a proposal, a reply that needs thought, or a plan for next month." Not "there's something you keep sliding to next week."
+- **Missions** (module-end pages, "Complete Module N"): sections are What We're Going to Do (two paragraphs: the plan for today, and concrete examples to choose from), How We'll Do It (steps with full sentences, prompts to paste, tips and warnings inline), You're Done When (one sentence), optional Go Further and a fallback note.
+- Never: em dashes, "not X, it's Y", stacked triples, bold-colon lists, teaching in the description, branded artifacts nobody asked for.
 
-- Workspace setup = make a Claude account, learn the interface, with a skip for people already set up.
-- Module 1, mindset: "good but should be short and not waste time."
-- Module 2, prompting: "how to prompt really well is good." Context management is "too technical when getting started... they can't even begin to understand context management if they're not building things yet." So it moved to 5.2.
-- Module 3: "Cowork is outdated. Claude Chat and Claude Code are the only two interfaces now. Even Design is built into the chat." Connectors should be taught as "connect your Gmail, ClickUp... daily tools and let Claude work with you to make you more productive." "MCP is probably too much here. It's a concept that can be implemented by just telling Claude what you want." "Zapier is totally out of a job."
-- Module 4: "Agents are not a real thing... it's better someone learns about what a skill actually is (just a text doc with instructions). Claude Code is good to start understanding." Design videos are outdated: "just tell it what you want to design and it'll do it." But "information about context and how to give it what it needs to design/write/build well is huge."
-- Module 5 (old lead-gen): "All these sound old to me." Keep scheduled tasks: "have them schedule a task for something. Check their emails, send report, something."
-- Module 6 (old selling): "Selling and delivering is huge but it doesn't have to do with learning AI... This should probably pivot somehow."
-- Claude Code: "should just be Claude Code inside the desktop app. I don't see any reason to teach the Claude Code in terminal route."
+## 5. What's built (branch `claude/friendly-ramanujan-jrotfb`, PR 5, draft, preview https://claude-friendly-ramanujan-jr.nexusoperator.pages.dev)
 
-**On content freedom.** "All the copy, and all the previous challenges/lessons are challengeable... almost all of it should change because we can make it better and more integrated." Branding: "the robot and robot lingo I wish would stay the same but Opus and Fable are so much more capable we could and should consider new lingo for him, and also new graphics even for the robot animation. That's secondary to good content though."
+- **All 24 lessons** rewritten in the section 4 style, each with its video (`docs/video-picks.md`, "Round 2 decisions" table has id, clip, score, notes). The credit line and caption under videos are no longer rendered (the embed shows title and channel); the front matter keeps them for our records.
+- **Lesson page v2** (`templates/lesson.html`): title box with description only; the video; the notes box below it at content width (saves to localStorage); a divider; the glowing Your Challenge box with numbered steps, sub-lists and copy buttons, folding to a green "Challenge done" line; Key Takeaways as a quiet list beneath the challenge; Previous/Next with the soft lock. Playback position auto-saves every 5 s and a "Resume from m:ss" chip seeks back. No manual timestamp button (lead's call). Takeaways also show in the hub's lesson dropdown above saved notes. **Lead must confirm in a real browser:** auto-resume works with a playing video (the sandbox can't play YouTube).
+- **Missions** (module-end pages, now titled "Complete Module N" with sections What We're Going to Do / How We'll Do It / You're Done When): all six rewritten problem-first in the honest voice. The hub and nav still say "Challenge" for these pages in a couple of places; see IMPROVE-LATER.
+- `build.py`: `video_start`/`video_end`/`video_credit` front matter; `## Challenge` section; numbered sub-lists in steps; hub MODULES carry takeaways; mission page labels.
+- **CIRO text:** one line changed (Module 6 intro now names both tracks). Everything else is parked.
+- **QA audit:** 13 functional shell fixes (`docs/research/qa-audit.md`; re-test with `tools/qa/audit.js`).
+- 31 transcripts in `transcripts/` (round 2 and 3); 42 round 1 transcripts on branch `claude/video-research`.
+- `docs/IMPROVE-LATER.md`: the running list of weak material and app facts to verify.
 
-**On videos.** "Most of the videos will have to go." Plan what someone should learn first, then find videos for those things and attach them to tasks. "Keep it simple and clear and as concise as possible and only the necessary information." "Official from Anthropic is cool but might not be the best content in some situations." He wants real vetting: transcripts read, comments checked for "clear, concise, helpful" versus "viral hooks that promise the world and don't give the meat." "We need to structure full on MEAT that hits the points we've agreed on."
+## 6. Animation redesign: shipped
 
-**On how he wants to work.** Step by step, in this order, not all at once:
+The new CIRO lives in `ciro.js` at the repo root (one drawing, on a tread, with spring physics, easing, anticipation, follow-through, idle breathing and blinks; `prefers-reduced-motion` turns rolls into fades). Every page that shows CIRO loads it and calls `NXCiro.mount()`: the module and pre-course intros (roll in, head tilt, wave), the completion pages (happy eyes, hop, nod), the hub (idle with head tilts), the opening intro (power-on, face text, colour states, shiver on error, chest bar, hop), machine activation, 404 and the vault. Its header comment documents the parts and the API. `tools/qa/ciro-test.html` mounts five CIROs for a quick look; `tools/qa/frames.js` captures frame sequences. The lead asked for it to go live without a full read-through on 2026-11-05. Still to do: write `docs/research/animation-redesign.md` with frames if the motion needs a review.
 
-1. Videos paired with tasks. Concise, only the necessary information.
-2. Then design. The lesson page as first built has "way too much going on." Make it clean.
-3. Then CIRO's language. He wants to talk through tone and work through examples before anything is locked in.
-4. Then graphics and pages, including better animation for CIRO.
+## 7. Things only the lead can check in the app
 
-He also prefers decisions to be made for him after proper research, presented with what was decided and why, without long option surveys. Short messages.
+Listed in `docs/IMPROVE-LATER.md` under "App facts to verify." The ones that gate the most lessons: connectors path and native Gmail send; Code tab button labels, Manual vs Auto defaults, Windows and Git; Projects fields; artifacts buttons and whether saved data persists; the Scheduled sidebar and per-tool permissions.
 
-## 3. What's built
+## 8. Tooling facts
 
-- **Shell:** hub, CIRO intro, machine finale, bonus vault, audio, images, mobile styling. Copied from nexus-open.
-- **Content as data:** `content/course.json` (structure, badges, CIRO lines), `content/lessons/*.md` (24 lessons), `content/challenges/*.md` (6 challenges). `python3 build.py` generates all pages and refreshes the hub's data block. Never hand-edit generated pages.
-- **Lesson page:** brief, optional video, "Do This Now" task box with numbered steps and copyable prompt blocks, "Mark task done" button, notes, takeaways, prev/next. Next is soft-locked until the task is marked done, with a small "continue anyway" link.
-- **Guards:** fresh visitors go to the intro; returning visitors go to the hub; deep links to locked modules bounce to the hub. Share link is just the root URL.
-- **Curriculum:** see `docs/curriculum.md` for the module map, outcomes and design rules.
+- Cloud sessions can't reach YouTube pages or transcripts (bot check; don't work around it). `YOUTUBE_API_KEY` is an environment secret: `search` is 100 calls/day (resets 08:00 UTC); `videos`, `commentThreads`, `playlistItems` are cheap and always work. When search is gone, discover ids by web search and vet through the cheap endpoints.
+- Transcripts: on the lead's desktop, from `C:\Users\venne\nexus-operator`, with `cookies.txt` (git-ignored, exported from Chrome with "Get cookies.txt LOCALLY") in the repo root. The one-liner, run in PowerShell: pull the branch, `python tools/fetch_transcripts_ytdlp.py`, add, commit, push. Already-fetched ids are skipped.
+- Cloudflare branch preview for the working branch: https://claude-friendly-ramanujan-jr.nexusoperator.pages.dev
+- Playwright and Chromium are preinstalled in the cloud; `tools/qa/` has the audit scripts.
 
-Current lesson list: Setup (0.1 account, 0.2 interface) · M1 Operator Mindset (1.1 What Changed, 1.2 Director Not Doer) · M2 Speak Claude (2.1 Anatomy of a Good Prompt, 2.2 Give It What It Needs, 2.3 Iterate and Push Back, 2.4 Projects, 2.5 Make Things) · M3 Claude in Your Tools (3.1 Inbox and Calendar, 3.2 Work Tools, 3.3 A Morning With Claude) · M4 Claude Code (4.1 Chat Answers Code Acts, 4.2 Folders Are Memory, 4.3 The Instructions File, 4.4 Build Something Real, 4.5 Sessions Permissions Safety) · M5 Skills and Automation (5.1 What a Skill Is, 5.2 Context Management, 5.3 Scheduled Tasks) · M6 Build Your System (6.1 Choose Your Workflow, 6.2 Build It, 6.3 Run It Then Refine It, 6.4 Tips From the Field).
+## 9. Next steps, in order
 
-The lead has not yet reviewed the lesson content line by line. Everything is a first draft. The briefs are currently longer than he wants; they'll be cut when videos are paired (step 1) and the page is simplified (step 2).
+2. Lead reads the lessons and missions on the preview and marks anything off. Apply his notes.
+3. Lead confirms video auto-resume in a real browser, and answers the app checks in `docs/IMPROVE-LATER.md`; fix any lesson text that depends on them.
+4. Finish the "Mission" wording in the hub and lesson nav; add the OVERCLOCKED badge to `course.json` and the hub.
+6. CIRO's words (step 3) when the lead says so.
+7. Re-search the weak video slots around 2026-12-01 (list in `docs/IMPROVE-LATER.md`).
 
-## 4. Current step: videos (step 1)
+## 10. Do not
 
-Full plan and candidate pool in `docs/video-research.md`. Summary:
-
-- Ten lessons get at most one video: 0.2, 1.1, 2.1, 2.4, 3.1, 4.1, 4.3, 5.1, 5.2, 5.3. The other fourteen stay text-only on purpose.
-- Candidate ids came from web search titles only. None has been watched or verified.
-- Vetting uses the YouTube Data API via the `YOUTUBE_API_KEY` environment secret: metadata plus top comments by relevance. Transcripts come from the lead or Claude in Chrome, for finalists only.
-- Do not fetch youtube.com pages directly from the cloud environment. It gets a bot check, and circumventing it is not allowed. Apify was considered and rejected for cost.
-- Output expected: a table per lesson with evidence, at most two finalists per lesson, "none" allowed. The lead confirms picks before any id goes into a lesson.
-
-## 5. Decisions already made that should not be relitigated
-
-- Cloudflare Pages, not GitHub Pages. Project name `nexusoperator`. Custom domain is a future nice-to-have.
-- Free course first. Paid version later, not now. When it comes: Cloudflare Access email allowlist in front of the same static site, plus Stripe or Lemon Squeezy, allowlist updated on payment. Not a membership platform.
-- Challenges use the learner's own work, with a fictional fallback for people who don't have a job that generates it. No invented clients.
-- Video rules: under 20 minutes, most of those minutes teaching, current app only, no preference for official sources beyond tie-breaking.
-- `DEV_UNLOCK` stays false. Progress stays in localStorage. Honor system is fine for the free course.
-
-## 6. Open items
-
-- Step 1 video vetting (blocked on a session that can see `YOUTUBE_API_KEY`).
-- Lead's line-by-line review of lesson content, especially 0.2, 3.1, 4.1, 5.3, which describe where things are in the Claude app.
-- Bonus Vault still holds four videos from the original course. Intended future use: tips and go-deeper material.
-- README should get a custom domain when one exists.
+- Touch `nexus-academy`. Merge anything without the lead seeing it. Rewrite CIRO's words. Re-host YouTube videos. Add a video id whose transcript hasn't been read. Hand-edit generated pages. Change `DEV_UNLOCK`.

@@ -1,0 +1,61 @@
+[00:01] Welcome to Tech Brothers IT. In this
+[00:04] video, we are going to install the
+[00:06] Claude desktop app and let Claude work
+[00:08] directly with folders on your computer.
+[00:11] We will connect the folder, give Claude
+[00:13] a real file job, and see how approvals
+[00:15] keep you in control.
+[00:19] Step one, install the desktop app.
+[00:23] Go to the Claude download page and
+[00:25] choose Mac OS or Windows. You need Mac
+[00:28] OS 11 or later or Windows 10 or later.
+[00:31] Open the file, launch Claude, and sign
+[00:34] in.
+[00:34] >> [music]
+[00:35] >> Working with local folders needs a paid
+[00:37] plan, Pro, Max, Team, or Enterprise.
+[00:43] Step two, connect a folder.
+[00:46] In the desktop app, click add folder and
+[00:48] choose a folder on your computer. Now,
+[00:50] Claude can read and write the files in
+[00:53] it directly. No uploading, no
+[00:55] downloading.
+[00:56] You can also give the folder its own
+[00:58] instructions, so Claude remembers how
+[01:01] you like that folder handled.
+[01:05] Step three, give Claude a file job.
+[01:09] For example, rename every invoice in
+[01:12] this folder to date, vendor, and amount,
+[01:14] then build a summary spreadsheet. Claude
+[01:16] works through the files and saves the
+[01:18] result right into your folder.
+[01:21] Other ideas, sort a messy downloads
+[01:23] folder, turn meeting notes into a
+[01:25] report, or build a deck from a folder of
+[01:27] files. [music]
+[01:31] Step four, stay in control.
+[01:34] Use the mode selector in the message
+[01:36] box. Manual asks before each action and
+[01:39] you click allow or deny. Auto lets
+[01:42] Claude review each action and block
+[01:44] unsafe ones. Skip all approvals does not
+[01:47] pause at all.
+[01:48] And whatever the mode, Claude needs your
+[01:50] explicit permission before it
+[01:52] permanently deletes any file.
+[01:56] A few things to know.
+[01:59] Keep the desktop app open and online
+[02:01] while Cloud works with your local files,
+[02:03] your browser or computer use.
+[02:05] >> [music]
+[02:06] >> And in settings extensions, you can add
+[02:08] desktop extensions that connect Cloud to
+[02:11] other apps on your computer.
+[02:15] So that is the desktop app. Install it,
+[02:18] add a folder, give Cloud a file job and
+[02:20] pick how much it should ask first.
+[02:22] In the next video, we look at Cloud's
+[02:24] built-in browser so it can work on
+[02:26] websites for you.
+[02:28] Please subscribe and I will see you in
+[02:30] the next one.

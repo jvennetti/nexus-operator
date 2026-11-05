@@ -1,0 +1,301 @@
+[00:00] This is video number three in my Claude
+[00:03] AI series. In the first video, I just
+[00:07] went you through explaining what is
+[00:09] Claude. And in the second video, we
+[00:11] learned how to prompt. So today, I'm
+[00:14] showing you one of Claude's most
+[00:16] powerful and underrated
+[00:19] feature, file uploads. You can see this
+[00:22] is the documentation. I will provide the
+[00:23] link in the description of the video.
+[00:26] Uploading files to claude. There are
+[00:29] different supported file formats. You
+[00:31] can see here I will be showing you some
+[00:34] of these in this video. Uploading a file
+[00:37] to claude is dead simple. You can just
+[00:40] go to this uh UI here. You can see this
+[00:43] plus icon here. You can just click it
+[00:46] and from here you can say add files or
+[00:48] photos and you can even take a
+[00:50] screenshot and so on. But before going
+[00:53] into it, I just want to mention you that
+[00:55] there are some of the limitations also
+[00:57] here. So that you already know from the
+[00:59] very beginning, right? The file size
+[01:02] will be 30 MB per file. Number of files
+[01:05] is up to 20 files per chat. And the
+[01:07] image dimensions is up to 8,000 into
+[01:10] 8,000 pixels.
+[01:13] Here is this main thing. If you notice
+[01:16] something here, now we have this set 4.6
+[01:19] 6 model by default being shown here in
+[01:23] this free version. This was recently
+[01:26] introduced and before we had this sonet
+[01:28] 4.5 but now we have this 4.6 six on it
+[01:32] already by default. That is what I'm
+[01:35] going to use here. And you can even do
+[01:37] this extended thinking if you need. We
+[01:40] think longer for the complex task.
+[01:44] The first thing let's go with
+[01:45] summarizing of PDF. Right? I will just
+[01:48] uh drag one of the PDFs. You can even do
+[01:51] drag and drop like this. You can also go
+[01:53] to this plus icon which I just mentioned
+[01:55] and add files or photos and you can
+[01:57] upload from your local computer. But
+[02:00] here I'm just attaching one PDF file and
+[02:04] I will be going and asking some
+[02:06] questions here. That means the prompt
+[02:09] right I showed you in my previous uh
+[02:10] video if you write better prompts you
+[02:13] will get the better answer. I said here
+[02:15] I just uploaded a PDF report. Can you
+[02:18] give me one a three sentence summary of
+[02:21] the main findings to the most important
+[02:24] data points or statistics and three any
+[02:28] recommendations the report makes. I will
+[02:30] just send it now. You can see under the
+[02:32] hood it reads the file and it's quite
+[02:35] fast. You can see here it provided us
+[02:37] these three sentence summary. You can
+[02:39] see here and down here it says five most
+[02:42] important data points and it is
+[02:44] providing us these five different
+[02:46] important data points here and the
+[02:48] recommendations. This is exactly what I
+[02:51] asked for this chatbot
+[02:54] to provide based on this PDF. Right?
+[02:57] This is where the prompting also comes
+[03:00] into play and if you haven't watched my
+[03:02] previous video I highly recommend you to
+[03:05] watch that where I have explained you
+[03:08] how to write better prompts. If I was
+[03:10] just uploading a PDF file here and just
+[03:13] saying okay summarize this it would be
+[03:15] providing not that specific answers for
+[03:19] us. Now you can see there is just what
+[03:21] we asked and we can even go here and do
+[03:24] some follow-up questions. For example,
+[03:27] you can just go here and say, okay, what
+[03:30] does the report say about the risk? It
+[03:34] can be anything. The report has a
+[03:35] dedicated risk assessment section with
+[03:37] four identified risk and it just
+[03:40] provides us the risk also. This way you
+[03:43] can just ask question to the PDF. It's
+[03:46] kind of talking to your document which
+[03:49] is one of the mostly used use case of
+[03:52] AI. You just upload a PDF or documents
+[03:56] and you start having the conversation
+[03:58] with that PDF. So you can see that claw
+[04:02] remembers the whole document throughout
+[04:03] the conversation. So you don't need to
+[04:05] re-upload it. Meaning that you can just
+[04:08] ask the follow-up question and that's
+[04:10] it. It will just provide you the answer.
+[04:13] Now they upload and analyze the images.
+[04:16] Right? I will just continue in the same
+[04:18] chat. But now what we can even do is
+[04:21] upload the images and ask it to analyze.
+[04:26] What I will do here is I will just take
+[04:28] one PNG file. Here I'm dropping the PNG
+[04:31] file. Here is the PNG file. And now I
+[04:34] can just say here okay can you just read
+[04:38] this PNG file and provide me info about
+[04:44] it. Here I'm just uploading a chart
+[04:48] right so here it says okay here is what
+[04:50] the chart shows meaning that you can
+[04:52] even go with the chart also one of the
+[04:55] question that I get a lot when I was
+[04:58] creating the earlier videos is also that
+[05:00] if you have some handwritten documents
+[05:04] or you just take some screenshot and you
+[05:06] want the AI to answer let's also just
+[05:09] try with that right I have one
+[05:11] handwritten here I will just first show
+[05:14] you what is here this is these team
+[05:16] meetings this this this this is the
+[05:17] random document created by AI itself I'm
+[05:21] just showing you here it seems that it's
+[05:24] a handwritten right what we are going to
+[05:26] do here is we will just go here and ask
+[05:28] the prompt can you read this handwritten
+[05:32] note and type out everything it says
+[05:36] now it will just go through that you can
+[05:39] see here it says team meeting notes
+[05:41] January 14 attendees Shara Mike Priya
+[05:45] and it is just going to provide us. Then
+[05:47] if I just go here, you can see this is
+[05:49] exactly what it is taking taking from
+[05:52] there. This is what it was written
+[05:54] there. This is just the way how you can
+[05:57] go and ask the follow-up question and so
+[06:00] on. Now until now I went and showed you
+[06:02] three different examples already. One
+[06:04] with the PDF. Second one is with the
+[06:07] charts. You can just upload the charts
+[06:09] and ask it to provide you the
+[06:12] information. You can even go here and
+[06:14] say okay what is the monthly revenue of
+[06:17] August I'm not providing the handwritten
+[06:20] document right but if you see here it
+[06:23] just provides me the answer 102300
+[06:26] let me go to the image and here you can
+[06:29] see for the August it is 102300 it went
+[06:32] through that particular chart without me
+[06:36] saying okay it is in that chart the
+[06:39] answer here is also because as I
+[06:41] mentioned you for it has this history or
+[06:44] it takes all of things in the memory
+[06:47] right you don't need to upload or
+[06:49] re-upload again and again it just
+[06:51] provides you okay based on both the
+[06:53] chart and the monthly breakdown table in
+[06:55] the reports appendix it even went into
+[06:58] the reports appendix
+[07:01] now what I want to do is I want to go
+[07:04] with the spreadsheet now what I will do
+[07:07] I will take one CSV file I will just
+[07:10] drag the CSV file here. And this is
+[07:13] where things get really powerful because
+[07:16] it can read the CSV files and Excel
+[07:18] files and then use its builtin code
+[07:22] execution to actually run calculations
+[07:25] and create the charts on top of it. I
+[07:29] will just write a prompt here. So I just
+[07:31] uploaded my sales data for the last 12
+[07:34] months. Can you tell me which month had
+[07:37] the highest revenue? Calculate the
+[07:39] average monthly revenue. Identify any
+[07:42] trends, create a chart showing the
+[07:45] monthly trend. When I just send this,
+[07:48] look at this. Claude read the
+[07:51] spreadsheet, calculates the numbers, it
+[07:54] identified the trend and it will create
+[07:57] an actual chart or real interactive
+[08:00] visualizations from all one prompt. You
+[08:03] can see here it says that okay, I read
+[08:05] this available skills.
+[08:08] What happens under the hood? As I
+[08:10] mentioned you in one of the video that I
+[08:11] have already created about these skills
+[08:14] is Claude has its inve skills and it
+[08:19] there are many skills and now you can
+[08:21] see here this is the chart that is being
+[08:24] created and it is as an artifact the
+[08:28] chart appeared in what's called the
+[08:29] artifact. This is what I will be
+[08:31] covering in the next video. But for now,
+[08:34] just know that Claude can turn your raw
+[08:38] data into visuals. If you can just go
+[08:41] here and then go to this code. This is
+[08:43] the code and here this is the visuals.
+[08:47] This is called artifacts more in my next
+[08:50] video. But you already get the point
+[08:51] here that how it works, right? I
+[08:54] uploaded a CSV file. I provided this
+[08:58] prompt here on the left side and you can
+[09:01] also read here and here is this HTML you
+[09:04] can even download this if you click this
+[09:06] this is what it is here this is that
+[09:08] powerful let's say in a way and what I
+[09:11] can even do here is let's continue the
+[09:15] conversation with the follow-up
+[09:16] questions which product category is
+[09:18] growing the fastest and are there any
+[09:22] months where we lost money you can just
+[09:24] ask the question something like is this
+[09:27] is the magic of the file uploads
+[09:29] combined with the clots execution. So
+[09:32] you can see it provides me okay the full
+[09:33] ranking by growth is this retail is this
+[09:36] all all sorts of things is being
+[09:38] provided here. You can just go on and on
+[09:41] and get insights from your documents.
+[09:44] This is also really good and powerful
+[09:47] functionality. And the fifth one which I
+[09:50] want to discuss here is about comparing
+[09:54] the two documents.
+[09:57] This is one of the use case in
+[09:59] enterprise also where two files can be
+[10:02] in the same attachment at once and two
+[10:04] versions of let's say contract. So two
+[10:07] reports or two regime whatever it can
+[10:09] be. That is something a lot of people
+[10:11] don't know that you can upload multiple
+[10:14] file at once into this channel. I have
+[10:17] uploaded two versions of the contract.
+[10:20] The original one and the revised one.
+[10:22] And now I will be going and writing a
+[10:25] prompt here. Here is the prompt. I
+[10:28] uploaded two versions of a contract, the
+[10:31] original and revised version. Can you
+[10:33] compare them and tell me what was
+[10:37] changed?
+[10:39] Were any new clauses added? Is there
+[10:42] anything in the versions I should be
+[10:45] concerned about? Right? These are the
+[10:47] things that you ask when you have two
+[10:49] different documents and really a good
+[10:51] use case in any organizations also that
+[10:56] it is always challenging if the document
+[10:59] is quite long to find exactly what has
+[11:01] been changed right because there can be
+[11:03] some sort of contracts and now it uses
+[11:05] the skill. If I just click this, you can
+[11:08] see here it says it has this doc skill.
+[11:11] It used that skill. It extract the text
+[11:14] from both documents. All right. And then
+[11:17] it finds the difference between the two
+[11:20] documents. And here is the full
+[11:21] breakdown of every change. Now I can
+[11:24] close this on the right side because
+[11:26] this is the previous one. You can read
+[11:28] in the full version here. Okay. What was
+[11:31] changed? There are six areas with
+[11:33] modifications. You can see it provides
+[11:36] you these bullet points about what has
+[11:38] been changed and there is new clause
+[11:40] also being added things to be concerned
+[11:43] about a few of these changes dissolves a
+[11:46] closer look even provides you what you
+[11:50] need to go here and then just do things
+[11:52] here. This is incredibly useful for
+[11:55] contracts, proposals, reports or any
+[11:58] situation where you need to spot what
+[12:01] change between the two versions.
+[12:05] Let me recap. Today we learned that
+[12:07] Claude can read PDFs, word documents,
+[12:10] spreadsheets and many more and answer
+[12:12] questions about them in seconds. You
+[12:16] learned it can see images, handwritten
+[12:19] note, charts, screenshots, even error
+[12:22] messages also. If you have some error
+[12:24] messages, for example, let me just drag
+[12:26] one more error message things. I will
+[12:28] drag it the error message here and I
+[12:31] will say okay, what is happening here
+[12:35] just to show you that it also works with
+[12:37] this error error things, right? And run
+[12:40] real calculations and even generate the
+[12:42] charts, right?
+[12:44] All of this is all for free. You can see
+[12:47] it is explaining what is all the things
+[12:49] happening in that particular error
+[12:51] things. In the next video I'm showing
+[12:54] you about the artifacts. I already
+[12:56] showed you one of the artifacts here
+[12:58] which appears on the top here. You can
+[13:00] see open the sidebar and here you can
+[13:02] see the see the artifacts artifacts but
+[13:05] I will be showing you in detail in the
+[13:08] next video. Claude's killer feature that
+[13:11] most people don't even know exist. It
+[13:14] turns Claude from a chatbot into a tool
+[13:18] that builds working apps, interactive
+[13:21] visualizations, and games right in your
+[13:24] browser. It's wild and it's all also in
+[13:28] the free version of the clot. Subscribe
+[13:30] if you haven't already so you don't miss
+[13:32] it and I will see you in the video
+[13:34] number

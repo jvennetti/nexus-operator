@@ -1,32 +1,29 @@
 ---
-scenario_label: The Scenario
+scenario_label: What We're Going to Do
 ---
 
 ## Scenario
 
-You have a workspace, an instructions file, something you built, and the safety habits. This challenge is the first time you use Claude Code for a real piece of your work instead of a practice run.
+**The Folder You Dread.** Today we're going to take one job that lives in files and turn it into a tool you can run again next month.
 
-Go back to your Operator List. At least one item on it involves files: documents that need combining, a folder that needs organizing, a report that gets built from several sources, something that needs to be turned into a page or a spreadsheet. That's your challenge.
-
-## Setup
-
-Copy your Operator List document and your Operator Profile into your `nexus-workspace` folder. Tell Claude Code: "I added my Operator List and Operator Profile. Read them and update ABOUT-ME.md and CLAUDE.md with anything useful."
+Pick something like the monthly report assembled from several spreadsheets, a folder of attachments that needs sorting and renaming, a template filled in by hand from the same three sources, or a set of documents that need the same change made to each. In Module 4 you learned that Claude Code can read, make and change files, and you built a workspace folder that knows who you are. You'll point both at that job, run the result on real files, and write it down so someone else could run it without you.
 
 ## Steps
 
-1. **Pick the file-shaped task.** From your Operator List, choose the one that most involves documents, folders or data. If none do, pick the one closest.
-2. **Set up its working area.** "Create a project folder for [task]. Move the relevant files in. Write a short NOTES.md describing what this task is and what done looks like."
-3. **Plan, then build small.** "Before building, give me a plan for the simplest version of a tool or process that handles this. Then build it." Review the plan. Approve. Use the first version on real input.
-4. **Three rounds, then break it.** Give notes. Then give it input it wasn't built for and say "fix it" when it fails.
-5. **Document it for future you.** "Write a HOW-TO.md in this folder: how to run this next time, what it needs, what it produces, in plain language." Read it as if you'd forgotten everything. Fix what's unclear.
-6. **Commit it.** "Commit all of this with a clear message." Your version history now has a real project in it.
+1. Name the job and gather what it needs. Copy the files into nexus-workspace. Copies, never the originals; that rule holds until you trust the tool.
+2. In the Code tab, switch the mode selector to Plan and describe the job in one plain sentence, the way you'd describe it to a new colleague. Add "Ask me what you need to know first." Answer the questions, then read the plan and the reasons behind each step. Press Revise with a real cut: anything in the plan you'll never use goes. Accept only when you'd sign it. Tip: a small tool that runs beats a big one that doesn't. You can always add to it next month.
+3. Switch back to Manual and let Claude build. Say yes to reading files and creating new ones. Read carefully before you allow a change to a file you already had. Run the tool on your real copies, then give three rounds of notes based on what the output actually looks like.
+4. Break it on purpose. Give it a file in the wrong format, or an empty one, and say "fix it so this can't happen again." Tools that survive bad input are tools you can hand to someone else.
+5. Write it down. Paste:
+```
+Write HOW-TO.md: how to run this tool, for someone who has never seen it. Include what to check afterwards and what to do when it breaks.
+```
+   Then ask for your two-minute review, and if the review rule isn't in CLAUDE.md yet, add it now.
 
 ## Deliverable
 
-- A project folder in your workspace with a working tool or process for one real task from your Operator List.
-- It has been run on real input at least once, improved through notes, and survived one thing it wasn't built for.
-- A HOW-TO.md that future you could follow cold.
+You're done when the tool has run on real files and HOW-TO.md is clear enough that a colleague could run it next month without asking you anything.
 
 ## Extension
 
-Ask Claude Code: "Look at my Operator List. Which of the other items could be handled by something built in this workspace? Propose the smallest version of each." Don't build them. Just know they're possible.
+Paste: "Look at My Tasks. Which other task could be handled by something like what we just built?" Keep the answer. Module 6 starts there.

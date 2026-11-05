@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../nexus-transition.js" defer blocking="render"></script>
+<script src="../ciro.js"></script>
 <title>NEXUS Academy — Machine Restored</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -60,7 +62,9 @@ body{background:var(--bg);color:var(--offwhite);font-family:'Lexend',sans-serif;
 @keyframes log-blink{0%,100%{opacity:1}50%{opacity:0.15}}
 .log-dot.blue{background:var(--blue);box-shadow:0 0 7px var(--blue);animation:log-blink-b 1.5s ease-in-out infinite}
 @keyframes log-blink-b{0%,100%{opacity:1}50%{opacity:0.3}}
-#log-lines{display:flex;flex-direction:column;gap:3px;overflow:hidden;min-height:60px}
+/* room for the longest burst of log lines (7) between clears, so the panel never grows and pushes
+   the headline and machine down line by line, then snaps back on each clear */
+#log-lines{display:flex;flex-direction:column;gap:3px;overflow:hidden;min-height:60px;min-height:calc(7 * 11px * 1.55 + 6 * 3px)}
 .log-line{
   font-family:'IBM Plex Mono',monospace;
   font-size:11px;line-height:1.55;
@@ -396,6 +400,7 @@ body{background:var(--bg);color:var(--offwhite);font-family:'Lexend',sans-serif;
   position:relative;z-index:1;
 }
 #hub-btn-wrap.show{opacity:1}
+#hub-btn-wrap:not(.show){visibility:hidden;pointer-events:none}
 #hub-btn-wrap.revisit-mode{display:flex;justify-content:center;padding:32px 40px 28px}
 #hub-btn{
   font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;
@@ -594,30 +599,7 @@ body{background:var(--bg);color:var(--offwhite);font-family:'Lexend',sans-serif;
       <!-- CIRO Column -->
       <div id="ciro-col">
         <div class="ciro-icon-wrap" id="ciro-icon-wrap">
-          <svg width="74" height="152" viewBox="0 0 86 178" id="ciro-svg-icon">
-            <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5" id="ci-ant"/>
-            <circle cx="43" cy="2" r="2.5" fill="#00c8ff" id="ci-ant-tip"/>
-            <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2"/>
-            <rect id="ci-screen" x="16" y="19" width="54" height="40" rx="2" fill="#020810"/>
-            <line x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.4" opacity="0.3"/>
-            <line x1="18" y1="35" x2="58" y2="35" stroke="#00c8ff" stroke-width="0.4" opacity="0.2"/>
-            <line x1="18" y1="42" x2="64" y2="42" stroke="#00c8ff" stroke-width="0.4" opacity="0.15"/>
-            <text id="ci-f1" x="43" y="33" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="5.5" fill="#00c8ff" opacity="0">...</text>
-            <text id="ci-f2" x="43" y="43" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="5" fill="#00c8ff" opacity="0"></text>
-            <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
-            <rect x="15" y="82" width="56" height="32" rx="2" fill="#020810" stroke="#1e3a5a" stroke-width="1"/>
-            <circle id="ci-da" cx="31" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-            <circle id="ci-db" cx="43" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-            <circle id="ci-dc" cx="55" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-            <rect x="22" y="106" width="42" height="4" rx="2" fill="#0a1525"/>
-            <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-            <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-          </svg>
+          <div id="ciro-icon-mount"></div>
           <div class="ciro-icon-label">C.I.R.O.</div>
         </div>
         <div class="ciro-status-strip" id="cstatus-strip">
@@ -762,34 +744,10 @@ function setTowerTxt(txt,col){const el=document.getElementById('twt');if(el){el.
 function setBaseTxt(txt,col){['lt','rt'].forEach(id=>{const el=document.getElementById(id);if(el){el.textContent=txt;el.setAttribute('fill',col);}})}
 
 /* ── CIRO ICON ── */
-function setCiroColor(col){
-  ['ci-da','ci-db','ci-dc'].forEach((id,i)=>{
-    const el=document.getElementById(id);if(!el)return;
-    el.setAttribute('fill',col);el.setAttribute('opacity','1');
-    el.style.animation=`bl 2s ${i*0.65}s infinite`;
-  });
-  document.getElementById('ci-ant').style.stroke=col;
-  document.getElementById('ci-ant-tip').style.fill=col;
-  const m={'#00c8ff':'#020d14','#ffcc00':'#120e00','#ff3333':'#130000'};
-  document.getElementById('ci-screen').setAttribute('fill',m[col]||'#020810');
-}
-function setCiroFace(a,b,col='#00c8ff'){
-  const f1=document.getElementById('ci-f1'),f2=document.getElementById('ci-f2');
-  [f1,f2].forEach(e=>{e.setAttribute('opacity','1');e.setAttribute('fill',col);});
-  f1.textContent=a;f2.textContent=b;
-}
-function setCiroOff(){
-  ['ci-da','ci-db','ci-dc'].forEach(id=>{
-    const el=document.getElementById(id);if(!el)return;
-    el.setAttribute('opacity','0');el.style.animation='none';
-  });
-  ['ci-f1','ci-f2'].forEach(id=>{const el=document.getElementById(id);if(el)el.setAttribute('opacity','0');});
-  document.getElementById('ci-ant').style.opacity='0';
-  document.getElementById('ci-ant').style.transition='opacity 2s ease';
-  document.getElementById('ci-ant-tip').style.opacity='0';
-  document.getElementById('ci-ant-tip').style.transition='opacity 2s ease';
-  document.getElementById('ci-screen').setAttribute('fill','#020810');
-}
+const ciroIcon = NXCiro.mount(document.getElementById('ciro-icon-mount'), {width:74, id:'ciro-svg-icon', replace:true, dots:'off'});
+function setCiroColor(col){ ciroIcon.color(col).dots('blink'); }
+function setCiroFace(a,b,col='#00c8ff'){ ciroIcon.face(a,b,'',col); }
+function setCiroOff(){ ciroIcon.face(null).dots('off'); ciroIcon.power(false); }
 
 /* ── TYPING ── */
 async function typeInto(el,text,speed=22){
@@ -1171,6 +1129,5 @@ window.addEventListener('load',()=>{
 });
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var l=document.getElementById('hub-btn');if(l)l.href='../hub.html';})();</script>
-<script src="../nexus-transition.js"></script>
 </body>
 </html>

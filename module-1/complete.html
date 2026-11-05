@@ -4,6 +4,8 @@
 <script>(function(){try{if(!localStorage.getItem('nexus_intro_seen_operator')){location.replace('../index.html');return;}var p='precourse';if(p){var s=JSON.parse(localStorage.getItem('nexus_operator')||'{}');if(!s[p+'_complete']&&!location.search.includes('dev')){location.replace('../hub.html');}}}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../nexus-transition.js" defer blocking="render"></script>
+<script src="../ciro.js"></script>
 <title>NEXUS Academy — Module 1 Complete</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -49,6 +51,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0.2}}
 .hub-cta{text-align:center;margin-top:28px;opacity:0;transition:opacity 0.6s ease}
 .hub-cta.visible{opacity:1}
+.hub-cta:not(.visible){visibility:hidden;pointer-events:none}
 .hub-btn{display:inline-flex;align-items:center;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:16px 52px;cursor:pointer;transition:opacity .2s, transform .15s;text-decoration:none}
 .hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
 .hub-btn:active{transform:translateY(0)}
@@ -80,29 +83,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 
   <div class="debrief-wrap" id="debrief-wrap">
     <div class="debrief-robot-col">
-      <svg width="72" height="150" viewBox="0 0 86 178">
-        <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5"/>
-        <circle cx="43" cy="2" r="2.5" fill="#00c8ff"/>
-        <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2"/>
-        <rect x="16" y="20" width="54" height="38" rx="2" fill="#050f1c"/>
-        <line x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.5" opacity="0.55"/>
-        <line x1="18" y1="35" x2="60" y2="35" stroke="#00c8ff" stroke-width="0.5" opacity="0.35"/>
-        <line x1="18" y1="42" x2="66" y2="42" stroke="#00c8ff" stroke-width="0.5" opacity="0.25"/>
-        <line x1="18" y1="49" x2="52" y2="49" stroke="#00c8ff" stroke-width="0.5" opacity="0.18"/>
-        <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
-        <rect x="15" y="82" width="56" height="32" rx="2" fill="#050f1c" stroke="#1e3a5a" stroke-width="1"/>
-        <circle cx="31" cy="96" r="4" fill="#00c8ff" class="da" id="dot-a"/>
-        <circle cx="43" cy="96" r="4" fill="#00c8ff" class="db" id="dot-b"/>
-        <circle cx="55" cy="96" r="4" fill="#00c8ff" class="dc" id="dot-c"/>
-        <rect x="22" y="106" width="42" height="4" rx="2" fill="#1e3a5a"/>
-        <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-      </svg>
+      <div id="ciro-mount"></div>
       <div class="debrief-tag">CIRO v0.7</div>
     </div>
     <div class="debrief-text-col">
@@ -168,13 +149,43 @@ function runReveal(){
 
 function wait(ms){ return new Promise(r=>setTimeout(r,ms)); }
 
-async function typeLine(el, text){
+// Typewriter that never moves layout. Every line is laid out up front with its untyped part
+// visibility:hidden, so the debrief box is its final size from the start and words never jump
+// between lines while typing. The cursor keeps its look but has zero advance and is glued to the
+// letters either side of it, so it cannot force a mid-word line break.
+const TW_WORD = /[\p{L}\p{N}'’]/u;
+function twMount(el, text){
+  el.textContent = text;
+  const n = el.firstChild;
+  const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+        gr = document.createElement('span'), rest = document.createElement('span');
+  glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+  glue.append(gl, gr); rest.textContent = text; n.replaceWith(typed, glue, rest);
+  return { el, text, typed, glue, gl, gr, rest };
+}
+function twShow(s, k, cursor){
+  const t = s.text, gL = k > 0 && TW_WORD.test(t.charAt(k-1)), gR = k < t.length && TW_WORD.test(t.charAt(k));
+  s.typed.data = t.slice(0, gL ? k-1 : k); s.gl.data = gL ? t.charAt(k-1) : '';
+  if(cursor.parentNode !== s.glue) s.glue.insertBefore(cursor, s.gr);
+  s.gr.textContent = gR ? t.charAt(k) : ''; s.rest.textContent = t.slice(gR ? k+1 : k);
+}
+function twMountAll(containerId, lines, classOf){
+  const container = document.getElementById(containerId);
+  return lines.map(l => {
+    const lineEl = document.createElement('div');
+    lineEl.className = classOf(l);
+    container.appendChild(lineEl);
+    return twMount(lineEl, l.text);
+  });
+}
+const ciroLineStates = twMountAll('ciro-lines', CIRO_LINES, () => 'ciro-line');
+
+async function typeLine(st, text){
   const cursor = document.createElement('span');
-  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:cur .7s step-end infinite';
-  el.appendChild(cursor);
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;margin-right:-10px;animation:cur .7s step-end infinite';
   for(let i=0;i<text.length;i++){
     const ch = text[i];
-    el.insertBefore(document.createTextNode(ch), cursor);
+    twShow(st, i+1, cursor);
     let d = 30;
     if(ch==='.') d+=110;
     else if(ch===',') d+=55;
@@ -182,18 +193,21 @@ async function typeLine(el, text){
     await wait(d);
   }
   cursor.remove();
+  st.el.textContent = text;
 }
 
+const ciro = NXCiro.mount(document.getElementById('ciro-mount'), {width:72, replace:true});
 async function runCiro(){
+  ciro.joy(true);
+  ciro.hop();
   const container = document.getElementById('ciro-lines');
   await wait(300);
-  for(const { text, pauseAfter } of CIRO_LINES){
-    const lineEl = document.createElement('div');
-    lineEl.className = 'ciro-line';
-    container.appendChild(lineEl);
-    await typeLine(lineEl, text);
+  for(let n = 0; n < CIRO_LINES.length; n++){
+    const { text, pauseAfter } = CIRO_LINES[n];
+    await typeLine(ciroLineStates[n], text);
     await wait(pauseAfter);
   }
+  ciro.nod();
   await wait(400);
   document.getElementById('hub-cta').classList.add('visible');
 }
@@ -203,7 +217,7 @@ pingHub();
 runReveal();
 
 const STUDY_MODULE = 'Module 1 — The Operator Mindset';
-const STUDY_LESSONS = [{"n": "1.1", "title": "What Changed", "file": "lesson-1-1.html", "takeaways": ["Claude is a capable colleague who started this morning and knows nothing about you. What it produces is shaped by what you tell it.", "The skill is directing, not technology: knowing what you want, saying it clearly, providing context, and pushing back.", "Your Operator List is the real work you intend to hand off. Everything in this course is practiced against it."]}, {"n": "1.2", "title": "Director, Not Doer", "file": "lesson-1-2.html", "takeaways": ["Brief Claude the way a good manager briefs a person: outcome, context, audience, what good looks like.", "The first draft is a starting point. Reviewing and sending back notes is the normal workflow, not a sign something went wrong.", "When Claude hedges or says it can't, tell it plainly you want it done and give it what it needs. It almost always can."]}];
+const STUDY_LESSONS = [{"n": "1.1", "title": "What Changed", "file": "lesson-1-1.html", "takeaways": ["Claude starts from zero. What it produces depends on what you tell it.", "Handing work off starts with knowing your own work: what's tedious, where you're unsure, what needs your judgment.", "Most \"can you do this?\" answers are \"yes, if you give me X.\" This course teaches you to give it X."]}, {"n": "1.2", "title": "Director, Not Doer", "file": "lesson-1-2.html", "takeaways": ["Brief Claude like you'd brief a person: outcome, audience, context, what good looks like.", "The first draft is a starting point. Notes and a second round are normal.", "When Claude hedges or says it can't, tell it plainly you want it done. It almost always can."]}];
 const STUDY_CIRO = 'Director, not doer.<br>Say it until it\'s a reflex.<br><br>— CIRO';
 
 function openStudyDoc(){
@@ -308,7 +322,6 @@ function openStudyDoc(){
 function playS(s,v){var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(window.nxVol||1);a.play().catch(function(){});return a;}
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
-<script src="../nexus-transition.js"></script>
 <script>
 (function(){
   var C=document.createElement('canvas');

@@ -40,3 +40,13 @@ Lessons deliberately text-only: 0.1, 1.2, 2.2, 2.3, 2.5, 3.2, 3.3, 4.2, 4.4, 4.5
 ## After this step
 
 The owner's order of work: (1) videos, (2) visual design of lesson pages, which currently have too much going on, (3) CIRO's language and tone, worked through with examples, (4) graphics and robot animation. Do not start (2) through (4) until (1) is confirmed.
+
+## Lead's picks so far (2026-11-05, watched by the lead)
+
+| Lesson | Video | Note |
+|---|---|---|
+| 0.2 Know Where Things Are | `r2vYObllqJU` Kevin Stratvert, "Claude AI Tutorial for Beginners" | Good intro; shows the pre-October-2026 interface. **Future fix:** replace when a beginner tour of the rebuilt app has a track record. Re-search around 2026-12-01. |
+| 2.1 Anatomy of a Good Prompt | `7zZy1QTvokM` | Lead: "possibly complex but good, slightly advanced." Transcript needed to decide placement and to shape the task. |
+| 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert, "How to Use Claude Projects" | Easy, matches the lesson. Lead's pick. |
+
+Rule from the lead: before a video goes into a lesson, its transcript must be read so the task and challenge build on what the video actually says, and so lessons don't repeat each other. Transcripts come from the lead's own machine (`tools/fetch_transcripts.py` on the `claude/video-research` branch) or pasted from YouTube's "Show transcript" panel.
