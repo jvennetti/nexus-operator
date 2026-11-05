@@ -174,11 +174,23 @@ def build():
             next_href, next_title = (after_last, after_last_title) if i == len(lessons)-1 else (lessons[i+1]['file'], lessons[i+1]['title'])
             vid = L['meta'].get('video', '').strip()
             if vid:
+                params = ['enablejsapi=1']
+                start = seconds(L['meta'].get('video_start', ''))
+                end = seconds(L['meta'].get('video_end', ''))
+                if end and start and end <= start:
+                    sys.exit('%s: video_end must be after video_start' % lid)
+                if start: params.insert(0, 'start=%d' % start)
+                if end: params.insert(1 if start else 0, 'end=%d' % end)
                 video_block = ('  <div class="video-wrapper section">\n'
-                               '    <iframe src="https://www.youtube.com/embed/%s?enablejsapi=1" title="%s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
-                               '  </div>' % (vid, html.escape(L['meta'].get('video_title', L['title']), quote=True)))
+                               '    <iframe src="https://www.youtube.com/embed/%s?%s" title="%s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
+                               '  </div>' % (vid, '&amp;'.join(params), html.escape(L['meta'].get('video_title', L['title']), quote=True)))
+                under = []
+                if L['meta'].get('video_credit'):
+                    under.append('  <div class="video-credit">%s</div>' % html.escape(L['meta']['video_credit'], quote=False))
                 if L['meta'].get('video_note'):
-                    video_block = video_block.replace('  </div>', '  </div>\n  <div class="video-note" style="margin-top:-24px;margin-bottom:36px">%s</div>' % inline(L['meta']['video_note']))
+                    under.append('  <div class="video-note">%s</div>' % inline(L['meta']['video_note']))
+                if under:
+                    video_block += '\n  <div class="video-under">\n' + '\n'.join(under) + '\n  </div>'
                 mode = 'Watch + Do'
             else:
                 video_block = ''
@@ -264,6 +276,17 @@ def build():
     if todo:
         print('\nlessons without a video yet:')
         for t in todo: print('  -', t)
+
+def seconds(v):
+    """'0', '', '118', '1:58' or '1:02:03' -> int seconds (0 if empty)."""
+    v = str(v).strip()
+    if not v: return 0
+    parts = v.split(':')
+    if not all(p.isdigit() for p in parts) or len(parts) > 3:
+        sys.exit('bad time value %r (use seconds or m:ss)' % v)
+    total = 0
+    for p in parts: total = total * 60 + int(p)
+    return total
 
 def sec_get(sections, name):
     if name not in sections:
