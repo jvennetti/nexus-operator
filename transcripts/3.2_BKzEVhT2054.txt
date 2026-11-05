@@ -1,0 +1,159 @@
+[00:00] Somewhere along this journey of using a
+[00:02] personal AI assistant, you end up taking
+[00:04] on a job that you never applied for. You
+[00:06] kind of act like a messenger between two
+[00:09] different tabs. You think something
+[00:10] through with Claude on one tab, and then
+[00:12] you copy it out, and you have to paste
+[00:14] it into Notion in the other tab. You
+[00:16] have to fix the formatting, set the
+[00:18] statuses, file it in the right place
+[00:20] every single time. In this video, I'm
+[00:22] going to show you how to quit that job
+[00:23] permanently by connecting these two
+[00:25] tools directly, so Claude can go into
+[00:28] your Notion and create pages, fill out
+[00:30] databases, and keep things updated
+[00:32] without you being the courier. There's
+[00:34] one thing about how this connection
+[00:36] works that makes it safe to point at
+[00:38] your real workspace, but I'll get to
+[00:40] that in just a second. Notion on its own
+[00:42] is great, and it has its own AI built
+[00:44] in, so this isn't me saying that Notion
+[00:46] is broken, but the thing is that Notion
+[00:48] AI mostly helps you inside the pages
+[00:50] you've already been sitting on. What I'm
+[00:52] actually talking about is letting Claude
+[00:53] act across your whole workspace from the
+[00:56] outside, creating a new page, updating
+[00:58] databases, pulling a pile of notes into
+[01:00] a clean summary without you clicking
+[01:02] through anything. So, the actual setup
+[01:05] of this is super simple. You connect
+[01:07] Notion to Claude through the connectors
+[01:09] on Claude, and the part that matters is
+[01:12] the permission step, so Notion makes you
+[01:14] choose exactly which pages or databases
+[01:16] Claude is allowed to touch. So, it's not
+[01:19] all or nothing. You can actually
+[01:20] fine-tune it to wherever you need it to
+[01:22] be. I'd start more narrow. This is what
+[01:24] I did with my own workflow. Point it at
+[01:26] one project area first, get comfortable
+[01:28] watching what it does, and then widen it
+[01:30] once you trust it a little more. That
+[01:32] permission step isn't a hurdle to
+[01:34] rushing past. It's the thing that keeps
+[01:36] the whole thing from going out of
+[01:37] control. Let's talk about what this
+[01:39] actual connection looks like. I'll say,
+[01:41] "Take things from these meeting notes
+[01:43] and create a new project page with a
+[01:45] summary, a task list, and a status of
+[01:46] the project." Claude will go into
+[01:48] Notion. It will create the pages. It
+[01:50] will write the summary. It will build
+[01:51] out the task list, and it will set the
+[01:53] status properly. It doesn't hand me a
+[01:55] block of text to paste. It did the work
+[01:58] in the actual workspace in the right
+[02:00] place with the right fields filled.
+[02:03] Okay, let's talk about the thing that I
+[02:04] told you to hold on to. The reason I'm
+[02:05] comfortable pointing this at a workspace
+[02:08] that I actually rely on, this MCP
+[02:10] connector lets Claude read, create, and
+[02:12] update, but it will not delete anything.
+[02:14] Deleting is blocked at the safety layer
+[02:16] on purpose on the Notion side. So, worst
+[02:19] case here isn't lost work necessarily,
+[02:21] it's that just a significantly messy
+[02:23] page that you can clean up in 10 seconds
+[02:25] with Claude. In my opinion, that's a
+[02:26] really good line to draw. It can do the
+[02:29] busy work, but it can't get rid of
+[02:32] things without you knowing. Once you've
+[02:34] actually made this connection with the
+[02:35] MCPs, the day-to-day uses are where, in
+[02:38] my opinion, it earns its place. So, for
+[02:41] example, I will drop raw notes and it
+[02:43] will file them as a proper page. I'll
+[02:45] ask it to reorganize a database page
+[02:48] that's turned into a mess and it cleans
+[02:50] it up, no problem. Or I'll tell it to
+[02:52] roll a week of scattered notes into one
+[02:54] summary page so that I have all of that
+[02:56] information up front. So, it stops being
+[02:58] a page where you have to tidy everything
+[03:00] on Sunday night and it starts being a
+[03:01] workplace that actually keeps yourself
+[03:04] current. And a few more things that I
+[03:06] actually lean on that I think are good
+[03:07] examples of what this MCP can do. So,
+[03:09] after a call with a client, I paste my
+[03:11] notes and say, "Log this into my project
+[03:14] database with the right statuses and
+[03:16] follow-up tasks." And it slots
+[03:17] everything into the system that I
+[03:19] already use with very minimal oversight
+[03:21] on my part. When a tracker has drifted
+[03:23] out of date, I ask it to read through
+[03:25] and update the statuses to match where
+[03:27] things actually are. When I'm starting
+[03:29] with a blank project, I have it set up
+[03:31] the skeleton, the sections, and the
+[03:33] empty fields, so I'm editing instead of
+[03:35] building from nothing. The through-line
+[03:38] is the same here. It's not writing
+[03:40] essays for you, it's doing the
+[03:42] structural busy work that keeps Notion
+[03:44] workspace usable. There is one fair
+[03:46] pushback, which is Notion's own AI
+[03:49] already does a chunk of this. It does do
+[03:51] some of this, yes, but I'm not going to
+[03:53] pretend like it's a razor-sharp
+[03:55] execution. The difference here is the
+[03:57] matter of reach. So, Notion AI is
+[03:59] excellent in helping you on the pages
+[04:00] that you're looking at, where Claude
+[04:02] with the connector is acting across the
+[04:04] whole workspace at once, and it's the
+[04:06] same assistant you're using for
+[04:07] everything else. So, you're not having
+[04:09] to switch between Notion and Claude to
+[04:12] just be able to get one thing done. And
+[04:14] if you already think in Claude, like
+[04:15] this is how I use it every single day,
+[04:17] this keeps you thinking and filing in
+[04:19] one place instead of having to move
+[04:20] different places. There are some limits
+[04:23] to this, just so you're aware. It only
+[04:25] works off the pages that you actually
+[04:26] share into the connection. So, if it
+[04:28] says that it can't find something, it
+[04:30] typically means that that page isn't
+[04:32] within the scope. And it's worth a
+[04:33] glance at what it creates, especially in
+[04:35] the database, because every so often,
+[04:37] it'll put something in the wrong
+[04:38] property or not necessarily label
+[04:40] something correctly. So, this isn't like
+[04:42] a hands-off tool forever. It's just
+[04:44] hands-off the busywork, and then you can
+[04:46] kind of become the editor. So, that's
+[04:48] the setup. Claude will connect to
+[04:49] Notion. It'll build and update every
+[04:51] real page that you have, with the
+[04:53] deletes being turned off, so you can
+[04:55] trust in the workspace that you're
+[04:56] working in. So, try it in one project
+[04:58] area. Let me know in the comments below
+[05:00] how that goes. And I've been wiring
+[05:02] Claude with a few other tools the exact
+[05:03] same way. So, let me know in the
+[05:05] comments which ones you want me to cover
+[05:07] next. And if you're looking for more
+[05:08] about Claude in 365, check out this
+[05:11] video over here, and with that, I will
+[05:12] see you on the next one.

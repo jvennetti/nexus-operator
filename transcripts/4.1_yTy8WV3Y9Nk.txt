@@ -1,0 +1,169 @@
+[00:00] You do not need to know how to build a
+[00:02] website to get one. You need to be able
+[00:04] to describe the thing it is for. A
+[00:07] business, an event, a place, whatever
+[00:10] you are making it for. The tool is
+[00:12] called Claude Code. It runs inside the
+[00:16] Claude desktop app on your own computer,
+[00:19] and nothing here is written by you. It
+[00:22] is not a separate program you go and
+[00:24] install. It is a tab at the top left of
+[00:27] the app you already have. The app opens
+[00:31] on the chat tab. That is the one that
+[00:33] greets you by name and asks how it can
+[00:36] help. Most people never leave it. Next
+[00:39] to it is a second tab called code. Click
+[00:42] that and the page changes. The greeting
+[00:45] is gone. There is no how can I help you
+[00:48] box. It says new session and it asks you
+[00:51] to describe a task.
+[00:53] Start a new session. Then look along the
+[00:56] bottom of the box where you type. There
+[00:57] is a small button that says this
+[00:59] computer. That is where you tell it
+[01:01] which machine and which folder to work
+[01:03] in. And this next part matters more than
+[01:06] it looks. Click it, choose this
+[01:09] computer, and a folder picker opens. The
+[01:12] same one every program on your machine
+[01:15] uses. Remember the folder we made
+[01:17] together, the education center? Go into
+[01:20] that, make a new folder inside it for
+[01:22] this job, name it, go in, and select it.
+[01:26] Whatever gets built lands in there as
+[01:29] real files on your own machine in a
+[01:31] folder you can open and look inside. Now
+[01:34] the folder name sits along the bottom of
+[01:37] the window beside the words this
+[01:39] computer. That is how you know it is
+[01:41] pointed at the right place.
+[01:44] Now turn on plan mode. Click the word
+[01:46] beside the model name at the bottom
+[01:48] right. A box opens with the choices.
+[01:51] Auto, where it decides for itself.
+[01:53] Manual, where it asks before every
+[01:55] change except edits. And plan, which is
+[01:58] the one we want. Plan means it works out
+[02:01] what it is going to do and shows you
+[02:04] before it touches anything.
+[02:06] And now the part people do not expect.
+[02:09] You do not write a technical
+[02:10] description. You write one plain
+[02:12] sentence about the thing. Mine is a
+[02:14] bakery. So mine says, "Make me a
+[02:17] website. I have a bakery and I will be
+[02:19] selling cakes, bagels, and cupcakes."
+[02:21] Yours says whatever yours is.
+[02:24] Then, on the end of that same sentence,
+[02:27] add the line that does the real work.
+[02:29] Ask it to go and find out what websites
+[02:31] for places like yours already have. That
+[02:34] one instruction is the difference
+[02:36] between a guess and a design. You are
+[02:38] not asking it to invent a website. You
+[02:41] are asking it to look at what already
+[02:42] works and build to that.
+[02:45] And if you have brand colors, give them
+[02:47] to it here. If you do not, say so and it
+[02:50] will choose and tell you why.
+[02:53] And it does not start building. It reads
+[02:56] the folder first, empty, clean slate.
+[02:59] Then it goes out and searches and it
+[03:01] tells you how many pages it read. Then
+[03:04] it comes back with what it found. Not an
+[03:06] opinion, a list of what places like
+[03:09] yours actually put on their pages. A
+[03:11] photograph, the location, and the
+[03:14] opening hours at the top where people
+[03:15] decide in seconds. Prices on the page,
+[03:19] not in a document nobody opens on a
+[03:21] phone. Ordering with a pickup time and a
+[03:24] separate form for the things that have
+[03:26] to be quoted. A map, a phone number you
+[03:29] can tap in the footer of every page, and
+[03:32] reviews with real names on them. Yours
+[03:35] will be a different list. It is reading
+[03:38] the trade you pointed it at. Then it
+[03:41] does the thing most people have never
+[03:43] seen it do. It stops and it asks you.
+[03:47] And it asks in a panel of its own so you
+[03:50] cannot miss it. The question sits across
+[03:52] the top with a counter telling you how
+[03:55] many there are. Underneath it, the
+[03:57] answers. The first is the one it
+[03:59] recommends, already chosen with a line
+[04:02] explaining what it means. Then, the
+[04:05] other choices. And the last one is
+[04:07] always called other. That one is not a
+[04:10] choice at all. It is a box you type in
+[04:12] for the answer it did not think to offer
+[04:15] you. Then skip or next. If you do not
+[04:18] care, skip and it will decide. If you do
+[04:21] care, this is where you say so. These
+[04:23] are the questions a designer would ask
+[04:25] you in a first meeting. It is a simple
+[04:27] way for it to get you the thing you
+[04:29] actually wanted instead of the thing it
+[04:31] guessed.
+[04:32] Answer them and it writes the plan. The
+[04:34] plan is a list in order of everything it
+[04:38] intends to make and beside each one,
+[04:41] why. That second column is the part
+[04:43] worth reading. It is showing you its
+[04:45] reasoning, feature by feature, before it
+[04:48] has written a single line.
+[04:50] And then three buttons, reject, revise,
+[04:53] accept. This is the moment plan mode
+[04:56] exists for. Nothing has been built.
+[04:59] Nothing has been written into your
+[05:01] folder. You are looking at an intention.
+[05:05] Reject throws it away. Revise lets you
+[05:07] say what to change. Take the blog off, I
+[05:10] will never write it. Put the phone
+[05:12] number in the footer. Accept lets it
+[05:15] start. Read it. Change it. This is the
+[05:19] moment to say no and it is the cheapest
+[05:22] no you will ever get.
+[05:25] Plan approved. Building now. And the
+[05:27] list you just read turns into a
+[05:29] checklist that ticks itself off with a
+[05:31] timer underneath so you can see how long
+[05:33] it has been going. A browser opens
+[05:35] beside it and the site appears while you
+[05:38] watch, a page at a time, as each one
+[05:41] gets written.
+[05:42] Each line goes from waiting to working
+[05:45] to done. And the last item is the one
+[05:48] that tells you something careful. Built
+[05:50] it. Check it in a browser on a desktop
+[05:53] and on a phone. You do not have to do
+[05:55] anything during this part. This is the
+[05:58] bit where you go and make a coffee.
+[06:01] What you get at the end is a real
+[06:03] website sitting in your folder that you
+[06:05] open in your browser and click around.
+[06:07] The pictures work differently and this
+[06:09] part is specific to Claude Code. Claude
+[06:12] Code does not make pictures. What it
+[06:14] does is place them. So, you have three
+[06:17] ways to go and you choose in that
+[06:20] question panel. Give it your own
+[06:21] photographs, which is what you want for
+[06:23] a real site anyway, and it will put them
+[06:25] where they belong. Let it use free stock
+[06:28] images or let it draw simple shapes to
+[06:31] hold the space until your photographs
+[06:32] are ready.
+[06:33] And one thing to be clear about because
+[06:36] it matters, this website is not live.
+[06:39] Nobody can type your name into a browser
+[06:41] and find it yet. What you have is the
+[06:43] whole thing built and sitting in a
+[06:45] folder on your own computer ready to go.
+[06:48] Putting it online is a separate job and
+[06:51] we will cover that another time.
+[06:53] One sentence about the thing, a folder
+[06:56] on your computer and a plan you are
+[06:58] allowed to change. Subscribe. No
+[07:01] permission required.
+[07:05] >> WE ARE THE ARCHITECTS.

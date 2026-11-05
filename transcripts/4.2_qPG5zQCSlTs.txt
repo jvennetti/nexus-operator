@@ -1,0 +1,108 @@
+[00:00] Everyone's using AI wrong. You ask Chat
+[00:02] GPT a question, you get an answer, you
+[00:03] close the tab, and a week later, it's
+[00:05] gone. Every insight, every idea
+[00:08] vaporized. Meanwhile, your Notion has 47
+[00:10] untouched pages, your screenshots folder
+[00:12] is 6,000 deep, and you're paying 20
+[00:14] bucks a month for an AI with the memory
+[00:16] of a goldfish. It's not an AI problem,
+[00:19] it's a storage problem. Here's how I
+[00:21] fixed it. Three reasons this keeps
+[00:23] happening. One, your storage is
+[00:25] scattered. Notes in Notion, chats in
+[00:27] Chat GPT, code in Cursor, screenshots in
+[00:29] a folder. Nothing talks to anything.
+[00:32] Two, no context carryover. Every new
+[00:34] chat starts from zero. You re-explain
+[00:37] your business, your goals, every single
+[00:39] time. Three, you're the one doing the
+[00:41] work. Copying, pasting, summarizing,
+[00:44] hoping you remember where you put that
+[00:45] thing. That's not an assistant. That's a
+[00:48] fancier search bar. A real second brain
+[00:50] stores once, remembers forever, and
+[00:53] works on your actual data.
+[00:55] The stack. Three pieces. First,
+[00:57] Obsidian. A free markdown editor that
+[01:00] stores all your notes as plain text
+[01:02] files on your machine. Not in the cloud,
+[01:04] just files you own. If you already live
+[01:06] in Notion, same pattern works. Point
+[01:08] Claude code at an exported Notion
+[01:10] workspace and you're in. Obsidian's free
+[01:12] and plays nicer with agents, so that's
+[01:14] what I'll show. Second, Claude code.
+[01:16] Anthropic's command line tool that runs
+[01:18] Claude on your machine, reads your
+[01:20] files, writes to your files, and
+[01:22] remembers what it did last time. It's
+[01:24] not a chat app, it's an agent with
+[01:25] hands. Third, search sub-agents. Custom
+[01:28] Claude configs with specific jobs that
+[01:30] are assistant, from real researcher,
+[01:32] writer, whatever. Each has its own
+[01:34] instructions, its own memory, and they
+[01:35] share the same vault. Put it together
+[01:37] and you get something weird. A knowledge
+[01:39] base that thinks about itself. You write
+[01:42] a note, one sub-agent reads it, another
+[01:44] acts on it. Everything saves back to the
+[01:46] vault. No tab switching, no context
+[01:49] loss. Let me show you what this looks
+[01:51] like. Meet the agents. Alfred is the
+[01:53] assistant. One command every morning. He
+[01:56] reads my calendar, pulls my open tasks,
+[01:58] checks what I said I'd do yesterday,
+[02:00] writes a briefing. He doesn't forget
+[02:02] last week, because last week is
+[02:04] literally a file in the vault. Scribe is
+[02:06] the writer. I drop raw notes in a
+[02:08] folder, Scribe turns them into clean
+[02:10] drafts, emails, articles, LinkedIn
+[02:13] posts. He learns how I actually write,
+[02:15] not how a generic LLM thinks I should.
+[02:18] Atlas is the researcher. I give him a
+[02:20] question, he reads the PDFs, pulls
+[02:23] citations, flags contradictions. Every
+[02:26] source lives in the vault after. So,
+[02:28] next month, Atlas already has half the
+[02:30] answer. Ledger watches the money. What
+[02:33] came in, what went out, what's coming
+[02:34] up, and when the runway math stops
+[02:37] working. And then, there's the content
+[02:39] engine, which, by the way, is rendering
+[02:41] this exact video. It pulled the topic,
+[02:43] wrote the script, picked the visuals,
+[02:45] generated the voiceover you're hearing
+[02:47] right now. The point isn't that each
+[02:49] agent is magic alone. The point is they
+[02:51] share a brain. Alfred writes a briefing,
+[02:53] Ledger reads it, Atlas finishes
+[02:55] research, Scribe turns it into a post.
+[02:57] The vault is shared memory. Claude code
+[02:59] is the shared mind. That's the whole
+[03:01] trick. Want to build this yourself?
+[03:03] Minimum viable version. Step one, pick
+[03:05] your vault. Obsidian if you're starting
+[03:07] fresh, Notion if you've got years of
+[03:09] notes there. Both work. Step two,
+[03:12] install Claude code. Free tier gets you
+[03:14] started, point it at your vault. Step
+[03:16] three, create one sub-agent. Start with
+[03:18] an assistant. One page instruction file.
+[03:21] Who you are, what you work on, how you
+[03:23] want it to talk. That's it, you're 90%
+[03:26] of the way there. The remaining 10 is
+[03:27] using it every day and noticing which
+[03:29] patterns repeat. The repeating patterns
+[03:31] become your next sub-agents. The vault
+[03:34] grows as you think. The system
+[03:35] compounds. Want the starter template,
+[03:38] vault structure, sub-agent files, the
+[03:40] whole setup I use every day?
+[03:42] Links in the description. Free. Next
+[03:44] video drops Friday at five Claude code
+[03:46] skills I actually use every week with
+[03:48] live demos. Subscribe so it lands in
+[03:50] your feed. See you then.

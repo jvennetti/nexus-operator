@@ -1,0 +1,521 @@
+[00:00] You've likely found yourself in a
+[00:01] situation where you've watched your AI
+[00:03] skill nail a task one time. So, you
+[00:05] figured that it was good to go.
+[00:07] But, here's the thing. That one win
+[00:09] proves almost nothing. If you're new
+[00:11] here, I'm Dylan. I run an AI
+[00:13] consultancy. And knowing whether your AI
+[00:15] skills or projects are actually any good
+[00:18] is most of what I do. So, I'll show you
+[00:20] how to really test a skill against your
+[00:22] own work, then run the loop that takes
+[00:25] it from okay to as good as you are. So,
+[00:27] by the end of this video, you'll be able
+[00:29] to prove it's good, not just hope that
+[00:31] it is. So, let's get into it. I want you
+[00:34] to take a second and think about when
+[00:35] you hire a new employee or somebody new
+[00:37] joins your team. How do you actually go
+[00:39] about training them? You likely follow a
+[00:41] process something like this. Where you
+[00:44] give them a small task. After you've
+[00:46] given them the small task, you then
+[00:48] check their output on that task. How did
+[00:49] they do? After you've checked it, you
+[00:51] then correct them. And they iterate on
+[00:52] this. So, they then try again on the
+[00:54] same task or a different task of similar
+[00:56] size and complexity. And after you've
+[00:58] iterated multiple times and they build
+[01:00] trust in the fact that they can do this
+[01:01] task without you having to review their
+[01:02] work, you then hand it off to them so
+[01:04] they can do it completely without your
+[01:05] involvement. And the question I tend to
+[01:07] ask myself often, as well as my clients,
+[01:09] is why do we treat AI differently? It
+[01:11] should be the exact same. Especially for
+[01:13] tasks we want to outsource to AI that
+[01:15] are of high criticality or something we
+[01:17] do often. Because often what I see
+[01:18] people do is when you interact with AI,
+[01:21] this is how they tend to use it. Where
+[01:22] they set up an AI, either a project or a
+[01:25] skill, they use it, and then they maybe
+[01:27] make one or two minor tweaks, and then
+[01:29] going forward they just accept the fact
+[01:30] that the AI is somewhat okay, but not
+[01:32] perfect. Instead of what they should do
+[01:34] is train the AI, specifically that skill
+[01:36] or project they've created. They need to
+[01:38] iterate with it to meet their standards
+[01:40] continuously. And that's exactly what I
+[01:42] want to do in this video with you. So, I
+[01:43] want to show you how you can take that
+[01:45] mindset of training an employee and
+[01:46] apply it to AI. So, any skill or project
+[01:49] you create going forward meets your
+[01:51] standards continuously. And this is the
+[01:52] basic process we're going to follow. I'm
+[01:54] going to talk about this in the context
+[01:56] of skills, but the same idea applies to
+[01:59] system prompts inside of projects. So,
+[02:00] when building a skill, this is the same
+[02:02] process I recommend all my clients
+[02:03] follow, which is when you build a skill,
+[02:05] you prove it first. What that means is
+[02:07] you first choose a task that you want to
+[02:09] automate with a skill or augment with a
+[02:11] skill.
+[02:12] Once you've chosen that task as
+[02:13] something you do on a repeated basis,
+[02:15] you then do that task with an AI. So,
+[02:16] you open up a new chat either inside of
+[02:18] Claude Cowork, Codex, ChatGPT, or
+[02:20] Claude, and you run that task live in
+[02:22] that conversation. You keep working on
+[02:24] that task over and over refining the
+[02:26] output from the AI until it meets your
+[02:27] standards. Once you've done that in that
+[02:29] one conversation flow, you then ask the
+[02:31] AI to encapsulate that entire process
+[02:34] into a skill for you. There are many
+[02:36] reasons as to why this specific approach
+[02:38] is the most effective to build skills
+[02:39] and system prompts, but the primary one
+[02:41] is that the AI has done the work, and
+[02:43] the work itself is very nuanced and
+[02:45] subtle. So, we need to make sure that it
+[02:46] understands all of that through the
+[02:48] process of doing it before it creates a
+[02:49] system prompt or a skill. Quick pause in
+[02:51] your regular programming. This video is
+[02:53] brought to you by me, as always. Two
+[02:55] quick things. First off, below is a
+[02:57] 30-day AI Insight Series, completely
+[02:59] free. You'll get 30 insights in your
+[03:01] inbox of how you can apply AI to your
+[03:02] business and your work. The second thing
+[03:04] is if you'd like to work with me, below
+[03:06] are a series of offerings to see if
+[03:07] there's a good fit between the two of
+[03:08] us. Now, let's get back into the video.
+[03:10] There's actually a prompt that I'll
+[03:11] share with you here that you can copy
+[03:13] and paste at the end very end of that
+[03:14] conversation. And that's this prompt
+[03:16] here. It's very straightforward, simple,
+[03:18] but important. And in this prompt, all
+[03:20] we're doing is telling the AI, "I want
+[03:21] you to turn what we just did in this
+[03:23] conversation into a skill using your
+[03:25] skill creator." And that's one of the
+[03:26] beautiful things about skills is AI can
+[03:28] create them for you. But we do add some
+[03:30] constraints to this prompt, which is
+[03:31] important. So, the two constraints we're
+[03:32] adding here. So, the first one is we're
+[03:34] telling the AI, "I want you to keep this
+[03:35] skill lean and minimal. Every line
+[03:38] inside of the skill must earn its
+[03:39] place." And this is critical because, as
+[03:41] you probably know, AI tends to be very
+[03:43] verbose. It talks a lot, which means
+[03:45] it's likely to create a really bloated
+[03:47] skill or prompt. And we want to avoid
+[03:49] bloated skills and prompts. Reason being
+[03:51] is that the more bloated a skill or
+[03:53] prompt is, the less likely the AI is
+[03:55] going to follow the task that we gave it
+[03:57] accurately. That's the first constraint.
+[03:59] The second constraint, especially for
+[04:01] skills, is making sure it's agnostic of
+[04:03] topic. What we specifically tell it is
+[04:05] to capture the judgment and nuance we
+[04:07] used for the process, so when we create
+[04:09] the skill, it can generally be applied
+[04:12] to anything going forward. In this case,
+[04:13] we're creating a proposal. So, when I
+[04:15] say this is a skill for a proposal, it's
+[04:17] writing proposals for us.
+[04:18] And in this prompt, we're saying I want
+[04:19] you to make sure it generally applies to
+[04:21] all proposals of this kind, not just the
+[04:23] one that we just worked on in this
+[04:24] conversation. To simply convey that
+[04:25] second constraint,
+[04:27] what I'm basically stating is that we
+[04:28] just built this proposal and I'm happy
+[04:30] with the output. Now, I want you to
+[04:31] encapsulate the entire process into a
+[04:33] skill, so anytime I ask you to write a
+[04:35] proposal in the future, it meets these
+[04:36] same standards without being biased
+[04:38] towards a specific proposal itself
+[04:41] and the content inside of it. So, that's
+[04:43] the prompt you're going to copy and
+[04:43] paste and use to build your skills. Now,
+[04:45] at this point, we've done what most
+[04:47] people do. We've built a skill or a
+[04:48] system prompt, no matter the approach
+[04:50] you've taken. The next phase is where a
+[04:52] lot of people fall short and they don't
+[04:54] train their AI, but instead just use it.
+[04:56] So, focus up. This is the most important
+[04:58] part of the video. Now, some people may
+[05:00] test their skill or prompt, but the way
+[05:02] they test it is very poor. These are the
+[05:03] two approaches I see people most
+[05:05] commonly do. The first approach is they
+[05:07] simply read the output from the AI. They
+[05:09] do somewhat of a vibe check and say,
+[05:11] "Okay, it's it's kind of okay. It's good
+[05:12] enough, so I'm going to move on."
+[05:13] They're kind of eyeballing the output.
+[05:15] That's not great because it's not
+[05:16] systematic. The other approach is they
+[05:19] try to test it. They open up a new
+[05:20] conversation. They call that skill or
+[05:22] system prompt with the same input they
+[05:24] built it with. This is also a very bad
+[05:26] approach because if you use the same
+[05:28] example you built the skill with to test
+[05:29] it on,
+[05:30] there's a good chance the AI saved some
+[05:32] of that nuance into its native memory.
+[05:34] So, it's likely going to give you back
+[05:36] something perfect, but if you try it on
+[05:37] a different example, it might not
+[05:39] necessarily meet your standards. So, we
+[05:40] can't test it on the same thing we built
+[05:42] it with. And that's where the next
+[05:44] approach comes into play. And this is
+[05:45] how I recommend all my clients test
+[05:47] their skills and system prompts,
+[05:48] especially those that are critical
+[05:50] either there's an important task or
+[05:51] something you do a lot. And when doing
+[05:53] this testing approach, we need to create
+[05:55] two piles of examples. One pile is going
+[05:58] to be your build pile. So, this is the
+[05:59] pile of examples you use to build the
+[06:01] actual skill or system prompt. The other
+[06:03] pile is your test pile. This is where
+[06:05] you're testing the AI's quality without
+[06:07] it cheating. So, you need to make sure
+[06:08] it doesn't see this test pile at all
+[06:10] when it's going through the building
+[06:10] phase. You need to hide this away from
+[06:12] it. So, start with the building process.
+[06:13] So, the building pile when you're
+[06:15] building the skill, you have the input
+[06:17] data and the output data. So, when
+[06:18] you're building any type of system
+[06:19] prompt or skill,
+[06:21] no matter what the task is, the AI is
+[06:22] going to take in some data and it's
+[06:24] going to give you back something. Either
+[06:25] it's going to give you back some
+[06:26] insights, a decision, an output format
+[06:28] of a report or a report, a presentation,
+[06:30] whatever else. The AI needs to see both
+[06:32] of these in the build phase. It needs to
+[06:34] see both what you look at and also what
+[06:36] you then produced. Because by seeing
+[06:38] both of these, it can meet your
+[06:39] standards and your quality expectations.
+[06:41] That's the first phase. The second phase
+[06:43] of this when we actually start testing
+[06:44] it, is we're only going to give the AI
+[06:46] the input.
+[06:48] Because we're assuming there is no
+[06:49] output because the AI is going to create
+[06:50] it for you. So, we give it just the
+[06:52] input, have the AI run the skill, it
+[06:54] then gives us the output. Now, it's
+[06:56] important that we test this on things
+[06:57] we've already done manually. So, we can
+[06:59] then compare the AI's output versus our
+[07:01] output and determine how close the AI is
+[07:03] to our standard for that specific
+[07:05] example. So, once it gives us the
+[07:06] output, we then compare the two. Now,
+[07:08] this is where again a lot of people fall
+[07:10] short. When we're doing the comparison
+[07:12] between the AI's output and our output,
+[07:14] it needs to be objective and the
+[07:15] criteria we're evaluating the AI on
+[07:17] needs to be binary. Now, brings us to
+[07:19] the next slide, which is creating that
+[07:21] criteria. And the AI luckily can help us
+[07:23] with this process. So, this prompt is
+[07:25] something you're going to copy and paste
+[07:26] and use yourself. You're going to use
+[07:27] this prompt after you've created the
+[07:29] skill. So, you've created the skill,
+[07:30] then you need to have the criteria to
+[07:32] embed in that skill. So, this is going
+[07:34] to be a fresh conversation you start
+[07:35] with the AI. And in this prompt, we're
+[07:37] simply telling the AI, "I want you to
+[07:39] create a checklist that tells me if my
+[07:41] draft of proposal is good." So, in this
+[07:43] case, you're going to swap this out for
+[07:44] whatever task you're doing. So, I'm
+[07:46] doing it on a draft of proposal. You
+[07:47] could be doing it on something else.
+[07:49] After this, we then give the AI three
+[07:51] samples. So, I'm saying, "Here are three
+[07:52] samples of different proposals I've
+[07:54] written and have one effectively."
+[07:56] Again, this is going to be three samples
+[07:57] of whatever you're applying this to.
+[07:58] After that, we then say then here's the
+[08:00] skill that's going to draft new
+[08:02] proposals in the future. So, the AI has
+[08:03] access to the skill and also the three
+[08:05] samples you've written yourself that are
+[08:06] good. It's going to look at both of
+[08:08] these. It's going to look at the
+[08:09] proposals first. And when it looks at
+[08:10] the proposals, it's going to
+[08:12] systematically review them and figure
+[08:14] out what makes these good. After it's
+[08:15] determined what makes these proposals
+[08:17] good, it's going to distill that down
+[08:19] into ideally a list of seven to 10
+[08:22] questions that are binary. So, there's a
+[08:24] yes-no answer to it. And it has to be
+[08:26] binary. Reason being is that we're going
+[08:28] to have the AI grade its own work
+[08:30] as it writes a proposal for you. We'll
+[08:32] come to that later on. And that's really
+[08:33] all this prompt is doing. So, once you
+[08:35] have your criteria back, it ideally
+[08:37] looks something like this. So, these are
+[08:39] binary questions that are related to the
+[08:41] proposal example we're walking through.
+[08:42] So, here you can see we're stating in
+[08:44] the first question that does the
+[08:45] proposal start with the client problem?
+[08:47] Yes, no. After that, we ask, "Is the
+[08:49] price in the first page?" And then, "Is
+[08:51] the proposal under two pages?"
+[08:52] Every single one of these questions are
+[08:54] binary. Yes, no, pass, fail. Once we
+[08:56] have our criteria back and we're happy
+[08:58] with them, we then want the AI to embed
+[09:00] those criteria into the skill. And I'm
+[09:02] actually going to give you a prompt that
+[09:03] does that for you. But first, I'm going
+[09:05] to say there's a very specific way we
+[09:07] want it to embed it into the skill and
+[09:08] use it. And that's what this visual
+[09:10] represents. So, let's say that we've
+[09:11] created a skill that writes a proposal
+[09:13] for us. So, the parent AI, so the AI
+[09:15] we're interacting with, is going to
+[09:17] write the proposal. After it's written
+[09:18] the proposal, it's going to spawn or
+[09:20] create a sub agent or a baby AI. That
+[09:23] baby AI is going to act as a grader.
+[09:25] It's going to grade its own work against
+[09:27] the criteria we just created. The reason
+[09:29] that we're going through the process of
+[09:30] creating a sub agent instead of having
+[09:32] the parent AI judge its own work is that
+[09:34] if we had the parent AI judge its own
+[09:35] work, it's biased towards that. So, it's
+[09:37] likely going to say, "Yes, everything is
+[09:39] passed because I'm amazing." We don't
+[09:41] want that. We don't want the AI to be
+[09:42] biased. So, by having the AI spawn a
+[09:44] sub-agent or a baby AI, that new AI has
+[09:47] its own context window and it has less
+[09:49] bias towards the output. So, it then
+[09:51] does the grading against the checklist
+[09:53] and it provides the parent AI back a
+[09:55] report of its findings. After it's got
+[09:57] the report, then that parent AI sends
+[09:58] back the final report as well as a
+[10:00] drafted proposal. Now, let me show you a
+[10:01] simple prompt that you can copy and
+[10:03] paste that does this for us. So, this is
+[10:05] the prompt that we're going to add to
+[10:06] the AI once we have our criteria and our
+[10:08] skill. It's a very simple prompt. All
+[10:11] we're saying is I want you to create a
+[10:12] grading step inside of our existing
+[10:14] skill that we've already created. Within
+[10:15] this grading step, after the skill
+[10:17] writes the proposal, so this is again my
+[10:19] use case, so you'll change this to
+[10:20] whatever you're using it for.
+[10:22] I want you to create a separate
+[10:23] sub-agent that acts as a grader. It's
+[10:25] going to grade this with fresh eyes,
+[10:27] looking only through the finished
+[10:28] proposal as well as the yes-no checklist
+[10:31] that we provide to you. I want you to
+[10:32] then provide back a report of your
+[10:34] findings that shows each question, the
+[10:36] answer of yes-no, did it pass or not,
+[10:38] and then if it didn't pass, I want you
+[10:40] to give a one-line reasoning or proof as
+[10:42] to why it didn't. And this is going to
+[10:44] be really important here. So, this
+[10:45] specific segment here of getting the
+[10:47] reason as to why it didn't pass is going
+[10:49] to help us kick off the next step of
+[10:50] this process, which is the loop, and
+[10:52] that's improving the skill over time to
+[10:54] get as close to our quality as possible.
+[10:56] And that's all this prompt does. And
+[10:58] that leads us to the next phase, which
+[10:59] is the loop. So, right now we have our
+[11:01] skill created with a criteria inside of
+[11:03] it, and we've added the additional
+[11:04] instruction so the AI grades its own
+[11:06] work with a sub-agent. Now, once it's
+[11:08] graded the work and it's given us the
+[11:09] output back, we need to see did it check
+[11:12] off all the boxes, yes, or are there
+[11:13] some no's? If there are some no's, we
+[11:15] need to improve the skill. And this is
+[11:17] the prompt that's going to help you do
+[11:18] that. So, once you have your output,
+[11:20] you're going to copy and paste this
+[11:21] prompt into that same thread that you
+[11:22] got the grade the report out with as
+[11:24] well as the proposal. So, what we do
+[11:26] here is we give the AI our written
+[11:28] proposal that we wrote. So, this again,
+[11:30] this is for the blind test. So, we
+[11:31] ideally have a sample of proposals we've
+[11:33] written in the past and we're testing
+[11:35] the AI's capability of writing that same
+[11:36] proposal with the same inputs. So, we're
+[11:38] saying, "Here's the proposal that the
+[11:40] skill wrote." The AI already has access
+[11:41] to this. We then give it the proposal
+[11:43] that we wrote manually ourselves. So,
+[11:44] this is new information for it. As well
+[11:46] as the checklist of questions that
+[11:48] failed, which again, this is the AI
+[11:49] already has this in the conversation.
+[11:50] So, we're we're saying, "Here are the
+[11:52] three things. You have the proposal the
+[11:53] AI wrote, the proposal I wrote, and the
+[11:55] associated checklist of knows of where
+[11:57] the AI failed."
+[11:59] Now, we're asking the AI, "I want you to
+[12:00] methodically look at the specific skill
+[12:02] instructions
+[12:03] and figure out exactly where the skill
+[12:05] failed us
+[12:07] and why the AI didn't get close enough
+[12:08] to our specific standards for this type
+[12:10] of proposal. Once you've identified the
+[12:12] areas where it's failed, I want you to
+[12:14] make the smallest possible changes to
+[12:16] the skill to fix this systematic issue
+[12:18] that's likely going to repeat for future
+[12:20] proposals, not just this one. Then,
+[12:21] after you've made that tiny change, you
+[12:23] then show me exactly what you changed.
+[12:25] Now, a few things here. The reason that
+[12:27] we're saying I want you to make the
+[12:28] smallest possible change goes back to
+[12:30] point that I made previously. AI tends
+[12:31] to be very wordy. We don't want it to
+[12:33] bloat our skill with these changes. So,
+[12:34] we need to make sure that the change is
+[12:36] targeted and minimal. In addition to
+[12:37] that, we want the AI to tell us exactly
+[12:39] what it changed so we're aware of the
+[12:40] improvements. And if it made a change
+[12:41] that we disagree with, we can have it
+[12:43] revert that. And this is the process.
+[12:45] So, you've created the skill. You then
+[12:47] tested it with blind data sets and then
+[12:49] you ran that loop continuously. You're
+[12:50] likely going to have to do this multiple
+[12:51] times until the AI meets your standards.
+[12:53] But, even after AI has met your
+[12:54] standards and it's working continuously
+[12:56] at the expectations you have, there's a
+[12:58] few reasons as to why you might want to
+[12:59] run this process again.
+[13:01] And that's what this represents. So,
+[13:02] over time, new models get released. And
+[13:05] every time a new model gets released,
+[13:07] you want to test that new model on your
+[13:08] specific process to see if it gets in
+[13:10] better or worse. And if it does it
+[13:12] worse, what's likely happening here is
+[13:14] that there's too much of a prompt around
+[13:15] the smart AI. You need to whittle that
+[13:17] prompt down. This is something I've
+[13:18] talked about in many other videos in the
+[13:20] past, but the TLDR here is that when you
+[13:22] have a really intelligent model that
+[13:24] gets released and you have a huge prompt
+[13:25] for older, dumber model, that huge
+[13:27] prompt usually acts as constraints on
+[13:29] the AI holding it back from its true
+[13:31] power. So you sometimes have to revisit
+[13:33] these. Another reason you would revisit
+[13:34] this process is that your standards may
+[13:37] change for that process. Maybe they've
+[13:38] risen and gotten even higher. And if
+[13:40] that's the case, you need to update your
+[13:41] process running the loop and improving
+[13:43] the skill as well as the associated
+[13:44] criteria so the AI can get better as
+[13:46] well. So let's do a quick recap of the
+[13:48] most important things we talked about,
+[13:49] specifically three things. First, when
+[13:51] you're using AI, don't simply use it,
+[13:53] train it like you would train an
+[13:54] employee. And we've already walked
+[13:55] through the process of how to do that.
+[13:57] One of the key parts of that process is
+[13:59] proving that the skill or system prompt
+[14:01] is good on your use case. And the only
+[14:03] way you can do that is through blind
+[14:04] testing. So you test it on a data set
+[14:06] that is not seen and you only give it
+[14:08] the inputs and then compare it against
+[14:09] your previous outputs to see how close
+[14:11] it is. And then over time, after you
+[14:12] have your evaluation criteria that are
+[14:14] binary, you'll run that loop
+[14:15] continuously. And every time that a AI
+[14:17] comes out and it has a series of no's
+[14:19] instead of yes's, those are the areas
+[14:21] that you can improve. That's the
+[14:23] targeted fix you can make. And that's
+[14:24] where the loop kicks off. That's how you
+[14:26] improve the skill in the system prompt.
+[14:27] And that's it. So as a reminder, two
+[14:29] things. First off, below is a 30-day AI
+[14:32] insight series, completely free. You'll
+[14:34] get 30 insights in your inbox as how you
+[14:36] can apply AI to your business and your
+[14:38] work. The second thing is if you'd like
+[14:40] to work with me, below are a series of
+[14:41] offerings to see if there's a good fit
+[14:43] for the two of us. Okay, so before you
+[14:45] go, it's important to pick the right
+[14:47] skill before you train it. This loop
+[14:49] only pays off when the skill already
+[14:51] fits your work. A skill you build
+[14:54] carries your context. A downloaded skill
+[14:56] somebody else built doesn't.
+[14:59] So the first call you have to make with
+[15:00] any skill is knowing if you're going to
+[15:02] build, borrow, or clone it. I'll walk
+[15:05] you through all three right here in this
+[15:06] video. Go ahead and give it a click.
+[15:07] I'll see you next time, internet.

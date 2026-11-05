@@ -1,0 +1,436 @@
+[00:03] Every morning about an hour before I sit
+[00:05] down to work, this shows up. A full
+[00:08] breakdown of everything I need to know,
+[00:10] what happened in my inbox overnight,
+[00:11] what I sent yesterday that still needs a
+[00:13] response, what's urgent, what's on my
+[00:15] calendar, my active projects with next
+[00:18] steps, and my favorite part, a list of
+[00:20] suggestions. Things I forgot about,
+[00:23] things I don't even think to do.
+[00:25] Each one with a checkbox and a reason
+[00:27] why it matters, fresh every single
+[00:29] morning. I didn't write any of this,
+[00:31] Claude did, automatically and on a
+[00:34] schedule. My name's Dave, I run a motion
+[00:36] design studio called Nexus Motion, and
+[00:38] this is the single most useful thing
+[00:40] I've built with AI so far. In this
+[00:42] video, I'm going to show you the exact
+[00:43] prompt that makes this work, break down
+[00:45] why every section is there, and show you
+[00:47] how to set it up as a scheduled task
+[00:49] that runs before you wake up. I'm also
+[00:51] going to show you how to expand beyond
+[00:53] just email, because once you start
+[00:55] pulling from your project files, your
+[00:56] to-do lists, and even tools like Notion,
+[00:59] the brief goes from useful to
+[01:01] indispensable. So, let's build it. Now,
+[01:03] in my previous videos, you saw that we
+[01:05] set up some connectors. So, for this,
+[01:07] you want to first make sure that you
+[01:09] have your Gmail at least connected, and
+[01:13] then maybe your Google Calendar and your
+[01:15] Google Drive inside your connectors
+[01:17] here. So, if you haven't done that, go
+[01:19] watch my video on how to set that up, or
+[01:21] just walk through it yourself. You might
+[01:23] be able to just do it on your own
+[01:24] without having to have a walk-through.
+[01:26] So, what we're going to do here is set
+[01:27] up our first scheduled task. So, right
+[01:31] here on my left side panel, I've got
+[01:33] scheduled. You can see I don't have
+[01:34] anything in here yet. Now, it's
+[01:36] important that you click this keep awake
+[01:39] button, uh just to if you're using Coda,
+[01:42] just to make sure it keeps your computer
+[01:43] awake if you want these scheduled tasks
+[01:45] to run overnight, say, you know, or
+[01:47] something. If not, you can uh just do it
+[01:50] the next time that you've got it open.
+[01:51] You can run these manually, and I'll
+[01:53] show you how to do that as well.
+[01:55] So, I'm going to click here on new task,
+[01:57] and I'm going to say set up manually cuz
+[01:59] I kind of have a prompt already that I'd
+[02:01] like to put in here and I'm going to
+[02:02] walk you through it. So, I'm going to
+[02:03] give it a name. I'm going to call this
+[02:06] my daily briefing. I can get it a
+[02:08] description if I want. I'm just going to
+[02:11] call it daily briefing. Now, down here
+[02:14] I'm going to tell it to work in a
+[02:15] project. I'm going to tell this one to
+[02:17] use my demo vault and I'm going to give
+[02:21] it permission. Now, this could be your
+[02:23] folder for your particular set of
+[02:25] projects or your business or whatever
+[02:28] you're working on. I'm just selecting
+[02:29] that one cuz this is the demo vault that
+[02:32] I've been using along with the Obsidian.
+[02:34] The next thing we'll do down here is
+[02:36] we'll look at frequency. I'm going to
+[02:38] tell this to do this daily at 8:00 a.m.
+[02:41] Now, sometimes it might be better to do
+[02:42] it a little bit before that because if
+[02:45] you do it super early in the morning, it
+[02:47] apparently uses less credits. I don't
+[02:50] know about that, but I have it run at
+[02:52] 8:00 a.m. because when I sit down at my
+[02:54] desk at 9:00, I've got everything
+[02:55] processed and ready to go. So, I'm going
+[02:57] to paste in this prompt right here and
+[02:59] it's a rather long prompt. So, I'm going
+[03:02] to pull it up on the screen and we're
+[03:03] going to walk through it step-by-step.
+[03:05] So, we're going to start with data
+[03:06] sources in order.
+[03:07] The first thing that the prompt does is
+[03:09] tell Claude what to read and in what
+[03:11] order. Inbox first, then sent mail, then
+[03:14] calendar. The order matters because the
+[03:16] inbox gives Claude the raw context and
+[03:19] then the sent mail lets it
+[03:21] cross-reference what you've already
+[03:22] handled. So, if you flip the order,
+[03:25] Claude doesn't have the inbox context
+[03:27] when it reads your replies, if that
+[03:29] makes sense.
+[03:30] So, why it matters is because
+[03:33] within reading the sent mail, the brief
+[03:35] will flag threads like needs a reply
+[03:38] when you already replied. This was the
+[03:40] single biggest problem with the early
+[03:41] version of this brief for me. Then you
+[03:43] have the Gmail pagination rule and it
+[03:48] says critical here in parentheses.
+[03:51] This one took me a while to figure out
+[03:52] because when Claude searches your Gmail,
+[03:54] it doesn't get all the results at once.
+[03:56] It gets a page of results, like maybe 20
+[03:58] or 30 threads, and then a token to fetch
+[04:01] the next page. So, if you don't tell it
+[04:03] to keep going until there are no more
+[04:05] pages, it stops after page one. And if
+[04:08] you got 60 emails in the last 4 hours,
+[04:11] I'm sorry, in the last 48 hours, you
+[04:13] just missed half of them. So, a busy day
+[04:15] can generate 50 plus threads in a
+[04:17] 48-hour window, and missing half your
+[04:19] email makes the brief pretty much
+[04:21] useless. Now, we've got the full thread
+[04:23] fetch rule, which we also have critical
+[04:25] here in parentheses. Now, here's
+[04:27] something most people don't realize
+[04:29] about Gmail search results. The preview
+[04:31] snippet you get back is usually from the
+[04:33] first few messages in the thread and not
+[04:36] the most recent one. So, if a client
+[04:39] replied last night, but the thread
+[04:41] started 2 weeks ago, the search results
+[04:43] might show you the original message, but
+[04:44] not the reply. So, the prompt tells
+[04:46] Claude to pull the full thread for
+[04:48] anything that matters, like client
+[04:49] projects, active deals, partnerships.
+[04:52] And that way it's reading the latest
+[04:54] message and not just the preview. So,
+[04:56] without this, the brief sites outdated
+[04:58] information, and it might say a client
+[05:00] hasn't responded when they actually
+[05:02] responded last night. Or it might think
+[05:04] that you hadn't responded to something.
+[05:06] Then we have the sent mail
+[05:08] cross-reference, speaking of which. This
+[05:10] is the most important rule in the entire
+[05:12] prompt. Before Claude flags anything as
+[05:14] unanswered or needs a reply, it checks
+[05:16] whether that you were the last person
+[05:18] that responded. If you already replied,
+[05:21] it doesn't flag it. Now, this sounds
+[05:23] obvious, but without this rule, your
+[05:24] brief is just a guilt trip, and it's
+[05:26] just telling you that you haven't
+[05:28] responded to things that you already
+[05:30] responded to. And that kind of makes you
+[05:32] stop trusting it. If the brief gives you
+[05:34] false flags even once, you really stop
+[05:36] reading it, uh or you'll you'll get
+[05:38] tired of dealing with it. And the
+[05:39] cross-reference is what makes the need a
+[05:41] reply section reliable. All right, then
+[05:44] we have this output format right here,
+[05:46] and this is how it's going to output it.
+[05:47] For me, it's going to go to an MD file
+[05:50] in Obsidian,
+[05:51] um but it could just put this inside the
+[05:54] active thread for that schedule task for
+[05:57] the day, and you could read it that way
+[05:58] if you want. The output format is broken
+[06:00] into seven sections, and each one exists
+[06:02] for a specific reason. You've got the
+[06:05] executive summary, which is one or two
+[06:07] sentences. You glance at it, maybe on
+[06:10] your phone or something before you even
+[06:11] sit down, maybe just something quick in
+[06:13] the morning. It comes up with today's
+[06:15] plan, which is calendar events first,
+[06:17] you like your locked commitments, and
+[06:19] your action items, four to six bullets
+[06:21] max. And if it's longer than that, it's
+[06:23] a to-do list, not a plan.
+[06:25] Then you have the urgent section, act
+[06:27] today, things that need to happen right
+[06:29] away, context
+[06:31] uh context plus a link to the Gmail
+[06:34] thread is in there so that you can uh
+[06:37] click straight to it if you need to. And
+[06:39] then you have needs a reply, which is
+[06:41] only threads where you received the last
+[06:43] message, and you haven't responded. So,
+[06:46] it's verified against the sent email.
+[06:49] Then you've got active projects here,
+[06:51] which are things in motion but waiting
+[06:53] on someone else, or if it's unclear what
+[06:56] the next move is. And this prevents
+[06:58] what's happening with that project
+[06:59] anxiety. So, it kind of like verifies
+[07:02] for you.
+[07:03] Um already in your system is a noise
+[07:07] filter. It's like payment receipts,
+[07:09] newsletters, tracking notifications,
+[07:12] renewals, things like that. You want to
+[07:14] see an acknowledge, uh but not
+[07:16] necessarily that I wondered like if you
+[07:19] missed something, but they're not action
+[07:21] items per se. And then you've got
+[07:23] suggestions, which are three to five
+[07:26] items with check boxes, and each one has
+[07:28] a name and a why comment. The name makes
+[07:31] it referenceable. The why makes it
+[07:33] actionable. You're not staring at a
+[07:35] vague task, you're actually reading a
+[07:37] specific recommendation with a reason.
+[07:40] Now for tone rules, this also has the
+[07:43] critical in parentheses. The tone rules
+[07:45] are the part nobody thinks about, but
+[07:47] they make or break the whole thing
+[07:49] because the brief should be
+[07:51] forward-looking and factual. What is
+[07:53] happening? What action makes sense? It
+[07:55] should not be a guilt trip for you about
+[07:57] things that you didn't get to yesterday.
+[08:00] Uh, you know, no like, "Hey, this has
+[08:02] been pushed off to the next day for like
+[08:04] 10 days. Feel bad about yourself. You
+[08:06] still haven't replied to this."
+[08:08] Um, it's assuming that you're informed
+[08:10] and not forgetful and you might have
+[08:12] handled it outside of the system or
+[08:14] something else might have come up in the
+[08:15] meantime and you didn't get to it. So,
+[08:17] you might have decided that it's not a
+[08:19] priority in that time and the brief
+[08:21] doesn't know and it shouldn't judge. If
+[08:23] the brief makes you feel bad every
+[08:25] morning, you're going to stop reading
+[08:27] it. So, the tone rules are about
+[08:28] sustainability. So, we've got all of
+[08:30] this in here inside of this scheduled
+[08:33] task ready to go.
+[08:34] And I'm going to save it out. And now we
+[08:38] have a daily briefing that's ready to go
+[08:41] every day at 8:00 a.m. Now, if I want to
+[08:43] run this manually, all I have to do is
+[08:45] click right here and say run now. Now,
+[08:48] if you want to set up your own scheduled
+[08:50] task and you don't have all of that
+[08:52] information like I have there, you can
+[08:55] instead go up to new task and say create
+[08:57] with Claude, give it an idea of what you
+[08:59] want to do and it's really good at
+[09:01] setting up a task that is based on those
+[09:04] things that you wrote in that prompt.
+[09:06] So, it's kind of just one more step
+[09:08] that's in there. So, by pasting this
+[09:10] particular prompt, we were able to just
+[09:11] build it direct and we're going to go
+[09:13] ahead and write uh
+[09:15] uh not right-click on it. We're going to
+[09:16] click on the three
+[09:17] uh buttons here and we're going to say
+[09:19] run now. And we're going to see what
+[09:21] happens. So, after the morning brief
+[09:23] runs, you can click inside of it and you
+[09:25] can see all the different times it ran
+[09:27] and if you click on one of those, it
+[09:29] basically opens up a thread where you
+[09:31] can see everything that it did in the
+[09:33] results, usually linking to that file
+[09:36] that has your morning brief in it. Now,
+[09:38] if you have Obsidian connected, it's
+[09:40] going to show up in your Obsidian
+[09:41] automatically. That's where I read mine
+[09:43] every day. But, you're going to want to
+[09:45] go here into your history and click on
+[09:48] it, and then it's going to bring up that
+[09:50] particular day, what happened,
+[09:52] suggestions, and everything, and then a
+[09:54] link to the actual MD file that it made
+[09:57] that had your entire brief listed. So,
+[09:59] I'm going to open up Obsidian to show
+[10:00] you this because it has saved to my
+[10:03] Obsidian Vault, and I have brief right
+[10:05] here, and we're going to walk through it
+[10:07] a little bit. This did everything that
+[10:09] it was supposed to do. It gave me kind
+[10:11] of that quick brief on what today is
+[10:15] going to look like, which is awesome.
+[10:17] Then, I've got today's plan. It's based
+[10:19] this on all of my emails,
+[10:22] what I need to do with my clients, what
+[10:24] is urgent, what has to act today, what
+[10:26] needs the reply.
+[10:28] Active projects going on, nice and
+[10:31] organized here.
+[10:33] What's already in your system? You can
+[10:35] see like a Frame.io notification, Adobe
+[10:37] Cloud renewal, stuff that's like, okay,
+[10:39] it's there, but it's probably not
+[10:41] something that we need to even worry
+[10:42] about. And then, the suggestions from
+[10:44] this brief. Now, look at this one right
+[10:46] here. Ask Rachel to nudge Nina
+[10:48] internally on the animated logo sign-off
+[10:51] instead of emailing Nina directly.
+[10:54] Well, why did it say that, right?
+[10:56] Uh because Nina is hands-off during
+[10:58] production and day four with no response
+[11:01] through normal channels means an
+[11:02] internal nudge from Rachel will land
+[11:04] better than another Dave email. And it
+[11:07] figures all that on its own based on
+[11:09] conversations we've had before or maybe
+[11:11] things that we have in my Obsidian
+[11:13] Vault. And speaking of which, the
+[11:15] version I just showed you pulls from
+[11:17] Gmail and from calendar, which is a good
+[11:19] starting point, and it works on its own,
+[11:21] but you can add more sources depending
+[11:23] on what you want the brief to know
+[11:25] about. In other videos, we've talked
+[11:27] about setting up briefs and plugging in
+[11:30] client uh,
+[11:31] project briefs and budgets and
+[11:33] everything else and transcripts and all
+[11:36] of that into the Obsidian Vault. And if
+[11:39] you set that up for my first video, you
+[11:40] can add your, uh, Vault as context for
+[11:44] this scheduled task. So now the brief
+[11:46] doesn't just know your email, uh, it
+[11:49] knows your project files, it knows your
+[11:51] client notes, it knows your budgets, it
+[11:53] knows your to-do lists, and the
+[11:55] suggestions get way smarter because
+[11:57] Claude can connect a client email to an
+[11:59] actual project timeline and say, "Hey,
+[12:01] this deadline's coming up and you
+[12:03] haven't started the storyboard yet." If
+[12:04] your task management lives in Notion,
+[12:06] you can plug that into it, too. There's
+[12:08] all sorts of sources you could bring in
+[12:09] as MCP's connectors and all of the
+[12:11] things that Claude can access on its own
+[12:14] and say, "Hey, I want you to take this
+[12:16] and also take this into consideration
+[12:18] when you run my morning brief." And the
+[12:20] brief pulls your current sprint items,
+[12:23] it flags things that's overdue, and, uh,
+[12:26] it can go into your Google Drive Docs,
+[12:27] your weekly plans, strategy playbooks,
+[12:31] and the more context the brief has, the
+[12:32] fuller the picture is.
+[12:34] The point is,
+[12:36] you start with Gmail. Get that working.
+[12:39] You add your sources as you as you need
+[12:41] them and as you go and as you're
+[12:43] refining it. You don't have to build the
+[12:45] perfect version of this on day one. The
+[12:47] prompt is a living document. So you
+[12:49] tweak it, you add sections, you remove
+[12:51] things that don't work. Um, I've been
+[12:54] iterating mine for months and it keeps
+[12:56] getting better every time I iterate it.
+[12:57] So again, this prompt isn't set in
+[12:59] stone. The version I'm running today is
+[13:01] not the version I started with. I've
+[13:02] added sections, removed things, and I've
+[13:04] reworded rules.
+[13:06] And every time the brief does something
+[13:07] that I don't like, I update the prompt
+[13:10] and tell it why I didn't like it. And
+[13:11] every morning it gets a little bit
+[13:13] better. So start with this version and
+[13:14] just make it yours. So we built a
+[13:16] scheduled task that runs every morning
+[13:18] before you start working. It scans your
+[13:20] Gmail inbox, cross-references your sent
+[13:22] mail so it doesn't flag things you
+[13:24] already replied to, checks your
+[13:25] calendar, and builds a complete morning
+[13:28] brief.
+[13:29] The prompt is doing the heavy lifting
+[13:30] and every section is there for a reason.
+[13:32] The pagination rule makes sure it reads
+[13:34] all your email and not just the first
+[13:36] page. The sent mail cross-reference
+[13:38] prevents false need to reply flags. The
+[13:41] full thread fetch makes sure that it
+[13:43] reads the most recent messages, not just
+[13:46] the preview snippets. And the tone rules
+[13:48] keep it forward-looking instead of
+[13:50] guilt-tripping you about things that you
+[13:51] didn't get to yesterday.
+[13:53] And the suggestion section is what
+[13:55] really sold me on this. Claude services
+[13:57] things that I completely forgot about.
+[13:59] It connects dots between emails and
+[14:01] projects that I wouldn't have caught on
+[14:03] my own. And each suggestion has a name
+[14:05] and a reason so you're not just staring
+[14:07] at a vague list of tasks.
+[14:09] But here's the thing. The version I
+[14:11] showed you today pulls from Gmail and
+[14:13] calendar. That's a great starting point,
+[14:15] but you can add more.
+[14:17] Connect your Obsidian vault and suddenly
+[14:19] the brief cross-references your email
+[14:21] against your project files, your
+[14:23] budgets, your client to-dos. Plug in
+[14:25] Notion and it pulls your current sprint
+[14:27] items.
+[14:28] The more context it has, the smarter the
+[14:30] suggestions get.
+[14:32] And the prompt itself is a living
+[14:33] document. You can tweak it. You can add
+[14:35] sections. You'll remove things that
+[14:37] didn't work for you. I've been iterating
+[14:39] on mine for months and it really keeps
+[14:41] getting better.
+[14:42] If you haven't set up the Obsidian vault
+[14:44] yet, go watch my first video. And if you
+[14:46] haven't set up the transcription
+[14:47] workflow, watch video number four.
+[14:49] Everything stacks.
+[14:51] In the next video, I'm going to show you
+[14:53] how I built a full health dashboard in
+[14:55] Claude. Meals, workouts, medication
+[14:58] tracking, mood check-ins,
+[15:00] uh macros, all in one place. It's the
+[15:02] most personal thing that I've built with
+[15:04] AI so far. So hit subscribe so that you
+[15:06] don't miss it and I'll see you in the
+[15:07] next one.
+[15:10] Okay, bye.

@@ -1,0 +1,108 @@
+[00:00] In this video, I'm going to show you how
+[00:01] to connect Google Calendar and how you
+[00:03] can also use it. So, the first step is
+[00:06] make sure you are signed in your
+[00:09] Claude.ai account, all right? As you can
+[00:12] see, I'm currently signed. You want to
+[00:13] click on your account, and then you want
+[00:16] to go to settings.
+[00:18] From the settings, you want to navigate
+[00:20] to connectors, and from here, if you
+[00:22] don't see it over here, currently I can
+[00:24] see it over here, but if you don't see
+[00:26] it, just click on the browse connectors,
+[00:28] and it should be somewhere in the top
+[00:30] over here as you can see it is it's
+[00:33] second most popular connector.
+[00:37] So, you can also search for it, and then
+[00:39] click on this plus icon connect, and
+[00:41] this should redirect us to new window
+[00:45] where you want to choose your Google
+[00:46] Calendar account, all right?
+[00:48] I'm going to select my account, then
+[00:50] continue.
+[00:52] And now you want to select the
+[00:54] permissions which you want to allow.
+[00:57] So, view events on your calendars, see
+[01:00] and download any calendar you can access
+[01:02] using your Google Calendar,
+[01:04] and etc. Then you want to click on
+[01:06] continue.
+[01:08] And now this should create this
+[01:11] connection between Google Calendar and
+[01:13] Claude AI. So, you can see the configure
+[01:15] button over here.
+[01:17] And from here, you can still manage your
+[01:20] access, so you can choose whatever you
+[01:22] want. So, you can let's say allow create
+[01:25] calendar event.
+[01:27] So, let's say I'm going to turn this on,
+[01:28] and we can also try to create a calendar
+[01:30] event, and I'm going to open chats new
+[01:34] chat.
+[01:35] And now you have this option from
+[01:37] calendar. You have this small icon here.
+[01:39] If you click on it, it's going to show
+[01:40] you some
+[01:42] example prompts how we can use this
+[01:43] calendar in Claude. So, firstly, you can
+[01:46] let's say identify how my calendar
+[01:48] habits reflects my personal priorities.
+[01:51] Or you have, let's say,
+[01:55] analyze my calendar for meeting
+[01:57] optimization. So, I'm going to let's say
+[01:59] go with this, and it automatically also
+[02:02] created the prompt, so you don't have to
+[02:03] do anything.
+[02:05] And now it should pull the data from our
+[02:07] calendar, and you can see all of the
+[02:10] details which Claude found in my Google
+[02:13] Calendar. So, you can see, let's say it
+[02:15] found three meeting this week. So, I
+[02:17] have one Google meeting, I have one Zoom
+[02:19] meeting, and one other meeting.
+[02:23] And then I have some activity like
+[02:26] biking here. So, you can see 75%
+[02:30] of the next 12 days
+[02:32] are completely unblocked. And now we can
+[02:35] see the main thing which is
+[02:36] optimization, and meetings lack
+[02:39] structure. So, all three meetings are
+[02:41] all day events with no time, location.
+[02:44] So, I just created those meetings as an
+[02:46] example, so it can
+[02:47] find something at least, all right? So,
+[02:52] it's just as an example.
+[02:54] And you can
+[02:55] read through this, and you have also
+[02:58] some quick actions, so you can fix all
+[03:00] day events. If I click on this, help me
+[03:02] turn my all day meetings into properly
+[03:04] timed calendar events with the
+[03:06] durations.
+[03:08] And it should ask us some questions. How
+[03:11] long should each meeting typically be?
+[03:13] So, let's say I'll choose 1 hour.
+[03:16] I'm going to go with the morning.
+[03:19] And now it's going to update the times
+[03:21] of those three meetings. So, I don't
+[03:24] have this permission allowed, so I'm
+[03:26] going to allow this.
+[03:30] And then we can check our Google
+[03:31] Calendar if it is if it is working. All
+[03:34] three done.
+[03:35] So, Google Meet should be between 9:00
+[03:38] a.m. to 10:00 a.m., and basically the
+[03:41] same time is for all of all of the
+[03:43] three, but they are in different days.
+[03:44] So, let's check the check it. And yes,
+[03:47] as you can see, the time is set already.
+[03:50] I can see it. It's 9:00 a.m. to 10:00
+[03:52] a.m. So,
+[03:54] this was quick video how you can connect
+[03:56] your Google Calendar, how you can use
+[03:58] it. This was just one quick example. You
+[04:00] can use it with many different options,
+[04:03] and if you found this video helpful,
+[04:04] consider subscribing for more tutorials
+[04:06] like this one.

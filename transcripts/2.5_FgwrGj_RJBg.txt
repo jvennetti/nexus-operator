@@ -1,0 +1,73 @@
+[00:01] Welcome to Tech Brothers IT. In this
+[00:04] video, we are going to look at
+[00:06] artifacts, the things Claude makes for
+[00:08] you, like documents, slide decks,
+[00:10] designs, and small apps.
+[00:12] We will see what an artifact is, the
+[00:14] different types, three ways to create
+[00:16] one, how to edit it, and where to find
+[00:18] them all later.
+[00:22] First, what is an artifact?
+[00:24] >> [music]
+[00:25] >> An artifact is content Claude makes for
+[00:27] you that you would keep or share with
+[00:29] someone. A document, a slide deck, a
+[00:31] design, a dashboard, or a small
+[00:33] interactive tool.
+[00:35] It opens right beside your conversation,
+[00:38] so you can see it, edit it, and come
+[00:39] back to it later.
+[00:43] Artifacts come in types made for common
+[00:45] kinds of work.
+[00:47] Docs for documents you write with Claude
+[00:50] and your team, slides for presentations,
+[00:53] and design for visuals, markups, and
+[00:55] landing pages.
+[00:57] There are also newer types in beta, like
+[00:59] dashboards built from your data, and
+[01:01] motion for short animations on Team and
+[01:04] Enterprise.
+[01:05] We have a separate video on each of the
+[01:07] main types later in this series.
+[01:11] Step one, create an artifact. There are
+[01:15] three ways.
+[01:16] >> [music]
+[01:17] >> One, just ask for it in any chat. For
+[01:20] example, make a one-page summary of our
+[01:23] Q3 results as a document. Two, click
+[01:27] output in the message box and choose a
+[01:29] template. Three, open the artifacts tab
+[01:32] in the sidebar and pick a template
+[01:34] there.
+[01:37] Step two, edit it.
+[01:39] >> [music]
+[01:40] >> You can ask Claude to make changes in
+[01:42] the chat, or edit it directly. Type in a
+[01:45] document, change a slide, or move things
+[01:47] around on a design.
+[01:49] In a document, you can also highlight
+[01:51] some text, click edit with Claude, and
+[01:53] describe the change. The artifact
+[01:55] updates live.
+[01:59] A step three, find, share, and export.
+[02:03] Everything you make is saved in the
+[02:05] artifacts tab in the sidebar. Artifacts
+[02:08] start private to you until you share
+[02:10] them.
+[02:10] And you can export them. Documents to
+[02:13] Word or PDF, slides to PowerPoint or
+[02:16] PDF, and designs to PDF or HTML.
+[02:20] One setting to check. Artifacts need
+[02:23] cloud code execution and file creation
+[02:26] to be switched on in settings
+[02:28] capabilities.
+[02:31] So, that is artifacts. Ask for one, use
+[02:34] the output button, or start from the
+[02:36] artifacts tab. Then edit it, share it,
+[02:39] and export it.
+[02:40] >> [music]
+[02:40] >> In the next video, we create our first
+[02:43] document with Cloud Docs.
+[02:45] >> [music]
+[02:45] >> Please subscribe, and I will see you in
+[02:47] the next one.
