@@ -1,0 +1,86 @@
+[00:00] Here's my favorite metaphor
+[00:01] to help UX professionals apply generative AI tools
+[00:05] to their design and research work.
+[00:07] Think about working with AI tools like you'd work with an intern.
+[00:11] In our field, we sometimes use
+[00:13] a persona to represent a group of people as an imaginary individual.
+[00:18] Let's do that for AI in a UX context.
+[00:21] Meet Ari, your new AI-based UX intern.
+[00:26] Ari represents the current crop
+[00:28] of generative AI tools like ChatGPT, Clod, and Gemini.
+[00:33] For best results,
+[00:34] we need to give Ari clear guidance and oversight.
+[00:38] By setting appropriate expectations and following best practices,
+[00:41] you can benefit from Ari's potential while avoiding pitfalls.
+[00:45] Our imaginary AI intern is incredibly smart.
+[00:49] On paper, they're way overqualified to be an intern.
+[00:52] They have vast knowledge spanning just about every discipline,
+[00:56] so if you want a lecture on Gestalt principles,
+[00:59] color theory, or the history of wireframes,
+[01:02] Ari's got you covered because Ari knows
+[01:04] a lot about a lot of things.
+[01:07] Plus, they're extremely efficient
+[01:09] and able to complete complex tasks in seconds,
+[01:13] but book smarts and speed don't always equal UX skills.
+[01:17] Let's talk about Ari's limitations.
+[01:20] Ari lacks true empathy and emotional intelligence.
+[01:24] They can sometimes miss context
+[01:26] and nuance that humans pick up on intuitively.
+[01:30] They can't tell if the information that they're giving you is accurate
+[01:33] or just plausible sounding fluff.
+[01:36] While Ari is a prodigy at ingesting and synthesizing information,
+[01:41] they still need lots of human guidance
+[01:43] to apply that knowledge effectively.
+[01:47] Keep that dynamic in mind as we look at how to work with Ari.
+[01:51] First, know that you can ask Ari for advice and guidance,
+[01:55] but you shouldn't accept any information
+[01:57] that you can't verify or recognize as true.
+[02:00] Remember, Ari is your intern, not your mentor.
+[02:04] If you're new to UX, be aware that it'll be harder
+[02:08] for you to catch Ari's mistakes and incorrect advice.
+[02:12] For example, you can ask Ari to conduct
+[02:14] a design review of an interface,
+[02:16] but set your expectations appropriately.
+[02:19] Know that Ari will miss some issues, misinterpret elements,
+[02:23] and propose some fairly obvious changes.
+[02:26] Ari works best with specific, detailed instructions.
+[02:29] Like many interns, Ari needs focused projects
+[02:32] and does best with clear step-by-step directions.
+[02:35] Don't give Ari a big open-ended project
+[02:38] without any guidance.
+[02:40] For example, don't ask Ari to generate
+[02:42] an entire research plan for you.
+[02:44] Instead, walk Ari through each step of building a research plan,
+[02:48] generating the research questions, determining the method,
+[02:51] filling in screener templates, things like that.
+[02:55] Like most interns or new employees,
+[02:57] Ari probably doesn't have much context
+[02:59] for your organization and its goals.
+[03:02] To get good results, you need to share the relevant details about
+[03:05] the organization, business goals, and research needs.
+[03:09] Finally, it's important to note that while Ari can help
+[03:12] with a lot of UX work,
+[03:15] Ari isn't well-suited to every project or need.
+[03:18] If you've managed an intern in the past,
+[03:21] you may have encountered situations where you spent
+[03:23] more time helping them
+[03:25] than you would have if you'd just done
+[03:26] the task by yourself.
+[03:28] That can happen often with Ari.
+[03:30] The amount of context, instructions,
+[03:32] and double-checking that they'll need may not always be worthwhile.
+[03:36] Hopefully that's a helpful metaphor as you decide
+[03:39] how to integrate AI into your UX practice.
+[03:42] To summarize, when working with AI tools to assist
+[03:45] in your research and design work,
+[03:47] remember to always double-check the AI's work,
+[03:50] think of AI tools as an intern, not a mentor,
+[03:54] and provide ample context
+[03:56] and specific instructions for best results.
+[03:59] Thanks for watching
+[04:01] If you want to see more of our UX videos,
+[04:04] take a look at these over here  and consider subscribing to our channel.
+[04:08] On our website, nngroup.com, you can access
+[04:11] our free library of over 2,000 articles.
+[04:16] You can also register for one of our virtual UX courses
+[04:19] that offer live hands-on UX training.

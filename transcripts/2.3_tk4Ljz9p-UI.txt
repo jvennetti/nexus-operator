@@ -1,0 +1,145 @@
+[00:00] There is one short sentence I add to the
+[00:03] end of almost all of my prompts that
+[00:06] helps me save time and produce so much
+[00:09] better results. Whether I'm using chat
+[00:11] GPT, Claude, Gemini, or some other AI
+[00:14] tool, I use this additional sentence
+[00:17] probably 50 times a day. That's how
+[00:20] powerful it is, and I want to share it
+[00:22] with you. First, I want to show you the
+[00:25] output without adding this special line
+[00:29] of text. In this example here in Gemini,
+[00:32] I want to produce a fairly simple
+[00:35] illustrated image of a messy lawn on the
+[00:38] left-hand side compared to an immaculate
+[00:42] or perfect-looking grassy lawn on the
+[00:45] right-hand side. I'm proposing that
+[00:46] perhaps I'm a landscaping service, and I
+[00:49] want to produce something like this for
+[00:51] my marketing or for my social media.
+[00:54] Now, I'm not going to add my special
+[00:56] additional piece of text. Let's see what
+[00:59] it produces. Now, I never doubted that
+[01:02] Gemini couldn't produce what I asked it
+[01:04] to. You could say that it hit it out of
+[01:07] the ballpark. It did exactly what I
+[01:09] wanted it to. However, I'm not really
+[01:12] happy with these results because no
+[01:14] matter what you ask AI, whether it's an
+[01:17] image or whether it's text-based, which
+[01:20] is probably more common for you and I,
+[01:22] we have a vision of what we want, what
+[01:25] we would like the output to be. And
+[01:28] often we don't want to waste so much
+[01:30] time writing out an incredibly lengthy
+[01:33] prompt. We just want to get to the end
+[01:36] results. Well, that's the beauty of this
+[01:38] special line of text, which I add to
+[01:41] almost all of my prompts. So, in
+[01:44] comparison, we're going to take this
+[01:45] exact same prompt. I'm going to copy it,
+[01:48] but we're going to start a new chat.
+[01:51] We're not going to continue that chat.
+[01:52] We're going to go back and start with
+[01:54] this exact same set of instructions, but
+[01:56] here comes my special line of text. And
+[01:59] to make it easier, I've added it to my
+[02:02] text expansion tool, so I can add it
+[02:04] with just a few keystrokes. So, my
+[02:08] special line of text is the following:
+[02:11] Ask me three to five clarifying
+[02:14] questions so you are 99% certain of what
+[02:18] I want you to do. Whether I'm responding
+[02:22] to an email, whether I'm creating a
+[02:24] proposal, whether I'm creating digital
+[02:27] media or images like we're doing here, I
+[02:29] add this to almost everything because it
+[02:32] comes up with questions that either I
+[02:35] have not thought of and I should have,
+[02:38] or things that are going to help guide
+[02:40] my AI bot is going to guide Gemini in
+[02:43] this example to a much closer, if not
+[02:47] the ideal result that I want. So, this
+[02:49] time when I hit submit, it may say that
+[02:52] it's going to create my image. I've
+[02:54] tested this out a few times, but it's
+[02:56] actually going to stop in this case and
+[02:58] it's going to ask me those clarifying
+[03:00] questions. Now, I can review them
+[03:03] quickly and give it further insight.
+[03:06] Some of these questions I may have
+[03:08] assumed, some of them I may have not
+[03:11] even considered. And the best thing is
+[03:13] is you don't have to reply
+[03:15] or respond in full sentences. So, for
+[03:18] example, let's go with number one,
+[03:20] comparison style. Do I prefer simple,
+[03:22] clean, side-by-side, before and after? I
+[03:26] really want a before and after because
+[03:28] that's much more powerful. You may
+[03:30] remember on the first prompt, those were
+[03:32] two completely different properties,
+[03:35] completely different lawns. So, I'm
+[03:37] going to say before and after. That's
+[03:39] all I'm going to say. Just two or three
+[03:42] words is usually enough. Art style. Is
+[03:45] there a particular illustration style?
+[03:47] Modern, friendly, detailed digital
+[03:49] painting, simple watercolor, maybe
+[03:52] something else. I'm just going to say
+[03:53] modern in this case. I'm going to keep
+[03:55] it nice and simple. Number three, adding
+[03:58] context. Should we include a house or
+[04:00] background elements, a neighborhood? I'm
+[04:03] going to say focus on the lawn. That's
+[04:06] really what is most important here.
+[04:08] Number four, mood, time of day. Well, I
+[04:11] do want it to be bright. I think that's
+[04:13] going to be bright and sunny, I think is
+[04:15] what I'm going to say because even the
+[04:17] sunlight on a bad-looking lawn almost
+[04:21] makes it look worse. And extra elements.
+[04:23] Again, you don't have to answer all
+[04:25] five, but it can really not only get
+[04:28] your creative juices flowing, it's going
+[04:30] to help you get to the final
+[04:32] destination, the best possible output
+[04:35] that you can find.
+[04:37] Um should I include small illustrative
+[04:39] touches, dandelions? In this case, I'm
+[04:41] going to give it something completely
+[04:43] different. I'm going to say no text or
+[04:45] words at all. It's not really directly
+[04:48] tied to that number five, but that was
+[04:50] something I really didn't like in the
+[04:52] first iteration. And I find that when
+[04:54] creating images in particular, AI loves
+[04:57] to add additional text, which in most
+[04:59] cases I don't want any of it. And in
+[05:02] just a few seconds, it has produced this
+[05:04] image, which I feel is a much better
+[05:07] representation of before and after. We
+[05:10] can see that it's the same home or the
+[05:12] same building in the background. It is a
+[05:15] much greater focus on the lawns and the
+[05:18] landscaping than that first image as
+[05:20] well. And just by asking me a few
+[05:23] clarifying questions, it's gotten me
+[05:25] closer to that final output. So, no
+[05:28] matter what AI tool you are using, and
+[05:32] regardless of what you are producing or
+[05:34] the output, add this clarifying question
+[05:38] to the end of all of your prompts. Ask
+[05:40] me three to five clarifying questions so
+[05:44] you are 99% certain of what I want you
+[05:48] to do. If you use a text expansion tool,
+[05:50] this is the perfect thing to add, so you
+[05:53] can quickly add this as often as you
+[05:56] like. Now, if you have any clarifying
+[05:59] prompts or special text that you're
+[06:01] adding to your AI chatbots, be sure to
+[06:04] share them with me and others in the
+[06:06] comments down below. Thank you so much
+[06:09] for watching this video, and remember,
+[06:11] you deserve to work without feeling
+[06:14] overwhelmed.

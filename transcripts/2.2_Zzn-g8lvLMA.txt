@@ -1,0 +1,189 @@
+[00:02] [music]
+[00:11] In our last lesson, we dealt with data
+[00:13] privacy and security. What you
+[00:15] absolutely need to protect and how to do
+[00:17] it. So, now let's talk about the
+[00:19] question that's probably stopped you
+[00:21] from using AI for data analysis in the
+[00:23] first place. How can I trust the
+[00:25] results? Today's lesson is about the
+[00:27] delegation diligence loop. Specifically,
+[00:30] building confidence in AI's analytical
+[00:32] capabilities for your specific work by
+[00:35] systematically testing it against data
+[00:37] you already understand. By doing this,
+[00:39] you can better understand how AI will
+[00:41] support your specific circumstances.
+[00:44] The process starts with delegation.
+[00:46] Here's how this works. First, identify a
+[00:49] specific analytical task you do
+[00:50] regularly that you want to delegate to
+[00:52] AI. Find past data where you already
+[00:55] completed the analysis and then work
+[00:57] with AI to reproduce what you did,
+[00:59] evaluating what works and what doesn't.
+[01:02] Refine your approach and test again. If
+[01:04] AI can match your known results, you
+[01:06] know how to use it and trust it for
+[01:07] similar future tasks. And if not, you've
+[01:10] learned that this task is something you
+[01:11] shouldn't delegate. So, let me show you
+[01:14] what this looks like in practice, and
+[01:15] then we'll talk through what to do if
+[01:16] you're not that data savvy to begin
+[01:18] with.
+[01:19] Meet Rio, the program director at Valley
+[01:22] Veterans Services. Every quarter, he
+[01:25] analyzes program attendance alongside
+[01:27] employment outcomes, calculating
+[01:29] participation rates, tracking monthly
+[01:32] changes, and determining whether
+[01:33] attendance correlates with job placement
+[01:36] success. This analysis consistently
+[01:38] takes him hours. Considering delegation,
+[01:41] Rio knows he wants to continue using the
+[01:43] results of this analysis to improve his
+[01:45] program. He wants to interpret the
+[01:47] results himself, but he could do without
+[01:49] the data cleaning and formula mayhem he
+[01:51] usually finds himself in to do the
+[01:53] actual analysis. So, in order to test
+[01:55] whether AI is appropriate in this
+[01:57] scenario, he's going to evaluate it
+[01:59] using last quarter's data. He knows
+[02:02] exactly what this data showed after he
+[02:04] analyzed it without AI, and he has the
+[02:06] raw messy data from before he started.
+[02:09] This is his test case. Rio uploads the
+[02:11] data and starts to work with AI using
+[02:13] description and discernment to perform
+[02:15] his analysis. Only each time the AI
+[02:18] responds, Rio is going to check the
+[02:20] results against what he knows to be true
+[02:22] and jot down potential gaps in AI's
+[02:24] reasoning. Sometimes additional
+[02:26] description helps AI get the outcome
+[02:28] he's looking for. In these cases, Rio
+[02:31] knows he has to include that kind of
+[02:32] information for future data analysis
+[02:34] tasks. Other times, Rio might find
+[02:37] legitimate capability gaps. This is the
+[02:39] delegation diligence loop in action.
+[02:42] Rio's diligence to evaluate the model's
+[02:44] capabilities can change what he chooses
+[02:46] to delegate to AI in the future. His
+[02:48] first attempt might look like, I'm
+[02:50] sharing attendance data and employment
+[02:52] outcome data from our job training
+[02:54] program last quarter. Please analyze the
+[02:56] participation patterns across the three
+[02:58] months and graph the correlations
+[03:00] between attendance levels and employment
+[03:02] success. I'm particularly interested in
+[03:05] understanding whether consistent
+[03:06] attendance predicts better job placement
+[03:08] outcomes.
+[03:10] AI responds with a summary, but rather
+[03:13] than assuming this is fact, Rio checks
+[03:15] this against his records and notes
+[03:18] what's good and what's not. AI correctly
+[03:21] identified the correlation between
+[03:23] program attendance and job placement,
+[03:25] but it missed a critical insight around
+[03:27] the combined housing assistance and job
+[03:29] placement program. So Rio refineses his
+[03:32] description asking AI to try again but
+[03:35] pay special attention to the program
+[03:37] type.
+[03:39] This time AI catches its mistake. So Rio
+[03:42] notes that for future quarters he'll
+[03:44] need to specifically request the AI to
+[03:45] consider the program type when
+[03:47] performing its analysis.
+[03:49] Then he tests something harder. Can you
+[03:51] also look at this based on when
+[03:53] participants enrolled? AI responds as
+[03:56] Rio observes that despite not knowing
+[03:58] the enrollment data, AI could help
+[04:00] extract it. He makes a note to cross
+[04:02] reference these results later on.
+[04:05] By going through this process, Rio has
+[04:07] systematically validated what AI can and
+[04:09] can't do for his quarterly reporting.
+[04:11] He's learned that with the right
+[04:12] description, AI can accurately reproduce
+[04:15] the analysis he used to do manually. But
+[04:17] he's also identified clear limitations
+[04:19] and areas for follow-up. AI needs
+[04:21] enrollment dates in the data to do
+[04:23] cohort analysis. Otherwise, it'll try to
+[04:26] infer them, which he doesn't want. And
+[04:28] most importantly, Rio now has a tested
+[04:31] approach that he can confidently use
+[04:32] with this quarter's data and clear notes
+[04:34] about what information he needs to
+[04:36] include and what context he still needs
+[04:38] to add himself. When Rio uses this
+[04:40] validated approach with new data, his
+[04:42] diligence continues. He'll check whether
+[04:45] numbers make sense based on what he
+[04:46] knows about his programs. He'll take
+[04:48] accountability for the final report and
+[04:50] he'll be transparent about AI's role if
+[04:52] asked. But now he's working from
+[04:55] validated confidence, not guesswork. So
+[04:58] here's the framework. Identify a
+[05:00] specific analytical task that you want
+[05:02] to delegate. Be precise about what you
+[05:05] need. Then find past data where you
+[05:08] already completed that analysis. You
+[05:10] need the right answers to evaluate
+[05:12] whether AI can arrive at them.
+[05:15] Work with AI to reproduce your past
+[05:17] analysis and systematically evaluate the
+[05:19] results. What did AI produce? How did it
+[05:22] approach the task? How did it
+[05:24] communicate findings? Identify gaps,
+[05:27] refine your delegation, and then test
+[05:29] again. If you can validate that AI
+[05:31] produces correct results, you've built
+[05:33] an approach that you can confidently use
+[05:34] on new data. But if you can't get there
+[05:37] after several refinements, you've
+[05:38] learned that this isn't a task you
+[05:40] should delegate. So, this is all great,
+[05:42] but what if you're not very comfortable
+[05:44] with the data to begin with and wouldn't
+[05:46] be able to spot those process gaps
+[05:48] yourself? AI can also be a useful tool
+[05:51] to brainstorm and implement solutions
+[05:52] you might not have thought of on your
+[05:54] own. Because AI models are uniquely good
+[05:56] at coding, they can help with things
+[05:58] like writing Excel formulas,
+[06:00] reformatting messy data, and more.
+[06:03] In these cases, you can simply bring
+[06:05] your question or idea to AI and
+[06:07] specifically ask for help understanding
+[06:09] what a solution could look like, just
+[06:11] like how you would work with a data
+[06:12] analyst on your team. As you work with
+[06:15] AI, just keep asking for clarifications
+[06:17] and explanations so that you can follow
+[06:19] the process and understand the final
+[06:21] output. Just remember, validation builds
+[06:23] confidence, but it doesn't eliminate
+[06:25] responsibility. you're still accountable
+[06:27] for checking that these results make
+[06:28] sense and being transparent about AI's
+[06:31] role in your analysis process. This
+[06:34] testing works for any analytical task
+[06:36] you're considering. Donor analysis,
+[06:38] budget forecasting, survey synthesis,
+[06:41] outcome tracking. Test first, validate
+[06:44] what works, then apply with more
+[06:46] confidence, or learn what you shouldn't
+[06:48] delegate at all. In our next lesson,
+[06:51] we'll look at workflow augmentation and
+[06:53] how to apply these same principles when
+[06:55] AI handles routine tasks on your behalf.

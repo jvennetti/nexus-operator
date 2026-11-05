@@ -1,0 +1,104 @@
+[00:11] In this video, we'll dig deeper into the
+[00:14] AI fluency competency of
+[00:16] description. AI fluency means working
+[00:19] with an AI effectively, efficiently,
+[00:21] ethically, and safely. Description is
+[00:24] about communicating with AI, which is
+[00:26] the core of most human AI interaction.
+[00:29] Description goes far beyond just writing
+[00:31] clever prompts. It's about communicating
+[00:33] with the AI to explain tasks, ask
+[00:35] questions, provide context, and
+[00:37] otherwise guide the interaction. It's
+[00:39] about being able to steer a conversation
+[00:41] that is going wrong. It's about guiding
+[00:43] an AI's thought process or logical
+[00:45] reasoning. And it's about building a
+[00:47] kind of thinking environment where both
+[00:49] you and the AI can each do your best
+[00:52] work.
+[00:54] Think of it as building a bridge between
+[00:56] your intentions and the AI's
+[00:58] capabilities. The quality of AI outputs
+[01:01] often depend on how clearly you describe
+[01:03] what you want. It's like the difference
+[01:06] between asking someone to make dinner
+[01:08] versus providing a detailed recipe with
+[01:11] ingredients and cooking instructions. AI
+[01:13] can't read your mind. Instead of
+[01:16] assuming the AI knows what you're
+[01:18] looking for, you need to explain every
+[01:20] relevant detail. What is the context for
+[01:23] this work? What exactly are you looking
+[01:25] for the AI to do? What format should the
+[01:27] output take? Who is the audience and
+[01:29] what style is appropriate? Don't make AI
+[01:33] guess what you're thinking. Set explicit
+[01:35] requirements and give the AI the
+[01:38] information it needs to deliver what
+[01:40] you're actually looking for. We call
+[01:42] this first concept product description.
+[01:46] The ability to clearly define what you
+[01:48] want the AI to create or provide.
+[01:52] Sometimes specifying how an AI should
+[01:54] tackle a job is as or even more
+[01:56] important than specifying the end goal.
+[01:59] Just as you might prefer that a
+[02:01] colleague tackle a problem using your
+[02:02] specific method, you can guide how an AI
+[02:05] works through your request. You can and
+[02:08] should give the AI helpful guidance to
+[02:10] help it accomplish your desired goal.
+[02:13] There are different ways to approach
+[02:15] this. You might provide general guidance
+[02:18] like a manual, step-by-step instructions
+[02:20] like a cookbook, or even a demonstration
+[02:23] through examples. Here's how I'd do it.
+[02:25] Think about it this way. The AI already
+[02:28] has extensive training, but you're
+[02:30] providing additional context specific to
+[02:33] your unique
+[02:34] situation. Are there specific data you
+[02:37] want the AI to draw on? Are there
+[02:39] specific issues it should be addressing
+[02:41] or in a particular order? Is there a
+[02:43] particular style of analysis you need or
+[02:46] maybe a specific workflow or technique
+[02:47] you wanted to use? Taking time to
+[02:50] explain these elements makes a
+[02:52] tremendous
+[02:53] difference. We call this second concept
+[02:56] process description. The ability to
+[02:58] guide how the AI assistant approaches
+[03:01] your
+[03:02] request. If you take one thing from this
+[03:05] course, it should be this. AI tools are
+[03:08] not databases or vending machines. They
+[03:11] are interactive systems that can behave
+[03:13] differently in different contexts much
+[03:15] like people might. You need to explain
+[03:17] how you want the AI to behave to get the
+[03:19] best
+[03:20] results. When you next sit down with AI,
+[03:23] think first, what kind of thinking
+[03:25] partner do you need right now? Are you
+[03:28] narrowing down towards a specific answer
+[03:30] or trying to explore multiple
+[03:31] possibilities? Do you want the AI to
+[03:33] challenge your assumptions or simply
+[03:35] follow your lead? to provide expensive
+[03:37] detail or keep things concise to explain
+[03:40] why it's answering in a certain way or
+[03:42] just give you the answer. We call this
+[03:44] third concept performance description.
+[03:47] The ability to define the behavioral
+[03:49] aspects of an AI
+[03:51] interaction. You should now have a
+[03:53] better sense of how product description,
+[03:54] process description, and performance
+[03:56] description combine to form the
+[03:58] description competency. When you develop
+[04:01] your capacity for description, you
+[04:03] transform AI from generic assistants
+[04:06] into finely tuned thinking partners that
+[04:08] can truly meet your needs.
