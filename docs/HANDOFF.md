@@ -38,6 +38,8 @@ Repos: `jvennetti/nexus-academy` (original, read-only time capsule, never modify
 - **Challenge:** one line naming the job, then numbered steps that apply what they just watched. Exact prompts in copy boxes (fenced code in the markdown). First-time click paths spelled out with arrows (Projects → Create new project). When the app's menus are uncertain, have the learner ask Claude ("tell Claude you want to connect Gmail; say yes when it asks"). No experiments, no side-by-side comparisons, no settings audits. End with "Mark this done when…" Bracketed notes for edge cases.
 - **Takeaways:** three or four plain sentences a beginner can repeat. "Suggestion:" and "Warning:" labels are fine when honest.
 - Forward pointers are good ("eventually you'll learn how to get emails you can send unedited").
+- **Never narrate the reader.** Don't say what they feel, avoid, dread or keep putting off. Say what we're going to do today, give three concrete examples, and let them pick. "Today we're going to finish one real piece of your work. Pick something like a proposal, a reply that needs thought, or a plan for next month." Not "there's something you keep sliding to next week."
+- **Missions** (module-end pages, "Complete Module N"): sections are What We're Going to Do (two paragraphs: the plan for today, and concrete examples to choose from), How We'll Do It (steps with full sentences, prompts to paste, tips and warnings inline), You're Done When (one sentence), optional Go Further and a fallback note.
 - Never: em dashes, "not X, it's Y", stacked triples, bold-colon lists, teaching in the description, branded artifacts nobody asked for.
 
 ## 5. What's built (branch `claude/friendly-ramanujan-jrotfb`, PR 5, draft)
