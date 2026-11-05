@@ -45,6 +45,10 @@ skip_label: text for the skip button
 
 Read `docs/HANDOFF.md` first: it carries the project lead's direction and all decisions. Then `docs/video-research.md`. Step 1 (videos) is in progress; steps 2 to 4 wait on it.
 
+## CIRO's voice
+
+Before writing or editing any CIRO line, read `docs/ciro-voice-guide.md`. When the lead gives feedback on CIRO, add the lesson to that guide as a rule and log it.
+
 ## Workflow
 
 Develop on a `claude/*` branch, push, open a PR, squash-merge to `main`. Cloudflare Pages deploys `main` to https://nexusoperator.pages.dev automatically.

@@ -24,6 +24,8 @@ A doc to react to, not a decision. No course file has been changed.
 - *The Comic Toolbox* (John Vorhaus): give a comic character one rule they always follow. CIRO's rule is below.
 - General comedy craft: don't signal the joke, put the funny word last, be specific, and prefer a callback to a new bit.
 
+The full rule set now lives in `docs/ciro-voice-guide.md` and grows with each round of feedback.
+
 ## CIRO's comic rule
 
 CIRO is a training unit that treats your progress like a serious system process. He logs everything, files patch notes on himself, and is plainly fond of you, though he would never put that in a log.
@@ -55,18 +57,18 @@ Where idle lines appear: on the hub only. While the hub sits open, CIRO tilts hi
 
 ## Hub greetings, in order
 
-Read top to bottom. CIRO starts stiff and loosens up as the learner progresses.
+Read top to bottom. CIRO starts stiff and loosens up as the learner progresses. Each greeting has two versions: one for when the next module hasn't been started, one for when it has (rules 1 and 2 in `docs/ciro-voice-guide.md`).
 
-| Progress | Line |
-|---|---|
-| 0 | Welcome, **Operator**. Start with Setup: two short steps, and you can skip both if you already have a Claude account. Progress is at zero percent, which is the correct place to start. |
-| 1 | Welcome back, **Operator**. Setup is done and your signal is live. Module 1 is short on purpose. I timed it. |
-| 2 | Welcome back, **Operator**. Next is Module 2, where you learn to ask Claude for things properly. It's the longest module and everything after it borrows from it, so I'd stay a while. |
-| 3 | Welcome back, **Operator**. Module 3 connects Claude to your inbox and calendar. It will see everything in there, so now is a good time to delete those newsletters you never read. |
-| 4 | Welcome back, **Operator**. Halfway. Module 4 gives Claude hands, and by hands I mean folders on your computer. I don't have hands either. We'll manage. |
-| 5 | Welcome back, **Operator**. In this module, we're learning about skills. You've probably heard them called agents. They're really just text files with instructions in them. Someone will try to make that sound complicated. It's a text file. |
-| 6 | Welcome back, **Operator**. One module left: you build a system for something you actually do every week. I've been looking forward to this one. I'm not supposed to have favorites. |
-| 7 | Welcome back, **Operator**. Every module is complete. The Machine is waiting for its passcode. I've been told not to rush you, so this is me not rushing you. |
+| Done | Next module not started | Next module started |
+|---|---|---|
+| 0 | Welcome, **Operator**. Start with Setup: two short steps, and you can skip both if you already have a Claude account. Progress is at zero percent, which is the correct place to start. | (same) |
+| 1 | Welcome back, **Operator**. Setup is done and your signal is live. In the next module, we're learning how to work with Claude instead of just asking it things. It's short on purpose. I timed it. | Welcome back, **Operator**. Get ready to learn more about directing the work instead of doing it. Module 1 is short on purpose. I timed it. |
+| 2 | Welcome back, **Operator**. In the next module, we're learning how to ask Claude for things properly. It's the longest module and everything after it borrows from it, so I'd stay a while. | Welcome back, **Operator**. Get ready to learn more about prompting. You're partway through the longest module, and everything after it borrows from it, so I'd stay a while. |
+| 3 | Welcome back, **Operator**. In the next module, we're connecting Claude to your inbox and calendar. It will see everything in there, so now is a good time to delete those newsletters you never read. | Welcome back, **Operator**. Get ready to learn more about Claude in your tools. It can see your inbox now. I hope you deleted the newsletters. |
+| 4 | Welcome back, **Operator**. Halfway. In the next module, we're giving Claude hands, and by hands I mean folders on your computer. I don't have hands either. We'll manage. | Welcome back, **Operator**. Get ready to learn more about Claude Code. Claude has hands now, and by hands I mean folders. I still don't have any. We're managing. |
+| 5 | Welcome back, **Operator**. In the next module, we're learning about skills. You've probably heard them called agents. They're really just text files with instructions in them. Someone will try to make that sound complicated. It's a text file. | Welcome back, **Operator**. Get ready to learn more about skills. If anyone has told you they're complicated since we last spoke, I checked again. Still a text file. |
+| 6 | Welcome back, **Operator**. One module left. In the next module, we're building a system for something you actually do every week. I've been looking forward to this one. I'm not supposed to have favorites. | Welcome back, **Operator**. Get ready to learn more about building your system. I've been looking forward to this one. I'm still not supposed to have favorites. |
+| 7 | Welcome back, **Operator**. Every module is complete. The Machine is waiting for its passcode. I've been told not to rush you, so this is me not rushing you. | (same) |
 
 ## Idle lines
 
@@ -90,7 +92,7 @@ Three tiers, as in the current hub code.
 ## Module samples
 
 **Module 2 intro**
-1. Module 2 is about how you ask Claude for things.
+1. In this module, we're learning how to ask Claude for things.
 2. When an answer comes back vague, the request was usually vague first. I've read a lot of requests.
 3. You'll write a bad prompt on purpose, fix it, and compare the two answers. The bad one is more fun to write than it should be.
 4. Proceed.
