@@ -82,3 +82,15 @@ Full plan and candidate pool in `docs/video-research.md`. Summary:
 - Lead's line-by-line review of lesson content, especially 0.2, 3.1, 4.1, 5.3, which describe where things are in the Claude app.
 - Bonus Vault still holds four videos from the original course. Intended future use: tips and go-deeper material.
 - README should get a custom domain when one exists.
+
+## 7. Directions the lead gave in the parallel Opus sessions (2026-11-05)
+
+These were said directly to the research sessions and override anything above that conflicts.
+
+**Lesson page design.** "Design the lesson page how it was in nexus-open, and incorporate a task into that design, that's simple and clean." Keep note taking and the timestamp bar. "Your Task" should be centered with a unique design that makes it stand out. He liked the four key prompt parts being bolded. He floated a second shape: a separate task page after every lesson, lesson, task, lesson, task ("0-o-0-o"), so each page is one thing. A test page based on nexus-academy's lesson 1.3 with a task lives in `docs/proposals/lesson-design/`.
+
+**CIRO.** The nexus-open hub greetings, module intros and outros were "decent" and are the baseline, not something to throw out. The ending is what he wants made better. Idle messages belong on the hub only. Hub greetings should read "In the next module, we're learning..." before a module is started and "Get ready to learn more about..." once it is. He wants rules built up as he reacts, line by line, in `docs/ciro-voice-guide.md`. He nudged one line himself: "...agents, which are really just text files with instructions in them. Someone will try to make that sound complicated. It's a text file."
+
+**Videos.** He does not want to wait a month for post-rebuild videos: "We can't wait, we'll find the best now." Transcripts are to be fetched from his own computer with `tools/fetch_transcripts.py` (on the `claude/video-research` branch) and pushed, since cloud IPs get bot-checked.
+
+**App change.** The Claude desktop app was rebuilt around 2026-10-20. Lessons 0.2, 2.4 and 5.3 and most walkthrough videos may show the old UI. The lead is checking the current app.
