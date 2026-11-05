@@ -195,7 +195,7 @@ def build():
             else:
                 video_block = ''
                 mode = 'Read + Do'
-            task_blocks = parse_blocks(sec_get(L['sec'], 'task'))
+            task_blocks = parse_blocks(L['sec']['challenge'] if 'challenge' in L['sec'] else sec_get(L['sec'], 'task'))
             # intro paragraphs (before first ol) / steps / outro
             first_ol = next((k for k, b in enumerate(task_blocks) if b[0] == 'ol'), len(task_blocks))
             task_html = ''

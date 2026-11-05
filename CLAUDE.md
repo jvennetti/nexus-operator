@@ -8,14 +8,14 @@ Public, single-operator rebuild of NEXUS Academy. Static HTML/CSS/JS, no framewo
 - **Content lives in `content/`, pages are generated.** Never hand-edit files in `pre-course/` or `module-*/`. Edit the markdown or `course.json`, then run `python3 build.py`.
 - **`hub.html` is partly generated.** The `MODULES`, `BADGES` and `CIRO_LINES` blocks are rewritten by `build.py`. Everything else in the hub is hand-maintained.
 - `DEV_UNLOCK` in `hub.html` stays `false`.
-- Every lesson ends with a task. A lesson without a "## Task" section will fail the build on purpose.
+- Every lesson ends with a challenge. A lesson without a "## Challenge" section will fail the build on purpose.
 - Videos are optional per lesson. A lesson with an empty `video:` renders as "Read + Do". Only add a video id once it has been watched and judged worth the learner's time (under 20 minutes, official source preferred for product walkthroughs).
 
 ## Layout
 
 ```
 content/course.json          modules, badges, CIRO dialogue, lesson order
-content/lessons/N-M.md       one file per lesson: front matter + ## Brief / ## Task / ## Takeaways
+content/lessons/N-M.md       one file per lesson: front matter + ## Brief / ## Challenge / ## Takeaways
 content/challenges/modN.md   one per module: ## Scenario / ## Setup? / ## Steps / ## Deliverable / ## Extension? / ## Note?
 templates/*.html             page templates with {{PLACEHOLDERS}}
 build.py                     generator
@@ -31,7 +31,7 @@ duration:   ~15 min          (shown in the lesson header)
 task_time:  15 min           (shown on the task box)
 video:      YouTube id or empty
 video_note: optional one-line caption under the video
-skippable:  true/false       (adds a skip button that marks the task done)
+skippable:  true/false       (adds a skip button that marks the challenge done)
 skip_label: text for the skip button
 ```
 

@@ -132,7 +132,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
@@ -140,8 +140,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Start something that matters.</strong> A message you need to send, a plan you need to make, a document you need to write. Give Claude a good brief (you know how now), and add: "Before you start, ask me whatever you need to know to do this well." Answer its questions.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Round one: notes.</strong> Read the draft. Give at least three specific notes in one message. Not "make it better." Specific.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Round two: critique.</strong> Say: "Read this back as [the person receiving it]. What's weak? What would make them hesitate?" Then: "Fix all of that."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Round three: options.</strong> Say: "Give me two alternative versions: one shorter and more direct, one warmer." Pick the best pieces of each and ask for a final.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>The push.</strong> At some point in this course Claude will hedge or say it can't do something. Next time it happens, don't accept it. Say "I want you to do it anyway, fully. Here's what you need." Note in the box below what happened.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -175,7 +175,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

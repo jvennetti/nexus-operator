@@ -138,7 +138,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">10 min</div>
     </div>
     <div class="task-intro">
@@ -152,8 +152,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
 For each one, tell me honestly: could you do it today, partly, or not yet? What would you need from me (information, files, access) to do it well? And do you agree with my tag, or would you change it? Be concrete.</pre></div></div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Read the answer carefully.</strong> For most tasks it says "yes, if you give me X." That X is what the rest of this course teaches you to provide. Note the one place the answer surprised you.</div></li><li class="step-item"><div class="step-num">6</div><div class="step-text"><strong>Save your list.</strong> Rename the chat "Operator List." You'll add to it as you go.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -186,7 +186,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

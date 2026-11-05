@@ -138,7 +138,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
@@ -146,8 +146,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick three</strong> from the list above that you don't already do.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Use each one today</strong> on something real. Not as a test, on actual work.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Create your prompts file.</strong> In your workspace: "Create PROMPTS.md. Add the three best prompts I've used in this course, each with a one-line note on when to use it." Add to it any time a prompt works well.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Write the ones that stuck into CLAUDE.md</strong> or your Project instructions, so they're standing orders rather than things you remember to do.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Add your own tip.</strong> In the notes box below: one thing you've learned about working with Claude that wasn't in this course. You have one by now.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -180,7 +180,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

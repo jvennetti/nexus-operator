@@ -138,7 +138,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">10 min</div>
     </div>
     <div class="task-intro">
@@ -149,8 +149,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="callout">If anything in setup fails, tell Claude in the browser what happened. It will walk you through fixing it. That's a habit worth starting now.</div>
     </div>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
       <button class="task-skip" onclick="skipTask()">Already have Claude set up? Skip ahead →</button>
     </div>
   </div>
@@ -184,7 +184,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

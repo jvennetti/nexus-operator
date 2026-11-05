@@ -135,7 +135,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">20 min</div>
     </div>
     <div class="task-intro">
@@ -143,8 +143,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick the task.</strong> Your morning briefing from Module 3, or the skill you wrote in 5.1. Whichever you'd most like to find already done tomorrow.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it manually, twice.</strong> Fix anything that's off. The second run should be exactly what you want.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Make it draft, not send.</strong> If the task involves emails or messages, make sure the instructions say to draft them, not send them. You'll relax this later.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Schedule it.</strong> "Schedule this to run every weekday at [time], and deliver the result to [where you'll see it]." Confirm.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check tomorrow.</strong> When it runs, review the output. Note what you'd change, then tell Claude to update the task. In your notes below, record how it went.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -177,7 +177,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

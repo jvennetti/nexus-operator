@@ -134,7 +134,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
@@ -142,8 +142,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Version history.</strong> In your workspace: "Set up version history for this folder using git, and commit after each change you make from now on. Add that rule to CLAUDE.md." Approve the prompts.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Test undo.</strong> Make a change: "Add a line to README.md that says 'test line.'" Then: "Undo that last change." Confirm the line is gone.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Practice the handoff.</strong> Mid-way through any task, say: "Write a HANDOFF.md with where we are and what's next." Close the session. Open a new one. Say: "Read HANDOFF.md and continue." Watch it pick up.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Review your permissions.</strong> Look at what you've allowed. Keep what you understand. Revoke anything you don't remember approving.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write the escape hatch into CLAUDE.md:</strong> "If you try the same fix twice and it fails, stop and tell me what you've tried instead of trying again."</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -177,7 +177,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

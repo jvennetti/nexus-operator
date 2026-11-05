@@ -134,7 +134,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
@@ -142,8 +142,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Make a folder</strong> somewhere easy to find. Call it <code>nexus-workspace</code>. Put three to five files in it: a couple of documents you've worked on, a spreadsheet, maybe a few images. Nothing precious. Copies are fine.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Open the Code tab</strong> in the Claude desktop app. When it asks for a folder, choose <code>nexus-workspace</code>.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Ask it what's there.</strong> "Look at everything in this folder and give me a one-line description of each file."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Have it make something.</strong> "Create a file called README.md that summarizes what this folder contains and what each file is for." Open the file in your normal file browser and read it. It's real.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Have it change something.</strong> "Rename each file so the name starts with today's date in YYYY-MM-DD format." Approve the permission prompt. Look at the folder. Then: "Undo that, put the names back." Watch it do it.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -176,7 +176,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }

@@ -134,7 +134,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 
   <div class="task-box section" id="task-box">
     <div class="task-head">
-      <div class="task-label">Do This Now</div>
+      <div class="task-label">Your Challenge</div>
       <div class="task-time">20 min</div>
     </div>
     <div class="task-intro">
@@ -142,8 +142,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     </div>
 <ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick one area</strong> of your work or life that comes up constantly. A client. A team. A recurring responsibility. If nothing jumps out, make it your job.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Write the instructions with Claude's help.</strong> New chat, paste this:<div class="prompt-block"><pre>I'm creating a Claude Project for [the area]. Interview me, one question at a time, until you can write a set of Project instructions that covers: who I am in this context, what the project is about, who the usual audience is, how I like things written, and three things you should always do and two you should never do. Then write the instructions.</pre></div> Answer the questions. Edit the result until it sounds like you.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Create the Project</strong> in the sidebar. Paste the instructions in.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Add two to four files</strong> to the Project's knowledge. The documents you'd otherwise attach to every chat about this: a brief, a template, an example of good output, a reference doc.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Run one real task inside it</strong> without explaining any of the background. Notice how much shorter your prompt is.</div></li></ol>
     <div class="task-actions">
-      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
-      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
+      <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
 
     </div>
   </div>
@@ -176,7 +176,7 @@ function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(windo
 function applyTaskState(){
   const done=!!localStorage.getItem(TASK_KEY);
   document.getElementById('task-box').classList.toggle('done',done);
-  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('task-done-label').textContent=done?'Challenge done':'Mark challenge done';
   document.getElementById('next-btn').classList.toggle('locked',!done);
   if(done) document.getElementById('nav-hint').classList.remove('show');
 }
