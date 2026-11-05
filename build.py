@@ -188,13 +188,8 @@ def build():
                 video_block = ('  <div class="video-wrapper section">\n'
                                '    <iframe src="https://www.youtube.com/embed/%s?%s" title="%s" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
                                '  </div>' % (vid, '&amp;'.join(params), html.escape(L['meta'].get('video_title', L['title']), quote=True)))
-                under = []
-                if L['meta'].get('video_credit'):
-                    under.append('  <div class="video-credit">%s</div>' % html.escape(L['meta']['video_credit'], quote=False))
-                if L['meta'].get('video_note'):
-                    under.append('  <div class="video-note">%s</div>' % inline(L['meta']['video_note']))
-                if under:
-                    video_block += '\n  <div class="video-under">\n' + '\n'.join(under) + '\n  </div>'
+                # video_credit and video_note are kept in the front matter for our records but not rendered:
+                # the YouTube embed already shows the title and channel (lead's call, 2026-11-05).
                 mode = 'Watch + Do'
             else:
                 video_block = ''
