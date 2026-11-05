@@ -38,10 +38,12 @@ h1.lesson-title{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700
 .context-copy code,.step-text code,.task-intro code,.takeaway-item code{font-family:'IBM Plex Mono',monospace;font-size:0.88em;color:var(--blue);background:rgba(0,200,255,0.06);padding:1px 5px;border-radius:3px}
 .callout{border-left:2px solid var(--blue-border);padding:4px 0 4px 18px;margin:16px 0;color:var(--muted);font-style:italic}
 /* video row: video (2/3) + notes panel (1/3) */
-.watch-row{--row-w:min(1040px,calc(100vw - 48px));width:var(--row-w);margin-left:calc((100% - var(--row-w)) / 2);display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);column-gap:20px;align-items:stretch}
+.watch-row{--row-w:min(1040px,calc(100vw - 48px));width:var(--row-w);margin-left:calc((100% - var(--row-w)) / 2);display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch}
 .watch-row .video-wrapper{grid-column:1;grid-row:1;margin:0}
 .watch-row .resume-row{grid-column:1;grid-row:2}
-.watch-row .notes-panel{grid-column:2;grid-row:1}
+.watch-row .notes-panel{grid-column:1;grid-row:3;margin-top:16px}
+.notes-inner{position:static}
+textarea.notes-ta{flex:none;height:180px}
 .video-wrapper{position:relative;padding-bottom:56.25%;height:0;background:#000;border:1px solid var(--border);border-radius:6px;overflow:hidden}
 .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
 .resume-row{margin-top:12px}
@@ -121,9 +123,9 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
 .task-skip{font-family:'Lexend',sans-serif;font-size:12px;font-weight:300;letter-spacing:1px;color:var(--muted);background:none;border:none;border-bottom:1px solid transparent;padding:6px 2px;cursor:pointer}
 .task-skip:hover{color:var(--blue);border-bottom-color:var(--blue-border)}
 /* done: folds to one green line; "Show challenge" reopens it */
-.task-recap{display:none;padding:6px 24px 18px}
-.task-recap-title{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
-.task-box.done .task-recap{display:block}
+.takeaways-strip{margin-top:28px;padding:0 24px}
+.takeaways-strip-title{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.takeaways-strip .takeaway-item{padding:5px 0;font-size:14px;color:var(--muted)}
 .task-box.done{border-color:rgba(61,220,151,.35);box-shadow:none;background:var(--card);animation:none}
 .task-box.done::before{opacity:0}
 .task-box.done .c{border-color:var(--green)}
@@ -200,10 +202,8 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
       <div class="notes-inner">
         <div class="notes-head">
           <span class="notes-label">Notes</span>
-          <button class="ts-save" id="ts-save" type="button" disabled title="Adds the video's current time to your notes">+ Save timestamp</button>
         </div>
         <textarea class="notes-ta" id="lesson-notes" placeholder="Type as you watch. Notes save on their own."></textarea>
-        <div class="ts-list" id="ts-list" hidden></div>
       </div>
     </aside>
   </div>
@@ -212,7 +212,7 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
 (function(){
   var row=document.getElementById('watch-row'),f=row.querySelector('.video-wrapper iframe');
   window.NX_VIDEO=null;
-  if(!f){row.classList.add('no-video');document.getElementById('ts-save').hidden=true;return;}
+  if(!f){row.classList.add('no-video');return;}
   var V={iframe:f,start:0,end:0,resumeAt:0,key:'nexus_video_pos_'+location.pathname};
   try{
     var u=new URL(f.getAttribute('src'),location.href);
@@ -234,13 +234,6 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
       <div class="task-title">Your Challenge</div>
       <button class="task-done-line" id="task-toggle" type="button" aria-expanded="false" aria-controls="task-body">✓ Challenge done<em id="task-toggle-label">Show challenge</em></button>
     </div>
-    <div class="task-recap" id="task-recap">
-      <div class="task-recap-title">Remember</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Two tabs. Chat is where you'll live until Module 4. Code can work inside your folders.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>The + button in the chat box is where features hide: files, folders, connectors, skills.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Tell Claude about yourself once, in Settings → Profile. It uses it in every chat.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Rename the chats you'll come back to.</div></div>
-    </div>
     <div class="task-body" id="task-body"><div><div class="task-inner">
     <div class="task-intro">
 <p>Find your way around.</p>
@@ -254,6 +247,13 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
       <button class="task-skip" onclick="skipTask()">Know the interface already? Skip ahead →</button>
     </div>
     </div></div></div>
+  </div>
+  <div class="takeaways-strip section" id="takeaways">
+    <div class="takeaways-strip-title">Key Takeaways</div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Two tabs. Chat is where you'll live until Module 4. Code can work inside your folders.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The + button in the chat box is where features hide: files, folders, connectors, skills.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Tell Claude about yourself once, in Settings → Profile. It uses it in every chat.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Rename the chats you'll come back to.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-0-1.html" class="nav-btn prev">
@@ -341,7 +341,7 @@ const NX=(function(){
   }
   function onReady(){
     ready=true;
-    document.getElementById('ts-save').disabled=false;
+    var _ts=document.getElementById('ts-save');if(_ts)_ts.disabled=false;
     setInterval(savePos,5000);
     window.addEventListener('pagehide',savePos);
   }
@@ -373,38 +373,9 @@ const NX=(function(){
 })();
 /* ---- notes ---- */
 (function(){
-  const ta=document.getElementById('lesson-notes'),list=document.getElementById('ts-list'),btn=document.getElementById('ts-save');
-  const TS=/\[(?:(\d+):)?(\d{1,2}):(\d{2})\]/g;
-  function renderChips(){
-    list.textContent='';
-    if(!NX.hasVideo){list.hidden=true;return;}
-    let m;const seen={};TS.lastIndex=0;
-    while((m=TS.exec(ta.value))){
-      const sec=(+(m[1]||0))*3600+(+m[2])*60+(+m[3]);
-      if(seen[sec]) continue;seen[sec]=1;
-      const rest=ta.value.slice(TS.lastIndex).split('\n')[0].trim();
-      const c=document.createElement('button');c.type='button';c.className='ts-chip';c.title='Jump to '+NX.fmt(sec);
-      const b=document.createElement('b');b.textContent=NX.fmt(sec);c.appendChild(b);
-      if(rest){const s=document.createElement('span');s.textContent=rest.length>28?rest.slice(0,27)+'…':rest;c.appendChild(s);}
-      c.addEventListener('click',function(){NX.seek(sec);});
-      list.appendChild(c);
-    }
-    list.hidden=!list.childNodes.length;
-  }
-  function save(){lsSet(NOTES_KEY,ta.value);renderChips();}
+  const ta=document.getElementById('lesson-notes');
   ta.value=lsGet(NOTES_KEY)||'';
-  renderChips();
-  ta.addEventListener('input',save);
-  btn.addEventListener('click',function(){
-    const t=NX.time();if(t===null) return;
-    const a=ta.selectionStart,z=ta.selectionEnd,v=ta.value;
-    const pre=(a>0&&v[a-1]!=='\n')?'\n':'';
-    const ins=pre+'['+NX.fmt(t)+'] ';
-    ta.value=v.slice(0,a)+ins+v.slice(z);
-    ta.focus();ta.selectionStart=ta.selectionEnd=a+ins.length;
-    save();
-    btn.classList.add('flash');setTimeout(function(){btn.classList.remove('flash');},700);
-  });
+  ta.addEventListener('input',function(){lsSet(NOTES_KEY,ta.value);});
 })();
 window.addEventListener('load',()=>{
   const title=document.querySelector('h1.lesson-title')?.textContent||'';
