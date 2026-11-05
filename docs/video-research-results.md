@@ -17,15 +17,37 @@ What this means:
 | Lesson | Finalist 1 | Finalist 2 | Decision |
 |---|---|---|---|
 | 0.2 Know Where Things Are | `r2vYObllqJU` Kevin Stratvert, 8:37 | none | Use only if the lead's app still matches it. Otherwise text-only, and search again in about a month for a beginner tour of the new app. |
-| 1.1 What Changed | `EljzyfdYkrc` Anthropic AI Fluency: Delegation, 5:49 | `HanKVJH_Bco` Co-Intelligence core message, 8:23 | Finalist 1. |
+| 1.1 What Changed | `EljzyfdYkrc` Anthropic AI Fluency: Delegation, 5:49 | `QT-OR7Lcf2g` TEDx "How to think in the Age of AI", 12:19 (round 2) | Finalist 1. |
 | 2.1 Anatomy of a Good Prompt | `2YCaBqP8muw` Anthropic AI Fluency: Effective prompting, 11:55 | `riO3e-FBieA` Hostinger prompt guide, 11:48 | Finalist 1, with a start minute if the transcript shows a slow intro. Text-only is a close second: the lesson's bad-prompt vs good-prompt task already teaches this. |
 | 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert, 6:35 | `U-WtXdXdcKY` Matthew Esposito (2026 update), 12:17 | Finalist 1 if chat Projects still have instructions and files. If not, rewrite 2.4 first, then re-vet. |
 | 3.1 Inbox and Calendar | `FpRNId-jeTQ` Kevin Stratvert, 5:54 | none | Text-only. Connecting is a two-minute settings click, and the best video is general and partly a Zapier pitch. |
-| 4.1 Chat Answers. Code Acts. | `P7-0grEB7nk` Teacher's Tech, 10:41 | `-YTot4fwNFY` ClipCookie, 8:51 | Finalist 1. Check it against the new Code tab, and note the Git requirement it gets wrong. |
+| 4.1 Chat Answers. Code Acts. | `P7-0grEB7nk` Teacher's Tech, 10:41 | `8c6JZ18W0Bo` Nick Saraev, 4:50, post-rebuild (round 2) | Finalist 1 unless the transcript shows Saraev's is desktop-only. If it is, his wins on being current and half the length. |
 | 4.3 The Instructions File | `O0FGCxkHM-U` Claude (official), 3:01 | `h7QJL2_gEXA` GritAI Studio, 6:39 | Finalist 1. |
 | 5.1 What a Skill Is | `O6tQ6V_P8a0` Tristen O'Brien, 7:00 | `bjdBVZa66oU` Claude (official), 2:54 | Finalist 1. It teaches the concept and the how-to. |
 | 5.2 Context Management | `-uW5-TaVXu4` Matt Pocock, 9:33 | `xaQG-eD9d58` Dylan Davis, 17:49 | Finalist 1. |
 | 5.3 Scheduled Tasks | `U_cDKkDvPAQ` Tyler Germain, 12:39 | `D3pxbkPg0KE` Productive Dude, 11:34 | Both predate the rebuild. Hold until the lead confirms where scheduled tasks live now. |
+
+## Round 2: newer videos for the weak lessons
+
+Round 2 searched again with a 2026-10-20 publish floor for the lessons hit by the app rebuild (0.2, 2.4, 3.1, 4.1, 5.3), plus wider 2026 searches for 1.1 and 2.1. It ran 21 more searches and found 247 new videos. Using the same filters, 45 were vetted (metadata and top 30 comments). The main result: most post-rebuild videos are days old and have almost no views or comments yet. The content is new, but the evidence isn't there.
+
+| Lesson | New candidate | Length | Published | Views | Comments read (+/−) | Verdict |
+|---|---|---|---|---|---|---|
+| 1.1 | `QT-OR7Lcf2g` TEDx, Steve Haupt, "How to think in the Age of AI" | 12:19 | 2026-02-26 | 25,383 | 23 (+3/−1) | **New finalist 2.** About updating your mental models for AI. Commenters praise the clear delivery: "I love the way he speaks clearly and articulate his thoughts". Replaces the Co-Intelligence summary. |
+| 1.1 | `djGCytw0XZg` Don Woodlock, "How to Use AI Without Letting It Think for You" | 6:49 | 2026-08-18 | 351,620 | 30 (+7/−0) | Strong and widely discussed, but its topic is keeping your own judgment. That fits 1.2 Director Not Doer, which stays text-only by design. Hold as a bonus-vault option. |
+| 1.1 | `kvZKl7eLSX8` Anthropic's Drew Bent (EO) | 18:10 | 2026-03-19 | 43,073 | 27 (+1/−1) | Too long and abstract ("I wish he got practical"). |
+| 1.1 | `iMr-nmamZ_g` Kyla Scanlon, "How To Think About AI and Jobs" | 2:19 | 2026-05-29 | 133,856 | 29 (+5/−1) | About jobs economics, not working with AI. Off-outcome. |
+| 4.1 | `8c6JZ18W0Bo` Nick Saraev, "THE world's shortest Claude Code course" | 4:50 | 2026-11-01 | 97,186 | 30 (+10/−0) | **New finalist 2.** Post-rebuild and very short. Praised for simplicity: "Simplicity is what makes this more worth it", "Short crisp". Unverified: whether it uses the desktop app or the terminal. His agency funnel is in the description. |
+| 4.1 | `kT3P1Gdrzzs` The Coding Gopher | 8:42 | 2026-10-29 | 13,439 | 7 (+0/−0) | Developer-oriented, and viewers are split. |
+| 4.1 | `CtbfEK0x45k` TechPP part 1, `TvLgqLRWnho` Web Technology Institute "for Business Owners (No Coding)" | 10:26 / 11:36 | late Oct–Nov | under 900 | 0–1 | Right audience but no evidence yet. Re-check later. |
+| 2.4 | `NPV23y56kW4` ResultKit, `bc2KeezSDVk` In Theory Only ("steps checked October 19, 2026" against Anthropic's help pages) | 4:53 / 7:32 | 2026-10-26 / 10-20 | 65 / 20 | 0–1 | Too new to pick. **But useful evidence:** both post-rebuild descriptions still define chat Projects as knowledge plus instructions plus chats. That lowers the risk on `w7_yWjYyxjE` and on the 2.4 lesson copy. |
+| 5.3 | `6RXjpKXy2qk` Cynked AI, "Make Claude Read Your Email Every Morning and Send You a Report" | 8:29 | 2026-10-22 | 37 | 0 | Exactly the lesson's task. Its description says it runs on Claude's servers with the laptop shut and needs a paid plan. No audience evidence yet. Watch list. |
+| 5.3 | `pg2d8HWSlS4` zero cost ai | 7:00 | 2026-10-21 | 15 | 0 | Its description says "routines (now called scheduled tasks)". The naming has moved again, which the 5.3 copy should reflect. |
+| 0.2 | `fLFWdJ789t8`, `07DNLFgjMd4`, `aDR571phdAs`, `Ejfda1stNMM` and others | 3–13 min | Oct 28–Nov 4 | under 3,100 | 0–2 | Beginner tours of the rebuilt app exist now, but none has evidence. `Ejfda1stNMM` says the redesign "rolled out September to November 2026". |
+| 3.1 | `r6axtiq5-mM`, `Bm3kges7l1Q`, `dW4AZLGQiKw` | 2–3 min | Oct 23–Nov 3 | under 20 | 0–1 | Topic-exact, no evidence. 3.1 stays text-only. |
+| 2.1 | `vVnDzDqQI3g`, `todmaQUDdfg`, `rmX3L2fNBcY`, `5SxAlAmutOk` (bad vs good prompt) | 8 min | 2026 | under 600 | 0 | The format fits the lesson's task, but no evidence. No change. |
+
+**Decision:** two finalist swaps (1.1 and 4.1, shown in the table at the top). Run the round 2 searches again around 2026-12-01 for 0.2, 2.4, 4.1 and 5.3. By then the post-rebuild beginner videos will have enough views and comments to judge. Until then, those four use the current finalists or stay text-only.
 
 ## How the numbers were made
 
