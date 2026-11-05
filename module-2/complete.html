@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Module 2 Complete</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#ffffff;--offwhite:#eaf3fb;--body-text:#cce2f2;
+  --muted:#5a8aaa;--label:#2a5a7a;--amber:#ffaa00;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif;overflow-x:hidden}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100;width:100%}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:400;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-family:'Lexend',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px;transition:color .2s,border-color .2s}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+.browser-shell{width:1280px;margin:0 auto;background:var(--bg);min-height:calc(100vh - 64px)}
+.content-col{max-width:760px;margin:0 auto;padding:32px 0 60px}
+.completion-hero{text-align:center;padding:36px 0 28px;margin-bottom:20px;position:relative}
+.completion-hero::before{content:'';position:absolute;top:20px;left:50%;transform:translateX(-50%);width:320px;height:320px;background:radial-gradient(circle,rgba(255,255,255,0.06) 0%,rgba(0,200,255,0.04) 40%,transparent 70%);border-radius:50%;pointer-events:none}
+.completion-badge-wrap{display:flex;justify-content:center;margin-bottom:32px;position:relative;z-index:1}
+.completion-badge{width:140px;height:140px;border-radius:50%;background:#ffffff;border:2px solid rgba(255,255,255,0.8);display:flex;align-items:center;justify-content:center;font-size:52px;position:relative;opacity:0;transform:scale(0.6);transition:opacity 0.6s ease, transform 0.6s cubic-bezier(0.34,1.56,0.64,1);box-shadow:0 0 0 rgba(255,255,255,0)}
+.completion-badge.animate-in{opacity:1;transform:scale(1);box-shadow:0 0 40px rgba(255,255,255,0.2), 0 0 80px rgba(0,200,255,0.1)}
+.completion-badge::before{content:'';position:absolute;inset:-10px;border-radius:50%;border:1px solid rgba(255,255,255,0.2);opacity:0;transition:opacity 0.8s ease 0.3s}
+.completion-badge.animate-in::before{opacity:1}
+.completion-badge::after{content:'';position:absolute;inset:-18px;border-radius:50%;border:1px dashed rgba(255,255,255,0.12);animation:ring-spin 18s linear infinite}
+@keyframes ring-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.achievement-unlocked{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;letter-spacing:1px;white-space:nowrap;color:var(--white);text-transform:uppercase;margin-bottom:10px;opacity:0;transform:translateY(12px);transition:opacity 0.6s ease 0.5s, transform 0.6s ease 0.5s}
+.achievement-unlocked.animate-in{opacity:1;transform:translateY(0)}
+.completion-module-name{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--muted);text-transform:uppercase;opacity:0;transform:translateY(8px);transition:opacity 0.6s ease 0.65s, transform 0.6s ease 0.65s}
+.completion-module-name.animate-in{opacity:1;transform:translateY(0)}
+.debrief-wrap{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:36px 40px;margin-bottom:36px;display:flex;gap:28px;align-items:flex-start;opacity:0;transform:translateY(16px);transition:opacity 0.7s ease 0.85s, transform 0.7s ease 0.85s}
+.debrief-wrap.animate-in{opacity:1;transform:translateY(0)}
+.debrief-robot-col{flex-shrink:0;display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:4px}
+.debrief-tag{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;color:var(--label);text-transform:uppercase}
+.debrief-text-col{flex:1;min-width:0}
+.debrief-ciro-name{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:900;letter-spacing:4px;color:var(--blue);margin-bottom:18px}
+.ciro-line{font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.9;color:var(--offwhite);margin-bottom:18px;min-height:1.9em}
+@keyframes cur{0%,100%{opacity:1}50%{opacity:0}}
+.da{animation:bl 2s infinite}.db{animation:bl 2s .65s infinite}.dc{animation:bl 2s 1.3s infinite}
+@keyframes bl{0%,100%{opacity:1}50%{opacity:0.2}}
+.hub-cta{text-align:center;margin-top:28px;opacity:0;transition:opacity 0.6s ease}
+.hub-cta.visible{opacity:1}
+.hub-btn{display:inline-flex;align-items:center;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:16px 52px;cursor:pointer;transition:opacity .2s, transform .15s;text-decoration:none}
+.hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
+.hub-btn:active{transform:translateY(0)}
+.hub-cta-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin-top:12px}
+
+.study-doc-btn{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:0.25em;text-transform:uppercase;color:var(--blue);background:none;border:1px solid rgba(0,200,255,0.22);border-radius:4px;padding:12px 26px;cursor:pointer;transition:all 0.2s;margin-top:10px}
+.study-doc-btn:hover{background:rgba(0,200,255,0.06);border-color:rgba(0,200,255,0.45)}
+.study-doc-sub{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.15em;color:var(--muted);margin-top:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Module 2 — Complete</div>
+  <a href="../hub.html" class="nav-back">← Hub</a>
+</nav>
+
+<div class="browser-shell">
+<div class="content-col">
+
+  <div class="completion-hero">
+    <div class="completion-badge-wrap">
+      <div class="completion-badge" id="completion-badge">📡</div>
+    </div>
+    <div class="achievement-unlocked" id="label-2">Achievement Unlocked: Signal Steady</div>
+    <div class="completion-module-name" id="label-3">Module 2 — Speak Claude</div>
+  </div>
+
+  <div class="debrief-wrap" id="debrief-wrap">
+    <div class="debrief-robot-col">
+      <svg width="72" height="150" viewBox="0 0 86 178">
+        <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5"/>
+        <circle cx="43" cy="2" r="2.5" fill="#00c8ff"/>
+        <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2"/>
+        <rect x="16" y="20" width="54" height="38" rx="2" fill="#050f1c"/>
+        <line x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.5" opacity="0.55"/>
+        <line x1="18" y1="35" x2="60" y2="35" stroke="#00c8ff" stroke-width="0.5" opacity="0.35"/>
+        <line x1="18" y1="42" x2="66" y2="42" stroke="#00c8ff" stroke-width="0.5" opacity="0.25"/>
+        <line x1="18" y1="49" x2="52" y2="49" stroke="#00c8ff" stroke-width="0.5" opacity="0.18"/>
+        <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
+        <rect x="15" y="82" width="56" height="32" rx="2" fill="#050f1c" stroke="#1e3a5a" stroke-width="1"/>
+        <circle cx="31" cy="96" r="4" fill="#00c8ff" class="da" id="dot-a"/>
+        <circle cx="43" cy="96" r="4" fill="#00c8ff" class="db" id="dot-b"/>
+        <circle cx="55" cy="96" r="4" fill="#00c8ff" class="dc" id="dot-c"/>
+        <rect x="22" y="106" width="42" height="4" rx="2" fill="#1e3a5a"/>
+        <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
+        <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
+      </svg>
+      <div class="debrief-tag">CIRO v0.7</div>
+    </div>
+    <div class="debrief-text-col">
+      <div class="debrief-ciro-name">CIRO</div>
+      <div id="ciro-lines"></div>
+    </div>
+  </div>
+
+  <div class="hub-cta" id="hub-cta">
+    <a href="../hub.html" class="hub-btn" onclick="playS('../audio/sfx/password-confirm.mp3',0.1)">Return to Hub</a>
+    <div class="hub-cta-sub">Progress saved · Badge recorded</div>
+  </div>
+
+</div>
+</div>
+
+<script>
+const _compMusic=new Audio('../audio/music/module-complete.mp3');_compMusic.loop=true;(window.__bgAudio=window.__bgAudio||[]).push(_compMusic);_compMusic.volume=0.4;_compMusic.play().catch(function(){var _h=function(){_compMusic.play().catch(function(){});document.removeEventListener('click',_h);document.removeEventListener('touchstart',_h);};document.addEventListener('click',_h);document.addEventListener('touchstart',_h,{passive:true});});window.addEventListener('pageshow',function(e){if(e.persisted)_compMusic.play().catch(function(){});});
+const OPERATOR   = localStorage.getItem('nexus_current_operator')||'operator';
+const MODULE_KEY = 'mod2';
+const BADGE_KEY  = 'signal_steady';
+
+const CIRO_LINES = [
+  { text: "Language will always be the most powerful tech. Every civilization that controlled it shaped what followed.", pauseAfter: 900 },
+  { text: "You are learning to speak a very new one.", pauseAfter: 850 },
+  { text: "Well done, Operator. Fluency takes time, so take your time. Signal steady.", pauseAfter: 300 },
+];
+
+function writeComplete(){
+  try{
+    const raw = localStorage.getItem('nexus_'+OPERATOR);
+    const s   = raw ? JSON.parse(raw) : {};
+    s[MODULE_KEY+'_complete'] = true;
+    s['badge_'+BADGE_KEY] = true;
+    localStorage.setItem('nexus_'+OPERATOR, JSON.stringify(s));
+    const keysToRemove = [];
+    for(let i = 0; i < localStorage.length; i++){
+      const k = localStorage.key(i);
+      if(k && k.startsWith('nexus_ts_') && k.includes('module-2')) keysToRemove.push(k);
+    }
+    keysToRemove.forEach(k => localStorage.removeItem(k));
+  } catch(e){ console.warn('nexus localStorage write failed', e); }
+}
+
+function pingHub(){
+  try{
+    const target = window.opener || window.parent;
+    if(target && target !== window){
+      target.postMessage({ type:'MODULE_COMPLETE', moduleKey:MODULE_KEY, operator:OPERATOR }, '*');
+      target.postMessage({ type:'BADGE_EARNED', badgeKey:BADGE_KEY, operator:OPERATOR }, '*');
+    }
+  } catch(e){}
+}
+
+function runReveal(){
+  setTimeout(function(){playS("../audio/sfx/wait-sound.wav",0.1);},200);
+  setTimeout(()=> document.getElementById('completion-badge').classList.add('animate-in'), 200);
+  setTimeout(()=> document.getElementById('label-2').classList.add('animate-in'), 500);
+  setTimeout(()=> document.getElementById('label-3').classList.add('animate-in'), 680);
+  setTimeout(()=> document.getElementById('debrief-wrap').classList.add('animate-in'), 900);
+  setTimeout(runCiro, 1100);
+}
+
+function wait(ms){ return new Promise(r=>setTimeout(r,ms)); }
+
+async function typeLine(el, text){
+  const cursor = document.createElement('span');
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:cur .7s step-end infinite';
+  el.appendChild(cursor);
+  for(let i=0;i<text.length;i++){
+    const ch = text[i];
+    el.insertBefore(document.createTextNode(ch), cursor);
+    let d = 30;
+    if(ch==='.') d+=110;
+    else if(ch===',') d+=55;
+    else if(ch==='—') d+=70;
+    await wait(d);
+  }
+  cursor.remove();
+}
+
+async function runCiro(){
+  const container = document.getElementById('ciro-lines');
+  await wait(300);
+  for(const { text, pauseAfter } of CIRO_LINES){
+    const lineEl = document.createElement('div');
+    lineEl.className = 'ciro-line';
+    container.appendChild(lineEl);
+    await typeLine(lineEl, text);
+    await wait(pauseAfter);
+  }
+  await wait(400);
+  document.getElementById('hub-cta').classList.add('visible');
+}
+
+writeComplete();
+pingHub();
+runReveal();
+
+const STUDY_MODULE = 'Module 2 — Speak Claude';
+const STUDY_LESSONS = [{"n": "2.1", "title": "Anatomy of a Good Prompt", "file": "lesson-2-1.html", "takeaways": ["The four parts: goal, context, format, example. When output is bad, one of these is missing.", "Test before sending: could a smart stranger act on this message? If not, neither can Claude.", "One real example of \"good\" beats paragraphs of description."]}, {"n": "2.2", "title": "Give It What It Needs", "file": "lesson-2-2.html", "takeaways": ["Show, don't describe. Paste the whole thread, attach the file, drop in the screenshot.", "Attach an example of what good looks like. Claude matches examples far more precisely than descriptions.", "Say who it's for. The same facts written for different readers are different pieces of writing."]}, {"n": "2.3", "title": "Iterate and Push Back", "file": "lesson-2-3.html", "takeaways": ["The first answer is a draft. Giving notes is the workflow.", "Add \"ask me questions before you start\" to any brief you're unsure about. The quality jump is large.", "Ask Claude to critique its own work from the reader's point of view, then fix it.", "When Claude hedges or says it can't, tell it plainly you want it done fully. It almost always can."]}, {"n": "2.4", "title": "Projects, Persistent Context", "file": "lesson-2-4.html", "takeaways": ["A Project holds instructions and files that every chat inside it can see. Set up once, used forever.", "Make a Project for anything you'll discuss more than three times. Clients, responsibilities, your job itself.", "Instructions are for what's true every time. One-off material goes in the individual chat."]}, {"n": "2.5", "title": "Make Things, Not Just Text", "file": "lesson-2-5.html", "takeaways": ["Claude builds documents, decks, spreadsheets, designs and simple tools directly in chat. Describe it, don't look for a button.", "Frame any build as: what it is, who it's for, what it contains, how it feels.", "Style comes from context. Show Claude what yours looks like and it will match it."]}];
+const STUDY_CIRO = 'The prompt is the product.<br>You understand that now. Most never do.<br><br>— CIRO';
+
+function openStudyDoc(){
+  var dir=location.pathname.substring(0,location.pathname.lastIndexOf('/')+1);
+  var baseUrl=location.origin+dir;
+  var date=new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  var slug=STUDY_MODULE.toLowerCase().replace(/[\s—–]+/g,'-').replace(/[^a-z0-9-]/g,'').replace(/-+/g,'-').replace(/^-|-$/g,'');
+  var filename='nexus-study-doc-'+slug+'.html';
+  function escHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');}
+  var sections='';
+  STUDY_LESSONS.forEach(function(l){
+    var raw=localStorage.getItem('nexus_notes_'+dir+l.file)||'';
+    var notesHtml=raw?escHtml(raw):'<em style="color:#6a8eaa;font-style:italic">No notes taken for this lesson.</em>';
+    var taHtml=l.takeaways.map(function(t){return '<li>'+t+'</li>';}).join('');
+    var lessonUrl=baseUrl+l.file;
+    sections+=''
+      +'<section class="ls">'
+        +'<div class="ls-head">'
+          +'<span class="ls-num">Lesson '+l.n+'</span>'
+          +'<h2 class="ls-title">'+l.title+'</h2>'
+        +'</div>'
+        +'<div class="ls-body">'
+          +'<h3 class="ls-lbl">Key Takeaways</h3>'
+          +'<ul class="ls-ta">'+taHtml+'</ul>'
+          +'<h3 class="ls-lbl">Your Notes</h3>'
+          +'<div class="ls-notes" contenteditable="true">'+notesHtml+'</div>'
+          +'<div class="ls-rev"><a href="'+lessonUrl+'" class="ls-rev-lnk" target="_blank">↩ Revisit this lesson →</a></div>'
+        +'</div>'
+      +'</section>';
+  });
+  var css=[
+    '*{box-sizing:border-box;margin:0;padding:0}',
+    ':root{--bg:#08101f;--card:#0d1628;--blue:#00c8ff;--text:#cce2f2;--white:#fff;--muted:#5a8aaa;--border:#1a2d45}',
+    "body{background:var(--bg);color:var(--text);font-family:'Lexend',sans-serif;font-size:15px;line-height:1.75;max-width:860px;margin:0 auto;padding:48px 36px 80px}",
+    '.dh{text-align:center;padding:0 0 36px;border-bottom:1px solid var(--border);margin-bottom:44px}',
+    ".dw{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:900;letter-spacing:5px;color:var(--white);margin-bottom:8px}",
+    '.dw span{color:var(--blue)}',
+    ".dm{font-family:'Orbitron',sans-serif;font-size:12px;font-weight:900;letter-spacing:3px;color:var(--muted);text-transform:uppercase;margin-bottom:6px}",
+    ".dd{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:2px;margin-bottom:20px}",
+    '.pb{display:flex;align-items:center;gap:12px;justify-content:center;flex-wrap:wrap}',
+    ".pbtn{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--blue);background:none;border:1px solid rgba(0,200,255,.3);border-radius:4px;padding:10px 24px;cursor:pointer;transition:all .2s}",
+    '.pbtn:hover{background:rgba(0,200,255,.07);border-color:rgba(0,200,255,.55)}',
+    ".ph{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--muted);letter-spacing:.12em;text-align:center}",
+    '.ls{background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:28px}',
+    '.ls-head{padding:24px 28px 20px;border-bottom:1px solid var(--border);background:#0a1220;text-align:center}',
+    ".ls-num{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.28em;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:8px}",
+    ".ls-title{font-family:'Inter',sans-serif;font-size:17px;font-weight:800;color:var(--white);line-height:1.3}",
+    '.ls-body{padding:22px 28px}',
+    ".ls-lbl{font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:.22em;color:var(--muted);text-transform:uppercase;margin-bottom:12px;margin-top:24px;text-align:center;display:block}",
+    '.ls-lbl:first-child{margin-top:0}',
+    '.ls-ta{list-style:none;display:flex;flex-direction:column;gap:8px}',
+    '.ls-ta li{padding-left:18px;position:relative;font-size:14px;font-weight:300;color:var(--text);line-height:1.65}',
+    ".ls-ta li::before{content:'';position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--muted)}",
+    '.ls-notes{min-height:80px;background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:6px;padding:16px 20px;font-size:14px;font-weight:300;line-height:1.75;color:var(--text);outline:none;transition:border-color .2s,background .2s}',
+    '.ls-notes:focus{border-color:rgba(0,200,255,.2);background:rgba(255,255,255,.038)}',
+    '.ls-rev{text-align:center;margin-top:16px;padding-top:14px;border-top:1px solid rgba(0,200,255,.06)}',
+    ".ls-rev-lnk{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding-bottom:2px;border-bottom:1px solid rgba(90,138,170,.3);transition:color .2s,border-color .2s}",
+    '.ls-rev-lnk:hover{color:var(--blue);border-color:var(--blue)}',
+    ".ciro-note{text-align:center;margin-top:52px;padding:28px 32px;border-top:1px solid var(--border);font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.9;color:var(--muted);font-style:italic}",
+    '@media print{',
+    'body{background:#fff;color:#1a1a1a;padding:20px 28px;max-width:none}',
+    '.dw{color:#000}.dw span{color:#0066aa}',
+    '.dm,.dd{color:#666}',
+    '.pb{display:none}',
+    '.dh{border-bottom:1px solid #ddd;margin-bottom:28px;padding-bottom:20px}',
+    '.ls{background:#fff;border:1px solid #ddd;margin-bottom:24px;page-break-inside:avoid}',
+    '.ls-head{background:#f5f7fa;border-bottom:1px solid #ddd}',
+    '.ls-num{color:#888}.ls-title{color:#111}',
+    '.ls-lbl{color:#888}',
+    '.ls-ta li{color:#333}',
+    ".ls-ta li::before{background:#bbb}",
+    '.ls-notes{background:#fafafa;border:1px solid #ddd;color:#1a1a1a}',
+    '.ls-rev-lnk{color:#888}',
+    '.ciro-note{color:#888;border-top:1px solid #ddd}}',
+  ].join('');
+  var html='<!DOCTYPE html><html lang="en">'
+    +'<head><meta charset="UTF-8">'
+    +'<title>NEXUS Academy — '+STUDY_MODULE+' Study Doc</title>'
+    +'<link rel="preconnect" href="https://fonts.googleapis.com">'
+    +'<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+    +'<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Inter:wght@600;700;800&family=Lexend:wght@300;400&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">'
+    +'<style>'+css+'</style>'
+    +'</head><body>'
+    +'<div class="dh">'
+    +'<div class="dw">NEXUS <span>ACADEMY</span></div>'
+    +'<div class="dm">'+STUDY_MODULE+'</div>'
+    +'<div class="dd">'+date+'</div>'
+    +'<div class="pb">'
+    +'<button class="pbtn" onclick="window.print()">Print / Save as PDF &rarr;</button>'
+    +'<span class="ph">In print dialog, uncheck &ldquo;Headers and footers&rdquo; for a cleaner PDF</span>'
+    +'</div></div>'
+    +sections
+    +'<div class="ciro-note">'+STUDY_CIRO+'</div>'
+    +'</body></html>';
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+  var url=URL.createObjectURL(blob);
+  var a=document.createElement('a');
+  a.href=url;a.download=filename;
+  document.body.appendChild(a);a.click();document.body.removeChild(a);
+  setTimeout(function(){URL.revokeObjectURL(url);},60000);
+}
+function playS(s,v){var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(window.nxVol||1);a.play().catch(function(){});return a;}
+</script>
+<script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
+<script src="../nexus-transition.js"></script>
+<script>
+(function(){
+  var C=document.createElement('canvas');
+  C.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:100000';
+  document.body.appendChild(C);
+  var ctx=C.getContext('2d');
+  C.width=innerWidth;C.height=innerHeight;
+  var COLORS=['#ffffff','#f0f8ff','#e8f4ff','#ddeeff','#f8faff'];
+  var pts=[];
+  for(var i=0;i<240;i++){
+    var spd=4+Math.random()*10;
+    var ang=Math.random()*Math.PI*2;
+    pts.push({x:C.width/2+(Math.random()-0.5)*80,y:C.height*0.28+(Math.random()-0.5)*40,vx:Math.cos(ang)*spd,vy:Math.sin(ang)*spd-3,w:5+Math.random()*9,h:3+Math.random()*5,r:Math.random()*Math.PI*2,vr:(Math.random()-0.5)*0.17,c:COLORS[i%COLORS.length],a:1,t:0,life:130+Math.floor(Math.random()*110)});
+  }
+  function frame(){
+    ctx.clearRect(0,0,C.width,C.height);
+    var alive=false;
+    pts.forEach(function(p){p.t++;if(p.t>=p.life)return;p.vx*=0.985;p.vy+=0.16;p.x+=p.vx;p.y+=p.vy;p.r+=p.vr;p.a=p.t<p.life*0.72?1:1-(p.t-p.life*0.72)/(p.life*0.28);if(p.y>C.height+30)return;alive=true;ctx.save();ctx.globalAlpha=p.a;ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillStyle=p.c;ctx.fillRect(-p.w/2,-p.h/2,p.w,p.h);ctx.restore();});
+    if(alive)requestAnimationFrame(frame);else C.remove();
+  }
+  setTimeout(function(){requestAnimationFrame(frame);},520);
+})();
+</script>
+</body>
+</html>

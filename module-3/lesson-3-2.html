@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Lesson 3.2</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#ffffff;--offwhite:#eaf3fb;--body-text:#cce2f2;
+  --muted:#5a8aaa;--placeholder:#3a6888;--amber:#ffaa00;--green:#3ddc97;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100;width:100%}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-family:'Lexend',sans-serif;font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-family:'Lexend',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px;transition:color .2s,border-color .2s}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+.browser-shell{width:1280px;margin:0 auto;background:var(--bg);min-height:calc(100vh - 64px)}
+.content-col{max-width:860px;margin:0 auto;padding:52px 0 100px}
+.section{margin-bottom:36px}
+.lesson-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:36px 40px}
+.lesson-meta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.lesson-meta .mode{color:var(--blue)}
+h1.lesson-title{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;letter-spacing:1.5px;color:var(--white);line-height:1.4;text-align:center;margin-bottom:24px}
+.context-copy{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.context-copy p+p,.context-copy ul+p,.context-copy ol+p,.context-copy p+ul,.context-copy p+ol{margin-top:14px}
+.context-copy ul,.context-copy ol{margin-left:22px;display:flex;flex-direction:column;gap:6px}
+.context-copy strong{color:var(--white);font-weight:500}
+.context-copy a{color:var(--blue)}
+.context-copy code,.step-text code,.task-intro code,.takeaway-item code{font-family:'IBM Plex Mono',monospace;font-size:0.88em;color:var(--blue);background:rgba(0,200,255,0.06);padding:1px 5px;border-radius:3px}
+.callout{border-left:2px solid var(--blue-border);padding:4px 0 4px 18px;margin:16px 0;color:var(--muted);font-style:italic}
+.video-wrapper{position:relative;padding-bottom:56.25%;height:0;background:#000;border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.video-note{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-align:center;margin-top:12px}
+/* task box */
+.task-box{background:var(--card);border:1px solid var(--blue-border);border-radius:8px;padding:36px 40px;position:relative;overflow:hidden}
+.task-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,rgba(0,200,255,0.7),transparent)}
+.task-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-bottom:18px;flex-wrap:wrap}
+.task-label{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;letter-spacing:4px;color:var(--blue);text-transform:uppercase}
+.task-time{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.task-intro{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.85;color:var(--body-text);margin-bottom:22px}
+.task-intro p+p{margin-top:12px}
+.step-list{list-style:none;display:flex;flex-direction:column;gap:18px;margin-bottom:8px}
+.step-item{display:flex;gap:18px;align-items:flex-start}
+.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue);margin-top:2px}
+.step-text{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.8;color:var(--body-text);flex:1;min-width:0}
+.step-text strong{color:var(--white);font-weight:500}
+.step-text ul,.step-text ol{margin:8px 0 4px 18px;display:flex;flex-direction:column;gap:4px}
+.task-outro{font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;line-height:1.8;color:var(--muted);margin-top:18px}
+.prompt-block{position:relative;background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:16px 20px;margin:12px 0;font-family:'IBM Plex Mono',monospace;font-size:12.5px;line-height:1.75;color:#a8c8e0}
+.prompt-block pre{white-space:pre-wrap;word-break:break-word;font:inherit;margin:0;padding-right:70px}
+.copy-btn{position:absolute;top:10px;right:10px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:5px 10px;cursor:pointer;transition:color .2s,border-color .2s}
+.copy-btn:hover{color:var(--blue);border-color:var(--blue-border)}
+.copy-btn.copied{color:var(--green);border-color:rgba(61,220,151,0.4)}
+.task-actions{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:28px;padding-top:24px;border-top:1px solid var(--border);flex-wrap:wrap}
+.task-done-btn{display:inline-flex;align-items:center;gap:12px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 32px;cursor:pointer;transition:opacity .2s,transform .15s,background .2s}
+.task-done-btn:hover{opacity:0.9;transform:translateY(-1px)}
+.task-done-btn .chk{display:inline-block;width:16px;height:16px;border:2px solid var(--bg);border-radius:3px;position:relative}
+.task-box.done .task-done-btn{background:transparent;color:var(--green);border:1px solid rgba(61,220,151,0.5);cursor:default}
+.task-box.done .task-done-btn:hover{opacity:1;transform:none}
+.task-box.done .task-done-btn .chk{border-color:var(--green)}
+.task-box.done .task-done-btn .chk::after{content:'';position:absolute;left:3px;top:-1px;width:5px;height:10px;border:solid var(--green);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.task-skip{font-family:'Lexend',sans-serif;font-size:12px;font-weight:300;letter-spacing:1px;color:var(--muted);text-decoration:none;border-bottom:1px solid transparent;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none}
+.task-skip:hover{color:var(--blue);border-bottom-color:var(--blue-border)}
+.task-box.done .task-skip{display:none}
+.task-done-msg{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);display:none}
+.task-box.done .task-done-msg{display:block}
+/* notes + takeaways */
+textarea.notes-field{display:block;width:100%;min-height:130px;background:rgba(255,255,255,0.028);border:1px solid var(--border);border-radius:8px;padding:20px 24px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;line-height:1.75;resize:none;overflow:hidden;outline:none;transition:border-color .2s,background .2s;caret-color:var(--blue)}
+textarea.notes-field::placeholder{color:rgba(90,138,170,0.35);font-style:italic}
+textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,255,255,0.038)}
+.takeaways-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:32px 40px}
+.takeaways-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:3px;color:var(--white);text-transform:uppercase;text-align:center;margin-bottom:22px}
+.takeaway-item{display:flex;align-items:flex-start;gap:14px;padding:7px 0;font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.65;color:var(--body-text)}
+.t-bullet{flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--white);margin-top:8px;opacity:0.85}
+/* nav */
+.lesson-nav{display:flex;justify-content:space-between;gap:16px;padding-top:40px;border-top:1px solid var(--border)}
+.nav-btn{flex:1;padding:18px 24px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s,opacity .2s}
+.nav-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.nav-btn.next{align-items:flex-end;text-align:right}
+.nav-btn.next.locked{opacity:0.45;border-style:dashed}
+.nav-btn.next.locked:hover{border-color:var(--border);background:var(--card)}
+.nav-dir{font-family:'Lexend',sans-serif;font-size:10px;font-weight:300;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.nav-name{font-family:'Lexend',sans-serif;font-size:14px;font-weight:500;color:var(--white);line-height:1.4}
+.nav-hint{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-top:10px;min-height:14px;opacity:0;transition:opacity .2s}
+.nav-hint.show{opacity:1}
+.nav-hint a{color:var(--muted);margin-left:14px;text-decoration:none;border-bottom:1px solid var(--border)}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
+.shake{animation:shake .4s ease}
+@media(max-width:768px){
+  .task-box{padding:22px 18px !important}
+  .task-label{font-size:13px;letter-spacing:2.5px}
+  .task-intro,.step-text{font-size:14px}
+  .step-item{gap:12px}.step-num{width:28px;height:28px;font-size:11px}
+  .task-actions{flex-direction:column;align-items:stretch}
+  .task-done-btn{justify-content:center;width:100%}
+  .task-skip{text-align:center}
+  .prompt-block{font-size:12px;padding:14px 14px}
+  .prompt-block pre{padding-right:0;padding-top:26px}
+  .nav-hint{text-align:left}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Lesson 3.2</div>
+  <a href="../hub.html" class="nav-back">← Hub</a>
+</nav>
+<div class="browser-shell">
+<div class="content-col">
+  <div class="lesson-box section">
+    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <h1 class="lesson-title">Connect Your Work Tools</h1>
+    <div class="context-copy">
+<p>Email and calendar are where information arrives. Your work tools are where it gets done: the task manager, the docs, the shared drive, the team chat. Connect those and Claude stops being a place you go and starts being a colleague who's in the same tools you are.</p>
+<p>Look through the Connectors list for the tools you actually use day to day. Common ones: ClickUp, Notion, Asana, Google Drive, Slack. Connect the one or two you live in. Don't connect everything. More connectors means more for Claude to consider and more permissions to think about. Start with what you touch daily.</p>
+<p>What this makes possible:</p>
+<ul><li><strong>Email becomes tasks.</strong> "Read the thread from the client and create tasks in ClickUp for everything we promised, with due dates."</li><li><strong>Docs become answers.</strong> "Find our onboarding doc in Drive and tell me what we say about the first week."</li><li><strong>Chat becomes summary.</strong> "What did the team decide in the project channel this week?"</li><li><strong>Updates write themselves.</strong> "Look at my open tasks and draft a status update for the team."</li></ul>
+<p>The pattern is always: information lives in one tool, needs to end up in another, and a human used to carry it across by hand. Now you say the sentence and it's carried.</p>
+    </div>
+  </div>
+
+  <div class="task-box section" id="task-box">
+    <div class="task-head">
+      <div class="task-label">Do This Now</div>
+      <div class="task-time">20 min</div>
+    </div>
+    <div class="task-intro">
+<p>Connect your main work tool and carry something across.</p>
+    </div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect one or two work tools</strong> you use every day in Settings → Connectors.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask Claude what it can see.</strong> "What can you access in [tool]? Give me a quick overview of what's in there." Confirm it's seeing what you expect.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Carry something across.</strong> Take an email thread or a set of meeting notes and say: "Create tasks in [tool] for everything that needs doing here. Assign to me, due this week, and show me the list before you create them." Review, approve, done.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Pull something out.</strong> "Give me a status summary of everything I have open in [tool], grouped by project, in order of urgency."</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check your work.</strong> Open the tool itself. Confirm the tasks are really there and look right. Fix anything off by telling Claude.</div></li></ol>
+    <div class="task-actions">
+      <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
+      <span class="task-done-msg">Task logged · Lesson unlocked</span>
+
+    </div>
+  </div>
+  <div style="margin-bottom:36px">
+    <textarea class="notes-field" id="lesson-notes" placeholder="Notes..."></textarea>
+  </div>
+  <div class="takeaways-box section">
+    <div class="takeaways-title">Key Takeaways</div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Connect the one or two work tools you actually live in. Not everything.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The core move: information in one tool, needed in another, carried across by a sentence instead of by hand.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Ask Claude to show you what it's about to create before it creates it. Review, then approve.</div></div>
+  </div>
+  <div class="lesson-nav">
+    <a href="lesson-3-1.html" class="nav-btn prev">
+      <span class="nav-dir">← Previous</span>
+      <span class="nav-name">Connect Your Inbox and Calendar</span>
+    </a>
+    <a href="lesson-3-3.html" class="nav-btn next locked" id="next-btn">
+      <span class="nav-dir">Next →</span>
+      <span class="nav-name">A Morning With Claude</span>
+    </a>
+  </div>
+  <div class="nav-hint" id="nav-hint">Mark the task done to continue <a href="lesson-3-3.html" id="nav-anyway">continue anyway</a></div>
+</div>
+</div>
+<script>
+const TASK_KEY='nexus_task_'+location.pathname;
+const NEXT_HREF='lesson-3-3.html';
+function playS(s,v){try{var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(window.nxVol||1);a.play().catch(function(){});return a;}catch(e){}}
+function applyTaskState(){
+  const done=!!localStorage.getItem(TASK_KEY);
+  document.getElementById('task-box').classList.toggle('done',done);
+  document.getElementById('task-done-label').textContent=done?'Task done':'Mark task done';
+  document.getElementById('next-btn').classList.toggle('locked',!done);
+  if(done) document.getElementById('nav-hint').classList.remove('show');
+}
+function markTaskDone(){
+  if(localStorage.getItem(TASK_KEY)) return;
+  localStorage.setItem(TASK_KEY,String(Date.now()));
+  playS('../audio/sfx/short-success.wav',0.12);
+  applyTaskState();
+}
+function skipTask(){
+  localStorage.setItem(TASK_KEY,'skipped');
+  playS('../audio/sfx/password-confirm.mp3',0.1);
+  applyTaskState();
+  if(window.nxTransit) window.nxTransit(NEXT_HREF,false); else location.href=NEXT_HREF;
+}
+document.getElementById('next-btn').addEventListener('click',function(e){
+  if(this.classList.contains('locked')){
+    e.preventDefault();e.stopImmediatePropagation();
+    this.classList.remove('shake');void this.offsetWidth;this.classList.add('shake');
+    document.getElementById('nav-hint').classList.add('show');
+    playS('../audio/sfx/robot-error.wav',0.08);
+  }
+},true);
+document.querySelectorAll('.prompt-block').forEach(function(b){
+  const btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';
+  btn.addEventListener('click',function(){
+    const txt=b.querySelector('pre').innerText;
+    (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){
+      const r=document.createRange();r.selectNodeContents(b.querySelector('pre'));const s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected';
+    });
+  });
+  b.appendChild(btn);
+});
+window.addEventListener('load',()=>{
+  const title=document.querySelector('h1.lesson-title')?.textContent||'';
+  localStorage.setItem('nexus_last_page_'+(localStorage.getItem('nexus_current_operator')||'operator'),JSON.stringify({url:location.pathname,title}));
+  const ta=document.getElementById('lesson-notes');function autoGrow(){ta.style.height='auto';ta.style.height=ta.scrollHeight+'px';}const saved=localStorage.getItem('nexus_notes_'+location.pathname);if(saved){ta.value=saved;autoGrow();}ta.addEventListener('input',function(){autoGrow();localStorage.setItem('nexus_notes_'+location.pathname,ta.value);});
+  applyTaskState();
+});
+applyTaskState();
+</script>
+<script>(function(){var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
+<script src="../nexus-transition.js"></script>
+</body>
+</html>

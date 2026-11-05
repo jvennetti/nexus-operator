@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Module 4 Challenge</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#ffffff;--offwhite:#eaf3fb;--body-text:#cce2f2;
+  --muted:#5a8aaa;--label:#2a5a7a;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100;width:100%}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-family:'Lexend',sans-serif;font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-family:'Lexend',sans-serif;font-size:11px;font-weight:400;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px;transition:color .2s,border-color .2s}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+.banner{width:100%;height:420px;position:relative;overflow:hidden;background:#0d1628}
+.banner-img{width:100%;height:100%;object-fit:cover;object-position:center 35%;display:block;filter:brightness(0.72)}
+.banner-overlay{position:absolute;inset:0;background:linear-gradient(to bottom, transparent 30%, var(--bg) 100%)}
+.banner-label{position:absolute;bottom:44px;left:0;right:0;text-align:center}
+.banner-title{font-family:'Orbitron',sans-serif;font-size:36px;font-weight:900;letter-spacing:3px;color:var(--white);text-transform:uppercase;text-shadow:0 2px 24px rgba(0,0,0,0.7)}
+.browser-shell{width:1280px;margin:0 auto}
+.content-col{max-width:860px;margin:0 auto;padding:0 0 100px}
+.section-title{font-family:'Orbitron',sans-serif;font-size:16px;font-weight:700;letter-spacing:2px;color:var(--white);text-transform:uppercase;margin-bottom:18px;text-align:center}
+.body-copy{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.body-copy p+p{margin-top:14px}
+.body-copy strong{font-weight:500;color:var(--offwhite)}
+.scenario-box{background:var(--card2);border:1px solid var(--border);border-radius:8px;padding:36px 40px;margin-bottom:36px}
+.challenge-box{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:36px 40px;margin-bottom:36px}
+.challenge-title{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:700;letter-spacing:2px;color:var(--white);text-transform:uppercase;margin-bottom:28px;text-align:center}
+.step-list{list-style:none;display:flex;flex-direction:column;gap:20px}
+.step-item{display:flex;align-items:flex-start;gap:20px}
+.step-num{flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;color:var(--blue);margin-top:2px}
+.step-text{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.75;color:var(--body-text)}
+.step-text strong{font-weight:500;color:var(--offwhite)}
+.step-text ul{margin:10px 0 4px 18px;display:flex;flex-direction:column;gap:6px}
+.prompt-block{background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:16px 20px;font-family:'IBM Plex Mono',monospace;font-size:12px;line-height:1.75;color:#a8c8e0;margin:12px 0}
+.deliverable-box{background:var(--bg);border:1px solid var(--blue-border);border-radius:8px;padding:32px 40px;margin-bottom:36px;position:relative;overflow:hidden}
+.deliverable-box::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+.deliverable-text{font-family:'Lexend',sans-serif;font-size:15px;font-weight:400;line-height:1.8;color:var(--body-text);text-align:left}
+.deliverable-text ul{margin:10px 0 4px 18px;display:flex;flex-direction:column;gap:6px}
+.cta-row{display:flex;flex-direction:column;align-items:center;gap:18px;padding-top:8px;margin-bottom:52px}
+.mark-complete-btn{font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:18px 52px;cursor:pointer;transition:opacity .2s,transform .15s;text-decoration:none;display:inline-block}
+.mark-complete-btn:hover{opacity:0.88;transform:translateY(-1px)}
+.mark-complete-btn:active{transform:translateY(0)}
+.cta-sub{font-family:'Lexend',sans-serif;font-size:12px;font-weight:300;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase}
+.prev-nav{border-top:1px solid var(--border);padding-top:40px;display:flex;justify-content:flex-start}
+.nav-btn{padding:18px 24px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:6px;transition:border-color .2s,background .2s;max-width:280px}
+.nav-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.nav-dir{font-family:'Lexend',sans-serif;font-size:10px;font-weight:300;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.nav-name{font-family:'Lexend',sans-serif;font-size:14px;font-weight:500;color:var(--white);line-height:1.4}
+.setup-strip{background:var(--box);border:1px solid var(--border);border-left:3px solid rgba(0,200,255,0.5);border-radius:0 6px 6px 0;padding:22px 28px;margin-bottom:36px}
+.setup-label{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.extension-box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:28px 40px;margin-bottom:36px}
+.extension-text{font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.8;color:var(--muted);text-align:left}
+.body-copy ul,.body-copy ol,.step-text ol,.deliverable-text ol{margin:10px 0 4px 18px;display:flex;flex-direction:column;gap:6px}
+.copy-btn{float:right;margin:-4px -8px 0 12px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);background:none;border:1px solid var(--border);border-radius:3px;padding:4px 10px;cursor:pointer}
+.copy-btn:hover{color:var(--blue);border-color:var(--blue-border)}
+.integration-note{background:var(--card);border:1px solid var(--border);border-left:3px solid rgba(255,170,0,0.5);border-radius:0 6px 6px 0;padding:20px 28px;margin-bottom:36px}
+.integration-text{font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;line-height:1.8;color:var(--muted)}
+.prompt-block{position:relative}.prompt-block pre{white-space:pre-wrap;word-break:break-word;font:inherit;margin:0;padding-right:70px}
+.copy-btn{position:absolute;top:10px;right:10px;float:none;margin:0}
+.body-copy p+p,.extension-text p+p,.integration-text p+p{margin-top:12px}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Module 4 — Challenge</div>
+  <a href="../hub.html" class="nav-back">← Hub</a>
+</nav>
+
+<div class="banner">
+  <img class="banner-img" src="../images/modules/m4-challenge.png" alt="Module 4 Challenge">
+  <div class="banner-overlay"></div>
+  <div class="banner-label">
+    <div class="banner-title">The Challenge</div>
+  </div>
+</div>
+
+<div class="browser-shell">
+<div class="content-col">
+  <div class="scenario-box">
+    <div class="section-title">The Scenario</div>
+    <div class="body-copy">
+<p>You have a workspace, an instructions file, something you built, and the safety habits. This challenge is the first time you use Claude Code for a real piece of your work instead of a practice run.</p>
+<p>Go back to your Operator List. At least one item on it involves files: documents that need combining, a folder that needs organizing, a report that gets built from several sources, something that needs to be turned into a page or a spreadsheet. That's your challenge.</p>
+    </div>
+  </div>
+
+  <div class="setup-strip">
+    <div class="setup-label">Before you build</div>
+    <div class="body-copy">
+<p>Copy your Operator List document and your Operator Profile into your <code>nexus-workspace</code> folder. Tell Claude Code: "I added my Operator List and Operator Profile. Read them and update ABOUT-ME.md and CLAUDE.md with anything useful."</p>
+    </div>
+  </div>
+
+  <div class="challenge-box">
+    <div class="challenge-title">Your Challenge</div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick the file-shaped task.</strong> From your Operator List, choose the one that most involves documents, folders or data. If none do, pick the one closest.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Set up its working area.</strong> "Create a project folder for [task]. Move the relevant files in. Write a short NOTES.md describing what this task is and what done looks like."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Plan, then build small.</strong> "Before building, give me a plan for the simplest version of a tool or process that handles this. Then build it." Review the plan. Approve. Use the first version on real input.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Three rounds, then break it.</strong> Give notes. Then give it input it wasn't built for and say "fix it" when it fails.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Document it for future you.</strong> "Write a HOW-TO.md in this folder: how to run this next time, what it needs, what it produces, in plain language." Read it as if you'd forgotten everything. Fix what's unclear.</div></li><li class="step-item"><div class="step-num">6</div><div class="step-text"><strong>Commit it.</strong> "Commit all of this with a clear message." Your version history now has a real project in it.</div></li></ol>
+  </div>
+
+  <div class="deliverable-box">
+    <div class="section-title">Your Deliverable</div>
+    <div class="deliverable-text">
+<ul><li>A project folder in your workspace with a working tool or process for one real task from your Operator List.</li><li>It has been run on real input at least once, improved through notes, and survived one thing it wasn't built for.</li><li>A HOW-TO.md that future you could follow cold.</li></ul>
+    </div>
+  </div>
+
+  <div class="extension-box">
+    <div class="section-title">Go Further</div>
+    <div class="extension-text">
+<p>Ask Claude Code: "Look at my Operator List. Which of the other items could be handled by something built in this workspace? Propose the smallest version of each." Don't build them. Just know they're possible.</p>
+    </div>
+  </div>
+
+  <div class="cta-row">
+    <a href="complete.html" class="mark-complete-btn" onclick="markComplete()">Mark Complete</a>
+    <div class="cta-sub">Routes to module completion</div>
+  </div>
+
+  <div class="prev-nav">
+    <a href="lesson-4-5.html" class="nav-btn">
+      <span class="nav-dir">← Previous</span>
+      <span class="nav-name">Sessions, Permissions, Safety</span>
+    </a>
+  </div>
+
+</div>
+</div>
+
+<script>
+function playS(s,v){var a=new Audio(s);a.volume=v===undefined?0.4:v;a.play().catch(function(){});return a;}
+localStorage.setItem('nexus_last_page_'+(localStorage.getItem('nexus_current_operator')||'operator'),JSON.stringify({url:location.pathname,title:'Module 4 — Challenge'}));
+function markComplete(){
+  playS('../audio/sfx/password-confirm.mp3',0.1);
+  localStorage.setItem('nexus_mod4_challenge_done', 'true');
+  const keysToRemove = [];
+  for(let i = 0; i < localStorage.length; i++){
+    const k = localStorage.key(i);
+    if(k && k.startsWith('nexus_ts_') && k.includes('module-4')){
+      keysToRemove.push(k);
+    }
+  }
+  keysToRemove.forEach(k => localStorage.removeItem(k));
+}
+</script>
+<script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
+<script>document.querySelectorAll('.prompt-block').forEach(function(b){var btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';btn.addEventListener('click',function(){var txt=b.querySelector('pre').innerText;(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},1800);}).catch(function(){btn.textContent='Select it';});});b.appendChild(btn);});</script>
+<script src="../nexus-transition.js"></script>
+</body>
+</html>

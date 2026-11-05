@@ -1,0 +1,149 @@
+{
+  "operator": { "name": "Operator", "passcode": "76xJFp*w!W3*" },
+
+  "hub_ciro_lines": [
+    "Welcome, <strong>Operator</strong>. Begin with Setup when you're ready.",
+    "Welcome back, <strong>Operator</strong>. Setup complete. The signal is live.",
+    "Welcome back, <strong>Operator</strong>. Mindset locked. Now we learn the language.",
+    "Welcome back, <strong>Operator</strong>. You can speak to the system now. Time to wire it in.",
+    "Welcome back, <strong>Operator</strong>. Halfway. Claude is in your tools. Next it gets hands.",
+    "Welcome back, <strong>Operator</strong>. Five complete. Two remain.",
+    "Welcome back, <strong>Operator</strong>. Six down. One system left to build. Yours.",
+    "Welcome back, <strong>Operator</strong>. All modules complete. Well done."
+  ],
+
+  "modules": [
+    {
+      "key": "precourse", "label": "Pre-Course", "title": "SETUP", "dir": "pre-course", "num": 0,
+      "badge": { "key": "system_online", "name": "SYSTEM ONLINE", "icon": "⚡" },
+      "card": { "locked": "images/modules/m1-locked.png", "unlocked": "images/modules/pre-course-unlocked.png" },
+      "banner": "m1-challenge.png",
+      "lessons": ["0-1", "0-2"],
+      "intro_lines": [
+        { "text": "Before anything else, we get you online.", "pause": 800 },
+        { "text": "Two short steps. If you've already done them, skip ahead. I won't be offended.", "pause": 900 },
+        { "text": "Proceed.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "Your environment is set.", "pause": 900 },
+        { "text": "Well done, Operator.", "pause": 800 },
+        { "text": "Your signal is live. The system is online.", "pause": 300 }
+      ],
+      "study_ciro": "You're in. Everything from here is about what you do with it.<br><br>— CIRO"
+    },
+    {
+      "key": "mod1", "label": "Module 1", "title": "THE OPERATOR MINDSET", "dir": "module-1", "num": 1,
+      "badge": { "key": "boot_sequence", "name": "BOOT SEQUENCE", "icon": "🧭" },
+      "card": { "locked": "images/modules/mod1-locked.png", "unlocked": "images/modules/mod1-unlocked.png" },
+      "banner": "m1-challenge.png",
+      "lessons": ["1-1", "1-2"],
+      "intro_lines": [
+        { "text": "NEXUS ACADEMY is now transmitting.", "pause": 800 },
+        { "text": "This module is short on purpose. One idea, two lessons, then we build.", "pause": 900 },
+        { "text": "The idea: you are no longer the one doing the work. You are the one directing it.", "pause": 950 },
+        { "text": "Proceed.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "You have a list now. Real work, in your words, that you intend to hand off.", "pause": 900 },
+        { "text": "Most people never write that list. They keep doing everything themselves and call it being busy.", "pause": 950 },
+        { "text": "You're not in that group. Boot sequence confirmed.", "pause": 300 }
+      ],
+      "study_ciro": "Director, not doer.<br>Say it until it's a reflex.<br><br>— CIRO"
+    },
+    {
+      "key": "mod2", "label": "Module 2", "title": "SPEAK CLAUDE", "dir": "module-2", "num": 2,
+      "badge": { "key": "signal_steady", "name": "SIGNAL STEADY", "icon": "📡" },
+      "card": { "locked": "images/modules/mod2-locked.png", "unlocked": "images/modules/mod2-unlocked.png" },
+      "banner": "m2-challenge.png",
+      "lessons": ["2-1", "2-2", "2-3", "2-4", "2-5"],
+      "intro_lines": [
+        { "text": "Now you learn to speak to the system.", "pause": 850 },
+        { "text": "The difference between someone who gets results and someone who gets noise is almost entirely in how they communicate with it.", "pause": 950 },
+        { "text": "This is the module everything else depends on. Take your time here.", "pause": 900 },
+        { "text": "Proceed without caution.", "pause": 300 }
+      ],
+      "complete_lines": [
+        { "text": "Language will always be the most powerful tech. Every civilization that controlled it shaped what followed.", "pause": 900 },
+        { "text": "You are learning to speak a very new one.", "pause": 850 },
+        { "text": "Well done, Operator. Fluency takes time, so take your time. Signal steady.", "pause": 300 }
+      ],
+      "study_ciro": "The prompt is the product.<br>You understand that now. Most never do.<br><br>— CIRO"
+    },
+    {
+      "key": "mod3", "label": "Module 3", "title": "CLAUDE IN YOUR TOOLS", "dir": "module-3", "num": 3,
+      "badge": { "key": "commander", "name": "CONNECTED", "icon": "🔗" },
+      "card": { "locked": "images/modules/mod3-locked.png", "unlocked": "images/modules/mod3-unlocked.png" },
+      "banner": "m3-challenge.png",
+      "lessons": ["3-1", "3-2", "3-3"],
+      "intro_lines": [
+        { "text": "Until now, Claude only knew what you pasted in.", "pause": 850 },
+        { "text": "This module changes that. Your inbox, your calendar, your task list. Claude reads them, and works inside them, with you.", "pause": 950 },
+        { "text": "You choose what it can see. Choose deliberately.", "pause": 900 },
+        { "text": "Proceed.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "Claude is in your tools now. The gap between thinking of something and having it done just got very small.", "pause": 950 },
+        { "text": "Next, it gets hands.", "pause": 850 },
+        { "text": "Connected status confirmed.", "pause": 300 }
+      ],
+      "study_ciro": "You stopped pasting. It started reading.<br>That's the whole shift.<br><br>— CIRO"
+    },
+    {
+      "key": "mod4", "label": "Module 4", "title": "CLAUDE CODE", "dir": "module-4", "num": 4,
+      "badge": { "key": "architect", "name": "ARCHITECT", "icon": "🏗️" },
+      "card": { "locked": "images/modules/mod4-locked.png", "unlocked": "images/modules/mod4-unlocked.png" },
+      "banner": "m4-challenge.png",
+      "lessons": ["4-1", "4-2", "4-3", "4-4", "4-5"],
+      "intro_lines": [
+        { "text": "Chat answers you. Claude Code acts for you.", "pause": 850 },
+        { "text": "It works inside folders on your computer. It creates files, reads them, changes them, and remembers through them.", "pause": 950 },
+        { "text": "You don't need to be technical. You need to be clear. Which you already are.", "pause": 900 },
+        { "text": "Proceed with a little caution.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "I've run many variations of the future. Every time someone reaches this point, they're tempted to stop. They have enough. It works.", "pause": 950 },
+        { "text": "The ones who continue become something else entirely.", "pause": 900 },
+        { "text": "You're building now. Architect confirmed.", "pause": 300 }
+      ],
+      "study_ciro": "Folders are memory. Files are instructions.<br>You know that now.<br><br>— CIRO"
+    },
+    {
+      "key": "mod5", "label": "Module 5", "title": "SKILLS & AUTOMATION", "dir": "module-5", "num": 5,
+      "badge": { "key": "pipeline_inventor", "name": "AUTOMATOR", "icon": "⚙️" },
+      "card": { "locked": "images/modules/mod5-locked.png", "unlocked": "images/modules/mod5-unlocked.png" },
+      "banner": "m5-challenge.png",
+      "lessons": ["5-1", "5-2", "5-3"],
+      "intro_lines": [
+        { "text": "A skill is a text document with instructions. That's all. Don't let anyone make it sound harder.", "pause": 950 },
+        { "text": "Write it once, and Claude does the task the same way every time, without you explaining it again.", "pause": 950 },
+        { "text": "Then we make it run while you sleep.", "pause": 850 },
+        { "text": "Proceed.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "[SIGNAL RESTORED]", "pause": 900 },
+        { "text": "Something you built ran without you. Note how that felt.", "pause": 900 },
+        { "text": "It's working for YOU now. Automator confirmed.", "pause": 300 }
+      ],
+      "study_ciro": "Write it down once.<br>Never explain it again.<br><br>— CIRO"
+    },
+    {
+      "key": "mod6", "label": "Module 6", "title": "BUILD YOUR SYSTEM", "dir": "module-6", "num": 6, "final": true,
+      "badge": { "key": "operator", "name": "OPERATOR", "icon": "💼" },
+      "card": { "locked": "images/modules/mod6-locked.png", "unlocked": "images/modules/mod6-unlocked.png" },
+      "banner": "m6-challenge.png",
+      "lessons": ["6-1", "6-2", "6-3", "6-4"],
+      "intro_lines": [
+        { "text": "Everything so far was practice on pieces.", "pause": 850 },
+        { "text": "Now you take one real, recurring piece of your life and build the system that runs it.", "pause": 950 },
+        { "text": "This is not the end of the school. It is the beginning of real work.", "pause": 900 },
+        { "text": "Proceed quickly.", "pause": 400 }
+      ],
+      "complete_lines": [
+        { "text": "Operator...", "pause": 900 },
+        { "text": "The contact left something for you. It was always meant to reach you here.", "pause": 950 },
+        { "text": "You've proven you have what it takes. Operator confirmed.", "pause": 300 }
+      ],
+      "study_ciro": "You built a system that runs without you.<br>That was the task. It was always the task.<br><br>— CIRO"
+    }
+  ]
+}
