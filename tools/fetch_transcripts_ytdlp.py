@@ -8,7 +8,7 @@ Reads the same SHORTLIST from tools/fetch_transcripts.py, writes transcripts/<le
 in the same [mm:ss] format. Tries without cookies first, then with your browser's YouTube
 sign-in (Chrome, then Firefox, then Edge) if YouTube refuses.
 """
-import ast, glob, json, os, re, shutil, subprocess, sys, tempfile
+import ast, glob, json, os, re, shutil, subprocess, sys, tempfile, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "..", "transcripts")
@@ -38,7 +38,8 @@ def parse_json3(path):
 
 
 def try_fetch(vid, tmp, extra):
-    cmd = ["yt-dlp", "--skip-download", "--ignore-no-formats-error", "--write-subs", "--write-auto-subs",
+    cmd = ["yt-dlp", "--skip-download", "--ignore-no-formats-error", "--sleep-subtitles", "3", "--sleep-requests", "1",
+           "--write-subs", "--write-auto-subs",
            "--sub-langs", "en.*,en,en-US,en-GB", "--sub-format", "json3",
            "-o", os.path.join(tmp, "%(id)s.%(ext)s"), *extra,
            "https://www.youtube.com/watch?v=" + vid]
@@ -70,11 +71,18 @@ for lesson, ids in SHORTLIST.items():
             continue
         lines, last_err = None, None
         for extra in ATTEMPTS:
-            with tempfile.TemporaryDirectory() as tmp:
-                lines, err = try_fetch(vid, tmp, extra)
+            for wait in (0, 60, 120, 240):  # back off when YouTube answers 429
+                if wait:
+                    print(f"     429 on {vid}; waiting {wait}s before retrying")
+                    time.sleep(wait)
+                with tempfile.TemporaryDirectory() as tmp:
+                    lines, err = try_fetch(vid, tmp, extra)
+                if lines or "429" not in (err or ""):
+                    break
             if lines:
                 break
             last_err = err
+        time.sleep(5)  # be gentle between videos
         if not lines:
             print(f"FAIL {lesson} {vid}: {last_err}")
             fail += 1
