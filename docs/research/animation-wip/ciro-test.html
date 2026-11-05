@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8"><script src="ciro.js"></script>
+<style>body{background:#0d1628;margin:0;padding:20px;display:flex;gap:30px;align-items:flex-end}#a{width:600px;height:420px;border:1px solid #1a2d45;position:relative;display:flex;align-items:flex-end}</style></head><body>
+<div id="big"></div><div id="mid"></div><div id="sm"></div><div id="off"></div><div id="a"></div>
+<script>
+window.c1=NXCiro.mount(document.getElementById('big'),{width:172});
+window.c2=NXCiro.mount(document.getElementById('mid'),{width:86});
+window.c2.joy(true);
+window.c3=NXCiro.mount(document.getElementById('sm'),{width:86});c3.face('NEXUS','ONLINE','>>>');c3.chest(0.6);
+window.c4=NXCiro.mount(document.getElementById('off'),{width:86,off:true});
+window.c5=NXCiro.mount(document.getElementById('a'),{width:86});c5.place(-100);
+</script></body></html>
