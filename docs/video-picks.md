@@ -63,7 +63,7 @@ Candidates found by three Opus searchers (reports in `docs/research/gap-search*.
 | 6.2 Build It | `IhhxRZDf2bo` Dylan Davis (15:10) | `AAYy-cgA4Kg` Jeremiah Peoples (7:49, pre-rebuild) | No post-rebuild video builds skill + connectors + schedule |
 | 6.3 Run It, Then Refine It | `fgrJVdD12PA` Dylan Davis "Keep repeating mistakes you already fixed" (11:49) | `IhhxRZDf2bo` shared with 6.2 | Fix the skill, not the output |
 
-Rule applied when reading: one creator carries at most two lessons unless the transcripts leave no choice. Dylan Davis is currently best for 4.2, 4.5, 6.1, 6.2, 6.3 and already holds 5.2; the fallbacks exist so the readers can spread the load.
+Rule applied when reading (later dropped by the lead): one creator carries at most two lessons unless the transcripts leave no choice. Superseded: the lead ruled best video regardless of creator.
 
 Open: the YouTube Data API search quota (100 searches/day) ran out mid-way; 2.5 and 4.4 searches were cut short. Re-run those two after the quota resets (queries are listed in `docs/research/gap-search.md`).
 
@@ -89,16 +89,16 @@ Every lesson has a video. Decided by Claude from the four round 2 reader reports
 | 4.2 Folders Are Memory | `qPG5zQCSlTs` signalstack | 0:00–0:55 | 4 | Problem statement only ("stores once, remembers forever"). **Re-search** |
 | 4.3 The Instructions File | `O0FGCxkHM-U` Claude official | whole | 7 | |
 | 4.4 Build Something Real | `yTy8WV3Y9Nk` Mstimaj | 1:44–6:07 | 7 | Plan-first loop in the Code tab: Plan mode, questions, plan, Reject/Revise/Accept. `4hc5Z_QBno4` is Chat folder access, not usable |
-| 4.5 Sessions, Permissions, Safety | `b8SV4U6fEIc` Claude official, How auto mode works | 0:00–3:31 | 5 | Official clip chosen so Dylan Davis stays at three lessons. Alternative if the lead prefers: `F-DARGKRKdQ` 7:01–10:51 (7/10: copy, undo, two-minute review, "Manual is for learning") |
+| 4.5 Sessions, Permissions, Safety | `F-DARGKRKdQ` Dylan Davis, "I stopped clicking approve" | 7:01–10:51 | 7 | Work on a copy, keep an undo, the two-minute review prompt, "Manual is for learning". Fallback `b8SV4U6fEIc` official 0:00–3:31 (5/10) |
 | 5.1 What a Skill Actually Is | `O6tQ6V_P8a0` Tristen O'Brien | 0:22–6:36 | 7 | |
 | 5.2 Context Management | `xaQG-eD9d58` Dylan Davis | 0:25–10:37 | 8 | |
 | 5.3 Scheduled Tasks | `6RXjpKXy2qk` Cynked AI | whole | 9 | |
-| 6.1 Choose Your Workflow | `HMaja1AlwMo` The Virtual Savvy | 2:23–4:08 | 5 | Choosing what to automate, four criteria; 12-second plug at 2:46. Better video is Dylan's `vatOVZbumk0` 3:04–10:23 (7/10) if the lead accepts him on four lessons. **Re-search** |
+| 6.1 Choose Your Workflow | `vatOVZbumk0` Dylan Davis, "You're automating steps you should delete" | 3:04–10:23 | 7 | Map it, then cut steps before you automate; concrete seven-to-four-step proposal example. Fallback `HMaja1AlwMo` 2:23–4:08 (5/10) |
 | 6.2 Build It | `IhhxRZDf2bo` Dylan Davis | 3:10–12:52 | 7 | Manual run to lean skill, test on past work, yes/no checklist, fix the skill in the smallest step |
 | 6.3 Run It, Then Refine It | `fgrJVdD12PA` Dylan Davis | 0:00–11:26 | 8 | Every fix goes into the skill, instructions file or notes file; caption maps his `agents.md` to CLAUDE.md |
 | 6.4 Tips From the Field | `7zZy1QTvokM` Austin Marchese | whole | 6 | Caption: the 6.2 checklist is a beginner version of his verifier layer |
 
-Creator spread: Anthropic/Claude official 5 (1.1, 2.1, 2.2, 4.3, 4.5), Dylan Davis 3 (5.2, 6.2, 6.3), Mstimaj 2 (0.2, 4.4), everyone else 1. Total watch time about 2 hours across 24 lessons.
+Lead's rule (2026-11-05): **best video regardless of creator.** Spread as it stands: Dylan Davis 5 (4.5, 5.2, 6.1, 6.2, 6.3), Anthropic/Claude official 4 (1.1, 2.1, 2.2, 4.3), Mstimaj 2 (0.2, 4.4), everyone else 1. Total watch time about 2 hours across 24 lessons.
 
 ### Module 6 direction (lead, 2026-11-05)
 Challenges must not feel restrictive. Module 6 becomes two tracks the learner chooses: **build a system** (recurring workflow: skill + connectors + scheduled task) or **build an app** (a personal tool in the Code tab: tracker, dashboard, mini site, with a folder and a CLAUDE.md). Same deliverable shape: version 2, a README a stranger can follow, a run log. 4.4 is the first "you can build things" moment. The learner may do both tracks; finishing the second earns an extra badge, **OVERCLOCKED** (add to `content/course.json` badges). Also (lead): 2.5 must have the learner build a simple tool as an artifact that they actually use afterwards; the 2.5 re-search targets a video of exactly that, not an artifacts explainer. Apply when Modules 2 and 6 are rebuilt.
