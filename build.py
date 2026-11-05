@@ -80,10 +80,14 @@ def render_item(parts):
             out += '<div class="prompt-block"><pre>%s</pre></div>' % html.escape(p[1], quote=False)
         elif re.match(r'^[-*]\s+', p):
             subs.append(p)
+        elif re.match(r'^\d+\.\s+', p):
+            subs.append(p)
         else:
             out += ' ' + inline(p)
     if subs:
-        out += '<ul>' + ''.join('<li>%s</li>' % inline(re.sub(r'^[-*]\s+', '', s)) for s in subs) + '</ul>'
+        ordered = all(re.match(r'^\d+\.\s+', s) for s in subs)
+        tag = 'ol' if ordered else 'ul'
+        out += '<%s class="sub-list">' % tag + ''.join('<li>%s</li>' % inline(re.sub(r'^([-*]|\d+\.)\s+', '', s)) for s in subs) + '</%s>' % tag
     return out
 
 def render_blocks(blocks, ol_as_steps=False):

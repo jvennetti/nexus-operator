@@ -33,3 +33,4 @@ Running list of material that is known to be weaker than it should be. Add to it
 - Lesson page redesign (step 2 in the handoff) is still pending: notes beside the video, auto-saved playback position, more obvious copy buttons on prompts, centered distinctive challenge box, "Mission" naming for the module-level challenge pages so it doesn't collide with lesson challenges.
 - "No music?" button still overlaps the title on the phone hub (QA audit, accepted).
 - Font-swap reflow at load (accepted).
+- Intermission pages (CIRO plus a breath button, from nexus-academy) were dropped: modules are two to five lessons now. Revisit only if a module grows past five lessons.

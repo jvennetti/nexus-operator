@@ -39,6 +39,8 @@ h1.lesson-title{font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700
 .callout{border-left:2px solid var(--blue-border);padding:4px 0 4px 18px;margin:16px 0;color:var(--muted);font-style:italic}
 .video-wrapper{position:relative;padding-bottom:56.25%;height:0;background:#000;border:1px solid var(--border);border-radius:6px;overflow:hidden}
 .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+.sub-list{margin:8px 0 2px 22px;display:flex;flex-direction:column;gap:4px}
+.sub-list li{font-size:0.95em}
 .video-under{margin-top:-24px;margin-bottom:36px;text-align:center}
 .video-credit{font-family:'Lexend',sans-serif;font-size:12px;font-weight:300;color:var(--muted);margin-top:10px}
 .video-note{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:8px}
@@ -141,7 +143,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Take a bad prompt and make it great with the rules you just learned.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Open a new chat and paste this exactly. Read what Claude says. Don't fix it yet.<div class="prompt-block"><pre>Write an email to a client about the delay.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Open another new chat. Rewrite the same prompt with what you learned: 1. the goal 2. why it matters 3. who you are and who the email is for 4. the shape of the output (under 120 words, a subject line, one clear ask at the end)</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Use a real example from your own work if you have one.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Open a new chat and paste this exactly. Read what Claude says. Don't fix it yet.<div class="prompt-block"><pre>Write an email to a client about the delay.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Open another new chat. Rewrite the same prompt with what you learned:<ol class="sub-list"><li>the goal</li><li>why it matters</li><li>who you are and who the email is for</li><li>the shape of the output (under 120 words, a subject line, one clear ask at the end)</li></ol></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Use a real example from your own work if you have one.</div></li></ol>
     <div class="task-outro">
 <p>Mark this done when the second email is one you'd actually send.</p>
     </div>
