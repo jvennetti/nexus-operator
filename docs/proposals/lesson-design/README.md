@@ -1,9 +1,7 @@
-# Lesson page: three screens
+# Lesson page
 
-Lesson 2.1 as three screens, one at a time, built from the parts of the nexus-open lesson page.
+Lesson 2.1 on the nexus-open lesson page, with a task added.
 
-The first screen is the title and two short paragraphs. A lesson with a video adds the timestamp bar and the video here. The second screen is the task: three steps, a copy button for the prompt, and "Mark task done". The third has notes, Key Takeaways and the Previous/Next cards.
+The order is the same as nexus-open: the title box, the video with its timestamp bar (only when a lesson has a video), notes, Key Takeaways, then Previous/Next. The task box sits right after the brief. When you press "Mark task done" it folds into one green "Task done" line, and you can reopen it with "Show task". Next stays dimmed until the task is done, with a "continue anyway" link.
 
-Fonts match nexus-open. Orbitron is for titles only and everything else is Lexend. A thin line under the nav shows which screen you're on.
-
-Screenshots: `option-c-{desktop,phone}-{1-learn,2-do,3-done}.png`.
+Screenshots: `lesson-desktop.png`, `lesson-phone.png`, and the `-done` versions.
