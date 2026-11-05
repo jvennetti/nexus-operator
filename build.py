@@ -258,7 +258,7 @@ def build():
                                 locked=mod['card']['locked'], unlocked=mod['card']['unlocked'],
                                 url='%s/%s' % (mod['dir'], intro_page), badge=mod['badge']['key'],
                                 next=dict(mod=label, title=lessons[0]['title'], url='%s/%s' % (mod['dir'], lessons[0]['file'])),
-                                lessons=[dict(n=L['n'], title=L['title'], url='%s/%s' % (mod['dir'], L['file'])) for L in lessons]))
+                                lessons=[dict(n=L['n'], title=L['title'], url='%s/%s' % (mod['dir'], L['file']), takeaways=L['takeaways']) for L in lessons]))
 
     # ---- hub data block
     hub = (ROOT / 'hub.html').read_text(encoding='utf-8')

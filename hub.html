@@ -94,6 +94,8 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 .le-inner{padding:22px 26px 26px;border-top:1px solid rgba(0,200,255,0.1);background:rgba(5,12,24,0.75)}
 .le-lbl{font-family:'Orbitron',sans-serif;font-size:12px;letter-spacing:3px;color:var(--blue);text-transform:uppercase;margin-bottom:14px;margin-top:24px;padding-bottom:8px;border-bottom:1px solid rgba(0,200,255,0.18);display:block;text-align:center}
 .le-lbl:first-child{margin-top:0}
+.le-takeaways{margin:0 0 4px 18px;padding:0;font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;color:var(--body-text);line-height:1.7}
+.le-takeaways li{margin-bottom:6px}
 .le-notes{font-family:'Lexend',sans-serif;font-size:16px;font-weight:300;color:var(--body-text);line-height:1.8;white-space:pre-wrap}
 .le-no-notes{font-family:'Lexend',sans-serif;font-size:14px;color:var(--muted);font-style:italic}
 .le-ta{list-style:none;display:flex;flex-direction:column;gap:10px}
@@ -490,12 +492,24 @@ const MODULES = [
       {
         "n": "0.1",
         "title": "Get Claude on Your Computer",
-        "url": "pre-course/lesson-0-1.html"
+        "url": "pre-course/lesson-0-1.html",
+        "takeaways": [
+          "The desktop app is home base for this course. Chat and Claude Code both live there.",
+          "Only download Claude from claude.com. There is no \"Claude Pro\" program to install. Pro is a plan.",
+          "The free plan covers Modules 0 to 3. Claude Code, from Module 4, needs a paid plan.",
+          "Something broken? Tell Claude what happened. It will walk you through it."
+        ]
       },
       {
         "n": "0.2",
         "title": "Know Where Things Are",
-        "url": "pre-course/lesson-0-2.html"
+        "url": "pre-course/lesson-0-2.html",
+        "takeaways": [
+          "Two tabs. Chat is where you'll live until Module 4. Code can work inside your folders.",
+          "The + button in the chat box is where features hide: files, folders, connectors, skills.",
+          "Tell Claude about yourself once, in Settings → Profile. It uses it in every chat.",
+          "Rename the chats you'll come back to."
+        ]
       }
     ]
   },
@@ -516,12 +530,22 @@ const MODULES = [
       {
         "n": "1.1",
         "title": "What Changed",
-        "url": "module-1/lesson-1-1.html"
+        "url": "module-1/lesson-1-1.html",
+        "takeaways": [
+          "Claude starts from zero. What it produces depends on what you tell it.",
+          "Handing work off starts with knowing your own work: what's tedious, where you're unsure, what needs your judgment.",
+          "Most \"can you do this?\" answers are \"yes, if you give me X.\" This course teaches you to give it X."
+        ]
       },
       {
         "n": "1.2",
         "title": "Director, Not Doer",
-        "url": "module-1/lesson-1-2.html"
+        "url": "module-1/lesson-1-2.html",
+        "takeaways": [
+          "Brief Claude like you'd brief a person: outcome, audience, context, what good looks like.",
+          "The first draft is a starting point. Notes and a second round are normal.",
+          "When Claude hedges or says it can't, tell it plainly you want it done. It almost always can."
+        ]
       }
     ]
   },
@@ -542,27 +566,55 @@ const MODULES = [
       {
         "n": "2.1",
         "title": "Anatomy of a Good Prompt",
-        "url": "module-2/lesson-2-1.html"
+        "url": "module-2/lesson-2-1.html",
+        "takeaways": [
+          "Claude starts from zero every time. What you want, why, and who you are need saying to get great results.",
+          "Add examples of what you like for better results.",
+          "List the details you want: length, format, how it should end.",
+          "Tell Claude what your goal is."
+        ]
       },
       {
         "n": "2.2",
         "title": "Give It What It Needs",
-        "url": "module-2/lesson-2-2.html"
+        "url": "module-2/lesson-2-2.html",
+        "takeaways": [
+          "Paste the whole thread. Attach the original file. Claude can read it all, so you don't need to summarize first.",
+          "Test Claude on work you've already done, so you can tell what it got right.",
+          "When it misses something, that's a piece of context you give it next time."
+        ]
       },
       {
         "n": "2.3",
         "title": "Iterate and Push Back",
-        "url": "module-2/lesson-2-3.html"
+        "url": "module-2/lesson-2-3.html",
+        "takeaways": [
+          "Ask Claude to ask you questions first. Its questions show you what you forgot to say.",
+          "Specific notes beat starting over. \"The second paragraph is too formal\" beats \"try again.\"",
+          "When Claude hedges, tell it you want it done and give it the context. Usually it can."
+        ]
       },
       {
         "n": "2.4",
         "title": "Projects, Persistent Context",
-        "url": "module-2/lesson-2-4.html"
+        "url": "module-2/lesson-2-4.html",
+        "takeaways": [
+          "Every chat in a project remembers your instructions and files, so you stop re-explaining.",
+          "Catch yourself re-explaining something? Tell Claude to add it to the project instructions.",
+          "A file you attach in a normal chat stays in that chat. Put it in the project if you want it every time.",
+          "Suggestion: one project per job you do. It keeps your chats organized and your re-explaining to zero."
+        ]
       },
       {
         "n": "2.5",
         "title": "Make Things, Not Just Text",
-        "url": "module-2/lesson-2-5.html"
+        "url": "module-2/lesson-2-5.html",
+        "takeaways": [
+          "Describe the thing you want in plain words and Claude builds it. Trackers, calculators, checklists, dashboards.",
+          "Use it, then change it. The best tools come from a few rounds of real use.",
+          "Ask Claude to make it save your data, and it will still be there tomorrow.",
+          "Suggestion: anything you check every day is a candidate. Build the tool instead of keeping it in your head."
+        ]
       }
     ]
   },
@@ -583,17 +635,33 @@ const MODULES = [
       {
         "n": "3.1",
         "title": "Connect Your Inbox and Calendar",
-        "url": "module-3/lesson-3-1.html"
+        "url": "module-3/lesson-3-1.html",
+        "takeaways": [
+          "Claude can connect to your daily tools.",
+          "You can have Claude draft and even send emails for you. [Be careful: keep sending on \"needs approval\" so nothing goes out without you knowing.]",
+          "Claude writes in your voice because it has read your past emails."
+        ]
       },
       {
         "n": "3.2",
         "title": "Connect Your Work Tools",
-        "url": "module-3/lesson-3-2.html"
+        "url": "module-3/lesson-3-2.html",
+        "takeaways": [
+          "Give Claude the smallest access it needs. You can widen it later.",
+          "\"Show me before you create anything\" is the habit. Check its work in the tool the first few times.",
+          "The win is carrying information between tools by asking, instead of copying and pasting between tabs."
+        ]
       },
       {
         "n": "3.3",
         "title": "A Morning With Claude",
-        "url": "module-3/lesson-3-3.html"
+        "url": "module-3/lesson-3-3.html",
+        "takeaways": [
+          "One standing prompt, written once, beats four messages typed every morning.",
+          "Tell Claude what to ignore as clearly as what to read.",
+          "Your prompt is a living thing. Fix one line each time it annoys you.",
+          "In Module 5 you'll make this run by itself."
+        ]
       }
     ]
   },
@@ -614,27 +682,55 @@ const MODULES = [
       {
         "n": "4.1",
         "title": "Chat Answers. Code Acts.",
-        "url": "module-4/lesson-4-1.html"
+        "url": "module-4/lesson-4-1.html",
+        "takeaways": [
+          "Chat can't change your files. Code can. That's the whole difference.",
+          "Work on copies for now. Keep your originals outside the folder.",
+          "Ask a question before asking for changes. \"What's in this folder?\" is the safest first move.",
+          "Manual mode means Claude asks before it changes anything. Keep it there this module."
+        ]
       },
       {
         "n": "4.2",
         "title": "Folders Are Memory",
-        "url": "module-4/lesson-4-2.html"
+        "url": "module-4/lesson-4-2.html",
+        "takeaways": [
+          "Claude remembers what's in files, not what you said last week.",
+          "ABOUT-ME.md and REFERENCE.md are your memory. Open them and edit them like any other file.",
+          "Store a file once in the folder and you never attach it again."
+        ]
       },
       {
         "n": "4.3",
         "title": "The Instructions File",
-        "url": "module-4/lesson-4-3.html"
+        "url": "module-4/lesson-4-3.html",
+        "takeaways": [
+          "CLAUDE.md is read every session. Rules go there. Facts go in your reference files.",
+          "Start small. Add a rule each time you correct Claude.",
+          "Keep it short. A long CLAUDE.md gets ignored like a long email."
+        ]
       },
       {
         "n": "4.4",
         "title": "Build Something Real",
-        "url": "module-4/lesson-4-4.html"
+        "url": "module-4/lesson-4-4.html",
+        "takeaways": [
+          "Plan first. Reading a plan is cheaper than reading a mistake.",
+          "Revise is the most useful button. Cut what you don't need before it's built.",
+          "Three rounds of notes is normal. The first version is never the last.",
+          "Suggestion: a page, a spreadsheet tool, a tidy-up script. Small and used beats big and abandoned."
+        ]
       },
       {
         "n": "4.5",
         "title": "Sessions, Permissions, Safety",
-        "url": "module-4/lesson-4-5.html"
+        "url": "module-4/lesson-4-5.html",
+        "takeaways": [
+          "Copies, undo, review. Those three habits let you move faster later.",
+          "Say yes to reading and creating new files. Read before you allow changes to files you already have. Say no to deleting anything you didn't ask for.",
+          "Warning: Auto mode skips the asking. Earn it with the habits first.",
+          "A long, confused session? Summarize it and start a new one."
+        ]
       }
     ]
   },
@@ -655,17 +751,34 @@ const MODULES = [
       {
         "n": "5.1",
         "title": "What a Skill Actually Is",
-        "url": "module-5/lesson-5-1.html"
+        "url": "module-5/lesson-5-1.html",
+        "takeaways": [
+          "A skill is just a text file with instructions that helps Claude do a specific task well.",
+          "Give the skill creator your real material and examples to learn from.",
+          "When the output is wrong, fix the skill, not the prompt.",
+          "Warning: some skills from the internet hide malicious code. Have Claude check any skill before you install it. A skill you built yourself is safe."
+        ]
       },
       {
         "n": "5.2",
         "title": "Context Management",
-        "url": "module-5/lesson-5-2.html"
+        "url": "module-5/lesson-5-2.html",
+        "takeaways": [
+          "Long chats degrade. The start and the end get remembered. The middle gets lost.",
+          "Hand off with a summary and start fresh. It takes seconds, and the new chat is sharper.",
+          "Permanent instructions belong in a project or CLAUDE.md, not repeated in chat."
+        ]
       },
       {
         "n": "5.3",
         "title": "Scheduled Tasks",
-        "url": "module-5/lesson-5-3.html"
+        "url": "module-5/lesson-5-3.html",
+        "takeaways": [
+          "A scheduled task is a prompt, a time and your connectors. That's the whole thing.",
+          "Tell it what to ignore and what not to touch. Reading is safe. Writing is yours.",
+          "Run it by hand twice before you trust the schedule.",
+          "Warning: if you set a send tool to \"always allow,\" Claude can send to anyone. Only your instructions stop it."
+        ]
       }
     ]
   },
@@ -686,22 +799,44 @@ const MODULES = [
       {
         "n": "6.1",
         "title": "Choose Your Workflow",
-        "url": "module-6/lesson-6-1.html"
+        "url": "module-6/lesson-6-1.html",
+        "takeaways": [
+          "Map it before you automate it: input, steps, output, destination.",
+          "Cut steps before you automate them. Half the work in most workflows is tidying for someone who doesn't need it.",
+          "Version 1 is the smallest thing that's useful. Build that first."
+        ]
       },
       {
         "n": "6.2",
         "title": "Build It",
-        "url": "module-6/lesson-6-2.html"
+        "url": "module-6/lesson-6-2.html",
+        "takeaways": [
+          "Do it by hand first. The skill is written from a run that worked.",
+          "Test on work Claude hasn't seen, with a checklist you wrote before the test.",
+          "Fix the skill in the smallest step, and read the change.",
+          "Suggestion: build both tracks. The second one earns the OVERCLOCKED badge."
+        ]
       },
       {
         "n": "6.3",
         "title": "Run It, Then Refine It",
-        "url": "module-6/lesson-6-3.html"
+        "url": "module-6/lesson-6-3.html",
+        "takeaways": [
+          "Fix the instructions, not the output. Otherwise the same mistake comes back.",
+          "A run log turns \"I think it's better\" into \"here's what changed.\"",
+          "Test fixes cold. \"I'll remember that\" means nothing in a new session.",
+          "The trust call is yours: what Claude does alone, what it drafts, what stays with you."
+        ]
       },
       {
         "n": "6.4",
         "title": "Tips From the Field",
-        "url": "module-6/lesson-6-4.html"
+        "url": "module-6/lesson-6-4.html",
+        "takeaways": [
+          "Spec, checker, context folder. That's the method, and you already have all three.",
+          "Write it down for a stranger. If they can run it, it's a system.",
+          "The next system starts the same way: pick, map, cut, build small."
+        ]
       }
     ]
   }
@@ -900,9 +1035,13 @@ function renderModules(s){
         const notesBlock = savedNotes
           ? `<div class="le-lbl">Your Notes</div><div class="le-notes">${savedNotes.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>`
           : `<div class="le-lbl">Your Notes</div><div class="le-no-notes">No notes taken for this lesson.</div>`;
+        const esc=t=>t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        const takeBlock = (l.takeaways&&l.takeaways.length)
+          ? `<div class="le-lbl">Key Takeaways</div><ul class="le-takeaways">${l.takeaways.map(t=>'<li>'+esc(t)+'</li>').join('')}</ul>`
+          : '';
         const row = document.createElement('div');
         row.className = 'lesson-row expandable';
-        row.innerHTML = `<div class="lesson-row-head"><span class="l-num">${l.n}</span><span class="l-name">${l.title}</span><span class="l-arr">+</span></div><div class="lesson-expand"><div class="le-inner">${notesBlock}<div class="le-goto"><a href="${l.url}">Go to Lesson →</a></div></div></div>`;
+        row.innerHTML = `<div class="lesson-row-head"><span class="l-num">${l.n}</span><span class="l-name">${l.title}</span><span class="l-arr">+</span></div><div class="lesson-expand"><div class="le-inner">${takeBlock}${notesBlock}<div class="le-goto"><a href="${l.url}">Go to Lesson →</a></div></div></div>`;
         row.querySelector('.lesson-row-head').addEventListener('click',e=>{
           e.stopPropagation();
           _playSfx(_sfxClick);

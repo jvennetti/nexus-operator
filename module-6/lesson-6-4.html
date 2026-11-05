@@ -121,6 +121,9 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
 .task-skip{font-family:'Lexend',sans-serif;font-size:12px;font-weight:300;letter-spacing:1px;color:var(--muted);background:none;border:none;border-bottom:1px solid transparent;padding:6px 2px;cursor:pointer}
 .task-skip:hover{color:var(--blue);border-bottom-color:var(--blue-border)}
 /* done: folds to one green line; "Show challenge" reopens it */
+.task-recap{display:none;padding:6px 24px 18px}
+.task-recap-title{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.task-box.done .task-recap{display:block}
 .task-box.done{border-color:rgba(61,220,151,.35);box-shadow:none;background:var(--card);animation:none}
 .task-box.done::before{opacity:0}
 .task-box.done .c{border-color:var(--green)}
@@ -225,18 +228,17 @@ textarea.notes-ta:focus{border-color:rgba(0,200,255,0.25);background:rgba(255,25
   window.NX_VIDEO=V;
 })();
 </script>
-  <div class="takeaways-box section">
-    <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Spec, checker, context folder. That's the method, and you already have all three.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Write it down for a stranger. If they can run it, it's a system.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>The next system starts the same way: pick, map, cut, build small.</div></div>
-  </div>
-  <div class="section-divider" role="separator"><span></span></div>
   <div class="task-box section" id="task-box" data-task-time="20 min">
     <span class="c tl"></span><span class="c tr"></span><span class="c bl"></span><span class="c br"></span>
     <div class="task-head">
       <div class="task-title">Your Challenge</div>
       <button class="task-done-line" id="task-toggle" type="button" aria-expanded="false" aria-controls="task-body">✓ Challenge done<em id="task-toggle-label">Show challenge</em></button>
+    </div>
+    <div class="task-recap" id="task-recap">
+      <div class="task-recap-title">Remember</div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Spec, checker, context folder. That's the method, and you already have all three.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Write it down for a stranger. If they can run it, it's a system.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The next system starts the same way: pick, map, cut, build small.</div></div>
     </div>
     <div class="task-body" id="task-body"><div><div class="task-inner">
     <div class="task-intro">
