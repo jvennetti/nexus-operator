@@ -120,12 +120,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
     <h1 class="lesson-title">Sessions, Permissions, Safety</h1>
     <div class="context-copy">
-<p>A few things about working in Claude Code day to day that nobody tells you until you've learned them the hard way.</p>
-<p><strong>Sessions.</strong> Each conversation in Claude Code is a session. Long sessions get slow and forgetful, exactly like long chats. The fix is the same: start a new session for a new task. Because the folder is the memory, you lose nothing. If you're mid-task and need to stop, say "write a short HANDOFF.md describing where we are and what's next" and the next session picks it up.</p>
-<p><strong>Permissions.</strong> Claude Code asks before it does things that could matter: changing files, running commands. Early on, read every prompt. Once you trust a kind of action ("edit files in this folder"), you can allow it going forward. Don't blanket-approve everything on day one. Earn your own trust.</p>
-<p><strong>Undo.</strong> Ask Claude to set up version history in your workspace ("set up git and commit after each change" is the sentence, and you don't need to know what it means). After that, anything can be rolled back with "undo the last change" or "take this file back to how it was this morning."</p>
-<p><strong>Scope.</strong> Claude Code only sees the folder you opened. That's a feature. Keep your workspace separate from the rest of your computer and you never have to worry about what it might touch.</p>
-<p><strong>When it gets stuck.</strong> It loops, it apologizes, it tries the same thing three times. Stop it. Start a new session. Describe the goal fresh, in one clean message. It almost always works the second time.</p>
+<p>Four habits keep Claude Code safe and sharp:</p>
+<ul><li><strong>New task, new session.</strong> Long sessions get slow and forgetful. The folder is the memory, so you lose nothing. To stop mid-task, ask for a HANDOFF.md.</li><li><strong>Read permission prompts.</strong> Allow a kind of action only once you trust it. Don't approve everything on day one.</li><li><strong>Turn on version history.</strong> Say "set up git and commit after each change." After that, "undo the last change" always works.</li><li><strong>When it loops, stop.</strong> Start a new session and state the goal fresh in one message.</li></ul>
     </div>
   </div>
 
@@ -135,9 +131,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
-<p>Set up the safety habits once so they're always there.</p>
+<p>Set up the safety habits once.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Version history.</strong> In your workspace: "Set up version history for this folder using git, and commit after each change you make from now on. Add that rule to CLAUDE.md." Approve the prompts.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Test undo.</strong> Make a change: "Add a line to README.md that says 'test line.'" Then: "Undo that last change." Confirm the line is gone.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Practice the handoff.</strong> Mid-way through any task, say: "Write a HANDOFF.md with where we are and what's next." Close the session. Open a new one. Say: "Read HANDOFF.md and continue." Watch it pick up.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Review your permissions.</strong> Look at what you've allowed. Keep what you understand. Revoke anything you don't remember approving.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write the escape hatch into CLAUDE.md:</strong> "If you try the same fix twice and it fails, stop and tell me what you've tried instead of trying again."</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Version history.</strong> "Set up version history for this folder using git, and commit after each change you make from now on. Add that rule to CLAUDE.md."</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Test undo.</strong> "Add a line to README.md that says 'test line.'" Then: "Undo that last change." Confirm it's gone.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Practice the handoff.</strong> Mid-task, say: "Write a HANDOFF.md with where we are and what's next." Start a new session and say: "Read HANDOFF.md and continue."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Review your permissions.</strong> Keep what you understand. Revoke anything you don't remember approving.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Add the escape hatch to CLAUDE.md:</strong> "If you try the same fix twice and it fails, stop and tell me what you've tried."</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -149,10 +145,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>New task, new session. The folder is the memory, so you lose nothing. Use a HANDOFF.md to stop mid-task.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Read permission prompts early. Allow kinds of actions you've come to trust, not everything at once.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>New task, new session. Use a HANDOFF.md to stop mid-task.</div></div>
     <div class="takeaway-item"><div class="t-bullet"></div><div>Set up version history once. Then "undo the last change" always works.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When it loops, stop it and start clean. The second attempt usually works.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>When it loops, stop and start clean.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-4-4.html" class="nav-btn prev">

@@ -120,11 +120,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
     <h1 class="lesson-title">Run It, Then Refine It</h1>
     <div class="context-copy">
-<p>A system you built yesterday is a prototype. A system you've run for a week is real. This lesson is about the week.</p>
-<p>Three things happen when you run a system on real input for several days:</p>
-<ul><li><strong>Edge cases show up.</strong> The email with no subject line. The report that's missing a section. The week with a holiday. Each one is a rule to add to the skill.</li><li><strong>You notice what you still do by hand.</strong> The one step you kept out of Version 1 because it seemed hard. The check you do before trusting the output. Those are the next version.</li><li><strong>You learn whether you trust it.</strong> This is the real question. By the end of the week you'll know whether this can send instead of draft, run without you reviewing, extend to a second input.</li></ul>
-<p>The habit that makes this work: <strong>every time you correct the output, fix the skill.</strong> Not the prompt, not the output by hand. The skill. Each correction is permanent. A system you've corrected ten times is a system that gets it right.</p>
-<p>Keep a short log in your workspace. Date, what the system did, what you changed. By the end of the week it'll tell you exactly what Version 2 should be.</p>
+<p>A system you built yesterday is a prototype. Run it on real input for a week and three things show up: edge cases, steps you still do by hand, and whether you trust it to send instead of draft.</p>
+<p>The habit that makes it work: <strong>every time you correct the output, fix the skill.</strong> Not the prompt, not the output by hand. Each fix is permanent.</p>
+<p>Keep a short run log. By the end of the week it tells you what Version 2 should be.</p>
     </div>
   </div>
 
@@ -136,10 +134,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Run the system for a week and improve it as you go.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Create the log.</strong> In your workspace: "Create RUN-LOG.md with a table: date, what ran, what was wrong, what I changed." Ask Claude to add a line after every run.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it every day</strong> (or every time the input arrives). Review every output. For each problem: "Fix the skill so this doesn't happen again." Then log it.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Add one thing you were doing by hand.</strong> Mid-week, pick the step you kept out of Version 1 and ask Claude to build it in. Test it twice.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Make the trust call.</strong> End of week, ask yourself: can this send instead of draft? Can it run without my review? If yes to either, change it. If no, write down what would need to be true.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write Version 2.</strong> "Read RUN-LOG.md and WORKFLOW.md. Propose Version 2: what to add, what to change, what to leave alone. Update WORKFLOW.md." Read it. Decide what to build next.</div></li></ol>
-    <div class="task-outro">
-<p>Mark done at the end of the week.</p>
-    </div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Create the log.</strong> "Create RUN-LOG.md with a table: date, what ran, what was wrong, what I changed. Add a line after every run."</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it every day.</strong> Review every output. For each problem: "Fix the skill so this doesn't happen again."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Build in one hand step.</strong> Mid-week, add the step you left out of Version 1. Test it twice.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Make the trust call.</strong> Can it send instead of draft? Run without your review? If yes, change it. If no, note what would need to be true.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write Version 2.</strong> "Read RUN-LOG.md and WORKFLOW.md. Propose Version 2: what to add, change and leave alone. Update WORKFLOW.md."</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -151,9 +146,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>A system is real after a week of real input. Edge cases, hand steps, and trust all show up in the running.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Every correction goes into the skill, never into the output by hand. Corrections are permanent.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Keep a run log. It writes your Version 2 for you.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Every correction goes into the skill. Corrections are permanent.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>A week of real runs, logged, writes your Version 2.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-6-2.html" class="nav-btn prev">

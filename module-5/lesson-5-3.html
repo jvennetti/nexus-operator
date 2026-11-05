@@ -120,13 +120,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Scheduled Tasks</h1>
     <div class="context-copy">
-<p>Everything until now needed you to start it. Scheduled tasks remove that step. You describe a task once, set when it should run, and Claude runs it on its own: every morning, every Monday, the first of the month. You wake up to the result.</p>
-<p>This is where skills pay off. A scheduled task is only as good as the instructions behind it, and a skill is exactly that: tested, specific instructions for one task. Schedule a skill and you have a system that runs without you.</p>
-<p>What people schedule first:</p>
-<ul><li><strong>The morning briefing.</strong> The thing you built in Module 3, run at 7am and waiting in your inbox.</li><li><strong>The weekly report.</strong> Pull from the task tool, format the way the skill says, send to the team.</li><li><strong>The follow-up check.</strong> Every day, find anything you sent that hasn't had a reply in three days and draft the nudge.</li><li><strong>The monthly tidy.</strong> Organize the downloads folder, archive finished projects, update the reference list.</li></ul>
-<p>Two rules for scheduling anything:</p>
-<ul><li><strong>Run it manually first, at least twice.</strong> If it doesn't produce what you want when you're watching, it won't when you're not.</li><li><strong>Start with tasks that draft, not tasks that send.</strong> A scheduled task that drafts the replies and leaves them for you is safe to get wrong. One that sends them isn't. Earn the trust in that order.</li></ul>
-<p>How to set one up: at the end of a task that went well, say "schedule this to run every [weekday at 7am]." Claude will confirm the details and set it up. Where scheduled tasks live and how to edit them is in the app, and Claude can show you.</p>
+<p>A scheduled task runs on its own, on a cadence you set, so you wake up to the result. Schedule a skill or a prompt you've already run by hand at least twice, and start with tasks that draft rather than send. To set one up, finish a run that went well and say "schedule this to run every weekday at 7am."</p>
     </div>
   </div>
 
@@ -138,7 +132,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Schedule something real and let it run.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick the task.</strong> Your morning briefing from Module 3, or the skill you wrote in 5.1. Whichever you'd most like to find already done tomorrow.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it manually, twice.</strong> Fix anything that's off. The second run should be exactly what you want.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Make it draft, not send.</strong> If the task involves emails or messages, make sure the instructions say to draft them, not send them. You'll relax this later.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Schedule it.</strong> "Schedule this to run every weekday at [time], and deliver the result to [where you'll see it]." Confirm.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check tomorrow.</strong> When it runs, review the output. Note what you'd change, then tell Claude to update the task. In your notes below, record how it went.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick the task:</strong> your morning briefing from Module 3, or the skill from 5.1. Whichever you'd most like to find already done tomorrow.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it by hand twice.</strong> Fix anything off until the second run is exactly right.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Make it draft, not send.</strong> If it involves emails or messages, the instructions should say to draft them.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Schedule it.</strong> "Schedule this to run every weekday at [time], and deliver the result to [where you'll see it]."</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check the first run.</strong> Review the output and tell Claude what to change. Record how it went in your notes.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -150,9 +144,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>A scheduled task runs on its own, on a cadence you set. You wake up to the result.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Schedule skills, not vague prompts. Tested instructions produce consistent output.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Run it manually twice before scheduling. Start with tasks that draft, not tasks that send.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Schedule tested instructions, not vague prompts. Run it by hand twice first.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Start with tasks that draft, not tasks that send.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-5-2.html" class="nav-btn prev">

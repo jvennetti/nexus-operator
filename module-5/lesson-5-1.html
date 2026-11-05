@@ -120,13 +120,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">What a Skill Actually Is</h1>
     <div class="context-copy">
-<p>You've heard the word. Here's what it means: <strong>a skill is a text file with instructions for one specific task.</strong></p>
-<p>That's the whole definition. There's no software. A skill is a document that says: when I ask you to do X, here's how I want it done, here's what good looks like, here's what to check before you're finished. Claude reads it when the task comes up and follows it.</p>
-<p>You already wrote one, sort of. <code>CLAUDE.md</code> is the general version: how to work with you across everything. A skill is the specific version: how to do <em>this one thing.</em> The weekly report. The client proposal. The meeting summary. The invoice follow-up.</p>
-<p>Why this matters more than it sounds: every time you've explained a recurring task to Claude from scratch, you've paid a tax. A skill is paying it once. After that, "do the weekly report" is the entire prompt, and the output is consistent every time, because the instructions didn't change.</p>
-<p>What a good skill contains:</p>
-<ul><li><strong>When to use it.</strong> "Use this when I ask for a weekly status report."</li><li><strong>The inputs.</strong> "Read the task list from ClickUp and my notes in /weekly."</li><li><strong>The steps.</strong> The actual process, in order.</li><li><strong>The output format.</strong> Exactly what the result looks like. Include an example.</li><li><strong>The checks.</strong> "Before finishing, confirm every open item has an owner and a date."</li></ul>
-<p>The fastest way to write one: do the task once with Claude, manually, the way you want it. Then say "turn what we just did into a skill." It writes the file from the actual process.</p>
+<p>A skill is a text file of instructions for one specific task: when to use it, what to read, the steps, the output format, and what to check before finishing. <code>CLAUDE.md</code> covers how to work with you in general; a skill covers one recurring job, so "do the weekly report" becomes the whole prompt. The fastest way to write one is to do the task once with Claude, then say "turn what we just did into a skill."</p>
     </div>
   </div>
 
@@ -138,7 +132,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Write your first skill from a task you already do.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick a recurring task</strong> from your Operator List. Something you do weekly or more. A report, a summary, a message you send in the same shape every time.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Do it once, manually, with Claude.</strong> In your workspace, walk through the task step by step, giving notes until the result is exactly what you'd want every time.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Turn it into a skill.</strong> Say: "Turn what we just did into a skill file in a /skills folder. Include when to use it, what inputs to read, the steps, the exact output format with an example, and what to check before finishing. Then add a line to CLAUDE.md that says to use skills from /skills when a matching task comes up."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Read the skill file.</strong> Edit anything that's not how you'd describe it.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Run it cold.</strong> New session. Say only: "Do the [task name]." Nothing else. Compare the output to the manual run. If something's off, fix the skill, not the prompt.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick a recurring task</strong> from your Operator List, something you do weekly or more.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Do it once with Claude</strong> in your workspace, giving notes until the result is exactly what you'd want every time.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Turn it into a skill,</strong> then read the file and edit anything that's not how you'd describe it:<div class="prompt-block"><pre>Turn what we just did into a skill file in a /skills folder. Include when to use it, what inputs to read, the steps, the exact output format with an example, and what to check before finishing. Then add a line to CLAUDE.md that says to use skills from /skills when a matching task comes up.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Run it cold.</strong> New session. Say only: "Do the [task name]." Compare it to the manual run. If something's off, fix the skill, not the prompt.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -150,10 +144,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>A skill is a text file with instructions for one specific task. No software involved.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div><code>CLAUDE.md</code> is the general version. Skills are the specific versions, one per recurring task.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Fastest way to write one: do the task manually once, then say "turn that into a skill."</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When the output is off, fix the skill, not the prompt.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>A skill is a text file of instructions for one task. No software involved.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Do the task once, then say "turn that into a skill." When output is off, fix the skill.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="intro.html" class="nav-btn prev">

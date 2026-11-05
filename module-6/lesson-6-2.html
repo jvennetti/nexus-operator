@@ -120,11 +120,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
     <h1 class="lesson-title">Build It</h1>
     <div class="context-copy">
-<p>You have the map. Now you assemble.</p>
-<p>The build order that works, nearly every time:</p>
-<ol><li><strong>Get the steps right by hand.</strong> Run the workflow manually with Claude, on real input, until the output is exactly right. This is Module 2 all over again: brief, notes, iterate. Don't automate anything you haven't done right manually.</li><li><strong>Turn the steps into a skill.</strong> "Turn what we just did into a skill." Now the process is written down and repeatable.</li><li><strong>Wire the input and destination.</strong> Connectors for the tools involved. If the input is files, Claude Code reads the folder. If the destination is a sheet or a task tool, the connector writes to it. Test each connection with one real item.</li><li><strong>Run the whole thing end to end, manually, twice.</strong> Input to destination, with you watching. Fix what breaks. Fix the skill, not the prompt.</li><li><strong>Only then, schedule it</strong> (if it should run on a schedule) or write down the one sentence that triggers it (if it runs on demand).</li></ol>
-<p>Resist the urge to build the full version. Build Version 1 from your WORKFLOW.md. A small system that works beats a big one that almost does.</p>
-<p>When you hit something you don't know how to do, you already have the move: describe what you want to Claude and let it figure out the how. "I need this to end up in a Google Sheet with one row per item. How do we do that?" That question is the whole technical skill.</p>
+<p>Build in this order, and don't skip ahead:</p>
+<ol><li><strong>Do it by hand</strong> with Claude on real input until the output is right.</li><li><strong>Turn it into a skill.</strong></li><li><strong>Connect the input and destination,</strong> testing each with one real item.</li><li><strong>Run it end to end twice</strong> while you watch. Fix the skill, not the prompt.</li><li><strong>Then add the trigger:</strong> a schedule, or a sentence you say.</li></ol>
+<p>Build Version 1 only. Small and working beats big and almost.</p>
+<p>When you don't know how to do something, describe the outcome and ask Claude how.</p>
     </div>
   </div>
 
@@ -136,10 +135,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Build Version 1, end to end.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Manual run.</strong> In your workspace, with WORKFLOW.md open: "Read WORKFLOW.md. Let's do Version 1 manually, together, step by step, on this real input: [attach or point to it]." Give notes until the output is right.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Make the skill.</strong> "Turn that into a skill in /skills, with the output format and an example. Reference WORKFLOW.md."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Connect the ends.</strong> Make sure the connectors for input and destination are live. Test: "Pull one real item from [input] and process it with the skill, then put the result in [destination]. Show me before you write anything." Approve. Check the destination tool yourself.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Two full runs.</strong> Run the entire workflow twice on real input, watching. Fix anything off by editing the skill.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Decide the trigger.</strong> If it should run on a schedule, schedule it (drafting, not sending, for now). If on demand, write the trigger sentence into WORKFLOW.md: "To run: say '...'"</div></li></ol>
-    <div class="task-outro">
-<p>Mark done when Version 1 has completed two real runs.</p>
-    </div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Manual run.</strong> "Read WORKFLOW.md. Let's do Version 1 manually, step by step, on this real input: [attach or point to it]." Give notes until it's right.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Make the skill.</strong> "Turn that into a skill in /skills, with the output format and an example. Reference WORKFLOW.md."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Connect the ends.</strong> "Pull one real item from [input], process it with the skill, and put the result in [destination]. Show me before you write anything." Then check the destination yourself.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Two full runs</strong> on real input, watching. Fix anything off by editing the skill.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Set the trigger.</strong> Schedule it (drafting, not sending), or write the trigger sentence into WORKFLOW.md: "To run: say '...'"</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -151,9 +147,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Get it right by hand before automating. Then: skill, connect the ends, two full test runs, then trigger.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Build Version 1 from the spec. Small and working beats big and almost.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When you don't know how: describe the outcome and ask Claude how. That's the technical skill.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>By hand, then skill, then connect, then two test runs, then trigger.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>When you don't know how, describe the outcome and ask Claude how.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-6-1.html" class="nav-btn prev">

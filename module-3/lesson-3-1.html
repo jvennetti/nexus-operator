@@ -120,11 +120,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Connect Your Inbox and Calendar</h1>
     <div class="context-copy">
-<p>Until now, Claude only knew what you pasted in. Connectors change that. A connector gives Claude permission to read from, and act in, a tool you already use. Connect Gmail and Claude can read your inbox, find the thread you half-remember, and draft the reply. Connect your calendar and it can see your week.</p>
-<p>Where they live: open Settings in the Claude app and look for <strong>Connectors</strong>. You'll see a list of apps. Connecting one means signing in to that app and approving access. You can disconnect any of them at any time.</p>
-<p>Two things to understand before you connect anything:</p>
-<ul><li><strong>You choose the scope.</strong> Claude only sees what the connector allows, and only when it's relevant to what you asked. It doesn't wander through your email on its own.</li><li><strong>Reading is easy, acting asks.</strong> Claude will read freely. When it's about to do something with consequences (send, delete, move), it checks with you first. You stay the one who presses send.</li></ul>
-<p>Once connected, you don't need any special commands. You just talk about your email and calendar the way you'd talk to an assistant who has access to them. "What did Sarah say about the budget?" "What's on Thursday?" "Draft a reply to the latest from the accountant." Claude figures out the rest.</p>
+<p>Connectors let Claude read from and act in the tools you already use, starting with email and calendar. You turn them on in Settings → Connectors; Claude reads freely but asks before anything with consequences, like sending or deleting. After that there are no special commands: talk about your inbox the way you would to an assistant who has it open.</p>
     </div>
   </div>
 
@@ -136,7 +132,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Connect two tools and get a real morning briefing.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect Gmail and Google Calendar</strong> (or whatever email and calendar you actually use) in Settings → Connectors. Approve the access.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask for the briefing.</strong> New chat:<div class="prompt-block"><pre>Look at my inbox from the last two days and my calendar for the rest of this week. Give me: the five emails that most need a reply from me and why, anything that looks urgent, and a short plan for my week based on what's on the calendar. Keep it tight.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Have it find something.</strong> Think of an email you'd normally dig for: "Find the message where [person] mentioned [thing] and tell me what they asked for."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Draft one reply.</strong> "Draft a reply to [that email]. Keep it short, in my usual tone." Review it the way you learned in Module 2. Send it yourself, or let Claude send it if you're comfortable.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Put something on the calendar.</strong> "Block 45 minutes tomorrow morning for [a task from your Operator List]."</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect your email and calendar</strong> in Settings → Connectors.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask for the briefing.</strong> New chat:<div class="prompt-block"><pre>Look at my inbox from the last two days and my calendar for the rest of this week. Give me: the five emails that most need a reply from me and why, anything that looks urgent, and a short plan for my week based on what's on the calendar. Keep it tight.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Have it find something</strong> you'd normally dig for: "Find the message where [person] mentioned [thing] and tell me what they asked for."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Draft one reply.</strong> "Draft a reply to [that email]. Short, in my usual tone." Review it, then send it.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Put something on the calendar.</strong> "Block 45 minutes tomorrow morning for [a task from your Operator List]."</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -148,9 +144,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Connectors live in Settings. Connecting an app means Claude can read from it and act in it when relevant.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>You pick the scope and you can disconnect at any time. Claude asks before doing anything with consequences.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>No special commands. Talk about your inbox and calendar the way you'd talk to an assistant who has them open.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Connectors live in Settings. Claude asks before doing anything with consequences.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>No special commands. Talk to it like an assistant who has your inbox open.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="intro.html" class="nav-btn prev">
