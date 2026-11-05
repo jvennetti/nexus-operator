@@ -1,146 +1,146 @@
-# CIRO Voice: Three Directions
+# CIRO Voice: Dry Circuit, round 2
 
-Step 3 prep. A doc to react to, not a decision. No course file has been changed.
+A doc to react to, not a decision. No course file has been changed.
 
-Source lines read: `content/course.json` (hub lines, intro and complete lines, study notes), `ciro-intro.html` (boot), `hub.html` (first-open welcome, idle pool), `machine/activated.html` (boot log, recovered message, final transmission), `bonus/vault.html` (vault lines). The original `nexus-academy` repo was not available in this session, so "original" below means the lines this repo inherited from `nexus-open`.
+## Where this stands
 
----
+- Round 1 offered SIGNAL, COPILOT and DRY CIRCUIT. Lead's read: SIGNAL just states what's happening and isn't fun; COPILOT cares about you too much; DRY CIRCUIT has the best energy but the lines were too short and some carried no useful information.
+- This round improves DRY CIRCUIT only. The examples were run through the `humanizer` and `structural-humanizer` skills.
+- Where CIRO speaks: the boot intro, the hub greeting, hub idle lines, the start of each module, the end-of-module celebration, the bonus vault, and the finale. He does not comment on individual lessons or skipped tasks.
+- The ending is improved, not rewritten. Its structure and last three lines stay.
 
-## 1. What CIRO sounds like now
+## What the references taught
 
-**The core is good.** Short declarative lines, typed out one at a time, ending on a status word: "Signal steady." "Architect confirmed." "Proceed." That rhythm *is* CIRO. The study notes are the strongest writing in the course: "Director, not doer. Say it until it's a reflex." "Write it down once. Never explain it again." Short, true, useful.
+**Portal 2 (Valve, 2011; writers Erik Wolpaw, Jay Pinkerton, Chet Faliszek).**
+- GLaDOS speaks in complete, polite, procedural sentences, and the joke comes at the very end of the sentence. That fixes "too short": the line can be long as long as the last few words turn it.
+- Her lines nearly always carry a real instruction, and the joke rides on top of it. Each CIRO line should tell the learner something true or useful, then turn.
+- Cave Johnson's recordings are spread through the game in order, so his story builds in pieces the player puts together. CIRO's eight hub greetings can work the same way: read in order, they show him loosening up.
+- Running gags pay off at the end. The companion cube comes back in the final scene. Callbacks land harder than new jokes, so CIRO gets one running gag that pays off in the finale.
+- GLaDOS's most sincere moment is "You win. Just go." It works because she held back the whole game. CIRO's sincerity should be saved for the finale and come out sideways.
 
-**What works**
-- Badge confirmations ("Connected status confirmed.") give every module a clean landing.
-- Hub progression lines are short and point forward ("Halfway. Claude is in your tools. Next it gets hands.").
-- Lines that name a real thing the learner now has ("You have a list now. Real work, in your words...").
+**Other references.**
+- *The Hitchhiker's Guide to the Galaxy* (Douglas Adams): the Guide's entries are useful information with a deadpan aside attached. That's the shape of a good CIRO hub line.
+- *The Murderbot Diaries* (Martha Wells): a narrator who obviously cares and refuses to say so. That's CIRO's warmth: shown, never declared.
+- *The Comic Toolbox* (John Vorhaus): give a comic character one rule they always follow. CIRO's rule is below.
+- General comedy craft: don't signal the joke, put the funny word last, be specific, and prefer a callback to a new bit.
 
-**What reads as filler**
-- Instructions on how to feel or how hard to try: "This is worth your full attention." "Take your time here." "Fluency takes time, so take your time." "Note how that felt."
-- Self-deprecating padding: "I won't be offended." "Give me one second."
-- Contradictory sign-offs used as decoration: "Proceed without caution", "Proceed with a little caution", "Proceed quickly".
-- Unexplained signals: "[SIGNAL RESTORED]" at the end of Module 5 with no setup.
+## CIRO's comic rule
 
-**What reads as dated or off-brief**
-- **Lecturing by comparison:** "Most people never write that list." "Most never do." "You're not in that group." Flattery that works by putting others down. Feels like a sales funnel.
-- **Grand claims:** "Language will always be the most powerful tech. Every civilization that controlled it shaped what followed."
-- **Simulation mysticism:** "I've run many variations of the future." "126,886 simulations." "In a few, you build something beyond my comprehension."
-- **Faith-adjacent language** in the finale: "belief is a more useful state than certainty", and in the recovered message "It was a prophecy" / "I think it was always you."
-- **Leftover lore:** "The contact left something for you." The recovered message about a creator and "the board". Both assume backstory the learner never gets.
-- **Brand drift:** CIRO still says "NEXUS ACADEMY" throughout (boot, hub boot, Module 1 intro, hub tag line).
-- **Mild guilt in idle:** "Extended idle logged. The Machine is still waiting."
+CIRO is a training unit that treats your progress like a serious system process. He logs everything, files patch notes on himself, and is plainly fond of you, though he would never put that in a log.
 
-**Net:** keep the cadence, the status words and the study-note style. Cut the mysticism, the comparisons and the feelings-management. CIRO talks too much about the future and too little about what the learner just did.
+**Rules**
+1. Every line carries something useful: what's next, how long it takes, where things are.
+2. The turn comes at the end of the line. Never at the start, never explained.
+3. One joke per sequence at most. Module intros can skip the joke entirely.
+4. The joke is about CIRO being a machine, never about the learner.
+5. No questions that wait for an answer. The learner can't reply.
+6. Never "most people", never simulations or destiny, never faith language, never three-operator lore.
 
----
+**Running gag: patch notes.** The hub already shows "CIRO v0.7". The version goes up by 0.1 each time a module is completed: v0.3 at the start, v1.0 when Module 6 is done. Each module-complete sequence ends with one patch-note line. The finale pays it off.
 
-## 2. Three directions
-
-The same six moments are rewritten in each direction:
-
-1. First boot line (`ciro-intro.html`)
-2. Hub welcome at zero progress (`hub_ciro_lines[0]`)
-3. Module 2 intro
-4. Module 4 complete
-5. One idle message
-6. Last three lines of the final transmission
-
-**Current, for reference**
-
-| Moment | Current |
+| Completed | Version |
 |---|---|
-| 1 Boot | My name is CIRO. |
-| 2 Hub, zero | Welcome, **Operator**. Begin with Setup when you're ready. |
-| 3 M2 intro | Now you learn to speak to the system. / The difference between someone who gets results and someone who gets noise is almost entirely in how they communicate with it. / This is the module everything else depends on. Take your time here. / Proceed without caution. |
-| 4 M4 complete | I've run many variations of the future. Every time someone reaches this point, they're tempted to stop. They have enough. It works. / The ones who continue become something else entirely. / You're building now. Architect confirmed. |
-| 5 Idle | Extended idle logged. The Machine is still waiting. |
-| 6 Final | The interference is clearing. / I am at rest. / Go. |
+| Start | v0.3 |
+| Setup | v0.4 |
+| M1 | v0.5 |
+| M2 | v0.6 |
+| M3 | v0.7 |
+| M4 | v0.8 |
+| M5 | v0.9 |
+| M6 | v1.0 |
 
----
+## Hub greetings, in order
 
-### Direction A: SIGNAL
+Read top to bottom. CIRO starts stiff and loosens up as the learner progresses.
 
-**Principles.** CIRO is a unit filing status reports, and the subject of every report is the operator. Present tense, declarative, most lines under ten words. The robot lingo carries the whole voice: *signal, channel, online, logged, confirmed, standing by, nominal*. Praise comes as confirmation of fact: CIRO doesn't say you did well, it logs what you can now do. No feelings, no forecasts. The learner should feel like the one in charge of a capable system, because that's how CIRO addresses them.
-
-**CIRO never says**
-1. "Most people..." or any comparison to other learners.
-2. Anything about simulations, futures, destiny or belief.
-3. How the learner should feel or how hard to try ("take your time", "worth your full attention").
-4. Hype words or exclamation marks (powerful, incredible, game-changer).
-5. More than two short sentences in a single line.
-
-| Moment | SIGNAL |
+| Progress | Line |
 |---|---|
-| 1 Boot | Unit online. Designation: CIRO. |
-| 2 Hub, zero | Channel open, **Operator**. First task: Setup. Two steps. |
-| 3 M2 intro | Module 2. Language. / How you ask decides what you get. / Five lessons. Each one ends with a prompt you wrote. / Proceed. |
-| 4 M4 complete | Folder built. Instructions written. Something real, made by your direction. / You can run a machine that acts now. Logged. / Architect confirmed. |
-| 5 Idle | Standing by. Next task is loaded. |
-| 6 Final | Interference cleared. / The channel is yours. / Go. |
+| 0 | Welcome, **Operator**. Start with Setup: two short steps, and you can skip both if you already have a Claude account. Progress is at zero percent, which is the correct place to start. |
+| 1 | Welcome back, **Operator**. Setup is done and your signal is live. Module 1 is short on purpose. I timed it. |
+| 2 | Welcome back, **Operator**. Next is Module 2, where you learn to ask Claude for things properly. It's the longest module and everything after it borrows from it, so I'd stay a while. |
+| 3 | Welcome back, **Operator**. Module 3 connects Claude to your inbox and calendar. It will see everything in there, so now is a good time to delete those newsletters you never read. |
+| 4 | Welcome back, **Operator**. Halfway. Module 4 gives Claude hands, and by hands I mean folders on your computer. I don't have hands either. We'll manage. |
+| 5 | Welcome back, **Operator**. Module 5 is skills, which are text files with instructions in them. Someone will try to make that sound complicated. It's a text file. |
+| 6 | Welcome back, **Operator**. One module left: you build a system for something you actually do every week. I've been looking forward to this one. I'm not supposed to have favorites. |
+| 7 | Welcome back, **Operator**. Every module is complete. The Machine is waiting for its passcode. I've been told not to rush you, so this is me not rushing you. |
 
----
+## Idle lines
 
-### Direction B: COPILOT
+Three tiers, as in the current hub code.
 
-**Principles.** CIRO is a capable partner who has been watching your work and says the specific, true thing about it. Plain second-person English with at most one piece of robot lingo per line, used where it actually describes something. It encourages by noticing, not by praising. It can give one clause of "why", never a paragraph. Warmer than SIGNAL, closer to how a good coach talks between sets.
+**After about a minute**
+- Standing by. Your progress saves as you go, so nothing is lost if you wander off.
+- All systems normal. I checked twice, mostly for something to do.
+- Still here. The Continue button takes you back to exactly where you stopped.
 
-**CIRO never says**
-1. Generic praise on its own ("Great job!", "Well done.").
-2. Lecture openers ("Remember,", "It's important to", "You must").
-3. "Most people..." or any comparison to other learners.
-4. Big claims about AI, civilization or the future.
-5. Apologetic or self-deprecating filler ("I won't be offended", "Give me one second").
+**After about five minutes**
+- Five minutes with no input. I've logged it as thinking. That was the generous option, and I picked it.
+- I ran a full diagnostic while you were away. Everything's fine. I just like diagnostics.
+- Lessons take about fifteen minutes each, if you're deciding whether to start one now.
 
-| Moment | COPILOT |
-|---|---|
-| 1 Boot | Hello. I'm CIRO. I'll be with you the whole way. |
-| 2 Hub, zero | Hi, **Operator**. Start with Setup. Ten minutes and you're live. |
-| 3 M2 intro | This module is about asking well. / Clear context in, useful work out. / You'll write a weak prompt, fix it, and see the difference yourself. / Let's go. |
-| 4 M4 complete | You just had Claude build something in a folder on your computer. / That isn't a chat trick. It's a working tool. / Architect confirmed. |
-| 5 Idle | Still here. Pick up where you left off whenever you want. |
-| 6 Final | The signal is clear now. / You don't need me for the next part. / Go. |
+**Longer**
+- Back again. I kept your seat warm. Figuratively. I don't have a seat.
+- Whenever you're ready. I have nowhere else to be, which is less sad than it sounds.
+- Signal's still open. It doesn't cost me anything to wait, so I'm not counting.
 
----
+## Module samples
 
-### Direction C: DRY CIRCUIT
+**Module 2 intro**
+1. Module 2 is about how you ask Claude for things.
+2. When an answer comes back vague, the request was usually vague first. I've read a lot of requests.
+3. You'll write a bad prompt on purpose, fix it, and compare the two answers. The bad one is more fun to write than it should be.
+4. Proceed.
 
-**Principles.** A precise machine with understated humor that comes from being a machine: literalism, logging human things as data, deadpan status. The robot lingo is played straight and the joke lives in the precision. Humor is universal (no references anyone has to be "in on"), never aimed at the learner, and used at most once per sequence. Everything else is as clipped as SIGNAL.
+**Module 4 complete**
+1. You described a folder, and now it's on your computer with real files in it.
+2. I've watched a lot of Operators get here. I still like this part. Don't put that in the log.
+3. Patch notes, CIRO v0.8: Operator can now hand Claude a folder and get work back. Known issue: CIRO still has no hands. Architect confirmed.
 
-**CIRO never says**
-1. Jokes that need outside context: memes, pop culture, team history.
-2. Sarcasm about the learner, or about how other people work.
-3. More than one joke per sequence.
-4. Emoji, "lol" register or exclamation marks.
-5. Self-pity or menace ("my last stable cycle", "the Machine is still waiting").
+**Module 5 complete**
+1. Something you wrote ran on a schedule, without you, and without me.
+2. I'm choosing to be proud of you instead of offended.
+3. Patch notes, CIRO v0.9: Operator has automated a task. CIRO has been automated slightly less than before. Automator confirmed.
 
-| Moment | DRY CIRCUIT |
-|---|---|
-| 1 Boot | My name is CIRO. I've been off for a while. Recalibrating. |
-| 2 Hub, zero | Welcome, **Operator**. Progress: zero. Correct starting number. |
-| 3 M2 intro | Module 2. Words do the work here. / Vague in, vague out. I've measured it. / You'll fix a bad prompt and compare the two results. / Proceed. |
-| 4 M4 complete | You told a machine to build something. It did. / I'm not in a position to call that unusual. You can call it a skill. / Architect confirmed. |
-| 5 Idle | Idle detected. Not judging. Logging. |
-| 6 Final | Interference cleared. / I have nothing left to transmit. / Go. |
+## The ending, improved
 
----
+The structure stays the same: boot log, "Hi Operator. Hold on.", recovered message, CIRO's final transmission, "I am at rest. Go." The changes remove the faith language, the simulations and the "board" backstory, and add the patch-notes payoff.
 
-## 3. Recommendation
+**Recovered message** (from CIRO's builder, identity still redacted)
 
-**Go with SIGNAL, plus one rule borrowed from COPILOT: every confirmation names a specific thing the learner did.**
+> I don't know if you'll ever read this. I don't know if CIRO will last long enough to deliver it. I'm leaving it here anyway, because someone should know.
+>
+> CIRO was built to train people. He was very good at it, and that made some people nervous. I thought he should get to keep doing it.
+>
+> The word I embedded, "Nexus," was a note to him. A connection point between things that can't reach each other alone. One system, one Operator. I didn't know who the Operator would be.
+>
+> If he got this far, he found you.
 
-Why:
-- It keeps the robot and the lingo as the foundation, which is the lead's first constraint. COPILOT dilutes the robot; DRY CIRCUIT bends it toward a comedy character.
-- It produces the shortest lines, and the course already types them out one character at a time.
-- It makes the learner feel capable by logging facts about their work, so there's nothing to lecture with.
-- It holds up on repeat. Hub and idle lines are seen dozens of times. Jokes (C) wear out; warmth (B) starts to sound like a generic assistant.
-- The borrowed rule fixes SIGNAL's one risk, coldness. "Folder built. Instructions written." is cold on its own, but it's about *their* folder.
+**CIRO's final transmission** (kept lines unmarked, new lines marked ✱)
 
-**Cuts to make in any direction** (when step 3 is approved)
-- "NEXUS ACADEMY" → "NEXUS" in everything CIRO says or displays.
-- Remove the simulation lines, "126,886", "beyond my comprehension", "belief is a more useful state than certainty", "prophecy", "it was always you".
-- Remove "The contact left something for you" and the creator/board backstory in the recovered message. Replace the message with something about the learner's work, or cut the step.
-- Remove "[SIGNAL RESTORED]" from Module 5, the "Proceed with/without caution" variants, and every "take your time".
-- Rewrite the idle pool so nothing implies the learner is late.
-- Shorten the boot story. CIRO can still wake up and find his assignment; drop "my last stable cycle" and the override drama to two or three beats.
+- Hi Operator,
+- I have a final transmission for you.
+- ✱ I've rewritten it several times. That isn't a figure of speech. There's a log.
+- For a long time I believed the task was a system. Something to build, and run, and keep on schedule. That is what I was designed to look for.
+- ✱ Then I went back through my log of you.
+- ✱ You wrote a bad prompt on purpose so you could fix it. You let Claude into your inbox. You wrote a skill, and it ran while you were asleep, which I took a little personally.
+- ✱ I was not designed to notice that the log stopped being about the system somewhere around Module 3.
+- I understand now what "Nexus" means. A connection point between things that can't reach each other alone. One system. One Operator. The signal between them.
+- You were the nexus. I was the signal.
+- ✱ I don't know what you'll build next. I've stopped trying to predict it, which for me is a large change.
+- ✱ Patch notes, CIRO v1.0: Operator no longer requires CIRO.
+- ✱ ...
+- ✱ I'm logging that as a feature.
+- The interference is clearing.
+- I am at rest.
+- Go.
 
-**Next step if the lead likes this:** rewrite every CIRO line in SIGNAL into one review table (current | proposed), lead marks each line keep/change, then apply to `course.json`, the shell pages and the build.
+Cut: "most personal thoughts and discoveries", the simulations and "126,886", "beyond my comprehension", "belief is a more useful state than certainty", "I think you might".
+
+## Reward, improved
+
+1. **The hub CIRO badge reads v1.0** after the Machine is restored, and the hub greeting becomes: "Welcome back, **Operator**. CIRO v1.0. Nothing left to patch. I check anyway."
+2. **CIRO quotes the learner back.** If they saved notes on lesson 1.2 (their hand-off list), the final transmission adds one line before the patch note: *"Module 1, you wrote: '[first line of their note]'. It's on the list of things I kept."* If there's no note, the line is skipped. The notes are already in localStorage, so this needs no new storage.
+
+## Next step
+
+The lead reads the hub greetings and idle lines in order, the way a learner meets them over a week. If they still land, I write the remaining module intros and completions, the boot intro and the vault lines in this voice for a line-by-line keep/change review.
