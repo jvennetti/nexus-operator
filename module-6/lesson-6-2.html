@@ -120,28 +120,30 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~25 min</span></div>
     <h1 class="lesson-title">Build It</h1>
     <div class="context-copy">
-<p>You have the map. Now you assemble.</p>
-<p>The build order that works, nearly every time:</p>
-<ol><li><strong>Get the steps right by hand.</strong> Run the workflow manually with Claude, on real input, until the output is exactly right. This is Module 2 all over again: brief, notes, iterate. Don't automate anything you haven't done right manually.</li><li><strong>Turn the steps into a skill.</strong> "Turn what we just did into a skill." Now the process is written down and repeatable.</li><li><strong>Wire the input and destination.</strong> Connectors for the tools involved. If the input is files, Claude Code reads the folder. If the destination is a sheet or a task tool, the connector writes to it. Test each connection with one real item.</li><li><strong>Run the whole thing end to end, manually, twice.</strong> Input to destination, with you watching. Fix what breaks. Fix the skill, not the prompt.</li><li><strong>Only then, schedule it</strong> (if it should run on a schedule) or write down the one sentence that triggers it (if it runs on demand).</li></ol>
-<p>Resist the urge to build the full version. Build Version 1 from your WORKFLOW.md. A small system that works beats a big one that almost does.</p>
-<p>When you hit something you don't know how to do, you already have the move: describe what you want to Claude and let it figure out the how. "I need this to end up in a Google Sheet with one row per item. How do we do that?" That question is the whole technical skill.</p>
+<p>Build it. This video shows the loop: do the work by hand once, turn that into a lean skill, test it on past work Claude hasn't seen, and fix the skill in the smallest step. From here there are two tracks: a system that runs a workflow, or an app you use. You can do both.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/IhhxRZDf2bo?start=190&amp;end=772&amp;enablejsapi=1" title="Build It" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">I Trained Claude to Work Exactly Like Me, by Dylan Davis</div>
+  <div class="video-note">Skip to 3:10. The loop is: do it by hand, turn it into a lean skill, test on past work, fix the skill in the smallest step.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">45 min</div>
     </div>
     <div class="task-intro">
-<p>Build Version 1, end to end.</p>
+<p>Build Version 1.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Manual run.</strong> In your workspace, with WORKFLOW.md open: "Read WORKFLOW.md. Let's do Version 1 manually, together, step by step, on this real input: [attach or point to it]." Give notes until the output is right.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Make the skill.</strong> "Turn that into a skill in /skills, with the output format and an example. Reference WORKFLOW.md."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Connect the ends.</strong> Make sure the connectors for input and destination are live. Test: "Pull one real item from [input] and process it with the skill, then put the result in [destination]. Show me before you write anything." Approve. Check the destination tool yourself.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Two full runs.</strong> Run the entire workflow twice on real input, watching. Fix anything off by editing the skill.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Decide the trigger.</strong> If it should run on a schedule, schedule it (drafting, not sending, for now). If on demand, write the trigger sentence into WORKFLOW.md: "To run: say '...'"</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Gather the last four or five times you did this work by hand: the input and your finished output. Keep two aside as the test pile. Don't show those to Claude yet.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Do one by hand with Claude until the result is right. Then paste:<div class="prompt-block"><pre>Turn what we just did into a skill. Lean and minimal: every line must earn its place. It should apply to every [thing] of this kind, not just this one.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">In a fresh session, paste this and save the result with the skill:<div class="prompt-block"><pre>Here's the skill and three good past outputs. Write a 7-to-10 question yes/no checklist for judging a result.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Run the skill on the test pile only. Score each result with the checklist.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">For every "no," paste:<div class="prompt-block"><pre>Make the smallest change to the skill that fixes this. Show me exactly what changed.</pre></div></div></li><li class="step-item"><div class="step-num">6</div><div class="step-text">App track instead? Same loop: build the simplest version in the Code tab with Plan mode, use it on real work, and fix it in the smallest step.</div></li></ol>
     <div class="task-outro">
-<p>Mark done when Version 1 has completed two real runs.</p>
+<p>Mark this done when the test pile passes the checklist.</p>
     </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
@@ -154,9 +156,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Get it right by hand before automating. Then: skill, connect the ends, two full test runs, then trigger.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Build Version 1 from the spec. Small and working beats big and almost.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When you don't know how: describe the outcome and ask Claude how. That's the technical skill.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Do it by hand first. The skill is written from a run that worked.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Test on work Claude hasn't seen, with a checklist you wrote before the test.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Fix the skill in the smallest step, and read the change.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Suggestion: build both tracks. The second one earns the OVERCLOCKED badge.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-6-1.html" class="nav-btn prev">

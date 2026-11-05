@@ -18,13 +18,13 @@ Make sure these are connected before you start the day: your email, your calenda
 2. **Midday: carry things across.** At least twice during the day, when information arrives in one tool and needs to be somewhere else, say the sentence instead of doing it by hand. "Create tasks from this." "Add this to the doc." "Put that on the calendar." Each time, review before approving.
 3. **Afternoon: draft everything.** Every reply you'd normally write from scratch, have Claude draft first. Review, edit, send. Count how many.
 4. **End of day: the update.** "Look at what I did today across my tools and draft a short end-of-day update I could send to my team (or to myself)." Read it. Is it accurate? What did it miss?
-5. **Write the tally.** In a new chat: how long the morning routine took versus normal, how many replies Claude drafted, how many things got carried across, and roughly how much time the day saved. Keep this. Add it to your Operator List document.
+5. **Write the tally.** In a new chat: how long the morning routine took versus normal, how many replies Claude drafted, how many things got carried across, and roughly how much time the day saved. Keep this. Add it to your task list document.
 
 ## Deliverable
 
 - One real workday run with Claude connected to your email, calendar and main work tool.
 - At least two "carry it across" moves and a set of drafted replies, all reviewed and used.
-- A short written tally of what the day saved, added to your Operator List document.
+- A short written tally of what the day saved, added to your task list document.
 
 ## Note
 

@@ -10,7 +10,7 @@ This challenge is one skill plus one scheduled task, running on your real life, 
 
 ## Steps
 
-1. **Write a second skill.** You wrote one in Lesson 5.1. Pick another recurring task from your Operator List. Do it manually once, then "turn that into a skill." You should now have a /skills folder with two tested skills.
+1. **Write a second skill.** You wrote one in Lesson 5.1. Pick another recurring task from your task list. Do it manually once, then "turn that into a skill." You should now have a /skills folder with two tested skills.
 2. **Make the skills portable.** Ask Claude: "Review both skills. Make sure each one says when to use it, what it needs, the steps, the output format with an example, and the checks. Make them consistent with each other." Good skills read like a checklist a new hire could follow.
 3. **Schedule one of them.** Whichever would be most satisfying to find done in the morning. Manual run twice. Draft, don't send. Schedule it.
 4. **Let it run three times.** Each morning, review the output. Each correction goes into the skill. Log what changed.

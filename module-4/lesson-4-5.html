@@ -120,27 +120,31 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Sessions, Permissions, Safety</h1>
     <div class="context-copy">
-<p>A few things about working in Claude Code day to day that nobody tells you until you've learned them the hard way.</p>
-<p><strong>Sessions.</strong> Each conversation in Claude Code is a session. Long sessions get slow and forgetful, exactly like long chats. The fix is the same: start a new session for a new task. Because the folder is the memory, you lose nothing. If you're mid-task and need to stop, say "write a short HANDOFF.md describing where we are and what's next" and the next session picks it up.</p>
-<p><strong>Permissions.</strong> Claude Code asks before it does things that could matter: changing files, running commands. Early on, read every prompt. Once you trust a kind of action ("edit files in this folder"), you can allow it going forward. Don't blanket-approve everything on day one. Earn your own trust.</p>
-<p><strong>Undo.</strong> Ask Claude to set up version history in your workspace ("set up git and commit after each change" is the sentence, and you don't need to know what it means). After that, anything can be rolled back with "undo the last change" or "take this file back to how it was this morning."</p>
-<p><strong>Scope.</strong> Claude Code only sees the folder you opened. That's a feature. Keep your workspace separate from the rest of your computer and you never have to worry about what it might touch.</p>
-<p><strong>When it gets stuck.</strong> It loops, it apologizes, it tries the same thing three times. Stop it. Start a new session. Describe the goal fresh, in one clean message. It almost always works the second time.</p>
+<p>Two things keep you safe with Claude Code: the mode selector (Manual, Plan, Auto) and the habits you work with. This video shows three habits: work on a copy, keep an undo, and ask for a two-minute review. You'll make all three permanent.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/F-DARGKRKdQ?start=421&amp;end=651&amp;enablejsapi=1" title="Sessions, Permissions, Safety" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">I Stopped Clicking Approve in Claude. It Got Safer, by Dylan Davis</div>
+  <div class="video-note">He works in Auto mode. He also says Manual is for learning and for files with no backup. That's you, this module. Take his three habits.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
-<p>Set up the safety habits once so they're always there.</p>
+<p>Make the habits permanent.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Version history.</strong> In your workspace: "Set up version history for this folder using git, and commit after each change you make from now on. Add that rule to CLAUDE.md." Approve the prompts.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Test undo.</strong> Make a change: "Add a line to README.md that says 'test line.'" Then: "Undo that last change." Confirm the line is gone.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Practice the handoff.</strong> Mid-way through any task, say: "Write a HANDOFF.md with where we are and what's next." Close the session. Open a new one. Say: "Read HANDOFF.md and continue." Watch it pick up.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Review your permissions.</strong> Look at what you've allowed. Keep what you understand. Revoke anything you don't remember approving.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write the escape hatch into CLAUDE.md:</strong> "If you try the same fix twice and it fails, stop and tell me what you've tried instead of trying again."</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Check nexus-workspace holds only copies. Keep one original of anything Claude edits, outside the folder.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Paste this and say yes. Then make a test change and paste "Undo the last change." Check it's gone.<div class="prompt-block"><pre>Set up version history for this folder so I can undo any change.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">After your next task, paste:<div class="prompt-block"><pre>Two-minute review: tell me what you changed, what I should check first, and anything you're unsure about.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Paste:<div class="prompt-block"><pre>Add a rule to CLAUDE.md: at the end of any task that changed files, give me a two-minute review.</pre></div></div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">When a chat gets long or confused, paste "Summarize what we did and where we left off," then start a new session with that summary.</div></li></ol>
+    <div class="task-outro">
+<p>Mark this done when the review rule is in CLAUDE.md and the undo works.</p>
+    </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
       <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
@@ -152,10 +156,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>New task, new session. The folder is the memory, so you lose nothing. Use a HANDOFF.md to stop mid-task.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Read permission prompts early. Allow kinds of actions you've come to trust, not everything at once.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Set up version history once. Then "undo the last change" always works.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When it loops, stop it and start clean. The second attempt usually works.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Copies, undo, review. Those three habits let you move faster later.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Say yes to reading and creating new files. Read before you allow changes to files you already have. Say no to deleting anything you didn't ask for.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Warning: Auto mode skips the asking. Earn it with the habits first.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>A long, confused session? Summarize it and start a new one.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-4-4.html" class="nav-btn prev">

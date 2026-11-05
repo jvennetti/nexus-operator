@@ -120,26 +120,31 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Connect Your Work Tools</h1>
     <div class="context-copy">
-<p>Email and calendar are where information arrives. Your work tools are where it gets done: the task manager, the docs, the shared drive, the team chat. Connect those and Claude stops being a place you go and starts being a colleague who's in the same tools you are.</p>
-<p>Look through the Connectors list for the tools you actually use day to day. Common ones: ClickUp, Notion, Asana, Google Drive, Slack. Connect the one or two you live in. Don't connect everything. More connectors means more for Claude to consider and more permissions to think about. Start with what you touch daily.</p>
-<p>What this makes possible:</p>
-<ul><li><strong>Email becomes tasks.</strong> "Read the thread from the client and create tasks in ClickUp for everything we promised, with due dates."</li><li><strong>Docs become answers.</strong> "Find our onboarding doc in Drive and tell me what we say about the first week."</li><li><strong>Chat becomes summary.</strong> "What did the team decide in the project channel this week?"</li><li><strong>Updates write themselves.</strong> "Look at my open tasks and draft a status update for the team."</li></ul>
-<p>The pattern is always: information lives in one tool, needs to end up in another, and a human used to carry it across by hand. Now you say the sentence and it's carried.</p>
+<p>Now connect a tool you actually work in. This video shows Claude turning raw meeting notes into a finished Notion page, and how to give it access to only the parts you want. You'll do the same in your own tool.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/BKzEVhT2054?end=300&amp;enablejsapi=1" title="Connect Your Work Tools" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">How I Use Claude to Automate My Entire Notion Workspace, by Benjamin Preston</div>
+  <div class="video-note">Notion is his example. The same move works with ClickUp, Asana, Google Drive or Slack. "MCP connector" just means a connector.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">20 min</div>
     </div>
     <div class="task-intro">
-<p>Connect your main work tool and carry something across.</p>
+<p>Connect one work tool and let Claude do a real job in it.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect one or two work tools</strong> you use every day in Settings → Connectors.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask Claude what it can see.</strong> "What can you access in [tool]? Give me a quick overview of what's in there." Confirm it's seeing what you expect.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Carry something across.</strong> Take an email thread or a set of meeting notes and say: "Create tasks in [tool] for everything that needs doing here. Assign to me, due this week, and show me the list before you create them." Review, approve, done.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Pull something out.</strong> "Give me a status summary of everything I have open in [tool], grouped by project, in order of urgency."</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check your work.</strong> Open the tool itself. Confirm the tasks are really there and look right. Fix anything off by telling Claude.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Tell Claude you want to connect [your tool]. When it asks for permission, give it the smallest scope offered: one workspace, or one set of pages.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Paste this and check the answer matches what you allowed:<div class="prompt-block"><pre>What can you see in [tool]?</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Paste your notes from a real meeting or an email thread, then:<div class="prompt-block"><pre>Create the tasks from this, assigned to me, with due dates where they're mentioned. Show me the list before you create anything.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">When Claude asks permission to create, say yes once. Then open the tool and check what it made. Fix anything off by telling Claude.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">Paste:<div class="prompt-block"><pre>Give me a status summary of my open items.</pre></div></div></li></ol>
+    <div class="task-outro">
+<p>Mark this done when something Claude created is sitting in your tool and looks right.</p>
+    </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
       <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
@@ -151,9 +156,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Connect the one or two work tools you actually live in. Not everything.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>The core move: information in one tool, needed in another, carried across by a sentence instead of by hand.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Ask Claude to show you what it's about to create before it creates it. Review, then approve.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Give Claude the smallest access it needs. You can widen it later.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>"Show me before you create anything" is the habit. Check its work in the tool the first few times.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The win is carrying information between tools by asking, instead of copying and pasting between tabs.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-3-1.html" class="nav-btn prev">

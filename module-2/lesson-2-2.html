@@ -120,29 +120,30 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Give It What It Needs</h1>
     <div class="context-copy">
-<p>Of the four parts of a prompt, context is the one that does the heavy lifting, and it's the one people shortchange most. They describe the situation when they could just show it.</p>
-<p>Claude can read almost anything you give it:</p>
-<ul><li><strong>Documents.</strong> Word files, PDFs, text, slides. Drag them in.</li><li><strong>Spreadsheets.</strong> Attach the file and ask questions about the numbers.</li><li><strong>Screenshots.</strong> A photo of a whiteboard, an error message, a chart, a page you can't copy. Claude reads images.</li><li><strong>Pasted text.</strong> The whole email thread. The meeting transcript. The messy notes. Don't summarize it for Claude. Paste it and let Claude do the summarizing.</li></ul>
-<p>The rule: <strong>show, don't describe.</strong> Describing takes effort and loses detail. Showing takes a drag-and-drop and loses nothing.</p>
-<p>The second half of context is <strong>what good looks like.</strong> If you want a proposal, attach a proposal you loved. If you want your voice, paste three emails you wrote. If you want a particular structure, paste something with that structure. Claude will match it far more precisely than it could follow a description.</p>
-<p>The third half (there are three halves) is <strong>who it's for.</strong> The same information written for your boss, your client and your mom is three different pieces of writing. Say who's reading.</p>
+<p>Claude works best when you give it the real material, not a tidy summary of it. This video shows someone handing over raw, messy data and checking the result against what he already knows. You're going to do the same with your own work.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/Zzn-g8lvLMA?start=19&amp;end=342&amp;enablejsapi=1" title="Give It What It Needs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">Data analysis with AI, by Anthropic</div>
+  <div class="video-note">From Anthropic's AI Fluency course. The example is data. The test works for any task.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
-<p>Get something real done using real material.</p>
+<p>Give Claude the real thing.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Find something messy from your actual work or life.</strong> An email thread that needs a reply. A long document you need to understand. A spreadsheet you need to make sense of. Notes from a meeting that need to become actions. Something you'd otherwise put off.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Give it to Claude whole.</strong> New chat. Attach the file or paste the whole thing. Don't tidy it first.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Add the three pieces of context:</strong> who you are in this situation, who the output is for, and what good looks like (attach or paste an example if you have one).</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Ask for the specific output</strong> you need. A reply. A one-page summary. A list of actions with owners. A table.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Use it.</strong> Send the reply, share the summary, act on the list. Real material, real output, real use.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Pick something you've already done: a reply you sent, a summary you wrote, a spreadsheet you worked through.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Gather the raw material behind it: the whole email thread, the original file, the messy notes. Don't tidy it.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Open a new chat, attach or paste it all, and write one paragraph: what this is, what you want, and what you care about.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Compare what Claude made with what you actually produced. Tell it one thing it missed and see if it fixes it.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">Write down the thing it missed as "Always tell Claude: ..." You'll use that line again.</div></li></ol>
     <div class="task-outro">
-<p>Mark the task done when you've used the result.</p>
+<p>Mark this done when Claude's version is as good as yours, or you know exactly why it isn't.</p>
     </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
@@ -155,9 +156,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Show, don't describe. Paste the whole thread, attach the file, drop in the screenshot.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Attach an example of what good looks like. Claude matches examples far more precisely than descriptions.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Say who it's for. The same facts written for different readers are different pieces of writing.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Paste the whole thread. Attach the original file. Claude can read it all, so you don't need to summarize first.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Test Claude on work you've already done, so you can tell what it got right.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>When it misses something, that's a piece of context you give it next time.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-2-1.html" class="nav-btn prev">

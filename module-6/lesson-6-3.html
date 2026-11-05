@@ -120,28 +120,30 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~10 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~20 min</span></div>
     <h1 class="lesson-title">Run It, Then Refine It</h1>
     <div class="context-copy">
-<p>A system you built yesterday is a prototype. A system you've run for a week is real. This lesson is about the week.</p>
-<p>Three things happen when you run a system on real input for several days:</p>
-<ul><li><strong>Edge cases show up.</strong> The email with no subject line. The report that's missing a section. The week with a holiday. Each one is a rule to add to the skill.</li><li><strong>You notice what you still do by hand.</strong> The one step you kept out of Version 1 because it seemed hard. The check you do before trusting the output. Those are the next version.</li><li><strong>You learn whether you trust it.</strong> This is the real question. By the end of the week you'll know whether this can send instead of draft, run without you reviewing, extend to a second input.</li></ul>
-<p>The habit that makes this work: <strong>every time you correct the output, fix the skill.</strong> Not the prompt, not the output by hand. The skill. Each correction is permanent. A system you've corrected ten times is a system that gets it right.</p>
-<p>Keep a short log in your workspace. Date, what the system did, what you changed. By the end of the week it'll tell you exactly what Version 2 should be.</p>
+<p>Run it for a week, and make every fix stick. This video is about the mistake everyone makes: correcting the output and never the instructions, so the same error comes back. You'll keep a run log so it doesn't.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/fgrJVdD12PA?end=686&amp;enablejsapi=1" title="Run It, Then Refine It" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">ChatGPT &amp; Claude Keep Repeating Mistakes You Already Fixed, by Dylan Davis</div>
+  <div class="video-note">He calls the instructions file agents.md. Yours is CLAUDE.md. Plug at 2:43; skip it.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
-      <div class="task-time">1 week, 20 min active</div>
+      <div class="task-time">1 week</div>
     </div>
     <div class="task-intro">
-<p>Run the system for a week and improve it as you go.</p>
+<p>Run it for a week and log it.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Create the log.</strong> In your workspace: "Create RUN-LOG.md with a table: date, what ran, what was wrong, what I changed." Ask Claude to add a line after every run.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Run it every day</strong> (or every time the input arrives). Review every output. For each problem: "Fix the skill so this doesn't happen again." Then log it.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Add one thing you were doing by hand.</strong> Mid-week, pick the step you kept out of Version 1 and ask Claude to build it in. Test it twice.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Make the trust call.</strong> End of week, ask yourself: can this send instead of draft? Can it run without my review? If yes to either, change it. If no, write down what would need to be true.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write Version 2.</strong> "Read RUN-LOG.md and WORKFLOW.md. Propose Version 2: what to add, what to change, what to leave alone. Update WORKFLOW.md." Read it. Decide what to build next.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">In the <strong>Code</strong> tab, paste:<div class="prompt-block"><pre>Create RUN-LOG.md. Then add a rule to CLAUDE.md: after every run, add one line to RUN-LOG.md with the date, what was wrong, and what changed. If the mistake is already listed, add a tick instead. Read RUN-LOG.md before every run.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Run your Version 1 on real work every day this week.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Each time you correct something, follow with:<div class="prompt-block"><pre>Update the skill with that change so it doesn't happen again. Show me what changed.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Test one fix cold: new session, same kind of input, confirm the mistake is gone.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">End of the week, paste this, then write "Version 2 does: ..." in WORKFLOW.md:<div class="prompt-block"><pre>Read RUN-LOG.md. Which mistakes came back three or more times, and where should each fix live: the skill, CLAUDE.md, or the project instructions?</pre></div></div></li></ol>
     <div class="task-outro">
-<p>Mark done at the end of the week.</p>
+<p>Mark this done when Version 2 is written.</p>
     </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
@@ -154,9 +156,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>A system is real after a week of real input. Edge cases, hand steps, and trust all show up in the running.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Every correction goes into the skill, never into the output by hand. Corrections are permanent.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Keep a run log. It writes your Version 2 for you.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Fix the instructions, not the output. Otherwise the same mistake comes back.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>A run log turns "I think it's better" into "here's what changed."</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Test fixes cold. "I'll remember that" means nothing in a new session.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The trust call is yours: what Claude does alone, what it drafts, what stays with you.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-6-2.html" class="nav-btn prev">

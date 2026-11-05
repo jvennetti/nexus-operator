@@ -120,28 +120,30 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~25 min</span></div>
     <h1 class="lesson-title">Build Something Real</h1>
     <div class="context-copy">
-<p>Everything in Claude Code until now was setup. Now you build.</p>
-<p>"Build" sounds like it means software. It can, but mostly it means <strong>making a thing that didn't exist, that does something useful, and that you can open tomorrow.</strong> Some examples that non-technical operators build in their first week:</p>
-<ul><li>A personal dashboard page that shows this week's priorities, pulled from a notes file.</li><li>A tool that takes a folder of receipts and produces a clean expense spreadsheet.</li><li>A page for a client with their project status, updated by editing one file.</li><li>A simple form that turns answers into a formatted document.</li><li>A script that renames and organizes a messy folder of downloads.</li></ul>
-<p>You describe it the same way you learned in Module 2: what it is, who it's for, what it needs to do, how it should feel. Claude Code builds it, shows you, and you give notes. The only new habit: <strong>ask for it in steps.</strong> "First, show me a plan. Then build the simplest version. Then we'll improve it." Big things built in one shot are hard to steer. Small steps are easy.</p>
-<p>When something doesn't work, you don't need to understand why. Paste the error, or describe what you saw, and say "fix it." That sentence is most of what debugging is.</p>
+<p>Time to build something. This video shows the order that works in the Code tab: Plan mode, Claude's questions, a plan with reasons, then Revise until it's right, and only then Accept. He builds a website. You'll build a tool you'll use.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/yTy8WV3Y9Nk?start=104&amp;end=367&amp;enablejsapi=1" title="Build Something Real" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">How to Build a Website With Claude Code Desktop App, by Mstimaj</div>
+  <div class="video-note">He builds a website. You'll build something from your own list. Watch the order: Plan mode, its questions, the plan, Revise, then Accept.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">30 min</div>
     </div>
     <div class="task-intro">
-<p>Build one useful thing for yourself.</p>
+<p>Build a tool you'll use.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Choose something from your Operator List</strong> that a small tool could help with, or pick one of the examples above. Smaller is better. You can make it bigger later.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask for a plan first.</strong> In your workspace: "I want to build [the thing]. It's for [who], and it needs to [what]. Before building anything, give me a short plan: what files you'll create and what the simplest working version looks like."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Build the simplest version.</strong> "Go ahead with the simplest version." Open the result. Use it for real, even if it's rough.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Three rounds of notes.</strong> What's wrong, what's missing, what should look different. Same discipline as Module 2.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Break it and fix it.</strong> Try something it wasn't built for. When it fails, paste the error or describe what happened and say "fix it." Notice that you didn't need to understand the problem.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Pick a task from your list that involves files: a report you compile, a folder you tidy, a spreadsheet you fill in.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">In the <strong>Code</strong> tab, on nexus-workspace, switch the mode selector to <strong>Plan</strong>. Describe the thing in one plain sentence, then add:<div class="prompt-block"><pre>Ask me what you need to know first.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Answer its questions. Read the plan and the reasons. Press <strong>Revise</strong> at least once with a real cut: "Drop X, I'll never use it." Accept only when you'd sign it.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Switch back to <strong>Manual</strong> and let it build. Say yes to creating new files.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">Open the result from Finder or Explorer, not just the preview. Give three rounds of notes. Then break it on purpose (give it bad input) and say "fix it."</div></li></ol>
     <div class="task-outro">
-<p>Mark done when the thing exists and you've used it once.</p>
+<p>Mark this done when you've used the thing on real work once.</p>
     </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
@@ -154,9 +156,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Building means making something useful that didn't exist and that you can open tomorrow. It doesn't have to be "software."</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Ask for a plan, then the simplest version, then improve in rounds. Small steps are easy to steer.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When it breaks, paste the error and say "fix it." You don't need to understand why.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Plan first. Reading a plan is cheaper than reading a mistake.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Revise is the most useful button. Cut what you don't need before it's built.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Three rounds of notes is normal. The first version is never the last.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Suggestion: a page, a spreadsheet tool, a tidy-up script. Small and used beats big and abandoned.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-4-3.html" class="nav-btn prev">

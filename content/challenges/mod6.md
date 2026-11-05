@@ -18,7 +18,7 @@ Write SYSTEM.md: a one-page document that explains this system to someone who ha
    Read it as a stranger. Fix what wouldn't make sense.
 3. **Hand it to someone.** Send SYSTEM.md to one person: a teammate, a friend, a family member. Ask them to read it and tell you the first thing they don't understand. Fix that.
 4. **Clean the workspace.** "Tidy the workspace: archive anything from the course that isn't part of a live system, make sure CLAUDE.md, ABOUT-ME.md, the skills and SYSTEM.md are current, and commit." Your workspace is now your real operating environment, not a classroom.
-5. **Write what's next.** In Operator HQ: "Based on everything in my Operator List and the system I built, what's the next system worth building, and what's the smallest first version?" Save the answer. That's where you go when this course ends.
+5. **Write what's next.** In Nexus Academy: "Based on everything in my task list and the system I built, what's the next system worth building, and what's the smallest first version?" Save the answer. That's where you go when this course ends.
 
 ## Deliverable
 

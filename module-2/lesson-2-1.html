@@ -120,28 +120,30 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Anatomy of a Good Prompt</h1>
     <div class="context-copy">
-<p>A prompt is a brief. Nothing more mysterious than that. The reason "prompt engineering" became a thing is that most people write briefs the way they'd text a friend, and then wonder why the output is generic.</p>
-<p>Four parts move the quality of an answer more than anything else:</p>
-<ul><li><strong>Goal.</strong> What you want, as an outcome. Not "help me with my email" but "write a reply that gets them to confirm the date."</li><li><strong>Context.</strong> What Claude can't know: who you are, who it's for, what's happened, why it matters, constraints. The thread. The numbers. The backstory.</li><li><strong>Format.</strong> What shape the answer should take. Two paragraphs. A table. Bullet points, no more than five. A subject line and body. Plain language, no jargon.</li><li><strong>Example.</strong> What "good" looks like. A past email you were proud of. A paragraph in the voice you want. One example beats three paragraphs of description.</li></ul>
-<p>You don't need all four every time. A quick question is a quick question. But when the output matters, the missing part is almost always the reason the output is bad.</p>
-<p>A test you can run on any prompt before you send it: <strong>could a smart stranger act on this?</strong> If you handed your message to a capable person who'd never met you, could they produce what you want? If not, Claude can't either.</p>
+<p>This video shows you the three things a good prompt needs: context, examples, and the shape of the output you want. You'll use all three in the challenge.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/2YCaBqP8muw?start=112&amp;end=335&amp;enablejsapi=1" title="Anatomy of a Good Prompt" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">Effective prompting techniques, by Anthropic</div>
+  <div class="video-note">From Anthropic's AI Fluency course. Watch to 5:35. The rest comes later in the course.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
       <div class="task-time">15 min</div>
     </div>
     <div class="task-intro">
-<p>The bad prompt rewrite. You're going to feel the difference, not read about it.</p>
+<p>Take a bad prompt and make it great with the rules you just learned.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Run the bad prompt.</strong> Open a new chat and paste this exactly:<div class="prompt-block"><pre>Write an email to my client about the delay.</pre></div> Read what comes back. Notice how generic it is. It had no choice.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Write the better prompt.</strong> In a new chat (new, not the same one), write a prompt for the same outcome using all four parts: goal, context, format, example. Invent a realistic situation if you don't have one. Something like: who the client is, what the project is, what the delay is and why, what you want them to do next, how you normally sound. Paste a real email of yours as the example if you have one.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Compare the two outputs side by side.</strong> Open both chats. Read them back to back.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Score it.</strong> Ask yourself: which one could I actually send? Which one sounds like me? What single piece of context made the biggest difference?</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write that answer in your notes below.</strong> One sentence. That's the lesson, in your words.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Open a new chat and paste this exactly. Read what Claude says. Don't fix it yet.<div class="prompt-block"><pre>Write an email to a client about the delay.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Open another new chat. Rewrite the same prompt with what you learned: 1. the goal 2. why it matters 3. who you are and who the email is for 4. the shape of the output (under 120 words, a subject line, one clear ask at the end)</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Use a real example from your own work if you have one.</div></li></ol>
     <div class="task-outro">
-<div class="callout">If your better prompt still produced something you wouldn't send, that's useful. Figure out which of the four parts was thin, add it, and run it again.</div>
+<p>Mark this done when the second email is one you'd actually send.</p>
     </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
@@ -154,9 +156,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>The four parts: goal, context, format, example. When output is bad, one of these is missing.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Test before sending: could a smart stranger act on this message? If not, neither can Claude.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>One real example of "good" beats paragraphs of description.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Claude starts from zero every time. What you want, why, and who you are need saying to get great results.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Add examples of what you like for better results.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>List the details you want: length, format, how it should end.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Tell Claude what your goal is.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="intro.html" class="nav-btn prev">

@@ -120,31 +120,31 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 <div class="browser-shell">
 <div class="content-col">
   <div class="lesson-box section">
-    <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
+    <div class="lesson-meta"><span class="mode">Watch + Do</span><span>~20 min</span></div>
     <h1 class="lesson-title">Tips From the Field</h1>
     <div class="context-copy">
-<p>Things operators learn from use that no lesson teaches. Pick the ones that fit you.</p>
-<p><strong>Speaking beats typing.</strong> Voice dictation (your computer's built-in one, or a dedicated tool) makes briefs three times longer and three times better, because you say the context you'd never bother typing. Try it for a day.</p>
-<p><strong>Keep a prompts file.</strong> When a prompt works well, save it in your workspace. "The client update prompt." "The critique prompt." Next time, paste and adjust. Over a few months this becomes your personal operating manual.</p>
-<p><strong>Ask it what it needs.</strong> When you're not sure what to give Claude, ask: "What would you need from me to do this really well?" It will tell you, specifically.</p>
-<p><strong>Ask it to be harsh.</strong> "Be a brutal editor." "Tell me the three biggest weaknesses in this plan." "Argue the opposite." Claude defaults to agreeable. Ask for the opposite when you need it.</p>
-<p><strong>Name the role.</strong> "You are a senior financial analyst reviewing this." Changes the frame, the vocabulary, and what it notices.</p>
-<p><strong>Use it to learn, not just to do.</strong> "Explain what you just did as if I'm going to do it myself next time." You'll stop needing Claude for some things, which is the point.</p>
-<p><strong>Rename your chats, archive your folders.</strong> Future you will search for it.</p>
-<p><strong>When in doubt, start over.</strong> Fresh chat, one clean message, everything it needs. More problems are solved by this than by any clever technique.</p>
-<p><strong>Tell it what you want.</strong> When it hedges, hesitates, or gives you the safe version: "I want you to do it. Fully. Here's what you need." You're the director. Direct.</p>
+<p>One last video, from someone who builds with Claude every day. It's the advanced version of what you've done: a written spec before building, a checker that grades the output, and a folder that gives Claude its context. You've already built a version of each.</p>
     </div>
   </div>
-
+  <div class="video-wrapper section">
+    <iframe src="https://www.youtube.com/embed/7zZy1QTvokM?enablejsapi=1" title="Tips From the Field" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-under">
+  <div class="video-credit">Stop Prompting Claude. Use Karpathy's Method Instead., by Austin Marchese</div>
+  <div class="video-note">Skip the plug at 8:15. His "verifier" is the checklist you built in Module 6. His "environment" is your folder.</div>
+  </div>
   <div class="task-box section" id="task-box">
     <div class="task-head">
       <div class="task-label">Your Challenge</div>
-      <div class="task-time">15 min</div>
+      <div class="task-time">20 min</div>
     </div>
     <div class="task-intro">
-<p>Adopt three habits, for real.</p>
+<p>Write your next system plan.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Pick three</strong> from the list above that you don't already do.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Use each one today</strong> on something real. Not as a test, on actual work.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Create your prompts file.</strong> In your workspace: "Create PROMPTS.md. Add the three best prompts I've used in this course, each with a one-line note on when to use it." Add to it any time a prompt works well.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Write the ones that stuck into CLAUDE.md</strong> or your Project instructions, so they're standing orders rather than things you remember to do.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Add your own tip.</strong> In the notes box below: one thing you've learned about working with Claude that wasn't in this course. You have one by now.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Watch with WORKFLOW.md open. Note one thing he does that you don't.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">In the <strong>Code</strong> tab, paste:<div class="prompt-block"><pre>Read WORKFLOW.md and RUN-LOG.md. Interview me about the next piece of my work worth building, and write NEXT.md: input, steps, output, destination, and what Version 1 does.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Paste this, then send the file to a friend. If they can't follow it, fix it.<div class="prompt-block"><pre>Write SYSTEM.md: how to run my current system, written for someone who has never seen it.</pre></div></div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Clean the workspace: delete test files, keep the originals outside.</div></li></ol>
+    <div class="task-outro">
+<p>Mark this done when a stranger could run your system from SYSTEM.md.</p>
+    </div>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark challenge done</span></button>
       <span class="task-done-msg">Challenge logged · Lesson unlocked</span>
@@ -156,9 +156,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Speak your briefs. Save prompts that work. Ask Claude what it needs and ask it to be harsh.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When stuck, start over with one clean message. It solves more problems than any trick.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>You're the director. When Claude hedges, tell it what you want. Fully.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Spec, checker, context folder. That's the method, and you already have all three.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Write it down for a stranger. If they can run it, it's a system.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The next system starts the same way: pick, map, cut, build small.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-6-3.html" class="nav-btn prev">
