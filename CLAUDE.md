@@ -43,7 +43,7 @@ skip_label: text for the skip button
 
 ## Current step
 
-See `docs/video-research.md`. Step 1 (videos) is in progress; steps 2 to 4 wait on it.
+Read `docs/HANDOFF.md` first: it carries the project lead's direction and all decisions. Then `docs/video-research.md`. Step 1 (videos) is in progress; steps 2 to 4 wait on it.
 
 ## Workflow
 
