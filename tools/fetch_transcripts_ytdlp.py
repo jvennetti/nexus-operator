@@ -38,7 +38,7 @@ def parse_json3(path):
 
 
 def try_fetch(vid, tmp, extra):
-    cmd = ["yt-dlp", "--skip-download", "--write-subs", "--write-auto-subs",
+    cmd = ["yt-dlp", "--skip-download", "--ignore-no-formats-error", "--write-subs", "--write-auto-subs",
            "--sub-langs", "en.*,en,en-US,en-GB", "--sub-format", "json3",
            "-o", os.path.join(tmp, "%(id)s.%(ext)s"), *extra,
            "https://www.youtube.com/watch?v=" + vid]
