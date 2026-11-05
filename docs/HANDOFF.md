@@ -2,7 +2,7 @@
 
 Read this first in any new session. It carries the project lead's thinking, instructions, open questions, every decision so far, the research done, and the exact next step. Joshua Vennetti is the lead. Claude (Fable) runs the project session; Opus subagents or sessions do research and bulk reading and report back. The lead makes the calls on anything that touches content, design or CIRO.
 
-Last updated: 2026-11-05, end of the first working day.
+Last updated: 2026-11-05, second session (video round 2, build change, Module 1 rebuild, QA audit).
 
 ---
 
@@ -28,7 +28,7 @@ Three repos:
 
 ## 3. The lead's content direction
 
-**Videos.** "Most of the videos will have to go." Plan what someone should learn first, then find videos for those things, attached to tasks. Videos under 20 minutes, "only the best," full-on meat, no viral hooks that "promise the world and talk popular language without the meat." "Official from Anthropic is cool but might not be the best content in some situations." He vets by transcript and by comments praising clarity and concision. He wants a note kept that the interface-tour video should be replaced "once new videos come out better."
+**Videos.** Rule from the second session: **no lesson stays text-only.** "If we can't find a good video for a spot, let's take another angle." "Most of the videos will have to go." Plan what someone should learn first, then find videos for those things, attached to tasks. Videos under 20 minutes, "only the best," full-on meat, no viral hooks that "promise the world and talk popular language without the meat." "Official from Anthropic is cool but might not be the best content in some situations." He vets by transcript and by comments praising clarity and concision. He wants a note kept that the interface-tour video should be replaced "once new videos come out better."
 
 **Lessons.** Lesson plus task. His bad-prompt design: "have them copy a bad prompt that lacks context, put it in the chat. Then ask them to write a better prompt for the same outcome based on the rules they've learned, put that prompt in a new chat, and compare the results." And: "If Claude says it can't do something, tell it you want it to do it! Usually or always it can. That's an important lesson for beginners."
 
@@ -80,9 +80,9 @@ Done: 106 candidates vetted by API metadata and top comments; 42 transcripts fet
 
 `7zZy1QTvokM` (Karpathy method, lead liked it) goes to the Bonus Vault, linked from Module 6.
 
-**The lead has not yet confirmed these picks.** That is the first thing to ask.
+The lead did not confirm picks one by one; he asked Claude to decide after research and to find videos for every lesson. **Round 2 status and the per-lesson candidate table are in `docs/video-picks.md`.** 0.1 and 1.1 are in their lessons on the working branch; 6.4 is decided (`7zZy1QTvokM`); 15 lessons have candidates awaiting transcripts.
 
-**Build change needed before any clip pick:** `build.py` must accept `video_start` and `video_end` (seconds) in lesson front matter and emit `?start=N&end=M&enablejsapi=1`.
+**Build change done:** `build.py` accepts `video_start`, `video_end` (seconds or m:ss) and `video_credit` and emits `?start=N&end=M&enablejsapi=1` plus a plain-text credit line under the player.
 
 **Content corrections found by the readers** (apply when each module is rebuilt): 5.1 task must use the app's own skill creator, not a `/skills` folder with a CLAUDE.md pointer; 5.3 brief must not say "send to the team" next to "draft, not send," and must state that an always-allowed send tool can send to anyone; 5.2 "early parts get crowded out" should be "start and end get the most weight, the middle gets lost"; 3.1 "Settings → Connectors" path is unverified; 2.4 brief: Claude doesn't see the project name or description, labels drift; Module 2 challenge: rename "Operator HQ" to "NEXUS" and move the profile interview into 2.4.
 
@@ -100,6 +100,8 @@ The Claude desktop app was rebuilt around 2026-10-20. These decide whether 0.2, 
 - The cloud environment can reach YouTube's DNS but YouTube serves it a bot check. Do not work around it. `WebFetch` can't reach youtube.com either.
 - `YOUTUBE_API_KEY` is an environment secret (visible only in sessions started after it was added). Use the Data API for metadata, search and comments. It does not return transcripts.
 - Transcripts come from the lead's desktop: `tools/fetch_transcripts.py` on branch `claude/video-research`, run in PowerShell with a single semicolon-chained line (he found step-by-step commands "way too much"). Python is installed there.
+- The YouTube Data API search endpoint is limited to 100 searches a day (each costs 100 of the 10,000-unit quota); `videos`, `commentThreads` and `playlistItems` cost 1 unit each. When search is gone, discover ids by web search and vet them through the cheap endpoints.
+- Transcripts round 2: `tools/fetch_transcripts.py` is now also on the working branch with the round 2 shortlist (27 ids). The lead runs it on his desktop and pushes `transcripts/` to the same branch.
 - Apify is connected but on the free plan and over its monthly cap; transcript actor costs 1 cent per video. Not needed now that the script works.
 - The lead's desktop has Remote Control folders listed but they are not offered to cloud sessions.
 - Claude in Chrome runs in his browser and was used to set up Cloudflare Pages and the GitHub API key. It can read transcripts and comments if ever needed.
@@ -108,13 +110,13 @@ The Claude desktop app was rebuilt around 2026-10-20. These decide whether 0.2, 
 
 ## 9. Next steps, in order
 
-1. Ask the lead to confirm the picks in `docs/video-picks.md`, and get the four app checks in section 7.
-2. Add `video_start` / `video_end` to `build.py` and the lesson template, plus the plain-text credit line under the player.
-3. Rebuild **Pre-Course and Module 1** only: video in (1.1), briefs cut to what the video doesn't say, tasks built on what the video teaches (the readers' "make the learner DO" lists are in the Opus reports summarized in `docs/video-picks.md`), challenge tied to the Operator List. Show the lead. Merge only on his say.
-4. Module 2 next, including the NEXUS project in 2.4 and the challenge rename. Then 3, 4, 5, 6, one at a time.
-5. Then step 2 (lesson page), from PR 3's page, with notes by the video, auto-saved timestamps, credit line, centered distinctive task.
-6. Then step 3 (CIRO) when the lead says so, starting from nexus-open's lines and the ending.
-7. Re-search 0.2 and post-rebuild videos around 2026-12-01.
+1. Lead runs the round 2 transcript fetch on his desktop (one PowerShell line, given in chat) and pushes to `claude/friendly-ramanujan-jrotfb`. Then one Opus reader per module group reads them against the candidate table in `docs/video-picks.md` and the "one creator, two lessons" rule.
+2. Lead looks at the rebuilt Pre-Course and Module 1 on the branch preview (https://claude-friendly-ramanujan-jr.nexusoperator.pages.dev) and at the QA fixes in the same PR. Merge only on his say.
+3. Lead answers the four app checks in section 7 (they gate 0.2, 2.4, 3.1, 4.1, 5.3).
+4. Rebuild Module 2 (NEXUS project in 2.4, challenge rename), then 3, 4, 5, 6, one at a time, each with its videos in and briefs cut to what the video doesn't say.
+5. Re-run the 2.5 and 4.4 searches once the API quota resets; re-search 0.2 and any thin-evidence pick around 2026-12-01.
+6. Then step 2 (lesson page), from PR 3's page, with notes by the video, auto-saved timestamps, credit line, centered distinctive task.
+7. Then step 3 (CIRO) when the lead says so.
 
 ## 10. Do not
 

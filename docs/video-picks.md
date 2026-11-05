@@ -1,5 +1,7 @@
 # Video picks (step 1 result, 2026-11-05)
 
+**Rule change, 2026-11-05 (lead):** no lesson stays text-only. Where no video teaches a lesson exactly, take another angle: a video that teaches the underlying skill, with the lesson reframed around it. Round 2 below applies that rule. Decisions made so far by Claude under the lead's "decide after research" instruction; the lead overrides anything he dislikes.
+
 Source: 42 transcripts fetched by the lead, read in full by four Opus readers (one per module group), weighed against the comment and metadata evidence in `docs/video-research-results.md`. Nothing here is in a lesson yet. The lead confirms each pick before it goes in.
 
 | Lesson | Pick | Play | Why | Open check |
@@ -31,3 +33,36 @@ Total video time if all picks are confirmed: about 44 minutes across eight lesso
 - 3.1 brief: "Settings → Connectors" doesn't match any October-era video; verify the path.
 - 2.4 brief: Claude does not see the project name or description; UI labels drift (knowledge / files / content, goal / description).
 - Module 2 challenge: rename "Operator HQ" to "NEXUS" everywhere and move the profile-writing interview into 2.4; chat-based challenges run inside NEXUS, Claude Code challenges run in the workspace folder.
+
+## Round 2 (2026-11-05): every lesson gets a video
+
+Decided from already-read transcripts (in lessons now, on branch `claude/friendly-ramanujan-jrotfb`):
+
+| Lesson | Pick | Play | Why |
+|---|---|---|---|
+| 0.1 Get Claude on Your Computer | `aDR571phdAs` Not a Computer Person | 0:58–4:16 | Sign-in, phone verification, phone app, official download page, fake-site warning. Cut before the prices. Caption overrides its "web is plenty" line. Download URL is `claude.com/download` (the `.ai` one redirects there). |
+| 6.4 Tips From the Field | `7zZy1QTvokM` Austin Marchese (Karpathy method) | whole 13:19 (skip 8:15–8:47 plug) | The lead liked it; it assumes everything the course has taught by Module 6. Moves out of the Bonus Vault into the lesson. |
+
+Candidates found by three Opus searchers (reports in `docs/research/gap-search*.md`), **transcripts not yet read**. Nothing goes into a lesson until the lead fetches the transcripts (`tools/fetch_transcripts.py`, round 2 list) and an Opus reader has read them. Best candidate first; the second is the fallback.
+
+| Lesson | Best candidate | Fallback | Angle |
+|---|---|---|---|
+| 0.2 Know Where Things Are | `N890AspWgEw` Mstimaj "room by room" tour (7:05, 2026-10-20) | `r2vYObllqJU` 0:32–3:19 (old layout, lead's pick) | Only post-rebuild first-time tour found; 47 views, no comments |
+| 1.2 Director, Not Doer | `DmgujoZ1mmk` Anthropic AI Fluency "Description" (4:22) | `wmCXIPlllpA` NNgroup "Your AI UX Intern" (4:23) | Teaches the brief (what you want, how to approach it, how Claude should behave). Review and push-through stay in text. Makes AI Fluency run 1.1, 1.2, 2.1 in a row. |
+| 2.2 Give It What It Needs | `Zzn-g8lvLMA` Anthropic "Data analysis with AI" (7:10) | `PwUr0fowN1I` (13:37) | Reframe: hand Claude one real messy file whole |
+| 2.3 Iterate and Push Back | `tk4Ljz9p-UI` Simpletivity "ask me 3–5 clarifying questions" (6:16) | `Y0KidGr9Z2Y` Anthropic AI Fluency "Discernment" | Nothing on pushing through hedges exists; that stays text |
+| 2.5 Make Things, Not Just Text | `FgwrGj_RJBg` TechBrothersIT artifacts (2:50, post-rebuild) | `kJA3fQnntpY` official (sharing/editing, Team plans) | Search cut short by quota; re-run |
+| 3.1 Connect Your Inbox and Calendar | `LNpOyx4DOJ4` Holly Cope (6:44), play 0:00–3:42 | `dMC8p2sJ7gY` (Calendar only) | Live triage, availability check, draft reply. Pre-rebuild; setup path from 5:58 is old |
+| 3.2 Connect Your Work Tools | `BKzEVhT2054` Benjamin Preston, Notion (5:14) | `8cdVubYQjKY` AyyazTech Notion | Meeting notes → Notion page, scoping which pages Claude can touch |
+| 3.3 A Morning With Claude | `D5nZOUfac_0` Nexus (15:11), play 2:57–8:18 | `LNpOyx4DOJ4` 0:00–5:20 if 3.1 uses something else | Reframe: write one standing morning-brief prompt, run it by hand each morning |
+| 4.1 Chat Answers. Code Acts. | `8c6JZ18W0Bo` 0:24–1:58 (current pick) | `yTy8WV3Y9Nk` Mstimaj, Code tab, no terminal (post-rebuild) | Hold the fallback until its transcript is read |
+| 4.2 Folders Are Memory | `J0h3yuCnXqk` Dylan Davis "An AI agent is just a folder with 3 things" (11:37) | `qPG5zQCSlTs` signalstack (3:52) | Reframe: about-me, reference, output folders are what Claude remembers |
+| 4.4 Build Something Real | `4hc5Z_QBno4` (rename invoices, build a summary sheet) | none; search cut short by quota | Transcript must show the Code tab, not Chat folder access |
+| 4.5 Sessions, Permissions, Safety | `F-DARGKRKdQ` Dylan Davis "I stopped clicking approve" (12:05, 2026-10-24) | `b8SV4U6fEIc` official "How auto mode works" (5:42) | Both argue for auto mode; reframe around approval fatigue: safe habits first, lighter mode later |
+| 6.1 Choose Your Workflow | `vatOVZbumk0` Dylan Davis "You're automating steps you should delete", 3:04–10:23 | `HMaja1AlwMo` The Virtual Savvy (9:53) | Reframe: map it, then cut steps before you automate |
+| 6.2 Build It | `IhhxRZDf2bo` Dylan Davis (15:10) | `AAYy-cgA4Kg` Jeremiah Peoples (7:49, pre-rebuild) | No post-rebuild video builds skill + connectors + schedule |
+| 6.3 Run It, Then Refine It | `fgrJVdD12PA` Dylan Davis "Keep repeating mistakes you already fixed" (11:49) | `IhhxRZDf2bo` shared with 6.2 | Fix the skill, not the output |
+
+Rule applied when reading: one creator carries at most two lessons unless the transcripts leave no choice. Dylan Davis is currently best for 4.2, 4.5, 6.1, 6.2, 6.3 and already holds 5.2; the fallbacks exist so the readers can spread the load.
+
+Open: the YouTube Data API search quota (100 searches/day) ran out mid-way; 2.5 and 4.4 searches were cut short. Re-run those two after the quota resets (queries are listed in `docs/research/gap-search.md`).
