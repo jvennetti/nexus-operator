@@ -91,8 +91,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
 .nav-btn.next.locked:hover{border-color:var(--border);background:var(--card)}
 .nav-dir{font-family:'Lexend',sans-serif;font-size:10px;font-weight:300;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
 .nav-name{font-family:'Lexend',sans-serif;font-size:14px;font-weight:500;color:var(--white);line-height:1.4}
-.nav-hint{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-top:10px;min-height:14px;opacity:0;transition:opacity .2s}
-.nav-hint.show{opacity:1}
+.nav-hint{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-top:10px;min-height:14px;opacity:0;visibility:hidden;transition:opacity .2s,visibility 0s linear .2s}
+.nav-hint.show{opacity:1;visibility:visible;transition:opacity .2s}
 .nav-hint a{color:var(--muted);margin-left:14px;text-decoration:none;border-bottom:1px solid var(--border)}
 @keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-5px)}40%,80%{transform:translateX(5px)}}
 .shake{animation:shake .4s ease}
