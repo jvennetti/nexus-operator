@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXUS Academy — Lesson 2.1 (Option B)</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- OPTION B: "Step by step". Short brief, then one step at a time; the next step appears when the previous is checked. Notes in a slide-out. -->
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#08101f;--card:#0d1628;--box:#16213a;
+  --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
+  --border:#1a2d45;--white:#fff;--body-text:#cce2f2;--muted:#5a8aaa;--amber:#ffaa00;--green:#3ddc97;
+}
+html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
+body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
+nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 60px;position:sticky;top:0;z-index:100}
+.wordmark{font-family:'Orbitron',sans-serif;font-size:18px;font-weight:900;letter-spacing:4px;color:var(--white);text-decoration:none}
+.wordmark span{color:var(--blue)}
+.nav-lesson-id{font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
+.nav-back{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px}
+.nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
+.progress{position:sticky;top:64px;z-index:90;height:2px;background:var(--border)}
+.progress i{display:block;height:2px;width:0;background:var(--blue);box-shadow:0 0 8px rgba(0,200,255,.7);transition:width .4s ease}
+.col{max-width:660px;margin:0 auto;padding:56px 24px 140px}
+
+.meta{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.meta b{color:var(--blue);font-weight:500}
+h1{font-family:'Orbitron',sans-serif;font-size:26px;font-weight:700;letter-spacing:1.5px;line-height:1.35;margin-bottom:22px}
+.brief p{font-size:16px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.brief p+p{margin-top:14px}
+.brief strong{color:var(--white);font-weight:500}
+.brief .four{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--blue);letter-spacing:1px}
+
+.divider{display:flex;align-items:center;gap:16px;margin:48px 0 28px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:4px;color:var(--blue)}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--blue-border)}
+.divider span.t{font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;letter-spacing:2px;color:var(--muted)}
+
+/* steps */
+.step{display:none;gap:18px;padding:22px 24px;border:1px solid var(--border);border-radius:8px;background:var(--card);margin-bottom:12px;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s,border-color .3s,background .3s}
+.step.shown{display:flex}
+.step.in{opacity:1;transform:none}
+.step.current{border-color:var(--blue-border);box-shadow:0 0 30px rgba(0,200,255,.06)}
+.step.checked{background:transparent;padding:14px 24px}
+.step.checked .body .more{display:none}
+.step.checked .body strong{color:var(--muted);font-weight:400}
+.check{flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);color:var(--blue);font-family:'IBM Plex Mono',monospace;font-size:12px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s}
+.step.checked .check{background:var(--green);border-color:var(--green);color:var(--bg);font-size:0}
+.step.checked .check::after{content:'✓';font-size:14px}
+.body{flex:1;min-width:0;font-size:15px;font-weight:300;line-height:1.75;color:var(--body-text)}
+.body strong{color:var(--white);font-weight:500;display:block;margin-bottom:2px}
+.step-btn{margin-top:16px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);background:var(--blue-dim);border:1px solid var(--blue-border);border-radius:3px;padding:9px 16px;cursor:pointer}
+.step-btn:hover{background:rgba(0,200,255,.14)}
+.step.checked .step-btn{display:none}
+.prompt-block{position:relative;background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:10px 0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#a8c8e0}
+.prompt-block pre{white-space:pre-wrap;font:inherit;padding-right:70px}
+.copy-btn{position:absolute;top:9px;right:9px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:5px 10px;cursor:pointer}
+.copy-btn.copied{color:var(--green);border-color:rgba(61,220,151,.4)}
+.inline-link{color:var(--blue);background:none;border:none;border-bottom:1px solid var(--blue-border);font:inherit;cursor:pointer;padding:0}
+
+/* finish */
+.finish{display:none;margin-top:30px;text-align:center;opacity:0;transition:opacity .4s}
+.finish.shown{display:block}.finish.in{opacity:1}
+.finish .ok{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+.next-btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bg);background:var(--blue);border-radius:4px;padding:16px 30px;text-decoration:none}
+.next-btn:hover{opacity:.9}
+.foot{margin-top:40px;display:flex;justify-content:space-between;font-size:12px;font-weight:300;letter-spacing:1px}
+.foot a{color:var(--muted);text-decoration:none}.foot a:hover{color:var(--blue)}
+body.done .foot .anyway{visibility:hidden}
+
+/* notes slide-out */
+.notes-tab{position:fixed;right:24px;bottom:24px;z-index:120;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);background:var(--card);border:1px solid var(--blue-border);border-radius:20px;padding:11px 18px;cursor:pointer;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+.notes-tab .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin-left:8px;vertical-align:middle;visibility:hidden}
+.notes-tab.has .dot{visibility:visible}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:380px;max-width:100%;z-index:200;background:var(--card);border-left:1px solid var(--blue-border);padding:24px;transform:translateX(100%);transition:transform .3s ease,visibility 0s .3s;visibility:hidden;display:flex;flex-direction:column;gap:14px}
+.drawer.open{transform:none;visibility:visible;transition:transform .3s ease}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;color:var(--blue)}
+.drawer-head button{background:none;border:1px solid var(--border);color:var(--muted);border-radius:3px;padding:4px 10px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:10px}
+.drawer textarea{flex:1;width:100%;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:6px;padding:14px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;line-height:1.7;resize:none;outline:none;caret-color:var(--blue)}
+.drawer textarea:focus{border-color:var(--blue-border)}
+.drawer small{font-size:11px;color:var(--muted)}
+
+@media(max-width:768px){
+  .next-btn{font-size:11px;letter-spacing:1.5px;padding:15px 18px;text-align:center}
+  nav{padding:0 16px;height:56px}.nav-lesson-id{display:none}.wordmark{font-size:15px;letter-spacing:2px}.nav-back{font-size:10px;padding:7px 12px;letter-spacing:1px}
+  .progress{top:56px}
+  .col{padding:28px 16px 120px}
+  h1{font-size:20px}
+  .brief p{font-size:15px}
+  .divider{margin:36px 0 20px}
+  .step{padding:18px 16px;gap:14px}.step.checked{padding:12px 16px}
+  .body{font-size:14px}
+  .prompt-block pre{padding-right:0;padding-top:24px}
+  .next-btn{display:flex;justify-content:center}
+  .notes-tab{right:16px;bottom:16px}
+  .drawer{width:100%;top:auto;height:70vh;border-left:none;border-top:1px solid var(--blue-border);border-radius:14px 14px 0 0;transform:translateY(100%)}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../../../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
+  <div class="nav-lesson-id">Lesson 2.1</div>
+  <a href="../../../hub.html" class="nav-back">← Hub</a>
+</nav>
+<div class="progress"><i id="bar"></i></div>
+<main class="col">
+  <div class="meta"><b>Read + Do</b> · ~15 min</div>
+  <h1>Anatomy of a Good Prompt</h1>
+  <div class="brief">
+    <p>A prompt is a brief. Most people write it the way they'd text a friend, then wonder why the output is generic.</p>
+    <p class="four">GOAL · CONTEXT · FORMAT · EXAMPLE</p>
+    <p>Those four parts move quality more than anything else. When the output is bad, one of them is missing. Test any prompt with one question: <strong>could a smart stranger act on this?</strong></p>
+  </div>
+
+  <div class="divider">DO THIS NOW <span class="t">15 min</span></div>
+
+  <div id="steps">
+    <div class="step"><div class="check">1</div><div class="body"><strong>Run the bad prompt.</strong><div class="more">Open a new chat and paste this exactly. Read what comes back. It had no choice but to be generic.
+      <div class="prompt-block"><pre>Write an email to my client about the delay.</pre></div></div>
+      <button class="step-btn">Done, next step</button></div></div>
+    <div class="step"><div class="check">2</div><div class="body"><strong>Write the better prompt.</strong><div class="more">In a second new chat, ask for the same email using all four parts. Invent the situation if you need to: who the client is, what the delay is and why, what you want them to do next, how you sound. Paste a real email as the example if you have one.</div>
+      <button class="step-btn">Done, next step</button></div></div>
+    <div class="step"><div class="check">3</div><div class="body"><strong>Compare side by side.</strong><div class="more">Open both chats and read them back to back. Which one could you actually send? Which one sounds like you?</div>
+      <button class="step-btn">Done, next step</button></div></div>
+    <div class="step"><div class="check">4</div><div class="body"><strong>Write one sentence.</strong><div class="more">What single piece of context made the biggest difference? Put it in your <button class="inline-link" onclick="openNotes()">notes</button>. If the better prompt still wasn't sendable, find the thin part and run it again.</div>
+      <button class="step-btn">Done, finish task</button></div></div>
+  </div>
+
+  <div class="finish" id="finish">
+    <div class="ok">Task logged · Lesson unlocked</div>
+    <a class="next-btn" href="../../../module-2/lesson-2-2.html">Next: Give It What It Needs →</a>
+  </div>
+
+  <div class="foot">
+    <a href="../../../module-2/intro.html">← Module 2 Intro</a>
+    <a href="../../../module-2/lesson-2-2.html" class="anyway">skip ahead →</a>
+  </div>
+</main>
+
+<button class="notes-tab" id="notes-tab" onclick="openNotes()">Notes<span class="dot"></span></button>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head">NOTES <button onclick="closeNotes()">Close</button></div>
+  <textarea id="lesson-notes" placeholder="The biggest difference came from..."></textarea>
+  <small>Saved on this device as you type.</small>
+</aside>
+
+<script>
+const PATH=location.pathname;
+const TASK_KEY='nexus_task_'+PATH;
+const STEP_KEY='nexus_steps_'+PATH;   // new key: how many steps are checked
+function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
+function set(k,v){try{localStorage.setItem(k,v);}catch(e){}}
+function playS(s,v){try{var a=new Audio(s);a.volume=v;a.play().catch(function(){});}catch(e){}}
+const steps=[...document.querySelectorAll('.step')];
+let n=get(TASK_KEY)?steps.length:Math.min(parseInt(get(STEP_KEY)||'0',10)||0,steps.length);
+function show(el,anim){el.classList.add('shown');if(anim){requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('in')));}else el.classList.add('in');}
+function render(anim){
+  steps.forEach((s,i)=>{
+    if(i<=n){show(s,anim&&i===n);}
+    s.classList.toggle('checked',i<n);
+    s.classList.toggle('current',i===n);
+  });
+  document.getElementById('bar').style.width=(n/steps.length*100)+'%';
+  const done=n>=steps.length;
+  document.body.classList.toggle('done',done);
+  if(done) show(document.getElementById('finish'),anim);
+}
+steps.forEach((s,i)=>{
+  const adv=()=>{if(i!==n)return;n++;set(STEP_KEY,String(n));
+    if(n>=steps.length){set(TASK_KEY,String(Date.now()));playS('../../../audio/sfx/short-success.wav',0.12);}
+    render(true);
+    const nx=steps[n]||document.getElementById('finish');setTimeout(()=>nx.scrollIntoView({behavior:'smooth',block:'center'}),60);};
+  s.querySelector('.step-btn').addEventListener('click',adv);
+  s.querySelector('.check').addEventListener('click',adv);
+});
+document.querySelectorAll('.prompt-block').forEach(function(b){
+  const btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';
+  btn.addEventListener('click',function(){
+    (navigator.clipboard?navigator.clipboard.writeText(b.querySelector('pre').innerText):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){btn.textContent='Select';});
+  });
+  b.appendChild(btn);
+});
+const ta=document.getElementById('lesson-notes'),tab=document.getElementById('notes-tab');
+ta.value=get('nexus_notes_'+PATH)||'';tab.classList.toggle('has',!!ta.value);
+ta.addEventListener('input',()=>{set('nexus_notes_'+PATH,ta.value);tab.classList.toggle('has',!!ta.value);});
+function openNotes(){document.getElementById('drawer').classList.add('open');setTimeout(()=>ta.focus(),300);}
+function closeNotes(){document.getElementById('drawer').classList.remove('open');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNotes();});
+render(false);
+</script>
+</body>
+</html>
