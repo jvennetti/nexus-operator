@@ -4,13 +4,13 @@ scenario_label: What We're Going to Do
 
 ## Scenario
 
-**The Thing You've Been Putting Off.** There is something on your list that keeps sliding to next week. It's rarely because the work is hard. It's because starting it is hard, and nothing forces the start. This mission is the force.
+**The Thing You've Been Putting Off.** Today we're going to finish one real piece of your work with Claude, start to end, inside your Nexus Academy project.
 
-You now know how to brief Claude properly, feed it the real material, push for a better draft, keep your context in a project, and build small things. You'll use all of that on one real piece of work, inside your Nexus Academy project, and you'll finish it today. Along the way you'll give Claude a short profile of you, so every chat in the project starts knowing who it's talking to.
+Pick something from your list that's been waiting: a proposal that needs writing, a reply that needs more thought than a quick answer, a plan for something next month, a document someone has asked you for twice. You'll give Claude a short profile of yourself first, so every chat in the project knows who it's talking to. Then you'll brief the task, push for a better draft, and use the result today.
 
 ## Steps
 
-1. Pick the task. The one you keep moving. Open a new chat inside your Nexus Academy project.
+1. Pick the task from your list. Open a new chat inside your Nexus Academy project.
 2. Before you brief the task, give Claude you. Paste this, answer its questions honestly, and put the result into the project's instructions:
 ```
 Interview me, one question at a time, then write a short profile for my project instructions: what I do, who I work with, how I like things written, three things you should always do when working with me, and two things you should never do.

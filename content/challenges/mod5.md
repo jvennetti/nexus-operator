@@ -4,9 +4,9 @@ scenario_label: What We're Going to Do
 
 ## Scenario
 
-**The Trust Test.** Something you built is about to run without you in the room. That's the point of automation, and it's also the moment most people either trust too much or not at all. Neither works. What works is deciding, on evidence, exactly how much it's allowed to do.
+**The Trust Test.** Today we're going to decide, on evidence, how much something you built is allowed to do on its own.
 
-In Module 5 you wrote a skill, rescued a tired chat, and scheduled your morning brief. This mission adds a second skill, lets the scheduled brief run three mornings in a row, and ends with a decision written in three lines: what it may do alone, what it drafts for you, and what stays in your hands.
+In Module 5 you wrote a skill, rescued a tired chat, and scheduled your morning brief. In this mission you'll add a second skill, let the scheduled brief run three mornings in a row, and read every run. Then you'll write the decision down in three lines: what it may do alone, what it drafts for you, and what stays in your hands.
 
 ## Steps
 

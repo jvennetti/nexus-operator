@@ -4,14 +4,14 @@ scenario_label: What We're Going to Do
 
 ## Scenario
 
-**The Handoff.** Somewhere in your week there is work that doesn't need you. It needs doing, and it needs doing well, but it doesn't need your judgment or your taste. Until now there was nobody to give it to, so it stayed on your plate. That changed with this module.
+**The Handoff.** Today we're going to work out which five pieces of your week you could hand to Claude, and what Claude would need from you to do them well.
 
-In this mission you'll pick five pieces of that work and write them down in a way that makes them handable. Not "emails" or "reports," but the actual thing, with a clear picture of what finished looks like. By the end you'll have a one-page document that the rest of this school builds on, because every lesson from here takes one of those five and makes it real.
+Think about the recurring work: the weekly report, the follow-up emails after meetings, the research before a call, the spreadsheet that gets filled in by hand. By the end you'll have a one-page document called My Tasks that the rest of this school builds on. Every lesson from here takes one of those five and makes it real.
 
 ## Steps
 
-1. Open your "My tasks" chat. You already have three tasks in it. Find two more by looking at last week: your calendar, your sent mail, the thing you did on Sunday night so Monday wouldn't hurt. Add them until you have five.
-2. For each task, write one sentence describing what "done" looks like. This is the part most people skip, and it's why their first attempts with Claude disappoint them. If you can't say what done looks like, Claude can't aim for it either. Tip: if a task won't fit in one sentence, it's probably two tasks. Split it.
+1. Open your "My tasks" chat. You already have three tasks in it. Find two more by looking at last week: your calendar, your sent mail, anything you did more than once. Add them until you have five.
+2. For each task, write one sentence describing what "done" looks like. If you can say what done looks like, Claude can aim for it. Tip: if a task won't fit in one sentence, it's probably two tasks. Split it.
 3. Now ask Claude what it would need from you. Paste:
 ```
 For each of my five tasks, tell me what you'd need to know, see, or have access to in order to do it well. One line per task. Then tell me which one you'd start with and why.

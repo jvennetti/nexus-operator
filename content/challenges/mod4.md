@@ -4,9 +4,9 @@ scenario_label: What We're Going to Do
 
 ## Scenario
 
-**The Folder You Dread.** Every job has one. The monthly report assembled from six spreadsheets. The folder of attachments that needs sorting and renaming. The template that gets filled in by hand, every time, from the same three sources. It's not hard work. It's the kind of work that eats an afternoon and leaves nothing to show for it.
+**The Folder You Dread.** Today we're going to take one job that lives in files and turn it into a tool you can run again next month.
 
-In Module 4 you learned that Claude Code can read, make and change files on your computer, and you built a workspace folder that knows who you are. This mission points all of that at your dreaded folder. You'll turn the job into a tool, run it on real files, and write it down so clearly that someone else could run it without you.
+Pick something like the monthly report assembled from several spreadsheets, a folder of attachments that needs sorting and renaming, a template filled in by hand from the same three sources, or a set of documents that need the same change made to each. In Module 4 you learned that Claude Code can read, make and change files, and you built a workspace folder that knows who you are. You'll point both at that job, run the result on real files, and write it down so someone else could run it without you.
 
 ## Steps
 

@@ -4,9 +4,9 @@ scenario_label: What We're Going to Do
 
 ## Scenario
 
-**What Runs Without You.** Over Module 6 you chose one recurring piece of your work, built the simplest version that could do it, ran it for a week and logged every mistake. Now you have a Version 2 on paper. This mission makes it real and makes it durable: running on real work, written up so a stranger could run it, with your workspace clean and your next build already chosen.
+**What Runs Without You.** Today we're going to finish the system you've been building: Version 2 running on real work, written up so a stranger could run it, your workspace clean, and your next build chosen.
 
-There are two tracks. A system runs a workflow for you: a skill, your connectors, a scheduled task. An app is a tool you use: built in the Code tab, opened every day. Finish one and you earn the OPERATOR badge. Finish both and you earn OVERCLOCKED. Most people should finish one properly first.
+Over Module 6 you chose one recurring piece of your work, built the simplest version that could do it, ran it for a week and logged every mistake. There are two tracks. A system runs a workflow for you: a skill, your connectors, a scheduled task. An app is a tool you use: built in the Code tab, opened every day. Finish one and you earn the OPERATOR badge. Finish both and you earn OVERCLOCKED. Finish one properly first.
 
 ## Steps
 
@@ -15,7 +15,7 @@ There are two tracks. A system runs a workflow for you: a skill, your connectors
 ```
 Write SYSTEM.md: how to run this, for someone who has never seen it. What it needs, what it does, what to check, and what to do when it breaks.
 ```
-3. Test the write-up on a person. Send SYSTEM.md to a friend or colleague and ask them to run it, or at least read it back to you in their own words. Every place they get stuck is a sentence to fix. Warning: this is the step people skip, and it's the one that separates a system from a thing only you can operate.
+3. Test the write-up on a person. Send SYSTEM.md to a friend or colleague and ask them to run it, or at least read it back to you in their own words. Every place they get stuck is a sentence to fix. Warning: a system a stranger can run is a system. A system only you can run is a habit.
 4. Clean the workspace. Test files gone, originals back outside the folder, CLAUDE.md current, the Alone / Draft / Mine lines still true.
 5. Choose what's next. Paste:
 ```
