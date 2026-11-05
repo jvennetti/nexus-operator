@@ -18,7 +18,7 @@ What this means:
 |---|---|---|---|
 | 0.2 Know Where Things Are | `r2vYObllqJU` Kevin Stratvert, 8:37 | none | Use only if the lead's app still matches it. Otherwise text-only, and search again in about a month for a beginner tour of the new app. |
 | 1.1 What Changed | `EljzyfdYkrc` Anthropic AI Fluency: Delegation, 5:49 | `QT-OR7Lcf2g` TEDx "How to think in the Age of AI", 12:19 (round 2) | Finalist 1. |
-| 2.1 Anatomy of a Good Prompt | `2YCaBqP8muw` Anthropic AI Fluency: Effective prompting, 11:55 | `riO3e-FBieA` Hostinger prompt guide, 11:48 | Finalist 1, with a start minute if the transcript shows a slow intro. Text-only is a close second: the lesson's bad-prompt vs good-prompt task already teaches this. |
+| 2.1 Anatomy of a Good Prompt | `7zZy1QTvokM` Austin Marchese, "Use Karpathy's Method", 13:19 (lead's pick) | `2YCaBqP8muw` Anthropic AI Fluency: Effective prompting, 11:55 | Finalist 1, with a start minute if the transcript shows a slow intro. Text-only is a close second: the lesson's bad-prompt vs good-prompt task already teaches this. |
 | 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert, 6:35 | `U-WtXdXdcKY` Matthew Esposito (2026 update), 12:17 | Finalist 1 if chat Projects still have instructions and files. If not, rewrite 2.4 first, then re-vet. |
 | 3.1 Inbox and Calendar | `FpRNId-jeTQ` Kevin Stratvert, 5:54 | none | Text-only. Connecting is a two-minute settings click, and the best video is general and partly a Zapier pitch. |
 | 4.1 Chat Answers. Code Acts. | `P7-0grEB7nk` Teacher's Tech, 10:41 | `8c6JZ18W0Bo` Nick Saraev, 4:50, post-rebuild (round 2) | Finalist 1 unless the transcript shows Saraev's is desktop-only. If it is, his wins on being current and half the length. |
@@ -45,9 +45,10 @@ Round 2 searched again with a 2026-10-20 publish floor for the lessons hit by th
 | 5.3 | `pg2d8HWSlS4` zero cost ai | 7:00 | 2026-10-21 | 15 | 0 | Its description says "routines (now called scheduled tasks)". The naming has moved again, which the 5.3 copy should reflect. |
 | 0.2 | `fLFWdJ789t8`, `07DNLFgjMd4`, `aDR571phdAs`, `Ejfda1stNMM` and others | 3–13 min | Oct 28–Nov 4 | under 3,100 | 0–2 | Beginner tours of the rebuilt app exist now, but none has evidence. `Ejfda1stNMM` says the redesign "rolled out September to November 2026". |
 | 3.1 | `r6axtiq5-mM`, `Bm3kges7l1Q`, `dW4AZLGQiKw` | 2–3 min | Oct 23–Nov 3 | under 20 | 0–1 | Topic-exact, no evidence. 3.1 stays text-only. |
+| 2.1 | `7zZy1QTvokM` Austin Marchese, "Stop Prompting Claude. Use Karpathy's Method Instead." (added by the lead) | 13:19 | 2026-06-09 | 1,252,549 | 30 (+8/−0) | **New finalist 1.** Teaches three layers: goal, spec, then build. The most-liked comment (2,044 likes) is the "interview me to identify the actual goal" prompt, which is the lesson's core idea. Critics only say it's standard software practice ("Goals -> Requirements -> Spec -> Implementation. Revolutionary."), which confirms it's sound rather than hype. Like ratio is 2.7%. Two cautions: Cowork appears once in the description, and the examples lean toward building with Claude Code. Check that Layer 1 (0:28–3:34) stands alone for a chat beginner. If it does, use it with a start/end note. |
 | 2.1 | `vVnDzDqQI3g`, `todmaQUDdfg`, `rmX3L2fNBcY`, `5SxAlAmutOk` (bad vs good prompt) | 8 min | 2026 | under 600 | 0 | The format fits the lesson's task, but no evidence. No change. |
 
-**Decision:** two finalist swaps (1.1 and 4.1, shown in the table at the top). Run the round 2 searches again around 2026-12-01 for 0.2, 2.4, 4.1 and 5.3. By then the post-rebuild beginner videos will have enough views and comments to judge. Until then, those four use the current finalists or stay text-only.
+**Decision:** three finalist swaps (1.1, 2.1 and 4.1, shown in the table at the top). Run the round 2 searches again around 2026-12-01 for 0.2, 2.4, 4.1 and 5.3. By then the post-rebuild beginner videos will have enough views and comments to judge. Until then, those four use the current finalists or stay text-only.
 
 ## How the numbers were made
 
