@@ -120,11 +120,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Connect Your Work Tools</h1>
     <div class="context-copy">
-<p>Email and calendar are where information arrives. Your work tools are where it gets done: the task manager, the docs, the shared drive, the team chat. Connect those and Claude stops being a place you go and starts being a colleague who's in the same tools you are.</p>
-<p>Look through the Connectors list for the tools you actually use day to day. Common ones: ClickUp, Notion, Asana, Google Drive, Slack. Connect the one or two you live in. Don't connect everything. More connectors means more for Claude to consider and more permissions to think about. Start with what you touch daily.</p>
-<p>What this makes possible:</p>
-<ul><li><strong>Email becomes tasks.</strong> "Read the thread from the client and create tasks in ClickUp for everything we promised, with due dates."</li><li><strong>Docs become answers.</strong> "Find our onboarding doc in Drive and tell me what we say about the first week."</li><li><strong>Chat becomes summary.</strong> "What did the team decide in the project channel this week?"</li><li><strong>Updates write themselves.</strong> "Look at my open tasks and draft a status update for the team."</li></ul>
-<p>The pattern is always: information lives in one tool, needs to end up in another, and a human used to carry it across by hand. Now you say the sentence and it's carried.</p>
+<p>Now connect the tools where work gets done: your task manager, docs, drive or team chat. Connect the one or two you live in, not everything.</p>
+<p>The pattern is always the same. Information sits in one tool, needs to be in another, and you used to carry it across by hand. Now you say a sentence:</p>
+<ul><li>"Create tasks in ClickUp for everything we promised in this thread."</li><li>"Find our onboarding doc in Drive and tell me what it says about week one."</li><li>"Draft a status update from my open tasks."</li></ul>
+<p>Ask Claude to show you what it will create before it creates it.</p>
     </div>
   </div>
 
@@ -136,7 +135,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Connect your main work tool and carry something across.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect one or two work tools</strong> you use every day in Settings → Connectors.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask Claude what it can see.</strong> "What can you access in [tool]? Give me a quick overview of what's in there." Confirm it's seeing what you expect.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Carry something across.</strong> Take an email thread or a set of meeting notes and say: "Create tasks in [tool] for everything that needs doing here. Assign to me, due this week, and show me the list before you create them." Review, approve, done.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Pull something out.</strong> "Give me a status summary of everything I have open in [tool], grouped by project, in order of urgency."</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Check your work.</strong> Open the tool itself. Confirm the tasks are really there and look right. Fix anything off by telling Claude.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Connect one or two work tools</strong> in Settings → Connectors.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Carry something across.</strong> Take an email thread or meeting notes and say: "Create tasks in [tool] for everything that needs doing here. Assign to me, due this week, and show me the list before you create them." Review, then approve.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Pull something out.</strong> "Summarize everything I have open in [tool], grouped by project, most urgent first."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Check the tool itself.</strong> Confirm the tasks are there and look right. Fix anything off by telling Claude.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -148,9 +147,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Connect the one or two work tools you actually live in. Not everything.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>The core move: information in one tool, needed in another, carried across by a sentence instead of by hand.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Ask Claude to show you what it's about to create before it creates it. Review, then approve.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Connect the tools you live in. The core move is carrying information between them with a sentence.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Have Claude show you what it will create, then approve.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-3-1.html" class="nav-btn prev">

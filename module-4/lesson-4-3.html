@@ -120,12 +120,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">The Instructions File</h1>
     <div class="context-copy">
-<p>There's one file Claude Code treats specially. It's called <code>CLAUDE.md</code>, it sits at the top of your folder, and Claude reads it at the start of every session, automatically, before you say anything.</p>
-<p>That makes it the most powerful file in the folder. It's where you put standing instructions. Not information (that's what the other files are for) but <strong>rules and preferences.</strong> How you want things done.</p>
-<p>Things that belong in it:</p>
-<ul><li><strong>How to write for you.</strong> "Plain language. Short paragraphs. No corporate filler."</li><li><strong>Where things go.</strong> "Finished documents go in /output. Drafts stay in the project folder."</li><li><strong>What to always do.</strong> "Before creating a document, show me an outline and wait for my okay."</li><li><strong>What to never do.</strong> "Never delete files. Move them to /archive instead."</li><li><strong>Your conventions.</strong> "Date every file name like 2026-03-14. Use my templates in /reference."</li></ul>
-<p>It's the same idea as Project instructions in Chat, with one difference: it lives in the folder, so it travels with the work, and Claude Code can update it as you go. When you catch yourself telling it the same thing twice, say "add that to CLAUDE.md." You'll never say it a third time.</p>
-<p>This is also the moment you'll start to understand what people mean by a <strong>skill</strong>. A skill is just a file of instructions for a specific task. <code>CLAUDE.md</code> is the general one. Module 5 is where you write the specific ones.</p>
+<p><code>CLAUDE.md</code> is a file at the top of your folder that Claude Code reads automatically at the start of every session. It holds your rules and preferences (how to write, where things go, what never to do), while other files hold information. When you catch yourself saying something twice, say "add that to CLAUDE.md."</p>
     </div>
   </div>
 
@@ -135,9 +130,9 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
       <div class="task-time">20 min</div>
     </div>
     <div class="task-intro">
-<p>Write your instructions file, and then let it grow.</p>
+<p>Write your instructions file, then let it grow.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Ask Claude to draft it.</strong> In your workspace:<div class="prompt-block"><pre>Create a CLAUDE.md for this workspace. Base it on ABOUT-ME.md and what you know about how I work. Cover: how I want things written, where finished work goes, what to always do before creating or changing files, what to never do, and any conventions for file names. Keep it short and direct. Show it to me before saving.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Edit it.</strong> Read every line. Cut what isn't true. Add the thing you keep saying. Make it yours.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Test one rule.</strong> Pick a rule from the file and give Claude a task that would trigger it. Confirm it follows the rule without being reminded.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Teach it a new rule in the moment.</strong> Next time you correct Claude ("no, shorter," "put that in output"), follow it with: "Add that to CLAUDE.md so I don't have to say it again." Check that it did.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Read the file one more time</strong> in your normal file browser. That's your operating manual. It will keep growing.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Ask Claude to draft it.</strong> In your workspace:<div class="prompt-block"><pre>Create a CLAUDE.md for this workspace. Base it on ABOUT-ME.md and what you know about how I work. Cover: how I want things written, where finished work goes, what to always do before creating or changing files, what to never do, and any conventions for file names. Keep it short and direct. Show it to me before saving.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Edit it.</strong> Cut what isn't true. Add the thing you keep saying.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Test one rule.</strong> Give Claude a task that should trigger a rule in the file. Confirm it follows the rule without a reminder.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Teach it a rule in the moment.</strong> Next time you correct Claude, follow up with: "Add that to CLAUDE.md so I don't have to say it again." Check that it did.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -149,9 +144,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div><code>CLAUDE.md</code> is read automatically at the start of every session. It's where standing instructions live.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Rules and preferences go in <code>CLAUDE.md</code>. Information goes in other files.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When you say something twice, say "add that to CLAUDE.md." Never say it a third time.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div><code>CLAUDE.md</code> is read at the start of every session. Rules go there; information goes in other files.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Say something twice, then say "add that to CLAUDE.md."</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-4-2.html" class="nav-btn prev">

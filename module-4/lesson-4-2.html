@@ -120,12 +120,10 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Folders Are Memory</h1>
     <div class="context-copy">
-<p>Here is the most useful thing to understand about Claude Code, and it's not technical: <strong>the folder is the memory.</strong></p>
-<p>In Chat, context lives in the conversation and a Project. In Claude Code, context lives in files. Whatever is in the folder, Claude can read. Whatever Claude writes to the folder, stays. That means you can give it a permanent brain just by organizing a folder well.</p>
-<p>What a good working folder looks like:</p>
-<ul><li><strong>A note about you.</strong> Who you are, what you do, how you like things. One file, read every time.</li><li><strong>Reference material.</strong> The docs you'd otherwise attach over and over. Brand voice, templates, examples, the client list.</li><li><strong>Working areas.</strong> A folder per project or client. Inside each: its own notes, its own files.</li><li><strong>An output area.</strong> Where finished things go, so you can find them.</li></ul>
-<p>You don't need to build this by hand. Claude Code will build it for you, and it will keep it tidy if you ask it to. Your job is to decide what belongs there.</p>
-<p>Think of it as onboarding a new colleague by handing them a well-organized drive instead of explaining everything verbally. Every file you add is something you never have to say again.</p>
+<p>In Claude Code, the folder is the memory. Whatever is in the folder, Claude can read. Whatever it writes there, stays. Organize the folder well and every session starts already knowing your work.</p>
+<p>A good workspace has:</p>
+<ul><li><strong>A note about you.</strong> Who you are and how you like things.</li><li><strong>Reference material.</strong> Templates, brand docs, examples.</li><li><strong>A folder per project,</strong> with its own notes and files.</li><li><strong>An output folder</strong> for finished work.</li></ul>
+<p>You don't build this by hand. Claude Code builds and maintains it. You decide what belongs there.</p>
     </div>
   </div>
 
@@ -137,7 +135,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Turn your workspace into a real working folder.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Open <code>nexus-workspace</code> in Claude Code</strong> and paste this:<div class="prompt-block"><pre>I want to turn this folder into my working space with you. Interview me, a few questions at a time, about what I do, the kinds of projects or clients I work with, and what I'd like you to help with regularly. Then propose a folder structure for this workspace and create it. Include an ABOUT-ME.md file at the top that captures what you learned about me, written so that a future session can read it and know who I am.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Answer the questions honestly.</strong> This is the context everything else will use.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Review the structure it proposes.</strong> If something doesn't fit how you think, say so. Then let it create the folders.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Move the reference material in.</strong> Drag the documents you attach most often (templates, brand docs, examples) into the right folders. Then tell Claude: "I added some files. Look at them and add a REFERENCE.md that describes what each one is and when to use it."</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Test the memory.</strong> Close Claude Code entirely. Open it again on the same folder. Ask: "Who am I and what do I do?" It should answer from the files, without you saying a word.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Open <code>nexus-workspace</code> in Claude Code,</strong> paste this, and answer its questions honestly:<div class="prompt-block"><pre>I want to turn this folder into my working space with you. Interview me, a few questions at a time, about what I do, the kinds of projects or clients I work with, and what I'd like you to help with regularly. Then propose a folder structure for this workspace and create it. Include an ABOUT-ME.md file at the top that captures what you learned about me, written so that a future session can read it and know who I am.</pre></div></div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Review the structure</strong> it proposes. Change what doesn't fit how you think, then let it create the folders.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Move your reference material in:</strong> the templates, brand docs and examples you attach most often. Then: "I added some files. Add a REFERENCE.md that describes what each one is and when to use it."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Test the memory.</strong> Close Claude Code, reopen it on the same folder, and ask: "Who am I and what do I do?" It should answer from the files.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -149,9 +147,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>In Claude Code, the folder is the memory. Files in, context in. Files written, context kept.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>A good workspace has a note about you, reference material, working areas per project, and an output area.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Let Claude build and maintain the structure. Your job is deciding what belongs there.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>The folder is the memory. Files in, context in. Files written, context kept.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Let Claude build and maintain the structure. You decide what belongs there.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-4-1.html" class="nav-btn prev">

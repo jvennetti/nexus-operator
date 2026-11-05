@@ -120,11 +120,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="lesson-meta"><span class="mode">Read + Do</span><span>~15 min</span></div>
     <h1 class="lesson-title">Context Management</h1>
     <div class="context-copy">
-<p>We saved this for now because it only makes sense once you've felt it. By this point you have: a long chat where Claude started forgetting what you said at the top, a Claude Code session that got slower and weirder the longer it ran. That's not random. There's a mechanical reason, and once you know it, you'll stop fighting it.</p>
-<p>Every message you send, Claude re-reads the entire conversation from the beginning. Not just your new message, everything. That's how it stays coherent. But there's a limit to how much it can hold at once, and as a conversation grows, the early parts get crowded out. Instructions from the top get less weight. Details blur. Output quality drops.</p>
-<p>This is called the <strong>context window</strong>, and managing it is a real skill. The good news is that you already have all the tools. You've been collecting them since Module 2:</p>
-<ul><li><strong>Start fresh often.</strong> New task, new chat or session. It feels wasteful. It's the opposite.</li><li><strong>Put standing context in files, not in the conversation.</strong> Project instructions. <code>CLAUDE.md</code>. Skills. Reference docs. Those are read every time without taking up conversation space the way a long thread does.</li><li><strong>Hand off, don't continue.</strong> When a conversation is long and you're not done, ask for a summary of where things stand, then start fresh with that summary. Five lines of summary beat fifty messages of history.</li><li><strong>Don't paste everything.</strong> Paste what's relevant. If Claude needs a 40-page document, put it in the Project or the folder and let Claude read the part it needs.</li><li><strong>Watch for the signs.</strong> Repeating itself, forgetting a rule you set, getting vaguer. That's the window filling. Hand off and restart.</li></ul>
-<p>Once you work this way, long tasks stop degrading. Each session starts sharp, reads its context from files, does its piece, writes down where it got to.</p>
+<p>Long chats and sessions get worse because Claude re-reads the whole conversation every time, and as it grows, early instructions get crowded out; that limit is the <strong>context window</strong>. The signs are repeating itself, forgetting a rule, getting vaguer. The fix: keep standing context in files (Projects, <code>CLAUDE.md</code>, skills), start fresh often, and when a long conversation isn't finished, carry a short summary into a new one.</p>
     </div>
   </div>
 
@@ -136,7 +132,7 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
     <div class="task-intro">
 <p>Rescue a long conversation and feel the difference.</p>
     </div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Find a long chat or session</strong> from earlier in this course. One where you'd been going back and forth for a while.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask for the handoff.</strong> At the end of it: "Summarize where we are: what we've decided, what's done, what's left, and any rules or preferences I've given you in this conversation. Keep it under 15 lines."</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Start fresh.</strong> New chat (or new session in the same folder). Paste the summary and say "continue from here."</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Compare.</strong> Give the new conversation the next step of the task. Notice: faster, sharper, remembers the rules.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Move the standing stuff out.</strong> Look at the summary. Anything in it that's a permanent rule or preference belongs in Project instructions or <code>CLAUDE.md</code>, not in a conversation. Move it now.</div></li></ol>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Find a long chat or session</strong> from earlier in the course.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Ask for the handoff</strong> at the end of it:<div class="prompt-block"><pre>Summarize where we are: what we've decided, what's done, what's left, and any rules or preferences I've given you in this conversation. Keep it under 15 lines.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Start fresh.</strong> New chat or session, paste the summary, and give it the next step of the task. Notice it's faster and remembers the rules.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Move the standing stuff out.</strong> Anything in the summary that's a permanent rule belongs in Project instructions or <code>CLAUDE.md</code>. Move it now.</div></li></ol>
     <div class="task-actions">
       <button class="task-done-btn" id="task-done-btn" onclick="markTaskDone()"><span class="chk"></span><span id="task-done-label">Mark task done</span></button>
       <span class="task-done-msg">Task logged · Lesson unlocked</span>
@@ -148,10 +144,8 @@ textarea.notes-field:focus{border-color:rgba(0,200,255,0.2);background:rgba(255,
   </div>
   <div class="takeaways-box section">
     <div class="takeaways-title">Key Takeaways</div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Claude re-reads the whole conversation every message. Long conversations crowd out early instructions and degrade output.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Start fresh often. Standing context belongs in files (Projects, <code>CLAUDE.md</code>, skills), not in the thread.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>When a conversation is long and unfinished, ask for a short handoff summary and continue in a new one.</div></div>
-    <div class="takeaway-item"><div class="t-bullet"></div><div>Signs the window is full: repeating itself, forgetting rules, getting vaguer. Hand off and restart.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Long conversations crowd out early instructions. Start fresh often.</div></div>
+    <div class="takeaway-item"><div class="t-bullet"></div><div>Standing context belongs in files. Unfinished work moves to a new chat as a short summary.</div></div>
   </div>
   <div class="lesson-nav">
     <a href="lesson-5-1.html" class="nav-btn prev">
