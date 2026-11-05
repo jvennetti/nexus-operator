@@ -2,6 +2,35 @@
 
 Run on 2026-11-05 with the YouTube Data API v3 only (`search`, `videos`, `commentThreads` with `order=relevance`). No youtube.com pages were fetched. No lesson file was edited and no video id was added to the course.
 
+## Final picks after transcript review (2026-11-05)
+
+All 42 shortlist transcripts were read in full (`transcripts/`, fetched on the lead's machine with `tools/fetch_transcripts.py`). Transcript evidence overrides the comment-based scores above wherever they disagree.
+
+| Lesson | Pick | Play | `video_note` | Why (transcript evidence) |
+|---|---|---|---|---|
+| 0.2 Know Where Things Are | **None, text-only** | — | — | No video tours the rebuilt app for a first-time user. Kevin Stratvert shows pre-rebuild claude.ai on the web and never opens Settings or Code. The post-rebuild videos are power-user feature lists ("you have to use Claude code"). The scavenger-hunt task teaches it better. |
+| 1.1 What Changed | `EljzyfdYkrc` Anthropic AI Fluency: Delegation | whole, 5:36 | From Anthropic's AI Fluency course: how to decide which work is yours and which to hand to Claude. About 5 min. | All teaching, no hook: "The cornerstone of good delegation isn't actually about AI at all. It's about your own expertise." The TEDx talk is mostly backstory (3/10). |
+| 2.1 Anatomy of a Good Prompt | `2YCaBqP8muw` Anthropic AI Fluency: Effective prompting | whole, 11:45 (core 2:15–5:35) | Anthropic's six prompting habits. Context, examples and format (2:15–5:35) are this lesson; the rest is a bonus. | Context, examples and format, with worked before/after rewrites; about 11 of 12 minutes teaching, no pitch. The lead's pick `7zZy1QTvokM` turned out to be a Claude Code builder workflow (spec, verifier, hooks, Codex). Only 0:28–3:34 is about prompting, and it skips format and examples. Better suited to 4.3 or Module 5 (8:48–12:28). |
+| 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert | whole, 6:30 | 6-minute click-through: instructions, files, and moving chats into a Project. | About 6 of 6.5 minutes teaching. "Project instructions help Claude understand how you want it to respond across all chats within the project." Post-rebuild transcripts confirm chat Projects still work this way. |
+| 3.1 Inbox and Calendar | `r6axtiq5-mM` AI Made Simple | 0:00–1:58 | Two-minute tour: connecting Gmail and Calendar, and what to ask once they're on. | Covers Gmail and Calendar plus the lesson's safety model, with no pitch: "by default it asks before doing anything that sends, deletes, or shares." Borderline: it's a narrated overview, not a live demo. Kevin Stratvert's `FpRNId-jeTQ` turns into a Zapier sponsor segment at 3:07, 46% of its runtime. |
+| 4.1 Chat Answers. Code Acts. | `-YTot4fwNFY` ClipCookie | 0:38–6:01 | Start at 0:38. The Code tab from first folder to first result, all in the desktop app. Stop around 6:00. | The only current-UI, desktop-only walkthrough with no pitch: "select 'Code'… 'Select Folder'… 'Trust Workspace'". Teacher's Tech shows pre-rebuild Cowork and old permission names. Nick Saraev is current, but has only 1.6 minutes on-outcome, runs on hype, and says "stick with auto for virtually everything". |
+| 4.3 The Instructions File | `O0FGCxkHM-U` Claude (official) | whole, 3:01 | The example is a coding project. The idea is exactly the same for a folder of documents. | Matches the lesson: "reads it automatically every time you start a session", "explicitly ask Claude to save this to memory". The coding example is only 35 seconds. GritAI loses non-coders by 1:30. |
+| 5.1 What a Skill Is | **None, text-only** | — | — | Neither video teaches writing your own skill file. Tristen O'Brien goes through Chat's skill creator and plugins, with a hook, a subscribe ask and a plugin plug. The official video is all coding examples, and its storage path contradicts the task. Fallback if a video is required: `O6tQ6V_P8a0` 2:52–6:21. |
+| 5.2 Context Management | `xaQG-eD9d58` Dylan Davis | 0:25–13:10 | Start at 0:25 and stop at 13:10. Skip the Google AI Studio detour (7:07–8:52). The handoff at 9:00 is your task. | The only non-technical option. Its warning signs match the brief, and its handoff summary at 9:00 is the lesson task. Matt Pocock is aimed at developers and uses the terminal from 5:10. |
+| 5.3 Scheduled Tasks | `6RXjpKXy2qk` Cynked AI | whole, 8:27 | The whole build in 8 minutes. If you'd rather not let it send email, use the Notifications → Email option at 4:46 instead of the send permission at 5:00. | The lesson's exact task, in the current app, with no code: "read your email every morning before you do, and send you one short report". It also says "Don't wait until tomorrow morning to find out if it works" and "Reading is safe. Writing is yours." The March/April picks run locally or use the old "Routines" naming. |
+
+**Result: 8 videos, 2 lessons text-only (0.2, 5.1).**
+
+### Lesson copy the transcripts show is out of date
+
+- **3.1:** current videos put Connectors under **Customize → Connectors**, or the chat's **+ → Manage connectors**, not "Settings → Connectors". Check in the app and fix the Brief and Task.
+- **5.3:**
+  - Call the feature **Scheduled tasks** (the old name "routines" survives only in a URL and a command). It lives in **Scheduled** in the left sidebar → New task, which can be described to Claude or set up manually. Cloud tasks run with the laptop closed on paid plans, at most hourly.
+  - Step 4's "deliver the result" needs Gmail send permission. That clashes with "draft, not send", so point to Notifications → Email instead.
+  - Sources disagree on whether cloud runs ask before connector writes. Verify before the copy promises either.
+- **2.4:** the knowledge panel is labelled **Files** on screen. Say "Knowledge (files)".
+- **4.1:** two current videos say "if you're not sure, stick to Auto mode". The lesson should keep its "approve what you understand" line and say why.
+
 ## Read this first: the Claude app changed two weeks ago
 
 Anthropic rebuilt the desktop app in late October 2026. Creators are calling it "Claude 2.0": new Home and Code tabs, Cowork folded into chat, a session rail, new artifact types, and Projects redesigned around a coordinator plus threads plus routines. Viewers in the comments report the rollout is uneven ("In Australia on pro plan. Don't have most of these changes").
@@ -12,7 +41,7 @@ What this means:
 - No beginner tour of the rebuilt app exists yet with any track record. The Claude 2.0 videos that do exist are what's-new lists for existing users.
 - Lesson copy has the same problem. 0.2 ("Chat and Code" modes), 2.4 ("Instructions" and "Knowledge") and 5.3 may describe UI that has moved. The lead should click through the current app before confirming any pick for those four lessons.
 
-## Picks at a glance
+## Picks at a glance (before transcript review; superseded by the final picks above)
 
 | Lesson | Finalist 1 | Finalist 2 | Decision |
 |---|---|---|---|
