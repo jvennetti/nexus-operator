@@ -53,6 +53,12 @@ def try_fetch(vid, tmp, extra):
 
 ATTEMPTS = [[], ["--cookies-from-browser", "chrome"], ["--cookies-from-browser", "firefox"],
             ["--cookies-from-browser", "edge"]]
+# A cookies.txt exported from your signed-in browser (Netscape format) is the most reliable route.
+# Put it at the repo root as cookies.txt; it is git-ignored and must never be committed.
+COOKIE_FILE = os.path.join(HERE, "..", "cookies.txt")
+if os.path.exists(COOKIE_FILE):
+    ATTEMPTS = [["--cookies", COOKIE_FILE]]
+    print("using cookies.txt")
 
 os.makedirs(OUT, exist_ok=True)
 ok = fail = 0
