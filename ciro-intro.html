@@ -213,7 +213,7 @@ html,body{
   box-shadow:0 0 20px rgba(0,200,255,0.2),inset 0 0 12px rgba(0,200,255,0.08);
 }
 #power-btn:hover .power-icon{stroke:rgba(0,200,255,0.9)}
-#power-btn.hidden{opacity:0;pointer-events:none;transition:opacity 0.4s ease}
+#power-btn.hidden{opacity:0;pointer-events:none;visibility:hidden;transition:opacity 0.4s ease,visibility 0s linear 0.4s}
 
 .power-icon{
   stroke:rgba(255,255,255,0.25);
@@ -380,6 +380,8 @@ html,body{
   text-decoration:none;
 }
 .begin-btn.visible{opacity:1;transform:translateY(0);animation:btn-pulse 2s ease-in-out infinite}
+/* not clickable or focusable until shown (they sit at opacity:0 in the panel from the start) */
+.begin-btn:not(.visible),#nexus-btn:not(.visible){visibility:hidden;pointer-events:none}
 .begin-btn:hover{background:var(--blue-dim);border-color:var(--blue);animation:none;box-shadow:0 0 18px rgba(0,200,255,0.3)}
 @keyframes btn-pulse{
   0%,100%{border-color:rgba(0,200,255,0.22);box-shadow:0 0 0 rgba(0,200,255,0)}
