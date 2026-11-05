@@ -66,3 +66,42 @@ Candidates found by three Opus searchers (reports in `docs/research/gap-search*.
 Rule applied when reading: one creator carries at most two lessons unless the transcripts leave no choice. Dylan Davis is currently best for 4.2, 4.5, 6.1, 6.2, 6.3 and already holds 5.2; the fallbacks exist so the readers can spread the load.
 
 Open: the YouTube Data API search quota (100 searches/day) ran out mid-way; 2.5 and 4.4 searches were cut short. Re-run those two after the quota resets (queries are listed in `docs/research/gap-search.md`).
+
+## Round 2 decisions (2026-11-05, after all 26 transcripts were read)
+
+Every lesson has a video. Decided by Claude from the four round 2 reader reports (`docs/research/reader-round2-*.md`); the lead overrides anything he dislikes. "Weak" = scored under 6/10 or thin evidence; those four slots get a second search once the API quota resets, and are replaced if something better turns up. Times are what goes in `video_start` / `video_end`.
+
+| Lesson | Pick | Play | Score | Note |
+|---|---|---|---|---|
+| 0.1 Get Claude on Your Computer | `aDR571phdAs` Not a Computer Person | 0:58–4:16 | 7 | In the lesson |
+| 0.2 Know Where Things Are | `N890AspWgEw` Mstimaj | 0:02–4:47 | 7 | Calm first-time tour of the rebuilt app; task keeps rename, Settings, attach |
+| 1.1 What Changed | `EljzyfdYkrc` Anthropic AI Fluency, Delegation | whole | 7 | In the lesson |
+| 1.2 Director, Not Doer | `wmCXIPlllpA` NNgroup, "Your AI UX Intern" | 0:07–3:59 | 6 | Manager-and-new-hire frame plus "double-check the work". Push-through stays in text. AI Fluency "Description" rejected: it is 2.1 almost word for word |
+| 2.1 Anatomy of a Good Prompt | `2YCaBqP8muw` Anthropic AI Fluency, Effective prompting | 1:52–5:35 | 8 | |
+| 2.2 Give It What It Needs | `Zzn-g8lvLMA` Anthropic, Data analysis with AI | 0:19–5:42 | 6 | Other angle: hand over raw messy material, check against a known answer, note what Claude needed |
+| 2.3 Iterate and Push Back | `tk4Ljz9p-UI` Simpletivity | 0:00–5:56 | 6 | "Ask me 3–5 clarifying questions." Demo is in Gemini; caption says it works the same in Claude. Borrow `k1dNyhqfsQ8`'s "put the first answer under pressure" into the task. Push-through is in no video; stays in text |
+| 2.4 Projects | `w7_yWjYyxjE` Kevin Stratvert | 0:25–5:49 | 9 | |
+| 2.5 Make Things, Not Just Text | `FgwrGj_RJBg` TechBrothersIT | 0:00–2:40 | weak | Post-rebuild, covers types / three ways to create / edit / export, but no audience evidence. **Re-search** |
+| 3.1 Connect Your Inbox and Calendar | `LNpOyx4DOJ4` Holly Cope | 0:00–3:42 | 7 | Live triage, calendar check, "do not send, just draft". Drop the full morning briefing from the 3.1 task (3.3 owns it) |
+| 3.2 Connect Your Work Tools | `BKzEVhT2054` Benjamin Preston | 0:00–5:00 | 7 | Meeting notes to a Notion page; start narrow; no delete |
+| 3.3 A Morning With Claude | `D5nZOUfac_0` Nexus (the channel, not us) | 3:05–8:30 | other angle | Anatomy of a standing morning-brief prompt; caption must say the channel isn't NEXUS Operator. **Re-search** |
+| 4.1 Chat Answers. Code Acts. | `8c6JZ18W0Bo` Nick Saraev | 0:24–1:58 | 5 | Kept; only current-UI video that says Chat can't change files, Code can |
+| 4.2 Folders Are Memory | `qPG5zQCSlTs` signalstack | 0:00–0:55 | 4 | Problem statement only ("stores once, remembers forever"). **Re-search** |
+| 4.3 The Instructions File | `O0FGCxkHM-U` Claude official | whole | 7 | |
+| 4.4 Build Something Real | `yTy8WV3Y9Nk` Mstimaj | 1:44–6:07 | 7 | Plan-first loop in the Code tab: Plan mode, questions, plan, Reject/Revise/Accept. `4hc5Z_QBno4` is Chat folder access, not usable |
+| 4.5 Sessions, Permissions, Safety | `b8SV4U6fEIc` Claude official, How auto mode works | 0:00–3:31 | 5 | Official clip chosen so Dylan Davis stays at three lessons. Alternative if the lead prefers: `F-DARGKRKdQ` 7:01–10:51 (7/10: copy, undo, two-minute review, "Manual is for learning") |
+| 5.1 What a Skill Actually Is | `O6tQ6V_P8a0` Tristen O'Brien | 0:22–6:36 | 7 | |
+| 5.2 Context Management | `xaQG-eD9d58` Dylan Davis | 0:25–10:37 | 8 | |
+| 5.3 Scheduled Tasks | `6RXjpKXy2qk` Cynked AI | whole | 9 | |
+| 6.1 Choose Your Workflow | `HMaja1AlwMo` The Virtual Savvy | 2:23–4:08 | 5 | Choosing what to automate, four criteria; 12-second plug at 2:46. Better video is Dylan's `vatOVZbumk0` 3:04–10:23 (7/10) if the lead accepts him on four lessons. **Re-search** |
+| 6.2 Build It | `IhhxRZDf2bo` Dylan Davis | 3:10–12:52 | 7 | Manual run to lean skill, test on past work, yes/no checklist, fix the skill in the smallest step |
+| 6.3 Run It, Then Refine It | `fgrJVdD12PA` Dylan Davis | 0:00–11:26 | 8 | Every fix goes into the skill, instructions file or notes file; caption maps his `agents.md` to CLAUDE.md |
+| 6.4 Tips From the Field | `7zZy1QTvokM` Austin Marchese | whole | 6 | Caption: the 6.2 checklist is a beginner version of his verifier layer |
+
+Creator spread: Anthropic/Claude official 5 (1.1, 2.1, 2.2, 4.3, 4.5), Dylan Davis 3 (5.2, 6.2, 6.3), Mstimaj 2 (0.2, 4.4), everyone else 1. Total watch time about 2 hours across 24 lessons.
+
+### Module 6 direction (lead, 2026-11-05)
+Challenges must not feel restrictive. Module 6 becomes two tracks the learner chooses: **build a system** (recurring workflow: skill + connectors + scheduled task) or **build an app** (a personal tool in the Code tab: tracker, dashboard, mini site, with a folder and a CLAUDE.md). Same deliverable shape: version 2, a README a stranger can follow, a run log. 4.4 is the first "you can build things" moment. Apply when Module 6 is rebuilt.
+
+### App facts the readers want checked (new this round)
+Whether Chat can now edit local folders (4.1's premise); whether Auto is now the default mode; the folder button label ("Local → Open folder" vs "This computer"); what Manual prompts for; whether deletes always ask; whether Auto overrides a connector's "Needs approval"; whether Connectors sit in the + menu or Customize; whether the Output button and Artifacts tab exist and the toggle's name; whether Notion lets you choose pages; whether a skill can start a sub-agent grader in Chat; whether Claude Code reads AGENTS.md.
