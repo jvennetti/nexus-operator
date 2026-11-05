@@ -30,7 +30,9 @@ Running list of material that is known to be weaker than it should be. Add to it
 - 3.1 takeaway says Claude "has read your past emails"; true only once Gmail is connected and only for what it searched. Fine for beginners, revisit if it misleads.
 
 ## Shell
-- Lesson page redesign (step 2 in the handoff) is still pending: notes beside the video, auto-saved playback position, more obvious copy buttons on prompts, centered distinctive challenge box, "Mission" naming for the module-level challenge pages so it doesn't collide with lesson challenges.
+- Mission wording: the module-end page says "Complete Module N" but the hub cards and the lesson nav's "next" label may still say "Challenge" in places; finish the rename (`hub.html` MODULES block in build.py, templates/challenge.html nav).
+- OVERCLOCKED badge is not in `course.json` or the hub yet.
+- Lesson page v2 is done. Still to confirm in a real browser: auto-resume with a playing video; the glow on low-end phones.
 - "No music?" button still overlaps the title on the phone hub (QA audit, accepted).
 - Font-swap reflow at load (accepted).
 - Intermission pages (CIRO plus a breath button, from nexus-academy) were dropped: modules are two to five lessons now. Revisit only if a module grows past five lessons.

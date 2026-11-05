@@ -2,7 +2,7 @@
 
 Read this first in any new session. Joshua Vennetti is the lead. Claude (Fable) runs the project session and makes decisions after research; Opus agents do research, reading, QA and bulk work and report back. The lead sees everything before it merges.
 
-Last updated: 2026-11-05, end of the second session. Companion docs: `docs/video-picks.md` (every video decision), `docs/IMPROVE-LATER.md` (running list of known weak spots), `docs/research/` (all search, reader, QA and animation reports).
+Last updated: 2026-11-05, end of the second session (wrapped while the CIRO animation agent was still running; see section 6). Companion docs: `docs/video-picks.md` (every video decision), `docs/IMPROVE-LATER.md` (running list of known weak spots), `docs/research/` (all search, reader, QA and animation reports).
 
 ---
 
@@ -42,14 +42,16 @@ Repos: `jvennetti/nexus-academy` (original, read-only time capsule, never modify
 - **Missions** (module-end pages, "Complete Module N"): sections are What We're Going to Do (two paragraphs: the plan for today, and concrete examples to choose from), How We'll Do It (steps with full sentences, prompts to paste, tips and warnings inline), You're Done When (one sentence), optional Go Further and a fallback note.
 - Never: em dashes, "not X, it's Y", stacked triples, bold-colon lists, teaching in the description, branded artifacts nobody asked for.
 
-## 5. What's built (branch `claude/friendly-ramanujan-jrotfb`, PR 5, draft)
+## 5. What's built (branch `claude/friendly-ramanujan-jrotfb`, PR 5, draft, preview https://claude-friendly-ramanujan-jr.nexusoperator.pages.dev)
 
-- `build.py`: `video_start`, `video_end` (seconds or m:ss), `video_credit`; emits `?start&end&enablejsapi=1` and a plain credit line; `## Challenge` section; numbered sub-lists inside steps.
-- **All 24 lessons rewritten** in the section 4 style, each with its video (`docs/video-picks.md`, "Round 2 decisions" table has id, clip, score, caption notes). Total watch time about two hours.
-- 31 transcripts in `transcripts/` (round 2 and 3); 42 round 1 transcripts live on branch `claude/video-research`.
-- **QA audit:** 13 functional fixes to the shell (`docs/research/qa-audit.md`; re-test with `tools/qa/audit.js`). No design changes.
+- **All 24 lessons** rewritten in the section 4 style, each with its video (`docs/video-picks.md`, "Round 2 decisions" table has id, clip, score, notes). The credit line and caption under videos are no longer rendered (the embed shows title and channel); the front matter keeps them for our records.
+- **Lesson page v2** (`templates/lesson.html`): title box with description only; the video; the notes box below it at content width (saves to localStorage); a divider; the glowing Your Challenge box with numbered steps, sub-lists and copy buttons, folding to a green "Challenge done" line; Key Takeaways as a quiet list beneath the challenge; Previous/Next with the soft lock. Playback position auto-saves every 5 s and a "Resume from m:ss" chip seeks back. No manual timestamp button (lead's call). Takeaways also show in the hub's lesson dropdown above saved notes. **Lead must confirm in a real browser:** auto-resume works with a playing video (the sandbox can't play YouTube).
+- **Missions** (module-end pages, now titled "Complete Module N" with sections What We're Going to Do / How We'll Do It / You're Done When): all six rewritten problem-first in the honest voice. The hub and nav still say "Challenge" for these pages in a couple of places; see IMPROVE-LATER.
+- `build.py`: `video_start`/`video_end`/`video_credit` front matter; `## Challenge` section; numbered sub-lists in steps; hub MODULES carry takeaways; mission page labels.
+- **CIRO text:** one line changed (Module 6 intro now names both tracks). Everything else is parked.
+- **QA audit:** 13 functional shell fixes (`docs/research/qa-audit.md`; re-test with `tools/qa/audit.js`).
+- 31 transcripts in `transcripts/` (round 2 and 3); 42 round 1 transcripts on branch `claude/video-research`.
 - `docs/IMPROVE-LATER.md`: the running list of weak material and app facts to verify.
-- Module challenge pages (`content/challenges/mod*.md`) got a find-and-replace only; they still need the section 4 rewrite.
 
 ## 6. In flight when this was written
 
@@ -68,14 +70,13 @@ Listed in `docs/IMPROVE-LATER.md` under "App facts to verify." The ones that gat
 
 ## 9. Next steps, in order
 
-1. Lead reads the rebuilt lessons on the branch preview and marks anything off. Apply his notes; they become the style guide.
-2. Merge the animation redesign when it lands (section 6); lead reviews on the preview.
-3. Rewrite the six module challenge pages in the section 4 style; add the Module 6 two-track wording and the OVERCLOCKED badge to `course.json` and the hub.
-4. Lead answers the app checks; fix any lesson text that depends on them.
-5. Lesson page redesign (handoff step 2 from the first session): notes beside the video, auto-saved playback position, obvious copy buttons, centered distinctive challenge box, "Mission" naming for module-level challenges.
-6. CIRO's words (step 3), when the lead says so.
+1. **Merge the animation redesign when it lands** (section 6): `git merge worktree-agent-a850914aeffdfb039`, resolve any conflict in `templates/lesson.html` or `templates/challenge.html` in favour of the current branch's layout (the agent only changes motion and the CIRO SVG), `python3 build.py`, push, check the preview. If the lead dislikes it, revert the merge commit.
+2. Lead reads the lessons and missions on the preview and marks anything off. Apply his notes.
+3. Lead confirms video auto-resume in a real browser, and answers the app checks in `docs/IMPROVE-LATER.md`; fix any lesson text that depends on them.
+4. Finish the "Mission" wording in the hub and lesson nav; add the OVERCLOCKED badge to `course.json` and the hub.
+5. **Merge PR 5 to `main`** once the lead approves the lesson page (he has said the lessons may go live after that). Then the site at nexusoperator.pages.dev has everything.
+6. CIRO's words (step 3) when the lead says so.
 7. Re-search the weak video slots around 2026-12-01 (list in `docs/IMPROVE-LATER.md`).
-8. Merge PR 5 to `main` only on the lead's say.
 
 ## 10. Do not
 
