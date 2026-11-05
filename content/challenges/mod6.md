@@ -1,32 +1,29 @@
 ---
-scenario_label: The Final Task
+scenario_label: The Mission
 ---
 
 ## Scenario
 
-You've built a system and run it for a week. The final task is to make it something that outlives this course.
-
-A system only you understand is a habit. A system someone else could run is an asset. The difference is a document, and the proof is that another person (or future you, in six months) could pick it up cold.
+You chose a workflow, built Version 1, ran it for a week and wrote Version 2. This mission finishes it: Version 2 running, written up so a stranger could run it, and your next one planned. Two tracks: a system that runs a workflow, or an app you use. Finish one for the OPERATOR badge. Finish both for OVERCLOCKED.
 
 ## Steps
 
-1. **Finish Version 2.** From Lesson 6.3 you have a proposed Version 2 in WORKFLOW.md. Build the one or two changes that matter most. Run it twice.
-2. **Write the operating doc.** In your workspace:
+1. Build Version 2 from your WORKFLOW.md and RUN-LOG.md. Run it on real work twice.
+2. Paste:
 ```
-Write SYSTEM.md: a one-page document that explains this system to someone who has never seen it. What it does, what goes in, what comes out, how it's triggered, which skills and connectors it uses, what to check if something looks wrong, and how to make a change to it. Plain language. No jargon.
+Write SYSTEM.md: how to run this, written for someone who has never seen it. What it needs, what it does, what to check, what to do when it breaks.
 ```
-   Read it as a stranger. Fix what wouldn't make sense.
-3. **Hand it to someone.** Send SYSTEM.md to one person: a teammate, a friend, a family member. Ask them to read it and tell you the first thing they don't understand. Fix that.
-4. **Clean the workspace.** "Tidy the workspace: archive anything from the course that isn't part of a live system, make sure CLAUDE.md, ABOUT-ME.md, the skills and SYSTEM.md are current, and commit." Your workspace is now your real operating environment, not a classroom.
-5. **Write what's next.** In Nexus Academy: "Based on everything in my task list and the system I built, what's the next system worth building, and what's the smallest first version?" Save the answer. That's where you go when this course ends.
+3. Send SYSTEM.md to one person and ask them to run it, or at least read it back to you. Fix every place they got stuck.
+4. Clean nexus-workspace: delete test files, keep originals outside, make sure CLAUDE.md and the Alone / Draft / Mine lines are current.
+5. Paste:
+```
+Read WORKFLOW.md, RUN-LOG.md and My Tasks. What should I build next, and why? Write NEXT.md with input, steps, output, destination, and what Version 1 does.
+```
+6. Second track (optional): if you built a system, now build an app for yourself in the Code tab, or the other way round. Same loop: plan, simplest version, use it, fix it in the smallest step.
 
 ## Deliverable
 
-- A system at Version 2, run on real input, triggered by a schedule or a sentence.
-- A one-page SYSTEM.md that a stranger read and understood.
-- A clean workspace with current instructions, skills and version history.
-- A written plan for the next system.
-
-## Note
-
-When you mark this complete, the machine will give you something. Take it where it tells you to.
+- Version 2 running on real work.
+- SYSTEM.md that a stranger could follow.
+- A clean workspace and NEXT.md.
+- Optional: the second track, for OVERCLOCKED.

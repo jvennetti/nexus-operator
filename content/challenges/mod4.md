@@ -1,32 +1,27 @@
 ---
-scenario_label: The Scenario
+scenario_label: The Mission
 ---
 
 ## Scenario
 
-You have a workspace, an instructions file, something you built, and the safety habits. This challenge is the first time you use Claude Code for a real piece of your work instead of a practice run.
-
-Go back to your task list. At least one item on it involves files: documents that need combining, a folder that needs organizing, a report that gets built from several sources, something that needs to be turned into a page or a spreadsheet. That's your challenge.
-
-## Setup
-
-Copy your task list document and your profile into your `nexus-workspace` folder. Tell Claude Code: "I added my task list and profile. Read them and update ABOUT-ME.md and CLAUDE.md with anything useful."
+Claude Code can read, make and change files on your computer, and your workspace folder now knows who you are. This mission builds one tool for a task of yours that involves files, and writes it down so you could hand it to someone else.
 
 ## Steps
 
-1. **Pick the file-shaped task.** From your task list, choose the one that most involves documents, folders or data. If none do, pick the one closest.
-2. **Set up its working area.** "Create a project folder for [task]. Move the relevant files in. Write a short NOTES.md describing what this task is and what done looks like."
-3. **Plan, then build small.** "Before building, give me a plan for the simplest version of a tool or process that handles this. Then build it." Review the plan. Approve. Use the first version on real input.
-4. **Three rounds, then break it.** Give notes. Then give it input it wasn't built for and say "fix it" when it fails.
-5. **Document it for future you.** "Write a HOW-TO.md in this folder: how to run this next time, what it needs, what it produces, in plain language." Read it as if you'd forgotten everything. Fix what's unclear.
-6. **Commit it.** "Commit all of this with a clear message." Your version history now has a real project in it.
+1. Pick the task from your list that most involves files: a report you compile, a folder you tidy, a spreadsheet you fill in, a set of documents you rename or sort.
+2. In the Code tab, on nexus-workspace, switch to Plan mode and describe it in one sentence. Answer Claude's questions, press Revise until the plan is right, then Accept.
+3. Switch back to Manual and let it build. Run it on real files (copies). Give three rounds of notes.
+4. Paste:
+```
+Write HOW-TO.md: how to run this tool, written for someone who has never seen it. Include what to check afterwards.
+```
+5. Ask for your two-minute review and save the review rule into CLAUDE.md if it isn't there yet.
 
 ## Deliverable
 
-- A project folder in your workspace with a working tool or process for one real task from your task list.
-- It has been run on real input at least once, improved through notes, and survived one thing it wasn't built for.
-- A HOW-TO.md that future you could follow cold.
+- A working tool in nexus-workspace, used on real files once.
+- HOW-TO.md a stranger could follow.
 
 ## Extension
 
-Ask Claude Code: "Look at my task list. Which of the other items could be handled by something built in this workspace? Propose the smallest version of each." Don't build them. Just know they're possible.
+Paste: "Look at My Tasks. Which other task could be handled by something like what we just built?" Note the answer for Module 6.
