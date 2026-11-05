@@ -1,0 +1,251 @@
+[00:00] Welcome back to CertainOps.
+[00:02] In the first video, we established that AI is not fire-and-forget.
+[00:06] In the second video, we picked the right first AI
+[00:09] workflow: useful, repeatable, verifiable, and safe to pilot.
+[00:14] Now we are going to do the step that saves the most trouble later.
+[00:17] We are going to map the workflow before picking the tool.
+[00:21] This sounds simple.
+[00:22] It is also one of the most common places small businesses get pulled off course.
+[00:27] The usual path starts with a tool.
+[00:29] Someone sees a demo.
+[00:31] The demo looks impressive.
+[00:33] The tool promises AI support, automation, integrations,
+[00:37] templates, agents, copilots, or one-click workflows.
+[00:40] The business signs up and then tries to shape
+[00:43] its process around whatever the tool makes easy.
+[00:46] Sometimes that works.
+[00:48] But often it creates a strange result: the business ends up
+[00:51] with an automated version of a workflow nobody clearly defined.
+[00:54] The tool starts driving the process.
+[00:57] CertainOps recommends the opposite order.
+[01:00] First define the workflow.
+[01:01] Then choose the tool.
+[01:03] The workflow map does not need to be fancy.
+[01:05] It does not need special software.
+[01:07] You can use a sheet of paper, a whiteboard, a spreadsheet, or a simple document.
+[01:12] What matters is that the map answers seven questions.
+[01:15] What starts the work?
+[01:16] What information goes in?
+[01:18] What steps happen?
+[01:19] Where does AI actually help?
+[01:21] Where does a human need to review or decide?
+[01:24] What output proves the work is complete?
+[01:26] What happens when something fails?
+[01:28] Let's walk through an example.
+[01:31] Suppose we chose this pilot in the last video:
+[01:33] "For the next four weeks, AI will help with inbound product questions, using the approved FAQ and product pages, producing draft replies, reviewed by
+[01:42] the support lead, and we will know it worked when at least 70 percent of drafts are accepted with minor edits and no replies are sent without approval."
+[01:49] Now we map it.
+[01:51] Step one: name the workflow.
+[01:53] Do not overthink this.
+[01:54] Use a plain name.
+[01:55] "Draft replies for common product questions."
+[01:58] The name should describe what the workflow
+[02:00] does, not the tool you think you might use.
+[02:03] Do not call it "ChatGPT support bot" or "Zapier AI flow" yet.
+[02:07] That locks your thinking too early.
+[02:10] Step two: define the business purpose.
+[02:12] Why does this workflow exist?
+[02:14] In this example:
+[02:16] "Reduce response time for common product questions while
+[02:18] keeping final customer communication under human control."
+[02:22] That purpose tells us something important.
+[02:25] Speed matters, but not at the expense of control.
+[02:27] So any tool we choose later needs to support drafts, review, and approval.
+[02:32] A tool that only wants to auto-send would be a bad fit for this pilot.
+[02:37] Step three: define the trigger.
+[02:39] What starts the workflow?
+[02:41] Maybe it is a new email in the support inbox.
+[02:43] Maybe it is a contact form submission.
+[02:45] Maybe it is a message tagged "product question" in the CRM.
+[02:49] For the first pilot, be specific:
+[02:51] "A new message arrives in the support inbox and
+[02:54] is manually tagged as a common product question."
+[02:57] You might wonder why we are using a manual tag at first.
+[03:00] Because this is a pilot.
+[03:02] The tag keeps the early version controlled.
+[03:05] Later, AI or rules might help classify messages automatically.
+[03:09] But in the first version, a human decides which messages are safe to test.
+[03:13] That is a design choice, not a limitation.
+[03:16] Step four: define the inputs.
+[03:18] What information can the workflow use?
+[03:20] In this example:
+[03:22] - The customer's question.
+[03:23] - The approved FAQ.
+[03:25] - The public product page.
+[03:26] - The shipping policy.
+[03:28] - The return policy summary, if return questions are in scope.
+[03:31] Now define what is not allowed.
+[03:31] - Payment details.
+[03:33] - Private customer history.
+[03:35] - Internal notes.
+[03:36] - Unapproved policy language.
+[03:38] - Anything outside the approved knowledge base.
+[03:41] This is where many AI projects become safer immediately.
+[03:46] You do not just ask, "What can the AI see?"
+[03:49] You also ask, "What should the AI not see?"
+[03:52] Step five: separate ordinary automation from AI.
+[03:56] This is a big one.
+[03:58] Not every automated step needs AI.
+[04:00] Moving a message from one inbox to another might not need AI.
+[04:04] Adding a label might not need AI.
+[04:07] Checking whether a field is blank might not need AI.
+[04:10] Sending a notification might not need AI.
+[04:14] Creating a folder, saving a file, updating a status,
+[04:17] or adding a timestamp usually does not need AI.
+[04:21] AI is most useful where language, ambiguity, summarization,
+[04:26] classification, drafting, or comparison are involved.
+[04:29] For this workflow, ordinary automation might:
+[04:32] - Detect a newly tagged email.
+[04:35] - Copy the message into a draft workspace.
+[04:38] - Attach the approved FAQ content.
+[04:40] - Notify the support lead when a draft is ready.
+[04:44] - Log the final status.
+[04:45] AI might:
+[04:46] - Read the customer question.
+[04:48] - Match it to the relevant approved FAQ section.
+[04:52] - Draft a reply in the approved brand voice.
+[04:55] - Explain which source section it used.
+[04:56] - Flag uncertainty or out-of-scope requests.
+[05:01] Human review might:
+[05:01] - Approve, edit, or reject the draft.
+[05:05] - Decide whether the issue needs escalation.
+[05:08] - Send the final customer reply.
+[05:10] Now the workflow is clearer.
+[05:12] We are not asking AI to do everything.
+[05:14] We are using ordinary automation for movement and
+[05:17] tracking, AI for language work, and a human for judgment.
+[05:21] Step six: define the output.
+[05:24] What should exist when the workflow is done?
+[05:27] For our example:
+[05:28] - A draft reply.
+[05:29] - A source note showing which FAQ or product page informed the reply.
+[05:33] - A status: approved, edited, rejected, or escalated.
+[05:38] - A final sent reply only after human approval.
+[05:42] - A log entry for the pilot metrics.
+[05:44] Notice that the output is not just the customer message.
+[05:47] The output includes evidence.
+[05:49] Evidence is what makes the workflow manageable.
+[05:52] Step seven: define the success check.
+[05:55] How will we know this worked?
+[05:56] Use a real check, not a feeling.
+[05:59] For this pilot:
+[06:00] - Count how many drafts were created.
+[06:02] - Count how many were approved with minor edits.
+[06:05] - Count how many needed major edits.
+[06:07] - Count how many were rejected.
+[06:08] - Count how many were escalated.
+[06:10] - Confirm no reply was sent without approval.
+[06:13] - Review one sample each week for tone and source accuracy.
+[06:17] The success check should be designed before the workflow goes live.
+[06:20] If you add it afterward, you may discover the tool did not capture what you needed.
+[06:25] Step eight: define failure signals.
+[06:28] What would tell us the workflow is unhealthy?
+[06:31] Examples:
+[06:32] - The AI answers from information outside the approved sources.
+[06:35] - The draft sounds confident when the source does not support it.
+[06:39] - Staff spend more time fixing drafts than writing replies themselves.
+[06:43] - Escalations are not clearly marked.
+[06:46] - Drafts sit unreviewed for too long.
+[06:48] - A reply is sent without approval.
+[06:50] - Customers are confused by inconsistent tone.
+[06:54] Failure signals are not pessimism.
+[06:56] They are instrumentation.
+[06:58] Step nine: define recovery.
+[07:00] What happens when the workflow fails?
+[07:03] For our example:
+[07:04] - Pause AI-drafted replies if an unapproved reply is sent.
+[07:08] - Review the last ten drafts for similar issues.
+[07:11] - Update the approved FAQ if the source content was unclear.
+[07:15] - Tighten the prompt or workflow rule.
+[07:18] - Re-enable only after a human test case passes.
+[07:21] That is a simple recovery path.
+[07:23] It is enough for a small pilot.
+[07:25] The key is that it exists before the failure happens.
+[07:28] Step ten: assign ownership.
+[07:31] Every workflow needs an owner.
+[07:33] Not a vague owner.
+[07:34] A named role or person.
+[07:36] The owner checks the weekly metrics, approves changes, maintains source
+[07:41] material, and decides whether to continue, expand, pause, or retire the workflow.
+[07:47] If nobody owns the workflow, the workflow is not operational.
+[07:51] It is just installed.
+[07:52] Now let's zoom out.
+[07:54] The workflow map we just created has ten parts:
+[07:57] Name.
+[07:58] Purpose.
+[07:59] Trigger.
+[07:59] Inputs.
+[08:00] Ordinary automation steps.
+[08:02] AI-assisted steps.
+[08:04] Human review steps.
+[08:05] Outputs.
+[08:06] Success checks.
+[08:07] Failure and recovery path.
+[08:09] Owner.
+[08:10] That is more than ten because ownership is not optional.
+[08:13] It deserves to be visible even if it makes the list a little longer.
+[08:17] With that map in hand, tool selection becomes much easier.
+[08:21] You can now ask useful tool questions.
+[08:24] Can this tool keep drafts separate from sent messages?
+[08:26] Can it use only approved sources?
+[08:29] Can it show why the AI wrote what it wrote?
+[08:31] Can it stop for review?
+[08:33] Can it log approvals and edits?
+[08:35] Can it export or report pilot metrics?
+[08:38] Can we remove access later?
+[08:39] Can another person understand the setup?
+[08:42] Can we test it before real customers see it?
+[08:44] Those questions are better than asking, "Does this tool have AI?"
+[08:49] Almost everything has AI now.
+[08:51] That is not the useful distinction.
+[08:53] The useful distinction is whether the tool
+[08:55] supports the operating shape your business needs.
+[08:58] Here is your practical exercise.
+[09:01] Take the workflow sentence from video two and turn it into a one-page map.
+[09:05] Use these headings:
+[09:07] Workflow name.
+[09:08] Purpose.
+[09:08] Trigger.
+[09:09] Inputs allowed.
+[09:10] Inputs not allowed.
+[09:12] Automation steps.
+[09:13] AI steps.
+[09:14] Human review.
+[09:15] Outputs.
+[09:16] Success check.
+[09:17] Failure signals.
+[09:18] Recovery action.
+[09:19] Owner.
+[09:20] Review cadence.
+[09:21] Fill it out before you pick a platform.
+[09:23] If you already picked a platform, do the map anyway.
+[09:27] Then compare the tool to the workflow.
+[09:28] If the tool does not support the workflow safely, adjust
+[09:32] the tool, adjust the scope, or choose a better fit.
+[09:35] Do not let the demo define your operations.
+[09:38] Define the operation first.
+[09:40] Then choose the technology that helps you run it with evidence.
+[09:43] That is how AI becomes part of a business instead of another loose experiment.
+[09:48] Notice what the map already gave you.
+[09:50] Hold it against the Reliability Six, the six
+[09:53] questions we close every CertainOps video with.
+[09:56] Trigger integrity: the trigger is written
+[09:58] down, so you can tell when it stops firing.
+[10:01] Input and data controls: the allowed and forbidden inputs are on the page.
+[10:06] Execution resilience: the automation, AI, and human steps are
+[10:10] separate, so one failing step does not take the others with it.
+[10:14] Output verification: the output includes
+[10:16] evidence, and the success check was designed first.
+[10:20] Recovery and continuity: the failure signals and
+[10:23] the recovery action exist before the first failure.
+[10:26] Ownership and change control: the workflow has a named owner and a review cadence.
+[10:31] A one-page map that answers all six is a
+[10:33] workflow you can run, hand off, and improve.
+[10:36] If this was useful, subscribe to the CertainOps
+[10:39] YouTube channel for practical AI operations guidance.
+[10:43] The free workflow map and key-points guide
+[10:45] for this video are linked in the channel bio.
+[10:49] Do not guess.
+[10:50] Do not assume.
+[10:51] Be certain.
