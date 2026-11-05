@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="nexus-transition.js" defer blocking="render"></script>
+<script src="ciro.js"></script>
 <title>NEXUS Academy — Operator Hub</title>
 <meta property="og:title" content="NEXUS Academy">
 <meta property="og:description" content="A public AI training system. Six modules. One machine.">
@@ -244,7 +245,6 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 #hub-scan-bar{position:fixed;top:64px;left:0;right:0;height:2px;z-index:200;pointer-events:none;overflow:hidden;opacity:0;transition:opacity 0.25s}
 #hub-scan-bar::after{content:'';position:absolute;top:0;left:-60%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(0,200,255,0.95),rgba(0,200,255,0.5),transparent);animation:hub-scan-sweep 1.1s ease-in-out forwards}
 #hub-scan-bar.active{opacity:1}
-#ciro-head{transform-box:fill-box;transform-origin:50% 100%;transition:transform 0.9s cubic-bezier(0.25,0.46,0.45,0.94)}
 .reset-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;display:none;align-items:center;justify-content:center;padding:24px}
 .reset-modal-overlay.visible{display:flex}
 .reset-modal{background:var(--panel);border:1px solid rgba(0,200,255,0.18);border-radius:10px;padding:36px 32px;max-width:400px;width:100%;text-align:center}
@@ -280,31 +280,7 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 
   <div class="ciro-widget">
     <div class="ciro-figure">
-      <svg width="86" height="178" viewBox="0 0 86 178">
-        <g id="ciro-head">
-        <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5"/>
-        <circle cx="43" cy="2" r="2.5" fill="#00c8ff"/>
-        <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2"/>
-        <rect x="16" y="20" width="54" height="38" rx="2" fill="#050f1c"/>
-        <line x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.5" opacity="0.55"/>
-        <line x1="18" y1="35" x2="60" y2="35" stroke="#00c8ff" stroke-width="0.5" opacity="0.35"/>
-        <line x1="18" y1="42" x2="66" y2="42" stroke="#00c8ff" stroke-width="0.5" opacity="0.25"/>
-        <line x1="18" y1="49" x2="52" y2="49" stroke="#00c8ff" stroke-width="0.5" opacity="0.18"/>
-        <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        </g>
-        <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
-        <rect x="15" y="82" width="56" height="32" rx="2" fill="#050f1c" stroke="#1e3a5a" stroke-width="1"/>
-        <circle cx="31" cy="96" r="4" fill="#00c8ff" class="da"/>
-        <circle cx="43" cy="96" r="4" fill="#00c8ff" class="db"/>
-        <circle cx="55" cy="96" r="4" fill="#00c8ff" class="dc"/>
-        <rect x="22" y="106" width="42" height="4" rx="2" fill="#1e3a5a"/>
-        <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-      </svg>
+      <div id="ciro-mount"></div>
       <div class="ciro-ver">CIRO v0.7</div>
     </div>
     <div class="ciro-msg">
@@ -1524,8 +1500,9 @@ if(!localStorage.getItem('nexus_machine_activated')){
 }
 // ── CIRO IDLE ──
 (function(){
-  const head = document.getElementById('ciro-head');
-  if(!head) return;
+  const mountEl = document.getElementById('ciro-mount');
+  if(!mountEl || !window.NXCiro) return;
+  const ciroBot = NXCiro.mount(mountEl, {width:86, replace:true});
   const LINES = [
     ['All signals nominal. Standing by.',
      'Operator status: on-site. Systems holding.',
@@ -1538,7 +1515,7 @@ if(!localStorage.getItem('nexus_machine_activated')){
      `Signal's still open. Ready when you are.`],
   ];
   const HOLDS = [2500, 4000, 3000];
-  function tilt(dir){ head.style.transform = dir==='l'?'rotate(-8deg)':dir==='r'?'rotate(8deg)':''; }
+  function tilt(dir){ ciroBot.tilt(dir==='l'?-8:dir==='r'?8:0, 700); }
   let busy = false;
   function nudge(){ if(busy) return; const d=Math.random()<0.5?'l':'r'; tilt(d); setTimeout(()=>tilt(''), 1500+Math.random()*900); }
   function loop(){ setTimeout(function(){ nudge(); loop(); }, 28000+Math.random()*32000); }

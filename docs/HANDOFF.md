@@ -2,7 +2,7 @@
 
 Read this first in any new session. Joshua Vennetti is the lead. Claude (Fable) runs the project session and makes decisions after research; Opus agents do research, reading, QA and bulk work and report back. The lead sees everything before it merges.
 
-Last updated: 2026-11-05, start of the third session (the animation agent from session 2 stopped partway; see section 6). Companion docs: `docs/video-picks.md` (every video decision), `docs/IMPROVE-LATER.md` (running list of known weak spots), `docs/research/` (all search, reader, QA and animation reports).
+Last updated: 2026-11-05, third session (lessons, missions and the new CIRO merged to main and live). Companion docs: `docs/video-picks.md` (every video decision), `docs/IMPROVE-LATER.md` (running list of known weak spots), `docs/research/` (all search, reader, QA and animation reports).
 
 ---
 
@@ -53,15 +53,9 @@ Repos: `jvennetti/nexus-academy` (original, read-only time capsule, never modify
 - 31 transcripts in `transcripts/` (round 2 and 3); 42 round 1 transcripts on branch `claude/video-research`.
 - `docs/IMPROVE-LATER.md`: the running list of weak material and app facts to verify.
 
-## 6. Animation redesign: stopped partway
+## 6. Animation redesign: shipped
 
-The Opus animation agent (worktree branch `worktree-agent-a850914aeffdfb039`) stopped before finishing. It never committed, never wired anything into a page and never wrote `docs/research/animation-redesign.md`. What survived was saved on 2026-11-05 at the start of session 3:
-
-- `docs/research/animation-wip/ciro.js`: the new CIRO engine (537 lines). Grouped SVG parts with pivots, spring physics, tread roll, gestures, idle breathing, `prefers-reduced-motion`. API: `NXCiro.mount(container, {width, off})` then `.face()`, `.chest()`, `.joy()`, `.place()`. Its header comment documents the structure.
-- `docs/research/animation-wip/ciro-test.html`: a small test page that mounts five CIROs.
-- `tools/qa/frames.js`: Playwright script that captures frame sequences of every animated page.
-
-The original brief still stands: redraw CIRO cleanly, real animation principles, CIRO driving on its tread, applied to every animated page, reduced motion respected, QA audit at or under 7 findings, report at `docs/research/animation-redesign.md` with frames under `docs/research/animation/`. To resume, move `ciro.js` to the repo root, load it from the templates and the shell pages in place of the inline SVGs, rebuild, run the frames script, and write the report.
+The new CIRO lives in `ciro.js` at the repo root (one drawing, on a tread, with spring physics, easing, anticipation, follow-through, idle breathing and blinks; `prefers-reduced-motion` turns rolls into fades). Every page that shows CIRO loads it and calls `NXCiro.mount()`: the module and pre-course intros (roll in, head tilt, wave), the completion pages (happy eyes, hop, nod), the hub (idle with head tilts), the opening intro (power-on, face text, colour states, shiver on error, chest bar, hop), machine activation, 404 and the vault. Its header comment documents the parts and the API. `tools/qa/ciro-test.html` mounts five CIROs for a quick look; `tools/qa/frames.js` captures frame sequences. The lead asked for it to go live without a full read-through on 2026-11-05. Still to do: write `docs/research/animation-redesign.md` with frames if the motion needs a review.
 
 ## 7. Things only the lead can check in the app
 
@@ -76,11 +70,9 @@ Listed in `docs/IMPROVE-LATER.md` under "App facts to verify." The ones that gat
 
 ## 9. Next steps, in order
 
-1. **Finish the animation redesign** from the saved work (section 6), on the working branch. Check the branch preview, and if the lead dislikes it, revert those commits.
 2. Lead reads the lessons and missions on the preview and marks anything off. Apply his notes.
 3. Lead confirms video auto-resume in a real browser, and answers the app checks in `docs/IMPROVE-LATER.md`; fix any lesson text that depends on them.
 4. Finish the "Mission" wording in the hub and lesson nav; add the OVERCLOCKED badge to `course.json` and the hub.
-5. **Merge PR 5 to `main`** once the lead approves the lesson page (he has said the lessons may go live after that). Then the site at nexusoperator.pages.dev has everything.
 6. CIRO's words (step 3) when the lead says so.
 7. Re-search the weak video slots around 2026-12-01 (list in `docs/IMPROVE-LATER.md`).
 

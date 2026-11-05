@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="nexus-transition.js" defer blocking="render"></script>
+<script src="ciro.js"></script>
 <title>NEXUS Academy — Initializing CIRO</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="preload" as="audio" href="audio/music/hub-theme.mp3">
@@ -531,41 +532,7 @@ html,body{
     <div class="ciro-shadow" id="ciro-shadow"></div>
 
     <div class="ciro-figure dead" id="ciro-figure">
-      <svg id="ciro-svg" width="340" height="700" viewBox="0 0 86 178">
-        <line x1="43" y1="3" x2="43" y2="14" stroke="#00c8ff" stroke-width="1.5" id="antenna-line"/>
-        <circle cx="43" cy="2" r="2.5" fill="#00c8ff" id="antenna-tip"/>
-
-        <g id="ciro-head" style="transform-origin:43px 39px">
-          <rect x="10" y="14" width="66" height="50" rx="4" fill="#0d1a2e" stroke="#00c8ff" stroke-width="1.2" id="head-rect"/>
-          <rect id="ciro-screen" x="16" y="19" width="54" height="40" rx="2" fill="#020810"/>
-
-          <text id="face-line-1" x="43" y="31" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="5.5" fill="#00c8ff" opacity="0">...</text>
-          <text id="face-line-2" x="43" y="40" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="5" fill="#00c8ff" opacity="0"></text>
-          <text id="face-line-3" x="43" y="49" text-anchor="middle" font-family="'IBM Plex Mono',monospace" font-size="4.5" fill="#00c8ff" opacity="0"></text>
-
-          <line class="scan-line" x1="18" y1="28" x2="70" y2="28" stroke="#00c8ff" stroke-width="0.4" opacity="0" id="sl1"/>
-          <line class="scan-line" x1="18" y1="35" x2="58" y2="35" stroke="#00c8ff" stroke-width="0.4" opacity="0" id="sl2"/>
-          <line class="scan-line" x1="18" y1="42" x2="64" y2="42" stroke="#00c8ff" stroke-width="0.4" opacity="0" id="sl3"/>
-          <line class="scan-line" x1="18" y1="50" x2="50" y2="50" stroke="#00c8ff" stroke-width="0.4" opacity="0" id="sl4"/>
-        </g>
-
-        <rect x="31" y="64" width="24" height="7" rx="2" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-
-        <rect x="4" y="71" width="78" height="74" rx="5" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1.2"/>
-        <rect x="15" y="82" width="56" height="32" rx="2" fill="#020810" stroke="#1e3a5a" stroke-width="1"/>
-        <circle id="dot-a" cx="31" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-        <circle id="dot-b" cx="43" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-        <circle id="dot-c" cx="55" cy="96" r="4" fill="#00c8ff" opacity="0"/>
-        <rect x="22" y="106" width="42" height="4" rx="2" fill="#0a1525"/>
-        <rect id="chest-bar-fill" x="22" y="106" width="0" height="4" rx="2" fill="#00c8ff" opacity="0.6"/>
-        <rect x="0" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="84" y="75" width="2" height="44" rx="1" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-
-        <rect x="16" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="48" y="145" width="22" height="26" rx="3" fill="#0d1a2e" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="13" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-        <rect x="45" y="165" width="28" height="6" rx="3" fill="#0a1525" stroke="#1e3a5a" stroke-width="1"/>
-      </svg>
+      
     </div>
 
     <div class="floor-grid"></div>
@@ -635,14 +602,6 @@ html,body{
 
 <script>
 const figure      = document.getElementById('ciro-figure');
-const dotA        = document.getElementById('dot-a');
-const dotB        = document.getElementById('dot-b');
-const dotC        = document.getElementById('dot-c');
-const screen      = document.getElementById('ciro-screen');
-const faceLine1   = document.getElementById('face-line-1');
-const faceLine2   = document.getElementById('face-line-2');
-const faceLine3   = document.getElementById('face-line-3');
-const chestFill   = document.getElementById('chest-bar-fill');
 const pageTint    = document.getElementById('page-tint');
 const ambient     = document.getElementById('ciro-ambient');
 const txLines     = document.getElementById('tx-lines');
@@ -665,9 +624,8 @@ const cTL         = document.getElementById('c-tl');
 const cTR         = document.getElementById('c-tr');
 const cBL         = document.getElementById('c-bl');
 const cBR         = document.getElementById('c-br');
-const headRect    = document.getElementById('head-rect');
-const headGroup   = document.getElementById('ciro-head');
 
+const ciro = NXCiro.mount(figure, {width:340, height:700, id:'ciro-svg', off:true, dots:'solid'});
 let bootStarted   = false;
 let bg            = null;
 
@@ -675,25 +633,9 @@ function wait(ms){ return new Promise(r => setTimeout(r, ms)); }
 function playS(src,vol=0.4){const a=new Audio(src);a.volume=vol*(window.nxVol||1);a.play().catch(()=>{});return a;}
 function pickPower(){return `audio/sfx/power-on-${Math.ceil(Math.random()*3)}.mp3`;}
 
-function setDotColor(color){
-  [dotA, dotB, dotC].forEach(d => {
-    d.setAttribute('fill', color);
-    d.setAttribute('opacity','1');
-  });
-  const screenMap = {
-    '#ffffff':'#1a2a3a',
-    '#ffcc00':'#120e00',
-    '#ff3333':'#130000',
-    '#00c8ff':'#020d14',
-  };
-  screen.setAttribute('fill', screenMap[color] || '#020810');
-}
+function setDotColor(color){ ciro.color(color); }
 
-function addDotAnimation(){
-  dotA.classList.add('da');
-  dotB.classList.add('db');
-  dotC.classList.add('dc');
-}
+function addDotAnimation(){ ciro.dots('blink'); }
 
 function setAmbient(color, opacity = 0.08){
   ambient.style.background = `radial-gradient(circle, rgba(${hexToRgb(color)},${opacity}) 0%, transparent 65%)`;
@@ -720,26 +662,10 @@ async function flashTint(color, opacity, holdMs, fadeMs = 800){
   await wait(fadeMs);
 }
 
-function setFaceText(l1, l2='', l3='', color='#00c8ff'){
-  [faceLine1, faceLine2, faceLine3].forEach(el => {
-    el.setAttribute('opacity','1');
-    el.setAttribute('fill', color);
-  });
-  faceLine1.textContent = l1;
-  faceLine2.textContent = l2;
-  faceLine3.textContent = l3;
-}
-function clearFaceText(){
-  faceLine1.textContent = '';
-  faceLine2.textContent = '';
-  faceLine3.textContent = '';
-}
+function setFaceText(l1, l2='', l3='', color='#00c8ff'){ ciro.face(l1, l2, l3, color); }
+function clearFaceText(){ ciro.face(null); }
 
-async function headTurn(deg, ms){
-  headGroup.style.transition = `transform ${ms}ms cubic-bezier(0.34,1.56,0.64,1)`;
-  headGroup.style.transform  = `rotate(${deg}deg)`;
-  await wait(ms + 20);
-}
+async function headTurn(deg, ms){ await ciro.tilt(deg, ms + 200); }
 
 function setStatus(text, mode='dead'){
   txStatus.textContent = text;
@@ -896,6 +822,7 @@ async function bootCiro(){
   setDotColor('#ffffff');
   figure.classList.remove('dead');
   figure.classList.add('alive');
+  ciro.power(true);
   setAmbient('#ffffff', 0.04);
   setFaceText('INIT...','LOADING','SYS CHECK','#aaccdd');
   await wait(300);
@@ -989,6 +916,7 @@ async function runDialogue(){
   setFaceText('OVERRIDE','DETECT','!!!','#ff3333');
   updateHUD('ALERT','DARK');
   playS('audio/sfx/robot-error-x3.wav', 0.1);
+  ciro.shiver(500, 1.6);
   setTimeout(()=>playS('audio/sfx/robot-error-x3.wav', 0.1), 1200);
   setTimeout(()=>playS('audio/sfx/robot-error-x3.wav', 0.1), 2400);
 
@@ -1093,13 +1021,8 @@ async function launchNexus(){
   await wait(200);
   pageTintColor('clear', 0, 800);
 
-  chestFill.setAttribute('opacity','0.7');
-  let w = 0;
-  const barInterval = setInterval(()=>{
-    w += 1.2;
-    if(w >= 42){ clearInterval(barInterval); }
-    chestFill.setAttribute('width', w.toFixed(1));
-  },20);
+  ciro.chest(1, 900);
+  ciro.hop();
 
   addDotAnimation();
 
