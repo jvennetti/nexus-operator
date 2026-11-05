@@ -3,15 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXUS Academy — Lesson 2.1 (Option C)</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<!-- OPTION C: "Three screens". Brief, Task, Done. Only one is on screen at a time. -->
+<title>NEXUS Academy — Lesson 2.1</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Lexend:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<!-- Three screens (Learn, Do, Done) built only from the nexus-open lesson parts:
+     title box, video + timestamp, notes, Key Takeaways, prev/next cards. -->
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#08101f;--card:#0d1628;--box:#16213a;
+  --bg:#08101f;--card:#0d1628;--card2:#111d30;--box:#16213a;
   --blue:#00c8ff;--blue-dim:rgba(0,200,255,0.07);--blue-border:rgba(0,200,255,0.22);
-  --border:#1a2d45;--white:#fff;--body-text:#cce2f2;--muted:#5a8aaa;--amber:#ffaa00;--green:#3ddc97;
+  --border:#1a2d45;--white:#fff;--body-text:#cce2f2;--muted:#5a8aaa;--green:#3ddc97;
 }
 html{background:var(--bg);color:var(--white);font-size:16px;line-height:1.7}
 body{background:var(--bg);min-height:100vh;font-family:'Lexend',sans-serif}
@@ -21,73 +22,70 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 .nav-lesson-id{font-size:13px;font-weight:300;letter-spacing:3px;color:var(--muted);text-transform:uppercase}
 .nav-back{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 18px;border-radius:3px}
 .nav-back:hover{color:var(--blue);border-color:var(--blue-border)}
-.col{max-width:680px;margin:0 auto;padding:44px 24px 90px}
 
-/* stepper */
-.stepper{display:flex;align-items:center;gap:12px;margin-bottom:44px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase}
-.stepper button{background:none;border:none;color:var(--muted);font:inherit;letter-spacing:inherit;cursor:pointer;display:flex;align-items:center;gap:8px;padding:0}
-.stepper button i{font-style:normal;width:22px;height:22px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:0}
-.stepper button.on{color:var(--blue)}
-.stepper button.on i{border-color:var(--blue);background:var(--blue-dim)}
-.stepper button.ok i{border-color:var(--green);color:var(--green)}
-.stepper button:disabled{cursor:default;opacity:.5}
-.stepper .line{flex:1;height:1px;background:var(--border)}
+/* three-segment progress line, no labels */
+.progress{display:flex;gap:6px;max-width:760px;margin:0 auto;padding:28px 0 0}
+.progress i{flex:1;height:3px;border-radius:2px;background:var(--border);transition:background .3s}
+.progress i.on{background:var(--blue)}
 
-.screen{display:none;animation:fade .35s ease}
+.content-col{max-width:760px;margin:0 auto;padding:32px 0 100px}
+.screen{display:none;animation:fade .3s ease}
 .screen.on{display:block}
-@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-h1{font-family:'Orbitron',sans-serif;font-size:28px;font-weight:700;letter-spacing:1.5px;line-height:1.35;margin-bottom:24px}
-h2{font-family:'Orbitron',sans-serif;font-size:20px;font-weight:700;letter-spacing:1.5px;line-height:1.4;margin-bottom:8px}
-.lead{font-size:17px;font-weight:300;line-height:1.8;color:var(--body-text);margin-bottom:28px}
-.lead strong{color:var(--white);font-weight:500}
-.sub{font-size:14px;font-weight:300;color:var(--muted);margin-bottom:28px}
-.parts{list-style:none;border-top:1px solid var(--border);margin-bottom:28px}
-.parts li{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);font-size:15px;font-weight:300;color:var(--body-text)}
-.parts b{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);padding-top:2px}
-.test{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:18px 22px;font-size:15px;font-weight:300;color:var(--body-text);margin-bottom:36px}
-.test strong{color:var(--white);font-weight:500}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.section{margin-bottom:28px}
 
-.btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:16px 30px;cursor:pointer;text-decoration:none;transition:opacity .2s,transform .15s}
-.btn:hover{opacity:.9;transform:translateY(-1px)}
-.btn.green{background:var(--green)}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.ghost{font-size:12px;font-weight:300;letter-spacing:1px;color:var(--muted);text-decoration:none;background:none;border:none;cursor:pointer;font-family:inherit}
-.ghost:hover{color:var(--blue)}
+/* nexus-open boxes */
+.box{background:var(--box);border:1px solid var(--border);border-radius:8px;padding:40px 44px}
+.box.task{background:var(--card);border-color:var(--blue-border)}
+h1,.box-title{font-family:'Orbitron',sans-serif;font-weight:700;color:var(--white);text-align:center}
+h1{font-size:24px;letter-spacing:1.5px;line-height:1.4;margin-bottom:24px}
+.box-title{font-size:18px;letter-spacing:3px;text-transform:uppercase;margin-bottom:24px}
+.copy{font-size:17px;font-weight:300;line-height:1.85;color:var(--body-text)}
+.copy p+p{margin-top:16px}
+.copy strong{color:var(--white);font-weight:500}
 
-/* task */
-.task-time{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
-ol.steps{list-style:none;counter-reset:s;margin:8px 0 30px}
-ol.steps li{counter-increment:s;position:relative;padding:20px 0 20px 52px;border-bottom:1px solid var(--border);font-size:15px;font-weight:300;line-height:1.75;color:var(--body-text)}
-ol.steps li:first-child{border-top:1px solid var(--border)}
-ol.steps li::before{content:counter(s);position:absolute;left:0;top:20px;width:32px;height:32px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--blue)}
-ol.steps strong{color:var(--white);font-weight:500;display:block}
-.prompt-block{position:relative;background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:14px 18px;margin:10px 0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:#a8c8e0}
-.prompt-block pre{white-space:pre-wrap;font:inherit;padding-right:70px}
-.copy-btn{position:absolute;top:9px;right:9px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:5px 10px;cursor:pointer}
-.copy-btn.copied{color:var(--green);border-color:rgba(61,220,151,.4)}
+/* task steps: plain numbered list */
+ol.steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:20px}
+ol.steps li{counter-increment:s;display:flex;gap:16px;font-size:17px;font-weight:300;line-height:1.75;color:var(--body-text)}
+ol.steps li::before{content:counter(s);flex-shrink:0;width:30px;height:30px;border-radius:50%;border:1px solid var(--blue-border);background:var(--blue-dim);color:var(--blue);font-size:14px;display:flex;align-items:center;justify-content:center;margin-top:1px}
+ol.steps li>div{flex:1;min-width:0}
+.prompt{position:relative;background:#060e1a;border:1px solid var(--border);border-radius:6px;padding:14px 80px 14px 18px;margin-top:10px;font-family:'IBM Plex Mono',monospace;font-size:14px;color:#a8c8e0}
+.copy-btn{position:absolute;top:50%;right:10px;transform:translateY(-50%);font-family:'Lexend',sans-serif;font-size:12px;color:var(--muted);background:var(--card);border:1px solid var(--border);border-radius:3px;padding:4px 12px;cursor:pointer}
+.copy-btn:hover{color:var(--blue);border-color:var(--blue-border)}
+.copy-btn.copied{color:var(--green)}
 
-/* done */
-.badge{width:64px;height:64px;border-radius:50%;border:1px solid rgba(61,220,151,.5);background:rgba(61,220,151,.08);display:flex;align-items:center;justify-content:center;color:var(--green);font-size:26px;margin-bottom:22px}
-.ok{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
-label.q{display:block;font-size:15px;font-weight:400;color:var(--white);margin:26px 0 10px}
-textarea{display:block;width:100%;min-height:96px;background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:8px;padding:16px 18px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.7;resize:none;outline:none;caret-color:var(--blue);margin-bottom:30px}
-textarea:focus{border-color:var(--blue-border)}
-textarea::placeholder{color:rgba(90,138,170,.45);font-style:italic}
-.hint{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-top:14px;opacity:0;transition:opacity .2s}
-.hint.show{opacity:1}
+/* buttons */
+.btn{display:block;width:100%;text-align:center;font-family:'Lexend',sans-serif;font-size:16px;font-weight:500;color:var(--bg);background:var(--blue);border:none;border-radius:6px;padding:17px 24px;cursor:pointer;text-decoration:none;transition:opacity .2s}
+.btn:hover{opacity:.9}
+.back{display:block;margin:16px auto 0;background:none;border:none;font-family:'Lexend',sans-serif;font-size:14px;font-weight:300;color:var(--muted);cursor:pointer}
+.back:hover{color:var(--blue)}
+
+/* done screen: notes, takeaways, nav (as nexus-open) */
+.logged{text-align:center;font-size:15px;color:var(--green);margin-bottom:20px}
+textarea.notes-field{display:block;width:100%;min-height:130px;background:rgba(255,255,255,0.028);border:1px solid var(--border);border-radius:8px;padding:20px 24px;color:var(--body-text);font-family:'Lexend',sans-serif;font-size:15px;font-weight:300;line-height:1.75;resize:none;overflow:hidden;outline:none;caret-color:var(--blue)}
+textarea.notes-field::placeholder{color:rgba(90,138,170,0.5);font-style:italic}
+textarea.notes-field:focus{border-color:rgba(0,200,255,0.2)}
+.takeaway{display:flex;gap:14px;padding:7px 0;font-size:16px;font-weight:300;line-height:1.65;color:var(--body-text)}
+.takeaway::before{content:'';flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--white);opacity:.85;margin-top:9px}
+.lesson-nav{display:flex;gap:16px}
+.nav-btn{flex:1;padding:18px 24px;background:var(--card);border:1px solid var(--border);border-radius:6px;text-decoration:none;display:flex;flex-direction:column;gap:4px}
+.nav-btn:hover{border-color:var(--blue-border);background:var(--blue-dim)}
+.nav-btn.next{align-items:flex-end;text-align:right;border-color:var(--blue-border)}
+.nav-dir{font-size:12px;font-weight:300;color:var(--muted)}
+.nav-name{font-size:15px;font-weight:500;color:var(--white);line-height:1.4}
 
 @media(max-width:768px){
-  .btn{font-size:11px;letter-spacing:1.5px;padding:15px 18px;text-align:center}
   nav{padding:0 16px;height:56px}.nav-lesson-id{display:none}.wordmark{font-size:15px;letter-spacing:2px}.nav-back{font-size:10px;padding:7px 12px;letter-spacing:1px}
-  .col{padding:22px 16px 70px}
-  .stepper{margin-bottom:30px;letter-spacing:1.5px;gap:8px}
-  h1{font-size:21px}h2{font-size:18px}
-  .lead{font-size:15px}
-  .parts li{grid-template-columns:1fr;gap:2px;font-size:14px}
-  ol.steps li{padding-left:42px;font-size:14px}
-  ol.steps li::before{width:28px;height:28px;font-size:11px}
-  .prompt-block pre{padding-right:0;padding-top:24px}
-  .row{flex-direction:column-reverse;align-items:stretch}.btn{justify-content:center}.ghost{text-align:center}
+  .progress{padding:18px 16px 0}
+  .content-col{padding:22px 16px 70px}
+  .box{padding:26px 20px}
+  h1{font-size:19px;letter-spacing:.5px}
+  .box-title{font-size:15px;letter-spacing:2px}
+  .copy,ol.steps li{font-size:16px}
+  ol.steps li{gap:12px}
+  .prompt{padding:12px 14px 46px;font-size:13px}
+  .copy-btn{top:auto;bottom:10px;transform:none}
+  .lesson-nav{flex-direction:column-reverse}
 }
 </style>
 </head>
@@ -97,88 +95,86 @@ textarea::placeholder{color:rgba(90,138,170,.45);font-style:italic}
   <div class="nav-lesson-id">Lesson 2.1</div>
   <a href="../../../hub.html" class="nav-back">← Hub</a>
 </nav>
-<main class="col">
-  <div class="stepper">
-    <button data-go="0"><i>1</i>Brief</button><span class="line"></span>
-    <button data-go="1"><i>2</i>Task</button><span class="line"></span>
-    <button data-go="2"><i>3</i>Done</button>
-  </div>
+<div class="progress"><i></i><i></i><i></i></div>
+<main class="content-col">
 
+  <!-- 1. LEARN -->
   <section class="screen" id="s0">
-    <h1>Anatomy of a Good Prompt</h1>
-    <p class="lead">A prompt is a brief. Four parts move the quality of an answer more than anything else. When output is bad, <strong>one of these is missing.</strong></p>
-    <ul class="parts">
-      <li><b>Goal</b><span>The outcome you want, not the topic. "Get them to confirm the date."</span></li>
-      <li><b>Context</b><span>What Claude can't know: who it's for, what happened, the constraints.</span></li>
-      <li><b>Format</b><span>The shape: two paragraphs, a table, five bullets, subject plus body.</span></li>
-      <li><b>Example</b><span>What "good" looks like. One example beats paragraphs of description.</span></li>
-    </ul>
-    <div class="test">Before you send: <strong>could a smart stranger act on this?</strong> If not, Claude can't either.</div>
-    <div class="row">
-      <a class="ghost" href="../../../module-2/intro.html">← Module 2 Intro</a>
-      <button class="btn" data-go="1">Start the task →</button>
+    <div class="box section">
+      <h1>Anatomy of a Good Prompt</h1>
+      <div class="copy">
+        <p>A prompt is a brief. Most people write it like a text to a friend, then wonder why the answer is generic.</p>
+        <p>A good prompt has four parts: the <strong>goal</strong>, the <strong>context</strong> Claude can't know, the <strong>format</strong> you want, and an <strong>example</strong> of good.</p>
+      </div>
     </div>
+    <!-- a lesson with a video adds the timestamp bar + video here -->
+    <button class="btn" data-go="1">Start the task</button>
   </section>
 
+  <!-- 2. DO -->
   <section class="screen" id="s1">
-    <div class="row" style="margin-bottom:6px"><h2 style="margin:0">Do This Now</h2><span class="task-time">15 min</span></div>
-    <p class="sub">Run a bad prompt, then a good one, and feel the difference.</p>
-    <ol class="steps">
-      <li><strong>Run the bad prompt.</strong> New chat, paste this exactly, read what comes back.
-        <div class="prompt-block"><pre>Write an email to my client about the delay.</pre></div></li>
-      <li><strong>Write the better prompt.</strong> In a second new chat, ask for the same email using goal, context, format and example. Invent the situation if you need to. Paste a real email as the example if you have one.</li>
-      <li><strong>Compare side by side.</strong> Which one could you actually send? Which one sounds like you?</li>
-      <li><strong>Find the difference.</strong> Which single piece of context changed the result most? You'll write it down next.</li>
-    </ol>
-    <div class="row">
-      <button class="ghost" data-go="0">← Back to brief</button>
-      <button class="btn" id="done-btn">Mark task done</button>
+    <div class="box task section">
+      <div class="box-title">Your Task</div>
+      <ol class="steps">
+        <li><div>Open a new chat and paste this:
+          <div class="prompt"><span>Write an email to my client about the delay.</span></div></div></li>
+        <li><div>Open another new chat. Ask for the same email, this time with a goal, context, format and example.</div></li>
+        <li><div>Read both answers. Which one could you actually send?</div></li>
+      </ol>
     </div>
+    <button class="btn" id="done-btn">Mark task done</button>
+    <button class="back" data-go="0">← Back</button>
   </section>
 
+  <!-- 3. DONE -->
   <section class="screen" id="s2">
-    <div class="badge">✓</div>
-    <div class="ok">Task logged · Lesson unlocked</div>
-    <h2>Nice work, Operator.</h2>
-    <label class="q" for="lesson-notes">In one sentence: what made the biggest difference?</label>
-    <textarea id="lesson-notes" placeholder="The biggest difference came from..."></textarea>
-    <div class="row">
-      <button class="ghost" data-go="1">← Back to task</button>
-      <a class="btn" href="../../../module-2/lesson-2-2.html">Next: Give It What It Needs →</a>
+    <div class="logged">✓ Task done</div>
+    <div class="section">
+      <textarea class="notes-field" id="lesson-notes" placeholder="Notes... what made the biggest difference?"></textarea>
     </div>
+    <div class="box section">
+      <div class="box-title">Key Takeaways</div>
+      <div class="takeaway">When output is bad, one of the four parts is missing.</div>
+      <div class="takeaway">Could a smart stranger act on your prompt? If not, neither can Claude.</div>
+      <div class="takeaway">One real example beats paragraphs of description.</div>
+    </div>
+    <div class="lesson-nav">
+      <a href="../../../module-2/intro.html" class="nav-btn prev"><span class="nav-dir">← Previous</span><span class="nav-name">Module 2 Intro</span></a>
+      <a href="../../../module-2/lesson-2-2.html" class="nav-btn next"><span class="nav-dir">Next →</span><span class="nav-name">Give It What It Needs</span></a>
+    </div>
+    <button class="back" data-go="1">← Back to task</button>
   </section>
-  <div class="hint" id="hint">Mark the task done first · <a class="ghost" href="../../../module-2/lesson-2-2.html">skip ahead</a></div>
 </main>
 <script>
 const PATH=location.pathname,TASK_KEY='nexus_task_'+PATH;
 function get(k){try{return localStorage.getItem(k);}catch(e){return null;}}
 function set(k,v){try{localStorage.setItem(k,v);}catch(e){}}
 function playS(s,v){try{var a=new Audio(s);a.volume=v;a.play().catch(function(){});}catch(e){}}
-const tabs=document.querySelectorAll('.stepper button');
+const bars=document.querySelectorAll('.progress i');
 function go(i){
-  const done=!!get(TASK_KEY);
-  if(i===2&&!done){document.getElementById('hint').classList.add('show');playS('../../../audio/sfx/robot-error.wav',0.08);return;}
-  document.getElementById('hint').classList.remove('show');
+  if(i===2&&!get(TASK_KEY)) i=1;
   document.querySelectorAll('.screen').forEach((s,j)=>s.classList.toggle('on',j===i));
-  tabs.forEach((t,j)=>{t.classList.toggle('on',j===i);t.classList.toggle('ok',j<2?(j<i||done):done);});
+  bars.forEach((b,j)=>b.classList.toggle('on',j<=i));
   window.scrollTo({top:0});
+  if(i===2) grow();
 }
 document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>go(+b.dataset.go)));
 document.getElementById('done-btn').addEventListener('click',()=>{
   if(!get(TASK_KEY)){set(TASK_KEY,String(Date.now()));playS('../../../audio/sfx/short-success.wav',0.12);}
   go(2);
 });
-document.querySelectorAll('.prompt-block').forEach(function(b){
+document.querySelectorAll('.prompt').forEach(function(b){
   const btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';
   btn.addEventListener('click',function(){
-    (navigator.clipboard?navigator.clipboard.writeText(b.querySelector('pre').innerText):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){btn.textContent='Select';});
+    (navigator.clipboard?navigator.clipboard.writeText(b.querySelector('span').innerText):Promise.reject()).then(function(){btn.textContent='Copied';btn.classList.add('copied');setTimeout(function(){btn.textContent='Copy';btn.classList.remove('copied');},1800);}).catch(function(){});
   });
   b.appendChild(btn);
 });
 const ta=document.getElementById('lesson-notes');
+function grow(){ta.style.height='auto';ta.style.height=ta.scrollHeight+'px';}
 ta.value=get('nexus_notes_'+PATH)||'';
-ta.addEventListener('input',()=>set('nexus_notes_'+PATH,ta.value));
-go(get(TASK_KEY)?2:0);
+ta.addEventListener('input',()=>{grow();set('nexus_notes_'+PATH,ta.value);});
+go(0);
 </script>
 </body>
 </html>
