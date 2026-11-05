@@ -10,21 +10,21 @@ Writes transcripts/<lesson>_<id>.txt with [mm:ss] timestamps, then commit and pu
 import os, sys
 
 SHORTLIST = {
-    # Round 2 (2026-11-05): candidates for the lessons that had no pool, plus post-rebuild re-sweeps.
+    # Round 2 + round 3 ids (2026-11-05): candidates for the lessons that had no pool, plus post-rebuild re-sweeps.
     # Round 1 transcripts (42) live on branch claude/video-research; already-fetched files are skipped.
     "0.2": ["N890AspWgEw"],
     "1.2": ["DmgujoZ1mmk", "wmCXIPlllpA"],
     "2.2": ["Zzn-g8lvLMA", "PwUr0fowN1I"],
     "2.3": ["tk4Ljz9p-UI", "Y0KidGr9Z2Y", "k1dNyhqfsQ8"],
-    "2.5": ["FgwrGj_RJBg", "kJA3fQnntpY"],
+    "2.5": ["FgwrGj_RJBg", "kJA3fQnntpY", "QBClwotyT3Y", "1PRcdCu8n6M"],
     "3.1": ["LNpOyx4DOJ4", "dMC8p2sJ7gY"],
     "3.2": ["BKzEVhT2054", "8cdVubYQjKY"],
     "3.3": ["D5nZOUfac_0"],
     "4.1": ["yTy8WV3Y9Nk"],
-    "4.2": ["J0h3yuCnXqk", "qPG5zQCSlTs"],
+    "4.2": ["J0h3yuCnXqk", "qPG5zQCSlTs", "j9eiZcBkNg0", "-SsAwIkW9rI"],
     "4.4": ["4hc5Z_QBno4"],
     "4.5": ["F-DARGKRKdQ", "b8SV4U6fEIc"],
-    "6.1": ["vatOVZbumk0", "HMaja1AlwMo"],
+    "6.1": ["vatOVZbumk0", "HMaja1AlwMo", "gYk_hp3goAY"],
     "6.2": ["IhhxRZDf2bo", "AAYy-cgA4Kg"],
     "6.3": ["fgrJVdD12PA"],
 }
