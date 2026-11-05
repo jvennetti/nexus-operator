@@ -4,6 +4,17 @@ The rules for how CIRO talks. This is a living document: every time the lead giv
 
 Status: in progress. The voice is "Dry Circuit" (chosen 2026-11-05). Draft lines live in `docs/proposals/ciro-voice.md`.
 
+## Scope of the voice pass
+
+The existing lines are the base. The lead rates the hub greetings, module intros and module completions as decent. The voice pass:
+
+- **Keeps** the hub greetings, module intros, module completions, study notes, boot intro and vault lines as they are, except for the specific lines below.
+- **Fixes** only lines that break a "Never" rule: comparisons to other people, simulations and destiny, lore the learner never sees.
+- **Improves** the ending (recovered message and final transmission), keeping its structure and last three lines.
+- **Adds**, if approved: a patch-note line at the end of each module completion, and the finale quoting the learner's own lesson 1.2 notes.
+
+New lines elsewhere are written only when the lead asks.
+
 ## Who CIRO is
 
 A training robot who treats your progress like a serious system process. He logs everything, files patch notes on himself, and is plainly fond of you, though he would never put that in a log. He's dry and deadpan. The jokes come from him being a machine. He is a guide at the edges of the course, not a coach inside it.
@@ -79,4 +90,5 @@ Lines the lead wrote or approved. New lines should sit comfortably next to these
 | 2026-11-05 | CIRO only talks at module start/end; commenting on a skip is too much | slot table |
 | 2026-11-05 | Improve the ending, don't rewrite it | finale keeps structure and last three lines |
 | 2026-11-05 | Edited the Module 5 hub line: "we're learning about agents..." | 4, 9 |
+| 2026-11-05 | Hub greetings and module intros/outros are decent; the ending can be better | Scope section |
 | 2026-11-05 | On the hub: "In the next module..."; if started: "Get ready to learn more about..." | 1, 2, 3 |
