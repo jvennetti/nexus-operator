@@ -1,0 +1,270 @@
+[00:00] You know you should be using AI to
+[00:01] automate your business, but maybe you're
+[00:03] stuck wondering what tasks should I
+[00:05] automate first. If you've been going
+[00:08] down the AI rabbit hole, which trust me,
+[00:10] I know it's easy to go and get sucked
+[00:12] into that. You can see very quickly that
+[00:14] some people are throwing out all these
+[00:16] automations and tools that you don't
+[00:18] really need. So, what should you
+[00:20] actually be focusing on that's going to
+[00:22] get the biggest ROI when it comes to
+[00:25] automating your business? Let's talk
+[00:27] about it in this video. If you don't
+[00:28] know me, my name is Abbey Ashley. I'm
+[00:30] the founder of The Virtual Savvy and I
+[00:31] help virtual assistants become certified
+[00:34] AI integrators. If you don't know what
+[00:36] an AI integrator is, we'll talk about it
+[00:38] a little bit in this video, but it's my
+[00:40] goal to help businesses get AI
+[00:43] automated. It is here, it's here to
+[00:45] stay. And so, how do we do it
+[00:47] effectively? That's what I talk about
+[00:49] here on this channel and I'm so excited
+[00:51] that you're here. Now, I'd like to pull
+[00:52] back the curtain and share with you what
+[00:54] my very first automation was. And I'm
+[00:57] not talking about just interacting with
+[01:00] ChatGPT or Claude and asking it some
+[01:03] back and forth questions. I'm talking
+[01:04] about a full-on agentic automation where
+[01:08] the computer goes in and does work for
+[01:10] me even when I'm not sitting in front of
+[01:12] it. That, my friends, was my email
+[01:15] inbox. Now, I've gone on to automate
+[01:18] over 100 hours per week in my business
+[01:20] and this is still one of the best
+[01:23] automations that I have built. And the
+[01:24] reason is is because I was spending time
+[01:26] doing this every single day in my
+[01:29] business. I used to have a VA that did
+[01:30] it, we had some transitions, I took it
+[01:32] on myself, and I realized, "Oh my
+[01:34] goodness, I'm spending almost an hour a
+[01:36] day literally in the inbox. This is not
+[01:39] what I've been planning to do after 10
+[01:40] years of business." So, I set out to
+[01:42] build my first automation. I did it
+[01:44] inside of Claude, I used Co-work, and I
+[01:47] essentially set up a system where every
+[01:49] single day at 6:00 a.m. and then again
+[01:51] at 6:00 p.m., it goes into my inbox, it
+[01:54] filters my inbox, it unsubscribes from
+[01:56] anything that I don't need. It helped me
+[01:58] set up forwarding so certain messages
+[02:00] will go to certain team members, and
+[02:02] then it actually drafts responses to the
+[02:05] emails that I do need to respond to so
+[02:07] that all I have to do is go in, read
+[02:09] them, make sure that I like the
+[02:11] response, and hit send. This has
+[02:12] literally saved me hours per week, and I
+[02:15] think what's so important about my story
+[02:17] and what I chose to automate is that it
+[02:19] was a task that was currently taking me
+[02:21] time. And this leads me to the number
+[02:23] one mistake that I see business owners
+[02:26] making when it comes to AI automation is
+[02:29] that they're not automating tasks that
+[02:30] they're already doing. They see a random
+[02:32] reel or TikTok about try this
+[02:34] automation, try this prompt, but it's
+[02:36] not something that they're actually
+[02:38] doing in their business day-to-day. So
+[02:39] again, it sends them down the AI rabbit
+[02:41] hole, and they spend hours and hours
+[02:43] creating something that they didn't
+[02:44] really need in the first place. This is
+[02:46] why I teach my certified AI integrators
+[02:49] the loop method. Loop stands for locate,
+[02:52] optimize, operate, and partner. The very
+[02:55] first step in the loop method is to
+[02:58] locate. You have to actually locate the
+[03:00] tasks that [music] are repetitive in
+[03:03] your business, the ones that are taking
+[03:04] up time, the ones that you think, "I
+[03:06] wonder if this could be AI automated."
+[03:09] Now, when I'm working with small
+[03:10] business owners to locate the tasks that
+[03:13] could potentially be automated, there
+[03:15] are four specific things that I'm
+[03:17] looking for. Number one, repetitive
+[03:19] tasks. These are tasks that you're doing
+[03:21] the same way more than once a week, not
+[03:23] just a one-off project. Number two,
+[03:26] time-consuming relative to its
+[03:28] importance. If it's eating 20 minutes a
+[03:30] day but requires zero real strategic
+[03:32] thought, it's definitely on the docket.
+[03:34] Number three, rule-based. If there's a
+[03:36] pattern to it, if you can say if X
+[03:39] happens, then you do Y, that is the
+[03:42] exact type of formula that AI agentic
+[03:45] work is built for. And then number four,
+[03:47] is it draining? Even if it's a small
+[03:49] task, it's a simple spreadsheet that you
+[03:51] fill out once a day, but it zaps your
+[03:54] energy. These tiny tasks are usually the
+[03:57] ones costing you more than just time.
+[03:59] They're costing your energy, too.
+[04:00] Basically, if a task is something that
+[04:02] you would consider handing to a virtual
+[04:03] assistant, it could be a task that you
+[04:05] would potentially automate with AI. Now,
+[04:08] I want to set the record clear. As
+[04:10] someone who has literally trained over
+[04:12] 7,000 virtual assistants through my
+[04:14] programs, I am not here to say that AI
+[04:17] should replace a virtual assistant. Not
+[04:20] by any means. In fact, for virtual
+[04:22] assistants, I think that AI is a huge
+[04:25] opportunity. I truly believe that right
+[04:26] now, more than ever, business owners are
+[04:28] excited for automations, for workflows,
+[04:31] for outsourcing, which is what we've
+[04:32] been doing for years as VAs. So, a
+[04:35] virtual assistant can come in, learn how
+[04:37] to build out these workflows, learn how
+[04:39] to build out the automations, work with
+[04:41] their clients as a human in the loop,
+[04:44] right? Because again, it takes a human
+[04:46] to set up the automations, to make sure
+[04:48] that they're still running properly.
+[04:50] Hey, let's admit it, to fix them when
+[04:52] they break, because sometimes they
+[04:54] break. All of that requires a human, and
+[04:56] that's where I think that this is a new,
+[04:58] up-leveled opportunity for virtual
+[05:00] assistants. So, what task should you
+[05:02] actually automate with AI? Well, if I
+[05:04] was going to start from scratch again, a
+[05:06] year ago when I started automating my
+[05:08] business after automating 100 hours,
+[05:11] these are the things that I would choose
+[05:13] to automate first. There's 15, let's go
+[05:15] through them. Number one, your inbox.
+[05:17] Sorting, drafting responses,
+[05:19] unsubscribing, filing in folders. This
+[05:21] was my first automation. I recommend it
+[05:23] be yours, too. Number two, meeting
+[05:25] scheduling. Back-and-forth "Does Tuesday
+[05:27] work?" emails, it's gone. You don't need
+[05:29] that anymore. Number three, follow-up
+[05:32] emails. After a call, a proposal, a
+[05:34] missed connection, this is something
+[05:35] that you can automate. Number four,
+[05:37] client onboarding. Welcome emails,
+[05:39] contract links, kickoff details, sent in
+[05:42] order automatically. Number five,
+[05:44] meeting notes. There are so many tools.
+[05:47] You can be transcribing the call,
+[05:48] pulling out action items, sending a
+[05:50] recap, all with AI. Number six, content
+[05:53] repurposing. You can turn one blog post
+[05:56] into five social captions, a LinkedIn
+[05:58] article, a Substack article, and more
+[06:01] without starting from scratch every
+[06:02] single time. Number seven, first draft
+[06:05] socials. I haven't completely automated
+[06:07] my social media yet, but Claude is
+[06:09] making some carousels for me that are
+[06:11] outperforming any of my own original
+[06:13] content right now. So, I'm currently
+[06:15] diving more into this. Number eight,
+[06:17] data entry. This one's huge. There is
+[06:19] just no reason for us to be doing manual
+[06:20] data entry anymore. Claude, ChatGPT,
+[06:23] Gemini can be automating this 100%.
+[06:26] Invoice reminders. Number 10, customer
+[06:28] FAQs, right? We actually built out a
+[06:30] customer service assistant inside of our
+[06:32] business. We trained it to answer emails
+[06:35] like us. So, again, it sends that first
+[06:38] draft, we look at it, make any tweaks,
+[06:40] but it has reduced significantly the
+[06:42] amount of time that we are actually
+[06:44] having to handle customer service.
+[06:45] [music] Number 11, lead qualification.
+[06:47] This could be sorting inquiries into
+[06:49] ready now, not yet, before you ever see
+[06:51] them. Number 12, proposal drafts. Let AI
+[06:54] write the proposal for you, and then you
+[06:57] go in and add that personal touch.
+[06:58] [music]
+[06:59] Number 13, weekly reporting. I am
+[07:01] obsessed with the reports that [music]
+[07:03] Claude is pulling for me on a daily,
+[07:06] weekly, monthly basis. KPI reports,
+[07:08] sales reports, financial reports, they
+[07:10] get delivered to me automatically, so I
+[07:12] always have a very clear view of what's
+[07:14] happening in my business. 14, research
+[07:17] and competitor scans. The stuff you know
+[07:19] you should be checking often, but you
+[07:21] never really do it. This is an awesome
+[07:24] task to hand over to AI. And then
+[07:26] lastly, transcription and repurposing.
+[07:28] This could be podcast episodes, videos,
+[07:30] calls. You can now turn them into blog
+[07:32] posts, emails, captions, and more. How I
+[07:34] was able to automate 100 hours a week
+[07:37] was not in one massive sprint where I
+[07:40] just did it all in a week. No, it was by
+[07:43] automating just one task at a time. I
+[07:45] made a massive list of the things that
+[07:48] were taking up time that I thought,
+[07:49] "This could be automated." And then, I
+[07:52] chose one. I built out the automation.
+[07:55] Maybe it took me an hour or even 2 hours
+[07:57] to do, but once the automation was
+[07:59] built, it just runs forever, right? I
+[08:02] wake up, and automation is sitting in my
+[08:05] inbox or in a Slack message or some kind
+[08:07] of deliverable is made and done for me
+[08:10] because I spent the time to build it. I
+[08:12] also want to stress to you that you are
+[08:14] not behind. The amount of people
+[08:16] actually implementing agentic work into
+[08:20] their business is a very, very small
+[08:22] percentage of business owners right now.
+[08:25] Now, this is the future. You will be
+[08:26] behind eventually if we don't start
+[08:29] doing this, but right now, take a deep
+[08:32] breath. Most businesses are not AI
+[08:35] automated yet, and that's okay. So, even
+[08:38] just trying out one simple automation,
+[08:41] taking an hour or two to automate
+[08:44] something that's taking you an hour or
+[08:46] more per month in your business is going
+[08:49] to really make you see, "Ah,
+[08:52] I can do this." Now, if you're a virtual
+[08:54] assistant or online service provider
+[08:56] that has been thinking about providing
+[08:58] AI integration services to your clients,
+[09:01] I want to invite you to join my AI
+[09:04] integrator certification waitlist. You
+[09:06] can go to the virtualsavvi.com/waitlist.
+[09:09] You'll see when our next cohort opens,
+[09:11] if it's not open right now, and you'll
+[09:12] be able to join that waitlist so that
+[09:14] you can join this 5-week certification
+[09:16] program where we teach you how to
+[09:18] automate tasks [music] for small
+[09:20] business owners. In the same way, if
+[09:21] you're a small business owner who is
+[09:23] wanting to automate your own business,
+[09:25] or you already have somebody on your
+[09:27] team that you want to go through the
+[09:28] certification, you are welcome to go
+[09:30] through it as well. Again, that link is
+[09:33] the virtualsavvi.com/waitlist.
+[09:35] So, now as we conclude this video, I
+[09:38] want to hear from you. What do you think
+[09:40] the very first task [music] is going to
+[09:43] be that you're going to automate in your
+[09:45] business with AI? I would love to know
+[09:47] in the comments. We read every single
+[09:49] one. That's it for today's video. I'll
+[09:51] see you in the next one.

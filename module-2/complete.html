@@ -4,6 +4,7 @@
 <script>(function(){try{if(!localStorage.getItem('nexus_intro_seen_operator')){location.replace('../index.html');return;}var p='mod1';if(p){var s=JSON.parse(localStorage.getItem('nexus_operator')||'{}');if(!s[p+'_complete']&&!location.search.includes('dev')){location.replace('../hub.html');}}}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../nexus-transition.js" defer blocking="render"></script>
 <title>NEXUS Academy — Module 2 Complete</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -49,6 +50,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 @keyframes bl{0%,100%{opacity:1}50%{opacity:0.2}}
 .hub-cta{text-align:center;margin-top:28px;opacity:0;transition:opacity 0.6s ease}
 .hub-cta.visible{opacity:1}
+.hub-cta:not(.visible){visibility:hidden;pointer-events:none}
 .hub-btn{display:inline-flex;align-items:center;font-family:'Orbitron',sans-serif;font-size:13px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:16px 52px;cursor:pointer;transition:opacity .2s, transform .15s;text-decoration:none}
 .hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
 .hub-btn:active{transform:translateY(0)}
@@ -168,13 +170,43 @@ function runReveal(){
 
 function wait(ms){ return new Promise(r=>setTimeout(r,ms)); }
 
-async function typeLine(el, text){
+// Typewriter that never moves layout. Every line is laid out up front with its untyped part
+// visibility:hidden, so the debrief box is its final size from the start and words never jump
+// between lines while typing. The cursor keeps its look but has zero advance and is glued to the
+// letters either side of it, so it cannot force a mid-word line break.
+const TW_WORD = /[\p{L}\p{N}'’]/u;
+function twMount(el, text){
+  el.textContent = text;
+  const n = el.firstChild;
+  const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+        gr = document.createElement('span'), rest = document.createElement('span');
+  glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+  glue.append(gl, gr); rest.textContent = text; n.replaceWith(typed, glue, rest);
+  return { el, text, typed, glue, gl, gr, rest };
+}
+function twShow(s, k, cursor){
+  const t = s.text, gL = k > 0 && TW_WORD.test(t.charAt(k-1)), gR = k < t.length && TW_WORD.test(t.charAt(k));
+  s.typed.data = t.slice(0, gL ? k-1 : k); s.gl.data = gL ? t.charAt(k-1) : '';
+  if(cursor.parentNode !== s.glue) s.glue.insertBefore(cursor, s.gr);
+  s.gr.textContent = gR ? t.charAt(k) : ''; s.rest.textContent = t.slice(gR ? k+1 : k);
+}
+function twMountAll(containerId, lines, classOf){
+  const container = document.getElementById(containerId);
+  return lines.map(l => {
+    const lineEl = document.createElement('div');
+    lineEl.className = classOf(l);
+    container.appendChild(lineEl);
+    return twMount(lineEl, l.text);
+  });
+}
+const ciroLineStates = twMountAll('ciro-lines', CIRO_LINES, () => 'ciro-line');
+
+async function typeLine(st, text){
   const cursor = document.createElement('span');
-  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;animation:cur .7s step-end infinite';
-  el.appendChild(cursor);
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:#00c8ff;vertical-align:middle;margin-left:2px;margin-right:-10px;animation:cur .7s step-end infinite';
   for(let i=0;i<text.length;i++){
     const ch = text[i];
-    el.insertBefore(document.createTextNode(ch), cursor);
+    twShow(st, i+1, cursor);
     let d = 30;
     if(ch==='.') d+=110;
     else if(ch===',') d+=55;
@@ -182,16 +214,15 @@ async function typeLine(el, text){
     await wait(d);
   }
   cursor.remove();
+  st.el.textContent = text;
 }
 
 async function runCiro(){
   const container = document.getElementById('ciro-lines');
   await wait(300);
-  for(const { text, pauseAfter } of CIRO_LINES){
-    const lineEl = document.createElement('div');
-    lineEl.className = 'ciro-line';
-    container.appendChild(lineEl);
-    await typeLine(lineEl, text);
+  for(let n = 0; n < CIRO_LINES.length; n++){
+    const { text, pauseAfter } = CIRO_LINES[n];
+    await typeLine(ciroLineStates[n], text);
     await wait(pauseAfter);
   }
   await wait(400);
@@ -203,7 +234,7 @@ pingHub();
 runReveal();
 
 const STUDY_MODULE = 'Module 2 — Speak Claude';
-const STUDY_LESSONS = [{"n": "2.1", "title": "Anatomy of a Good Prompt", "file": "lesson-2-1.html", "takeaways": ["The four parts: goal, context, format, example. When output is bad, one of these is missing.", "Test before sending: could a smart stranger act on this message? If not, neither can Claude.", "One real example of \"good\" beats paragraphs of description."]}, {"n": "2.2", "title": "Give It What It Needs", "file": "lesson-2-2.html", "takeaways": ["Show, don't describe. Paste the whole thread, attach the file, drop in the screenshot.", "Attach an example of what good looks like. Claude matches examples far more precisely than descriptions.", "Say who it's for. The same facts written for different readers are different pieces of writing."]}, {"n": "2.3", "title": "Iterate and Push Back", "file": "lesson-2-3.html", "takeaways": ["The first answer is a draft. Giving notes is the workflow.", "Add \"ask me questions before you start\" to any brief you're unsure about. The quality jump is large.", "Ask Claude to critique its own work from the reader's point of view, then fix it.", "When Claude hedges or says it can't, tell it plainly you want it done fully. It almost always can."]}, {"n": "2.4", "title": "Projects, Persistent Context", "file": "lesson-2-4.html", "takeaways": ["A Project holds instructions and files that every chat inside it can see. Set up once, used forever.", "Make a Project for anything you'll discuss more than three times. Clients, responsibilities, your job itself.", "Instructions are for what's true every time. One-off material goes in the individual chat."]}, {"n": "2.5", "title": "Make Things, Not Just Text", "file": "lesson-2-5.html", "takeaways": ["Claude builds documents, decks, spreadsheets, designs and simple tools directly in chat. Describe it, don't look for a button.", "Frame any build as: what it is, who it's for, what it contains, how it feels.", "Style comes from context. Show Claude what yours looks like and it will match it."]}];
+const STUDY_LESSONS = [{"n": "2.1", "title": "Anatomy of a Good Prompt", "file": "lesson-2-1.html", "takeaways": ["Claude starts from zero every time. What you want, why, and who you are need saying to get great results.", "Add examples of what you like for better results.", "List the details you want: length, format, how it should end.", "Tell Claude what your goal is."]}, {"n": "2.2", "title": "Give It What It Needs", "file": "lesson-2-2.html", "takeaways": ["Paste the whole thread. Attach the original file. Claude can read it all, so you don't need to summarize first.", "Test Claude on work you've already done, so you can tell what it got right.", "When it misses something, that's a piece of context you give it next time."]}, {"n": "2.3", "title": "Iterate and Push Back", "file": "lesson-2-3.html", "takeaways": ["Ask Claude to ask you questions first. Its questions show you what you forgot to say.", "Specific notes beat starting over. \"The second paragraph is too formal\" beats \"try again.\"", "When Claude hedges, tell it you want it done and give it the context. Usually it can."]}, {"n": "2.4", "title": "Projects, Persistent Context", "file": "lesson-2-4.html", "takeaways": ["Every chat in a project remembers your instructions and files, so you stop re-explaining.", "Catch yourself re-explaining something? Tell Claude to add it to the project instructions.", "A file you attach in a normal chat stays in that chat. Put it in the project if you want it every time.", "Suggestion: one project per job you do. It keeps your chats organized and your re-explaining to zero."]}, {"n": "2.5", "title": "Make Things, Not Just Text", "file": "lesson-2-5.html", "takeaways": ["Describe the thing you want in plain words and Claude builds it. Trackers, calculators, checklists, dashboards.", "Use it, then change it. The best tools come from a few rounds of real use.", "Ask Claude to make it save your data, and it will still be there tomorrow.", "Suggestion: anything you check every day is a candidate. Build the tool instead of keeping it in your head."]}];
 const STUDY_CIRO = 'The prompt is the product.<br>You understand that now. Most never do.<br><br>— CIRO';
 
 function openStudyDoc(){
@@ -308,7 +339,6 @@ function openStudyDoc(){
 function playS(s,v){var a=new Audio(s);a.volume=(v===undefined?0.4:v)*(window.nxVol||1);a.play().catch(function(){});return a;}
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
-<script src="../nexus-transition.js"></script>
 <script>
 (function(){
   var C=document.createElement('canvas');

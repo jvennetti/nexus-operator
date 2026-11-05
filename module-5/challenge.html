@@ -4,7 +4,8 @@
 <script>(function(){try{if(!localStorage.getItem('nexus_intro_seen_operator')){location.replace('../index.html');return;}var p='mod4';if(p){var s=JSON.parse(localStorage.getItem('nexus_operator')||'{}');if(!s[p+'_complete']&&!location.search.includes('dev')){location.replace('../hub.html');}}}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXUS Academy — Module 5 Challenge</title>
+<script src="../nexus-transition.js" defer blocking="render"></script>
+<title>NEXUS Academy — Complete Module 5</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -75,43 +76,45 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 
 <nav>
   <a href="../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
-  <div class="nav-lesson-id">Module 5 — Challenge</div>
+  <div class="nav-lesson-id">Module 5 — Mission</div>
   <a href="../hub.html" class="nav-back">← Hub</a>
 </nav>
 
 <div class="banner">
-  <img class="banner-img" src="../images/modules/m5-challenge.png" alt="Module 5 Challenge">
+  <img class="banner-img" src="../images/modules/m5-challenge.png" alt="Complete Module 5">
   <div class="banner-overlay"></div>
   <div class="banner-label">
-    <div class="banner-title">The Challenge</div>
+    <div class="banner-title">Complete Module 5</div>
   </div>
 </div>
 
 <div class="browser-shell">
 <div class="content-col">
   <div class="scenario-box">
-    <div class="section-title">The Scenario</div>
+    <div class="section-title">What We&#x27;re Going to Do</div>
     <div class="body-copy">
-<p>A skill, a handoff, a scheduled task. Separately they're features. Together they're the thing this whole course was pointing at: work that happens without you starting it, done the way you'd do it.</p>
-<p>This challenge is one skill plus one scheduled task, running on your real life, by the end of the week.</p>
+<p><strong>The Trust Test.</strong> Today we're going to decide, on evidence, how much something you built is allowed to do on its own.</p>
+<p>In Module 5 you wrote a skill, rescued a tired chat, and scheduled your morning brief. In this mission you'll add a second skill, let the scheduled brief run three mornings in a row, and read every run. Then you'll write the decision down in three lines: what it may do alone, what it drafts for you, and what stays in your hands.</p>
     </div>
   </div>
 
   <div class="challenge-box">
-    <div class="challenge-title">Your Challenge</div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Write a second skill.</strong> You wrote one in Lesson 5.1. Pick another recurring task from your Operator List. Do it manually once, then "turn that into a skill." You should now have a /skills folder with two tested skills.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Make the skills portable.</strong> Ask Claude: "Review both skills. Make sure each one says when to use it, what it needs, the steps, the output format with an example, and the checks. Make them consistent with each other." Good skills read like a checklist a new hire could follow.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Schedule one of them.</strong> Whichever would be most satisfying to find done in the morning. Manual run twice. Draft, don't send. Schedule it.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Let it run three times.</strong> Each morning, review the output. Each correction goes into the skill. Log what changed.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Make the trust decision.</strong> After three runs: does it still need to draft, or can it send? Does it still need your review, or can it run quietly? Change the task to match your honest answer. Write down what would need to be true to go further.</div></li></ol>
+    <div class="challenge-title">How We'll Do It</div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Write a second skill from another task you do the same way every week. Same loop as Lesson 5.1: do it by hand once until the result is good, ask the skill creator to turn it into a skill, then run it cold in a fresh chat with only the trigger. If it needs more explaining, fix the skill, not the prompt.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Let your scheduled morning brief run three mornings in a row. Read every run, start to finish. Warning: a green tick means the task ran. It doesn't mean the task was right. The only thing that counts is what's in the output.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">After the third morning, answer three questions honestly and write the answers down: What did it get right every single time? What did it get right only sometimes? What would it have cost you if it had been wrong?</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Turn those answers into three lines at the top of the task's instructions:<div class="prompt-block"><pre>Alone: [what it may do without asking]
+Draft: [what it prepares for me to approve]
+Mine: [what it must never touch]</pre></div> Tip: when you're not sure where something belongs, put it under Draft. You can promote it to Alone after a few more clean runs. Nothing goes the other way without a reason.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">Paste the same three lines into CLAUDE.md in nexus-workspace, so Claude Code follows the same rules when it's working in your files.</div></li></ol>
   </div>
 
   <div class="deliverable-box">
-    <div class="section-title">Your Deliverable</div>
+    <div class="section-title">You're Done When</div>
     <div class="deliverable-text">
-<ul><li>Two tested skills in your workspace, consistent in structure, each run cold at least once.</li><li>One scheduled task that has run three times on real input with corrections folded back into the skill.</li><li>A written trust decision: what it's now allowed to do on its own, and why.</li></ul>
+<p>You're done when two skills work in a fresh chat, the scheduled task has run and been read three times, and the Alone / Draft / Mine lines are written into both the task and CLAUDE.md.</p>
     </div>
   </div>
 
   <div class="integration-note">
     <div class="integration-text">
-<p>If a connector or scheduling option doesn't exist for a tool you use, ask Claude how else to get the input in or the output out. A folder Claude Code watches, a shared doc, an email to yourself. There's always a route.</p>
+<p>Scheduled tasks need a paid plan. On the free plan, run the morning brief by hand three mornings. The reading and the decision are exactly the same.</p>
     </div>
   </div>
 
@@ -148,6 +151,5 @@ function markComplete(){
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
 <script>document.querySelectorAll('.prompt-block').forEach(function(b){var btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';btn.addEventListener('click',function(){var txt=b.querySelector('pre').innerText;(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},1800);}).catch(function(){btn.textContent='Select it';});});b.appendChild(btn);});</script>
-<script src="../nexus-transition.js"></script>
 </body>
 </html>

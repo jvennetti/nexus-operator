@@ -1,27 +1,31 @@
 ---
-scenario_label: The Scenario
+scenario_label: What We're Going to Do
 ---
 
 ## Scenario
 
-A skill, a handoff, a scheduled task. Separately they're features. Together they're the thing this whole course was pointing at: work that happens without you starting it, done the way you'd do it.
+**The Trust Test.** Today we're going to decide, on evidence, how much something you built is allowed to do on its own.
 
-This challenge is one skill plus one scheduled task, running on your real life, by the end of the week.
+In Module 5 you wrote a skill, rescued a tired chat, and scheduled your morning brief. In this mission you'll add a second skill, let the scheduled brief run three mornings in a row, and read every run. Then you'll write the decision down in three lines: what it may do alone, what it drafts for you, and what stays in your hands.
 
 ## Steps
 
-1. **Write a second skill.** You wrote one in Lesson 5.1. Pick another recurring task from your Operator List. Do it manually once, then "turn that into a skill." You should now have a /skills folder with two tested skills.
-2. **Make the skills portable.** Ask Claude: "Review both skills. Make sure each one says when to use it, what it needs, the steps, the output format with an example, and the checks. Make them consistent with each other." Good skills read like a checklist a new hire could follow.
-3. **Schedule one of them.** Whichever would be most satisfying to find done in the morning. Manual run twice. Draft, don't send. Schedule it.
-4. **Let it run three times.** Each morning, review the output. Each correction goes into the skill. Log what changed.
-5. **Make the trust decision.** After three runs: does it still need to draft, or can it send? Does it still need your review, or can it run quietly? Change the task to match your honest answer. Write down what would need to be true to go further.
+1. Write a second skill from another task you do the same way every week. Same loop as Lesson 5.1: do it by hand once until the result is good, ask the skill creator to turn it into a skill, then run it cold in a fresh chat with only the trigger. If it needs more explaining, fix the skill, not the prompt.
+2. Let your scheduled morning brief run three mornings in a row. Read every run, start to finish. Warning: a green tick means the task ran. It doesn't mean the task was right. The only thing that counts is what's in the output.
+3. After the third morning, answer three questions honestly and write the answers down: What did it get right every single time? What did it get right only sometimes? What would it have cost you if it had been wrong?
+4. Turn those answers into three lines at the top of the task's instructions:
+```
+Alone: [what it may do without asking]
+Draft: [what it prepares for me to approve]
+Mine: [what it must never touch]
+```
+   Tip: when you're not sure where something belongs, put it under Draft. You can promote it to Alone after a few more clean runs. Nothing goes the other way without a reason.
+5. Paste the same three lines into CLAUDE.md in nexus-workspace, so Claude Code follows the same rules when it's working in your files.
 
 ## Deliverable
 
-- Two tested skills in your workspace, consistent in structure, each run cold at least once.
-- One scheduled task that has run three times on real input with corrections folded back into the skill.
-- A written trust decision: what it's now allowed to do on its own, and why.
+You're done when two skills work in a fresh chat, the scheduled task has run and been read three times, and the Alone / Draft / Mine lines are written into both the task and CLAUDE.md.
 
 ## Note
 
-If a connector or scheduling option doesn't exist for a tool you use, ask Claude how else to get the input in or the output out. A folder Claude Code watches, a shared doc, an email to yourself. There's always a route.
+Scheduled tasks need a paid plan. On the free plan, run the morning brief by hand three mornings. The reading and the decision are exactly the same.

@@ -134,7 +134,7 @@
       "lessons": ["6-1", "6-2", "6-3", "6-4"],
       "intro_lines": [
         { "text": "Everything so far was practice on pieces.", "pause": 850 },
-        { "text": "Now you take one real, recurring piece of your life and build the system that runs it.", "pause": 950 },
+        { "text": "Now you take one real, recurring piece of your life and build the system that runs it. Or build the tool you always wanted. Or both.", "pause": 950 },
         { "text": "This is not the end of the school. It is the beginning of real work.", "pause": 900 },
         { "text": "Proceed quickly.", "pause": 400 }
       ],

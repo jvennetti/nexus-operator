@@ -4,7 +4,8 @@
 <script>(function(){try{if(!localStorage.getItem('nexus_intro_seen_operator')){location.replace('../index.html');return;}var p='mod5';if(p){var s=JSON.parse(localStorage.getItem('nexus_operator')||'{}');if(!s[p+'_complete']&&!location.search.includes('dev')){location.replace('../hub.html');}}}catch(e){}})();</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEXUS Academy — Module 6 Challenge</title>
+<script src="../nexus-transition.js" defer blocking="render"></script>
+<title>NEXUS Academy — Complete Module 6</title>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lexend:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -75,43 +76,37 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
 
 <nav>
   <a href="../hub.html" class="wordmark">NEXUS <span>ACADEMY</span></a>
-  <div class="nav-lesson-id">Module 6 — Challenge</div>
+  <div class="nav-lesson-id">Module 6 — Mission</div>
   <a href="../hub.html" class="nav-back">← Hub</a>
 </nav>
 
 <div class="banner">
-  <img class="banner-img" src="../images/modules/m6-challenge.png" alt="Module 6 Challenge">
+  <img class="banner-img" src="../images/modules/m6-challenge.png" alt="Complete Module 6">
   <div class="banner-overlay"></div>
   <div class="banner-label">
-    <div class="banner-title">The Challenge</div>
+    <div class="banner-title">Complete Module 6</div>
   </div>
 </div>
 
 <div class="browser-shell">
 <div class="content-col">
   <div class="scenario-box">
-    <div class="section-title">The Final Task</div>
+    <div class="section-title">What We&#x27;re Going to Do</div>
     <div class="body-copy">
-<p>You've built a system and run it for a week. The final task is to make it something that outlives this course.</p>
-<p>A system only you understand is a habit. A system someone else could run is an asset. The difference is a document, and the proof is that another person (or future you, in six months) could pick it up cold.</p>
+<p><strong>What Runs Without You.</strong> Today we're going to finish the system you've been building: Version 2 running on real work, written up so a stranger could run it, your workspace clean, and your next build chosen.</p>
+<p>Over Module 6 you chose one recurring piece of your work, built the simplest version that could do it, ran it for a week and logged every mistake. There are two tracks. A system runs a workflow for you: a skill, your connectors, a scheduled task. An app is a tool you use: built in the Code tab, opened every day. Finish one and you earn the OPERATOR badge. Finish both and you earn OVERCLOCKED. Finish one properly first.</p>
     </div>
   </div>
 
   <div class="challenge-box">
-    <div class="challenge-title">Your Challenge</div>
-<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text"><strong>Finish Version 2.</strong> From Lesson 6.3 you have a proposed Version 2 in WORKFLOW.md. Build the one or two changes that matter most. Run it twice.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text"><strong>Write the operating doc.</strong> In your workspace:<div class="prompt-block"><pre>Write SYSTEM.md: a one-page document that explains this system to someone who has never seen it. What it does, what goes in, what comes out, how it's triggered, which skills and connectors it uses, what to check if something looks wrong, and how to make a change to it. Plain language. No jargon.</pre></div> Read it as a stranger. Fix what wouldn't make sense.</div></li><li class="step-item"><div class="step-num">3</div><div class="step-text"><strong>Hand it to someone.</strong> Send SYSTEM.md to one person: a teammate, a friend, a family member. Ask them to read it and tell you the first thing they don't understand. Fix that.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text"><strong>Clean the workspace.</strong> "Tidy the workspace: archive anything from the course that isn't part of a live system, make sure CLAUDE.md, ABOUT-ME.md, the skills and SYSTEM.md are current, and commit." Your workspace is now your real operating environment, not a classroom.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text"><strong>Write what's next.</strong> In Operator HQ: "Based on everything in my Operator List and the system I built, what's the next system worth building, and what's the smallest first version?" Save the answer. That's where you go when this course ends.</div></li></ol>
+    <div class="challenge-title">How We'll Do It</div>
+<ol class="step-list"><li class="step-item"><div class="step-num">1</div><div class="step-text">Build Version 2 from WORKFLOW.md and RUN-LOG.md, then run it on real work twice. Tip: if Version 2 wants to grow in every direction, ask Claude which single change would fix the most frequent mistake in the log. Do that one first, run it, then decide whether the next one is still needed.</div></li><li class="step-item"><div class="step-num">2</div><div class="step-text">Write it down for someone who isn't you. Paste:<div class="prompt-block"><pre>Write SYSTEM.md: how to run this, for someone who has never seen it. What it needs, what it does, what to check, and what to do when it breaks.</pre></div></div></li><li class="step-item"><div class="step-num">3</div><div class="step-text">Test the write-up on a person. Send SYSTEM.md to a friend or colleague and ask them to run it, or at least read it back to you in their own words. Every place they get stuck is a sentence to fix. Warning: a system a stranger can run is a system. A system only you can run is a habit.</div></li><li class="step-item"><div class="step-num">4</div><div class="step-text">Clean the workspace. Test files gone, originals back outside the folder, CLAUDE.md current, the Alone / Draft / Mine lines still true.</div></li><li class="step-item"><div class="step-num">5</div><div class="step-text">Choose what's next. Paste:<div class="prompt-block"><pre>Read WORKFLOW.md, RUN-LOG.md and My Tasks. What should I build next, and why? Write NEXT.md with input, steps, output, destination, and what Version 1 does.</pre></div></div></li><li class="step-item"><div class="step-num">6</div><div class="step-text">The second track, if you want OVERCLOCKED. Built a system? Now build an app for yourself in the Code tab. Built an app? Now build a system around one of your weekly tasks. Same loop either way: plan, simplest version, use it on real work, fix it in the smallest step. Warning: start the second track only when the first one is actually running. Two half-built things earn nothing.</div></li></ol>
   </div>
 
   <div class="deliverable-box">
-    <div class="section-title">Your Deliverable</div>
+    <div class="section-title">You're Done When</div>
     <div class="deliverable-text">
-<ul><li>A system at Version 2, run on real input, triggered by a schedule or a sentence.</li><li>A one-page SYSTEM.md that a stranger read and understood.</li><li>A clean workspace with current instructions, skills and version history.</li><li>A written plan for the next system.</li></ul>
-    </div>
-  </div>
-
-  <div class="integration-note">
-    <div class="integration-text">
-<p>When you mark this complete, the machine will give you something. Take it where it tells you to.</p>
+<p>You're done when Version 2 has run on real work, a stranger could run it from SYSTEM.md, the workspace is clean, and NEXT.md says what you're building next.</p>
     </div>
   </div>
 
@@ -148,6 +143,5 @@ function markComplete(){
 </script>
 <script>(function(){var op=localStorage.getItem('nexus_current_operator')||'operator';var hu='../hub.html';document.querySelectorAll('a[href*="hub.html"]').forEach(function(a){a.href=hu;});})();</script>
 <script>document.querySelectorAll('.prompt-block').forEach(function(b){var btn=document.createElement('button');btn.className='copy-btn';btn.textContent='Copy';btn.addEventListener('click',function(){var txt=b.querySelector('pre').innerText;(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy';},1800);}).catch(function(){btn.textContent='Select it';});});b.appendChild(btn);});</script>
-<script src="../nexus-transition.js"></script>
 </body>
 </html>

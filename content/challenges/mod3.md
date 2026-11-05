@@ -1,31 +1,29 @@
 ---
-scenario_label: The Scenario
+scenario_label: What We're Going to Do
 ---
 
 ## Scenario
 
-You've connected your tools and run a morning with Claude. This challenge is a full working day, on real work, with Claude in every tool you use. Not a demo with fake data. Tomorrow.
+**A Day Without Copy-Paste.** Today we're going to run one ordinary workday with Claude connected to your inbox, your calendar and your work tool, and measure what it saves.
 
-The goal isn't to prove Claude can do your job. It's to find out, concretely, which parts of your day it takes off your plate when it's actually wired in, and how much time that is. You'll want that number in Module 6.
-
-## Setup
-
-Make sure these are connected before you start the day: your email, your calendar, and the one work tool you use most. If something isn't connected yet, connect it the night before.
+A lot of a workday is moving information from one place to another: an email becomes a calendar entry, a meeting becomes a task list, a task becomes a reply. For one day, none of that moves by hand. You'll run your morning brief, let Claude draft the replies, turn a meeting into tasks, and set up a meeting you've been meaning to schedule. At the end you'll have a number for how much of the day came back.
 
 ## Steps
 
-1. **Morning: the routine.** Run the four-step morning from Lesson 3.3: triage, plan, clear, prep. Time it.
-2. **Midday: carry things across.** At least twice during the day, when information arrives in one tool and needs to be somewhere else, say the sentence instead of doing it by hand. "Create tasks from this." "Add this to the doc." "Put that on the calendar." Each time, review before approving.
-3. **Afternoon: draft everything.** Every reply you'd normally write from scratch, have Claude draft first. Review, edit, send. Count how many.
-4. **End of day: the update.** "Look at what I did today across my tools and draft a short end-of-day update I could send to my team (or to myself)." Read it. Is it accurate? What did it miss?
-5. **Write the tally.** In a new chat: how long the morning routine took versus normal, how many replies Claude drafted, how many things got carried across, and roughly how much time the day saved. Keep this. Add it to your Operator List document.
+1. Morning. Run the morning brief you wrote in Lesson 3.3. For anything that only needs a quick reply, paste: "Draft replies to the quick ones, all in one message. Draft only." Then send each one yourself from Gmail. Warning: read every draft once as the recipient before you send. It's your name on it, and the habit of reading is what lets you trust the drafts later.
+2. Midday. Take the notes from one meeting or call, paste them into a chat, and ask Claude to turn them into tasks in your work tool. Say "show me the list before you create anything." Check the list, say yes, then open the tool and look at what it made. Fix anything that landed wrong by telling Claude, not by editing it yourself.
+3. Afternoon. Pick a meeting that needs scheduling this week. Ask Claude to find a free slot and draft the invite. Approve it when it asks.
+4. All day, whenever something needs to move from one tab to another, ask Claude to do it instead. Count how many times that happens.
+5. End of day, paste:
+```
+List everything you did for me today, and estimate how long each would have taken me by hand.
+```
+   Add one line to the bottom of your My Tasks file: hours saved, and the one thing that surprised you.
 
 ## Deliverable
 
-- One real workday run with Claude connected to your email, calendar and main work tool.
-- At least two "carry it across" moves and a set of drafted replies, all reviewed and used.
-- A short written tally of what the day saved, added to your Operator List document.
+You're done when one full day has gone through Claude and the tally line is in My Tasks.
 
 ## Note
 
-If your day doesn't generate much email or tasks, run this on a day you're organizing something personal: a trip, a move, an event, a job search. Same tools, same moves.
+If your work doesn't run on email and calendar, connect the tool it does run on. The mission is the same: one day where nothing moves by hand.

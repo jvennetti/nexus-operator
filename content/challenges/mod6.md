@@ -1,32 +1,28 @@
 ---
-scenario_label: The Final Task
+scenario_label: What We're Going to Do
 ---
 
 ## Scenario
 
-You've built a system and run it for a week. The final task is to make it something that outlives this course.
+**What Runs Without You.** Today we're going to finish the system you've been building: Version 2 running on real work, written up so a stranger could run it, your workspace clean, and your next build chosen.
 
-A system only you understand is a habit. A system someone else could run is an asset. The difference is a document, and the proof is that another person (or future you, in six months) could pick it up cold.
+Over Module 6 you chose one recurring piece of your work, built the simplest version that could do it, ran it for a week and logged every mistake. There are two tracks. A system runs a workflow for you: a skill, your connectors, a scheduled task. An app is a tool you use: built in the Code tab, opened every day. Finish one and you earn the OPERATOR badge. Finish both and you earn OVERCLOCKED. Finish one properly first.
 
 ## Steps
 
-1. **Finish Version 2.** From Lesson 6.3 you have a proposed Version 2 in WORKFLOW.md. Build the one or two changes that matter most. Run it twice.
-2. **Write the operating doc.** In your workspace:
+1. Build Version 2 from WORKFLOW.md and RUN-LOG.md, then run it on real work twice. Tip: if Version 2 wants to grow in every direction, ask Claude which single change would fix the most frequent mistake in the log. Do that one first, run it, then decide whether the next one is still needed.
+2. Write it down for someone who isn't you. Paste:
 ```
-Write SYSTEM.md: a one-page document that explains this system to someone who has never seen it. What it does, what goes in, what comes out, how it's triggered, which skills and connectors it uses, what to check if something looks wrong, and how to make a change to it. Plain language. No jargon.
+Write SYSTEM.md: how to run this, for someone who has never seen it. What it needs, what it does, what to check, and what to do when it breaks.
 ```
-   Read it as a stranger. Fix what wouldn't make sense.
-3. **Hand it to someone.** Send SYSTEM.md to one person: a teammate, a friend, a family member. Ask them to read it and tell you the first thing they don't understand. Fix that.
-4. **Clean the workspace.** "Tidy the workspace: archive anything from the course that isn't part of a live system, make sure CLAUDE.md, ABOUT-ME.md, the skills and SYSTEM.md are current, and commit." Your workspace is now your real operating environment, not a classroom.
-5. **Write what's next.** In Operator HQ: "Based on everything in my Operator List and the system I built, what's the next system worth building, and what's the smallest first version?" Save the answer. That's where you go when this course ends.
+3. Test the write-up on a person. Send SYSTEM.md to a friend or colleague and ask them to run it, or at least read it back to you in their own words. Every place they get stuck is a sentence to fix. Warning: a system a stranger can run is a system. A system only you can run is a habit.
+4. Clean the workspace. Test files gone, originals back outside the folder, CLAUDE.md current, the Alone / Draft / Mine lines still true.
+5. Choose what's next. Paste:
+```
+Read WORKFLOW.md, RUN-LOG.md and My Tasks. What should I build next, and why? Write NEXT.md with input, steps, output, destination, and what Version 1 does.
+```
+6. The second track, if you want OVERCLOCKED. Built a system? Now build an app for yourself in the Code tab. Built an app? Now build a system around one of your weekly tasks. Same loop either way: plan, simplest version, use it on real work, fix it in the smallest step. Warning: start the second track only when the first one is actually running. Two half-built things earn nothing.
 
 ## Deliverable
 
-- A system at Version 2, run on real input, triggered by a schedule or a sentence.
-- A one-page SYSTEM.md that a stranger read and understood.
-- A clean workspace with current instructions, skills and version history.
-- A written plan for the next system.
-
-## Note
-
-When you mark this complete, the machine will give you something. Take it where it tells you to.
+You're done when Version 2 has run on real work, a stranger could run it from SYSTEM.md, the workspace is clean, and NEXT.md says what you're building next.

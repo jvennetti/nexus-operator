@@ -28,7 +28,9 @@ body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradi
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes dp{0%,100%{opacity:.9}50%{opacity:.15}}
 .da{animation:dp 2s infinite}.db{animation:dp 2s .65s infinite}.dc{animation:dp 2s 1.3s infinite}
-.hub-btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 40px;cursor:pointer;text-decoration:none;transition:opacity .2s,transform .15s;opacity:0;animation:fade-in 0.6s ease 1.4s forwards}
+.hub-btn{display:inline-flex;align-items:center;gap:10px;font-family:'Orbitron',sans-serif;font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--bg);background:var(--blue);border:none;border-radius:4px;padding:15px 40px;cursor:pointer;text-decoration:none;transition:opacity .2s,transform .15s;opacity:0;visibility:hidden;animation:fade-in 0.6s ease 1.4s forwards,nx-show 0s linear 1.4s forwards}
+/* not clickable or focusable until its fade-in starts */
+@keyframes nx-show{to{visibility:visible}}
 .hub-btn:hover{opacity:0.88;transform:translateY(-1px)}
 @keyframes fade-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 </style>
@@ -91,19 +93,35 @@ const LINES = [
 ];
 
 (function(){
+  // The whole message is laid out up front with the untyped part visibility:hidden, so the box is
+  // its final size from the start and words never jump between lines. The cursor has zero advance
+  // and is glued to the letters either side of it.
   const el = document.getElementById('ciro-text');
-  let li = 0, ci = 0, out = '';
+  const W = /[\p{L}\p{N}'’]/u;
+  const full = LINES.map(l => l.text).join(' ');
+  const cursor = el.querySelector('.ciro-cursor');
+  cursor.style.marginRight = '-10px';
+  const typed = document.createTextNode(''), glue = document.createElement('span'), gl = document.createTextNode(''),
+        gr = document.createElement('span'), rest = document.createElement('span');
+  glue.style.whiteSpace = 'nowrap'; gr.style.visibility = 'hidden'; rest.style.visibility = 'hidden';
+  glue.append(gl, cursor, gr);
+  el.textContent = '';
+  el.append(typed, glue, rest);
+  function show(k){
+    const gL = k > 0 && W.test(full.charAt(k-1)), gR = k < full.length && W.test(full.charAt(k));
+    typed.data = full.slice(0, gL ? k-1 : k); gl.data = gL ? full.charAt(k-1) : '';
+    gr.textContent = gR ? full.charAt(k) : ''; rest.textContent = full.slice(gR ? k+1 : k);
+  }
+  show(0);
+  let li = 0, ci = 0, k = 0;
   function type(){
-    if(li >= LINES.length){ el.innerHTML = out + '<span class="ciro-cursor"></span>'; return; }
     const line = LINES[li];
     if(ci < line.text.length){
-      out += line.text[ci++];
-      el.innerHTML = out + '<span class="ciro-cursor"></span>';
+      ci++; show(++k);
       setTimeout(type, 30);
     } else {
       li++; ci = 0;
-      if(li < LINES.length){ out += ' '; setTimeout(type, line.pause); }
-      else { el.innerHTML = out + '<span class="ciro-cursor"></span>'; }
+      if(li < LINES.length){ show(++k); setTimeout(type, line.pause); }
     }
   }
   setTimeout(type, 1200);

@@ -1,0 +1,111 @@
+[00:00] Welcome back to AyazTech. In this video,
+[00:02] I will show you how you can integrate
+[00:04] Notion with your Claude desktop
+[00:06] application. After integrating Notion,
+[00:08] you will be able to control your
+[00:10] workspace from your Claude application.
+[00:13] You can create, update, or read, or
+[00:15] organize your content on Notion very
+[00:18] easily. Okay, let's start. So, first of
+[00:20] all, open the Claude and from the left
+[00:23] sidebar, click on the customize button,
+[00:25] and then click on the connectors. Click
+[00:27] on this button, add connector. Browse
+[00:30] connectors, and search for Notion, and
+[00:34] then click on that connector, and click
+[00:37] on the connect button. It will take you
+[00:39] to the Notion authorization page, and
+[00:42] here you should select the workspace
+[00:45] that you want to use your Claude
+[00:47] application, and hit continue button.
+[00:51] You will see this connected success
+[00:53] message, and now let's verify if it is
+[00:57] connected correctly. So, here you can
+[01:00] see in my Notion workspace, we have some
+[01:03] tasks available. I will go back to the
+[01:05] Claude application, and make sure to
+[01:07] restart your app because at that time,
+[01:10] the Notion will not be available. So, if
+[01:12] you reload it or restart the
+[01:13] application, then Notion will be
+[01:15] available to use. Now, let's ask it that
+[01:18] what do you see in my Notion workspace?
+[01:21] So, it will automatically discover if
+[01:23] Notion connector is available or not.
+[01:26] So, it is using different tools from
+[01:28] Notion to answer my questions. Okay, you
+[01:31] see that it went through my Notion
+[01:34] workspace and brought back all of the
+[01:37] data from there, and you see it is
+[01:40] saying that we have these databases,
+[01:42] projects, tasks, my tasks, meeting
+[01:44] notes, etc. So, it can see all content
+[01:48] in my Notion project. Now, let's quickly
+[01:51] test if it can make any change or delete
+[01:53] anything on my Notion or make any
+[01:56] update. So, for that, I'm going to open
+[01:59] both of these applications side by side
+[02:01] so that I can show you that changes are
+[02:03] being made on real time. So, here I will
+[02:07] ask it, "Please add some tasks
+[02:09] database." Okay, now it is checking my
+[02:13] task database structure, so it can add
+[02:16] task with the right fields. So, it has
+[02:18] found the task database, but it is
+[02:20] asking for my permission. Every time you
+[02:23] will ask it to make any change in your
+[02:24] database, it will ask for your
+[02:26] permission. But, if you don't want to be
+[02:30] interrupted every time you ask it for
+[02:33] any change, then you can just click on
+[02:35] the always allow button, then it will
+[02:37] never ask for this specific permission
+[02:39] again in future. But, if you don't
+[02:41] trust, then just click on the allow
+[02:43] once, then it will be asking you same
+[02:46] permission for every change that it will
+[02:49] make. So, I'm going to just click on the
+[02:51] always allow button and see what
+[02:53] happens. So, on the right side, you just
+[02:55] noticed that a new task was just
+[02:58] appeared, and here on the left side, you
+[03:00] see the task title is review and tidy up
+[03:04] the downloads folder, and same task was
+[03:07] appeared there as well. So, let's open
+[03:10] that task, and I'm going to
+[03:13] test if it can update that task. "Please
+[03:15] update that task and add detailed
+[03:19] description." Okay, now it is asking for
+[03:22] another permission to update the notion
+[03:24] page from notion, so I will again click
+[03:27] on this always allow. As this is a
+[03:29] different permission, that's why it is
+[03:30] asking for permission again, but for the
+[03:34] create
+[03:35] permission, the permission was already
+[03:37] granted, so it will not ask the same
+[03:39] permission again. So, let's click on it.
+[03:41] Okay, you see that the task is updated,
+[03:44] and there is a detailed description, and
+[03:47] it is very well formatted. So, that's
+[03:49] very very and very convenient. Now,
+[03:51] let's test one final feature. I will
+[03:55] just ask it to delete a specific task.
+[03:57] Can you please delete a task with title
+[04:02] write FAQ for launch. So, let's see if
+[04:06] it can if it can delete that task. Its
+[04:08] safety feature was activated and it is
+[04:11] resisting to delete that item. So, it is
+[04:15] asking me to do that myself, but let me
+[04:17] try to insist and see if it can do that.
+[04:20] So, I just asked it to just delete it
+[04:23] because it is not useful. So, deleting
+[04:26] is not available. So, it cannot delete
+[04:29] for us, but it can update, create task,
+[04:31] or it can make any changes like it can
+[04:34] change the status or anything like that.
+[04:36] That's all I wanted to show you in this
+[04:38] video. If you think that this video was
+[04:40] useful, then please like and share this
+[04:42] video. Thanks for watching and see you
+[04:43] later.
