@@ -12,7 +12,7 @@ A lot of a workday is moving information from one place to another: an email bec
 
 1. Morning. Run the morning brief you wrote in Lesson 3.3. For anything that only needs a quick reply, paste: "Draft replies to the quick ones, all in one message. Draft only." Then send each one yourself from Gmail. Warning: read every draft once as the recipient before you send. It's your name on it, and the habit of reading is what lets you trust the drafts later.
 2. Midday. Take the notes from one meeting or call, paste them into a chat, and ask Claude to turn them into tasks in your work tool. Say "show me the list before you create anything." Check the list, say yes, then open the tool and look at what it made. Fix anything that landed wrong by telling Claude, not by editing it yourself.
-3. Afternoon. There is a meeting you've been meaning to set up. Ask Claude to find a free slot this week and draft the invite. Approve it when it asks.
+3. Afternoon. Pick a meeting that needs scheduling this week. Ask Claude to find a free slot and draft the invite. Approve it when it asks.
 4. All day, whenever something needs to move from one tab to another, ask Claude to do it instead. Count how many times that happens.
 5. End of day, paste:
 ```
