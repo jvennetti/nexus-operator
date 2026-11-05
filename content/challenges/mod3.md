@@ -1,29 +1,29 @@
 ---
-scenario_label: The Mission
+scenario_label: What We're Going to Do
 ---
 
 ## Scenario
 
-**A Day Without Copy-Paste.** Pick a normal workday. For one day, nothing moves between your inbox, your calendar and your work tool by hand. Claude is connected to all three; you find out what that's actually worth.
+**A Day Without Copy-Paste.** Think about how much of a workday is spent moving information from one place to another: an email becomes a calendar entry, a meeting becomes a task list, a task becomes a reply. None of it is thinking. All of it takes time.
+
+Claude is now connected to your inbox, your calendar and one tool you work in. This mission is one ordinary workday where nothing moves between those three by hand. You'll run your morning brief, let Claude draft the replies, turn a meeting into tasks, and set up the meeting you've been avoiding. At the end you'll have a number: how much of your day came back.
 
 ## Steps
 
-1. Morning: run your morning brief. For the quick replies, have Claude draft them in one message and send them yourself from Gmail.
-   Warning: read every draft once as the recipient. It's your name on it.
-2. Midday: paste the notes from one meeting or call and ask Claude to turn them into tasks in your work tool. Say "show me the list before you create anything." Check what it made.
-3. Afternoon: there's a meeting you've been meaning to set up. Ask Claude to find a slot and draft the invite. Approve it when it asks.
-4. Whenever you catch yourself about to copy something from one tab to another, stop and ask Claude to do it instead. Note how many times that happens.
+1. Morning. Run the morning brief you wrote in Lesson 3.3. For anything that only needs a quick reply, paste: "Draft replies to the quick ones, all in one message. Draft only." Then send each one yourself from Gmail. Warning: read every draft once as the recipient before you send. It's your name on it, and the habit of reading is what lets you trust the drafts later.
+2. Midday. Take the notes from one meeting or call, paste them into a chat, and ask Claude to turn them into tasks in your work tool. Say "show me the list before you create anything." Check the list, say yes, then open the tool and look at what it made. Fix anything that landed wrong by telling Claude, not by editing it yourself.
+3. Afternoon. There is a meeting you've been meaning to set up. Ask Claude to find a free slot this week and draft the invite. Approve it when it asks.
+4. All day, watch for the moment you're about to copy something from one tab to another. Stop, and ask Claude to do it instead. Count how many times that happens. The number will surprise you.
 5. End of day, paste:
 ```
 List everything you did for me today, and estimate how long each would have taken me by hand.
 ```
-   Write one line at the bottom of your My Tasks file: hours saved, and the thing that surprised you.
+   Add one line to the bottom of your My Tasks file: hours saved, and the one thing that surprised you.
 
 ## Deliverable
 
-- One full day with Claude in the loop for every email, meeting and task.
-- The one-line tally in My Tasks.
+You're done when one full day has gone through Claude and the tally line is in My Tasks.
 
 ## Note
 
-If your work doesn't run on email and calendar, connect the tool it does run on. The mission is the same: one day, nothing moved by hand.
+If your work doesn't run on email and calendar, connect the tool it does run on. The mission is the same: one day where nothing moves by hand.

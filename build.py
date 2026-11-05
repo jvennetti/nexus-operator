@@ -171,7 +171,7 @@ def build():
                 todo.append('%s %s — needs a video (or stays read+do)' % (n, meta['title']))
         intro_page = 'module-intro.html' if is_pre else 'intro.html'
         after_last = 'complete.html' if is_pre else 'challenge.html'
-        after_last_title = 'Pre-Course Complete' if is_pre else '%s Challenge' % label
+        after_last_title = 'Pre-Course Complete' if is_pre else 'Complete %s' % label
 
         for i, L in enumerate(lessons):
             prev_href, prev_title = (intro_page, '%s Intro' % label) if i == 0 else (lessons[i-1]['file'], lessons[i-1]['title'])
@@ -228,11 +228,11 @@ def build():
             cmeta, csec = split_sections(cmd)
             body = []
             body.append('  <div class="scenario-box">\n    <div class="section-title">%s</div>\n    <div class="body-copy">\n%s\n    </div>\n  </div>\n'
-                        % (html.escape(cmeta.get('scenario_label', 'The Scenario')), render_blocks(parse_blocks(sec_get(csec, 'scenario')))))
+                        % (html.escape(cmeta.get('scenario_label', "What We're Going to Do")), render_blocks(parse_blocks(sec_get(csec, 'scenario')))))
             if csec.get('setup'):
                 body.append('  <div class="setup-strip">\n    <div class="setup-label">Before you build</div>\n    <div class="body-copy">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(csec['setup'])))
-            body.append('  <div class="challenge-box">\n    <div class="challenge-title">Your Challenge</div>\n%s\n  </div>\n' % render_blocks(parse_blocks(sec_get(csec, 'steps')), ol_as_steps=True))
-            body.append('  <div class="deliverable-box">\n    <div class="section-title">Your Deliverable</div>\n    <div class="deliverable-text">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(sec_get(csec, 'deliverable'))))
+            body.append('  <div class="challenge-box">\n    <div class="challenge-title">How We\'ll Do It</div>\n%s\n  </div>\n' % render_blocks(parse_blocks(sec_get(csec, 'steps')), ol_as_steps=True))
+            body.append('  <div class="deliverable-box">\n    <div class="section-title">You\'re Done When</div>\n    <div class="deliverable-text">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(sec_get(csec, 'deliverable'))))
             if csec.get('extension'):
                 body.append('  <div class="extension-box">\n    <div class="section-title">Go Further</div>\n    <div class="extension-text">\n%s\n    </div>\n  </div>\n' % render_blocks(parse_blocks(csec['extension'])))
             if csec.get('note'):
