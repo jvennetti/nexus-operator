@@ -87,6 +87,7 @@ nav{background:var(--card);border-bottom:1px solid var(--border);height:64px;dis
   text-decoration:none;margin-top:4px;
 }
 .begin-btn.visible{opacity:1;transform:translateY(0);animation:btn-pulse 2s ease-in-out infinite}
+.begin-btn:not(.visible){visibility:hidden;pointer-events:none}
 .begin-btn:hover{background:var(--blue-dim);border-color:var(--blue);animation:none;box-shadow:0 0 18px rgba(0,200,255,0.35)}
 @keyframes btn-pulse{
   0%,100%{border-color:rgba(0,200,255,0.22);box-shadow:0 0 0 rgba(0,200,255,0)}
