@@ -41,6 +41,10 @@ skip_label: text for the skip button
 - Pages in subdirectories reference root assets with `../`.
 - `nexus-transition.js` stays at root and injects the mobile CSS for every page.
 
+## Current step
+
+See `docs/video-research.md`. Step 1 (videos) is in progress; steps 2 to 4 wait on it.
+
 ## Workflow
 
 Develop on a `claude/*` branch, push, open a PR, squash-merge to `main`. Cloudflare Pages deploys `main` to https://nexusoperator.pages.dev automatically.
