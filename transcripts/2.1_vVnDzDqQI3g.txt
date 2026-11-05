@@ -1,0 +1,96 @@
+[00:00] Most people are getting mediocre results from  AI tools not because the AI isn't good enough,  
+[00:04] but because of how they're asking. Today I'm  giving you a simple 4-step framework for writing  
+[00:09] prompts that actually get you what you want  — and it works whether you're using ChatGPT,  
+[00:13] Claude, Gemini, or whatever comes out next month. Hey, welcome back to AI CatchUp — the channel  
+[00:20] where we skip the hype and just  tell you what's actually useful. 
+[00:24] Here's something worth saying upfront:  prompting isn't some mystical skill,  
+[00:28] and it's definitely not about memorizing magic  phrases that unlock secret AI powers. It's  
+[00:34] closer to giving clear instructions to a very  capable but very literal assistant. Once you  
+[00:39] understand the pattern behind a genuinely good  prompt, you can apply it anywhere, on any model,  
+[00:44] for basically any task. That's what we're  building today — a framework, not a trick. 
+[00:50] Before we get into the framework itself, let's  talk about why so many prompts fall flat,  
+[00:54] because understanding the failure mode  makes the fix a lot more intuitive. 
+[00:58] Most weak prompts share one core problem: they're  vague. Something like "write me a marketing email"  
+[01:04] gives the AI almost nothing to work with — no  audience, no tone, no goal, no constraints.  
+[01:10] The AI has to guess at all of that, and when it  guesses, you get something generic. Not wrong,  
+[01:16] exactly, just... average. Forgettable. The fix isn't complicated, but it is a habit  
+[01:20] shift. Good prompting means front-loading  the context the AI would otherwise have  
+[01:25] to guess at. And that's genuinely all this  framework is — a simple, repeatable way to  
+[01:29] make sure you're not leaving that context out. Here's the framework. Four parts: Role, Task,  
+[01:35] Context, and Format. Let's go through each one. Step one: Role. Tell the AI what perspective or  
+[01:41] expertise to respond from. This might  sound like a small thing, but it does  
+[01:46] real work — it shapes tone, vocabulary, and  the kind of assumptions the AI makes. "Act as  
+[01:52] an experienced marketing copywriter" produces a  noticeably different output than no role at all,  
+[01:57] because it's anchoring the response in a specific  voice and skill set instead of a generic default. 
+[02:03] Step two: Task. State clearly and specifically  what you actually want done. Not "help with my  
+[02:10] email" — instead, "write a promotional email  announcing a 20%-off summer sale." The more  
+[02:16] specific the task, the less the AI has to fill in  gaps with its own assumptions, and the closer the  
+[02:21] first draft lands to what you actually wanted. Step three: Context. This is the step people  
+[02:28] skip most often, and it's usually the one that  matters most. Context means giving the AI the  
+[02:34] background information it needs to actually tailor  the response to your specific situation — your  
+[02:39] audience, your brand voice, relevant constraints,  prior attempts that didn't work, anything that  
+[02:44] would change how a smart person would approach the  same task if they knew what you know. Without this  
+[02:49] step, even a well-defined task still comes  out generic, because the AI is working with  
+[02:54] a blank slate about your specific situation. Step four: Format. Specify exactly how you want  
+[03:00] the output structured — length, tone, structure,  whether you want bullet points or full paragraphs,  
+[03:05] whether you need a subject line included,  whatever's relevant to your specific task.  
+[03:10] This step saves you from getting a  technically correct answer that's  
+[03:14] still frustrating to use because it's in the  wrong shape for what you actually needed. 
+[03:18] Put those four together — Role, Task, Context,  Format — and you've got a prompt that gives  
+[03:23] the AI almost everything it needs to produce  something genuinely useful on the first try,  
+[03:28] instead of something you have to  heavily edit or regenerate five times. 
+[03:32] Let's make this concrete with a real  before-and-after, because the difference tends to  
+[03:36] click a lot faster once you see it side by side. Weak prompt: "Write a LinkedIn post  
+[03:41] about my new product." That's a task, technically,  
+[03:44] but it's missing almost everything else. No  role, no context about the product or audience,  
+[03:50] no format guidance. The AI has to guess  at all of it, and you'll get something  
+[03:54] serviceable but generic — the kind of LinkedIn  post that sounds like every other LinkedIn post. 
+[04:00] Now here's the same request run through the  framework. Role: "Act as a B2B social media  
+[04:05] strategist who writes in a confident, slightly  conversational tone." Task: "Write a LinkedIn  
+[04:11] post announcing the launch of our new project  management tool." Context: "Our audience is  
+[04:16] mostly small business owners and team leads who  are currently frustrated with juggling too many  
+[04:21] separate apps. The tool's main selling point  is that it combines task tracking, team chat,  
+[04:27] and file sharing in one place. We want to sound  helpful and confident, not salesy." Format:  
+[04:33] "Keep it under 150 words, use short paragraphs,  and end with a question to encourage comments." 
+[04:40] Notice how much more the AI actually has to work  with there. It's not guessing at your audience,  
+[04:45] your tone, or your product's actual value — you've  told it directly. That's the entire difference  
+[04:51] between a mediocre first draft and something  close to genuinely usable, and it's not because  
+[04:55] the second prompt is clever. It's just complete. Here's the part that makes this framework worth  
+[05:00] actually learning instead of just copying a  list of prompt examples you find online: it's  
+[05:05] not tied to any one AI tool's specific quirks. Different AI models have different strengths,  
+[05:11] different default tones, sometimes different  formatting habits — but they all fundamentally  
+[05:16] work the same underlying way. They're generating a  response based on patterns, and the more relevant,  
+[05:23] specific information you give them, the better  they can match those patterns to what you actually  
+[05:28] want. That's true whether you're using ChatGPT,  Claude, Gemini, or whatever launches next year. 
+[05:34] A lot of prompting advice online is actually just  a list of clever-sounding phrases to paste in,  
+[05:39] which tend to work inconsistently and often  stop working entirely once a model updates.  
+[05:45] This framework is different because it's  not about finding a magic phrase — it's  
+[05:49] about a repeatable process for giving any  model complete information. That's why it  
+[05:54] holds up across tools and over time, in a way  that specific prompt tricks usually don't. 
+[06:00] A few practical notes to help  this actually stick as a habit,  
+[06:03] not just something you nod along to and forget. First: you don't always need all four parts for  
+[06:09] every single prompt. Quick, simple questions  don't need a full Role-Task-Context-Format  
+[06:14] treatment. This framework earns its keep  on things that matter — a piece of writing  
+[06:18] you'll actually use, a task with real  constraints, something you'd normally have  
+[06:22] to revise multiple times. Save it for those. Second: treat the first response as a draft,  
+[06:28] not a final answer, even with a great prompt. If  something's off, don't start over — just add the  
+[06:34] missing context directly in a follow-up. "Make  it more casual" or "our audience skews younger  
+[06:40] than that" refines the same conversation  instead of wasting a whole new prompt. 
+[06:44] Third: build yourself a few reusable templates  for tasks you do often. If you're regularly  
+[06:50] writing similar types of content, save  a Role-Task-Context-Format template with  
+[06:54] the parts that stay consistent already filled  in, so you're only updating the details that  
+[06:59] actually change each time. That turns this from  a one-off framework into a genuine time-saver. 
+[07:05] So here's the actual takeaway: most weak  prompts fail because they're vague, leaving  
+[07:09] the AI to guess at things you actually know. The  fix is a simple four-part framework — Role, Task,  
+[07:15] Context, Format — that front-loads exactly the  information the AI needs to give you something  
+[07:20] genuinely useful on the first try. And because this framework is about  
+[07:25] giving complete information rather than  exploiting a specific model's quirks,  
+[07:28] it holds up across every AI tool you'll use,  today and going forward, which is exactly  
+[07:34] why it's worth learning properly instead of  just collecting a list of prompt examples. 
+[07:38] So — try this on something you're actually  working on this week, and let me know in  
+[07:42] the comments how much of a difference it  made. I'm genuinely curious whether this  
+[07:46] changes your results as much as it changed mine. If this actually helped you get better results  
+[07:51] out of AI tools, do me a favor and hit subscribe.  I put out videos like this every week, breaking  
+[07:56] down practical AI skills without the fluff. Next week, I'm going deeper into advanced  
+[08:01] prompting techniques for more complex  tasks, building directly on this framework.  
+[08:06] Subscribe so you don't miss it. See you in the next one.

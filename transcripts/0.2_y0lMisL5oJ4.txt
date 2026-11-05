@@ -1,0 +1,262 @@
+[00:00] I'll build me a website, build me an
+[00:01] app, or build me a game, small game. So,
+[00:05] this is a beautiful trip plan. So, today
+[00:08] we are going to see
+[00:10] basics of Cloud.
+[00:13] If you have never used Cloud
+[00:15] or you are the first time using Cloud,
+[00:18] so this video is for you.
+[00:20] So, let us start by searching in Google
+[00:24] Cloud, c l a u d.
+[00:27] This is the AI tool. So, Cloud sign in,
+[00:31] we have to type Cloud sign in.
+[00:33] And I have already signed in, so it came
+[00:35] to sign in. If you see the price, so
+[00:37] normally in the first time it will ask
+[00:39] you to
+[00:41] login with uh email account. You can
+[00:43] link it with the Google email account.
+[00:45] >> [snorts]
+[00:45] >> Then it will show which plan you want to
+[00:48] start, like you can go with free so or
+[00:51] pro or pro max. But here we want to do
+[00:56] coding uh means like we want to use
+[00:59] desktop app or terminal app and do some
+[01:01] coding. That's when we need pro plan, so
+[01:05] we are going to choose pro plan.
+[01:07] And
+[01:09] yeah, that's it. Then we log we will be
+[01:11] logged in and this is the window. So,
+[01:14] here two options are there. This is
+[01:16] Cloud code, Cloud code with Cloud
+[01:18] anywhere.
+[01:20] So,
+[01:21] this is the option and uh for normal
+[01:24] chatting this is enough. And now you
+[01:26] have to type
+[01:28] download
+[01:30] Cloud for desk next download Cloud for
+[01:34] desktop. So, this one.
+[01:36] So, this is the page download Cloud for
+[01:38] Mac. You download it.
+[01:40] Okay?
+[01:40] It will open up something like this.
+[01:45] So,
+[01:47] here we have multiple options like
+[01:49] normal chat is there and this is chat uh
+[01:52] and this is
+[01:54] and for
+[01:56] developing apps and all those things.
+[01:58] So, this is Cloud Code and this is
+[02:00] Cloud. And here
+[02:03] couple of beautiful things are there,
+[02:05] one of which is
+[02:07] project. You have can create a new chat
+[02:10] or go to
+[02:13] project projects and create I have
+[02:16] created three projects. Can create a new
+[02:19] project, name it and you don't have to
+[02:21] add goal. Once the project is created,
+[02:24] it will come in a window like this and
+[02:26] you can
+[02:27] tell in simple English like what you
+[02:29] need to do, what you want this
+[02:32] project to do. So, for example, so this
+[02:34] is my project and I have a YouTube
+[02:38] channel where I make interesting videos
+[02:41] or like curiosity videos. For that, I
+[02:44] have just told it in simple English like
+[02:46] what kind of videos I'm going to do and
+[02:48] I don't want you to repeat it. So, save
+[02:50] all the videos whatever we have done and
+[02:53] couple of simple English
+[02:54] everyday or once you make the videos,
+[02:56] you'll come to know what is the
+[02:57] requirement. So,
+[02:59] and now I just want to make two videos.
+[03:02] So, I will type one long,
+[03:05] one short. It I don't have to tell it is
+[03:07] for YouTube, you have to make
+[03:09] everything, nothing like that. Just I
+[03:11] type it, the project remembers
+[03:13] everything
+[03:14] and is going to come up with one long
+[03:17] and one short script. I just have to
+[03:19] read it the
+[03:21] voice and give it, it will make
+[03:23] animations and give me and I can just
+[03:26] post it in the YouTube.
+[03:28] So, this is the Cloud Desktop and you
+[03:32] have search option
+[03:34] and then artifacts,
+[03:37] customize more.
+[03:40] And this is the settings where you have
+[03:43] usage, how much we have used. So, my
+[03:47] usage has run in the desktop app.
+[03:49] So, that's what that there is two usage,
+[03:53] one is every 5 hour it renews, that is 5
+[03:56] hour window and one is weekly window.
+[03:59] So, my have run down my weekly window
+[04:01] 100% used.
+[04:04] So, there is another option you can buy
+[04:05] credit also. $100
+[04:07] can buy credit, but I have bought it,
+[04:09] but I don't think it's
+[04:11] worth because in one day my $50 credit
+[04:14] was consumed. So, the better option is
+[04:18] uh the normal plan.
+[04:20] And uh if you feel that one account is
+[04:23] not enough, you can create multiple
+[04:24] accounts also. For that, I have made
+[04:26] another video, and you can parallelly
+[04:28] work in one cloud desktop app and one
+[04:31] terminal. That also I'm going to show
+[04:32] you how to use cloud in terminal. So,
+[04:34] this is usage capabilities, memory, some
+[04:37] permissions. These are general.
+[04:40] Okay. So, there you can
+[04:43] go to projects. So, since
+[04:45] uh my
+[04:47] weekly limit is it's not going to do it.
+[04:49] So, now let us try in terminal. So,
+[04:52] first I'll go to Google and
+[04:55] I will just tell
+[04:57] how to install
+[05:00] Now, I can just type here or I can go to
+[05:04] cloud itself and tell
+[05:06] how to install
+[05:08] cloud for
+[05:12] We have it will take some 5-10 minutes
+[05:14] to install the cloud for
+[05:17] terminal.
+[05:18] So, it tells to run this command.
+[05:21] So, from uh here it will install it.
+[05:24] So, this is for Mac OS, and these are
+[05:26] different different OS.
+[05:29] Check the download, and that's it. And I
+[05:30] have already installed it.
+[05:33] So, it looks like this when you open a
+[05:35] terminal, and you have to type c l a u d
+[05:38] cloud, and it will ask like whether you
+[05:40] want to give permission to this folder
+[05:42] path. If you trust it, then yes, it is
+[05:44] done. He You can type it and see how it
+[05:47] is going to work. What can I help you?
+[05:50] So, you can just tell anything like uh
+[05:53] uh build me a website, build me an app,
+[05:55] or build me a game, small game. Let us
+[05:59] try something simple.
+[06:01] Give me
+[06:03] Delhi
+[06:04] Delhi
+[06:05] trip plan
+[06:07] with hotels
+[06:10] hotels, transportation
+[06:14] budget from Bangalore
+[06:18] 4 days
+[06:20] 3 nights
+[06:22] give in PDF. Let us see
+[06:25] what it is going to do.
+[06:29] It's going to give you the itineraries,
+[06:30] hotels, which one to book which one to
+[06:34] stay
+[06:35] which route to take, everything it is
+[06:37] going to give.
+[06:40] So, here in my
+[06:42] my usage is being reached.
+[06:46] So, I have multiple account. So,
+[06:49] yeah. So, this is this in the desktop
+[06:51] app I have logged in one account where
+[06:53] the usage has
+[06:55] reached the limit and in the Chrome it
+[06:59] is a different account where my usage is
+[07:01] only 6% I used it for this week and 14%
+[07:04] for the 5-hour window.
+[07:08] And let us see what is what's happening
+[07:09] in the
+[07:13] Generating Delhi trip plan PDF.
+[07:18] It loaded some skill.
+[07:20] Okay.
+[07:21] Before you book. So, it is telling me I
+[07:24] made your Delhi trip plan.
+[07:26] Okay, Rajat Kornaia. Delhi paid by day
+[07:29] by trip. Let's ask it to open the PDF.
+[07:33] Open the PDF.
+[07:35] So, it has access to our folders.
+[07:37] So, it can open. Okay, it opened the
+[07:39] PDF. Delhi trip plan.
+[07:42] So, Bangalore Delhi Bangalore
+[07:44] all prices are approximate, okay? So,
+[07:46] first day one, arrival in New Delhi.
+[07:49] Flight check-in, India Gate
+[07:51] and couple of places it has given. Day
+[07:55] two, Old Delhi, Akshardham.
+[07:57] Okay.
+[07:59] And day four, this is a plan around
+[08:01] closure. So, it is giving you actual Red
+[08:03] Fort, National Museum. Temples are
+[08:05] closed on Mondays, okay?
+[08:07] So, getting there to Bangalore flight
+[08:08] area, it's recommending around 4,000 to
+[08:10] 8,000.
+[08:12] So,
+[08:14] train also it's giving option.
+[08:16] And day wise itinerary it is giving.
+[08:19] Arrival in Delhi morning land
+[08:21] where you have to do how much
+[08:24] uh it will cost for the cab and hotel
+[08:27] afternoon
+[08:29] where you need to go
+[08:31] each day each time it has given the
+[08:34] itinerary. And let us see what about the
+[08:37] bookings and hotels it has given. Budget
+[08:39] sheet has given hotel
+[08:41] uh 700 to 1,200. Connaught Place because
+[08:44] it is in the center this it want you to
+[08:46] stay in the Connaught Place Janpath or
+[08:48] Karol Bagh. So, that metros are
+[08:50] connected.
+[08:52] So, it is telling getting around Delhi.
+[08:55] Delhi metro it is telling airport
+[08:57] express lane Ola Uber you can use.
+[08:59] So, budget estimate per person 4 days 3
+[09:02] nights. So, total budget it is giving
+[09:06] a mid-range
+[09:09] and up to premium. It means hotels if
+[09:12] you see if you see flight rate it's in
+[09:14] normal 12,000 hotel 3 nights some 3,000
+[09:18] you get a good hotel food local
+[09:20] transport entry fees. So, it is costing
+[09:23] around average 20,000
+[09:26] in budget per person.
+[09:28] Weather air quality including flight it
+[09:30] is costing. So, it is telling about the
+[09:32] weather
+[09:33] local dress code covers
+[09:35] should shoulders and inside Jama Masjid,
+[09:37] Gurudwara and Dargahs carry scarves and
+[09:40] kerchiefs. So, the Gurudwara side and if
+[09:41] you have to go you have to
+[09:43] uh a scarf.
+[09:45] So, have a extra day at Agra trip it's
+[09:47] also telling see Taj Mahal.
+[09:49] Okay,
+[09:50] it's giving the train name.
+[09:53] Uh one day you can go and come. So, this
+[09:55] is a beautiful trip plan.
+[09:57] So, this is how you use cloud and how
+[10:00] you use the cloud terminal.
+[10:02] So, this also cloud desktop is also a
+[10:05] good uh UI simple UI you can just uh use
+[10:07] code and chat it and give the all the
+[10:10] requirements.
+[10:11] So, I hope you got uh understanding of
+[10:14] Cloud and you're going to use the Cloud.
+[10:17] Uh most of the things we can do in a
+[10:19] free plan. You can try out the free
+[10:20] plan.
+[10:21] And if you are really want to coding and
+[10:24] all those stuff, you can upgrade to the
+[10:28] pro. It is enough.
+[10:30] And if you have any questions, please
+[10:32] comment in the chat. Thank you.

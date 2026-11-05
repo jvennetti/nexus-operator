@@ -1,0 +1,382 @@
+[00:00] Did you know that you can actually get
+[00:01] better results from AI by being polite
+[00:03] to it? Even though CEO of Open AI, Sam
+[00:05] Alman, said it's costing the company
+[00:07] millions of dollars in electricity
+[00:08] bills, saying please and thank you can
+[00:10] sometimes lead to more helpful and
+[00:12] thorough responses. It's one of the many
+[00:14] fascinating quirks of prompt
+[00:15] engineering, and it shows that how you
+[00:16] ask is just as important as what you
+[00:18] ask. I'm here to show you how to
+[00:20] communicate with AI tools so effectively
+[00:22] that your colleagues will think you've
+[00:23] discovered some secret advanced model.
+[00:25] The truth is, you're probably already
+[00:26] using the same AI tools as everyone
+[00:28] else. you're just going to learn how to
+[00:30] use them exponentially better. In this
+[00:32] video, we're going to cover four key
+[00:33] areas that take you from beginner to a
+[00:35] pro. First, we'll master the essential
+[00:37] building blocks of the perfect prompt.
+[00:38] Next, I'll share the pro tips and habits
+[00:40] that guarantee better results. Then,
+[00:42] we'll dive into the advanced strategies
+[00:43] that will turn you into a true power
+[00:45] user. And finally, because knowing isn't
+[00:47] the same as doing, we'll walk through an
+[00:49] actionable strategy to implement these
+[00:50] skills into your daily workflow. And to
+[00:52] ensure that everything sticks, we'll
+[00:54] finish with a quick summary of the most
+[00:56] important lessons. Sound good? All
+[00:58] right, let's get into it. Before we can
+[01:00] build the perfect prompt, we need to be
+[01:02] clear on what prompt engineering
+[01:03] actually is. To put it simply, it's the
+[01:05] skill of writing precise instructions to
+[01:07] guide AI models to produce specific and
+[01:09] useful responses. And today, those
+[01:11] responses are so much more than just
+[01:13] text. We're talking about generating
+[01:15] code, creating complex images, and even
+[01:17] building fully functional web
+[01:18] applications from a single description.
+[01:20] Think of it as learning the universal
+[01:22] language that gets AI to build exactly
+[01:24] what you need. Here's what most people
+[01:26] do wrong, though. They treat AI like
+[01:28] it's just a search engine. They type,
+[01:30] "Write me a blog post about marketing,"
+[01:32] and wonder why the output feels bland
+[01:34] and unfocused. But here's the thing. AI
+[01:36] models are incredibly powerful reasoning
+[01:38] engines that can follow complex
+[01:39] instructions, maintain context, and even
+[01:42] adopt specific writing styles. You just
+[01:44] need to know how to ask. So, let's break
+[01:46] down the building blocks of a good
+[01:47] prompt. And once you see how they work
+[01:49] together, you'll never write a vague
+[01:51] prompt again. I promise. Okay, so first
+[01:53] of all, an excellent prompt isn't a
+[01:55] single question. It's a recipe with five
+[01:57] key ingredients. Let me show you exactly
+[01:59] what I mean. Most people type something
+[02:01] like, "Write a social media post for our
+[02:03] new app, Progify," and we get a
+[02:05] semidecent response. But is this what
+[02:07] you really want? Let's see what happens
+[02:08] when we build this up one by one. First
+[02:10] and most importantly, we add the task.
+[02:13] This is the core action you want the AI
+[02:15] to perform. I'll change our prompt to
+[02:17] generate three engaging social media
+[02:19] posts for a new productivity app called
+[02:21] Proifi. And that's going to be our
+[02:23] foundation. Next, we add contacts and
+[02:26] audience. Who is this for? Why does it
+[02:28] matter? Let's add the posts are for
+[02:30] Instagram and LinkedIn, targeting busy
+[02:32] freelancers and small business owners
+[02:34] who feel overwhelmed by their workload.
+[02:36] Now, the AI knows who it's talking to
+[02:38] and where the content will be posted.
+[02:40] And for the next level ingredient, we'll
+[02:42] add the persona. This is where you tell
+[02:43] the AI who to be. I'll add act as a
+[02:45] witty and encouraging productivity coach
+[02:47] right at the beginning. This tells the
+[02:48] AI to access a specific knowledge base
+[02:50] and adopt a unique writing style.
+[02:52] Fourth, we need a clear format. How
+[02:54] should the output look? Let's add each
+[02:56] post must be between 20 and 60 words.
+[02:59] Start with a question and end with a
+[03:00] call to action. To learn more at
+[03:02] www.proifiapp.icu.
+[03:04] It should have relevant emojis and
+[03:06] hashtags. See, now we've given it clear
+[03:08] structural boundaries. And finally, we
+[03:10] add some training examples. This is
+[03:12] where we show the AI exactly what good
+[03:14] looks like by giving the examples to
+[03:16] follow. A technique called few shot
+[03:18] prompting. Instead of just telling it to
+[03:20] be witty, I'll show it the exact style
+[03:22] of humor and encouragement I want. So,
+[03:24] I'll just add these examples to my
+[03:25] prompt. Now that we've trained it on
+[03:27] this specific style, we can ask it to
+[03:29] generate new posts for our features. It
+[03:31] will follow the pattern perfectly,
+[03:33] giving us onbrand highquality content
+[03:35] every time. So, let's put it all
+[03:36] together and look at the difference. On
+[03:38] the left is the generic response we got
+[03:40] from our first vague prompt. On the
+[03:42] right are the three posts generated by
+[03:44] our new detailed prompt. They perfectly
+[03:46] match the witty, encouraging style we
+[03:48] wanted. following our formatting rules
+[03:50] and are ready to be published. Now that
+[03:52] you have the core framework for building
+[03:53] a prompt from scratch, let's move on to
+[03:55] the pro tips that will make your results
+[03:57] even stronger. Tip number one, define
+[03:59] the output format. Instead of letting
+[04:01] the AI give you a wall of text, you tell
+[04:03] exactly how to structure its response.
+[04:05] Imagine you just finished a long team
+[04:07] meeting and you have a messy transcript.
+[04:09] If you just ask the AI to summarize
+[04:11] this, you'll get back a dense paragraph.
+[04:13] It's somewhat helpful, but you still
+[04:15] have to hunt for important parts like
+[04:17] who promised to do what. But watch what
+[04:19] happens when you provide a clear
+[04:20] template in your prompt. You can ask for
+[04:22] the exact same summary, but add this
+[04:23] instruction. Now, instead of a messy
+[04:26] paragraph, you get a perfectly
+[04:27] organized, actionable report. The action
+[04:29] items aren't buried in a paragraph.
+[04:30] They're in a clean table you can copy
+[04:32] and paste anywhere. As you can see for
+[04:34] yourself, it is a massive timesaver.
+[04:36] Moving on to tip two. Use instructions
+[04:38] over constraints. Telling the AI what
+[04:41] you want is much clearer than telling it
+[04:43] what you don't want. For example,
+[04:45] telling it do not use any technical
+[04:47] jargon is a negative constraint which
+[04:49] might leave your AI a bit confused. A
+[04:51] much better approach is a positive
+[04:52] instruction. Explain its benefits using
+[04:54] simple everyday language that a beginner
+[04:56] would understand. This gives the AI a
+[04:58] clear, positive goal, which leads to a
+[05:00] much more natural and helpful result.
+[05:01] Telling the AI what they shouldn't do is
+[05:03] still valuable for preventing harmful
+[05:05] content or enforcing strict output
+[05:07] formats, though, so keep that in mind.
+[05:09] And the third most important habit,
+[05:11] build your personal prompt library. When
+[05:13] you craft a prompt that works perfectly,
+[05:14] save it. Professionals don't start from
+[05:16] scratch every time. They document their
+[05:18] best prompts in a simple sheet. Over
+[05:20] time, you build a powerful, reusable
+[05:21] toolkit that saves you hundreds of
+[05:23] hours. Trust me, you'll be super glad
+[05:25] that you did. Okay, just with those tips
+[05:27] alone, you can see how much of a
+[05:28] difference a few small changes can make
+[05:30] in your results. And that's what we're
+[05:31] really all about here at Hostinger
+[05:33] Academy, giving you the practical skills
+[05:35] to build and create more effectively.
+[05:37] So, if you're finding this helpful and
+[05:39] you want more guides on using tools like
+[05:40] this to be more productive, this would
+[05:42] be a great time to like the video and
+[05:43] hit that subscribe button so you don't
+[05:45] miss what's coming next. All right, you
+[05:47] mastered the fundamentals and the pro
+[05:48] habits. Let's level up and dive into the
+[05:51] advanced strategies. The first one is a
+[05:53] brilliant technique for getting more
+[05:54] creative results. It's called step back
+[05:56] prompting. The goal here is to guide the
+[05:58] AI away from predictable answers by
+[06:00] first having it think about the core
+[06:01] principles behind your goal. Let's say
+[06:03] you want a new feature for your online
+[06:04] clothing store to keep customers coming
+[06:06] back. A normal prompt like suggest a
+[06:09] feature to increase customer retention
+[06:11] will give you standard ideas. A
+[06:13] pointsbased loyalty program, email
+[06:15] discounts, or a wish list. They work,
+[06:17] but they're not that innovative. Now,
+[06:18] let's step back. Instead of asking about
+[06:21] a business goal, we'll ask about the
+[06:22] customer's core problem. What is the
+[06:24] biggest frustration people have when
+[06:26] shopping for clothes online? The AI will
+[06:28] give you powerful insights such as
+[06:29] uncertainty about fit and how an item
+[06:31] will actually look on their body. Then
+[06:33] you'll use that as your creative fuel
+[06:34] for the final prompt. Okay. Using the
+[06:36] idea of reducing uncertainty about fit,
+[06:38] brainstorm a unique feature for my
+[06:40] store. Now, instead of a boring loyalty
+[06:42] program, the AI might suggest an
+[06:43] innovative feature like virtual closet
+[06:45] tryon where users can create a digital
+[06:48] mannequin with their measurements to see
+[06:49] how clothes will fit before they buy.
+[06:51] you get a much better, more creative
+[06:53] result because you gave the AI the
+[06:54] inspiration before you asked for the
+[06:56] idea. Next, let's talk about a strategy
+[06:59] that will completely change how you use
+[07:00] AI, and that is creating persistent AI
+[07:03] agents. Instead of starting a new fresh
+[07:05] chat every time, you create dedicated
+[07:07] conversations where you assign the AI a
+[07:09] specific ongoing role. Think of it as
+[07:11] creating a personal board of expert
+[07:12] advisers. Here's how you do it. You
+[07:14] start a brand new chat and your very
+[07:16] first message is the job description.
+[07:18] For example, you are my startup adviser
+[07:20] with expertise in software as a service
+[07:22] businesses. For the rest of this
+[07:24] conversation, analyze everything through
+[07:26] the lens of a scalable growth and
+[07:28] product market fit. Your tone should be
+[07:30] encouraging but direct. Now, the key is
+[07:32] to keep using the same chat thread for
+[07:34] all your startup questions. You've
+[07:36] preloaded the context for your next
+[07:38] question. You don't need to repeat
+[07:39] anything. You can just ask, "What are
+[07:41] the top three KPIs I should track in my
+[07:43] first year?" and the AI will answer from
+[07:45] the perspective of your adviser, giving
+[07:47] you a focused expert level response. You
+[07:49] can create a whole cast of these agents,
+[07:50] an interview coach, a coding mentor, a
+[07:52] financial analyst. It's like having a
+[07:54] team of experts on call 24/7. The final
+[07:57] technique I wanted to share is
+[07:58] metaprompting, which is one of my
+[08:00] favorites, especially when you feel
+[08:02] stuck. In this technique, you get the AI
+[08:04] to act as an expert prompt engineer and
+[08:06] help you write a better prompt. Instead
+[08:07] of struggling, you just describe your
+[08:09] goal to the AI like this. I want you to
+[08:11] act as an expert prompt engineer. My
+[08:13] goal is to generate a comprehensive
+[08:15] three months content strategy for my
+[08:16] small business, which is a local plant
+[08:18] shop specializing in rare and easy to
+[08:20] care for indoor plants. I'm not sure
+[08:22] what information I need to provide you
+[08:23] to get the most effective and creative
+[08:25] content strategy possible. Please create
+[08:27] a detailed expert level prompt template
+[08:29] that I can fill out. The template should
+[08:31] include all the essential components you
+[08:33] would need to generate a truly
+[08:34] exceptional content strategy for my
+[08:36] business. Now, the magic here is in the
+[08:38] response it gives you. The A won't just
+[08:40] write a sentence. It will give you a
+[08:41] professional-grade prompt template,
+[08:43] essentially revealing what it needs to
+[08:45] do a great job. All right, so you've
+[08:47] learned the basics and had a glimpse
+[08:48] into some advanced techniques. But it
+[08:50] doesn't just stop there. The goal isn't
+[08:52] to overwhelm yourself with complexity,
+[08:54] but to systematically improve your AI
+[08:56] interactions, implementing these
+[08:57] techniques into your daily workflow.
+[08:59] Start by creating that prompt template
+[09:01] library for your most common use cases.
+[09:03] Like I mentioned before, this will
+[09:04] ensure consistency and save time while
+[09:06] maintaining quality. Then develop a
+[09:08] personal prompt engineering checklist
+[09:10] that you can review before submitting
+[09:11] your essential requests. Ask yourself,
+[09:13] have I provided sufficient context? Is
+[09:16] my desired output format clear? Have I
+[09:18] specified any constraints or
+[09:20] limitations? Are there examples I can
+[09:21] include to guide the AI? And finally,
+[09:24] stay curious and experimental. The field
+[09:26] of AI is evolving rapidly and new
+[09:28] techniques emerge regularly. Set aside
+[09:30] time each week to try new approaches or
+[09:32] test different prompt structures. This
+[09:34] ongoing experimentation will keep your
+[09:36] skills sharp and help you discover new
+[09:38] ways to leverage AI effectively. And
+[09:40] that habit of experimentation of trying
+[09:42] new approaches and testing new
+[09:43] structures is exactly where the magic
+[09:45] happen. It's the moment you stop
+[09:47] learning about what's possible and start
+[09:48] building what's next. So what if you
+[09:50] could take that creative energy and use
+[09:52] your prompting skills not just to
+[09:54] generate text, but to build a complete
+[09:55] fully functioning website or web app.
+[09:57] That's not science fiction. That's the
+[09:59] power of Hostinger Horizons. It's our
+[10:02] new platform that lets you bring your
+[10:03] vision to life. You can literally
+[10:05] describe your app or website idea using
+[10:06] the framework we covered and Horizons
+[10:09] starts building it for you. It's
+[10:10] constantly being updated and we have a
+[10:12] whole playlist of videos you can check
+[10:14] out to become a power user. If you want
+[10:15] to stay in the loop with the latest
+[10:17] updates and join a community of other
+[10:18] builders, you should definitely join the
+[10:20] official Hostinger Horizon's Discord
+[10:22] server, too. Best of all, you can start
+[10:24] building today with a free trial. I've
+[10:25] included all the links in the
+[10:26] description below, including a 10% off
+[10:28] coupon and an invite to the official
+[10:30] Discord community. All right, we've
+[10:32] covered a ton of ground today, so let me
+[10:34] distill it all down into a simple,
+[10:35] actionable cheat sheet that summarizes
+[10:37] the most important lessons from this
+[10:39] video. First, master the five
+[10:41] ingredients. This is your foundation.
+[10:43] Always build your prompts using a clear
+[10:45] task, context, persona, format, and
+[10:47] examples. Getting this right is the
+[10:49] first and most important step. Second,
+[10:51] refine with pro tips. Always define your
+[10:54] output format to get organized results
+[10:56] and use positive instructions instead of
+[10:58] negative constraints to guide the AI
+[10:59] more effectively. Third, use advanced
+[11:02] strategies. When you need to level up,
+[11:04] use stepback prompting for creativity.
+[11:06] Create AI agents for expert advice. And
+[11:09] when you're stuck, use meta prompting to
+[11:10] have the AI help you write a better
+[11:12] prompt. And fourth, build good habits.
+[11:15] The real growth comes from consistent
+[11:17] practice. Build your prompt library. Use
+[11:19] a pre-flight checklist for important
+[11:21] requests. and never stop experimenting.
+[11:24] And there you have it. In a world where
+[11:25] everyone has access to AI, the advantage
+[11:27] goes to those who know how to use it
+[11:29] best. And you're now officially one of
+[11:30] those people. So, what tips are you
+[11:32] eager to use from this video? Let's talk
+[11:33] in the comments. If this video helped
+[11:35] you, tap that like button. It generally
+[11:37] helps others discover these techniques.
+[11:38] And if you're feeling inspired and want
+[11:40] to put your building skills to the test
+[11:41] using Horizons, check out this video
+[11:43] next on how to build your first web app.
+[11:45] Thanks for watching and I'll see you in
+[11:47] the next

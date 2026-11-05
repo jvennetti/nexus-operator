@@ -1,0 +1,244 @@
+[00:00] Every morning at 7:00, before I even
+[00:01] open my laptop, Claude sends me an email
+[00:05] with the latest news in the AI space.
+[00:07] And in this video, I'm going to show you
+[00:09] how you can make Claude code routines
+[00:11] that run in the cloud so that you can
+[00:14] have your business running in the cloud
+[00:16] when your laptop is closed. And in case
+[00:18] you've been using Claude code, but you
+[00:20] don't feel like you're getting the most
+[00:21] out of it, or you set up [music] some
+[00:23] routines, but they just don't feel like
+[00:24] they're working, this is the video for
+[00:26] you. What you're probably missing is
+[00:28] setting up cloud routines the right way.
+[00:30] If you're new here, my name is Ben Za
+[00:32] Mamod, and I'm a corporate AI consultant
+[00:34] [music] for Fortune 500 companies like
+[00:36] Samsung, L3Harris, and I have the number
+[00:38] one AI course on Udemy. With that, let's
+[00:41] dive into cloud routines with Claude
+[00:44] code. AI is moving unbelievably fast.
+[00:46] What used to be called routines that is
+[00:48] now called schedule, which I believe is
+[00:51] the same as in the normal Claude window,
+[00:54] a scheduled task. So, what is a
+[00:57] scheduled task? A scheduled task is
+[00:59] something that runs at a certain
+[01:02] interval. So, for this, I have a
+[01:04] communication sweep for a agent I built
+[01:08] called the butler, which sweeps at 7:00
+[01:11] a.m., 1:00 p.m., and 5:00 p.m. on
+[01:14] weekday. And what it does is it checks
+[01:16] my messages, my texts, my WhatsApp,
+[01:19] which you're not seeing here because
+[01:21] there is no WhatsApp integration to
+[01:23] Claude, so it actually takes over my
+[01:25] computer and looks at the actual
+[01:27] WhatsApp app on my computer. It listens
+[01:29] to my Fathom note taker so that if I've
+[01:32] had any meetings, it's up to speed on
+[01:34] what we talked about in the meetings.
+[01:36] And it listens to my email, which I'm
+[01:39] actually not sure why you don't see
+[01:41] Gmail here, but it it also sweeps my
+[01:43] Gmail and my Slack messages so that it
+[01:46] has everything it needs to know about my
+[01:50] day and and any anything new. And three
+[01:52] times a day,
+[01:53] it sweeps looking at all all information
+[01:55] so that it can build my schedule for me
+[01:57] and let me know if there's anything
+[01:59] important I need to be dealing with.
+[02:01] Like for example, if I just had a
+[02:02] meeting and during the meeting I said I
+[02:03] would get something done by the end of
+[02:04] the day, and that was before 1:00 p.m.,
+[02:07] it'll sweep and then at 1:00 p.m. it'll
+[02:09] put that on my calendar being like,
+[02:10] "Hey, you you said you'd do this thing."
+[02:12] Or if I totally forgot and it's it this
+[02:14] 5:00 p.m. sweep will do it and it'll be
+[02:15] like, "Hey, you know, you said you would
+[02:17] do this." So it puts it on the calendar
+[02:18] for after. That's just one example, but
+[02:20] it also just builds my schedule and it
+[02:22] auto responds to people who are
+[02:24] inquiring about, you know, one of my
+[02:26] services or something like that. So this
+[02:27] is just one scheduled task and this one
+[02:30] runs on my computer only when my
+[02:33] computer is on because iMessage and
+[02:36] WhatsApp don't work in the cloud. So not
+[02:38] everything works in the cloud, but
+[02:40] Gmail, Notion, Fathom, and Calendar do
+[02:43] work in the cloud and you can see here
+[02:45] the Cloud Light twin covers the rest. So
+[02:47] this specific scheduled task, because I
+[02:50] want it to use WhatsApp and iMessage,
+[02:52] does not work in the cloud. A lot of
+[02:53] things do, but this doesn't. So what I
+[02:55] have is a Cloud Comms sweep, basically
+[02:59] an identical version of that same
+[03:02] scheduled task, but in the cloud and it
+[03:05] sweeps my email, Slack, Notion, and my
+[03:09] calendar. So you can see the cloud
+[03:11] environment here, well the environment
+[03:13] is cloud, the default cloud environment.
+[03:15] So even if my laptop is closed, anything
+[03:18] that happens in Fathom or in Gmail or on
+[03:22] Slack, all of that will still get noted
+[03:25] and update my calendar for me with those
+[03:27] things. And if I wanted, then instead of
+[03:30] a text message to maybe get a Slack
+[03:32] message or an email, I could set that up
+[03:34] here as well. So this is a Cloud routine
+[03:37] that's a twin of a local task that I
+[03:40] also have and they speak to each other,
+[03:42] meaning that they don't double up. So if
+[03:44] the the laptop routine runs, the Cloud
+[03:46] routine does not run. Please like and
+[03:48] subscribe for more free AI tutorials. So
+[03:51] how do you go ahead set up your own
+[03:53] Cloud Routine? And what are some other
+[03:55] things that Cloud Routines can do? So,
+[03:57] this one YouTube Newsletter is a new one
+[04:00] that I just set up. It has not run yet.
+[04:03] I've tested it in the chat and
+[04:06] the test run went really well. And let
+[04:08] me explain to you how this works. So,
+[04:11] you just give it a detailed instruction
+[04:13] of what to do. And of course, Claude can
+[04:16] build this for you. You just kind of
+[04:17] work back and forth with Claude. And
+[04:19] what I wanted is I have a email list and
+[04:23] everyone who subscribed to the email
+[04:25] list, I want to send them a nurture
+[04:27] email each week with sort of the latest
+[04:30] in AI and a link to one of my new
+[04:32] YouTube videos so that I can keep them
+[04:34] engaged in my ecosystem, keep people on
+[04:37] the cutting edge of what's happening in
+[04:39] AI, and make sure they have a chance to
+[04:42] see my new YouTube video if they're
+[04:43] interested. Now, the way this works is
+[04:46] it needs access to Kit, which is my
+[04:49] email marketing platform that I use.
+[04:52] This has a great API connection to
+[04:54] Claude. And it needs access to YouTube.
+[04:56] So, YouTube is pretty easy. It can just
+[04:58] find it online and it knows my channel.
+[05:01] And then, Kit is how I actually send the
+[05:04] emails. And then, buried in these
+[05:05] instructions are the
+[05:08] copy, like how I would like it to write
+[05:10] the emails and what kinds of things I
+[05:11] want it to say, how it works in my
+[05:13] voice. So, what's the most important
+[05:15] thing here and what most people get
+[05:17] wrong is you need to create a
+[05:20] environment. And you need to make sure
+[05:22] that that environment is in the cloud.
+[05:24] It needs to be a cloud environment. If
+[05:26] it's a local environment, it's not it's
+[05:28] on your computer. Here, you will go
+[05:30] ahead and usually use the default cloud
+[05:34] environment. And you need to hit this
+[05:35] little gear icon. This is what the
+[05:38] environment looks like. And if you're
+[05:40] going to use Kit, or I also have a cloud
+[05:43] routine that uses Circle, you need to
+[05:45] paste the API key or the token or Claude
+[05:49] will tell you what it needs, but you'll
+[05:51] you'll need to paste the access point,
+[05:53] the key, in here so that Claude can use
+[05:57] it in the cloud. Now, this little
+[05:59] environments section is protected from
+[06:02] Claude being able to actually see it.
+[06:04] So, Claude will be able to use kit or
+[06:06] circle, but it won't be able to see this
+[06:09] key. So, your information is safe, but
+[06:11] you need to paste it in here. So, you go
+[06:14] to the environment, make sure it's
+[06:15] Claude default, hit the gear, paste your
+[06:18] thing in here. And that's basically it.
+[06:20] It's pretty simple. That should just
+[06:22] work. So, how do you make your own
+[06:24] scheduled task? Well, you can go in a
+[06:26] normal chat and just turn on the mic and
+[06:28] say,
+[06:30] "Hey Claude, I want you to make me a
+[06:32] Claude scheduled task of sending my
+[06:35] newest YouTube video to my email list
+[06:38] each week. Let me know what you need."
+[06:39] So, you could do that. Or, you go here
+[06:41] to new task, and then you can create
+[06:44] with Claude or set up manually. Now, if
+[06:46] you click create with Claude, it will
+[06:48] pull up a new chat with Claude that you
+[06:51] literally do what I just showed you,
+[06:52] where you talk through what you want to
+[06:54] make with Claude. Make sure you specify
+[06:57] that you want to be in the cloud. If
+[06:58] Claude is trying to say, "Oh no, I can't
+[07:00] do this or this doesn't work." For some
+[07:01] reason I get an unusual amount of
+[07:03] pushback for this kind of stuff. Assume
+[07:05] you can do what you want and just keep
+[07:07] saying, "Hey Claude." Hopefully you're
+[07:08] using Opus 5.5, by the way. And you say,
+[07:10] "Hey Claude, please tell me what I need
+[07:13] to do in order for this to work in the
+[07:15] cloud. Do you need a API key? Do you
+[07:17] need a token?" So, that's what I found.
+[07:19] Somehow Claude does not aware of all
+[07:21] that it can do, but if you paste those
+[07:23] keys in the cloud environment, it will
+[07:25] work. There are only a few things that
+[07:27] it actually can't do. So, the cloud
+[07:28] environment routines or tasks now are
+[07:31] so, so good. Lastly, you will see some
+[07:34] You will see all your all your tasks
+[07:36] here, and you can see that I had a
+[07:39] little bit of a warning thing. Like, and
+[07:41] that's just explaining that it will use
+[07:44] a little bit more usage because of the
+[07:47] times that I have it set for. So, if if
+[07:50] that's a big issue for you, just pick
+[07:51] different time. When you click here, you
+[07:53] can see the run rate, and it basically
+[07:56] is great. Failed once, skipped once. Um
+[07:58] and remember, this one will skip if my
+[08:01] computer is open cuz this was my Cloud
+[08:03] Twin of the communication sweep. But
+[08:07] usually, my laptop's open for most of
+[08:08] the day, but you can see a lot of these
+[08:10] runs are at 7:00, but sometimes my
+[08:12] laptop is closed at lunch, sometimes
+[08:14] it's closed at 5:00, but not
+[08:15] consistently. And so, that's how this
+[08:17] works. And that's really all you need to
+[08:18] do to have Cloud Routines running things
+[08:20] for you, and it feels really magical.
+[08:23] That just feels like your business is
+[08:25] running in the cloud. It's so cool, and
+[08:28] you can have like the local version, the
+[08:30] cloud version, and sure, the local
+[08:31] version might be a little more robust,
+[08:33] but having that cloud backup is so
+[08:35] wonderful. And this is really giving me
+[08:38] so much freedom in my business to spend
+[08:41] my time doing the things I actually want
+[08:44] to do, my actual zone of genius, instead
+[08:46] of just being the operator, like making
+[08:48] sure things are running. So, if this is
+[08:50] been holding you back at all, I hope you
+[08:52] got a lot out of this video. If you want
+[08:55] to learn how to dive deeper with Cloud
+[08:57] Code or automating your business, check
+[08:59] the link below this video. I would be
+[09:00] happy to
+[09:02] um show you how I can support, and as
+[09:04] always, please like and subscribe for
+[09:06] more AI content.

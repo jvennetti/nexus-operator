@@ -1,0 +1,212 @@
+[00:05] [Music]
+[00:06] I recently read co-intelligence
+[00:09] living and working with AI by Ethan
+[00:12] Mollik.
+[00:14] After finishing co-intelligence, I
+[00:16] walked away with four rules for using AI
+[00:18] and developed a new prompting habit
+[00:20] called five and 50. If you use these
+[00:23] rules and adopt a similar habit, you'll
+[00:25] be one of the last people to be replaced
+[00:27] by AI because you'll be using it better
+[00:29] than 99% of people you work with.
+[00:32] But before we get to that, we must
+[00:34] understand how our modern AI, what
+[00:37] Mollik calls an alien mind, came to be.
+[00:41] Before 2017, AI didn't wow many people.
+[00:45] But then Google released a paper called
+[00:47] attention is all you need and everything
+[00:50] changed. This sparked the development of
+[00:52] large language models, LLMs, the
+[00:55] technology behind tools like chat GPT
+[00:57] and Claude. LM train by consuming
+[01:00] billions of sentences and pay attention
+[01:02] to certain words or phrases to predict
+[01:04] what words come next. They make billions
+[01:07] of unsupervised predictions and
+[01:08] challenge themselves by injecting random
+[01:10] variations. Think of it like a robot
+[01:13] navigating a jungle and trying to get
+[01:15] through the jungle by randomly going off
+[01:17] the beaten path to explore different
+[01:19] routes. Some routes hit dead ends, but
+[01:21] others reveal surprisingly scenic
+[01:23] shortcuts.
+[01:25] After millions of attempts, it can
+[01:26] create a detailed map of the jungle. AI
+[01:29] does this across countless knowledge
+[01:31] domains, essentially creating detailed
+[01:33] maps for many intellectual territories.
+[01:35] AI can then use these maps to provide
+[01:37] you with a sense of direction quickly.
+[01:41] Its incredible speed comes from a
+[01:42] somewhat problematic feature. It doesn't
+[01:45] store the data it trained on, so it
+[01:47] doesn't waste any time verifying facts
+[01:49] when it responds. It's like a navigator
+[01:51] who's lost all his photos and now relies
+[01:54] purely on memory. When you ask about a
+[01:56] specific landmark, he can't look up the
+[01:58] photo, but he'll still provide a vivid
+[02:00] description that sounds plausible, but
+[02:02] isn't entirely accurate. When an LLM
+[02:05] makes up facts, we call it a
+[02:07] hallucination.
+[02:09] Luckily, hallucinations are becoming
+[02:11] less frequent as models improve, but
+[02:13] they'll never completely go away. But
+[02:16] that shouldn't deter you from using AI.
+[02:18] When you're stuck on a task or decision,
+[02:20] it's helpful to have a guide that can
+[02:22] get you moving in the right direction,
+[02:24] even if exact details are inaccurate.
+[02:27] With that in mind, here are four
+[02:29] essential rules to remember when working
+[02:32] with AI. To grasp these rules, it's
+[02:35] helpful to use another analogy. Imagine
+[02:38] you're the head chef at a restaurant and
+[02:39] you've just hired an impressive sue
+[02:41] chef, your second in command. This cook
+[02:44] has made millions of meals and has an
+[02:46] incredible resume. Given how skilled the
+[02:49] sue chef is, you'd be crazy not to use
+[02:51] them to improve every item on your menu.
+[02:54] The same goes for AI. You should be
+[02:56] throwing your favorite LLM at every
+[02:59] complex task and critical decision to
+[03:01] see where it can provide surprising
+[03:03] clarity and creativity.
+[03:06] Author Ethan Mollik will often leave on
+[03:08] chat GPT's voice mode and talk through
+[03:10] his entire thought process while working
+[03:12] on a task and see if the AI can improve
+[03:14] his process. He'll even point his iPhone
+[03:17] camera at his current task to get
+[03:19] ChatGpt's specific recommendations based
+[03:22] on the visual information it's
+[03:24] receiving. This brings us to rule number
+[03:26] one. Always invite AI to the table.
+[03:30] Start by choosing one of the big four
+[03:32] LLMs. Chat GPT, Gemini, Claude, or
+[03:35] Grock, and try to include it in every
+[03:37] task, problem, and decision you
+[03:39] encounter during the week. Experiment to
+[03:42] see if it's useless, somewhat useful, or
+[03:45] surprisingly great. For example, when
+[03:48] struggling with a decision, explain your
+[03:50] situation in an LLM chat window and then
+[03:52] write, "Guide me by asking clarifying
+[03:55] questions to uncover my priorities. Then
+[03:57] recommend options that align with those
+[03:59] priorities and help me weigh the
+[04:01] trade-offs.
+[04:03] If you're worried about privacy,
+[04:05] activate all the privacy settings inside
+[04:07] your favorite LLM so it doesn't store or
+[04:09] use your data. Even if you deem AI
+[04:12] useless for some things, remember that
+[04:14] this is the worst model you'll ever work
+[04:16] with. So try again in 6 months.
+[04:20] Now, as you get AI more involved in your
+[04:22] life, remember to always stay in the
+[04:24] loop. Going back to the restaurant
+[04:26] analogy, your sue chef is insanely
+[04:29] talented, but he can't taste the meals
+[04:31] he makes. He only knows what should be
+[04:33] good after watching billions of hours of
+[04:36] other people cooking and can't verify
+[04:37] that what he makes is delicious. What's
+[04:40] more, your sous chef will randomly add
+[04:43] too much salt or spice to a dish, which
+[04:45] will anger a customer and lead to a bad
+[04:47] review.
+[04:48] Just as you wouldn't let this chef send
+[04:50] out dishes without a final check, you
+[04:52] shouldn't copy and paste your AI
+[04:53] assistant's output and send it to
+[04:55] people, you should always be improving
+[04:57] what you get and verifying any critical
+[05:00] facts. Simply ask your AI assistant to
+[05:03] list all verifiable facts in its
+[05:05] previous output. Then ask two other
+[05:07] models to verify those facts using the
+[05:09] deep research and web search options. I
+[05:12] like to back upputs I get in Claude
+[05:14] using chat GPT and Gemini. But for
+[05:17] anything that would cause reputation
+[05:19] damage, like a fake study citation in a
+[05:21] scientific paper, you have to Google and
+[05:23] verify with credible sources yourself.
+[05:27] Rule three, push it to extreme lengths.
+[05:31] Your AI assistant doesn't get tired or
+[05:33] resentful, so don't be afraid to push it
+[05:35] to lengths you would never ask a human
+[05:37] to go to. Or you might ask someone to
+[05:39] come up with three options. get AI to
+[05:42] generate 50. When you push AI to extreme
+[05:45] lengths, you move past generic outputs
+[05:47] and start discovering surprisingly good
+[05:49] answers. It's like asking your sous chef
+[05:52] to whip up 50 different meals. Most are
+[05:55] terrible, but one or two combine
+[05:57] ingredients you would not have thought
+[05:58] to put together and are absolutely
+[06:00] delicious.
+[06:01] You need to generate a massive number of
+[06:04] options and ruthlessly curate. Give your
+[06:07] AI assistant a rough draft for an email
+[06:09] and ask it to generate 50 subject lines
+[06:12] or opening sentences. 48 will be generic
+[06:15] or weird, but two will be surprisingly
+[06:17] good. Those good ones only come by
+[06:20] pushing it further than you would any
+[06:21] human being.
+[06:23] You will also discover surprisingly good
+[06:25] outputs if you provide your AI with a
+[06:27] character, context, and constraints.
+[06:30] Imagine telling your sue chef to cook
+[06:32] like a Michelin star chef from Italy and
+[06:35] explain that he's cooking for a family
+[06:36] who loves bold flavors. Give your chef a
+[06:39] list of that family's favorite dishes
+[06:41] and finish by saying, "Use no more than
+[06:43] five ingredients, they'll probably make
+[06:45] a fantastic meal." Likewise, if you give
+[06:48] your AI assistant a character
+[06:50] assignment, like act like a senior
+[06:52] marketer with 20 years of experience,
+[06:54] plus context in the form of goals,
+[06:56] previous work, and documents along with
+[06:58] creative constraints, you'll
+[07:00] consistently yield sharper, more
+[07:02] interesting responses.
+[07:04] In the end, bring all four rules
+[07:07] together by adopting what I call a five
+[07:09] and 50 habit for any task, problem, or
+[07:12] big decision. Ask yourself, how might AI
+[07:15] help with this? Start with a rough first
+[07:18] prompt and then improve it five times,
+[07:22] refining its character role, adding
+[07:24] context, and tightening constraints.
+[07:27] Then, for at least one critical part of
+[07:29] the output, like an analogy, headline,
+[07:32] or example, push for 50 variations.
+[07:35] Expect most to be average or just plain
+[07:38] weird, but one to be excellent.
+[07:41] If you're relentless and willing to push
+[07:43] AI farther than most, you'll add a layer
+[07:45] of intelligence to your work that will
+[07:47] elevate you higher than most in your
+[07:48] field. And by learning to use AI better,
+[07:52] you won't eliminate your creativity,
+[07:54] you'll amplify it.
+[07:56] That was the core message I got from Co-
+[07:58] Intelligence by Ethan Mik. This book was
+[08:01] a fascinating deep dive on LLM and their
+[08:04] utility. I highly recommend it. If you
+[08:07] would like a one-page summary of the
+[08:09] insights I gathered from this book, just
+[08:11] click the link in the description below
+[08:12] and I'll email it to you. If you already
+[08:15] subscribe to the free productivity game
+[08:17] newsletter, this PDF is in your inbox.

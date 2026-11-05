@@ -1,0 +1,149 @@
+[00:01] Everyone around you keeps talking about
+[00:02] Claude, and you want to give it a try.
+[00:05] But you type Claude into Google, and you
+[00:07] get a whole pile [snorts] of results,
+[00:08] and you're not sure which one is the
+[00:10] right one to click. So, how do I access
+[00:12] Claude?
+[00:13] By the end of this video, you'll know
+[00:15] where to find Claude, how to set up an
+[00:17] account, what's free, and how to avoid
+[00:19] fake sites.
+[00:24] >> [snorts]
+[00:25] >> First things first, Claude is an AI
+[00:27] assistant made by a company called
+[00:29] Anthropic.
+[00:31] You type a question in plain everyday
+[00:33] words, and it answers. Kind of like
+[00:35] texting with a really patient person.
+[00:39] You don't need to be good with
+[00:40] computers. If you can type, you're set.
+[00:44] Think of Claude like a store with three
+[00:46] doors. Your web browser, your phone, and
+[00:49] your computer.
+[00:50] Whichever door you walk through, it's
+[00:52] the same Claude, the same account, and
+[00:54] your conversations follow you through
+[00:56] every door.
+[00:58] The easiest door is the browser, because
+[01:00] there's nothing to install.
+[01:02] Open Google Chrome and click the address
+[01:04] bar. That's the long box at the very top
+[01:07] where the website name shows up.
+[01:09] Type claude.ai, then press enter.
+[01:12] And just like that, you're standing at
+[01:14] Claude's front door.
+[01:16] The first time you visit, Claude asks
+[01:18] how you want to sign in. If you have
+[01:20] Gmail, click continue with Google. Pick
+[01:23] your Google account, and you're done.
+[01:25] If not, type your email into the box and
+[01:28] click continue with email.
+[01:30] With email, Claude doesn't make you
+[01:32] create a password. It sends you an email
+[01:34] titled "Secure link to log in to
+[01:36] claude.ai",
+[01:38] and you just click the link inside to
+[01:39] get in.
+[01:41] That link is kind of like a key that
+[01:42] only works once.
+[01:45] The next step surprises a lot of people.
+[01:47] Your phone number.
+[01:49] According to Claude's help page, every
+[01:51] new account has to verify a phone
+[01:53] number, and you can't skip it.
+[01:55] Claude texts you a six-digit code. You
+[01:58] type that code in, and you're done.
+[02:00] That number has to be a real mobile
+[02:02] number that can get text messages.
+[02:05] Google Voice, numbers you get from an
+[02:07] app or a landline won't work.
+[02:09] And one phone number can be used for up
+[02:11] to three Claude accounts.
+[02:13] There are two more requirements.
+[02:16] You have to be 18 or older and you have
+[02:18] to be in a supported country.
+[02:20] Right now, the list has about 176
+[02:23] countries and territories, including the
+[02:25] US, the UK, and all 27 countries in the
+[02:28] European Union.
+[02:31] Once you're through all that, you'll see
+[02:32] a big box in the middle of the screen
+[02:34] where you type.
+[02:35] Try this. Help me write a thank you
+[02:37] message to my neighbor Linda for
+[02:39] watching my dog.
+[02:41] A few seconds later, Claude has it
+[02:43] written and you can ask it to make it
+[02:45] shorter.
+[02:46] The second door is your phone.
+[02:48] Open the App Store on an iPhone or
+[02:50] Google Play on Android and search for
+[02:52] Claude by Anthropic.
+[02:54] On iPhone, check the developer name. It
+[02:57] should say Anthropic PBC.
+[03:00] The app is free and your iPhone needs to
+[03:02] be on iOS 18 or later.
+[03:05] Open the app and sign in the exact same
+[03:07] way you did on the web.
+[03:09] That message for Linda from earlier
+[03:10] shows up right on your phone because
+[03:12] everything syncs, which means it copies
+[03:14] itself back and forth between your
+[03:16] devices.
+[03:18] The third door is the computer app for
+[03:20] both Mac and Windows. And there's only
+[03:22] one place to get it. claude.com/download
+[03:27] This app runs as its own program and
+[03:29] opens with a single click.
+[03:31] If you only ask Claude something now and
+[03:32] then, the web version is plenty.
+[03:35] Now for the most important part, fake
+[03:38] sites.
+[03:39] In April 2026, the security company
+[03:42] Malwarebytes found a fake website
+[03:44] pretending to be Claude offering a
+[03:46] download of Claude Pro for Windows.
+[03:49] That file did install the real Claude,
+[03:51] but it also secretly installed malware
+[03:53] that lets scammers control your computer
+[03:55] from far away.
+[03:57] Scammers even pay for Google ads so the
+[03:59] fake site shows up at the very top. So,
+[04:02] here are three tips.
+[04:03] Type claude.ai into the address bar
+[04:06] yourself. Skip any result that says
+[04:08] sponsored. And remember, there's no
+[04:11] Claude Pro software to download.
+[04:13] That's because Pro is a paid plan, not a
+[04:15] program.
+[04:17] The free plan costs $0 and works on all
+[04:19] three doors, but your usage is limited,
+[04:22] both in roughly 5-hour windows and by
+[04:24] the week. When you run out, you wait,
+[04:27] kind of like a phone data plan that's
+[04:29] out of data.
+[04:32] The Pro plan is $20 a month or $200 for
+[04:35] the whole year, which works out to about
+[04:37] $17 a month.
+[04:40] Pro gives you more usage and extra
+[04:42] features.
+[04:43] One of them is Claude in Chrome, an
+[04:45] extension, which is a little add-on for
+[04:47] Chrome, so Claude can work right on the
+[04:49] web page you have open.
+[04:52] If you use it all day, there's the Max
+[04:54] plan at $100 and Ultra at $200 a month.
+[04:59] My advice, start with free, upgrade only
+[05:02] if you keep hitting the limit, and pay
+[05:04] on the web.
+[05:06] In the iPhone app, the Max plan costs
+[05:08] $124.99 a month.
+[05:12] So, to get into Claude, type claude.ai
+[05:15] in your browser, get the Claude by
+[05:17] Anthropic app on your phone, or the
+[05:19] computer app from claude.com/download,
+[05:22] then sign in with Google or email and
+[05:24] verify your phone number.
+[05:26] And the first time, type the address
+[05:28] yourself and don't click on ads.

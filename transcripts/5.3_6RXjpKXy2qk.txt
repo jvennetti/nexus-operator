@@ -1,0 +1,188 @@
+[00:00] Every morning you open your email and the day decides what you're doing, instead of you.
+[00:05] Somewhere in there is the one that actually matters.
+[00:08] A quote that runs out on Friday.
+[00:10] A client who's annoyed.
+[00:11] An invoice nobody chased.
+[00:13] And they're sitting between a newsletter you never read and a notification about likes.
+[00:19] So here's a small thing that fixes it.
+[00:21] By the end of this video, Claude will read your email every morning before you do, and
+[00:27] send you one short report.
+[00:29] What needs a reply, what has a date on it, what's about money.
+[00:34] Ten minutes to set up, once, and then it just happens.
+[00:38] This is it, arriving at seven in the morning, in the same inbox it just read.
+[00:44] Needs a reply today, three of them.
+[00:46] Has a date on it:
+[00:48] the insurance expires on the third of November.
+[00:51] Money:
+[00:52] an invoice for three hundred and forty euros still open, and a quote that dies in seven
+[00:57] days.
+[00:58] Everything else, one line each, so nothing is hidden from you.
+[01:02] That's the whole thing.
+[01:04] Now let's build it.
+[01:06] Three things, and I'll be straight with you about the first one.
+[01:09] You need a paid Claude plan.
+[01:11] This lives in the part of Claude that runs tasks on a schedule, and that's on the paid
+[01:16] plans only.
+[01:17] I'm on Max here.
+[01:18] It works the same on Pro.
+[01:20] You need your email on Gmail, because we're going to connect it.
+[01:24] And you need about ten minutes.
+[01:25] That's it.
+[01:26] No code, no automation tool, nothing to install.
+[01:30] First we give Claude permission to look at your email.
+[01:33] Top left, Customize.
+[01:35] Then the Connectors tab.
+[01:37] This is the shop of everything Claude can plug into, and the one we want is Gmail.
+[01:41] Click Connect, pick the account whose email you want read, and Google asks you to confirm
+[01:46] it.
+[01:47] Read that screen properly.
+[01:48] It's telling you what you're handing over.
+[01:50] Then Allow.
+[01:51] And that's the connection done.
+[01:53] Gmail now says Connected, with a tick.
+[01:56] One honest warning before we go on.
+[01:58] Claude can read an email, and it can send an email.
+[02:01] What it cannot do is open an attachment.
+[02:04] If the invoice is a PDF stuck to the message, Claude sees that the attachment is there,
+[02:09] and that's all.
+[02:10] So the report tells you an invoice arrived.
+[02:12] It can't tell you what's inside the PDF.
+[02:15] Worth knowing before you trust it with your bookkeeping.
+[02:18] Now the part that actually decides whether this is useful.
+[02:21] What you tell it to do.
+[02:23] Most people write, summarise my emails, and get back a summary of everything, which is
+[02:28] just your inbox again in a different shape.
+[02:31] A good instruction has four parts, and I'll show you mine.
+[02:34] One:
+[02:35] what to look at.
+[02:36] The last twenty-four hours.
+[02:38] Not your whole mailbox.
+[02:40] This matters for speed, and it matters for privacy, because it means nothing old gets
+[02:45] dragged in.
+[02:46] Two:
+[02:46] what to ignore.
+[02:48] Newsletters, social notifications, automatic receipts.
+[02:52] Say it out loud, or they end up in the report.
+[02:55] Three:
+[02:56] the shape you want.
+[02:57] This is where most of the value is.
+[02:59] I ask for four sections.
+[03:01] Needs a reply today.
+[03:02] Has a date on it.
+[03:04] Money.
+[03:04] And everything else in one line.
+[03:07] Those are the four questions you're actually asking the inbox every morning.
+[03:11] Four:
+[03:12] the rules.
+[03:13] Use only what's in the emails.
+[03:15] If something's unclear, say so instead of guessing.
+[03:18] Don't reply to anyone, don't archive anything, don't mark anything read.
+[03:23] The agent reads and reports.
+[03:25] It doesn't touch.
+[03:27] And the last line is the delivery.
+[03:29] Write the report, then email it to me, with this subject.
+[03:33] The whole thing is in the description.
+[03:35] Copy it, change the email address to yours, and change the four sections to the four
+[03:40] questions your business actually asks.
+[03:43] Here's the part most people don't know exists.
+[03:46] In the left sidebar there's Scheduled.
+[03:49] That's Claude's list of jobs that run on their own, even when your laptop is shut, because
+[03:54] they run on Claude's servers and not on your machine.
+[03:57] Top right, New task.
+[03:59] You get two ways in.
+[04:01] Describe it to Claude and let it set the thing up, or set it up manually.
+[04:05] I'll do it manually, so you can see every field.
+[04:08] Name it something you'll recognise in six months.
+[04:11] Morning email report.
+[04:13] The instructions go in the big box.
+[04:15] That's the four-part thing we just wrote.
+[04:17] Then the trigger.
+[04:19] Schedule.
+[04:19] Daily.
+[04:20] Seven in the morning, so it's finished before you're awake enough to care.
+[04:25] Claude even warns you here that a task set for an exact hour can start a few minutes
+[04:30] late, so pick a time a little earlier than you need it.
+[04:34] Open Advanced settings and check the Connectors tab.
+[04:38] Gmail has to be in that list, otherwise the task wakes up at seven with no way to read
+[04:43] anything.
+[04:44] While you're in there, Notifications.
+[04:46] If you only want a one-line nudge rather than a full report, tick Email here and
+[04:51] you can skip the sending part entirely.
+[04:54] I want the real report, so I'm leaving it.
+[04:57] Create.
+[04:58] That's the agent built.
+[05:00] One more setting, and this is the one that catches everybody.
+[05:04] By default Claude asks permission every single time it sends an email.
+[05:09] Which is correct.
+[05:10] You do not want a machine sending mail in your name while you're asleep.
+[05:14] But our task sends you a report at seven in the morning, and if it has to ask, it just
+[05:19] sits there waiting until you wake up.
+[05:21] So we allow exactly one thing, and nothing else.
+[05:24] Customize, Connectors, Gmail, and then Your tool permissions.
+[05:29] Look at this properly.
+[05:31] Read-only tools, searching and reading, are set to always allow.
+[05:35] The write and delete tools, sending, replying, labelling, deleting, need approval.
+[05:41] Twenty-four of them.
+[05:43] Do not switch that whole group to allow.
+[05:45] Find the one that sends an email, and set that one to always allow.
+[05:49] Everything else stays needing approval.
+[05:52] That way the only thing it can do unattended is send you your own report.
+[05:56] It still can't reply to your clients on its own, and it still can't delete anything.
+[06:02] Don't wait until tomorrow morning to find out if it works.
+[06:04] Run it once now.
+[06:06] You can watch it work.
+[06:07] It's searching the last day's email, reading what it found, sorting it, writing, and
+[06:11] then sending.
+[06:12] And look what it says when it's done.
+[06:14] It tells you what it skipped:
+[06:16] the newsletter, the page summary, a security alert.
+[06:20] And it flags two things it wasn't sure about, instead of quietly guessing.
+[06:25] The quote says it holds for seven days but gives no date.
+[06:28] The accountant says Friday, and it tells you which Friday it assumed.
+[06:32] That's the rule we wrote, doing its job.
+[06:35] And here it is in the inbox.
+[06:37] Morning report, today's date.
+[06:39] Needs a reply today:
+[06:40] the trainer who's off sick on Thursday, with the seven a.m.
+[06:44] uncovered.
+[06:45] The member who was turned away from the Tuesday class twice, that's the one that costs
+[06:49] you a customer if you miss it.
+[06:52] The woman who's never been to a gym and is nervous about asking.
+[06:55] Has a date on it:
+[06:57] the rent confirmation by the thirty-first.
+[06:59] The insurance, expiring on the third.
+[07:02] Money:
+[07:03] the invoice, three hundred and forty, still open.
+[07:06] The bike quote, four thousand nine hundred and sixty before VAT.
+[07:11] Three minutes of reading, instead of forty minutes of inbox.
+[07:15] Three honest limits, because anyone who sells you this without them is selling you something.
+[07:20] It can't read attachments.
+[07:22] If the detail is inside the PDF, you're still opening the PDF.
+[07:26] It reads what the sender wrote, not what they meant.
+[07:29] Someone being polite about being furious reads as polite.
+[07:33] The report tells you to look.
+[07:35] It doesn't tell you how someone feels.
+[07:37] And do not give it permission to reply.
+[07:39] I know it's tempting.
+[07:41] A machine answering your clients in your name, while you sleep, with nobody reading it
+[07:45] first, is the fastest way to lose one.
+[07:48] Reading is safe.
+[07:49] Writing is yours.
+[07:51] Same five steps, different job.
+[07:53] Three that work well.
+[07:54] One:
+[07:54] a Friday version.
+[07:56] Everything that came in this week that I never answered.
+[07:59] Two:
+[07:59] a money version.
+[08:01] Only invoices, quotes and payments, with the amounts added up.
+[08:04] Three:
+[08:05] a leads version.
+[08:06] Only new enquiries, with a draft reply for each one left as a draft, not sent, so
+[08:11] you approve it with one click in the morning.
+[08:14] Change the four sections and the schedule.
+[08:16] That's the whole trick.
+[08:17] The instruction I used is in the description.
+[08:20] If you build one of these, tell me in the comments what you made it watch for.
+[08:23] That's where the good ideas come from.
+[08:25] Follow Cynked for more of these.

@@ -1,0 +1,475 @@
+[00:00] One of my most viewed videos of all time
+[00:02] is how to use
+[00:03] projects.
+[00:03] I did it when it first came out in
+[00:05] 2024.
+[00:06] I cannot believe it's almost the end of
+[00:07] 2026.
+[00:08] So let's do an update to that video because
+[00:10] A lot's changed but not
+[00:12] everything also at the same time.
+[00:14] So what has changed since
+[00:16] 2024?
+[00:16] Let's dive in.
+[00:18] I've been using projects for...
+[00:19] I think years now.
+[00:20] It's one of the first features that really
+[00:23] came out that upgraded ChatGPT to a whole
+[00:25] new level and it's still relevant today.
+[00:28] I've created hundreds of projects, so it's
+[00:30] really going to be a brain dump for me
+[00:31] to explain why I use it, how I use
+[00:33] it, and just kind of help you jump the
+[00:35] learning curve.
+[00:36] This is the video I wish I had a
+[00:37] long time ago.
+[00:38] If you haven't even used ChatGPT yet, I'm
+[00:40] going to say probably go back to the
+[00:42] original video and just learning ChatGPT as
+[00:44] a whole.
+[00:45] and just start using the normal chats.
+[00:47] This is kind of version 2 or level 2.
+[00:50] So why
+[00:50] projects?
+[00:51] Why are they a big deal?
+[00:52] Number one is consistent context.
+[00:54] Every time you start a new chat, you want
+[00:56] to make sure it knows
+[00:57] everything about you and has all the
+[00:59] different knowledge that you want it to
+[01:01] know.
+[01:02] you can be very purposeful with what you
+[01:04] teach it so that you know how it's going
+[01:06] to react and what it knows so that you
+[01:08] don't get frustrated.
+[01:09] this is when it really starts to feel like
+[01:10] it knows you.
+[01:11] Number 2 is going to be the files and
+[01:13] what you can upload so you can show
+[01:15] example
+[01:16] documentation, example emails, you can add
+[01:18] in knowledge about your company, you can add
+[01:20] in all these different pieces of knowledge
+[01:22] throughout your company, SOPs, you can add
+[01:24] in just the
+[01:26] colors and the design
+[01:27] philosophy, so it will always know that.
+[01:29] and then number three one of the best parts
+[01:31] is the
+[01:32] instructions like I've kind of mentioned
+[01:33] already.
+[01:34] You can be very
+[01:35] specific on what you wanted to do.
+[01:37] First we do this.
+[01:38] You
+[01:39] always check back on me with this.
+[01:40] I want to always make sure that John is
+[01:42] CC'd.
+[01:43] These are little things that start to add up
+[01:45] and you'll- as you kind of use the system
+[01:47] you'll learn more and more like oh I wish
+[01:48] it would have done this, oh I wish it
+[01:50] would do this, or why is it doing this
+[01:51] every time.
+[01:52] You can make the fix.
+[01:54] then you update the
+[01:55] instructions you update the system prompt
+[01:57] and then it will do it now every time
+[01:58] so this is a you know.
+[02:00] a loop.
+[02:00] It's a flywheel.
+[02:01] The more you use it, the more kind of
+[02:03] friction points you see.
+[02:04] the better and better it gets because you're
+[02:06] going to start to solve them.
+[02:07] and we're going to really talk about that in
+[02:08] this video.
+[02:09] and then four, it just helps you stay
+[02:11] organized.
+[02:11] They do a great way of having projects on
+[02:13] that chat on the side so you can have
+[02:15] different projects for different things if
+[02:16] you choose and all the chats that you do
+[02:18] within that project stay under it.
+[02:20] So it's not just like one massive list of
+[02:22] all your past chats.
+[02:24] A project is a workspace with 3
+[02:26] things.
+[02:26] your
+[02:27] files,
+[02:27] your
+[02:28] instructions, and your chats in one spot.
+[02:31] The files are what Claude reads every single
+[02:33] time as well as the instructions but...
+[02:35] It gives it that knowledge that you normally
+[02:37] have to kind of re-keep pasting in over
+[02:40] time.
+[02:40] That's
+[02:41] files and that's knowledge.
+[02:42] the instructions are the rules that it needs
+[02:44] to follow who is it maybe you give it
+[02:46] like hey you're the co-founder hey you are
+[02:49] my you know
+[02:50] Marketing Guru, those are the
+[02:52] instructions and how you want it to act.
+[02:54] You can put in the little things like always
+[02:56] CC John, always CC Mark,
+[02:59] always ask for
+[03:00] approval before we send
+[03:01] emails.
+[03:02] that is going to be
+[03:03] instructions.
+[03:03] and the chats live in one
+[03:05] centralized spot so it's
+[03:07] organized everything that you do within this
+[03:09] project is going to be nice and organized
+[03:11] from like top to bottom most recent so it
+[03:13] just helps you kind of start to organize
+[03:15] because the more and more you use AI...
+[03:17] you're going to start loving it and it's
+[03:18] going to become part of your daily workflow.
+[03:20] it can be daunting how many chats you start
+[03:22] because you don't want just one chat.
+[03:24] that does everything.
+[03:25] You're going to learn that you're going to
+[03:26] want a lot of chats.
+[03:28] They do a really good job of helping you
+[03:29] organize those.
+[03:31] Every single plan has projects,
+[03:33] even the free one, but you're limited to
+[03:35] five, so
+[03:36] again,
+[03:36] really consider
+[03:37] upgrading.
+[03:37] You get unlimited
+[03:39] projects and you'll get way more usage.
+[03:40] It's super worth it.
+[03:43] All right, a quick note.
+[03:44] Projects haven't changed that much over
+[03:46] time, but they're always evolving the UI.
+[03:47] So if it looks slightly different to you, I
+[03:49] will be updating these videos when I see
+[03:51] fit.
+[03:52] AI is always changing.
+[03:54] So the UI might be a little different, but
+[03:55] the concepts is always going to be kind of
+[03:58] the same.
+[03:59] Alrighty so let's take a look at the screen
+[04:01] and let's
+[04:01] actually build one.
+[04:02] So what you're going to do is click
+[04:05] projects.
+[04:06] then
+[04:06] New
+[04:07] Project and give it a name only you will
+[04:09] see.
+[04:09] So whatever you think is best for this
+[04:12] project, give it that name.
+[04:13] It doesn't matter too much.
+[04:14] It doesn't change how it thinks.
+[04:16] It's just for you to remember and to know.
+[04:18] Here's the rule I use most of the time.
+[04:21] One project per job you do over and over.
+[04:24] Not one per topic.
+[04:26] One per job.
+[04:27] Writing your newsletter is a job.
+[04:29] Answering customer emails is a job.
+[04:31] Each one gets its own project.
+[04:33] and over time you'll start to
+[04:35] pay attention and learn more and maybe you
+[04:37] can start to incorporate many jobs into one
+[04:39] project.
+[04:40] these things are getting a lot smarter
+[04:41] but...
+[04:42] If you want to just really dial these things
+[04:44] in to be the most
+[04:45] consistent, best
+[04:46] performing, it usually should be one job per
+[04:49] project.
+[04:49] Now, the part that makes it all work,
+[04:52] project
+[04:53] knowledge.
+[04:54] Upload the stuff you'd otherwise paste every
+[04:56] single time into the chat.
+[04:58] So what you're going to do is hit the
+[04:59] plus in the knowledge area on the right.
+[05:01] Good things to put in here.
+[05:03] Maybe a brief about your business, a style
+[05:06] guide,
+[05:06] examples of the work you love.
+[05:08] and what you can do across multiple projects
+[05:10] is say you have one file that explains your
+[05:12] company, your business, your names,
+[05:14] everything like that, where you're located,
+[05:17] that piece of knowledge can can be uploaded
+[05:18] to many projects.
+[05:19] You can keep like.
+[05:20] Adding that into certain projects so you
+[05:22] know all your knowledge or all your projects
+[05:24] have that that's a really important piece
+[05:26] and then you can create maybe a file
+[05:28] specific to this one knowledge base as a way
+[05:30] to kind of customize it and so you're not
+[05:32] having to redo
+[05:33] knowledge every single time.
+[05:34] And you can have Claude.
+[05:36] Help you create the knowledge, I think is a
+[05:38] huge tip to this.
+[05:40] Maybe you open up a fresh chat and say,
+[05:41] "I want to create a project." Tell it the
+[05:43] project you want to create and say, "What
+[05:45] knowledge should I put into it?" And it will
+[05:46] ask you questions.
+[05:47] Say, "Interview me back and forth." Help me
+[05:50] create a file that I can now add to
+[05:52] all of my
+[05:53] projects Claude will go back and forth with
+[05:55] you you'll answer a bunch of questions it'll
+[05:57] create probably a markdown file for you and
+[05:59] then this is your
+[06:00] central you know truth for hey this is what
+[06:02] my business is and it kind of helped you
+[06:03] get it all out what does it need and
+[06:05] then you can take that file it'll probably
+[06:06] you can say hey put it in my downloads
+[06:08] folder add it to my desktop do whatever And
+[06:10] then you can take that file and add it
+[06:12] into every single project.
+[06:14] That's also a pro tip.
+[06:15] Usually you want to use AI to help you
+[06:17] create the things you need for the other AI.
+[06:20] I hope that makes sense.
+[06:21] It's really good.
+[06:22] AI knows what it wants and knows how to.
+[06:24] Prompt itself.
+[06:25] All right so the limits are on screen but
+[06:28] basically as long as it
+[06:29] fits Claude can read it.
+[06:31] and on paid plans Claude can stretch out
+[06:33] that knowledge and make it go a lot farther.
+[06:35] One of the benefits of paying is you know
+[06:37] you can put in more knowledge.
+[06:39] and private projects also you can.
+[06:41] Google Docs, your Drive and so that it will
+[06:45] always stay synced with what's happening.
+[06:46] We'll have a whole video on connecting
+[06:49] Google
+[06:50] accounts like your Gmail and all those
+[06:51] different platforms too.
+[06:53] And so your projects will be able to
+[06:55] leverage that also, which is where, you
+[06:57] know, AI just gets so powerful and it can
+[06:59] do things on your behalf.
+[07:00] All right, here is a bonus tip that I
+[07:02] thought most people don't know.
+[07:04] Files in a project count less against your
+[07:07] usage limits.
+[07:08] So when you're adding in these files.
+[07:09] when they get
+[07:10] reused.
+[07:11] Alright, let's move on to
+[07:13] instructions.
+[07:13] So
+[07:13] instructions are the rules Claude follows in
+[07:16] every chat in this project and only this
+[07:19] project.
+[07:19] Your
+[07:20] whole Claude account has its own
+[07:22] overarching
+[07:23] instructions.
+[07:24] In Claude, I need you to go to
+[07:25] preferences and then you're going to go to
+[07:27] settings and then you're going to go to your
+[07:29] profile and that's where you're going to
+[07:30] find your instructions where I I would put
+[07:32] in your name and.
+[07:33] who you work for or your brokerage and all
+[07:35] that main stuff that wants to be applied to
+[07:37] all of the projects.
+[07:38] because now that will be applied
+[07:40] and then
+[07:41] instructions that are in
+[07:42] specific projects are only for that
+[07:44] project and then this will be for you.
+[07:45] for your overarching account.
+[07:47] So click on the project
+[07:48] instructions.
+[07:49] paste yours in there.
+[07:50] Again, have AI help you think of what the
+[07:53] instructions should be based on what your
+[07:54] project should be.
+[07:56] Keep it to three things, the job, what this
+[07:59] project is for, where the facts come
+[08:01] from, your files, and what to do when a
+[08:04] fact is missing.
+[08:06] The last one in the line matters the most.
+[08:08] Write this.
+[08:09] If a fact isn't in the notes, ask me
+[08:11] instead of guessing.
+[08:12] Two more lines I'd add.
+[08:14] Name of the file each fact came from and
+[08:16] nothing goes to a client until I approve it.
+[08:19] Those are just good.
+[08:20] Things to always have in there.
+[08:22] Quick note, check whether your plan shows
+[08:25] project
+[08:25] instructions.
+[08:26] If you don't see it, that's your plan, not
+[08:29] you.
+[08:30] So if you want me to go deeper on
+[08:31] instructions, I'm having a whole video come
+[08:33] out about system
+[08:34] instructions.
+[08:35] Go watch that as well and I will link
+[08:36] to it.
+[08:37] So what we're going to do is start a
+[08:38] new chat inside the project and give it a
+[08:41] real job.
+[08:42] Watch.
+[08:43] It used the file without being told.
+[08:45] All right now let's talk about memory
+[08:47] because a lot of times this trips people up.
+[08:49] Memory is a separate layer and each project
+[08:52] gets its own.
+[08:53] So, I was kind of saying it earlier,
+[08:56] a GPT
+[08:57] account or Claude account
+[08:59] has.
+[08:59] It's
+[09:00] own system
+[09:01] instructions
+[09:02] overarching the entire
+[09:03] account.
+[09:04] also has its own memory.
+[09:06] I actually
+[09:07] personally turn off the memory because I
+[09:09] want to do
+[09:10] everything purposeful and I
+[09:12] manually
+[09:13] Choose the memories it
+[09:14] remembers.
+[09:14] Base ChatGPT
+[09:15] accounts and stuff tries to remember for you
+[09:17] to make it easier, but
+[09:18] I don't like it.
+[09:19] It eventually
+[09:20] has too many things.
+[09:21] I'm
+[09:22] changing what I'm doing too much and I just
+[09:24] I like to force feed it the memories I
+[09:27] want.
+[09:27] So in theory, your overarching account can
+[09:30] have its own
+[09:30] instructions and memory.
+[09:32] So
+[09:32] memories again are on by default for the
+[09:34] entire account.
+[09:35] Again, I wouldn't put them I wouldn't leave
+[09:38] it on.
+[09:38] I wouldn't put them in there.
+[09:39] I like to if you do want some
+[09:42] memories to be remembered throughout the
+[09:44] entire account, maybe that's when you would.
+[09:46] Put them in your system
+[09:47] instructions
+[09:48] Hey, just a couple things about me here in
+[09:50] my instructions.
+[09:50] I'm John.
+[09:52] Birmingham,
+[09:52] Alabama, blah, blah, blah.
+[09:53] I would just put them in the instructions.
+[09:55] I don't like memories because oftentimes it
+[09:57] tries to do it
+[09:58] automatically.
+[09:58] It's not worth it.
+[09:59] So let's go back to projects.
+[10:01] They're usually only as good as the files
+[10:04] and the knowledge you give them.
+[10:05] but on the counter side.
+[10:07] you got to keep it updated.
+[10:08] If you are using old knowledge the AI is
+[10:11] going to be always wrong.
+[10:12] right?
+[10:13] so this is one of the caveats is you
+[10:14] gotta have to spend the time and always be
+[10:17] updating the knowledge.
+[10:18] So, again, you can use AI to help you
+[10:21] Update the knowledge like I need to update
+[10:23] the knowledge.
+[10:24] Here's like the markdown file.
+[10:26] I store them on my desktop Can you help
+[10:27] me go through and update them and I want
+[10:29] to put them?
+[10:30] the new versions back into
+[10:31] projects.
+[10:32] that's amazing this is where level three
+[10:34] comes in i would say like
+[10:35] Projects is level 2, Normal Chat is level 1.
+[10:38] This is when you can go into like a
+[10:40] codex or you start to use files locally on
+[10:42] your computer because then you can have it
+[10:44] updating them
+[10:45] automatically for you.
+[10:46] That's a future video.
+[10:47] We're going to get there.
+[10:49] Projects right now, you need to manually
+[10:51] swap out the files, which is a little
+[10:52] annoying, but you want to keep them up to
+[10:54] date over time.
+[10:55] So that's something you really need to keep
+[10:56] in the back of your head is
+[10:58] What is the
+[10:58] knowledge?
+[10:59] Have I introduced anything new?
+[11:01] Have I updated that knowledge?
+[11:02] And so you can make sure it's good.
+[11:04] And so If someone else on your team maybe
+[11:06] is updating knowledge too, like, "Hey, can I
+[11:07] get that new file?
+[11:08] Can you send it over to me?
+[11:09] I like what you did there.
+[11:10] I like how your GPT is responding." You
+[11:12] know, all that kind of good stuff.
+[11:14] That's one of the problems with projects is
+[11:15] you usually have to do it manually.
+[11:17] Alrighty, so that is it.
+[11:19] One project per job.
+[11:20] Again, you can Combine them if you really
+[11:22] want to but I think it's easier and it
+[11:25] makes the output usually a little bit better
+[11:27] and more consistent when you separate them
+[11:29] But this is projects.
+[11:30] It is a
+[11:31] really powerful tool.
+[11:32] This is kind of level two, like I've said
+[11:34] multiple times.
+[11:35] You can start to make it always be
+[11:38] consistent.
+[11:38] Stay up to date.
+[11:39] How do you
+[11:40] know what it's going to be outputting?
+[11:42] How do you give it the SOPs?
+[11:43] How do you give it your stuff so you
+[11:45] can get projects so dialed in like I was
+[11:47] kind of mentioning before?
+[11:48] I hope you guys enjoyed.
+[11:49] Let me know if you have any questions.
+[11:51] I can update these videos.
+[11:52] I can add little nuances.
+[11:53] I'll respond to comments.
+[11:55] So let me know how you're using projects and
+[11:57] if this helped.
+[11:58] The free starter file for this project is
+[12:00] linked down below so go download it and get
+[12:02] started
+[12:02] Next, I highly recommend, if you haven't
+[12:04] already, watch my video on system prompts.
+[12:06] It is the other half of this.
+[12:08] It is beyond
+[12:09] important.
+[12:09] You use this throughout AI.
+[12:10] So if you haven't watched that one, watch
+[12:12] it.
+[12:12] And if not, I'll see you in the next
+[12:14] tutorial on more advanced stuff.
+[12:16] Thank you for watching.

@@ -1,0 +1,128 @@
+[00:11] In this video, we're going to take a
+[00:13] closer look at the delegation
+[00:15] competency. Remember that AI fluency is
+[00:18] about working with AI in ways that are
+[00:20] effective, efficient, ethical, and safe.
+[00:25] Delegation is primarily focused on the
+[00:27] first two of these. Helping you work
+[00:30] effectively and efficiently with AI
+[00:33] assistance. At its core, delegation is
+[00:36] about deciding what work is to be done,
+[00:38] what work you should do yourself, and
+[00:41] what work might be better suited to AI.
+[00:43] That might sound simple, but it's
+[00:45] surprisingly nuanced. Effective
+[00:48] delegation requires understanding both
+[00:51] what you're trying to accomplish and
+[00:53] what you and AI can each realistically
+[00:55] do. It's about breaking down complex
+[00:58] work into manageable pieces and making
+[01:01] strategic decisions about who handles
+[01:04] which part, whether through automation,
+[01:07] augmentation, or
+[01:09] agency. Here's something that might
+[01:11] surprise you.
+[01:12] The cornerstone of good delegation isn't
+[01:15] actually about AI at all. It's about
+[01:18] your own expertise and your own
+[01:20] understanding of what you're trying to
+[01:21] accomplish. Before involving AI in any
+[01:24] project, take a moment to answer some
+[01:27] important
+[01:28] questions. What exactly are you trying
+[01:30] to accomplish? What are you trying to
+[01:32] create or solve? What is your vision or
+[01:36] key project goals? What does success
+[01:38] look like to you?
+[01:40] and ask yourself what kind of thinking
+[01:42] and work is needed to get there. Are
+[01:45] there areas that are simple but
+[01:47] timeconuming? Areas of uncertainty where
+[01:50] you could use a trusted thinking
+[01:52] partner? Areas of ignorance where what
+[01:54] you need is more data or areas requiring
+[01:57] critical judgment. Every project and
+[02:00] every domain is different. We can't make
+[02:03] you an expert in your problem space. But
+[02:06] we can say that without a clear
+[02:08] understanding of your goals and the work
+[02:10] involved, even the most advanced AI
+[02:13] won't get you where you need to go.
+[02:14] You'll struggle to effectively work with
+[02:16] AI assistants, evaluate their outputs,
+[02:20] or know when human intervention is
+[02:22] necessary. The most effective AI
+[02:25] collaborators are experts in their
+[02:27] fields first and AI delegators second.
+[02:31] We call this first concept problem
+[02:34] awareness. the ability to clearly define
+[02:37] your goals and understand what work is
+[02:39] needed before bringing AI into the
+[02:42] picture. Beyond understanding your
+[02:45] problem, you also need a working
+[02:47] knowledge of the AI
+[02:48] landscape. Different AI systems offer
+[02:51] vastly different capabilities and this
+[02:54] field evolves almost daily. Effective
+[02:57] delegation isn't about finding one
+[02:59] perfect system. It's about understanding
+[03:01] the unique strengths and limitations of
+[03:04] the various options available to you.
+[03:06] Have you investigated which models
+[03:08] perform best for the kind of work you
+[03:10] have in mind? Do you know which AI
+[03:13] systems prioritize speed over depth or
+[03:16] accuracy over
+[03:17] creativity? This course includes several
+[03:20] technical sections that will help you
+[03:22] build this knowledge, but the landscape
+[03:24] moves quickly. The best approach is
+[03:27] hands-on. Experiment with different AI
+[03:29] systems as often as you can and develop
+[03:32] your own insights based on personal
+[03:35] experience. We call this second concept
+[03:38] platform awareness. A working knowledge
+[03:40] of available AI systems and their
+[03:42] specific capabilities and
+[03:45] limitations. Once you understand both
+[03:48] your problem and the available AI
+[03:50] assistance, the real art of delegation
+[03:53] emerges. thoughtfully distributing work
+[03:56] between human and artificial
+[03:58] intelligence to leverage the unique
+[04:00] strengths of each. Ask
+[04:03] yourself which specific parts of your
+[04:05] workflow would benefit from
+[04:08] automation or where would an
+[04:10] augmentation approach create more value
+[04:12] than either working alone or fully
+[04:15] automating? Are there critical judgment
+[04:18] areas that should remain exclusively
+[04:20] human and shouldn't be delegated at all?
+[04:23] What routine interactions can AI agents
+[04:26] handle on your behalf? With a clear
+[04:28] understanding of both your problem and
+[04:31] available AI systems, you can make
+[04:34] informed decisions about which aspects
+[04:36] of work should be automated by AI or
+[04:40] completed through human AI
+[04:41] collaboration or reserved exclusively
+[04:44] for human execution or handled by AI
+[04:47] agents acting on your behalf. We call
+[04:50] this third concept task delegation. The
+[04:53] strategic process of dividing work
+[04:56] between humans and
+[04:58] AI. To recap, delegation involves three
+[05:02] key elements. Problem awareness,
+[05:05] understanding your goals and the problem
+[05:07] to be solved. Platform awareness,
+[05:10] understanding AI capabilities and
+[05:12] limitations. And task delegation,
+[05:15] strategically dividing the work.
+[05:18] This competency highlights something
+[05:21] important. Effective AI collaboration
+[05:24] isn't about handing over the wheel and
+[05:26] calling it a day. It's about making
+[05:29] thoughtful choices and delegating work
+[05:32] that leverages the unique strengths of
+[05:34] both human and artificial intelligence.

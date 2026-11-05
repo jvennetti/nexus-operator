@@ -1,0 +1,97 @@
+[00:00] In this video, I'll show you exactly how to use  Claude.ai step by step. Claude is an AI assistant  
+[00:07] that helps you write, analyze information, and  create things you can actually use. I'm Kevin,  
+[00:14] and we'll start with the basics, like writing,  summarizing information, and working with files.  
+[00:19] Then we'll move on to more powerful features like  artifacts, projects, connectors, and skills. By  
+[00:26] the end, you'll know how to use Claude to actually  get work done, not just chat with it. Let's get  
+[00:32] started. First, head to the Claude website.  You'll find a link right here at the bottom of  
+[00:37] the screen, and then sign in. It's completely free  to get started. Once you're in, this is the main  
+[00:43] screen where all your conversations happen. Here  in the middle, you'll see the prompt box. This is  
+[00:49] where you type what you want Claude to do. Over  on the left-hand side, you have what's called the  
+[00:54] sidebar. From here, you can start a new chat. You  can also access more advanced features. Down here  
+[01:00] at the bottom, you can also view your recent chats  so you can always come back to your work. Let's  
+[01:04] start with something simple. I'll ask Claude to  write a professional email. Then, right over here,  
+[01:09] let's run that. Here, you can see Claude created  a full professional email with structure. We even  
+[01:15] have some bullet points and all the details  we would need to send this to a supplier.  
+[01:19] Now, in most cases, this is already pretty good.  But I didn't actually specify the type of cookie.  
+[01:26] Here it looks like it assumes it's chocolate chip  since that is the most popular type of cookie,  
+[01:31] although I had oatmeal raisin in mind. I don't  have to start over if it's not perfect. Instead,  
+[01:37] I can refine it. Down below, I'll type in a prompt  to modify this email so it's for oatmeal raisin  
+[01:42] cookies instead and then let's run that. Right up  on top, we can now see the updated email message,  
+[01:46] and down below, we can see a summary of all the  different changes that it made. And, of course, I  
+[01:51] could keep going from here. I could ask it to make  the email shorter, maybe make it more friendly, or  
+[01:57] just give it more context, like let's say who the  email is for or maybe what tone I want. This back  
+[02:03] and forth is really how you get the best results.  Now, once I'm happy with this message, right up on  
+[02:09] top, I could fill in these various placeholders.  For example, here, I could type in the supplier  
+[02:13] name. Down below, I could copy the message,  or over here, one of my favorite features,  
+[02:18] you could also open the email directly within your  email client. Now, let's look at another really  
+[02:24] common use case, summarizing information. I'll  start a new chat right here in the top left-hand  
+[02:30] corner. You'll notice when I hover, there's  a shortcut key. I have a dense sales report I  
+[02:34] need to read. Instead of going through the entire  document, I can upload it to Claude to get a quick  
+[02:39] summary or ask questions about it. Right over  here, I could click on the plus icon, and here,  
+[02:43] I could upload a file or a photo. Or my favorite  method, I could simply take my file and then drag  
+[02:50] and drop it into the chat. There, I see my file.  Down below, I can now enter in a prompt. So,  
+[02:56] let's say to summarize this and give me the key  takeaways. Then over here, let's run that. Claude  
+[03:01] pulls out all the most important points and  presents them in a clean, easy to read format.  
+[03:06] And look at that. Revenue hits $482,000. Like Mama  always said, there's money in the cookie business.  
+[03:13] Now, this works with all kinds of files, like  documents, PDFs, or even spreadsheets. So far,  
+[03:19] we've been using Claude like a chat bot, writing  and summarizing, but this is where it really  
+[03:24] starts to stand out. Over on the left-hand side,  let's hover over the more dropdown, and here,  
+[03:30] you'll see an option for artifacts. Let's click on  that. Instead of just giving you text in the chat,  
+[03:35] Claude can actually create things you can work  on. So right over here, let's click on create  
+[03:40] artifact. Over here, we could choose the type of  artifact. You have apps and websites, documents  
+[03:44] and templates, games, and more. For this, I'll  select documents and templates. Down below,  
+[03:49] I get a question back asking me what kind of  document or template do I have in mind? Well,  
+[03:54] I would like to create a product launch plan for  the Kevin Cookie Company's new oatmeal raisin  
+[03:59] cookie. Then I'll send that. Before it builds the  artifact, it gives me a quick high-level outline  
+[04:04] of what it wants to build. Now, I think all of  this looks great. So down below, I'll type that  
+[04:09] in, and then let's send that. Now, you'll notice  this opens up in a separate workspace. This is  
+[04:14] what's called an artifact. It's something Claude  creates that you can actually work on and edit  
+[04:19] instead of just viewing everything here in the  chat. Now, overall, I think this is really solid,  
+[04:24] but it is a little bit more verbose than I would  like. So over here in the chat, let's ask it to  
+[04:29] make it more concise, and then let's send that.  You can see that it tightens everything up while  
+[04:34] keeping all the key points. In fact, it looks  like it's about half the length of the original.  
+[04:39] Now, let's see if maybe we could also add a sales  forecast to this. So down below, I'll type that  
+[04:44] in, and let's send it. And there we go. It added  a new section with the sales forecast. Now, all I  
+[04:49] have to do is fill in all the specific details. I  can also update specific parts of this artifact.  
+[04:55] Here, if I scroll all the way to the top, I have  my executive summary. Let's see if maybe we can  
+[05:00] make this a little bit more persuasive. I'll  highlight all this text. And when I do that,  
+[05:05] I get this overlay that allows me to improve  it or explain it. Let's click on improve, and  
+[05:11] let's see if it can make it more persuasive. Then  let's click on update. And now it improves just  
+[05:15] that section without changing everything else.  So, I can update the entire document, or I can  
+[05:21] just refine specific pieces. Now, once you start  creating multiple documents like this, things  
+[05:28] can get messy pretty quickly. To keep everything  organized, we can use something called projects.  
+[05:34] Let's now rename this document or the artifact. To  do that, let's click on this dropdown up on top,  
+[05:39] and here we have the option to rename. I'll click  on that and let's call it the product launch plan,  
+[05:44] oatmeal raisin cookie. Then I'll click on save.  Right up on top, let's click on that same dropdown  
+[05:50] and we can now add this artifact to a project.  Right over here, I'll click on add to project.  
+[05:55] This opens up a prompt where I can see all of my  existing projects or up on top, I can also create  
+[06:00] a new project. I'll make a new one called oatmeal  raisin cookie launch. And right here, I'll click  
+[06:05] on create. Over on the left-hand side, let's now  click on this icon to open up all the different  
+[06:11] projects. And there I see the project that we  just created called the oatmeal raisin cookie  
+[06:15] launch. Let's click into this one. With projects,  I can keep my launch plan, my chats and any other  
+[06:21] files all here in one place. As an example, I  also have a PDF with research on oatmeal raisin  
+[06:28] cookies. Here I could drag that in and add it  to the project knowledge. Here I have my PDF  
+[06:32] with all the research and over here we also have  that artifact that we just created a moment ago,  
+[06:37] all here in one place. Now that I have some files  in my project, I can also add instructions. So  
+[06:43] that way instead of repeating myself every time,  I can tell Claude how I want it to respond. Right  
+[06:48] over here, I'll click on this plus icon, and I  can now add instructions. As an example, let's say  
+[06:54] always respond in bullet points. Now I’ll click  save and anything I ask inside this project will  
+[07:00] follow that automatically. Now here's where this  gets really powerful. Inside a project, Claude can  
+[07:05] use everything I've added. So, it can reference  my launch plan artifact and also the research  
+[07:10] document I uploaded. Right here, I'll type in a  prompt. What should I prioritize for a successful  
+[07:15] launch? And then let's run that. Now you'll notice  it responds in bullet points and it's also pulling  
+[07:20] from both the plan and the research. Instead of  jumping between chats, everything here stays nice  
+[07:25] and organized. So far, we've looked at how to do  work in Claude, but you can also connect it to  
+[07:31] your other tools. Back in the main chat view,  let's click on the plus icon and right here,  
+[07:36] you see the option to add connectors. Now here  you could connect it to things like your files,  
+[07:41] your email, your calendar, and you have all  sorts of other services as well. Now with email,  
+[07:47] you could have to review your emails and highlight  what's most urgent. For most people getting  
+[07:51] started though, you don't need this right away,  but it really becomes powerful as you go deeper.  
+[07:55] In the top right-hand corner, let's close out of  this. You can also customize how Claude works with  
+[08:00] something called skills. Right here, I'll click  on the plus icon and here you can manage your  
+[08:05] skills or you could add a new skill. This lets  you save reusable instructions or workflows,  
+[08:10] so you don't have to repeat them every time. For  example, you could create a skill for writing  
+[08:14] emails or analyzing data in a very specific way.  If you want to go deeper, check the description  
+[08:20] for a full video on how to use skills. That's how  to use Claude to actually get work done day to  
+[08:25] day. If you want to go deeper, I put together  a full playlist covering everything Claude.  
+[08:30] You'll find that linked right down below. Thanks  for watching and I'll see you in the next video.

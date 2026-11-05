@@ -1,0 +1,263 @@
+[00:00] Hi guys, welcome to Tech PP. In this
+[00:03] video, I'm going to show you how you can
+[00:05] install and use Claude Code on Windows
+[00:08] step-by-step, even if you've never used
+[00:10] a terminal before. Claude Code is
+[00:12] Anthropic's AI coding assistant. You
+[00:15] tell it what you want in plain English,
+[00:17] and it reads, writes, and changes the
+[00:19] files in a folder on your computer, and
+[00:21] runs commands for you. This is part one
+[00:24] of two. In this part, we'll install
+[00:26] Claude Code, sign in, build a small
+[00:29] expense tracker web page from scratch,
+[00:31] learn how to undo changes, use plan mode
+[00:34] and the permission modes, and save our
+[00:36] work with Git. In part two, we'll cover
+[00:38] memory, settings, skills, sub-agents,
+[00:42] hooks, MCP servers, and the VS Code
+[00:44] extension. Before we start, you'll need
+[00:47] a paid Claude plan, like Pro or Max, or
+[00:50] a Claude console account. The free plan
+[00:52] doesn't include Claude Code. Here's how.
+[00:57] First, open the start menu, type
+[00:59] terminal, and open it.
+[01:01] Windows Terminal opens with PowerShell.
+[01:03] You can tell by the PS at the start of
+[01:05] the line.
+[01:07] Before installing Claude Code, I'll
+[01:08] install Git for Windows. It's optional,
+[01:11] but Anthropic recommends it because it
+[01:13] gives Claude Code a proper shell and
+[01:15] lets it save versions of your work.
+[01:18] Type winget install, then the Git
+[01:20] package name, and press enter.
+[01:23] Windows asks if you want to allow Git
+[01:25] for Windows to make changes. Check that
+[01:27] it's from a verified publisher, then
+[01:29] click yes.
+[01:31] Once it says successfully installed,
+[01:33] close the terminal and open a new one so
+[01:35] it can find Git. Then type git --version
+[01:38] to check, and there's the version
+[01:40] number.
+[01:42] Now, let's install Claude Code. Paste
+[01:44] this command and press enter. It
+[01:47] downloads the installer from claude.ai
+[01:49] and runs it. You don't need
+[01:51] administrator rights for this.
+[01:53] After a few seconds, you'll see Claude
+[01:54] Code successfully installed with the
+[01:56] version number and the folder it's
+[01:58] installed in.
+[02:00] But, look at the setup notes at the
+[02:02] bottom. On my PC, that folder wasn't
+[02:04] added to the path, which means Windows
+[02:06] can't find the Claude command yet. If
+[02:09] you see this note, too, here's the fix.
+[02:11] Open the start menu and search for
+[02:13] environment variables. Then click edit
+[02:16] environment variables for your account.
+[02:18] Under user variables, select path and
+[02:21] click edit.
+[02:23] Click new and type the folder from the
+[02:25] setup note. It's the dot local then bin
+[02:28] folder inside your user folder. Then
+[02:30] click okay and okay again.
+[02:33] Now open a new terminal and type Claude
+[02:36] {dash} {dash} version. This time it
+[02:38] shows the version number, so Windows can
+[02:40] find Claude code.
+[02:42] You can also run Claude doctor. It
+[02:44] checks your installation and shows
+[02:46] things like your version, your platform,
+[02:48] and whether automatic updates are turned
+[02:50] on.
+[02:52] By the way, on a Mac, it's just one
+[02:54] command in the terminal app. You'll find
+[02:56] the install commands for Windows and Mac
+[02:58] in the description.
+[03:01] Claude code works inside a folder, so
+[03:03] let's make one for our project. I made a
+[03:05] folder called expense tracker in
+[03:07] documents and moved into it with the CD
+[03:09] command.
+[03:11] Now type Claude and press enter.
+[03:14] The first time it asks you to choose a
+[03:16] text style for your terminal. I'll keep
+[03:18] dark mode and press enter.
+[03:20] Next, choose how you want to sign in.
+[03:23] I'll pick my Claude account with a
+[03:24] subscription.
+[03:25] Your browser opens the Claude sign-in
+[03:27] page. Sign in with the same account you
+[03:30] use on Claude.ai.
+[03:32] Once you've signed in, the browser says
+[03:34] you're all set up for Claude code and
+[03:36] you can close it.
+[03:38] Back in the terminal, you'll see login
+[03:40] successful. Press enter to continue.
+[03:44] Claude code then shows two security
+[03:46] notes. Claude can make mistakes, so
+[03:49] always check what it does and be careful
+[03:51] with files and websites you don't trust.
+[03:54] Press enter again.
+[03:56] Finally, it asks whether you trust the
+[03:58] files in this folder. This is our own
+[04:00] empty folder, so I'll choose yes, I
+[04:03] trust this folder.
+[04:05] And this is Claude Code. At the top, you
+[04:07] can see the version, the model, your
+[04:09] plan, and the folder you're working in.
+[04:12] The box at the bottom is where you type.
+[04:15] If you're new, type a question mark. It
+[04:18] shows the most useful shortcuts.
+[04:21] Type a slash and you'll see every
+[04:22] command with a short line on what it
+[04:24] does.
+[04:26] And {slash} help opens a guide with the
+[04:28] basics, the commands, and your own
+[04:31] custom commands, each in its own tab.
+[04:35] Now let's give Claude its first task. I
+[04:38] asked it to build a simple daily expense
+[04:40] tracker as one web page. I can add an
+[04:43] expense in rupees with a note and a
+[04:45] category, see today's total, and my list
+[04:47] stays saved in the browser.
+[04:50] Press enter and Claude gets to work. It
+[04:53] thinks about the task first and then
+[04:55] writes the code.
+[04:57] Before it creates a file, Claude asks
+[04:59] for your permission. Yes, let's it go
+[05:02] ahead this once. The second option
+[05:04] switches to accept edits for the rest of
+[05:06] this session, and no stops it. I'll
+[05:09] press enter for yes.
+[05:11] A few seconds later, it's done. Claude
+[05:14] explains what it built and how to use
+[05:16] it.
+[05:18] Let's open it. Type an exclamation mark
+[05:20] to switch to shell mode. This lets you
+[05:22] run a normal command right from Claude
+[05:24] Code. Then type start index.html
+[05:28] and press enter.
+[05:30] The page opens in Edge. I'll add my
+[05:32] lunch, 250 rupees, and an auto to the
+[05:35] office, 120 rupees, and today's total
+[05:38] updates straight away.
+[05:42] Now let's change something. I asked
+[05:44] Claude to add a small pie chart under
+[05:46] today's total, showing how much I spent
+[05:48] in each category.
+[05:50] This time, Claude wanted to run a
+[05:52] command to look inside the file first.
+[05:54] So, it asked for permission again. I
+[05:56] said yes.
+[05:58] When it asked to edit the file, I chose
+[06:00] the second option, yes, and switched to
+[06:03] accept edits. Now Claude can edit files
+[06:06] without asking for the rest of this
+[06:08] session.
+[06:09] Refresh the page and there's the chart.
+[06:12] Food is 250 rupees and transport is 120.
+[06:18] If Claude ever goes in the wrong
+[06:19] direction, press escape to stop it
+[06:21] straight away. You'll see interrupted
+[06:24] and you can tell it what to do instead.
+[06:27] To point Claude at a specific file, type
+[06:30] the at sign and start typing the file's
+[06:32] name. Then press tab to pick it from the
+[06:34] list. I asked for a button that clears
+[06:37] today's expenses and asks me to confirm
+[06:39] first.
+[06:40] You can even send a new message while
+[06:42] Claude is still working. It waits in
+[06:45] line and Claude reads it as soon as it's
+[06:47] done. I asked it to make that button
+[06:49] red.
+[06:51] And Claude added a red clear today
+[06:53] button which asks before it deletes
+[06:55] anything.
+[06:59] Now, what if you don't like a change?
+[07:01] Press escape twice. This opens rewind, a
+[07:04] list of your earlier messages.
+[07:07] Pick the point you want to go back to. I
+[07:09] picked the message where I asked for the
+[07:10] clear button. It even shows how
+[07:12] index.html will change.
+[07:15] Then choose what to restore, the code,
+[07:18] the conversation, or both. I'll choose
+[07:20] restore code and conversation.
+[07:23] Refresh the page and the clear button is
+[07:25] gone. The page is back to how it was
+[07:27] before that message.
+[07:30] Just remember, rewind only undoes the
+[07:32] files Claude edited itself. It can't
+[07:35] undo commands that Claude ran. So, for
+[07:37] real safety, we'll use Git in a moment.
+[07:42] Now let's look at permission modes.
+[07:44] Press shift and tab to switch between
+[07:46] them, and the current mode shows at the
+[07:48] bottom.
+[07:50] Manual mode asks before every change.
+[07:53] Accept edits lets Claude change files
+[07:55] without asking. Plan mode lets Claude
+[07:57] look around and plan, but it can't
+[07:59] change anything. And auto mode lets
+[08:01] Claude decide on its own while it checks
+[08:04] each step for anything risky.
+[08:06] For bigger changes, start in plan mode.
+[08:09] I switched to plan mode and asked for a
+[08:11] month view that shows how much I spent
+[08:13] on each day this month with the month's
+[08:15] total.
+[08:17] Claude read the project and wrote a full
+[08:19] plan with the approach, the code
+[08:21] changes, and how to check that it works.
+[08:24] Nothing has changed yet.
+[08:26] At the bottom, you can approve the plan,
+[08:29] approve it, but check each edit
+[08:31] yourself, or tell Claude what to change.
+[08:34] I chose yes and use auto mode.
+[08:37] And Claude builds it following the plan.
+[08:41] Now, the page has two tabs, today and
+[08:44] month.
+[08:45] To try the month view, I added a few
+[08:47] sample expenses from earlier dates. And
+[08:50] here it is, a bar for each day, the
+[08:53] month's total, and the daily average.
+[08:58] Finally, let's save our work with Git so
+[09:00] we can always go back to this version.
+[09:03] I asked Claude to put this project in
+[09:06] Git and commit my work with a clear
+[09:08] message.
+[09:09] Git didn't have my name yet, so Claude
+[09:11] asked what name to use for my commits. I
+[09:14] told it Tech B B for this project only.
+[09:17] Claude created the repository and saved
+[09:19] the first commit with a message that
+[09:21] lists everything the page does. It also
+[09:24] says nothing was uploaded anywhere. It's
+[09:26] only on my computer.
+[09:29] You can check it with Git log in shell
+[09:31] mode, and there's our first commit.
+[09:35] So, quick recap. Install Git for
+[09:38] Windows, then install Claude code with
+[09:40] the PowerShell command, and add it to
+[09:42] your path if the setup note asks you to.
+[09:45] Make a folder, type Claude, sign in, and
+[09:48] trust the folder. Ask for what you want
+[09:50] in plain English, and approve each step.
+[09:53] Press escape to stop Claude, and escape
+[09:55] twice to rewind a change. Use shift and
+[09:58] tab for the permission modes, and plan
+[10:00] mode for bigger changes. And ask Claude
+[10:03] to commit your work with Git.
+[10:05] That's how you can install code on
+[10:08] Windows and build your first project
+[10:10] with it. In part two, we'll look at
+[10:12] memory, settings, skills, sub agents,
+[10:15] hooks, MCP servers, and VS Code. I hope
+[10:18] you found this guide helpful. For more
+[10:20] helpful AI tutorials like this,
+[10:22] subscribe to our Tech PP channel.

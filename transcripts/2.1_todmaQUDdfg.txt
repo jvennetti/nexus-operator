@@ -1,0 +1,150 @@
+[00:00] Have you ever typed something into
+[00:02] ChatGPT or Copilot and thought,
+[00:06] "Why this answer is so vague?"
+[00:09] So, here is the truth.
+[00:12] So, most of the time, it's not the AI
+[00:15] that's the problem.
+[00:17] It's the prompt you write.
+[00:21] So, in this video, I'll show you a
+[00:23] simple framework
+[00:25] for writing great prompts.
+[00:28] And I'll compare
+[00:31] a bad prompt with a good prompt.
+[00:38] Think of
+[00:40] AI
+[00:41] like a very smart employee.
+[00:44] If you tell an employee,
+[00:47] "Make a report." You will get one
+[00:49] result.
+[00:50] But,
+[00:52] to the same employee, if you say,
+[00:54] "Create a one-page sales report for a
+[00:57] senior management using sales data
+[01:00] and include
+[01:02] three recommendation
+[01:05] and keep it professional."
+[01:08] Then you will
+[01:09] definitely get a better
+[01:14] result.
+[01:15] >> [snorts]
+[01:17] >> So, say the same rule applies to the AI.
+[01:22] Let's see an example
+[01:24] how the bad prompts look like.
+[01:28] If I type in the Copilot,
+[01:32] "Write
+[01:33] an email." Let's see what's the response
+[01:36] from the Copilot.
+[01:39] So, though
+[01:40] if you write an email,
+[01:43] the Copilot is asking for
+[01:46] who's the recipient,
+[01:49] what is the purpose of this mail,
+[01:52] and what is the key What are the key
+[01:54] points going
+[01:57] and the
+[01:58] desired tone like it's like from
+[02:01] professional or formal or friendly
+[02:04] or any deadline or meeting date or
+[02:07] document number or project number
+[02:11] applicable.
+[02:14] So
+[02:16] a bad prompt is is usually missing
+[02:20] context details and
+[02:24] expectations. So to get a better result
+[02:29] I will rephrase
+[02:32] the prompt like
+[02:35] write an email
+[02:39] to my boss
+[02:42] requesting leave for
+[02:46] 5 days as I am having family event. The
+[02:51] prompt date
+[02:53] from date 20 8
+[02:57] August
+[02:59] to 3rd September. Let's see.
+[03:04] Yeah, now
+[03:08] the Copilot is giving better result.
+[03:11] See.
+[03:13] Dear Kumar
+[03:15] I hope you are doing well.
+[03:18] I would like to request leave from 28
+[03:21] August to 3rd 3rd September to attend
+[03:25] attend an important family event.
+[03:27] I will ensure that my ongoing work is up
+[03:30] to date and will coordinate any pending
+[03:32] task to minimize any impact during my
+[03:35] absence.
+[03:37] So I kindly request your approval for
+[03:39] this leave period. Please let me know if
+[03:42] you need any additional information.
+[03:44] Thank you for your considerations.
+[03:47] So if you provide the role and the
+[03:51] context
+[03:52] and the
+[03:55] uh detail explanation
+[03:58] to the
+[04:00] AI, the AI will give the better
+[04:04] response.
+[04:07] So, to write a better prompt,
+[04:10] we have to follow
+[04:14] the rules.
+[04:16] So, there are
+[04:18] five numbers of rules.
+[04:22] The rule number one
+[04:24] is the
+[04:26] give the role to the AI.
+[04:30] The rule number two,
+[04:33] be specific to your task, what you want.
+[04:38] Rule number three,
+[04:41] provide the context to the AI.
+[04:46] And the rule number four,
+[04:50] define the output format you want, like
+[04:53] in Excel, like in table, or in what
+[04:56] format.
+[04:58] And the rule number five,
+[05:00] set the constraint.
+[05:03] So, let's take an example.
+[05:06] I will write
+[05:21] like
+[05:26] act as a senior project management
+[05:29] manager.
+[05:31] So, I have given a role to the AI like
+[05:36] it
+[05:37] you are a senior project management
+[05:39] manager.
+[05:41] And I have asked
+[05:44] I've given the task like
+[05:47] create a risk register for a
+[05:49] construction project.
+[05:52] Then I have given the context to the AI
+[05:56] that the project involves 12-month
+[06:00] schedule
+[06:01] and a 10 million
+[06:04] dollar budget.
+[06:07] And the output format I want in a table.
+[06:13] And the what constant I have provided
+[06:16] to include
+[06:18] probability, impact, and mitigation
+[06:22] action and the risk owner.
+[06:26] Let's see
+[06:28] how the AI will respond
+[06:31] to our prompt.
+[06:33] You can see the res-
+[06:35] AI responded
+[06:38] very structured way.
+[06:42] First thing, the risk table that I
+[06:45] provided and the
+[06:48] risk matrix definition
+[06:51] and the recommended contingency for a 10
+[06:55] million dollar project.
+[06:58] The top five
+[07:00] risk requiring immediate management
+[07:02] attention.
+[07:04] So, like this, if you write
+[07:08] a prompt following
+[07:11] these five rules, your prompt will be
+[07:18] a good prompt.
+[07:20] And you will get a better
+[07:23] result from AI.
+[07:28] >> [music]
+[07:33] [music]
+[07:43] >> Woo! [music]

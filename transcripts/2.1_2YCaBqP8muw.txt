@@ -1,0 +1,338 @@
+[00:09] [Music]
+[00:12] Let's explore one of the most practical
+[00:14] skills when working with AI. Crafting
+[00:16] effective prompts. This might sound
+[00:18] technical or complicated, and some
+[00:20] guides certainly make it seem that way,
+[00:22] but at its heart, it's surprisingly
+[00:24] straightforward. Prompting is simply how
+[00:26] we apply this course's description
+[00:27] competency in practice. clearly
+[00:30] communicating what we want, how we want
+[00:31] it done, and how we want to interact
+[00:33] with our AI assistant throughout the
+[00:35] entire process. Think of prompting like
+[00:37] explaining a task to a helpful new
+[00:39] colleague who's eager to assist, but
+[00:41] needs clear directions and expectation
+[00:43] setting to do their best work. We'll be
+[00:45] using Claude throughout this section,
+[00:47] but these tips can be carried over to
+[00:49] many other AI systems. You might have
+[00:52] heard the term prompt engineering tossed
+[00:54] around. Prompt engineering is simply the
+[00:56] practice of designing effective
+[00:58] instructions for AI systems like Claude.
+[01:01] It's about crafting your questions and
+[01:02] providing context in ways that help AI
+[01:04] assistants understand exactly what you
+[01:07] want. What's fascinating is that
+[01:09] effective prompting blends familiar
+[01:11] human communication skills with a few
+[01:13] considerations specific to AI. Many
+[01:16] principles that make for good human
+[01:17] conversation, such as being clear,
+[01:19] providing relevant context, and giving
+[01:21] concrete examples, also apply when
+[01:23] working with AI. Yet, there are
+[01:25] differences, such as being more explicit
+[01:27] about things humans could naturally
+[01:28] infer, and accommodating the AI's
+[01:31] limited context window, and sometimes,
+[01:33] depending on the AI you're working with,
+[01:35] using specific formatting that machines
+[01:37] can easily process. As AI assistants
+[01:40] continue to evolve, prompting best
+[01:42] practices evolve, too. What works with
+[01:44] today's AI systems may be different from
+[01:46] what works with tomorrow's.
+[01:48] Experimentation is key to discovering
+[01:50] what works best for your specific needs.
+[01:52] In this video, we'll mainly explore six
+[01:54] foundational prompting tips that will go
+[01:56] a long way toward helping you
+[01:57] effectively communicate and collaborate
+[01:59] with Claude and other AI systems. They
+[02:01] are give Claude context, show examples
+[02:04] of what good looks like, specify output
+[02:07] constraints, break complex tasks into
+[02:10] steps, ask Claude to think first, and
+[02:13] define Claude's role, style, or tone.
+[02:15] The first principle is simple but
+[02:17] powerful. Be specific and clear about
+[02:19] what you want, why you want it, and
+[02:21] perhaps most surprisingly, who you are.
+[02:24] Let's take a simple prompt. Tell me
+[02:26] about climate change. How can we improve
+[02:29] this by giving Cloud more context? A
+[02:31] more specific contextrich version could
+[02:33] look like, explain three major impacts
+[02:36] of climate change on agriculture in
+[02:38] tropical regions with examples from the
+[02:40] past decade. Our baseline prompt was
+[02:43] vague and leaves clawed guessing about
+[02:44] our interests, level of knowledge, and
+[02:46] the depth of detail we're looking for,
+[02:48] such as geography and time span. We can
+[02:50] even add more context by providing
+[02:52] information not just about what we're
+[02:54] looking for, but why we're asking and
+[02:56] how we'll be using that information that
+[02:58] Claude gives us. Now, our prompt looks
+[03:00] like this. Explain three major impacts
+[03:02] of climate change on agriculture in
+[03:04] tropical regions with examples from the
+[03:06] past decade. I'm preparing for a job
+[03:09] interview at an agricultural research
+[03:10] lab in Indonesia. I have a degree in
+[03:13] ecology, but no specific knowledge on
+[03:15] climate change. write a summary of key
+[03:17] concepts that would help me speak
+[03:18] intelligently in the interview. All this
+[03:21] added context helps tailor Claude's
+[03:23] response to your specific situation and
+[03:25] knowledge level. This kind of background
+[03:26] information is something we naturally
+[03:28] provide in human conversations, but
+[03:30] might forget to include when talking
+[03:31] with Claude. Sometimes showing is better
+[03:34] than telling. Providing examples of the
+[03:36] kind of output you're looking for can be
+[03:38] incredibly effective. This is sometimes
+[03:40] called fshot prompting or nshot
+[03:42] prompting in technical circles where n
+[03:44] is the number of examples given but it's
+[03:47] really just about showing the AI
+[03:48] examples for it to emulate. For
+[03:50] instance, take the following prompt.
+[03:52] Please convert this technical statement
+[03:54] to plain language. The platform
+[03:56] implements end-to-end encryption
+[03:57] protocols to safeguard data integrity.
+[04:00] Clog may already be able to do this to
+[04:02] your satisfaction. So we definitely
+[04:04] recommend you just try first without
+[04:06] examples and see where it leads you. But
+[04:08] let's say you have a very specific style
+[04:10] you want Claude to follow, and it's
+[04:12] harder to explain than to give examples.
+[04:15] Your refreshed prompt could look
+[04:16] something like this. Here are two
+[04:19] examples of how to convert technical
+[04:20] jargon into plain language. Original,
+[04:23] the quantum algorithm exhibits quadratic
+[04:25] speed up. Plain, the new method solves
+[04:27] problems roughly twice as fast as
+[04:29] previous methods. Original, the
+[04:32] interface leverages intuitive design
+[04:33] paradigms. Plain, the design is easy to
+[04:36] understand and use. Now, please convert
+[04:39] this complex technical manual to plain
+[04:41] language. When providing examples, aim
+[04:43] to cover the full diversity of possible
+[04:45] prompts, such as examples that cover
+[04:47] different cases or styles. This helps
+[04:50] Claude better understand the broad range
+[04:51] of the pattern you want it to follow.
+[04:53] Being clear about output constraints,
+[04:55] such as the desired format and length of
+[04:57] Claude's response, or the language you
+[04:59] want Claude to code in, or the color of
+[05:01] the buttons on the web page you want
+[05:03] Claude to design, also helps ensure you
+[05:05] get exactly what you need. Here's an
+[05:08] example of clear and detailed
+[05:09] description to ensure Claude delivers
+[05:11] exactly what you're looking for. Create
+[05:14] a clean, modern, single page art
+[05:16] portfolio website. Include these main
+[05:18] sections: hero, about me, skills,
+[05:19] portfolio, projects, experience, and
+[05:21] contact. Make the navigation menu sticky
+[05:24] and responsive with hamburger menu on
+[05:25] mobile. Use a sunset color palette and
+[05:28] add a dark light mode toggle in the
+[05:30] navigation. Guidance like this helps
+[05:32] cloud structure its response to match
+[05:34] your expectations. When you have a
+[05:36] complicated request, breaking it down
+[05:38] into smaller steps helps Cloud follow
+[05:40] your thinking and deliver better
+[05:42] results. Think about it this way. If you
+[05:45] ask a friend to do something for you
+[05:46] without specifying how, there's a chance
+[05:48] that they may not do it the way you
+[05:50] intended them to. We've all been there.
+[05:52] Listing out task steps ensures that
+[05:54] Claude follows the process you want to
+[05:56] in order to accomplish its task. This is
+[05:59] sometimes called chain of thought
+[06:00] prompting. For example, instead of
+[06:02] asking Claude to analyze this quarterly
+[06:04] sales data, you might say, "I'd like to
+[06:06] analyze this quarterly sales data.
+[06:08] Please approach this by looking through
+[06:10] our sales records to identify the top
+[06:11] performing products, comparing current
+[06:14] quarter results to the previous quarter,
+[06:16] highlighting any unusual trends or
+[06:17] patterns, and then suggesting possible
+[06:19] reasons for these trends. By default,
+[06:21] you may not need to do this, especially
+[06:23] for tasks that are relatively
+[06:24] straightforward. Furthermore, modern
+[06:27] reasoning models or extended thinking
+[06:29] models are increasingly capable of
+[06:31] performing step-by-step reasoning on
+[06:33] their own, but you can still guide this
+[06:36] process to ensure it aligns with your
+[06:37] needs. The more variance there is in
+[06:40] ways to execute the task well, or the
+[06:42] more that proper task execution relies
+[06:44] on experience and knowledge you've
+[06:45] gained as a domain expert, the more you
+[06:48] should consider taking the time to
+[06:49] translate that knowledge into Claude.
+[06:51] Relatedly, sometimes it can be helpful
+[06:53] to explicitly give AI assistants like
+[06:55] Claude space to work through its process
+[06:57] first before executing its task. This
+[07:00] approach helps Claude produce more
+[07:02] thorough and well-considered responses.
+[07:04] For example, you can add this to your
+[07:06] prompt. Before answering, please think
+[07:08] through this problem carefully. Consider
+[07:11] the different factors involved,
+[07:12] potential constraints, and various
+[07:14] approaches before recommending the best
+[07:16] solution. As I mentioned, modern
+[07:18] reasoning or extended thinking models by
+[07:20] default think before acting. But if
+[07:22] you're working with an AI assistant that
+[07:24] does not think first by default, you can
+[07:26] still prompt the AI to do so. I want to
+[07:28] note the importance of giving the AI
+[07:30] assistant space to think before doing
+[07:32] its task, not after. If you want that
+[07:35] thinking to increase the quality of the
+[07:37] AI's work, just like how having space to
+[07:39] think before you act is different than
+[07:41] acting first, then being asked to
+[07:43] explain your thinking afterwards. As a
+[07:45] side benefit, this also allows you to
+[07:47] better see where the AI assistant might
+[07:49] be going astray and thus where you could
+[07:51] hone your description competency further
+[07:53] by providing more guidance. Specifying
+[07:56] how you want cloud to communicate and
+[07:58] behave can significantly change how it
+[08:00] approaches a task. By specifying the
+[08:02] level of expected expertise, the
+[08:04] perspective you want it to take, or its
+[08:06] communication style, you can guide both
+[08:08] Claude's interaction with you and the
+[08:10] final result of what it produces. Simply
+[08:12] put, who do you want the AI to act as?
+[08:15] For example, take this prompt. Please
+[08:17] explain how rainbows form from the
+[08:19] perspective of an experienced science
+[08:21] teacher speaking to a bright 10-year-old
+[08:23] who's interested in science. This is
+[08:25] also a good way to brainstorm or get
+[08:27] feedback. You can specify a general role
+[08:29] or even ask Claw to take on the persona
+[08:31] of a specific figure, such as Richard
+[08:32] Fineman, when asking for physics
+[08:34] explanations. Here's another example. As
+[08:37] a UX design expert, review this website
+[08:40] wireframe and suggest three improvements
+[08:42] focusing on user navigation and
+[08:43] accessibility. Perhaps the most powerful
+[08:45] technique is asking Claude to help
+[08:47] improve your prompt. When you're not
+[08:49] sure how to ask for something or how to
+[08:51] improve your prompt, describe to Claude
+[08:53] your issue or situation and ask it to
+[08:55] make your prompt better or write your
+[08:56] prompt for you. I'm trying to get you,
+[08:59] Claude, to help me with goal. I'm not
+[09:01] sure how to phrase my request to get the
+[09:04] best results. Can you help me craft an
+[09:06] effective prompt for this? Here's where
+[09:08] Claude and other AI assistants may vary
+[09:10] most in terms of performance. So, we
+[09:12] suggest you experiment with different
+[09:13] models as part of practicing delegation.
+[09:17] Effective prompting is iterative and
+[09:19] experimental. AI systems and best
+[09:21] practices are constantly evolving. So,
+[09:23] what works today may change tomorrow.
+[09:25] Your first attempt won't always yield
+[09:27] the perfect result, and that's expected.
+[09:29] When a response isn't quite what you
+[09:31] need, try refining your approach by
+[09:33] playing around with any of the
+[09:34] techniques we mentioned, such as add
+[09:37] more specificity or context. Provide
+[09:40] examples of your desired output. Break
+[09:42] the task into smaller steps and try a
+[09:45] different technique or combination of
+[09:47] techniques. You can also ask for
+[09:49] variations such as, "Can you give me
+[09:50] three different versions of this?" You
+[09:53] can request different formats such as,
+[09:54] "Instead of a paragraph, could you
+[09:56] present this in an interactive
+[09:58] artifact?" Note that artifacts are a
+[10:00] unique way that Claude can create
+[10:01] outputs that may be easier to understand
+[10:03] or more interesting to digest. You can
+[10:05] also check confidence, such as for
+[10:07] factual questions, you can ask, "How
+[10:09] confident are you about this answer?"
+[10:12] You can also reset the conversation
+[10:13] entirely. Sometimes starting a fresh
+[10:15] conversation gives better results than
+[10:17] trying to correct the conversation
+[10:19] that's gone off track. Use each
+[10:21] interaction as feedback to improve your
+[10:23] next prompt. Over time, you'll develop
+[10:25] an intuition for how to communicate
+[10:27] effectively with all AI systems. As you
+[10:30] apply these techniques in practice,
+[10:31] here's some guidance to recap. Some
+[10:34] patterns consistently work well.
+[10:36] Starting with a clear task overview
+[10:37] statement, including format
+[10:39] specifications and examples, setting
+[10:41] explicit constraints or requirements,
+[10:43] providing rich and relevant background
+[10:45] information, and common mistakes to
+[10:47] avoid are assuming that Claude can read
+[10:49] your mind, or overloading a single
+[10:52] prompt or conversation with multiple
+[10:53] unrelated tasks, being too vague about
+[10:56] what success looks like, and not
+[10:57] providing feedback on previous
+[10:59] responses. To recap, effective
+[11:01] communication with AI systems like
+[11:03] Claude combines timeless human
+[11:04] communication principles with AI
+[11:06] specific techniques. The approaches
+[11:08] we've covered will serve you well across
+[11:10] different AI systems. These six
+[11:12] principles together with the secret
+[11:13] weapon of asking Cloud for help form a
+[11:16] solid toolkit for applying the
+[11:17] description competence to your AI
+[11:19] interactions. Iteration and practice
+[11:21] here is the key to Swift improvement and
+[11:24] mastery. Remember that prompt
+[11:26] engineering is an evolving practice. As
+[11:28] models improve, some specific techniques
+[11:30] become less necessary. However, these
+[11:33] principles of good communication are
+[11:35] still relevant even if the way we apply
+[11:37] them changes. Maintain a spirit of
+[11:39] experimentation and adapt your approach
+[11:42] based on your results.

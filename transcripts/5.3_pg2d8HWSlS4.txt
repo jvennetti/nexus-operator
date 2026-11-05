@@ -1,0 +1,204 @@
+[00:00] Do you have jobs you keep doing by hand?
+[00:02] Running the tests every morning,
+[00:04] checking new pull requests, reacting
+[00:06] after every deploy? Routines let Cloud
+[00:09] Code do them for you [music] in the
+[00:11] cloud, on a schedule, even when your
+[00:13] laptop is closed. In this video, you'll
+[00:16] learn [music] what routines are, when to
+[00:17] use them, and how to set one up step by
+[00:20] step.
+[00:22] So, what is a routine?
+[00:23] >> [music]
+[00:23] >> A routine is a saved Cloud Code setup, a
+[00:26] prompt, one or more GitHub repositories,
+[00:29] >> [music]
+[00:29] >> and the connectors it may use. You
+[00:31] package it once, then it runs
+[00:33] automatically on Anthropic's cloud as a
+[00:36] full Cloud Code session. Your computer
+[00:38] doesn't need to be on.
+[00:39] >> [music]
+[00:40] >> One naming note, routines are now called
+[00:42] scheduled tasks. The old name still
+[00:44] appears in the web address and in the
+[00:46] [music] /routines command. It's a
+[00:48] research preview on pro, max, team,
+[00:51] [music] and enterprise plans.
+[00:54] A routine starts when one of its
+[00:56] triggers [music] fires. There are three
+[00:58] kinds. A schedule, hourly, daily,
+[01:01] weekly, or just once at a set [music]
+[01:03] time. An API trigger, your own script,
+[01:07] like a deploy pipeline, calls the
+[01:08] routine's URL with a secret token. And a
+[01:11] GitHub [music] trigger, a pull request
+[01:13] or a release event on your repository.
+[01:16] And you can combine them. The same
+[01:18] routine can run every morning and after
+[01:20] every deploy.
+[01:22] When should you use a routine?
+[01:24] >> [music]
+[01:24] >> For jobs that are unattended,
+[01:26] repeatable, and have a clear outcome.
+[01:28] They run in the cloud on a fresh [music]
+[01:30] copy of your GitHub repository at most
+[01:33] once an hour. If the job needs files on
+[01:35] your computer, use a desktop [music]
+[01:37] scheduled task. For quick polling while
+[01:39] you work, use /loop. Both need your
+[01:42] machine to be on.
+[01:44] Our use [music] case, a test guard for
+[01:46] my small shop's code on GitHub. Before,
+[01:49] >> [music]
+[01:49] >> every morning, I open the project and
+[01:51] run the tests. I notice a failure only
+[01:54] when I remember to check and only when
+[01:56] I'm at my desk. After a routine runs the
+[01:59] tests [music] every weekday morning and
+[02:01] after every deploy. If something fails,
+[02:04] it fixes it on a new branch [music] and
+[02:06] reports what it did.
+[02:08] Here's the project, the card code, its
+[02:10] tests, [music] and a short claw.md with
+[02:12] my rules. Someone merged a change
+[02:14] yesterday. [music] I run the tests by
+[02:16] hand and one fails. I only found it
+[02:19] because I happened [music] to check.
+[02:21] Let's make Claude check every day
+[02:22] without me.
+[02:24] Step one, write the prompt. This is the
+[02:26] most important part.
+[02:28] >> [music]
+[02:28] >> The routine runs unattended. Nobody is
+[02:30] watching. So, the prompt must be
+[02:32] self-contained and say what success
+[02:34] looks like. [music]
+[02:35] First, run the tests and if they pass,
+[02:38] report the count.
+[02:39] >> [music]
+[02:39] >> If a test fails, find the cause. Don't
+[02:42] touch the tests. Fix it on a new Claude
+[02:44] branch and report the details. [music]
+[02:47] Enter rule for the API trigger. Text
+[02:49] sent with it arrives in a routine fire
+[02:52] payload block labeled [music] as
+[02:53] untrusted. My prompt says to use it only
+[02:56] as context.
+[02:58] >> [music]
+[02:58] >> Step two, create the routine right from
+[03:01] Claude code with /schedule. I describe
+[03:04] it [music] in plain English. Every
+[03:05] weekday at 9:07, run the test card
+[03:08] prompt. Claude asks a few follow-up
+[03:11] questions, the repository, the prompt,
+[03:13] the time. Then it saves the routine to
+[03:15] my account. [music] I confirm and it's
+[03:18] saved. Weekdays at 9:07 in my own time
+[03:21] zone.
+[03:23] >> [music]
+[03:23] >> Step three, review it on the web at
+[03:25] claude.ai/code/routines.
+[03:29] Here's the routine I made in the
+[03:30] terminal. [music]
+[03:31] The web, the desktop app, and the CLI
+[03:34] all share the same list. [music]
+[03:36] On its page, the schedule, the
+[03:38] repository it clones on every run, and
+[03:41] the environment, [music]
+[03:42] which controls network access. The
+[03:44] default environment is trusted. [music]
+[03:46] Only an allow list of package registries
+[03:49] and common developer sites. Now,
+[03:51] connectors. All your connectors are
+[03:53] included by default and a routine can
+[03:56] use [music] every tool in them, even
+[03:58] writes, without asking. My test guard
+[04:00] doesn't need any, so I remove them.
+[04:02] Remember, every run acts as you. [music]
+[04:05] Commits carry your GitHub name and
+[04:07] connector actions use your accounts. So,
+[04:09] give it only what it needs.
+[04:12] Step four,
+[04:12] >> [music]
+[04:12] >> add more triggers. I open edit and in
+[04:15] the trigger row, I click plus. A GitHub
+[04:18] event when a pull request is opened
+[04:20] >> [music]
+[04:20] >> and it's not a draft. A pull request run
+[04:23] starts from that pull request code, so
+[04:25] the guard tests the change before I
+[04:27] merge it.
+[04:27] >> [music]
+[04:28] >> This needs the Cloud GitHub app
+[04:29] installed on the repository. The web
+[04:31] page asks you to install [music] it if
+[04:33] it's missing.
+[04:34] Then an API trigger. I copy the fire URL
+[04:38] and generate a token. The token is shown
+[04:40] only once. I store it straight away in
+[04:43] my deploy pipeline secrets, never in the
+[04:45] repository.
+[04:48] Now, my deploy script can start [music]
+[04:49] the routine. Here's the script.
+[04:55] A post to the fire URL with the token as
+[04:57] a bearer header and the routine's
+[04:59] [music] beta header. Both come from
+[05:01] secrets, not the file. The text field
+[05:03] adds context, like which version just
+[05:06] shipped. [music]
+[05:07] I run it after a deploy. The response is
+[05:09] a new session with a link [music] to
+[05:11] watch it live.
+[05:13] Step five, check the runs. Here's what
+[05:15] happened at 9:07 this morning. I asked
+[05:18] Cloud directly, "What did my test guard
+[05:20] do this morning?"
+[05:20] >> [music]
+[05:21] >> Cloud reads the runs log and explains.
+[05:24] The test guard found the failing test,
+[05:26] [music] fixed the cause, ran the tests
+[05:28] again and pushed to Cloud branch. I just
+[05:30] review it and merge. One warning in the
+[05:33] runs [music] list, a green status only
+[05:36] means the session started and exited. It
+[05:39] doesn't mean the work succeeded. [music]
+[05:40] Always open the run and read what Cloud
+[05:42] did.
+[05:44] For tips before you automate more.
+[05:46] >> [music]
+[05:46] >> One, scope what it can reach. Runs have
+[05:49] no permission prompts, so choose only
+[05:51] the repositories, network [music]
+[05:53] access, and connectors the job needs.
+[05:55] Two, schedule a few minutes past the
+[05:58] hour because on the hour runs can start
+[06:00] late. Three,
+[06:01] >> [music]
+[06:01] >> treat API text as data. It arrives
+[06:04] labeled as untrusted and your save
+[06:06] prompt decides how to use it.
+[06:08] >> [music]
+[06:08] >> And four, mind the limits. The minimum
+[06:11] interval is 1 hour and runs [music] use
+[06:13] your subscription just like normal
+[06:15] sessions. /schedule also needs a
+[06:17] clawd.ai login, not an API [music] key.
+[06:22] Let's recap. A routine is a save prompt,
+[06:25] [music] repositories, and connectors
+[06:27] that runs in the cloud even with your
+[06:29] laptop closed. [music] It starts on a
+[06:31] schedule, from an API call, or on a
+[06:33] GitHub event, or any mix of the three.
+[06:36] Write a prompt that works with nobody
+[06:38] watching.
+[06:38] >> [music]
+[06:39] >> Give it only what it needs and always
+[06:41] read the runs.
+[06:43] The test guard prompt, [music]
+[06:44] the fire script, the demo project, and
+[06:47] the cheat sheet are linked in the
+[06:48] description. If this helped, [music]
+[06:50] like the video and subscribe to zero
+[06:52] cost AI for more free AI tutorials. See
+[06:55] you in the next one.

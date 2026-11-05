@@ -1,0 +1,144 @@
+[00:00] The difference between Claude code being
+[00:02] useful and Claude code being incredible.
+[00:05] Honestly, a lot of it boils down to
+[00:07] actively managing one file, Claude MD.
+[00:11] It's how you teach Claude your project's
+[00:13] architecture, coding standards, and the
+[00:15] mistakes you've already made. Skip it
+[00:17] and you're leaving power on the table.
+[00:23] Welcome to another episode of our
+[00:25] mastering claude code series.
+[00:35] Hey, Alex here from Grit AI Studio.
+[00:38] Today we're mastering the Claude MD
+[00:40] file, Claude codes memory system. By the
+[00:43] end, you'll have Claude understanding
+[00:45] your project like a senior teammate. We
+[00:48] already did a video about managing rules
+[00:50] across coding agents, but this one is
+[00:53] all about Claude code. Let's set it up.
+[00:58] Claude MD is project memory. Every time
+[01:01] Claude starts, it reads this file. It's
+[01:04] persistent context that survives across
+[01:06] sessions. Think of it as an onboarding
+[01:09] documentation for Claude. What's the
+[01:11] text stack? Where's the important code?
+[01:14] What patterns do we follow? What
+[01:16] mistakes have we learned from? With a
+[01:18] proper Claude MD file, Claude knows your
+[01:20] project instead of guessing or wasting
+[01:23] tokens exploring every time. But first
+[01:26] things first, don't write Claude MD from
+[01:29] scratch. Let Claude do it for you. Just
+[01:32] run slashinit.
+[01:34] Watch what happens. Claude explores your
+[01:37] entire repository. It reads package
+[01:40] JSON. It scans the directory structure.
+[01:43] It looks at key files, identifies
+[01:46] patterns, and then it writes a summary.
+[01:50] This is a great starting point and then
+[01:52] you will customize it and iterate over
+[01:54] time.
+[01:58] CL code has a memory hierarchy.
+[02:01] Understanding it can be really useful.
+[02:04] On top we have the enterprise policy.
+[02:06] This has the highest priority. It's set
+[02:09] by your organization and it cannot be
+[02:11] overwritten. It's not that relevant if
+[02:14] you're a solo developer or someone
+[02:16] building your own projects. Importantly,
+[02:19] claude MD which is your project memory.
+[02:22] It lives in the project root typically
+[02:25] something you would share with your team
+[02:27] with git. In addition to project memory,
+[02:30] we also have project rules. They live in
+[02:34] the clawed rules folder. Here we have
+[02:37] markdown files as modular rule files and
+[02:40] uh we can apply path specific patterns.
+[02:43] Then we have our own personal global
+[02:46] memory file. This claude MD file or the
+[02:50] user memory lives in our home claude
+[02:53] folder. Here we have our personal
+[02:55] preferences and it follows you across
+[02:57] projects. We can also define a project
+[03:00] local claude.local.md
+[03:03] file. This typically is then not
+[03:06] committed to git and contains your
+[03:08] personal project nodes or preferences.
+[03:11] When there are conflicts, the higher
+[03:13] priority wins.
+[03:16] Whenever we want to add a key learning
+[03:19] or something to memory, we simply ask
+[03:21] Claude to add it for us or remember it.
+[03:24] Say you're debugging and you finally
+[03:26] solve a tricky issue. That note is now
+[03:29] in your project memory. And this is
+[03:32] compounding engineering. Every solved
+[03:34] problem teaches Claude something. You
+[03:37] can always manage memory by typing
+[03:39] /memory.
+[03:40] Similar to something we had for a while
+[03:42] in cursor, we can also specify modular
+[03:45] rules for cloud code. Especially in big
+[03:48] projects, we might need organized rules.
+[03:51] Use claude/ rules. You can then create
+[03:54] focus files for testing, for security,
+[03:57] and so on. These get loaded alongside
+[04:00] your main claude MD file. Path specific
+[04:03] rules are even more powerful. This rule
+[04:06] only loads when working on files
+[04:08] matching that globe pattern. Claude MD
+[04:11] can also import other files. The at@
+[04:14] symbol imports content from these files.
+[04:17] Keep your main Claude MD clean with
+[04:19] detailed rules in separate files. You
+[04:22] can also import external URLs or
+[04:24] reference documentation that Claude
+[04:26] should be aware of.
+[04:30] So here's my favorite workflow. After
+[04:33] every painful debugging session, I say
+[04:36] something like this. We finally fixed
+[04:38] it. summarize all the rabbit holes we
+[04:41] went through so we avoid these mistakes
+[04:43] in the future. Add it to the project
+[04:45] memory. As a bonus, you turn that into a
+[04:48] slash command so you don't have to type
+[04:50] it every time. By doing this, Claude
+[04:52] documents what went wrong, why it
+[04:54] happened, and how to prevent it in the
+[04:57] future. Next time Claude encounters
+[04:59] similar code, it remembers. Your team
+[05:02] remembers. The same bug never happens
+[05:05] twice. This is compounding engineering
+[05:08] in action.
+[05:11] So, here are some pro tips for Claude
+[05:13] MD. One, run/init first, then customize.
+[05:18] Let Claude do the heavy lifting and then
+[05:20] add your expertise. Two, keep it
+[05:23] concise. Claude MD is loaded every
+[05:26] conversation. Don't make it a novel.
+[05:29] Three, date your learnings. When you add
+[05:32] mistakes, note when you discover them.
+[05:34] context helps and four subfolders can
+[05:38] have their own claude MD front end
+[05:41] folder gets front- end rules and so on.
+[05:43] Number five at referencing a file also
+[05:47] loads claude MD from that directory
+[05:50] rules flow with file references and
+[05:53] number six review periodically. Remove
+[05:56] outdated rules and keep your Claude MD
+[05:59] file current. This last one is something
+[06:01] a lot of people miss. Make sure you
+[06:04] review or ask Claude to review for you.
+[06:07] You can say something like this. Please
+[06:10] review our Claude MD file and highlight
+[06:12] any parts we should simplify or remove
+[06:14] for duplication. Context is king and a
+[06:17] bloated Claude MD can actually have
+[06:19] negative effects on our results. Set up
+[06:22] your Claude MD today. Your future self
+[06:25] will thank you. I hope you found this
+[06:27] video helpful. I would really appreciate
+[06:29] if you like and subscribe to the channel
+[06:32] if you want more mastering Claude code
+[06:34] videos. Thanks a lot for watching and
+[06:36] I'll see you in the next one.

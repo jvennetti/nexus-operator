@@ -1,0 +1,180 @@
+[00:00] This is the world's shortest course on
+[00:01] Claude Code. I'm not a developer, but I
+[00:03] run a business that makes several
+[00:04] million dollars a year and it's built
+[00:05] entirely on Claude Code. I also created
+[00:07] a tutorial on Claude Code a few months
+[00:09] ago that now has over 10 million views
+[00:11] worldwide and it even got me invited to
+[00:12] hang out with Mr. Beast. Over the next 5
+[00:14] minutes, you guys are going to learn how
+[00:15] to download and set up Claude Code, then
+[00:17] all the features in the app before
+[00:18] finally learning how to use it to build
+[00:20] real things that improve your life and
+[00:21] enrich the life of other people. So, set
+[00:24] a timer and let's do it. First, go to
+[00:25] claude.com/download
+[00:27] and download the app. Right now it's
+[00:28] available for Mac or Windows. Install
+[00:30] it, open it, and then make an account.
+[00:32] If you didn't know, Claude is an AI made
+[00:33] by its parent company Anthropic. Once
+[00:35] you have the app open, you'll see tabs.
+[00:37] Now, chat is for talking, a lot like
+[00:39] ChatGPT was when it came out, but it
+[00:41] can't actually change any of your files.
+[00:43] Claude Code can and that's the one we
+[00:45] want to use today. If you're on the free
+[00:47] plan, it'll ask you to upgrade. Claude
+[00:48] Code will cost about $20 a month and
+[00:50] it'll be the best $20 you've ever spent.
+[00:52] Next, make a new empty folder somewhere
+[00:54] on your desktop. That folder will be
+[00:56] where Claude creates and modifies files.
+[00:58] In the prompt box, click on local, then
+[01:00] open folder, and then select the one
+[01:02] that you just created. Now, just type
+[01:03] what you want in plain English and press
+[01:05] enter. For example, make me a simple
+[01:07] website for a cleaning company with a
+[01:08] booking form. In general, you want to
+[01:10] describe the outcome and not the steps
+[01:11] to get there. Claude can usually figure
+[01:13] that part out. For instance, when I was
+[01:14] making a 3D visualization of my
+[01:16] apartment to help with my move, I just
+[01:17] said, "Hey Claude, here's a floor plan
+[01:19] and a bunch of listing photos. Can you
+[01:20] please create a 3D viz?" It ended up
+[01:22] even finding a bunch of products on
+[01:24] Amazon that I could one-click order to
+[01:25] my address and then populating my home
+[01:27] with that, too. If at any point any of
+[01:28] that goes the wrong way, you guys could
+[01:30] stop by clicking the stop button or you
+[01:32] could type a correction and push that
+[01:33] through, too. Next, you'll have to pick
+[01:34] a mode. This decides how much Claude
+[01:36] works on its own before asking you. The
+[01:38] mode selector is right under the prompt
+[01:40] box. Manual will ask you every time it
+[01:42] wants to make a change. Plan means
+[01:43] Claude will look around, do a bunch of
+[01:44] research, make a really in-depth road
+[01:46] map, but won't proceed until you approve
+[01:48] it. And then finally, auto will let it
+[01:49] work almost completely on its own, but
+[01:51] it will have a second AI constantly
+[01:53] checking to see if Claude is up to no
+[01:54] good. That's important because some
+[01:56] things that Claude does are a little bit
+[01:57] risky, like potentially deleting files
+[01:59] on your computer. I recommend sticking
+[02:00] with auto for virtually everything.
+[02:02] After you can pick the model. This is
+[02:03] the actual AI model that is doing the
+[02:05] work. And right now there are a few
+[02:06] different types. Haiku is the cheapest,
+[02:08] Sonnet is sort of your middle ground,
+[02:10] Opus is the most expensive, but also the
+[02:12] most powerful. There's also an effort
+[02:13] setting which corresponds to how long
+[02:15] Claude will think about your problem
+[02:17] before answering it. I usually set mine
+[02:18] to medium or high across the board.
+[02:20] These knobs are important because they
+[02:21] correspond to your usage and you only
+[02:23] have a certain amount of it before
+[02:24] Claude cuts you off. Next, give it a
+[02:25] memory. Every conversation with Claude
+[02:27] is called a session and a new session
+[02:29] doesn't remember what you talked about
+[02:29] in the last one unless you have some
+[02:31] sort of memory. A simple way to do this
+[02:32] is creating a file called claude.md
+[02:34] which stores information that Claude can
+[02:36] read at the beginning of any individual
+[02:38] session. You can do that really easily
+[02:39] by typing {slash}init and it'll
+[02:40] automatically create a claude.md for you
+[02:42] based off what you've done in the
+[02:43] workspace so far. Everything in a
+[02:45] session is called the context and Claude
+[02:46] is forced to reread literally the whole
+[02:48] thing every single time you have a
+[02:50] conversation with it. That means long
+[02:51] sessions get slower, more expensive, and
+[02:53] usually lower quality. So if you're
+[02:54] switching a topic or you're building
+[02:56] something new, always start session.
+[02:58] It'll save you a lot of money and time.
+[02:59] When Claude changes your files, you'll
+[03:01] see a bunch of counters start popping up
+[03:02] with plus signs, minus signs. These are
+[03:04] the lines that it has added or removed
+[03:06] to the files that it's changed. Most of
+[03:07] the time you don't actually have to know
+[03:08] what's going on under the hood, but this
+[03:09] is useful if you wanted a deeper look.
+[03:11] If you're creating a website or a visual
+[03:12] app, you have a right-hand side browser
+[03:14] pane that actually lets Claude show you
+[03:16] what the app is looking like. You can
+[03:17] use this to give it more feedback and
+[03:19] change the app. Once you built some
+[03:20] stuff you like, turn it into a skill. A
+[03:22] skill is a saved set of instructions for
+[03:23] the jobs that you're doing. These are
+[03:25] stored in files called skill.mds. For
+[03:27] instance, I have skills that edit my
+[03:28] YouTube videos just like this one or
+[03:30] send proposals to clients. I even have
+[03:32] some skills that publish my podcast or
+[03:34] create visualizations or even create
+[03:36] cool video games like this one. Easiest
+[03:37] way to do this right is just do the
+[03:39] thing you want to do and tell Claude,
+[03:40] "Hey, make this into a skill." Next, you
+[03:42] can connect a bunch of tools. All you
+[03:43] have to do is click on the plus button
+[03:45] and then click add connectors. A
+[03:47] connector just lets Claude use any other
+[03:48] app just like yourself. Some examples
+[03:50] are GitHub, Slack, Linear, Asana,
+[03:52] Trello. There are way more than I can
+[03:54] count. You can also install custom
+[03:55] plugins and now mods to change how
+[03:58] Claude code generates its answer. Once
+[04:00] you've learned all that, you can
+[04:01] actually run more than one Claude
+[04:02] simultaneously. The way Claude does this
+[04:04] is by handing side jobs to sub agents.
+[04:06] These can do work while the main Claude
+[04:08] thread does something else, and it
+[04:09] allows you to parallelize your workflow
+[04:11] or get a lot more done per unit time.
+[04:12] For instance, I built these 100 websites
+[04:14] in approximately the same amount of time
+[04:16] it took me to build one using sub
+[04:17] agents. Finally, let Claude work while
+[04:19] you're away by clicking on scheduled and
+[04:21] then creating a task that runs without
+[04:23] you. You can also keep track of things
+[04:25] through your phone by using the remote
+[04:26] control feature. All you do is download
+[04:28] Claude on your phone, and now you can
+[04:29] chat with it while you're at the gym or
+[04:31] whatever else you're doing. When Claude
+[04:32] finishes something, I'd recommend asking
+[04:34] for an artifact. An artifact is a simple
+[04:36] static web page that allows you to
+[04:37] visualize what it worked on. You can
+[04:39] share this with friends, with
+[04:40] colleagues, or really anybody you want.
+[04:42] Okay, check your timer. If you want a
+[04:43] much more in-depth version, I cover all
+[04:44] this sort of stuff on my channel. Thank
+[04:46] you very much for your day, and like and
+[04:47] subscribe if this added value to your
+[04:48] life.

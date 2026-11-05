@@ -1,0 +1,399 @@
+[00:00] The people who learn Claude code
+[00:01] scheduled tasks over the next 30 days
+[00:03] will have an insane advantage over
+[00:05] anybody else. Anthropic just released
+[00:08] scheduled tasks for Claude code. So, I
+[00:10] stayed up until 1:00 a.m. breaking
+[00:12] everything down so that you can be one
+[00:14] of them. I've realized that this feature
+[00:15] is an absolute cheat code, but only if
+[00:18] you use it the right way. So, today I'm
+[00:20] going to walk you through how it works,
+[00:21] how to set it up. I'll even give you
+[00:23] some examples of things that I'm using
+[00:25] it for to automate my business [music]
+[00:27] every single day. I'm super excited for
+[00:29] this one, so I wanted to get something
+[00:31] out as soon as possible. [music] With
+[00:32] that being said, let's jump into what
+[00:34] exactly this mean. So, before we get
+[00:37] into Claude code scheduled tasks, I just
+[00:39] want to take a step back and take a look
+[00:41] at how far we've come. Just 2 3 years
+[00:43] ago, automation tools were the next big
+[00:45] thing on the block. And it was crazy
+[00:47] because we could connect different tools
+[00:48] together and we could automate things to
+[00:50] save us time. Plus, when we added AI
+[00:52] into the mix, our automations got that
+[00:54] much crazier. But, recently everybody's
+[00:57] been talking about Claude code. because
+[00:59] it's a lot more powerful than automation
+[01:01] tools themselves. Automation tools are
+[01:03] pretty fragile. No matter how good of an
+[01:05] automation you build, it'll probably run
+[01:07] into an error at some point or another.
+[01:09] And that's because the input format
+[01:10] matters so much. The AI in your
+[01:12] automations can't make judgment
+[01:14] decisions and everything is very rigidly
+[01:16] based around your workflow. With Claude
+[01:18] code, you can just talk to it in plain
+[01:20] English. It will go out there, it'll use
+[01:22] all the tools at its disposal, and it
+[01:24] will get the job done. And Claude is
+[01:26] awesome at this. So, everything's
+[01:27] perfect, right? We're moving forward
+[01:29] with our technology. Well, I'm starting
+[01:31] to think that might not be the case.
+[01:33] It's kind of feeling like we're going
+[01:35] backwards. Because now that we have
+[01:36] Claude code, it's great. We can run
+[01:38] specific slash commands in specific
+[01:40] skills that do the same thing every
+[01:42] time. And skills change the game, don't
+[01:43] get me wrong. They're amazing. But, the
+[01:45] problem is is that we're back to running
+[01:47] them manually. So, every day I'll have
+[01:49] to go into Claude code and I'll have to
+[01:51] run the slash command to sort my emails.
+[01:53] And then I'll [music] have to use the
+[01:54] update CRM skill, then the compile sales
+[01:57] report skill. and I have to do every
+[01:59] single one of these things manually.
+[02:01] Even if it's something that should be
+[02:02] done every single day or every single
+[02:04] week. And that's why Cloud Code released
+[02:06] scheduled tasks. Scheduled tasks are
+[02:08] full Cloud Code sessions that you can
+[02:10] schedule to run at any time. So, it's
+[02:12] not just a cron job running a script at
+[02:14] a specific time with specified logic.
+[02:17] This is just like if you were to open up
+[02:19] Cloud Code and type a prompt in
+[02:20] yourself. You can use all the skills it
+[02:22] has, the MCP servers, the file
+[02:24] structure, the permissions, everything
+[02:25] is the exact same. But, I do want to
+[02:27] note that they are only available on
+[02:29] Cloud Code desktop. That also means that
+[02:31] they are running 100% locally on your
+[02:33] computer. So, if your computer is
+[02:35] sleeping or shut off, the scheduled task
+[02:37] is not going to run. To get around that,
+[02:39] you can just head to the display
+[02:40] settings in your computer and toggle
+[02:42] that so that it never turns off
+[02:44] automatically. So, like I just said, the
+[02:46] main point is that it is an entire Cloud
+[02:49] Code session running on your computer at
+[02:51] a scheduled time. It has access to
+[02:53] skills, tools, sub agents, MCPs, and
+[02:56] everything that your normal Cloud Code
+[02:57] would. But, I mentioned that your
+[02:59] computer has to be on. And so, what
+[03:01] happens if it misses a schedule? Well,
+[03:03] it can get a little bit confusing, so I
+[03:05] pulled together this diagram that breaks
+[03:07] it down. In this example, we have a
+[03:09] scheduled daily task running every
+[03:11] single day at 9:00 a.m. And you can see
+[03:14] that on Monday and Tuesday, the task ran
+[03:16] properly. But, on Wednesday, our
+[03:18] computer went into sleep mode, and it
+[03:20] was in sleep mode until Sunday when the
+[03:23] computer finally woke up. So, that means
+[03:25] four of these scheduled tasks were
+[03:26] actually missed. However, Cloud Code
+[03:28] scheduled tasks is only going to create
+[03:30] one catch-up run. And that catch-up run
+[03:33] is going to be for the last scheduled
+[03:35] time that was missed. So, it's important
+[03:37] to add time-aware prompts, like only
+[03:39] review today's commits, and if it's
+[03:41] after 5:00 p.m., just post a summary.
+[03:43] Because if you think about it, this task
+[03:45] is scheduled to run at 9:00 a.m.
+[03:47] However, when our computer wakes up at
+[03:48] 11:00 p.m. on Sunday, it's going to run
+[03:51] Saturday's task. If there's anything
+[03:53] time sensitive, make sure to gate it in
+[03:55] your prompt. Oh, that's disappointing
+[03:57] and I'm sure we'll find some workarounds
+[03:59] for that, but overall, this is a
+[04:01] positive because this is what our
+[04:03] reality looks like now. Before, we were
+[04:04] staying up late, 3:00 a.m. late-night
+[04:06] coding sessions with Claude, prompting
+[04:08] it by hand, and asking it to do
+[04:10] everything. Now, we can create a to-do
+[04:12] list file in our Claude code directory
+[04:14] and a scheduled task for our agent to
+[04:16] start working through them. When you
+[04:17] wake up in the morning, Claude code was
+[04:19] insanely productive and you didn't need
+[04:21] to stay up until 3:00 a.m. to get it
+[04:23] done. So, now that we've gone over the
+[04:25] feature as a whole, how it works, and a
+[04:27] couple things to watch out for, let's
+[04:29] jump into some examples of how I'm
+[04:30] actually using it. So, for these
+[04:32] examples, I did pull together some mock
+[04:35] data. For obvious reasons, I run a
+[04:37] business and we have proprietary
+[04:39] information, so I had Claude quickly
+[04:41] whip up three example skills. The
+[04:43] outputs of these skills are definitely
+[04:45] not going to be the best, but I
+[04:46] definitely wanted to illustrate some of
+[04:47] the ways that we're using Claude code
+[04:49] for non-development purposes. So, in
+[04:51] this first example, we're going to be
+[04:52] using a daily business digest skill.
+[04:55] Now, the plan is to get this to run
+[04:56] daily at 8:00 a.m. It's meant for busy
+[04:58] CEOs who want a pulse on their business
+[05:01] at all times. What it does is it goes to
+[05:03] Slack and it pulls every single message
+[05:05] that was sent from the previous day. It
+[05:07] also goes to our project management
+[05:08] tool, it grabs all the tasks, everything
+[05:10] that was completed, and it pumps all of
+[05:12] that back into Claude code as well. It
+[05:14] uses all of that information to create a
+[05:16] daily digest, which is then sent via
+[05:18] Telegram every morning at 9:00 a.m. So,
+[05:20] I think you can obviously see why this
+[05:21] would be beneficial for an executive at
+[05:23] a company. Let's jump into Claude code
+[05:25] and I'll show you how to get this set
+[05:26] up. So, now that you're in the Claude
+[05:27] desktop app, the first thing you're
+[05:29] going to want to do is make sure that
+[05:30] you are on the code section. The next
+[05:33] thing you want to do is make sure you
+[05:34] have the latest version of Claude
+[05:36] desktop installed. So, if you're on Mac,
+[05:38] this is going to look a little
+[05:39] different. You're going to click on the
+[05:40] Claude button in the Mac menu, but if
+[05:43] you're on Windows like me, then you can
+[05:44] head over to this icon, click on the
+[05:47] help button, and then if you have an
+[05:49] update available, it will show right
+[05:51] here. You can click check for updates
+[05:52] just to make sure. It says I'm running
+[05:54] the latest version, so I'll click okay.
+[05:56] And now that you're on the latest
+[05:57] version, you might have noticed a
+[05:58] scheduled tab pop up. So, if you click
+[06:00] on that, you'll see the new screen for
+[06:02] scheduled tasks. And there are actually
+[06:04] two ways that we can create new
+[06:06] scheduled tasks. So, we can click on the
+[06:08] new task button in the top right, pretty
+[06:10] obvious, and that's going to open up a
+[06:12] pop-up for us to fill out the new task.
+[06:14] We need to provide a name, which needs
+[06:16] to be unique across all of your
+[06:17] scheduled tasks. Then, you give it a
+[06:20] description. This description is just
+[06:21] for internal use, Claude never sees
+[06:23] this, so you don't need to worry about
+[06:25] it too much. The prompting section is
+[06:27] where you actually fill out the prompt
+[06:29] and give it instructions like you were
+[06:31] prompting Claude code yourself. You can
+[06:33] also select the permissions that Claude
+[06:35] is going to run your task with, and then
+[06:37] you need to select the folder that you
+[06:39] want this to run in. Just like Claude
+[06:40] code in any other project, it needs to
+[06:42] run in a specific folder. You can see
+[06:44] I've just selected the folder scheduled
+[06:45] task examples, which contains the skills
+[06:48] for this video. And then we select the
+[06:49] frequency that we want this task to run
+[06:52] at. We have a couple different options
+[06:53] here. We can select manual, which means
+[06:55] we can only run the task manually,
+[06:56] hourly, it's pretty obvious, daily,
+[06:58] weekdays is every single weekday, except
+[07:01] for Saturday and Sunday, and then
+[07:02] weekly, you can select the day and the
+[07:04] time. So, for our example, we want this
+[07:06] to run daily at 8:00 a.m., so I'll go
+[07:09] ahead, fill everything out, and create
+[07:10] that task now. Okay, and I've got
+[07:11] everything configured here. As you can
+[07:13] see, I just named it daily digest. The
+[07:15] description gets Slack and ClickUp
+[07:16] insights from yesterday. Kept the prompt
+[07:18] super simple. I just said run the daily
+[07:20] stand-up skill, and then we set the
+[07:22] frequency to every day at 9:00 a.m. So,
+[07:25] I'm just going to click create task.
+[07:26] That'll prompt us to ask if we trust the
+[07:28] workspace. We're just going to click
+[07:29] yes, and that's going to create the
+[07:31] scheduled task. So, if we click into
+[07:33] this, we'll see the scheduled task
+[07:35] interface, and this is where we can
+[07:37] manage all of our runs, we can edit the
+[07:38] task, we can turn it on and off, etc.
+[07:41] Now, when you make a new scheduled task,
+[07:43] I always recommend running it first. And
+[07:45] that's because you don't always know
+[07:46] what Cloud is going to run into. For
+[07:48] example, if in order to complete your
+[07:50] task, Cloud needed to do something that
+[07:53] required user permissions and you
+[07:54] weren't around, you weren't in the
+[07:56] interface to accept them, the task just
+[07:58] wouldn't run. So, to get around that, a
+[08:00] little trick I've found is to run it
+[08:02] immediately, accept permissions and
+[08:04] accept all for the session, which will
+[08:06] continue to persist those [music]
+[08:07] permissions for future runs. Where I run
+[08:09] this, I want to note something weird
+[08:10] that I've noticed. You can see that I
+[08:12] have this task scheduled for 9:00 a.m.
+[08:14] every day. However, down here it says it
+[08:17] repeats [music] every day at 9:01. I've
+[08:19] created a lot of these scheduled tasks
+[08:21] and I've noticed that the times can vary
+[08:22] drastically from 3 minutes off, 5
+[08:25] minutes off to being 1 minute off like
+[08:27] this. So, it doesn't really affect
+[08:29] things that much, but just something I
+[08:31] figured I should mention. And let's get
+[08:32] this party started. So, we're going to
+[08:34] go ahead, click run now. That's going to
+[08:36] kick off the session and we can actually
+[08:38] see it running just like if it was in
+[08:40] Cloud Code itself. These are the
+[08:41] permissions that I was talking about.
+[08:43] You're going to want to click always
+[08:44] allow for session. So, I'm going to sit
+[08:46] here. I will continue to do so, and I'll
+[08:49] circle back when we have some results to
+[08:50] share. All right, looks like this is
+[08:52] wrapped up here. And obviously, this
+[08:53] isn't sending me a Telegram message just
+[08:56] because this is a mock skill, but you
+[08:58] can see it has generated this report.
+[09:00] Now, within the Cloud Desktop app, we
+[09:02] actually have no way of previewing these
+[09:03] reports. So, if we wanted to take a look
+[09:05] at those, we'd have to open them up in
+[09:06] VS Code. So, if we take a look on the
+[09:08] left here, we can see the reports folder
+[09:10] has a daily folder in it with a stand-up
+[09:12] for today's date. If we open that and
+[09:14] preview, we can see a nice daily
+[09:17] stand-up report. The next example I want
+[09:19] to go over is a weekly analytics report.
+[09:22] So, this is going to run every Friday.
+[09:24] It's going to pull information from
+[09:25] Facebook ads, our CRM, social media
+[09:28] analytics, how much revenue our business
+[09:30] is making, as well as where our expenses
+[09:32] are going. It'll pull all of that
+[09:34] together with detailed charts, tables,
+[09:36] and AI analysis, and output a detailed
+[09:39] PDF report for your team to review every
+[09:41] Friday. So, let's head over to Cloud
+[09:43] Desktop and get [music] that set up.
+[09:44] Now, if we take a look on the left here,
+[09:46] we can see which tasks we currently have
+[09:48] scheduled. We have the daily digest task
+[09:51] currently scheduled, and we can see that
+[09:53] that runs daily. [music] In order to
+[09:54] create the new task, I'm just going to
+[09:56] click on the scheduled button again,
+[09:58] create new task, and fill out the
+[10:00] information for a second time. So, got
+[10:02] everything all configured here, just
+[10:03] called it analytics report. I went with
+[10:05] run the analytics report skill again,
+[10:07] and we just scheduled that for every
+[10:09] week on Friday. So, [music] I'm going to
+[10:11] create that task. I'm going to click
+[10:13] into it, and then I'm going to click run
+[10:15] now. I'll work through accepting all of
+[10:17] the permissions, and then we'll review
+[10:19] when the output is complete. All right,
+[10:20] looks like our analytics report has been
+[10:22] generated, so we can pull up VS Code to
+[10:25] take a look at that. Go to the weekly
+[10:26] folder, and we'll open up this PDF. I
+[10:29] don't have a PDF viewer in VS Code, so
+[10:31] I'm just going to head to the
+[10:32] extensions, [music] grab one real quick,
+[10:34] and then we'll take a look at that. All
+[10:35] right, so this has been generated. Now,
+[10:37] just remember, this is an example skill.
+[10:39] It's just a mock skill. I haven't put
+[10:41] any time into styling [music] this,
+[10:43] making it look nice, but you can see all
+[10:45] of these charts were dynamically
+[10:46] generated. All of this information was
+[10:48] populated right now from this skill run.
+[10:52] So, if this was real data, you could
+[10:53] obviously see how this would be
+[10:54] incredibly valuable to any business. So,
+[10:57] let's head back over to Cloud Desktop.
+[10:59] We're going to set up one more scheduled
+[11:01] task. But, for this one, we're going to
+[11:02] set it up a little bit differently. So,
+[11:04] we'll create a new session, and then
+[11:06] we're just going to ask Claude to create
+[11:08] it for us. So, I'm just going to ask it
+[11:09] to create a scheduled task to run the
+[11:13] content ideas skill every day at 8:00
+[11:18] a.m. It looks like I forgot to select
+[11:20] our folder, so we're going to do that
+[11:22] quickly, and then we will submit our
+[11:24] chat. So, it takes a minute. It explores
+[11:26] the code base. It figures out what it's
+[11:28] supposed to be doing, and then it
+[11:29] creates the [music] scheduled task. So,
+[11:31] we can check the details here. We can
+[11:33] look at the prompt it's using and you
+[11:34] can see it's quite a bit more detailed
+[11:36] than the prompt I was using. And if I
+[11:37] had to guess, you probably will get
+[11:39] better results with a prompt like this.
+[11:41] If we just [music] click enter, that's
+[11:42] going to submit that new scheduled task
+[11:45] and then Claude is going to go and
+[11:46] create it for us. Claude has created the
+[11:48] task for us, but it's not necessarily
+[11:49] showing up on the scheduled sidebar. If
+[11:52] we click on the scheduled tab, you'll
+[11:53] see it right here. Click run now and
+[11:56] we'll circle back in a minute. And the
+[11:57] content report has finished [music] up,
+[11:59] too. So, if we open that up in VS Code,
+[12:02] we can see all of the content ideas
+[12:04] here. Now, again, this is just simulated
+[12:06] data, but if this was actual data, we'd
+[12:08] have a lot of interesting information
+[12:10] here. And if this wasn't a mock skill,
+[12:12] maybe I might chop it down a little bit
+[12:14] and trim things down so it's easier to
+[12:15] read. But overall, this is a great
+[12:17] example of how you can use scheduled
+[12:19] tasks. [music]
+[12:20] That's going to be it for today's video.
+[12:21] So, please drop a comment. Let me know
+[12:23] your thoughts on this feature, if you
+[12:25] think it's going to replace Open Claude,
+[12:26] and if there are any specific skills you
+[12:28] think this would work really well for.
+[12:30] And if you got any value out of this
+[12:31] video at all, please take a second,
+[12:33] subscribe to the channel. It helps me
+[12:35] keep making videos just like this, and
+[12:37] I'll see you in the next one.
