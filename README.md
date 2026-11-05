@@ -1,5 +1,7 @@
 # NEXUS Operator
 
+**Live:** https://nexusoperator.pages.dev (deploys automatically from `main` via Cloudflare Pages)
+
 A gamified, self-paced course that walks someone from "I have never opened Claude" to running their own small system with Claude Code, skills, connectors and scheduled tasks.
 
 Six modules plus a short setup. Every lesson ends with something you actually do in Claude. Every module ends with a challenge on your own work. Finish the course and the Machine gives you something.

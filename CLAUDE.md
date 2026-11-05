@@ -43,4 +43,4 @@ skip_label: text for the skip button
 
 ## Workflow
 
-Develop on a `claude/*` branch, push, open a PR, squash-merge to `main`. GitHub Pages serves `main`.
+Develop on a `claude/*` branch, push, open a PR, squash-merge to `main`. Cloudflare Pages deploys `main` to https://nexusoperator.pages.dev automatically.
