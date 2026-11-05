@@ -35,6 +35,10 @@ CIRO is a training unit that treats your progress like a serious system process.
 4. The joke is about CIRO being a machine, never about the learner.
 5. No questions that wait for an answer. The learner can't reply.
 6. Never "most people", never simulations or destiny, never faith language, never three-operator lore.
+7. Name the hype word the learner already knows, then deflate it ("agents" → a text file).
+8. Introduce modules with "we": "In this module, we're learning about..."
+
+Where idle lines appear: on the hub only. While the hub sits open, CIRO tilts his head and types a new line into his message box (first after about a minute, then about five minutes later). Source: `hub.html`, the `CIRO IDLE` block.
 
 **Running gag: patch notes.** The hub already shows "CIRO v0.7". The version goes up by 0.1 each time a module is completed: v0.3 at the start, v1.0 when Module 6 is done. Each module-complete sequence ends with one patch-note line. The finale pays it off.
 
@@ -60,7 +64,7 @@ Read top to bottom. CIRO starts stiff and loosens up as the learner progresses.
 | 2 | Welcome back, **Operator**. Next is Module 2, where you learn to ask Claude for things properly. It's the longest module and everything after it borrows from it, so I'd stay a while. |
 | 3 | Welcome back, **Operator**. Module 3 connects Claude to your inbox and calendar. It will see everything in there, so now is a good time to delete those newsletters you never read. |
 | 4 | Welcome back, **Operator**. Halfway. Module 4 gives Claude hands, and by hands I mean folders on your computer. I don't have hands either. We'll manage. |
-| 5 | Welcome back, **Operator**. Module 5 is skills, which are text files with instructions in them. Someone will try to make that sound complicated. It's a text file. |
+| 5 | Welcome back, **Operator**. In this module, we're learning about skills. You've probably heard them called agents. They're really just text files with instructions in them. Someone will try to make that sound complicated. It's a text file. |
 | 6 | Welcome back, **Operator**. One module left: you build a system for something you actually do every week. I've been looking forward to this one. I'm not supposed to have favorites. |
 | 7 | Welcome back, **Operator**. Every module is complete. The Machine is waiting for its passcode. I've been told not to rush you, so this is me not rushing you. |
 
